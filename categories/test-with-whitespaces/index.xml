@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Test With Whitespaces on Example Site</title>
+        <title>Test With Whitespaces on 代数tv</title>
         <link>https://Jinbz-ayaka.github.io/categories/test-with-whitespaces/</link>
-        <description>Recent content in Test With Whitespaces on Example Site</description>
+        <description>Recent content in Test With Whitespaces on 代数tv</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
+        <language>zh-cn</language>
         <copyright>Example Person</copyright>
         <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/test-with-whitespaces/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Placeholder Text</title>
