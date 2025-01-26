@@ -7,13 +7,65 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Fri, 24 Jan 2025 21:52:31 +0800</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 26 Jan 2025 21:40:31 +0800</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hello world</title>
+        <link>https://Jinbz-ayaka.github.io/p/hello-world/</link>
+        <pubDate>Sun, 26 Jan 2025 21:40:31 +0800</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/hello-world/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/hello-world/111.jpg" alt="Featured image of post Hello world" /&gt;&lt;h2 id=&#34;hello-world&#34;&gt;Hello world!
+&lt;/h2&gt;&lt;p&gt;你好，世界!&lt;/p&gt;
+&lt;p&gt;Hello, world!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>测试测试</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</link>
+        <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/yau.jpg" alt="Featured image of post 测试测试" /&gt;&lt;p&gt;这段东西是什么?&lt;/p&gt;
+&lt;h2 id=&#34;测试一下标题&#34;&gt;测试一下标题
+&lt;/h2&gt;&lt;h1 id=&#34;测试一下section&#34;&gt;测试一下\section
+&lt;/h1&gt;&lt;h2 id=&#34;测试一下subsection&#34;&gt;测试一下\subsection
+&lt;/h2&gt;&lt;h3 id=&#34;测试一下subsubsection&#34;&gt;测试一下\subsubsection
+&lt;/h3&gt;&lt;h4 id=&#34;测试一下subsubsubsection&#34;&gt;测试一下\subsubsubsection
+&lt;/h4&gt;&lt;h5 id=&#34;测试一下subsubsubsubsection&#34;&gt;测试一下\subsubsubsubsection
+&lt;/h5&gt;&lt;h6 id=&#34;测试一下subsubsubsubsubsection&#34;&gt;测试一下\subsubsubsubsubsection
+&lt;/h6&gt;&lt;h2 id=&#34;正文&#34;&gt;正文
+&lt;/h2&gt;&lt;p&gt;这段应该是正文&lt;/p&gt;
+&lt;h2 id=&#34;引用文章&#34;&gt;引用文章
+&lt;/h2&gt;&lt;p&gt;这里先不测&lt;/p&gt;
+&lt;h2 id=&#34;表格&#34;&gt;表格
+&lt;/h2&gt;&lt;p&gt;这里也先不测&lt;/p&gt;
+&lt;h2 id=&#34;代码框&#34;&gt;代码框
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\neq&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; a_&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;LaTeX 不行, 以后再研究吧 kk.&lt;/p&gt;
+&lt;h2 id=&#34;列表&#34;&gt;列表
+&lt;/h2&gt;&lt;p&gt;这里也先不测&lt;/p&gt;
+&lt;h2 id=&#34;其他东西&#34;&gt;其他东西
+&lt;/h2&gt;&lt;p&gt;这里也先不测&lt;/p&gt;
+&lt;h2 id=&#34;超链接图像&#34;&gt;超链接图像
+&lt;/h2&gt;&lt;p&gt;这里也先不测&lt;/p&gt;</description>
+        </item>
+        <item>
         <title>111</title>
         <link>https://Jinbz-ayaka.github.io/p/111/</link>
         <pubDate>Fri, 24 Jan 2025 21:52:31 +0800</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/111/</guid>
-        <description></description>
+        <description>&lt;h2 id=&#34;我玩原神吗&#34;&gt;我玩原神吗
+&lt;/h2&gt;&lt;p&gt;我不玩原神&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Chinese Test</title>
@@ -103,14 +155,6 @@
 &lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Typlog&lt;/a&gt;&lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://Jinbz-ayaka.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/archives/</guid>
-        <description></description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
@@ -445,11 +489,49 @@ $$</description>
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Links</title>
-        <link>https://Jinbz-ayaka.github.io/links/</link>
+        <title>关于</title>
+        <link>https://Jinbz-ayaka.github.io/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/links/</guid>
+        <guid>https://Jinbz-ayaka.github.io/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;代数TV：开启你的代数学习之旅&lt;/p&gt;
+&lt;p&gt;代数，这门看似枯燥乏味，实则精妙绝伦的数学分支，常常成为许多学生学习道路上的绊脚石。抽象的符号、复杂的公式、严谨的逻辑，让不少人望而却步。然而，代数的魅力远不止于此，它不仅是理解更高阶数学的基础，更是培养逻辑思维和解决问题能力的利器。代数TV应运而生，旨在打破代数学习的壁垒，将这门学科的精髓以更易于理解和接受的方式呈现给每一位学习者。&lt;/p&gt;
+&lt;p&gt;我们的使命：让代数学习变得简单、有趣且有效&lt;/p&gt;
+&lt;p&gt;代数TV并非一个简单的在线视频教程网站，而是一个集教学视频、练习题库、学习社区和个性化学习规划于一体的综合性学习平台。我们的核心目标是让每一位用户都能在轻松愉快的氛围中掌握代数知识，提升数学能力，并最终爱上这门学科。 我们深知，传统的课堂教学模式往往难以满足每个学生的个性化需求。为了解决这个问题，代数TV采用了多种教学方法和技术，力求做到因材施教，让每个学生都能找到适合自己的学习节奏和方法。&lt;/p&gt;
+&lt;p&gt;课程体系：全面覆盖，循序渐进&lt;/p&gt;
+&lt;p&gt;代数TV的课程体系涵盖了从基础代数到高级代数的各个方面，内容全面、结构清晰，适合不同学习阶段和学习水平的学生。 我们的课程设计遵循循序渐进的原则，从最基本的代数概念入手，逐步深入，层层递进，确保学习者能够在扎实的基础上不断提升。&lt;/p&gt;
+&lt;p&gt;基础代数: 包括实数、变量、代数表达式、方程、不等式、线性方程组等内容。 我们以通俗易懂的语言和丰富的实例讲解这些概念，帮助初学者快速入门。&lt;/p&gt;
+&lt;p&gt;初级代数: 在此基础上，我们将学习多项式、因式分解、分数代数、根式等更高级的概念和技巧，并通过大量的练习题巩固所学知识。&lt;/p&gt;
+&lt;p&gt;中级代数: 我们将探索二次方程、二次函数、指数函数、对数函数等内容，逐步培养学生的抽象思维能力和解决复杂问题的能力。&lt;/p&gt;
+&lt;p&gt;高级代数: 我们将深入研究抽象代数、线性代数等更高级的代数内容，为进一步学习高等数学打下坚实的基础。&lt;/p&gt;
+&lt;p&gt;除了按知识点分类的课程外，我们还根据不同考试大纲和学习目标，设计了针对性的学习路径，例如，针对高中入学考试、大学入学考试、以及各种专业资格考试的准备课程。 这些课程将帮助学生高效备考，取得理想成绩。&lt;/p&gt;
+&lt;p&gt;教学特色：多元化教学方法，提升学习效率&lt;/p&gt;
+&lt;p&gt;为了使学习过程更加生动有趣，代数TV采用多种教学方法，力求将枯燥的理论知识转化为生动形象的学习体验。&lt;/p&gt;
+&lt;p&gt;高清视频教程: 我们精心制作的高清视频教程，由经验丰富的代数教师主讲，讲解清晰流畅，配以生动形象的动画和图表，帮助学生更好地理解抽象的概念。&lt;/p&gt;
+&lt;p&gt;互动式练习题: 大量的互动式练习题，涵盖各种题型，帮助学生巩固所学知识，并及时发现和纠正学习中的错误。 我们的练习题系统会根据学生的答题情况，自动调整难度，确保学生能够在合适的难度下进行学习。&lt;/p&gt;
+&lt;p&gt;个性化学习规划: 根据学生的学习进度和学习习惯，代数TV可以为每个学生制定个性化的学习规划，帮助他们更高效地完成学习目标。&lt;/p&gt;
+&lt;p&gt;学习社区: 代数TV提供了一个活跃的学习社区，学生们可以在此与教师和同学们交流学习经验，互相帮助，共同进步。 这是一个分享知识、解决疑问、互相鼓励的平台，让学习不再孤单。&lt;/p&gt;
+&lt;p&gt;实时答疑: 我们的专业教师团队提供实时答疑服务，解答学生在学习过程中遇到的各种问题，及时解决学习难题。&lt;/p&gt;
+&lt;p&gt;未来展望：持续改进，不断创新&lt;/p&gt;
+&lt;p&gt;代数TV将持续改进和完善课程内容，不断创新教学方法，以满足不断变化的学习需求。 我们将积极引进先进的教育技术，提升学习体验，让更多的人能够受益于代数TV提供的优质教育资源。 我们也计划推出更多语言版本的课程，让全球更多的学生能够学习和掌握代数知识。&lt;/p&gt;
+&lt;p&gt;代数TV不仅仅是一个学习平台，更是一个学习社区，一个帮助学生们克服学习难题，实现学习目标的伙伴。 我们相信，通过我们的努力，能够让代数学习变得简单、有趣且有效，让更多的人体会到代数的魅力，并从中受益匪浅。 加入代数TV，开启你的代数学习之旅，让我们一起探索代数的奇妙世界！&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://Jinbz-ayaka.github.io/%E5%BD%92%E6%A1%A3/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/%E5%BD%92%E6%A1%A3/</guid>
+        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>链接</title>
+        <link>https://Jinbz-ayaka.github.io/%E9%93%BE%E6%8E%A5/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -477,24 +559,16 @@ $$</description>
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
+&lt;p&gt;I love playing genshin.&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Search</title>
+        <title>搜索</title>
         <link>https://Jinbz-ayaka.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/search/</guid>
         <description></description>
-        </item>
-        <item>
-        <title>关于</title>
-        <link>https://Jinbz-ayaka.github.io/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
         </item>
         
     </channel>
