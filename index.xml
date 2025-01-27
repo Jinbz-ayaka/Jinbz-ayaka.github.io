@@ -6,14 +6,50 @@
         <description>Recent content on 代数tv</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Example Person</copyright>
-        <lastBuildDate>Sun, 26 Jan 2025 21:40:31 +0800</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Hello world</title>
+        <copyright>Jinbz</copyright>
+        <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>1.28 更新</title>
+        <link>https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/</link>
+        <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/klee.jpg" alt="Featured image of post 1.28 更新" /&gt;&lt;h2 id=&#34;更新内容&#34;&gt;更新内容
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;增加了几个友链.&lt;/li&gt;
+&lt;li&gt;修改了网站图标.&lt;/li&gt;
+&lt;li&gt;修改了头像下方社交平台内容.&lt;/li&gt;
+&lt;li&gt;完成LaTeX功能的测试.&lt;/li&gt;
+&lt;li&gt;对tag进行了一部分整理.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;发现的若干问题&#34;&gt;发现的若干问题
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;将日期改成 2025-1-28 会导致文章不显示, 很神秘. 猜测是这个奇怪的时间格式导致的.&lt;/li&gt;
+&lt;li&gt;仍旧没有实现基于 \begin\end 的 LaTeX 数学环境.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;做网站真是一件令人上头的事(&lt;/p&gt;
+&lt;p&gt;过两天琢磨一下 markdown 吧(&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>测试latex</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
+        <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</guid>
+        <description>&lt;p&gt;111&lt;/p&gt;
+&lt;p&gt;$a+b\neq c.$&lt;/p&gt;
+&lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
+\[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
+\[这篇文章正文部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hello world?</title>
         <link>https://Jinbz-ayaka.github.io/p/hello-world/</link>
         <pubDate>Sun, 26 Jan 2025 21:40:31 +0800</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/hello-world/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/hello-world/111.jpg" alt="Featured image of post Hello world" /&gt;&lt;h2 id=&#34;hello-world&#34;&gt;Hello world!
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/hello-world/111.jpg" alt="Featured image of post Hello world?" /&gt;&lt;h2 id=&#34;hello-world&#34;&gt;Hello world!
 &lt;/h2&gt;&lt;p&gt;你好，世界!&lt;/p&gt;
 &lt;p&gt;Hello, world!&lt;/p&gt;
 </description>
@@ -532,34 +568,7 @@ $$</description>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/%E9%93%BE%E6%8E%A5/</guid>
-        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
-&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
-&lt;p&gt;I love playing genshin.&lt;/p&gt;
+        <description>&lt;p&gt;感谢各位的技术指导()&lt;/p&gt;
 </description>
         </item>
         <item>

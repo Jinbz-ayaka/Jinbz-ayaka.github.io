@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://Jinbz-ayaka.github.io/</loc>
-    <lastmod>2025-01-26T21:40:31+08:00</lastmod>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -20,11 +20,11 @@
                 href="https://Jinbz-ayaka.github.io/"
                 />
   </url><url>
-    <loc>https://Jinbz-ayaka.github.io/p/hello-world/</loc>
-    <lastmod>2025-01-26T21:40:31+08:00</lastmod>
+    <loc>https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/post/</loc>
-    <lastmod>2025-01-26T21:40:31+08:00</lastmod>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
@@ -37,7 +37,7 @@
                 />
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/tags/</loc>
-    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,8 +54,17 @@
                 href="https://Jinbz-ayaka.github.io/tags/"
                 />
   </url><url>
-    <loc>https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <loc>https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/tags/%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/p/hello-world/</loc>
+    <lastmod>2025-01-26T21:40:31+08:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>

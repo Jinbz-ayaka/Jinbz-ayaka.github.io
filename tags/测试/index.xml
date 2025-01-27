@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>测试标签 on 代数tv</title>
-        <link>https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/</link>
-        <description>Recent content in 测试标签 on 代数tv</description>
+        <title>测试 on 代数tv</title>
+        <link>https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+        <description>Recent content in 测试 on 代数tv</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Example Person</copyright>
-        <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>Jinbz</copyright>
+        <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>测试latex</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
+        <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</guid>
+        <description>&lt;p&gt;111&lt;/p&gt;
+&lt;p&gt;$a+b\neq c.$&lt;/p&gt;
+&lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
+\[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
+\[这篇文章正文部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>测试测试</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
