@@ -10,7 +10,7 @@
 <meta property='og:description' content="Latex测试">
 <meta property='og:url' content='https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/'>
 <meta property='og:site_name' content='代数tv'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='测试' /><meta property='article:published_time' content='2025-01-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-27T00:00:00&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='测试' /><meta property='article:published_time' content='2025-01-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-29T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="测试latex">
 <meta name="twitter:description" content="Latex测试">
     <link rel="shortcut icon" href="/emptyset.png" />
@@ -244,11 +244,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://Jinbz-ayaka.github.io/en/" >English</option>
-                                
                                     <option value="https://Jinbz-ayaka.github.io/" selected>中文</option>
                                 
-                                    <option value="https://Jinbz-ayaka.github.io/ar/" >عربي</option>
+                                    <option value="https://Jinbz-ayaka.github.io/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -289,6 +287,14 @@
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            <a href="/categories/%E6%B5%8B%E8%AF%95/" >
+                测试
+            </a>
+        
+    </header>
+    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
@@ -318,7 +324,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jan 27, 2025</time>
+                <time class="article-time--published">Jan 29, 2025</time>
             </div>
         
 
@@ -338,7 +344,40 @@
 <p>$a+b\neq c.$</p>
 <p>这里居然可以直接套用LaTeX语法? 太方便了</p>
 \[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]<p>其中 $x,y$ 是复数, 且 $|x|&lt;1,y\neq 0$. 而且</p>
-\[这篇文章正文部分的中文汉字数=67.\]<p>但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.</p>
+\[这篇文章这一部分的中文汉字数=67.\]<p>但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.</p>
+<p>1.28</p>
+<hr>
+<p>在课程微分几何II中我们进行过这样的计算</p>
+$$
+\begin{align*}
+    R_{il}&=g^{jk}R_{ijkl}\\
+    &=\left(\delta_{jk}-\frac{x^kx^j}{K^2}\right)\left(-\frac{\delta_{jl}x^kx^i-\delta_{il}x^kx^j}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{\delta_{kj}\delta_{il}-\delta_{ki}\delta_{jl}}{K^2}+\frac{\delta_{kj}x^ix^l-\delta_{ki}x^jx^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\right)\\
+    &=\frac{-x^ix^l+\delta_{il}\sum_{i=1}^{n}(x^t)^2}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{(n-1)\delta_{il}}{K^2}+\frac{(n-1)x^ix^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\\
+    &\quad\,\,-\frac{+\delta_{il}(\sum_{t=1}^{n}(x^t)^2)^2-2x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{\delta_{il}\sum_{t=1}^{n}(x^t)^2-x^ix^l}{K^2}\\
+    &=\frac{n-1}{K^2}\left(\delta_{il}+\frac{x^ix^l}{K^2-\sum_{t=1}^{n}}\right)=\frac{n-1}{K^2}g_{il}
+\end{align*}
+$$<p>在课程理论力学中, 我们知道 Euler-Lagrange 方程</p>
+\[\frac{\partial \mathscr{L}}{\partial q_i}=\frac{d}{dt}\left(\frac{\partial \mathscr{L}}{\partial \dot{q}_i}\right)=\frac{d}{dt}p_i\]<p>等价于 Hamilton&rsquo;s 方程组</p>
+\[\begin{cases}
+    \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
+    \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}\]<p>而 Toda 方程可以被写作</p>
+\[\frac{dL}{dt}=[A,L],\]<p>其中 $a_i=\frac{1}{2}\exp(\frac{q_i-q_{i+1}}{2}), b=-\frac{1}{2}p_i$,</p>
+\[L=\begin{pmatrix}
+b_1&a_1&0&\cdots&\cdots&0\\
+a_1&b_2&a_2&0&\cdots&0\\
+0&a_2&b_3&a_3&\cdots&0\\
+\vdots&&&&&\vdots\\
+0&&&a_{n-2}&b_{n-1}&a_{n-1}\\
+0&&&&a_{n-1}&b_n
+\end{pmatrix},A=\begin{pmatrix}
+0&a_1&0&\cdots&\cdots&0\\
+-a_1&0&a_2&0&\cdots&0\\
+0&-a_2&0&a_3&\cdots&0\\
+0&&&&&\vdots\\
+0&&&-a_{n-2}&0&a_{n-1}\\
+0&&&&-a_{n-1}&0
+\end{pmatrix}\]<p>哎, tikz</p>
 
 </section>
 
@@ -388,51 +427,42 @@
 
     
 
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/yau.30d7d51dbe22a76bbefd585ff051b280_hu_320738ef5d1e8360.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 测试测试"
+                        
+                        data-hash="md5-MNfVHb4ip2u&#43;/Vhf8FGygA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">测试测试</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
-<style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
-    }
-</style>
-
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
-</script>
-
     
 
     <footer class="site-footer">

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://Jinbz-ayaka.github.io/</loc>
-    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11,42 +11,32 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://Jinbz-ayaka.github.io/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://Jinbz-ayaka.github.io/"
                 />
   </url><url>
-    <loc>https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/</loc>
-    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/post/</loc>
-    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <loc>https://Jinbz-ayaka.github.io/categories/</loc>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://Jinbz-ayaka.github.io/ar/post/"
+                hreflang="en"
+                href="https://Jinbz-ayaka.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Jinbz-ayaka.github.io/post/"
+                href="https://Jinbz-ayaka.github.io/categories/"
                 />
   </url><url>
+    <loc>https://Jinbz-ayaka.github.io/post/</loc>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://Jinbz-ayaka.github.io/tags/</loc>
-    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://Jinbz-ayaka.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Jinbz-ayaka.github.io/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -55,12 +45,21 @@
                 />
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</loc>
+    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/tags/%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/categories/%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/p/hello-world/</loc>
@@ -72,71 +71,22 @@
     <loc>https://Jinbz-ayaka.github.io/p/111/</loc>
     <lastmod>2025-01-24T21:52:31+08:00</lastmod>
   </url><url>
-    <loc>https://Jinbz-ayaka.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Jinbz-ayaka.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Jinbz-ayaka.github.io/ar/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Jinbz-ayaka.github.io/categories/"
-                />
-  </url><url>
     <loc>https://Jinbz-ayaka.github.io/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Jinbz-ayaka.github.io/categories/test/</loc>
+    <loc>https://Jinbz-ayaka.github.io/categories/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/p/markdown-syntax-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Jinbz-ayaka.github.io/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://Jinbz-ayaka.github.io/tags/markdown/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/p/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Jinbz-ayaka.github.io/ar/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Jinbz-ayaka.github.io/p/placeholder-text/"
-                />
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/tags/tag-with-whitespaces/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Jinbz-ayaka.github.io/categories/test-with-whitespaces/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/tags/text/</loc>
@@ -152,6 +102,8 @@
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/page/</loc>
+  </url><url>
+    <loc>https://Jinbz-ayaka.github.io/categories/test/</loc>
   </url><url>
     <loc>https://Jinbz-ayaka.github.io/%E5%85%B3%E4%BA%8E/</loc>
   </url><url>

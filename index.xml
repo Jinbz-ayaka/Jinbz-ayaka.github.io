@@ -7,7 +7,53 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>测试latex</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
+        <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</guid>
+        <description>&lt;p&gt;111&lt;/p&gt;
+&lt;p&gt;$a+b\neq c.$&lt;/p&gt;
+&lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
+\[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
+\[这篇文章这一部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
+&lt;p&gt;1.28&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在课程微分几何II中我们进行过这样的计算&lt;/p&gt;
+$$
+\begin{align*}
+    R_{il}&amp;=g^{jk}R_{ijkl}\\
+    &amp;=\left(\delta_{jk}-\frac{x^kx^j}{K^2}\right)\left(-\frac{\delta_{jl}x^kx^i-\delta_{il}x^kx^j}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{\delta_{kj}\delta_{il}-\delta_{ki}\delta_{jl}}{K^2}+\frac{\delta_{kj}x^ix^l-\delta_{ki}x^jx^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\right)\\
+    &amp;=\frac{-x^ix^l+\delta_{il}\sum_{i=1}^{n}(x^t)^2}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{(n-1)\delta_{il}}{K^2}+\frac{(n-1)x^ix^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\\
+    &amp;\quad\,\,-\frac{+\delta_{il}(\sum_{t=1}^{n}(x^t)^2)^2-2x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{\delta_{il}\sum_{t=1}^{n}(x^t)^2-x^ix^l}{K^2}\\
+    &amp;=\frac{n-1}{K^2}\left(\delta_{il}+\frac{x^ix^l}{K^2-\sum_{t=1}^{n}}\right)=\frac{n-1}{K^2}g_{il}
+\end{align*}
+$$&lt;p&gt;在课程理论力学中, 我们知道 Euler-Lagrange 方程&lt;/p&gt;
+\[\frac{\partial \mathscr{L}}{\partial q_i}=\frac{d}{dt}\left(\frac{\partial \mathscr{L}}{\partial \dot{q}_i}\right)=\frac{d}{dt}p_i\]&lt;p&gt;等价于 Hamilton&amp;rsquo;s 方程组&lt;/p&gt;
+\[\begin{cases}
+    \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
+    \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}\]&lt;p&gt;而 Toda 方程可以被写作&lt;/p&gt;
+\[\frac{dL}{dt}=[A,L],\]&lt;p&gt;其中 $a_i=\frac{1}{2}\exp(\frac{q_i-q_{i+1}}{2}), b=-\frac{1}{2}p_i$,&lt;/p&gt;
+\[L=\begin{pmatrix}
+b_1&amp;a_1&amp;0&amp;\cdots&amp;\cdots&amp;0\\
+a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
+0&amp;a_2&amp;b_3&amp;a_3&amp;\cdots&amp;0\\
+\vdots&amp;&amp;&amp;&amp;&amp;\vdots\\
+0&amp;&amp;&amp;a_{n-2}&amp;b_{n-1}&amp;a_{n-1}\\
+0&amp;&amp;&amp;&amp;a_{n-1}&amp;b_n
+\end{pmatrix},A=\begin{pmatrix}
+0&amp;a_1&amp;0&amp;\cdots&amp;\cdots&amp;0\\
+-a_1&amp;0&amp;a_2&amp;0&amp;\cdots&amp;0\\
+0&amp;-a_2&amp;0&amp;a_3&amp;\cdots&amp;0\\
+0&amp;&amp;&amp;&amp;&amp;\vdots\\
+0&amp;&amp;&amp;-a_{n-2}&amp;0&amp;a_{n-1}\\
+0&amp;&amp;&amp;&amp;-a_{n-1}&amp;0
+\end{pmatrix}\]&lt;p&gt;哎, tikz&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>1.28 更新</title>
         <link>https://Jinbz-ayaka.github.io/p/1.28-%E6%9B%B4%E6%96%B0/</link>
         <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
@@ -28,19 +74,6 @@
 &lt;/ol&gt;
 &lt;p&gt;做网站真是一件令人上头的事(&lt;/p&gt;
 &lt;p&gt;过两天琢磨一下 markdown 吧(&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>测试latex</title>
-        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
-        <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</guid>
-        <description>&lt;p&gt;111&lt;/p&gt;
-&lt;p&gt;$a+b\neq c.$&lt;/p&gt;
-&lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
-\[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
-\[这篇文章正文部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -530,27 +563,99 @@ $$</description>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;代数TV：开启你的代数学习之旅&lt;/p&gt;
-&lt;p&gt;代数，这门看似枯燥乏味，实则精妙绝伦的数学分支，常常成为许多学生学习道路上的绊脚石。抽象的符号、复杂的公式、严谨的逻辑，让不少人望而却步。然而，代数的魅力远不止于此，它不仅是理解更高阶数学的基础，更是培养逻辑思维和解决问题能力的利器。代数TV应运而生，旨在打破代数学习的壁垒，将这门学科的精髓以更易于理解和接受的方式呈现给每一位学习者。&lt;/p&gt;
-&lt;p&gt;我们的使命：让代数学习变得简单、有趣且有效&lt;/p&gt;
-&lt;p&gt;代数TV并非一个简单的在线视频教程网站，而是一个集教学视频、练习题库、学习社区和个性化学习规划于一体的综合性学习平台。我们的核心目标是让每一位用户都能在轻松愉快的氛围中掌握代数知识，提升数学能力，并最终爱上这门学科。 我们深知，传统的课堂教学模式往往难以满足每个学生的个性化需求。为了解决这个问题，代数TV采用了多种教学方法和技术，力求做到因材施教，让每个学生都能找到适合自己的学习节奏和方法。&lt;/p&gt;
-&lt;p&gt;课程体系：全面覆盖，循序渐进&lt;/p&gt;
-&lt;p&gt;代数TV的课程体系涵盖了从基础代数到高级代数的各个方面，内容全面、结构清晰，适合不同学习阶段和学习水平的学生。 我们的课程设计遵循循序渐进的原则，从最基本的代数概念入手，逐步深入，层层递进，确保学习者能够在扎实的基础上不断提升。&lt;/p&gt;
-&lt;p&gt;基础代数: 包括实数、变量、代数表达式、方程、不等式、线性方程组等内容。 我们以通俗易懂的语言和丰富的实例讲解这些概念，帮助初学者快速入门。&lt;/p&gt;
-&lt;p&gt;初级代数: 在此基础上，我们将学习多项式、因式分解、分数代数、根式等更高级的概念和技巧，并通过大量的练习题巩固所学知识。&lt;/p&gt;
-&lt;p&gt;中级代数: 我们将探索二次方程、二次函数、指数函数、对数函数等内容，逐步培养学生的抽象思维能力和解决复杂问题的能力。&lt;/p&gt;
-&lt;p&gt;高级代数: 我们将深入研究抽象代数、线性代数等更高级的代数内容，为进一步学习高等数学打下坚实的基础。&lt;/p&gt;
-&lt;p&gt;除了按知识点分类的课程外，我们还根据不同考试大纲和学习目标，设计了针对性的学习路径，例如，针对高中入学考试、大学入学考试、以及各种专业资格考试的准备课程。 这些课程将帮助学生高效备考，取得理想成绩。&lt;/p&gt;
-&lt;p&gt;教学特色：多元化教学方法，提升学习效率&lt;/p&gt;
-&lt;p&gt;为了使学习过程更加生动有趣，代数TV采用多种教学方法，力求将枯燥的理论知识转化为生动形象的学习体验。&lt;/p&gt;
-&lt;p&gt;高清视频教程: 我们精心制作的高清视频教程，由经验丰富的代数教师主讲，讲解清晰流畅，配以生动形象的动画和图表，帮助学生更好地理解抽象的概念。&lt;/p&gt;
-&lt;p&gt;互动式练习题: 大量的互动式练习题，涵盖各种题型，帮助学生巩固所学知识，并及时发现和纠正学习中的错误。 我们的练习题系统会根据学生的答题情况，自动调整难度，确保学生能够在合适的难度下进行学习。&lt;/p&gt;
-&lt;p&gt;个性化学习规划: 根据学生的学习进度和学习习惯，代数TV可以为每个学生制定个性化的学习规划，帮助他们更高效地完成学习目标。&lt;/p&gt;
-&lt;p&gt;学习社区: 代数TV提供了一个活跃的学习社区，学生们可以在此与教师和同学们交流学习经验，互相帮助，共同进步。 这是一个分享知识、解决疑问、互相鼓励的平台，让学习不再孤单。&lt;/p&gt;
-&lt;p&gt;实时答疑: 我们的专业教师团队提供实时答疑服务，解答学生在学习过程中遇到的各种问题，及时解决学习难题。&lt;/p&gt;
-&lt;p&gt;未来展望：持续改进，不断创新&lt;/p&gt;
-&lt;p&gt;代数TV将持续改进和完善课程内容，不断创新教学方法，以满足不断变化的学习需求。 我们将积极引进先进的教育技术，提升学习体验，让更多的人能够受益于代数TV提供的优质教育资源。 我们也计划推出更多语言版本的课程，让全球更多的学生能够学习和掌握代数知识。&lt;/p&gt;
-&lt;p&gt;代数TV不仅仅是一个学习平台，更是一个学习社区，一个帮助学生们克服学习难题，实现学习目标的伙伴。 我们相信，通过我们的努力，能够让代数学习变得简单、有趣且有效，让更多的人体会到代数的魅力，并从中受益匪浅。 加入代数TV，开启你的代数学习之旅，让我们一起探索代数的奇妙世界！&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;代数TV：提瓦特大陆的数学奇才，还是隐藏的深渊法师？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;各位旅行者们好！今天我们要聊的是一位提瓦特大陆上神秘而又充满争议的角色——&lt;strong&gt;代数TV&lt;/strong&gt;。这个名字听起来是不是有点奇怪？&lt;strong&gt;别急&lt;/strong&gt;，接下来我会带你深入了解这位“数学天才”的方方面面，看看他到底是提瓦特的救世主，还是深渊教团的卧底！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;一角色背景代数tv的起源&#34;&gt;&lt;strong&gt;一、角色背景：代数TV的起源&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;代数TV，这个名字一听就充满了学术气息。根据璃月港的古籍记载，代数TV并非土生土长的提瓦特人，而是来自一个被称为“数学维度”的异世界。据说，这个维度的居民都以研究数学为生，而代数TV则是其中的佼佼者。&lt;/p&gt;
+&lt;p&gt;他的到来充满了谜团。有一天，蒙德城的冒险家协会突然收到了一封匿名信，信中只有一行字：“解不开的方程，终将被我解开。”随后，代数TV便出现在了蒙德城的图书馆，开始研究提瓦特大陆的各种数学问题。&lt;/p&gt;
+&lt;p&gt;有人说他是为了寻找“原初公式”而来，也有人说他是被深渊教团派来研究提瓦特能量结构的。无论如何，代数TV的出现无疑为提瓦特大陆增添了一抹神秘的色彩。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;二角色技能数学之力颠覆战场&#34;&gt;&lt;strong&gt;二、角色技能：数学之力，颠覆战场！&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;代数TV的技能设计非常独特，完全围绕“数学”展开。他的战斗风格既不是近战也不是远程，而是通过“计算”来影响战场。以下是他的技能详细介绍：&lt;/p&gt;
+&lt;h4 id=&#34;1-普通攻击公式推导&#34;&gt;&lt;strong&gt;1. 普通攻击：公式推导&lt;/strong&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;代数TV的普通攻击并不是物理攻击，而是向敌人投掷数学公式。每次攻击都会生成一个随机方程，敌人需要在短时间内解出答案，否则会受到额外伤害。&lt;/li&gt;
+&lt;li&gt;例如，他可能会扔出一个“2x + 5 = 15”的方程，敌人需要在2秒内解出x=5，否则会被追加一次“计算错误”伤害。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-元素战技矩阵迷宫&#34;&gt;&lt;strong&gt;2. 元素战技：矩阵迷宫&lt;/strong&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;代数TV召唤一个由数学符号构成的矩阵迷宫，将敌人困在其中。敌人需要在迷宫中找到正确的路径才能逃脱，否则会持续受到元素伤害。&lt;/li&gt;
+&lt;li&gt;这个技能特别适合控制战场，尤其是在面对大量敌人时，可以有效地分割战场。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-元素爆发无限级数&#34;&gt;&lt;strong&gt;3. 元素爆发：无限级数&lt;/strong&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;代数TV释放出他的终极技能——无限级数。他会召唤一个巨大的数学符号阵，对范围内的敌人进行连续攻击。每次攻击的伤害会随着级数的增加而递增，直到敌人被彻底击败。&lt;/li&gt;
+&lt;li&gt;这个技能的视觉效果非常震撼，满屏的数学符号飞舞，仿佛整个战场都被数学支配。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4-被动天赋数学直觉&#34;&gt;&lt;strong&gt;4. 被动天赋：数学直觉&lt;/strong&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;代数TV的被动天赋让他能够更快地解出战场上的数学问题，并且他的技能冷却时间会随着敌人的数量减少而缩短。&lt;/li&gt;
+&lt;li&gt;此外，他还可以通过解出复杂的数学问题来回复自身的生命值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;三命之座数学之星&#34;&gt;&lt;strong&gt;三、命之座：数学之星&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;代数TV的命之座名为“数学之星”，每一层都代表了一个数学领域的重要成就。以下是他的命之座效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;1命：几何之力&lt;/strong&gt;&lt;br&gt;
+矩阵迷宫的范围扩大50%，并且敌人逃脱的时间延长2秒。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2命：代数之魂&lt;/strong&gt;&lt;br&gt;
+普通攻击的方程难度增加，但伤害提升30%。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;4命：微积分之眼&lt;/strong&gt;&lt;br&gt;
+元素爆发的级数攻击次数增加3次，并且每次攻击的伤害递增幅度提高。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;6命：原初公式&lt;/strong&gt;&lt;br&gt;
+代数TV解锁隐藏技能“原初公式”，可以瞬间解出战场上的所有数学问题，并对敌人造成巨额真实伤害。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;四武器推荐数学神器&#34;&gt;&lt;strong&gt;四、武器推荐：数学神器&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;代数TV的武器选择非常独特，他只能使用“数学神器”系列武器。以下是几把适合他的武器：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;公式之书（五星）&lt;/strong&gt;&lt;br&gt;
+这把武器可以大幅提升代数TV的元素精通和技能伤害，并且每次攻击都有概率生成一个额外的数学问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;几何尺（四星）&lt;/strong&gt;&lt;br&gt;
+这把武器可以增加代数TV的控制能力，使矩阵迷宫的持续时间延长。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;计算器（三星）&lt;/strong&gt;&lt;br&gt;
+虽然是一把三星武器，但它的被动效果非常实用，可以让代数TV更快地解出数学问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;五圣遗物推荐数学之证&#34;&gt;&lt;strong&gt;五、圣遗物推荐：数学之证&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;代数TV的圣遗物套装推荐使用“数学之证”系列，以下是套装效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2件套&lt;/strong&gt;：元素精通提升80点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4件套&lt;/strong&gt;：每次解出数学问题时，代数TV的技能伤害提升10%，最多可叠加5层。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;六角色评价数学天才还是战场噩梦&#34;&gt;&lt;strong&gt;六、角色评价：数学天才还是战场噩梦？&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;代数TV的出现无疑为《原神》的角色池增添了一抹独特的色彩。他的技能设计非常新颖，将数学与战斗完美结合，给玩家带来了全新的游戏体验。然而，他的操作难度也相对较高，需要玩家具备一定的数学基础才能发挥出他的全部实力。&lt;/p&gt;
+&lt;p&gt;在实战中，代数TV的表现非常出色。他的控制能力和爆发伤害让他成为了队伍中的核心角色。尤其是在面对大量敌人时，他的矩阵迷宫和无限级数可以轻松扭转战局。&lt;/p&gt;
+&lt;p&gt;不过，也有一些玩家认为代数TV的设计过于复杂，尤其是他的普通攻击机制让很多玩家感到头疼。毕竟，谁想在打游戏的时候还要解方程呢？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;七隐藏剧情代数tv与深渊教团的关系&#34;&gt;&lt;strong&gt;七、隐藏剧情：代数TV与深渊教团的关系&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;关于代数TV的背景，有一个非常有趣的隐藏剧情。根据一些玩家的挖掘，代数TV似乎与深渊教团有着千丝万缕的联系。有传言称，他来到提瓦特大陆的真正目的是为了研究“原初公式”，而这个公式可能与深渊教团的计划有关。&lt;/p&gt;
+&lt;p&gt;在璃月港的一个隐藏任务中，玩家可以发现一封代数TV写给深渊教团的密信，信中提到了他对提瓦特能量结构的研究进展。这是否意味着代数TV其实是深渊教团的卧底？还是说他只是在利用深渊教团来实现自己的目标？这一切都还是一个谜。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;八总结代数tv提瓦特的数学之光&#34;&gt;&lt;strong&gt;八、总结：代数TV，提瓦特的数学之光&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;总的来说，代数TV是一位非常有趣且独特的角色。他的技能设计和背景故事都充满了创意，给玩家带来了全新的游戏体验。虽然他的操作难度较高，但对于喜欢挑战的玩家来说，这无疑是一个值得培养的角色。&lt;/p&gt;
+&lt;p&gt;最后，让我们期待代数TV在未来的剧情中会有怎样的表现吧！也许他会成为提瓦特大陆的救世主，也可能会揭开更多的秘密。无论如何，这位“数学天才”都已经成为了《原神》世界中不可或缺的一部分。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上就是对代数TV的详细介绍。如果你喜欢这篇内容，记得点赞、转发，并在评论区留下你的看法！我们下次再见，愿风神护佑你，旅行者！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上全部都是由 deepseek 生成的, 不对本网站起到任何指导性作用.&lt;/p&gt;
+&lt;p&gt;Not_A_Goalkeeper 瞎搞的地方()&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -559,7 +664,18 @@ $$</description>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/%E5%BD%92%E6%A1%A3/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <description>&lt;p&gt;归档页面怎么写呢?&lt;/p&gt;
+&lt;h1 id=&#34;归档&#34;&gt;归档
+&lt;/h1&gt;&lt;h2 id=&#34;2025&#34;&gt;2025
+&lt;/h2&gt;&lt;h3 id=&#34;1月&#34;&gt;1月
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://algebratv.com/p/1.28-%E6%9B%B4%E6%96%B0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1.28更新&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://algebratv.com/p/hello-world/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hello World?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://algebratv.com/p/111/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;111&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

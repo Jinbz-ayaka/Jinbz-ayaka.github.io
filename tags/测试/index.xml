@@ -7,17 +7,50 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>测试latex</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
-        <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</guid>
         <description>&lt;p&gt;111&lt;/p&gt;
 &lt;p&gt;$a+b\neq c.$&lt;/p&gt;
 &lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
 \[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
-\[这篇文章正文部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
+\[这篇文章这一部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
+&lt;p&gt;1.28&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在课程微分几何II中我们进行过这样的计算&lt;/p&gt;
+$$
+\begin{align*}
+    R_{il}&amp;=g^{jk}R_{ijkl}\\
+    &amp;=\left(\delta_{jk}-\frac{x^kx^j}{K^2}\right)\left(-\frac{\delta_{jl}x^kx^i-\delta_{il}x^kx^j}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{\delta_{kj}\delta_{il}-\delta_{ki}\delta_{jl}}{K^2}+\frac{\delta_{kj}x^ix^l-\delta_{ki}x^jx^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\right)\\
+    &amp;=\frac{-x^ix^l+\delta_{il}\sum_{i=1}^{n}(x^t)^2}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{(n-1)\delta_{il}}{K^2}+\frac{(n-1)x^ix^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\\
+    &amp;\quad\,\,-\frac{+\delta_{il}(\sum_{t=1}^{n}(x^t)^2)^2-2x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{\delta_{il}\sum_{t=1}^{n}(x^t)^2-x^ix^l}{K^2}\\
+    &amp;=\frac{n-1}{K^2}\left(\delta_{il}+\frac{x^ix^l}{K^2-\sum_{t=1}^{n}}\right)=\frac{n-1}{K^2}g_{il}
+\end{align*}
+$$&lt;p&gt;在课程理论力学中, 我们知道 Euler-Lagrange 方程&lt;/p&gt;
+\[\frac{\partial \mathscr{L}}{\partial q_i}=\frac{d}{dt}\left(\frac{\partial \mathscr{L}}{\partial \dot{q}_i}\right)=\frac{d}{dt}p_i\]&lt;p&gt;等价于 Hamilton&amp;rsquo;s 方程组&lt;/p&gt;
+\[\begin{cases}
+    \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
+    \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}\]&lt;p&gt;而 Toda 方程可以被写作&lt;/p&gt;
+\[\frac{dL}{dt}=[A,L],\]&lt;p&gt;其中 $a_i=\frac{1}{2}\exp(\frac{q_i-q_{i+1}}{2}), b=-\frac{1}{2}p_i$,&lt;/p&gt;
+\[L=\begin{pmatrix}
+b_1&amp;a_1&amp;0&amp;\cdots&amp;\cdots&amp;0\\
+a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
+0&amp;a_2&amp;b_3&amp;a_3&amp;\cdots&amp;0\\
+\vdots&amp;&amp;&amp;&amp;&amp;\vdots\\
+0&amp;&amp;&amp;a_{n-2}&amp;b_{n-1}&amp;a_{n-1}\\
+0&amp;&amp;&amp;&amp;a_{n-1}&amp;b_n
+\end{pmatrix},A=\begin{pmatrix}
+0&amp;a_1&amp;0&amp;\cdots&amp;\cdots&amp;0\\
+-a_1&amp;0&amp;a_2&amp;0&amp;\cdots&amp;0\\
+0&amp;-a_2&amp;0&amp;a_3&amp;\cdots&amp;0\\
+0&amp;&amp;&amp;&amp;&amp;\vdots\\
+0&amp;&amp;&amp;-a_{n-2}&amp;0&amp;a_{n-1}\\
+0&amp;&amp;&amp;&amp;-a_{n-1}&amp;0
+\end{pmatrix}\]&lt;p&gt;哎, tikz&lt;/p&gt;
 </description>
         </item>
         <item>
