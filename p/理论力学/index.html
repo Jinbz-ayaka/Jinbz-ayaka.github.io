@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="理论力学复习提纲 对于拉格朗日量 $\\mathscr{L}$, 我们有 Euler-Lagrange 方程\n\\[\\frac{d}{dt} \\left(\\frac{\\partial \\mathscr{L}}{\\partial\\dot{q}}\\right)=\\frac{\\partial \\mathscr{L}}{\\partial q}\\]对于这一部分而言, 重要的只有两个东西: Noether&rsquo;s 定理和 Hamiltonian 力学.\nNoether&rsquo;s 定理 &ldquo;连续的对称性蕴含了守恒量&rdquo;.\n">
+<title>理论力学</title>
+
+<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="理论力学">
+<meta property='og:description' content="理论力学复习提纲 对于拉格朗日量 $\\mathscr{L}$, 我们有 Euler-Lagrange 方程\n\\[\\frac{d}{dt} \\left(\\frac{\\partial \\mathscr{L}}{\\partial\\dot{q}}\\right)=\\frac{\\partial \\mathscr{L}}{\\partial q}\\]对于这一部分而言, 重要的只有两个东西: Noether&rsquo;s 定理和 Hamiltonian 力学.\nNoether&rsquo;s 定理 &ldquo;连续的对称性蕴含了守恒量&rdquo;.\n">
+<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/'>
+<meta property='og:site_name' content='代数tv'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina.jpg' />
+<meta name="twitter:title" content="理论力学">
+<meta name="twitter:description" content="理论力学复习提纲 对于拉格朗日量 $\\mathscr{L}$, 我们有 Euler-Lagrange 方程\n\\[\\frac{d}{dt} \\left(\\frac{\\partial \\mathscr{L}}{\\partial\\dot{q}}\\right)=\\frac{\\partial \\mathscr{L}}{\\partial q}\\]对于这一部分而言, 重要的只有两个东西: Noether&rsquo;s 定理和 Hamiltonian 力学.\nNoether&rsquo;s 定理 &ldquo;连续的对称性蕴含了守恒量&rdquo;.\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina.jpg' />
+    <link rel="shortcut icon" href="/emptyset.png" />
+<style>
+     
+    :root {
+        --article-font-family: "Merriweather", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";
+    
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+    
+        document.head.appendChild(customFont);
+    }());
+</script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_2da766625f77ada1.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">代数tv</a></h1>
+            <h2 class="site-description">做网站是不是有点简单了</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/407762935'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/Jinbz-ayaka'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%BD%92%E6%A1%A3/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://Jinbz-ayaka.github.io/" selected>中文</option>
+                                
+                                    <option value="https://Jinbz-ayaka.github.io/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#理论力学复习提纲">理论力学复习提纲</a>
+      <ol>
+        <li><a href="#noethers-定理">Noether&rsquo;s 定理</a></li>
+        <li><a href="#hamiltonian-力学">Hamiltonian 力学</a>
+          <ol>
+            <li><a href="#守恒量">守恒量</a></li>
+            <li><a href="#流与-liouville-定理">流与 Liouville 定理</a></li>
+            <li><a href="#正则变换">正则变换</a></li>
+          </ol>
+        </li>
+        <li><a href="#辛几何">辛几何</a>
+          <ol>
+            <li><a href="#moment-map">moment map</a></li>
+            <li><a href="#symplectic-reduction">Symplectic Reduction</a></li>
+          </ol>
+        </li>
+        <li><a href="#可积系统">可积系统</a>
+          <ol>
+            <li><a href="#liouville-可积性">Liouville 可积性</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/">
+                <img src="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina_hu_33ace5b8708a9d96.jpg"
+                        srcset="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina_hu_33ace5b8708a9d96.jpg 800w, /p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina_hu_c32b5d1aa3e77db.jpg 1600w"
+                        width="800" 
+                        height="1221" 
+                        loading="lazy"
+                        alt="Featured image of post 理论力学" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/">理论力学</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 30, 2025</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="理论力学复习提纲">理论力学复习提纲
+</h2><p>对于拉格朗日量 $\mathscr{L}$, 我们有 Euler-Lagrange 方程</p>
+\[\frac{d}{dt} \left(\frac{\partial \mathscr{L}}{\partial\dot{q}}\right)=\frac{\partial \mathscr{L}}{\partial q}\]<p>对于这一部分而言, 重要的只有两个东西: Noether&rsquo;s 定理和 Hamiltonian 力学.</p>
+<h3 id="noethers-定理">Noether&rsquo;s 定理
+</h3><p>&ldquo;连续的对称性蕴含了守恒量&rdquo;.</p>
+<p>为此, 考察空间 (注意这里只涉及 $q$) 中无穷小变换</p>
+\[\delta_\epsilon q=\epsilon X(q,\dot{q},t)\]<p>其被称作一个对称, 如果</p>
+\[\delta_\epsilon \mathscr{L}=\epsilon \frac{d}{dt}l,\]<p>对于某个 $l$.</p>
+<p>我们希望考虑变分 $\epsilon(t)$. 于是</p>
+\[\begin{align*}
+    \delta_{\epsilon(t)}\mathscr{L}&=\delta_{\epsilon(t)}\mathscr{L}(q,\dot{q},t)\\
+    &=\frac{\partial \mathscr{L}}{\partial q}\cdot \epsilon(t)X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\frac{d}{dt}(\epsilon(t)X)\\
+    &=\epsilon(t)\left(\frac{\partial \mathscr{L}}{\partial q}X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\dot{X}\right)+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X\\
+    &=\epsilon(t)\frac{d}{dt}l+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X.
+\end{align*}\]<p>于是, 我们有</p>
+\[\begin{align*}
+    \delta_{\epsilon(t)}S&=\delta_{\epsilon(t)}\int \mathscr{L}dt\\
+    &=一步分部积分\\
+    &=\int \epsilon(t)\frac{d}{dt}\left(l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X\right)dt.
+\end{align*}\]<p>于是我们得到守恒量</p>
+\[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X.\]<p>以角动量守恒为例, 比方说 $\mathscr{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2)+f(x^2+y^2)$, 对于</p>
+\[(x,y)\mapsto (y\sin\theta+x\cos\theta,-x\sin\theta+y\cos\theta),\]<p>有 $\delta_\epsilon x=\epsilon y$, $\delta_\epsilon y=-\epsilon x$. $\delta_\epsilon \mathscr{L}=0$. 于是我们得到守恒量</p>
+\[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X=-m\dot{x}y+mx\dot{y}.\]<p>这就是角动量守恒.</p>
+<h3 id="hamiltonian-力学">Hamiltonian 力学
+</h3><p>定义啥的都跳过一下人生.</p>
+\[\mathscr{H}=\sum p_i\dot{q_i}-\mathscr{L}.\]<p>通过简单的推导, 我们得到 Hamiltonian 方程组</p>
+\[\begin{cases}
+    \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
+    \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}\]<h4 id="守恒量">守恒量
+</h4><p>于是, 我们可以直接导出, 对于相空间函数 $f$,</p>
+\[\frac{\partial f}{\partial t}+\{f,\mathscr{H}\}=0.\]<p>这也意味着不含时的 $f$ 如果满足 ${f,\mathscr{H}}=0$, 那他是一个守恒量.</p>
+<h4 id="流与-liouville-定理">流与 Liouville 定理
+</h4><p>根据 Hamiltonian 方程组, 我们实际上诱导了相空间的流. 而熟知的微分几何结论告诉我们, 一个流是保体积的等价于其散度为 $0$, $\sum_i\partial_i\dot{x}^i=0$. 于是直接代入方程组我们就能得到相空间上的流是保体积的, 这就是 Liouville 定理.</p>
+<p>从这里我们也能看出, 诸如 Damped Harmonic Oscillator, 所有解最终都会收敛. 他是不保相空间体积的, 因此不能从某个 Lagrangian 力学或 Hamiltonian 力学得到.</p>
+<h4 id="正则变换">正则变换
+</h4><p>如果, $Q_i,P_i$ 在 $q_i,p_i$ 诱导的泊松括号下&quot;表现得跟 $q_i,p_i$ 一样&quot;, 那么 $Q_i,P_i$ 诱导的泊松括号就与 $q_i,p_i$ 诱导的泊松括号相同. 这被称作正则变换. 在不会用 \newcommand 之前, 去打他的数学形式和证明实在麻烦得过分. 因此先摆了, 反正不太难, 也不会产生歧义.</p>
+<p>实际上, 所谓 &ldquo;正则变换&rdquo; 构成了一个群.</p>
+<p>这一章可以结束于解释 &ldquo;如何找一个正则变换&rdquo;. 实际上对于一个一般函数 $G(q,p)$, 考虑流</p>
+\[\begin{cases}
+    \frac{\partial Q_i}{\partial s}=\{Q_i,G\}\\
+    \frac{\partial P_i}{\partial s}=\{P_i,G\}.
+\end{cases}\]<p>这便给出了一个正则变换. 为证明它, 我们只需去计算诸如 $\frac{\partial}{\partial s} {P_i,Q_j}$ 即可.</p>
+<p>我并不确定考试是否会涉及含时的正则变换. 这里有时间再补充吧.</p>
+<h3 id="辛几何">辛几何
+</h3><p>我觉得吧, 定义啥的没什么可讲的</p>
+<h4 id="moment-map">moment map
+</h4><p>碎碎念: 这玩意搞箭图表示论的二重图的时候, 有一个奇怪的概念, 粮食跟我说是来自于辛几何的 moment map, 但我没有太理解kk</p>
+<p>对于李群 $G$ 作用在辛流形上, 其诱导了李代数 $\mathfrak{g}\to \text{Vect}(M)$ 的映射. 这是一个李代数同态.</p>
+<p>那么对于辛作用, $L_{V_A}\omega=0$. 根据魔术公式, $dl_{V_A}\omega=0$.</p>
+<p>于是我们会希望 $V_A$ 是 Hamiltonian 的, 也就是说</p>
+\[l_{V_A}\omega=df_A\]<p>这便给出了一个 Poisson 的映射</p>
+\[\mathscr{H}:\mathfrak{g}\to C^{\infty}(M).\]<p>使得</p>
+\[l_{V_A}\omega=d\mathscr{H}_A,\]\[\{\mathscr{H}_A,\mathscr{H}_B\}=\mathscr{H}_{[A,B]}.\]<p>对偶地, 给出映射</p>
+\[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]<p>这个 $\mu$ 被称为 moment map.</p>
+<h4 id="symplectic-reduction">Symplectic Reduction
+</h4><p>等待施工.</p>
+<h3 id="可积系统">可积系统
+</h3><h4 id="liouville-可积性">Liouville 可积性
+</h4><p>等待施工.</p>
+<p>今天效率不太高 kk.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Jinbz
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -7,7 +7,76 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>理论力学</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina.jpg" alt="Featured image of post 理论力学" /&gt;&lt;h2 id=&#34;理论力学复习提纲&#34;&gt;理论力学复习提纲
+&lt;/h2&gt;&lt;p&gt;对于拉格朗日量 $\mathscr{L}$, 我们有 Euler-Lagrange 方程&lt;/p&gt;
+\[\frac{d}{dt} \left(\frac{\partial \mathscr{L}}{\partial\dot{q}}\right)=\frac{\partial \mathscr{L}}{\partial q}\]&lt;p&gt;对于这一部分而言, 重要的只有两个东西: Noether&amp;rsquo;s 定理和 Hamiltonian 力学.&lt;/p&gt;
+&lt;h3 id=&#34;noethers-定理&#34;&gt;Noether&amp;rsquo;s 定理
+&lt;/h3&gt;&lt;p&gt;&amp;ldquo;连续的对称性蕴含了守恒量&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;为此, 考察空间 (注意这里只涉及 $q$) 中无穷小变换&lt;/p&gt;
+\[\delta_\epsilon q=\epsilon X(q,\dot{q},t)\]&lt;p&gt;其被称作一个对称, 如果&lt;/p&gt;
+\[\delta_\epsilon \mathscr{L}=\epsilon \frac{d}{dt}l,\]&lt;p&gt;对于某个 $l$.&lt;/p&gt;
+&lt;p&gt;我们希望考虑变分 $\epsilon(t)$. 于是&lt;/p&gt;
+\[\begin{align*}
+    \delta_{\epsilon(t)}\mathscr{L}&amp;=\delta_{\epsilon(t)}\mathscr{L}(q,\dot{q},t)\\
+    &amp;=\frac{\partial \mathscr{L}}{\partial q}\cdot \epsilon(t)X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\frac{d}{dt}(\epsilon(t)X)\\
+    &amp;=\epsilon(t)\left(\frac{\partial \mathscr{L}}{\partial q}X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\dot{X}\right)+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X\\
+    &amp;=\epsilon(t)\frac{d}{dt}l+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X.
+\end{align*}\]&lt;p&gt;于是, 我们有&lt;/p&gt;
+\[\begin{align*}
+    \delta_{\epsilon(t)}S&amp;=\delta_{\epsilon(t)}\int \mathscr{L}dt\\
+    &amp;=一步分部积分\\
+    &amp;=\int \epsilon(t)\frac{d}{dt}\left(l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X\right)dt.
+\end{align*}\]&lt;p&gt;于是我们得到守恒量&lt;/p&gt;
+\[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X.\]&lt;p&gt;以角动量守恒为例, 比方说 $\mathscr{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2)+f(x^2+y^2)$, 对于&lt;/p&gt;
+\[(x,y)\mapsto (y\sin\theta+x\cos\theta,-x\sin\theta+y\cos\theta),\]&lt;p&gt;有 $\delta_\epsilon x=\epsilon y$, $\delta_\epsilon y=-\epsilon x$. $\delta_\epsilon \mathscr{L}=0$. 于是我们得到守恒量&lt;/p&gt;
+\[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X=-m\dot{x}y+mx\dot{y}.\]&lt;p&gt;这就是角动量守恒.&lt;/p&gt;
+&lt;h3 id=&#34;hamiltonian-力学&#34;&gt;Hamiltonian 力学
+&lt;/h3&gt;&lt;p&gt;定义啥的都跳过一下人生.&lt;/p&gt;
+\[\mathscr{H}=\sum p_i\dot{q_i}-\mathscr{L}.\]&lt;p&gt;通过简单的推导, 我们得到 Hamiltonian 方程组&lt;/p&gt;
+\[\begin{cases}
+    \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
+    \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}\]&lt;h4 id=&#34;守恒量&#34;&gt;守恒量
+&lt;/h4&gt;&lt;p&gt;于是, 我们可以直接导出, 对于相空间函数 $f$,&lt;/p&gt;
+\[\frac{\partial f}{\partial t}+\{f,\mathscr{H}\}=0.\]&lt;p&gt;这也意味着不含时的 $f$ 如果满足 ${f,\mathscr{H}}=0$, 那他是一个守恒量.&lt;/p&gt;
+&lt;h4 id=&#34;流与-liouville-定理&#34;&gt;流与 Liouville 定理
+&lt;/h4&gt;&lt;p&gt;根据 Hamiltonian 方程组, 我们实际上诱导了相空间的流. 而熟知的微分几何结论告诉我们, 一个流是保体积的等价于其散度为 $0$, $\sum_i\partial_i\dot{x}^i=0$. 于是直接代入方程组我们就能得到相空间上的流是保体积的, 这就是 Liouville 定理.&lt;/p&gt;
+&lt;p&gt;从这里我们也能看出, 诸如 Damped Harmonic Oscillator, 所有解最终都会收敛. 他是不保相空间体积的, 因此不能从某个 Lagrangian 力学或 Hamiltonian 力学得到.&lt;/p&gt;
+&lt;h4 id=&#34;正则变换&#34;&gt;正则变换
+&lt;/h4&gt;&lt;p&gt;如果, $Q_i,P_i$ 在 $q_i,p_i$ 诱导的泊松括号下&amp;quot;表现得跟 $q_i,p_i$ 一样&amp;quot;, 那么 $Q_i,P_i$ 诱导的泊松括号就与 $q_i,p_i$ 诱导的泊松括号相同. 这被称作正则变换. 在不会用 \newcommand 之前, 去打他的数学形式和证明实在麻烦得过分. 因此先摆了, 反正不太难, 也不会产生歧义.&lt;/p&gt;
+&lt;p&gt;实际上, 所谓 &amp;ldquo;正则变换&amp;rdquo; 构成了一个群.&lt;/p&gt;
+&lt;p&gt;这一章可以结束于解释 &amp;ldquo;如何找一个正则变换&amp;rdquo;. 实际上对于一个一般函数 $G(q,p)$, 考虑流&lt;/p&gt;
+\[\begin{cases}
+    \frac{\partial Q_i}{\partial s}=\{Q_i,G\}\\
+    \frac{\partial P_i}{\partial s}=\{P_i,G\}.
+\end{cases}\]&lt;p&gt;这便给出了一个正则变换. 为证明它, 我们只需去计算诸如 $\frac{\partial}{\partial s} {P_i,Q_j}$ 即可.&lt;/p&gt;
+&lt;p&gt;我并不确定考试是否会涉及含时的正则变换. 这里有时间再补充吧.&lt;/p&gt;
+&lt;h3 id=&#34;辛几何&#34;&gt;辛几何
+&lt;/h3&gt;&lt;p&gt;我觉得吧, 定义啥的没什么可讲的&lt;/p&gt;
+&lt;h4 id=&#34;moment-map&#34;&gt;moment map
+&lt;/h4&gt;&lt;p&gt;碎碎念: 这玩意搞箭图表示论的二重图的时候, 有一个奇怪的概念, 粮食跟我说是来自于辛几何的 moment map, 但我没有太理解kk&lt;/p&gt;
+&lt;p&gt;对于李群 $G$ 作用在辛流形上, 其诱导了李代数 $\mathfrak{g}\to \text{Vect}(M)$ 的映射. 这是一个李代数同态.&lt;/p&gt;
+&lt;p&gt;那么对于辛作用, $L_{V_A}\omega=0$. 根据魔术公式, $dl_{V_A}\omega=0$.&lt;/p&gt;
+&lt;p&gt;于是我们会希望 $V_A$ 是 Hamiltonian 的, 也就是说&lt;/p&gt;
+\[l_{V_A}\omega=df_A\]&lt;p&gt;这便给出了一个 Poisson 的映射&lt;/p&gt;
+\[\mathscr{H}:\mathfrak{g}\to C^{\infty}(M).\]&lt;p&gt;使得&lt;/p&gt;
+\[l_{V_A}\omega=d\mathscr{H}_A,\]\[\{\mathscr{H}_A,\mathscr{H}_B\}=\mathscr{H}_{[A,B]}.\]&lt;p&gt;对偶地, 给出映射&lt;/p&gt;
+\[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]&lt;p&gt;这个 $\mu$ 被称为 moment map.&lt;/p&gt;
+&lt;h4 id=&#34;symplectic-reduction&#34;&gt;Symplectic Reduction
+&lt;/h4&gt;&lt;p&gt;等待施工.&lt;/p&gt;
+&lt;h3 id=&#34;可积系统&#34;&gt;可积系统
+&lt;/h3&gt;&lt;h4 id=&#34;liouville-可积性&#34;&gt;Liouville 可积性
+&lt;/h4&gt;&lt;p&gt;等待施工.&lt;/p&gt;
+&lt;p&gt;今天效率不太高 kk.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>测试latex</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
         <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
