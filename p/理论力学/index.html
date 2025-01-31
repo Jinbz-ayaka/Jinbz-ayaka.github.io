@@ -10,10 +10,10 @@
 <meta property='og:description' content="理论力学复习提纲 对于拉格朗日量 $\\mathscr{L}$, 我们有 Euler-Lagrange 方程\n\\[\\frac{d}{dt} \\left(\\frac{\\partial \\mathscr{L}}{\\partial\\dot{q}}\\right)=\\frac{\\partial \\mathscr{L}}{\\partial q}\\]对于这一部分而言, 重要的只有两个东西: Noether&rsquo;s 定理和 Hamiltonian 力学.\nNoether&rsquo;s 定理 &ldquo;连续的对称性蕴含了守恒量&rdquo;.\n">
 <meta property='og:url' content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/'>
 <meta property='og:site_name' content='代数tv'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2.jpg' />
 <meta name="twitter:title" content="理论力学">
 <meta name="twitter:description" content="理论力学复习提纲 对于拉格朗日量 $\\mathscr{L}$, 我们有 Euler-Lagrange 方程\n\\[\\frac{d}{dt} \\left(\\frac{\\partial \\mathscr{L}}{\\partial\\dot{q}}\\right)=\\frac{\\partial \\mathscr{L}}{\\partial q}\\]对于这一部分而言, 重要的只有两个东西: Noether&rsquo;s 定理和 Hamiltonian 力学.\nNoether&rsquo;s 定理 &ldquo;连续的对称性蕴含了守恒量&rdquo;.\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina.jpg' />
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2.jpg' />
     <link rel="shortcut icon" href="/emptyset.png" />
 <style>
      
@@ -304,7 +304,11 @@
   <ol>
     <li><a href="#理论力学复习提纲">理论力学复习提纲</a>
       <ol>
-        <li><a href="#noethers-定理">Noether&rsquo;s 定理</a></li>
+        <li><a href="#noethers-定理">Noether&rsquo;s 定理</a>
+          <ol>
+            <li><a href="#eulers-方程">Euler&rsquo;s 方程</a></li>
+          </ol>
+        </li>
         <li><a href="#hamiltonian-力学">Hamiltonian 力学</a>
           <ol>
             <li><a href="#守恒量">守恒量</a></li>
@@ -316,6 +320,7 @@
           <ol>
             <li><a href="#moment-map">moment map</a></li>
             <li><a href="#symplectic-reduction">Symplectic Reduction</a></li>
+            <li><a href="#hamilton-jacobi-方程">Hamilton-Jacobi 方程</a></li>
           </ol>
         </li>
         <li><a href="#可积系统">可积系统</a>
@@ -340,8 +345,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/">
-                <img src="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina_hu_33ace5b8708a9d96.jpg"
-                        srcset="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina_hu_33ace5b8708a9d96.jpg 800w, /p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina_hu_c32b5d1aa3e77db.jpg 1600w"
+                <img src="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2_hu_33ace5b8708a9d96.jpg"
+                        srcset="/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2_hu_33ace5b8708a9d96.jpg 800w, /p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2_hu_c32b5d1aa3e77db.jpg 1600w"
                         width="800" 
                         height="1221" 
                         loading="lazy"
@@ -417,6 +422,14 @@
 \[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X.\]<p>以角动量守恒为例, 比方说 $\mathscr{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2)+f(x^2+y^2)$, 对于</p>
 \[(x,y)\mapsto (y\sin\theta+x\cos\theta,-x\sin\theta+y\cos\theta),\]<p>有 $\delta_\epsilon x=\epsilon y$, $\delta_\epsilon y=-\epsilon x$. $\delta_\epsilon \mathscr{L}=0$. 于是我们得到守恒量</p>
 \[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X=-m\dot{x}y+mx\dot{y}.\]<p>这就是角动量守恒.</p>
+<h4 id="eulers-方程">Euler&rsquo;s 方程
+</h4><p>计算转动惯量利用积分</p>
+\[I=\int dxdydz\rho\begin{pmatrix}
+    y^2+z^2&-xy&-xz\\
+    -xy&x^2+z^2&-yz\\
+    -xz&-yz&x^2+y^2
+\end{pmatrix}.\]<p>然后由方程</p>
+\[\vec{J}=I\vec{\omega}\]<p>并利用角动量守恒, 即可得到角速度的方程. 这就是 Euler&rsquo;s 方程.</p>
 <h3 id="hamiltonian-力学">Hamiltonian 力学
 </h3><p>定义啥的都跳过一下人生.</p>
 \[\mathscr{H}=\sum p_i\dot{q_i}-\mathscr{L}.\]<p>通过简单的推导, 我们得到 Hamiltonian 方程组</p>
@@ -451,10 +464,34 @@
 \[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]<p>这个 $\mu$ 被称为 moment map.</p>
 <h4 id="symplectic-reduction">Symplectic Reduction
 </h4><p>等待施工.</p>
+<h4 id="hamilton-jacobi-方程">Hamilton-Jacobi 方程
+</h4><p>一个 PDE 的结论. 大致的意思是去解一个 Hamiltonian 系统, 等价于去寻找 Hamilton-Jacobi 方程</p>
+\[\mathscr{H}(q,\frac{\partial F}{\partial q},t)+\frac{\partial F}{\partial t}=0.\]<p>的解.</p>
 <h3 id="可积系统">可积系统
-</h3><h4 id="liouville-可积性">Liouville 可积性
-</h4><p>等待施工.</p>
-<p>今天效率不太高 kk.</p>
+</h3><p>如果去解 $n$ 维简谐振子的 Hamiltonian 方程组,</p>
+\[\mathscr{H}=\sum_{i=1}^n\left(\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2\right)\]<p>我们发现他有 $n$ 个守恒量 $f_i=\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2$. 特别地, 他们是泊松交换的.</p>
+<p>这便引出了 Liouville 的定义.</p>
+<h4 id="liouville-可积性">Liouville 可积性
+</h4><p>一个 Hamiltonian 系统是一个三元组 $(M,\omega,\mathscr{H})$, 其中 $(M,\omega)$ 是一个辛流形, $\mathscr{H}$ 是 $M$ 上一个 Hamiltonian 函数. 如果其上有 $n=\frac{1}{2}\dim M$ 个无关且两两泊松交换的守恒量 $f_1,\cdots,f_n$, 称其为(完全)刘维尔可积.</p>
+<p>于是有 Liouville-Arnold 定理: 若 $(M,\omega,\mathscr{H})$ 完全刘维尔可积, $\dim=2n$, 则对于 $f=(f_1,\cdots,f_n)$ 正则值 $c\in \mathbb{R}^n$, 有</p>
+<ol>
+<li>
+<p>$f^{-1}(c)$ 是在 Hamilton 流下不变的光滑流形.</p>
+</li>
+<li>
+<p>如果 $f^{-1}(c)$ 紧且联通, 那么他微分同胚于 $n$ 维环面.</p>
+</li>
+</ol>
+\[T^n=\{(\phi_1,\cdots,\phi_n)\pmod{2\pi}\}.\]<p>且在这种微分同胚下, 其上的流是线性的.</p>
+\[\frac{d\phi_i}{dt}=\omega_i(c).\]<ol start="3">
+<li>
+<p>存在守恒量 $I_1,\cdots,I_n$, $\omega=\sum_idI_i\wedge d\phi_i$, 在 $f^{-1}(c)$ 的某个邻域内.</p>
+</li>
+<li>
+<p>运动方程可以&quot;由二次型积分&quot;.</p>
+</li>
+</ol>
+<p>这里 $\phi_i$ 称为角坐标, $I_i$ 称为运动坐标.</p>
 
 </section>
 

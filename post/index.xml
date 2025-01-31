@@ -7,13 +7,58 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Farewell, 咚咚谜</title>
+        <link>https://Jinbz-ayaka.github.io/p/farewell-%E5%92%9A%E5%92%9A%E8%B0%9C/</link>
+        <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/farewell-%E5%92%9A%E5%92%9A%E8%B0%9C/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/farewell-%E5%92%9A%E5%92%9A%E8%B0%9C/1.png" alt="Featured image of post Farewell, 咚咚谜" /&gt;&lt;p&gt;2025/1/31 lyric&amp;mdash;: 明天给ddm写首诗, 悼念一下.&lt;/p&gt;
+&lt;p&gt;说了明天写就是明天写.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>电动力学</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/37.jpg" alt="Featured image of post 电动力学" /&gt;&lt;h2 id=&#34;电动力学复习提纲&#34;&gt;电动力学复习提纲
+&lt;/h2&gt;&lt;h3 id=&#34;杂七杂八的公公式式&#34;&gt;杂七杂八的公公式式
+&lt;/h3&gt;&lt;h5 id=&#34;电荷守恒定律&#34;&gt;电荷守恒定律
+&lt;/h5&gt;&lt;h5 id=&#34;coulombs-定律&#34;&gt;Coulomb&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;两个电荷 $q,q&amp;rsquo;$ 在位置 $\vec{r},\vec{r}&amp;rsquo;$, 那么粒子 $q$ 会受到力&lt;/p&gt;
+\[\vec{F}=\frac{1}{4\pi\epsilon_0}qq&#39;\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;h5 id=&#34;amperes-定律-gausss-定律&#34;&gt;Ampere&amp;rsquo;s 定律, Gauss&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;实际上说的就是磁场无源, 旋度由电流产生. 用人话讲就是&lt;/p&gt;
+\[\begin{cases}
+    \nabla\times\vec{B}=\mu_0\vec{j}\\
+    \nabla\cdot\vec{B}=0.
+\end{cases}\]&lt;h5 id=&#34;gauss-定律&#34;&gt;Gauss 定律
+&lt;/h5&gt;&lt;p&gt;一个很好用的定律. 区域表面电场与外法向量点乘的积分等于内部电荷量除以 $\epsilon_0$.&lt;/p&gt;
+&lt;p&gt;这样就可以利用对称性算一些复杂的电场强度.&lt;/p&gt;
+&lt;h5 id=&#34;lorentz-力公式&#34;&gt;Lorentz 力公式
+&lt;/h5&gt;&lt;p&gt;在场里的电荷 $q$, 收到力&lt;/p&gt;
+\[\vec{F}=q(\vec{E}+\vec{v}\times\vec{B}).\]&lt;h5 id=&#34;biot-savart-定律&#34;&gt;Biot-Savart 定律
+&lt;/h5&gt;&lt;p&gt;来自于&lt;/p&gt;
+\[\begin{cases}
+    \nabla\times\vec{B}=\mu_0\vec{j}\\
+    \nabla\cdot\vec{B}=0.
+\end{cases}\]&lt;p&gt;当然, 利用格林函数的技巧, 我们可以解出来&lt;/p&gt;
+\[\vec{B}(\vec{r})=\frac{\mu_0}{4\pi}\int d^3r&#39;\vec{j}(\vec{r}&#39;)\times\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;h5 id=&#34;faradays-定律&#34;&gt;Faraday&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;磁通量的变化产生电场. 具体来说 $S$ 被 $C$ 圈住的表面, 有&lt;/p&gt;
+\[-\frac{d}{dt}\int_Sd\vec{S}\cdot\vec{B}=\int_Cd\vec{r}\cdot\vec{E}.\]&lt;h5 id=&#34;lenzs-定律&#34;&gt;Lenz&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;来拒去留, 大家都是合格的高中生啊.&lt;/p&gt;
+&lt;p&gt;牢记左手给力, 右手给电.&lt;/p&gt;
+&lt;p&gt;其余的部分明天更新.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>理论力学</title>
         <link>https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/</link>
         <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/Furina.jpg" alt="Featured image of post 理论力学" /&gt;&lt;h2 id=&#34;理论力学复习提纲&#34;&gt;理论力学复习提纲
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2.jpg" alt="Featured image of post 理论力学" /&gt;&lt;h2 id=&#34;理论力学复习提纲&#34;&gt;理论力学复习提纲
 &lt;/h2&gt;&lt;p&gt;对于拉格朗日量 $\mathscr{L}$, 我们有 Euler-Lagrange 方程&lt;/p&gt;
 \[\frac{d}{dt} \left(\frac{\partial \mathscr{L}}{\partial\dot{q}}\right)=\frac{\partial \mathscr{L}}{\partial q}\]&lt;p&gt;对于这一部分而言, 重要的只有两个东西: Noether&amp;rsquo;s 定理和 Hamiltonian 力学.&lt;/p&gt;
 &lt;h3 id=&#34;noethers-定理&#34;&gt;Noether&amp;rsquo;s 定理
@@ -36,6 +81,14 @@
 \[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X.\]&lt;p&gt;以角动量守恒为例, 比方说 $\mathscr{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2)+f(x^2+y^2)$, 对于&lt;/p&gt;
 \[(x,y)\mapsto (y\sin\theta+x\cos\theta,-x\sin\theta+y\cos\theta),\]&lt;p&gt;有 $\delta_\epsilon x=\epsilon y$, $\delta_\epsilon y=-\epsilon x$. $\delta_\epsilon \mathscr{L}=0$. 于是我们得到守恒量&lt;/p&gt;
 \[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X=-m\dot{x}y+mx\dot{y}.\]&lt;p&gt;这就是角动量守恒.&lt;/p&gt;
+&lt;h4 id=&#34;eulers-方程&#34;&gt;Euler&amp;rsquo;s 方程
+&lt;/h4&gt;&lt;p&gt;计算转动惯量利用积分&lt;/p&gt;
+\[I=\int dxdydz\rho\begin{pmatrix}
+    y^2+z^2&amp;-xy&amp;-xz\\
+    -xy&amp;x^2+z^2&amp;-yz\\
+    -xz&amp;-yz&amp;x^2+y^2
+\end{pmatrix}.\]&lt;p&gt;然后由方程&lt;/p&gt;
+\[\vec{J}=I\vec{\omega}\]&lt;p&gt;并利用角动量守恒, 即可得到角速度的方程. 这就是 Euler&amp;rsquo;s 方程.&lt;/p&gt;
 &lt;h3 id=&#34;hamiltonian-力学&#34;&gt;Hamiltonian 力学
 &lt;/h3&gt;&lt;p&gt;定义啥的都跳过一下人生.&lt;/p&gt;
 \[\mathscr{H}=\sum p_i\dot{q_i}-\mathscr{L}.\]&lt;p&gt;通过简单的推导, 我们得到 Hamiltonian 方程组&lt;/p&gt;
@@ -70,10 +123,34 @@
 \[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]&lt;p&gt;这个 $\mu$ 被称为 moment map.&lt;/p&gt;
 &lt;h4 id=&#34;symplectic-reduction&#34;&gt;Symplectic Reduction
 &lt;/h4&gt;&lt;p&gt;等待施工.&lt;/p&gt;
+&lt;h4 id=&#34;hamilton-jacobi-方程&#34;&gt;Hamilton-Jacobi 方程
+&lt;/h4&gt;&lt;p&gt;一个 PDE 的结论. 大致的意思是去解一个 Hamiltonian 系统, 等价于去寻找 Hamilton-Jacobi 方程&lt;/p&gt;
+\[\mathscr{H}(q,\frac{\partial F}{\partial q},t)+\frac{\partial F}{\partial t}=0.\]&lt;p&gt;的解.&lt;/p&gt;
 &lt;h3 id=&#34;可积系统&#34;&gt;可积系统
-&lt;/h3&gt;&lt;h4 id=&#34;liouville-可积性&#34;&gt;Liouville 可积性
-&lt;/h4&gt;&lt;p&gt;等待施工.&lt;/p&gt;
-&lt;p&gt;今天效率不太高 kk.&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;如果去解 $n$ 维简谐振子的 Hamiltonian 方程组,&lt;/p&gt;
+\[\mathscr{H}=\sum_{i=1}^n\left(\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2\right)\]&lt;p&gt;我们发现他有 $n$ 个守恒量 $f_i=\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2$. 特别地, 他们是泊松交换的.&lt;/p&gt;
+&lt;p&gt;这便引出了 Liouville 的定义.&lt;/p&gt;
+&lt;h4 id=&#34;liouville-可积性&#34;&gt;Liouville 可积性
+&lt;/h4&gt;&lt;p&gt;一个 Hamiltonian 系统是一个三元组 $(M,\omega,\mathscr{H})$, 其中 $(M,\omega)$ 是一个辛流形, $\mathscr{H}$ 是 $M$ 上一个 Hamiltonian 函数. 如果其上有 $n=\frac{1}{2}\dim M$ 个无关且两两泊松交换的守恒量 $f_1,\cdots,f_n$, 称其为(完全)刘维尔可积.&lt;/p&gt;
+&lt;p&gt;于是有 Liouville-Arnold 定理: 若 $(M,\omega,\mathscr{H})$ 完全刘维尔可积, $\dim=2n$, 则对于 $f=(f_1,\cdots,f_n)$ 正则值 $c\in \mathbb{R}^n$, 有&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$f^{-1}(c)$ 是在 Hamilton 流下不变的光滑流形.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果 $f^{-1}(c)$ 紧且联通, 那么他微分同胚于 $n$ 维环面.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+\[T^n=\{(\phi_1,\cdots,\phi_n)\pmod{2\pi}\}.\]&lt;p&gt;且在这种微分同胚下, 其上的流是线性的.&lt;/p&gt;
+\[\frac{d\phi_i}{dt}=\omega_i(c).\]&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;存在守恒量 $I_1,\cdots,I_n$, $\omega=\sum_idI_i\wedge d\phi_i$, 在 $f^{-1}(c)$ 的某个邻域内.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运动方程可以&amp;quot;由二次型积分&amp;quot;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里 $\phi_i$ 称为角坐标, $I_i$ 称为运动坐标.&lt;/p&gt;
 </description>
         </item>
         <item>
