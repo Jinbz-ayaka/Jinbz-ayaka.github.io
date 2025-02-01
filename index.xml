@@ -7,7 +7,20 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>统计力学</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/37.jpg" alt="Featured image of post 统计力学" /&gt;&lt;h2 id=&#34;统计力学复习提纲&#34;&gt;统计力学复习提纲
+&lt;/h2&gt;&lt;p&gt;不累了, 上班!&lt;/p&gt;
+&lt;p&gt;顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.&lt;/p&gt;
+&lt;p&gt;第一位登场的是: 卡诺热机&lt;/p&gt;
+&lt;h3 id=&#34;卡诺热机&#34;&gt;卡诺热机
+&lt;/h3&gt;</description>
+        </item>
+        <item>
         <title>Farewell, 咚咚谜</title>
         <link>https://Jinbz-ayaka.github.io/p/farewell-%E5%92%9A%E5%92%9A%E8%B0%9C/</link>
         <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
@@ -26,7 +39,7 @@
         <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/37.jpg" alt="Featured image of post 电动力学" /&gt;&lt;h2 id=&#34;电动力学复习提纲&#34;&gt;电动力学复习提纲
 &lt;/h2&gt;&lt;h3 id=&#34;杂七杂八的公公式式&#34;&gt;杂七杂八的公公式式
 &lt;/h3&gt;&lt;h5 id=&#34;电荷守恒定律&#34;&gt;电荷守恒定律
-&lt;/h5&gt;&lt;h5 id=&#34;coulombs-定律&#34;&gt;Coulomb&amp;rsquo;s 定律
+&lt;/h5&gt;\[\frac{\partial \rho}{\partial t}+\nabla\cdot\vec{j}=0.\]&lt;h5 id=&#34;coulombs-定律&#34;&gt;Coulomb&amp;rsquo;s 定律
 &lt;/h5&gt;&lt;p&gt;两个电荷 $q,q&amp;rsquo;$ 在位置 $\vec{r},\vec{r}&amp;rsquo;$, 那么粒子 $q$ 会受到力&lt;/p&gt;
 \[\vec{F}=\frac{1}{4\pi\epsilon_0}qq&#39;\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;h5 id=&#34;amperes-定律-gausss-定律&#34;&gt;Ampere&amp;rsquo;s 定律, Gauss&amp;rsquo;s 定律
 &lt;/h5&gt;&lt;p&gt;实际上说的就是磁场无源, 旋度由电流产生. 用人话讲就是&lt;/p&gt;
@@ -43,13 +56,136 @@
 \[\begin{cases}
     \nabla\times\vec{B}=\mu_0\vec{j}\\
     \nabla\cdot\vec{B}=0.
-\end{cases}\]&lt;p&gt;当然, 利用格林函数的技巧, 我们可以解出来&lt;/p&gt;
+\end{cases}\]&lt;p&gt;其解为&lt;/p&gt;
 \[\vec{B}(\vec{r})=\frac{\mu_0}{4\pi}\int d^3r&#39;\vec{j}(\vec{r}&#39;)\times\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;h5 id=&#34;faradays-定律&#34;&gt;Faraday&amp;rsquo;s 定律
 &lt;/h5&gt;&lt;p&gt;磁通量的变化产生电场. 具体来说 $S$ 被 $C$ 圈住的表面, 有&lt;/p&gt;
 \[-\frac{d}{dt}\int_Sd\vec{S}\cdot\vec{B}=\int_Cd\vec{r}\cdot\vec{E}.\]&lt;h5 id=&#34;lenzs-定律&#34;&gt;Lenz&amp;rsquo;s 定律
 &lt;/h5&gt;&lt;p&gt;来拒去留, 大家都是合格的高中生啊.&lt;/p&gt;
 &lt;p&gt;牢记左手给力, 右手给电.&lt;/p&gt;
 &lt;p&gt;其余的部分明天更新.&lt;/p&gt;
+&lt;h4 id=&#34;maxwells-方程组&#34;&gt;Maxwell&amp;rsquo;s 方程组
+&lt;/h4&gt;\[\begin{cases}
+    \nabla \cdot \vec{E}=\frac{\rho}{\epsilon_0}\\
+    \nabla \cdot \vec{B}=0\\
+    \nabla \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}\\
+    \nabla\times\vec{B}=\mu_0(\vec{j}+\epsilon_0\frac{\partial \vec{E}}{\partial t})
+\end{cases}\]&lt;p&gt;几何地, 考虑&lt;/p&gt;
+\[F=(E_xdx+E_ydy+E_zdz)\wedge dt+B_xdy\wedge dz+B_ydz\wedge dx+B_zdx\wedge dy,\]\[J=\rho/\epsilon_0dt-\mu_0(j_xdx+j_ydy+j_zdz).\]&lt;p&gt;那么 Maxwell&amp;rsquo;s 方程组即&lt;/p&gt;
+\[\begin{cases}
+    dF=0\\
+    d^*F=J.
+\end{cases}\]&lt;p&gt;并顺带一提他的介质中形式为&lt;/p&gt;
+\[\begin{cases}
+    \nabla \cdot \vec{E}=\frac{\rho}{\epsilon}\\
+    \nabla \cdot \vec{B}=0\\
+    \nabla \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}\\
+    \nabla\times\vec{B}=\mu(\vec{j}+\epsilon\frac{\partial \vec{E}}{\partial t})
+\end{cases}\]&lt;p&gt;$\epsilon,\mu$ 为介质的电容率和磁导率.&lt;/p&gt;
+&lt;h4 id=&#34;电磁能和-poynting-矢量&#34;&gt;电磁能和 Poynting 矢量
+&lt;/h4&gt;&lt;p&gt;在区域 $V$ 内, 单位时间的总做功为&lt;/p&gt;
+\[\frac{dW}{dt}=\int_Vd^3r\vec{E}\cdot\vec{j}.\]&lt;p&gt;运用安培定律和法拉第定律, 我们得到&lt;/p&gt;
+\[\vec{E}\cdot\vec{j}=-\epsilon_0\vec{E}\cdot\frac{d\vec{E}}{dt}-\frac{1}{\mu_0}\vec{B}\cdot\frac{d\vec{B}}{dt}-\frac{1}{\mu_0}\nabla\cdot(\vec{E}\times\vec{B}).\]&lt;p&gt;于是,&lt;/p&gt;
+\[\frac{dW}{dt}=-\frac{d}{dt}\int_V\frac{1}{2}(\epsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2)-\frac{1}{\mu_0}\int_{\partial V}d\vec{\sigma}\cdot(\vec{E}\times\vec{B}).\]&lt;p&gt;从这个式子里我们可以读出两个东西. 一个是电磁场总能量&lt;/p&gt;
+\[U=\frac{1}{2}\int_V\epsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2,\]&lt;p&gt;另一个是 Poynting 矢量&lt;/p&gt;
+\[\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B},\]&lt;p&gt;这个描述了能量流出 $V$ 的大小与方向.&lt;/p&gt;
+\[\frac{dW}{dt}=-\frac{dU}{dt}-\int_{\partial V}d\vec{\sigma}\cdot \vec{S}.\]&lt;p&gt;Remark: 在没有做功的条件下, 取 $u=\frac{1}{2}\left(\epsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2\right)$. 有&lt;/p&gt;
+\[\frac{\partial u}{\partial t}+\nabla\cdot\vec{S}=0.\]&lt;h3 id=&#34;更多的电动力学&#34;&gt;更多的电动力学
+&lt;/h3&gt;&lt;h4 id=&#34;电磁波&#34;&gt;电磁波
+&lt;/h4&gt;&lt;p&gt;现在考虑真空.&lt;/p&gt;
+\[\begin{cases}
+    \nabla \cdot \vec{E}=0\\
+    \nabla \cdot \vec{B}=0\\
+    \nabla \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}\\
+    \nabla\times\vec{B}=\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}
+\end{cases}\]\[\mu_0\epsilon_0=1/c^2.\]&lt;p&gt;总之可以化简为&lt;/p&gt;
+\[\begin{cases}
+    \frac{1}{c^2}\frac{\partial^2\vec{E}}{\partial t^2}-\nabla^2\vec{E}=0\\
+    \frac{1}{c^2}\frac{\partial^2\vec{B}}{\partial t^2}-\nabla^2\vec{B}=0
+\end{cases}\]&lt;p&gt;也就是说, 电磁波沿着光速前进.&lt;/p&gt;
+&lt;p&gt;不妨考虑复的解, 原方程其拥有解&lt;/p&gt;
+\[\begin{cases}
+    \vec{E}=\vec{E}_0e^{i(\vec{k}\cdot\vec{r}-\omega t)}\\
+    \vec{B}=\vec{B}_0e^{i(\vec{k}\cdot\vec{r}-\omega t)}
+\end{cases},\]&lt;p&gt;其中 $\omega=ck, k=|\vec{k}|$.&lt;/p&gt;
+&lt;p&gt;那么考虑 Maxwell 方程组, 有&lt;/p&gt;
+\[c\vec{B}_0=\hat{k}\times\vec{E}_0, \hat{k}=\frac{\vec{k}}{|\vec{k}|}.\]&lt;p&gt;利用傅里叶分析我们可以得出其全部的解&lt;/p&gt;
+\[\vec{E}=\frac{1}{(2\pi)^3}\int d^3k\vec{\mathcal{E}}(\vec{k})e^{i(\vec{k}\cdot\vec{r}-\omega t)}\]\[\vec{B}=\frac{1}{(2\pi)^3}\int d^3k\frac{1}{c}\left(\hat{k}\times\vec{\mathcal{E}}(\vec{k})\right)e^{i(\vec{k}\cdot\vec{r}-\omega t)}.\]&lt;p&gt;于是通过&lt;/p&gt;
+\[U=\frac{\epsilon_0}{2}\int d^3r\left(|\operatorname{Re}\vec{\hat{E}}|^2+|\operatorname{Re}c\vec{\hat{B}}|^2\right).\]&lt;p&gt;最终计算得&lt;/p&gt;
+\[U=\frac{\epsilon_0}{2}\frac{1}{(2\pi)^3}\int d^3k|\vec{\mathcal{E}}(\vec{k})|^2.\]&lt;h4 id=&#34;电磁辐射&#34;&gt;电磁辐射
+&lt;/h4&gt;&lt;p&gt;我以前居然还会这个? 不可思议.&lt;/p&gt;
+&lt;p&gt;大致意思就是, 静止电荷产生电场, 稳定电流产生磁场. 加速电荷会产生辐射.&lt;/p&gt;
+&lt;p&gt;利用 Green 函数的方式 (具体方式得见讲义kk), 对于某一个运动的电荷, 我们可以解出 $\vec{E},\vec{B}$ 垂直于电磁波传播方向. 那么 Poynting 矢量&lt;/p&gt;
+\[\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B}\simeq \frac{\mu_0}{16\pi^2r^2c}|\hat{r}\times\ddot{\vec{p}}|^2\hat{r}.\]&lt;p&gt;于是总的辐射能量&lt;/p&gt;
+\[P=\int_{S^2}d\hat{\theta}\cdot\vec{S}=\frac{\mu_0}{16\pi^2r^2c}|\ddot{p}|^2\int_{S^2}\sin^2\theta=\frac{\mu_0}{6\pi c}|\ddot{p}|^2.\]&lt;h3 id=&#34;相对论&#34;&gt;相对论
+&lt;/h3&gt;&lt;p&gt;Minkowski 时空 $(1,3)$ 和洛伦兹变换的定义可以跳过一下人生.&lt;/p&gt;
+&lt;p&gt;考虑 Lorentz boost&lt;/p&gt;
+\[\Lambda=\begin{pmatrix}
+\gamma&amp;-\gamma v/c&amp;&amp;\\
+-\gamma v/c&amp;\gamma&amp;&amp;\\
+&amp;&amp;1&amp;\\
+&amp;&amp;&amp;1
+\end{pmatrix}.\]&lt;p&gt;回顾先前定义的 $2$-形式 $F$, 取&lt;/p&gt;
+\[F=\frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}dx^\mu\wedge dx^\nu.\]\[F_{\mu\nu}=\begin{pmatrix}
+0&amp;-E_x/c&amp;-E_y/c&amp;-E_z/c\\
+E_x/c&amp;0&amp;B_z&amp;-B_y\\
+E_y/c&amp;-B_z&amp;0&amp;B_x\\
+E_z/c&amp;B_y&amp;-B_x&amp;0
+\end{pmatrix}.\]&lt;p&gt;于是&lt;/p&gt;
+\[\tilde{F}_{\mu\nu}=\Lambda F_{\mu\nu}\Lambda\]&lt;p&gt;如此便能解出来 $\tilde{F}_{\mu\nu}$.&lt;/p&gt;
+\[\begin{cases}
+    \tilde{E}_x=E_x\\
+    \tilde{E}_y=\gamma(E_y+vB_z)\\
+    \tilde{E}_z=\gamma(E_z-vB_y)\\
+    \tilde{B}_x=B_x\\
+    \tilde{B}_y=\gamma(B_z-vE_z/c^2)\\
+    \tilde{B}_z=\gamma(B_z+vE_y/c^2).
+\end{cases}\]&lt;p&gt;同样地, 考虑 $1$-形式 $J$, 利用 $\tilde J=\Lambda^*(J)$ 也可以得到 $J$ 的形式.&lt;/p&gt;
+\[\begin{cases}
+    \tilde{\rho}=\gamma(\rho+j_xv/c^2)\\
+    \tilde{j}_x=\gamma(j_x+\rho v)\\
+    \tilde{j}_y=j_y\\
+    \tilde{j}_z=j_z
+\end{cases}\]&lt;p&gt;实际上, 利用 Hodge 星 $*$ 与 Lorentz 变换交换的特点, 我们可以看出如下方程依旧满足&lt;/p&gt;
+\[\begin{cases}
+    d\tilde{F}=0\\
+    d^*\tilde{F}=\tilde{J}.
+\end{cases}\]&lt;p&gt;这也就是说, Lorentz 变换把 Maxwell 方程的解变换到 Maxwell 方程的解.&lt;/p&gt;
+&lt;h3 id=&#34;pde&#34;&gt;PDE!
+&lt;/h3&gt;&lt;p&gt;解决静电学问题时, 我们希望解方程&lt;/p&gt;
+\[\nabla^2 \phi=-\rho/\epsilon_0.\]&lt;p&gt;在某种特定边界条件下的解. 通常, 是 Dirichlet 和 Neumann 两种边界条件.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Dirichlet: $\phi|_S=f$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Neumann: $\partial_{\hat{n}}\phi|_S=g$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意, 在如上边界条件下, 其解唯一.&lt;/p&gt;
+&lt;h4 id=&#34;相电法我不记得是不是这么翻译了&#34;&gt;相电法(我不记得是不是这么翻译了)
+&lt;/h4&gt;&lt;p&gt;通过假设待求部分外界的电荷的方式, 凑出边界条件并直接算出答案.&lt;/p&gt;
+&lt;h4 id=&#34;green-函数&#34;&gt;Green 函数
+&lt;/h4&gt;&lt;p&gt;记 $G=G(\hat{r},\hat{r}&amp;rsquo;)$ 满足&lt;/p&gt;
+\[\nabla^2&#39;G(\hat{r},\hat{r}&#39;)=-4\pi\delta(\hat{r}-\hat{r}&#39;).\]&lt;p&gt;也就是说&lt;/p&gt;
+\[G(\hat{r},\hat{r}&#39;)=\frac{1}{|\vec{r}-\vec{r}&#39;|}+F(\hat{r},\hat{r}&#39;).\]\[\nabla^2\phi=0.\]&lt;p&gt;于是&lt;/p&gt;
+\[\begin{align*}
+    \phi(\vec{r})&amp;=\int_Vd^3r&#39;\phi(\vec{r}&#39;)\delta(\vec{r}-\vec{r}&#39;)=-\frac{1}{4\pi}\int_Vd^3r&#39;\phi(\vec{r}&#39;){\nabla^2}&#39;G(\vec{r},\vec{r}&#39;)\\
+    &amp;=两次分部积分\\
+    &amp;=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\vec{r}&#39;)G(\vec{r},\vec{r}&#39;)+\frac{1}{4\pi}\int_S[\partial&#39;_{\hat{n}}\phi(\vec{r}&#39;)G(\vec{r},\vec{r}&#39;)-\phi(\vec{r}&#39;)\partial&#39;_{\hat{n}}G(\vec{r},\vec{r}&#39;)].
+\end{align*}\]&lt;p&gt;从而对于&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Direchlet 边界条件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;取 $G$ 满足 $G(\vec{r},\vec{r}&amp;rsquo;)=0$, $\hat{r}&amp;rsquo;\in S$, 那么&lt;/p&gt;
+\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\vec{r}&#39;)G(\vec{r},\vec{r}&#39;)-\frac{1}{4\pi}\int_S\phi(\vec{r}&#39;)\partial_{\hat{n}}&#39;G(\vec{r},\vec{r}&#39;).\]&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Neumann 边界条件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;取 $G$ 满足 $\partial_{\hat{n}}&amp;lsquo;G(\vec{r},\vec{r}&amp;rsquo;)=-4\pi/A$, $A=Area(S)$, 那么&lt;/p&gt;
+\[\phi(r)=\frac{1}{A}\int_S\phi(\hat{r}&#39;)+\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\hat{r}&#39;)G(\hat{r},\hat{r}&#39;)+\frac{1}{\pi}\int_S\partial_{\hat{n}}&#39;\phi(\hat{r}&#39;)G(\hat{r},\hat{r}&#39;).\]&lt;h4 id=&#34;电多极扩张&#34;&gt;电多极扩张(?)
+&lt;/h4&gt;\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\frac{\rho(\vec{r}&#39;)}{|\vec{r}-\vec{r}&#39;|}.\]&lt;p&gt;我们要考虑 $r&amp;raquo;r&amp;rsquo;$ 情况下的 $\phi$. 其大致操作是利用&lt;/p&gt;
+\[\frac{1}{|\vec{r}-\vec{r}&#39;|}=\frac{1}{r\sqrt{1-2(\hat{r}\cdot\hat{r}&#39;)\frac{r&#39;}{r}+\left(\frac{r&#39;}{r}\right)^2}}.\]&lt;p&gt;通过 Legendre 多项式展开. 最终得到对于 $\vec{P}=\int_Vd^3r&amp;rsquo;\rho(\vec{r}&amp;rsquo;)\vec{r}&amp;rsquo;$, 有&lt;/p&gt;
+\[\phi(\vec{r})\simeq\frac{1}{4\pi\epsilon_0}\frac{\vec{P}\cdot\vec{r}}{r^3},r&gt;&gt;0.\]&lt;p&gt;于是&lt;/p&gt;
+\[\vec{E}=-\nabla\phi(\vec{r})\simeq \frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}.\]&lt;p&gt;zhenlei..&lt;/p&gt;
 </description>
         </item>
         <item>
