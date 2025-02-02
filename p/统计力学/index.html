@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="统计力学复习提纲 不累了, 上班!\n顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.\n第一位登场的是: 卡诺热机\n卡诺热机 ">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="统计力学复习提纲 不累了, 上班!\n顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.\n开始应该从物理量说起 我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\\mu$.\n">
 <title>统计力学</title>
 
 <link rel='canonical' href='https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="统计力学">
-<meta property='og:description' content="统计力学复习提纲 不累了, 上班!\n顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.\n第一位登场的是: 卡诺热机\n卡诺热机 ">
+<meta property='og:description' content="统计力学复习提纲 不累了, 上班!\n顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.\n开始应该从物理量说起 我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\\mu$.\n">
 <meta property='og:url' content='https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/'>
 <meta property='og:site_name' content='代数tv'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/37.jpg' />
 <meta name="twitter:title" content="统计力学">
-<meta name="twitter:description" content="统计力学复习提纲 不累了, 上班!\n顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.\n第一位登场的是: 卡诺热机\n卡诺热机 "><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="统计力学复习提纲 不累了, 上班!\n顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.\n开始应该从物理量说起 我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\\mu$.\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/37.jpg' />
     <link rel="shortcut icon" href="/emptyset.png" />
 <style>
@@ -304,7 +304,24 @@
   <ol>
     <li><a href="#统计力学复习提纲">统计力学复习提纲</a>
       <ol>
-        <li><a href="#卡诺热机">卡诺热机</a></li>
+        <li><a href="#开始应该从物理量说起">开始应该从物理量说起</a>
+          <ol>
+            <li><a href="#能量">能量</a></li>
+            <li><a href="#热力学第零第一定律">热力学第零、第一定律</a></li>
+            <li><a href="#热容">热容</a></li>
+          </ol>
+        </li>
+        <li><a href="#carnot-热机">Carnot 热机</a>
+          <ol>
+            <li><a href="#熵">熵</a></li>
+            <li><a href="#gibbs-duham-关系">Gibbs-Duham 关系</a></li>
+          </ol>
+        </li>
+        <li><a href="#杂项">杂项</a>
+          <ol>
+            <li><a href="#我觉得可能会给出来公式的东西">我觉得可能会给出来公式的东西</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -379,9 +396,63 @@
     <h2 id="统计力学复习提纲">统计力学复习提纲
 </h2><p>不累了, 上班!</p>
 <p>顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.</p>
-<p>第一位登场的是: 卡诺热机</p>
-<h3 id="卡诺热机">卡诺热机
-</h3>
+<h3 id="开始应该从物理量说起">开始应该从物理量说起
+</h3><p>我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\mu$.</p>
+<p>对于一个理想气体, 其满足条件</p>
+\[PV=kNT(=nRT).\]<p>$k$ 为 Boltzmann 常数</p>
+\[k=1.3\times 10^{-23}J/K.\]<h4 id="能量">能量
+</h4><p>对于 $3$ 维理想气体, 我们可以通过对某个面的撞击, 来计算其压强. 不妨设其撞击为完全弹性, 以 $\vec{v}$ 速度撞上墙壁的粒子会以 $\vec{v}-2v_1e_1$ 速度返回. 运用动量定理我们得到其压强</p>
+\[P=\frac{m}{V}\int d^3vv^2_1f(v)=\frac{mN}{3V}\langle |\vec{v}|^2\rangle=\frac{2N\langle E\rangle}{3V}.\]<p>于是我们得到估计</p>
+\[E=\frac{3}{2}PV=\frac{3}{2}kNT.\]<p>Ex: $2$ 维理想气体, $U=PV$.</p>
+<h4 id="热力学第零第一定律">热力学第零、第一定律
+</h4><p>第零定律说的是: 平衡态是一个等价关系, 如果 $A$ 与 $B,C$ 都处在平衡态, 那么 $B$ 与 $C$ 处在平衡态. 做题的话不太重要.</p>
+<p>第一定律就很有魅力时刻了. 能量守恒定律. 总结为</p>
+\[dU=\delta W+\delta Q.\]<p>这里由于只有 $U$ 是仅与粒子直接相关的物理量, 可以享用 $d$. 外界做功 $W$ 与外界供热 $Q$ 都只能使用 $\delta$.</p>
+<p>考虑绝热过程, $\delta Q=0$. 对于理想气体不需要考虑其化学能变化, $\delta W=-PdV$. 那么</p>
+\[\frac{3}{2}kN(VdP+PdV)=\frac{3}{2}kNdT=dU=\delta W=-PdV.\]<p>于是我们得到 $5PdV+3VdP=0$. 也就是说, 在绝热过程中 $PV^{5/3}$ 是一个守恒量.</p>
+<h4 id="热容">热容
+</h4>\[C_V=\left(\frac{\partial U}{\partial T}\right)_V\]\[C_P=\left(\frac{\partial U}{\partial T}\right)_P\]<p>也许可以把这个忘了, 接下来会给一个更好的定义.</p>
+<h3 id="carnot-热机">Carnot 热机
+</h3><p>由 恒温膨胀-绝热膨胀-恒温收缩-绝热收缩 四个准静止过程组成. 我们可以直接计算恒温过程中供给与释放的能量, 算出这个过程中总的能量变化. 总的来说, $\eta=1-\frac{T_C}{T_H}.$</p>
+<p>Ex: 对于 恒压膨胀-绝热膨胀-恒压收缩-绝热收缩 四个准静止过程组成的热机, 其机械效率 $\eta=1-\left(\frac{P_L}{P_H}\right)^{2/5}.$</p>
+<p>Remark: 在两个恒温库 $T_C,T_H$ 给定的条件下, Carnot 热机的效率最高.</p>
+<h4 id="熵">熵
+</h4><p>在准静止过程循环中 $\oint \frac{\delta Q}{T}=0$. 因此, 如果去考虑将整个过程拆成微小的准静止循环, 可以定义熵为是一个满足</p>
+\[dS=\frac{\delta Q}{T}\]<p>的函数.</p>
+<p>热力学第二定律: (都不太重要, 看看就行)</p>
+<p>Kelvin 版本: 没有从物质中取出热量并将其完全转化为功的机器.</p>
+<p>Clausius 版本: 没有让热量从较冷的库中流向较热的库的过程.</p>
+<p>Clausius 定理: 对于任意整个过程都可以定义温度的过程,</p>
+\[\oint \frac{\delta Q}{T}\leq 0.\]<p>且取等时循环是准静止 (可逆) 的.</p>
+<h4 id="gibbs-duham-关系">Gibbs-Duham 关系
+</h4>\[dU=TdS-PdV+\sum_i \mu_idN_i\]<p>你会发现 $TdS=\delta Q$, $-PdV+\sum_i \mu_idN_i=\delta W$. 我们会希望能量 $U$ 是关于 $S,V,N_i$ 齐次的函数. 因此</p>
+\[S\frac{\partial U}{\partial S}+V\frac{\partial U}{\partial V}+\sum_iN_i\frac{\partial U}{\partial N_i}=U.\]<p>因此</p>
+\[U=TS-PV+\sum_i \mu_iN_i.\]<p>这就是 Gibbs-Duham 方程. 对这个式子求 $d$, 得到</p>
+\[SdT-VdP+\sum_i N_id\mu_i=0\]<p>这就是 Gibbs-Duham 关系. 这些在后面将 $S$ 用系综表示为 $E,N,V$ 或 $E,N,P$ 之后, 可以用来反解 $T,P(V),\mu$.</p>
+<h3 id="杂项">杂项
+</h3><h4 id="我觉得可能会给出来公式的东西">我觉得可能会给出来公式的东西
+</h4><ol>
+<li>
+<p>‌Helmholtz 自由能 $A=U-TS=\sum \mu_iN_i-PV$.</p>
+</li>
+<li>
+<p>Gibbs 自由能 $G=A+PV=\sum \mu_iN_i$.</p>
+</li>
+<li>
+<p>焓 $H=U+PV=TS+\sum \mu_iN_i$.</p>
+</li>
+<li>
+<p>泛势能 $\Omega_G=U-TS-\sum \mu_iN_i=-PV$.</p>
+</li>
+</ol>
+<p>那些个 Maxwell&rsquo;s 关系不知道用不用, 我觉得不会考</p>
+<p>好, 现在将熵 $S$ 视为 $N,P,T$ 或 $N,V,T$ 的关系, 我们得到热容公式</p>
+\[C_V=T\left(\frac{\partial S}{\partial T}\right)_{V,N},\]\[C_P=T\left(\frac{\partial S}{\partial T}\right)_{P,N}.\]<p>还有恒温压缩能力(isothermal compressibility) $K_T=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{T}$,</p>
+<p>绝热压缩能力(adiabatic compressibility) $K_S=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{S}$.</p>
+<p>热扩张系数(coefficient of thermal expansion) $\alpha=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{P,N}$.</p>
+<p>我是不是给这部分太多画面了&hellip;</p>
+<p>今天白天开始写系综, 统计力学相当重要的一部分()</p>
+
 </section>
 
 

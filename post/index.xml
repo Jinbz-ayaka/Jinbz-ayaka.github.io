@@ -16,9 +16,63 @@
         <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/37.jpg" alt="Featured image of post 统计力学" /&gt;&lt;h2 id=&#34;统计力学复习提纲&#34;&gt;统计力学复习提纲
 &lt;/h2&gt;&lt;p&gt;不累了, 上班!&lt;/p&gt;
 &lt;p&gt;顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.&lt;/p&gt;
-&lt;p&gt;第一位登场的是: 卡诺热机&lt;/p&gt;
-&lt;h3 id=&#34;卡诺热机&#34;&gt;卡诺热机
-&lt;/h3&gt;</description>
+&lt;h3 id=&#34;开始应该从物理量说起&#34;&gt;开始应该从物理量说起
+&lt;/h3&gt;&lt;p&gt;我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\mu$.&lt;/p&gt;
+&lt;p&gt;对于一个理想气体, 其满足条件&lt;/p&gt;
+\[PV=kNT(=nRT).\]&lt;p&gt;$k$ 为 Boltzmann 常数&lt;/p&gt;
+\[k=1.3\times 10^{-23}J/K.\]&lt;h4 id=&#34;能量&#34;&gt;能量
+&lt;/h4&gt;&lt;p&gt;对于 $3$ 维理想气体, 我们可以通过对某个面的撞击, 来计算其压强. 不妨设其撞击为完全弹性, 以 $\vec{v}$ 速度撞上墙壁的粒子会以 $\vec{v}-2v_1e_1$ 速度返回. 运用动量定理我们得到其压强&lt;/p&gt;
+\[P=\frac{m}{V}\int d^3vv^2_1f(v)=\frac{mN}{3V}\langle |\vec{v}|^2\rangle=\frac{2N\langle E\rangle}{3V}.\]&lt;p&gt;于是我们得到估计&lt;/p&gt;
+\[E=\frac{3}{2}PV=\frac{3}{2}kNT.\]&lt;p&gt;Ex: $2$ 维理想气体, $U=PV$.&lt;/p&gt;
+&lt;h4 id=&#34;热力学第零第一定律&#34;&gt;热力学第零、第一定律
+&lt;/h4&gt;&lt;p&gt;第零定律说的是: 平衡态是一个等价关系, 如果 $A$ 与 $B,C$ 都处在平衡态, 那么 $B$ 与 $C$ 处在平衡态. 做题的话不太重要.&lt;/p&gt;
+&lt;p&gt;第一定律就很有魅力时刻了. 能量守恒定律. 总结为&lt;/p&gt;
+\[dU=\delta W+\delta Q.\]&lt;p&gt;这里由于只有 $U$ 是仅与粒子直接相关的物理量, 可以享用 $d$. 外界做功 $W$ 与外界供热 $Q$ 都只能使用 $\delta$.&lt;/p&gt;
+&lt;p&gt;考虑绝热过程, $\delta Q=0$. 对于理想气体不需要考虑其化学能变化, $\delta W=-PdV$. 那么&lt;/p&gt;
+\[\frac{3}{2}kN(VdP+PdV)=\frac{3}{2}kNdT=dU=\delta W=-PdV.\]&lt;p&gt;于是我们得到 $5PdV+3VdP=0$. 也就是说, 在绝热过程中 $PV^{5/3}$ 是一个守恒量.&lt;/p&gt;
+&lt;h4 id=&#34;热容&#34;&gt;热容
+&lt;/h4&gt;\[C_V=\left(\frac{\partial U}{\partial T}\right)_V\]\[C_P=\left(\frac{\partial U}{\partial T}\right)_P\]&lt;p&gt;也许可以把这个忘了, 接下来会给一个更好的定义.&lt;/p&gt;
+&lt;h3 id=&#34;carnot-热机&#34;&gt;Carnot 热机
+&lt;/h3&gt;&lt;p&gt;由 恒温膨胀-绝热膨胀-恒温收缩-绝热收缩 四个准静止过程组成. 我们可以直接计算恒温过程中供给与释放的能量, 算出这个过程中总的能量变化. 总的来说, $\eta=1-\frac{T_C}{T_H}.$&lt;/p&gt;
+&lt;p&gt;Ex: 对于 恒压膨胀-绝热膨胀-恒压收缩-绝热收缩 四个准静止过程组成的热机, 其机械效率 $\eta=1-\left(\frac{P_L}{P_H}\right)^{2/5}.$&lt;/p&gt;
+&lt;p&gt;Remark: 在两个恒温库 $T_C,T_H$ 给定的条件下, Carnot 热机的效率最高.&lt;/p&gt;
+&lt;h4 id=&#34;熵&#34;&gt;熵
+&lt;/h4&gt;&lt;p&gt;在准静止过程循环中 $\oint \frac{\delta Q}{T}=0$. 因此, 如果去考虑将整个过程拆成微小的准静止循环, 可以定义熵为是一个满足&lt;/p&gt;
+\[dS=\frac{\delta Q}{T}\]&lt;p&gt;的函数.&lt;/p&gt;
+&lt;p&gt;热力学第二定律: (都不太重要, 看看就行)&lt;/p&gt;
+&lt;p&gt;Kelvin 版本: 没有从物质中取出热量并将其完全转化为功的机器.&lt;/p&gt;
+&lt;p&gt;Clausius 版本: 没有让热量从较冷的库中流向较热的库的过程.&lt;/p&gt;
+&lt;p&gt;Clausius 定理: 对于任意整个过程都可以定义温度的过程,&lt;/p&gt;
+\[\oint \frac{\delta Q}{T}\leq 0.\]&lt;p&gt;且取等时循环是准静止 (可逆) 的.&lt;/p&gt;
+&lt;h4 id=&#34;gibbs-duham-关系&#34;&gt;Gibbs-Duham 关系
+&lt;/h4&gt;\[dU=TdS-PdV+\sum_i \mu_idN_i\]&lt;p&gt;你会发现 $TdS=\delta Q$, $-PdV+\sum_i \mu_idN_i=\delta W$. 我们会希望能量 $U$ 是关于 $S,V,N_i$ 齐次的函数. 因此&lt;/p&gt;
+\[S\frac{\partial U}{\partial S}+V\frac{\partial U}{\partial V}+\sum_iN_i\frac{\partial U}{\partial N_i}=U.\]&lt;p&gt;因此&lt;/p&gt;
+\[U=TS-PV+\sum_i \mu_iN_i.\]&lt;p&gt;这就是 Gibbs-Duham 方程. 对这个式子求 $d$, 得到&lt;/p&gt;
+\[SdT-VdP+\sum_i N_id\mu_i=0\]&lt;p&gt;这就是 Gibbs-Duham 关系. 这些在后面将 $S$ 用系综表示为 $E,N,V$ 或 $E,N,P$ 之后, 可以用来反解 $T,P(V),\mu$.&lt;/p&gt;
+&lt;h3 id=&#34;杂项&#34;&gt;杂项
+&lt;/h3&gt;&lt;h4 id=&#34;我觉得可能会给出来公式的东西&#34;&gt;我觉得可能会给出来公式的东西
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;‌Helmholtz 自由能 $A=U-TS=\sum \mu_iN_i-PV$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gibbs 自由能 $G=A+PV=\sum \mu_iN_i$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;焓 $H=U+PV=TS+\sum \mu_iN_i$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;泛势能 $\Omega_G=U-TS-\sum \mu_iN_i=-PV$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那些个 Maxwell&amp;rsquo;s 关系不知道用不用, 我觉得不会考&lt;/p&gt;
+&lt;p&gt;好, 现在将熵 $S$ 视为 $N,P,T$ 或 $N,V,T$ 的关系, 我们得到热容公式&lt;/p&gt;
+\[C_V=T\left(\frac{\partial S}{\partial T}\right)_{V,N},\]\[C_P=T\left(\frac{\partial S}{\partial T}\right)_{P,N}.\]&lt;p&gt;还有恒温压缩能力(isothermal compressibility) $K_T=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{T}$,&lt;/p&gt;
+&lt;p&gt;绝热压缩能力(adiabatic compressibility) $K_S=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{S}$.&lt;/p&gt;
+&lt;p&gt;热扩张系数(coefficient of thermal expansion) $\alpha=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{P,N}$.&lt;/p&gt;
+&lt;p&gt;我是不是给这部分太多画面了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;今天白天开始写系综, 统计力学相当重要的一部分()&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Farewell, 咚咚谜</title>
@@ -57,7 +111,9 @@
     \nabla\times\vec{B}=\mu_0\vec{j}\\
     \nabla\cdot\vec{B}=0.
 \end{cases}\]&lt;p&gt;其解为&lt;/p&gt;
-\[\vec{B}(\vec{r})=\frac{\mu_0}{4\pi}\int d^3r&#39;\vec{j}(\vec{r}&#39;)\times\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;h5 id=&#34;faradays-定律&#34;&gt;Faraday&amp;rsquo;s 定律
+\[\vec{B}(\vec{r})=\frac{\mu_0}{4\pi}\int d^3r&#39;\vec{j}(\vec{r}&#39;)\times\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;p&gt;并顺带一提矢量势(vector potential)&lt;/p&gt;
+\[\vec{A}=\frac{\mu_0}{4\pi}\int d^3r&#39;\frac{\vec{j}}{|\vec{r}-\vec{r}&#39;|}.\]\[\nabla\times\vec{A}=\vec{B}.\]&lt;p&gt;上次博士资格考试的那个积分是什么一坨啊&amp;hellip;&lt;/p&gt;
+&lt;h5 id=&#34;faradays-定律&#34;&gt;Faraday&amp;rsquo;s 定律
 &lt;/h5&gt;&lt;p&gt;磁通量的变化产生电场. 具体来说 $S$ 被 $C$ 圈住的表面, 有&lt;/p&gt;
 \[-\frac{d}{dt}\int_Sd\vec{S}\cdot\vec{B}=\int_Cd\vec{r}\cdot\vec{E}.\]&lt;h5 id=&#34;lenzs-定律&#34;&gt;Lenz&amp;rsquo;s 定律
 &lt;/h5&gt;&lt;p&gt;来拒去留, 大家都是合格的高中生啊.&lt;/p&gt;
@@ -232,8 +288,8 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
     \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
     \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
 \end{cases}\]&lt;h4 id=&#34;守恒量&#34;&gt;守恒量
-&lt;/h4&gt;&lt;p&gt;于是, 我们可以直接导出, 对于相空间函数 $f$,&lt;/p&gt;
-\[\frac{\partial f}{\partial t}+\{f,\mathscr{H}\}=0.\]&lt;p&gt;这也意味着不含时的 $f$ 如果满足 ${f,\mathscr{H}}=0$, 那他是一个守恒量.&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;于是, 我们可以直接导出, 对于相空间函数 $f$, 在运动曲线上,&lt;/p&gt;
+\[\frac{d f}{d t}+\{f,\mathscr{H}\}=0.\]&lt;p&gt;这也意味着不含时的 $f$ 如果满足 ${ f,\mathscr{H} }=0$, 那他是一个守恒量.&lt;/p&gt;
 &lt;h4 id=&#34;流与-liouville-定理&#34;&gt;流与 Liouville 定理
 &lt;/h4&gt;&lt;p&gt;根据 Hamiltonian 方程组, 我们实际上诱导了相空间的流. 而熟知的微分几何结论告诉我们, 一个流是保体积的等价于其散度为 $0$, $\sum_i\partial_i\dot{x}^i=0$. 于是直接代入方程组我们就能得到相空间上的流是保体积的, 这就是 Liouville 定理.&lt;/p&gt;
 &lt;p&gt;从这里我们也能看出, 诸如 Damped Harmonic Oscillator, 所有解最终都会收敛. 他是不保相空间体积的, 因此不能从某个 Lagrangian 力学或 Hamiltonian 力学得到.&lt;/p&gt;
@@ -434,8 +490,7 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 不告而别的你 就算为了我着想&lt;br&gt;
 这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Jinbz-ayaka.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
@@ -530,13 +585,11 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 &lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;br&gt;
-— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;tables&#34;&gt;Tables
 &lt;/h2&gt;&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
 &lt;table&gt;
