@@ -72,7 +72,80 @@
 &lt;p&gt;热扩张系数(coefficient of thermal expansion) $\alpha=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{P,N}$.&lt;/p&gt;
 &lt;p&gt;我是不是给这部分太多画面了&amp;hellip;&lt;/p&gt;
 &lt;p&gt;今天白天开始写系综, 统计力学相当重要的一部分()&lt;/p&gt;
-</description>
+&lt;h3 id=&#34;系综&#34;&gt;系综
+&lt;/h3&gt;&lt;p&gt;统计力学中有一个重要的概念, 叫熵 $S$. 系综是计算熵的一个重要手段.&lt;/p&gt;
+&lt;p&gt;Boltzmann 定义的熵, 是&lt;/p&gt;
+\[S=k\log W,\]&lt;p&gt;其中 $W$ 是满足某宏观状态的总的微观状态的数量. 可以看出这个数字越大, 熵就越大&lt;/p&gt;
+&lt;p&gt;我们可以考虑&lt;/p&gt;
+\[S=k\log (Vol(\Gamma_{phys})),\]&lt;p&gt;但是你可以发现在相空间 $d^{nN}qd^{nN}p$, 某个固定的宏观状态的体积 $Vol(\Gamma_{phys})$ 通常是 $0$. 为此, 我们要小心地进行处理.&lt;/p&gt;
+&lt;h4 id=&#34;微正则系综&#34;&gt;微正则系综
+&lt;/h4&gt;&lt;p&gt;大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个&lt;strong&gt;独立系统&lt;/strong&gt;. 于是, 存在守恒量 $H$&lt;/p&gt;
+&lt;p&gt;考虑 $V\subset \mathbb{R}^3$ 中的理想气体, 微观状态相空间是 $\Gamma=V^N\times \mathbb{R}^{3N}/S_N$.&lt;/p&gt;
+&lt;p&gt;由于那些只是粒子置换的不同微观状态是相同的, 我们需要除以 $S_N$.&lt;/p&gt;
+&lt;p&gt;于是计算微观状态. 我们应当考虑&lt;/p&gt;
+\[\Gamma_{phys}=\Gamma_{dE}(E)=\{\vec{x}\in\Gamma|E\leq H\leq E+dE\}.\]&lt;p&gt;你可能会觉得这个 $dE$ 的选取会很大地影响熵的计算. 但实际上不会. 我将在下面进行解释.&lt;/p&gt;
+&lt;p&gt;还有一个问题: 针对 $d^{3N}qd^{3N}p$ 的积分是有量纲的, 我们显然不能对着量纲求对数. 为了修复它, 我们采取的方式是在度量中除以若干拥有量纲 $[q][p]$ 的 $h$, 度量成为&lt;/p&gt;
+\[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.\]\[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.\]&lt;p&gt;运用球面积公式, 我们有&lt;/p&gt;
+\[Vol(S^{3N-1}_{2mdE}(2mE))=\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]&lt;p&gt;于是&lt;/p&gt;
+\[Vol(\Gamma_{phys})=\frac{V^N(2m\pi E)}{h^{3N}N!}\sqrt{\frac{m}{2E}}\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]\[=\frac{V^N(2\pi mE)^{3N/2}dE}{h^{3N}N!\Gamma(3N/2)E}.\]&lt;p&gt;注意: $\sqrt{\frac{m}{2E}}$ 项是由 $2mE\leq \sum p^2\leq 2mE+2mdE$, 大致来说 $dE=\sqrt{1/2mE}d\hat{n}$.&lt;/p&gt;
+&lt;p&gt;于是, 利用估计&lt;/p&gt;
+\[N&gt;&gt;|\log\frac{dE}{E}|, \log N!\simeq N\log N-N,\]&lt;p&gt;我们得到&lt;/p&gt;
+\[S=k\log(Vol(\Gamma_{phys}))\to kN\log\left(\frac{V(4\pi mE)^{3/2}}{3^{3/2}N^{5/2}h^3}\right)+\frac{5}{2}kN\]&lt;p&gt;Remark: Ronno 同志在这里至少犯了两个笔误. 一个是估计 $N&amp;raquo;|\log\frac{dE}{E}|$ 时将绝对值打在了里面, 另一个是熵的结果中 $\log$ 内部分 $N$ 的次数应当是 $5/2$ 而非 $1/2$.&lt;/p&gt;
+&lt;p&gt;Remark: 如果在计算积分的时候采用度量 $\frac{d^{3N}qd^{3N}p}{h^{3N}}$ 而非 $\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}$, 会引发 Gibbs&amp;rsquo; paradox. 具体说来, 当 $V,N,E$ 都扩展为两倍时, 熵 $S$ 不是恰好扩展为两倍.&lt;/p&gt;
+&lt;p&gt;还记得 $E=\frac{3}{2}kNT$ 吗? 这要利用 $PV=kNT$, 它是一个经验公式. 而现在利用&lt;/p&gt;
+\[dU=TdS-PdV+\sum_i \mu_idN_i\]&lt;p&gt;我们可以求出 $T$,&lt;/p&gt;
+\[T=\left(\frac{\partial S}{\partial E}\right)^{-1}_{N,V}=\frac{2E}{3kN}.\]&lt;p&gt;同样地, 可以求出压强&lt;/p&gt;
+\[P=T\left(\frac{\partial S}{\partial V}\right)_{E,N}=\frac{kNT}{V}.\]&lt;p&gt;化学能&lt;/p&gt;
+\[\mu=-T\left(\frac{\partial S}{\partial N}\right)_{E,V}=kT\log\left(\frac{V(4\pi mE)^{3/2}}{3^{3/2}N^{5/2}h^3}\right)=kT\log\left[\frac{N\lambda^3}{V}\right].\]&lt;p&gt;其中 $\lambda=\sqrt{\frac{h^2}{2\pi mkT}}$ 称为热力学波长.&lt;/p&gt;
+&lt;h4 id=&#34;正则系综&#34;&gt;正则系综
+&lt;/h4&gt;&lt;p&gt;大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个&lt;strong&gt;和外界交换热量的&lt;/strong&gt;系统. 于是, 他们应当与外界处在一个平衡态.&lt;/p&gt;
+&lt;p&gt;考虑总能量 $E_T$, 对于某系统 $1$ (也许我们要考虑的是某粒子), 其外界系统 $2$, 他处在能量 $E_1$ 的情况总共有 $\tilde{\Omega}_2(E_T-E_1)\tilde{\Omega}_1(E_1)$ 种可能性.&lt;/p&gt;
+&lt;p&gt;假设 $E_1&amp;lt; &amp;lt;E_T$, 我们有&lt;/p&gt;
+\[\tilde{\Omega}_2(E_T-E_1)dE_T=e^{\frac{1}{k}S_2(E_T-E_1)}.\]&lt;p&gt;而在我们的定义下, $\frac{\partial S_2}{\partial E}=\frac{1}{T}$. 于是我们得到&lt;/p&gt;
+\[\tilde{\Omega}_2(E_T-E_1)dE_T\approx e^{\frac{1}{k}S_2(E_T)}e^{-\frac{1}{kT}E_1}=C\cdot e^{-\beta E_1}\]&lt;p&gt;$\beta=\frac{1}{kT}$.&lt;/p&gt;
+&lt;p&gt;这大概说的就是, 某粒子在&amp;quot;外势&amp;quot;被给定的条件下, 他能量处在 $E_1$ 的某一块的概率大概拥有权重 $e^{-\beta E_1}$.&lt;/p&gt;
+&lt;p&gt;那我们自然地就会考虑去算概率, 第一步就要计算权重和:&lt;/p&gt;
+\[Z_C:=\int dE_1\tilde{\Omega}_1(E_1)e^{-\beta E_1}.\]&lt;p&gt;还请注意 $Z_C$ 是无量纲的. 这便是所谓的正则配分函数(partition function).&lt;/p&gt;
+&lt;p&gt;那么, 去算能量就相对容易,&lt;/p&gt;
+\[\langle\epsilon\rangle=\frac{1}{Z_C}\int E_1\tilde{\Omega}_1(E_1)e^{-\beta E_1}dE_1=\frac{1}{Z_C}\frac{\partial Z_C}{\partial \beta}=\frac{\partial \log(Z_C)}{\partial \beta}.\]&lt;p&gt;总能量,&lt;/p&gt;
+\[\langle E\rangle=N\langle\epsilon\rangle.\]&lt;p&gt;熵怎么办?&lt;/p&gt;
+&lt;p&gt;实际上, 通过一串复杂的计算, 我们有&lt;/p&gt;
+\[A=\langle E\rangle-T\langle S\rangle=-kT\log Z_C\]&lt;p&gt;于是,&lt;/p&gt;
+\[\langle S\rangle=k\beta\langle E\rangle+k\log Z_C.\]&lt;p&gt;回到理想气体, 有&lt;/p&gt;
+\[Z_C=\frac{1}{N!h^{3N}}\int_{V^N}d^{3N}q\int d^{3N}pe^{-\frac{\beta\sum |\vec{p}_i|^2}{2m}}=\frac{1}{N!}(Z_1)^N.\]&lt;p&gt;而&lt;/p&gt;
+\[Z_1=\frac{1}{h^3}\int d^3qd^3pe^{-\frac{\beta|\vec{p}|^2}{2m}}=\frac{V}{h^3}\left(\frac{2\pi m}{\beta}\right)^{3/2}.\]&lt;p&gt;那么&lt;/p&gt;
+\[\langle E\rangle=\frac{3N}{2\beta}=\frac{3}{2}kNT.\]\[\begin{align*}
+    \langle S\rangle&amp;=k\beta\langle E\rangle+k\log Z_C\\
+    &amp;=\frac{5}{2}kN+kN\log\left(\frac{V}{h^3N}\left(\frac{2\pi m}{\beta}\right)^{3/2}\right)\\
+    &amp;=\frac{5}{2}kN+kN\log\left(\frac{V}{h^3N}\left(\frac{4\pi m\langle E\rangle}{3N}\right)^{3/2}\right).
+\end{align*}\]&lt;p&gt;而这个与微正则系综的答案吻合.&lt;/p&gt;
+&lt;h4 id=&#34;巨正则系综&#34;&gt;巨正则系综
+&lt;/h4&gt;&lt;p&gt;大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个&lt;strong&gt;既可以和外界交换粒子, 又可以和外界交换热量的&lt;/strong&gt;系统. 于是, 他们应当与外界处在一个平衡态.&lt;/p&gt;
+&lt;p&gt;这一次我们要估计 $\tilde{\Omega}_2(E_T-E_1,N_T-N_1)$. 有同样的讨论, 我们得到&lt;/p&gt;
+\[\tilde{\Omega}_2(E_T-E_1,N_T-N_1)\approx C\cdot e^{-\beta(E_1-\mu N_1)}.\]&lt;p&gt;于是, 对于系统 $1$, 他拥有粒子数 $N_1$, 能量 $E_1$ 的概率为&lt;/p&gt;
+\[\frac{\tilde{\Omega}_1(E_1,N_1)e^{-\beta(E_1-\mu N_1)}}{Z_G}dE_1.\]&lt;p&gt;于是, 我们定义巨正则配分函数:&lt;/p&gt;
+\[Z_G=\sum_{N_1=0}^{N_T}e^{\beta\mu N_1}Z_C(T,N_1),Z_C(T,N_1)=\int dE_1\tilde{\Omega}(E_1,N_1)e^{-\beta E_1}.\]&lt;p&gt;这个求和也可以做 $N_T=\infty$ 估计.&lt;/p&gt;
+&lt;p&gt;$z=e^{\beta\mu}$ 称为逸度(fugacity), 描述的是粒子往外逃逸的程度. 顺便一提致人受伤构成犯罪的处有期徒刑3-7年, 致人死亡的7年以上.&lt;/p&gt;
+&lt;p&gt;考虑巨势能 $\Omega_G=A-\mu N=-PV$, 同样经过复杂的计算, 我们有&lt;/p&gt;
+\[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}\]&lt;p&gt;回到理想气体, 有&lt;/p&gt;
+\[Z(N,T)=\frac{1}{N!}V^N\int e^{-\beta H}dp^{3N}=\frac{1}{N!}(Z(T))^N.\]&lt;p&gt;于是,&lt;/p&gt;
+\[Z_G(N,T)=\sum_{N=0}^\infty z^NZ(N,T)=\sum_{n=0}^{\infty} \frac{z^nZ(T)^n}{n!}=\exp(zZ(T)).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}=zZ(T)=zV\left(\frac{2\pi m}{h^2}\right)^{3/2}(\beta)^{-3/2}.\]&lt;p&gt;因此, 我们将 $PV=\Omega_G=-kT\log Z_G=-kTzZ(T)$ 转换为了 $V,T,\mu$ 的函数. 于是, 根据 Maxwell 关系&lt;/p&gt;
+\[\begin{align*}
+    S&amp;=-\left(\frac{\partial \Omega_G}{\partial T}\right)_{V,\mu}\\
+    &amp;=若干步计算\\
+    &amp;=\frac{5}{2}k\langle N\rangle-\frac{\mu\langle N\rangle}{T}.
+\end{align*}\]&lt;p&gt;而我们可以反过来, 用 $T,V,\langle N\rangle$ 来表示 $\mu$:&lt;/p&gt;
+\[\mu=kT\log \frac{\langle N\rangle h^3}{V(2\pi mkT)^{3/2}}.\]&lt;p&gt;于是我们最终得到&lt;/p&gt;
+\[\begin{align*}
+    S&amp;=\frac{5}{2}k\langle N\rangle+k\langle N\rangle\log \frac{V(2\pi mkT)^{3/2}}{\langle N\rangle h^3}\\
+    &amp;=\frac{5}{2}k\langle N\rangle+k\langle N\rangle\log \frac{V(4\pi mkE)^{3/2}}{3^{3/2}\langle N\rangle^{5/2} h^3}
+\end{align*}\]&lt;p&gt;而这个与微正则系综、正则系综的答案都吻合。&lt;/p&gt;
+&lt;p&gt;现在你已经是系综高手了.&lt;/p&gt;
+&lt;h3 id=&#34;量子系统&#34;&gt;量子系统
+&lt;/h3&gt;&lt;p&gt;有一个该写在系综里的, 不知道写在哪好&lt;/p&gt;
+&lt;p&gt;对于一个有 $m$ 个态的系统, 态 $i$ 的概率为 $p_i$, 则其 Shannon 熵&lt;/p&gt;
+\[S=-\sum_i p_i\log p_i.\]&lt;p&gt;而对于量子系统, 某密度矩阵正交化后拥有特征值 $\lambda_i$, 则定义其 von Neumann 熵为&lt;/p&gt;
+\[S=-\sum_i \lambda_i\log \lambda_i.\]</description>
         </item>
         <item>
         <title>Farewell, 咚咚谜</title>
@@ -995,10 +1068,10 @@ $$</description>
         </item>
         <item>
         <title>归档</title>
-        <link>https://Jinbz-ayaka.github.io/%E5%BD%92%E6%A1%A3/</link>
+        <link>https://Jinbz-ayaka.github.io/archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/%E5%BD%92%E6%A1%A3/</guid>
+        <guid>https://Jinbz-ayaka.github.io/archives/</guid>
         <description>&lt;p&gt;归档页面怎么写呢?&lt;/p&gt;
 &lt;h1 id=&#34;归档&#34;&gt;归档
 &lt;/h1&gt;&lt;h2 id=&#34;2025&#34;&gt;2025
