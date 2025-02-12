@@ -314,13 +314,14 @@
             <li><a href="#守恒量">守恒量</a></li>
             <li><a href="#流与-liouville-定理">流与 Liouville 定理</a></li>
             <li><a href="#正则变换">正则变换</a></li>
+            <li><a href="#hamilton-jacobi-方程">Hamilton-Jacobi 方程</a></li>
           </ol>
         </li>
         <li><a href="#辛几何">辛几何</a>
           <ol>
             <li><a href="#moment-map">moment map</a></li>
             <li><a href="#symplectic-reduction">Symplectic Reduction</a></li>
-            <li><a href="#hamilton-jacobi-方程">Hamilton-Jacobi 方程</a></li>
+            <li><a href="#回到-hamilton-jacobi-方程">回到 Hamilton-Jacobi 方程</a></li>
           </ol>
         </li>
         <li><a href="#可积系统">可积系统</a>
@@ -451,7 +452,9 @@
     \frac{\partial P_i}{\partial s}=\{P_i,G\}.
 \end{cases}\]<p>这便给出了一个正则变换. 为证明它, 我们只需去计算诸如 $\frac{\partial}{\partial s} {P_i,Q_j}$ 即可.</p>
 <p>我并不确定考试是否会涉及含时的正则变换. 这里有时间再补充吧.</p>
-<h3 id="辛几何">辛几何
+<h4 id="hamilton-jacobi-方程">Hamilton-Jacobi 方程
+</h4><p>$W(q,t)$ 是一个极值曲线, 那么他满足 Hamilton-Jacobi 方程</p>
+\[\frac{\partial W}{\partial t}+\mathscr{H}(q,\frac{\partial W}{\partial q},t)=0.\]<h3 id="辛几何">辛几何
 </h3><p>我觉得吧, 定义啥的没什么可讲的</p>
 <h4 id="moment-map">moment map
 </h4><p>碎碎念: 这玩意搞箭图表示论的二重图的时候, 有一个奇怪的概念, 粮食跟我说是来自于辛几何的 moment map, 但我没有太理解kk</p>
@@ -464,7 +467,7 @@
 \[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]<p>这个 $\mu$ 被称为 moment map.</p>
 <h4 id="symplectic-reduction">Symplectic Reduction
 </h4><p>等待施工.</p>
-<h4 id="hamilton-jacobi-方程">Hamilton-Jacobi 方程
+<h4 id="回到-hamilton-jacobi-方程">回到 Hamilton-Jacobi 方程
 </h4><p>一个 PDE 的结论. 大致的意思是去解一个 Hamiltonian 系统, 等价于去寻找 Hamilton-Jacobi 方程</p>
 \[\mathscr{H}(q,\frac{\partial F}{\partial q},t)+\frac{\partial F}{\partial t}=0.\]<p>的解.</p>
 <h3 id="可积系统">可积系统

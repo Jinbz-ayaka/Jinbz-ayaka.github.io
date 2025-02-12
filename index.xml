@@ -295,7 +295,7 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
 &lt;/h4&gt;&lt;p&gt;通过假设待求部分外界的电荷的方式, 凑出边界条件并直接算出答案.&lt;/p&gt;
 &lt;h4 id=&#34;green-函数&#34;&gt;Green 函数
 &lt;/h4&gt;&lt;p&gt;记 $G=G(\hat{r},\hat{r}&amp;rsquo;)$ 满足&lt;/p&gt;
-\[\nabla^2&#39;G(\hat{r},\hat{r}&#39;)=-4\pi\delta(\hat{r}-\hat{r}&#39;).\]&lt;p&gt;也就是说&lt;/p&gt;
+\[{\nabla^2}&#39;G(\hat{r},\hat{r}&#39;)=-4\pi\delta(\hat{r}-\hat{r}&#39;).\]&lt;p&gt;也就是说&lt;/p&gt;
 \[G(\hat{r},\hat{r}&#39;)=\frac{1}{|\vec{r}-\vec{r}&#39;|}+F(\hat{r},\hat{r}&#39;).\]\[\nabla^2\phi=0.\]&lt;p&gt;于是&lt;/p&gt;
 \[\begin{align*}
     \phi(\vec{r})&amp;=\int_Vd^3r&#39;\phi(\vec{r}&#39;)\delta(\vec{r}-\vec{r}&#39;)=-\frac{1}{4\pi}\int_Vd^3r&#39;\phi(\vec{r}&#39;){\nabla^2}&#39;G(\vec{r},\vec{r}&#39;)\\
@@ -314,8 +314,14 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
 &lt;/h4&gt;\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\frac{\rho(\vec{r}&#39;)}{|\vec{r}-\vec{r}&#39;|}.\]&lt;p&gt;我们要考虑 $r&amp;raquo;r&amp;rsquo;$ 情况下的 $\phi$. 其大致操作是利用&lt;/p&gt;
 \[\frac{1}{|\vec{r}-\vec{r}&#39;|}=\frac{1}{r\sqrt{1-2(\hat{r}\cdot\hat{r}&#39;)\frac{r&#39;}{r}+\left(\frac{r&#39;}{r}\right)^2}}.\]&lt;p&gt;通过 Legendre 多项式展开. 最终得到对于 $\vec{P}=\int_Vd^3r&amp;rsquo;\rho(\vec{r}&amp;rsquo;)\vec{r}&amp;rsquo;$, 有&lt;/p&gt;
 \[\phi(\vec{r})\simeq\frac{1}{4\pi\epsilon_0}\frac{\vec{P}\cdot\vec{r}}{r^3},r&gt;&gt;0.\]&lt;p&gt;于是&lt;/p&gt;
-\[\vec{E}=-\nabla\phi(\vec{r})\simeq \frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}.\]&lt;p&gt;zhenlei..&lt;/p&gt;
-</description>
+\[\vec{E}=-\nabla\phi(\vec{r})\simeq \frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}.\]&lt;h5 id=&#34;电偶极子&#34;&gt;电偶极子
+&lt;/h5&gt;&lt;p&gt;考虑电偶极子动量&lt;/p&gt;
+\[\vec{P}=\int_V d^3r&#39;\rho(\vec{r}&#39;)\vec{r}&#39;.\]&lt;p&gt;对于电荷量 $\pm q$, 距离为 $d$ 的两电荷. 总电荷量是 $0$. 他们的电偶极子动量&lt;/p&gt;
+\[\vec{P}=q\vec{d}.\]&lt;p&gt;于是, 总电场&lt;/p&gt;
+\[\vec{E}(\vec{r})\approx\frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}. r&gt;&gt;0\]&lt;h5 id=&#34;磁偶极子&#34;&gt;磁偶极子
+&lt;/h5&gt;&lt;p&gt;考虑磁偶极子动量&lt;/p&gt;
+\[\vec{m}=\frac{1}{2}\int_V d^3r&#39;\vec{r}&#39;\times\vec{j}(\vec{r}&#39;).\]&lt;p&gt;于是, 总磁场&lt;/p&gt;
+\[\vec{B}=\frac{\mu_0}{4\pi}\frac{3(\hat{r}\cdot\vec{m})\hat{r}-\vec{m}}{r^3}, r&gt;&gt;0.\]</description>
         </item>
         <item>
         <title>理论力学</title>
@@ -375,7 +381,9 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
     \frac{\partial P_i}{\partial s}=\{P_i,G\}.
 \end{cases}\]&lt;p&gt;这便给出了一个正则变换. 为证明它, 我们只需去计算诸如 $\frac{\partial}{\partial s} {P_i,Q_j}$ 即可.&lt;/p&gt;
 &lt;p&gt;我并不确定考试是否会涉及含时的正则变换. 这里有时间再补充吧.&lt;/p&gt;
-&lt;h3 id=&#34;辛几何&#34;&gt;辛几何
+&lt;h4 id=&#34;hamilton-jacobi-方程&#34;&gt;Hamilton-Jacobi 方程
+&lt;/h4&gt;&lt;p&gt;$W(q,t)$ 是一个极值曲线, 那么他满足 Hamilton-Jacobi 方程&lt;/p&gt;
+\[\frac{\partial W}{\partial t}+\mathscr{H}(q,\frac{\partial W}{\partial q},t)=0.\]&lt;h3 id=&#34;辛几何&#34;&gt;辛几何
 &lt;/h3&gt;&lt;p&gt;我觉得吧, 定义啥的没什么可讲的&lt;/p&gt;
 &lt;h4 id=&#34;moment-map&#34;&gt;moment map
 &lt;/h4&gt;&lt;p&gt;碎碎念: 这玩意搞箭图表示论的二重图的时候, 有一个奇怪的概念, 粮食跟我说是来自于辛几何的 moment map, 但我没有太理解kk&lt;/p&gt;
@@ -388,7 +396,7 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
 \[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]&lt;p&gt;这个 $\mu$ 被称为 moment map.&lt;/p&gt;
 &lt;h4 id=&#34;symplectic-reduction&#34;&gt;Symplectic Reduction
 &lt;/h4&gt;&lt;p&gt;等待施工.&lt;/p&gt;
-&lt;h4 id=&#34;hamilton-jacobi-方程&#34;&gt;Hamilton-Jacobi 方程
+&lt;h4 id=&#34;回到-hamilton-jacobi-方程&#34;&gt;回到 Hamilton-Jacobi 方程
 &lt;/h4&gt;&lt;p&gt;一个 PDE 的结论. 大致的意思是去解一个 Hamiltonian 系统, 等价于去寻找 Hamilton-Jacobi 方程&lt;/p&gt;
 \[\mathscr{H}(q,\frac{\partial F}{\partial q},t)+\frac{\partial F}{\partial t}=0.\]&lt;p&gt;的解.&lt;/p&gt;
 &lt;h3 id=&#34;可积系统&#34;&gt;可积系统
