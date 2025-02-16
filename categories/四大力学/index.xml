@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>四大力学 on 代数tv</title>
+        <link>https://Jinbz-ayaka.github.io/categories/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/</link>
+        <description>Recent content in 四大力学 on 代数tv</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Jinbz</copyright>
+        <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>统计力学</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/37.jpg" alt="Featured image of post 统计力学" /&gt;&lt;h2 id=&#34;统计力学复习提纲&#34;&gt;统计力学复习提纲
+&lt;/h2&gt;&lt;p&gt;不累了, 上班!&lt;/p&gt;
+&lt;p&gt;顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.&lt;/p&gt;
+&lt;h3 id=&#34;开始应该从物理量说起&#34;&gt;开始应该从物理量说起
+&lt;/h3&gt;&lt;p&gt;我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\mu$.&lt;/p&gt;
+&lt;p&gt;对于一个理想气体, 其满足条件&lt;/p&gt;
+\[PV=kNT(=nRT).\]&lt;p&gt;$k$ 为 Boltzmann 常数&lt;/p&gt;
+\[k=1.3\times 10^{-23}J/K.\]&lt;h4 id=&#34;能量&#34;&gt;能量
+&lt;/h4&gt;&lt;p&gt;对于 $3$ 维理想气体, 我们可以通过对某个面的撞击, 来计算其压强. 不妨设其撞击为完全弹性, 以 $\vec{v}$ 速度撞上墙壁的粒子会以 $\vec{v}-2v_1e_1$ 速度返回. 运用动量定理我们得到其压强&lt;/p&gt;
+\[P=\frac{m}{V}\int d^3vv^2_1f(v)=\frac{mN}{3V}\langle |\vec{v}|^2\rangle=\frac{2N\langle E\rangle}{3V}.\]&lt;p&gt;于是我们得到估计&lt;/p&gt;
+\[E=\frac{3}{2}PV=\frac{3}{2}kNT.\]&lt;p&gt;Ex: $2$ 维理想气体, $U=PV$.&lt;/p&gt;
+&lt;h4 id=&#34;热力学第零第一定律&#34;&gt;热力学第零、第一定律
+&lt;/h4&gt;&lt;p&gt;第零定律说的是: 平衡态是一个等价关系, 如果 $A$ 与 $B,C$ 都处在平衡态, 那么 $B$ 与 $C$ 处在平衡态. 做题的话不太重要.&lt;/p&gt;
+&lt;p&gt;第一定律就很有魅力时刻了. 能量守恒定律. 总结为&lt;/p&gt;
+\[dU=\delta W+\delta Q.\]&lt;p&gt;这里由于只有 $U$ 是仅与粒子直接相关的物理量, 可以享用 $d$. 外界做功 $W$ 与外界供热 $Q$ 都只能使用 $\delta$.&lt;/p&gt;
+&lt;p&gt;考虑绝热过程, $\delta Q=0$. 对于理想气体不需要考虑其化学能变化, $\delta W=-PdV$. 那么&lt;/p&gt;
+\[\frac{3}{2}kN(VdP+PdV)=\frac{3}{2}kNdT=dU=\delta W=-PdV.\]&lt;p&gt;于是我们得到 $5PdV+3VdP=0$. 也就是说, 在绝热过程中 $PV^{5/3}$ 是一个守恒量.&lt;/p&gt;
+&lt;h4 id=&#34;热容&#34;&gt;热容
+&lt;/h4&gt;\[C_V=\left(\frac{\partial U}{\partial T}\right)_V\]\[C_P=\left(\frac{\partial U}{\partial T}\right)_P\]&lt;p&gt;也许可以把这个忘了, 接下来会给一个更好的定义.&lt;/p&gt;
+&lt;h3 id=&#34;carnot-热机&#34;&gt;Carnot 热机
+&lt;/h3&gt;&lt;p&gt;由 恒温膨胀-绝热膨胀-恒温收缩-绝热收缩 四个准静止过程组成. 我们可以直接计算恒温过程中供给与释放的能量, 算出这个过程中总的能量变化. 总的来说, $\eta=1-\frac{T_C}{T_H}.$&lt;/p&gt;
+&lt;p&gt;Ex: 对于 恒压膨胀-绝热膨胀-恒压收缩-绝热收缩 四个准静止过程组成的热机, 其机械效率 $\eta=1-\left(\frac{P_L}{P_H}\right)^{2/5}.$&lt;/p&gt;
+&lt;p&gt;Remark: 在两个恒温库 $T_C,T_H$ 给定的条件下, Carnot 热机的效率最高.&lt;/p&gt;
+&lt;h4 id=&#34;熵&#34;&gt;熵
+&lt;/h4&gt;&lt;p&gt;在准静止过程循环中 $\oint \frac{\delta Q}{T}=0$. 因此, 如果去考虑将整个过程拆成微小的准静止循环, 可以定义熵为是一个满足&lt;/p&gt;
+\[dS=\frac{\delta Q}{T}\]&lt;p&gt;的函数.&lt;/p&gt;
+&lt;p&gt;热力学第二定律: (都不太重要, 看看就行)&lt;/p&gt;
+&lt;p&gt;Kelvin 版本: 没有从物质中取出热量并将其完全转化为功的机器.&lt;/p&gt;
+&lt;p&gt;Clausius 版本: 没有让热量从较冷的库中流向较热的库的过程.&lt;/p&gt;
+&lt;p&gt;Clausius 定理: 对于任意整个过程都可以定义温度的过程,&lt;/p&gt;
+\[\oint \frac{\delta Q}{T}\leq 0.\]&lt;p&gt;且取等时循环是准静止 (可逆) 的.&lt;/p&gt;
+&lt;h4 id=&#34;gibbs-duham-关系&#34;&gt;Gibbs-Duham 关系
+&lt;/h4&gt;\[dU=TdS-PdV+\sum_i \mu_idN_i\]&lt;p&gt;你会发现 $TdS=\delta Q$, $-PdV+\sum_i \mu_idN_i=\delta W$. 我们会希望能量 $U$ 是关于 $S,V,N_i$ 齐次的函数. 因此&lt;/p&gt;
+\[S\frac{\partial U}{\partial S}+V\frac{\partial U}{\partial V}+\sum_iN_i\frac{\partial U}{\partial N_i}=U.\]&lt;p&gt;因此&lt;/p&gt;
+\[U=TS-PV+\sum_i \mu_iN_i.\]&lt;p&gt;这就是 Gibbs-Duham 方程. 对这个式子求 $d$, 得到&lt;/p&gt;
+\[SdT-VdP+\sum_i N_id\mu_i=0\]&lt;p&gt;这就是 Gibbs-Duham 关系. 这些在后面将 $S$ 用系综表示为 $E,N,V$ 或 $E,N,P$ 之后, 可以用来反解 $T,P(V),\mu$.&lt;/p&gt;
+&lt;h3 id=&#34;杂项&#34;&gt;杂项
+&lt;/h3&gt;&lt;h4 id=&#34;我觉得可能会给出来公式的东西&#34;&gt;我觉得可能会给出来公式的东西
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;‌Helmholtz 自由能 $A=U-TS=\sum \mu_iN_i-PV$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gibbs 自由能 $G=A+PV=\sum \mu_iN_i$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;焓 $H=U+PV=TS+\sum \mu_iN_i$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;泛势能 $\Omega_G=U-TS-\sum \mu_iN_i=-PV$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那些个 Maxwell&amp;rsquo;s 关系不知道用不用, 我觉得不会考&lt;/p&gt;
+&lt;p&gt;好, 现在将熵 $S$ 视为 $N,P,T$ 或 $N,V,T$ 的关系, 我们得到热容公式&lt;/p&gt;
+\[C_V=T\left(\frac{\partial S}{\partial T}\right)_{V,N},\]\[C_P=T\left(\frac{\partial S}{\partial T}\right)_{P,N}.\]&lt;p&gt;还有恒温压缩能力(isothermal compressibility) $K_T=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{T}$,&lt;/p&gt;
+&lt;p&gt;绝热压缩能力(adiabatic compressibility) $K_S=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{S}$.&lt;/p&gt;
+&lt;p&gt;热扩张系数(coefficient of thermal expansion) $\alpha=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{P,N}$.&lt;/p&gt;
+&lt;p&gt;我是不是给这部分太多画面了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;今天白天开始写系综, 统计力学相当重要的一部分()&lt;/p&gt;
+&lt;h3 id=&#34;系综&#34;&gt;系综
+&lt;/h3&gt;&lt;p&gt;统计力学中有一个重要的概念, 叫熵 $S$. 系综是计算熵的一个重要手段.&lt;/p&gt;
+&lt;p&gt;Boltzmann 定义的熵, 是&lt;/p&gt;
+\[S=k\log W,\]&lt;p&gt;其中 $W$ 是满足某宏观状态的总的微观状态的数量. 可以看出这个数字越大, 熵就越大&lt;/p&gt;
+&lt;p&gt;我们可以考虑&lt;/p&gt;
+\[S=k\log (Vol(\Gamma_{phys})),\]&lt;p&gt;但是你可以发现在相空间 $d^{nN}qd^{nN}p$, 某个固定的宏观状态的体积 $Vol(\Gamma_{phys})$ 通常是 $0$. 为此, 我们要小心地进行处理.&lt;/p&gt;
+&lt;h4 id=&#34;微正则系综&#34;&gt;微正则系综
+&lt;/h4&gt;&lt;p&gt;大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个&lt;strong&gt;独立系统&lt;/strong&gt;. 于是, 存在守恒量 $H$&lt;/p&gt;
+&lt;p&gt;考虑 $V\subset \mathbb{R}^3$ 中的理想气体, 微观状态相空间是 $\Gamma=V^N\times \mathbb{R}^{3N}/S_N$.&lt;/p&gt;
+&lt;p&gt;由于那些只是粒子置换的不同微观状态是相同的, 我们需要除以 $S_N$.&lt;/p&gt;
+&lt;p&gt;于是计算微观状态. 我们应当考虑&lt;/p&gt;
+\[\Gamma_{phys}=\Gamma_{dE}(E)=\{\vec{x}\in\Gamma|E\leq H\leq E+dE\}.\]&lt;p&gt;你可能会觉得这个 $dE$ 的选取会很大地影响熵的计算. 但实际上不会. 我将在下面进行解释.&lt;/p&gt;
+&lt;p&gt;还有一个问题: 针对 $d^{3N}qd^{3N}p$ 的积分是有量纲的, 我们显然不能对着量纲求对数. 为了修复它, 我们采取的方式是在度量中除以若干拥有量纲 $[q][p]$ 的 $h$, 度量成为&lt;/p&gt;
+\[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.\]\[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.\]&lt;p&gt;运用球面积公式, 我们有&lt;/p&gt;
+\[Vol(S^{3N-1}_{2mdE}(2mE))=\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]&lt;p&gt;于是&lt;/p&gt;
+\[Vol(\Gamma_{phys})=\frac{V^N(2m\pi E)}{h^{3N}N!}\sqrt{\frac{m}{2E}}\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]\[=\frac{V^N(2\pi mE)^{3N/2}dE}{h^{3N}N!\Gamma(3N/2)E}.\]&lt;p&gt;注意: $\sqrt{\frac{m}{2E}}$ 项是由 $2mE\leq \sum p^2\leq 2mE+2mdE$, 大致来说 $dE=\sqrt{1/2mE}d\hat{n}$.&lt;/p&gt;
+&lt;p&gt;于是, 利用估计&lt;/p&gt;
+\[N&gt;&gt;|\log\frac{dE}{E}|, \log N!\simeq N\log N-N,\]&lt;p&gt;我们得到&lt;/p&gt;
+\[S=k\log(Vol(\Gamma_{phys}))\to kN\log\left(\frac{V(4\pi mE)^{3/2}}{3^{3/2}N^{5/2}h^3}\right)+\frac{5}{2}kN\]&lt;p&gt;Remark: Ronno 同志在这里至少犯了两个笔误. 一个是估计 $N&amp;raquo;|\log\frac{dE}{E}|$ 时将绝对值打在了里面, 另一个是熵的结果中 $\log$ 内部分 $N$ 的次数应当是 $5/2$ 而非 $1/2$.&lt;/p&gt;
+&lt;p&gt;Remark: 如果在计算积分的时候采用度量 $\frac{d^{3N}qd^{3N}p}{h^{3N}}$ 而非 $\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}$, 会引发 Gibbs&amp;rsquo; paradox. 具体说来, 当 $V,N,E$ 都扩展为两倍时, 熵 $S$ 不是恰好扩展为两倍.&lt;/p&gt;
+&lt;p&gt;还记得 $E=\frac{3}{2}kNT$ 吗? 这要利用 $PV=kNT$, 它是一个经验公式. 而现在利用&lt;/p&gt;
+\[dU=TdS-PdV+\sum_i \mu_idN_i\]&lt;p&gt;我们可以求出 $T$,&lt;/p&gt;
+\[T=\left(\frac{\partial S}{\partial E}\right)^{-1}_{N,V}=\frac{2E}{3kN}.\]&lt;p&gt;同样地, 可以求出压强&lt;/p&gt;
+\[P=T\left(\frac{\partial S}{\partial V}\right)_{E,N}=\frac{kNT}{V}.\]&lt;p&gt;化学能&lt;/p&gt;
+\[\mu=-T\left(\frac{\partial S}{\partial N}\right)_{E,V}=kT\log\left(\frac{V(4\pi mE)^{3/2}}{3^{3/2}N^{5/2}h^3}\right)=kT\log\left[\frac{N\lambda^3}{V}\right].\]&lt;p&gt;其中 $\lambda=\sqrt{\frac{h^2}{2\pi mkT}}$ 称为热力学波长.&lt;/p&gt;
+&lt;h4 id=&#34;正则系综&#34;&gt;正则系综
+&lt;/h4&gt;&lt;p&gt;大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个&lt;strong&gt;和外界交换热量的&lt;/strong&gt;系统. 于是, 他们应当与外界处在一个平衡态.&lt;/p&gt;
+&lt;p&gt;考虑总能量 $E_T$, 对于某系统 $1$ (也许我们要考虑的是某粒子), 其外界系统 $2$, 他处在能量 $E_1$ 的情况总共有 $\tilde{\Omega}_2(E_T-E_1)\tilde{\Omega}_1(E_1)$ 种可能性.&lt;/p&gt;
+&lt;p&gt;假设 $E_1&amp;lt; &amp;lt;E_T$, 我们有&lt;/p&gt;
+\[\tilde{\Omega}_2(E_T-E_1)dE_T=e^{\frac{1}{k}S_2(E_T-E_1)}.\]&lt;p&gt;而在我们的定义下, $\frac{\partial S_2}{\partial E}=\frac{1}{T}$. 于是我们得到&lt;/p&gt;
+\[\tilde{\Omega}_2(E_T-E_1)dE_T\approx e^{\frac{1}{k}S_2(E_T)}e^{-\frac{1}{kT}E_1}=C\cdot e^{-\beta E_1}\]&lt;p&gt;$\beta=\frac{1}{kT}$.&lt;/p&gt;
+&lt;p&gt;这大概说的就是, 某粒子在&amp;quot;外势&amp;quot;被给定的条件下, 他能量处在 $E_1$ 的某一块的概率大概拥有权重 $e^{-\beta E_1}$.&lt;/p&gt;
+&lt;p&gt;那我们自然地就会考虑去算概率, 第一步就要计算权重和:&lt;/p&gt;
+\[Z_C:=\int dE_1\tilde{\Omega}_1(E_1)e^{-\beta E_1}.\]&lt;p&gt;还请注意 $Z_C$ 是无量纲的. 这便是所谓的正则配分函数(partition function).&lt;/p&gt;
+&lt;p&gt;那么, 去算能量就相对容易,&lt;/p&gt;
+\[\langle\epsilon\rangle=\frac{1}{Z_C}\int E_1\tilde{\Omega}_1(E_1)e^{-\beta E_1}dE_1=\frac{1}{Z_C}\frac{\partial Z_C}{\partial \beta}=\frac{\partial \log(Z_C)}{\partial \beta}.\]&lt;p&gt;总能量,&lt;/p&gt;
+\[\langle E\rangle=N\langle\epsilon\rangle.\]&lt;p&gt;熵怎么办?&lt;/p&gt;
+&lt;p&gt;实际上, 通过一串复杂的计算, 我们有&lt;/p&gt;
+\[A=\langle E\rangle-T\langle S\rangle=-kT\log Z_C\]&lt;p&gt;于是,&lt;/p&gt;
+\[\langle S\rangle=k\beta\langle E\rangle+k\log Z_C.\]&lt;p&gt;回到理想气体, 有&lt;/p&gt;
+\[Z_C=\frac{1}{N!h^{3N}}\int_{V^N}d^{3N}q\int d^{3N}pe^{-\frac{\beta\sum |\vec{p}_i|^2}{2m}}=\frac{1}{N!}(Z_1)^N.\]&lt;p&gt;而&lt;/p&gt;
+\[Z_1=\frac{1}{h^3}\int d^3qd^3pe^{-\frac{\beta|\vec{p}|^2}{2m}}=\frac{V}{h^3}\left(\frac{2\pi m}{\beta}\right)^{3/2}.\]&lt;p&gt;那么&lt;/p&gt;
+\[\langle E\rangle=\frac{3N}{2\beta}=\frac{3}{2}kNT.\]\[\begin{align*}
+    \langle S\rangle&amp;=k\beta\langle E\rangle+k\log Z_C\\
+    &amp;=\frac{5}{2}kN+kN\log\left(\frac{V}{h^3N}\left(\frac{2\pi m}{\beta}\right)^{3/2}\right)\\
+    &amp;=\frac{5}{2}kN+kN\log\left(\frac{V}{h^3N}\left(\frac{4\pi m\langle E\rangle}{3N}\right)^{3/2}\right).
+\end{align*}\]&lt;p&gt;而这个与微正则系综的答案吻合.&lt;/p&gt;
+&lt;h4 id=&#34;巨正则系综&#34;&gt;巨正则系综
+&lt;/h4&gt;&lt;p&gt;大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个&lt;strong&gt;既可以和外界交换粒子, 又可以和外界交换热量的&lt;/strong&gt;系统. 于是, 他们应当与外界处在一个平衡态.&lt;/p&gt;
+&lt;p&gt;这一次我们要估计 $\tilde{\Omega}_2(E_T-E_1,N_T-N_1)$. 有同样的讨论, 我们得到&lt;/p&gt;
+\[\tilde{\Omega}_2(E_T-E_1,N_T-N_1)\approx C\cdot e^{-\beta(E_1-\mu N_1)}.\]&lt;p&gt;于是, 对于系统 $1$, 他拥有粒子数 $N_1$, 能量 $E_1$ 的概率为&lt;/p&gt;
+\[\frac{\tilde{\Omega}_1(E_1,N_1)e^{-\beta(E_1-\mu N_1)}}{Z_G}dE_1.\]&lt;p&gt;于是, 我们定义巨正则配分函数:&lt;/p&gt;
+\[Z_G=\sum_{N_1=0}^{N_T}e^{\beta\mu N_1}Z_C(T,N_1),Z_C(T,N_1)=\int dE_1\tilde{\Omega}(E_1,N_1)e^{-\beta E_1}.\]&lt;p&gt;这个求和也可以做 $N_T=\infty$ 估计.&lt;/p&gt;
+&lt;p&gt;$z=e^{\beta\mu}$ 称为逸度(fugacity), 描述的是粒子往外逃逸的程度. 顺便一提致人受伤构成犯罪的处有期徒刑3-7年, 致人死亡的7年以上.&lt;/p&gt;
+&lt;p&gt;考虑巨势能 $\Omega_G=A-\mu N=-PV$, 同样经过复杂的计算, 我们有&lt;/p&gt;
+\[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}\]&lt;p&gt;回到理想气体, 有&lt;/p&gt;
+\[Z(N,T)=\frac{1}{N!}V^N\int e^{-\beta H}dp^{3N}=\frac{1}{N!}(Z(T))^N.\]&lt;p&gt;于是,&lt;/p&gt;
+\[Z_G(N,T)=\sum_{N=0}^\infty z^NZ(N,T)=\sum_{n=0}^{\infty} \frac{z^nZ(T)^n}{n!}=\exp(zZ(T)).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}=zZ(T)=zV\left(\frac{2\pi m}{h^2}\right)^{3/2}(\beta)^{-3/2}.\]&lt;p&gt;因此, 我们将 $PV=\Omega_G=-kT\log Z_G=-kTzZ(T)$ 转换为了 $V,T,\mu$ 的函数. 于是, 根据 Maxwell 关系&lt;/p&gt;
+\[\begin{align*}
+    S&amp;=-\left(\frac{\partial \Omega_G}{\partial T}\right)_{V,\mu}\\
+    &amp;=若干步计算\\
+    &amp;=\frac{5}{2}k\langle N\rangle-\frac{\mu\langle N\rangle}{T}.
+\end{align*}\]&lt;p&gt;而我们可以反过来, 用 $T,V,\langle N\rangle$ 来表示 $\mu$:&lt;/p&gt;
+\[\mu=kT\log \frac{\langle N\rangle h^3}{V(2\pi mkT)^{3/2}}.\]&lt;p&gt;于是我们最终得到&lt;/p&gt;
+\[\begin{align*}
+    S&amp;=\frac{5}{2}k\langle N\rangle+k\langle N\rangle\log \frac{V(2\pi mkT)^{3/2}}{\langle N\rangle h^3}\\
+    &amp;=\frac{5}{2}k\langle N\rangle+k\langle N\rangle\log \frac{V(4\pi mkE)^{3/2}}{3^{3/2}\langle N\rangle^{5/2} h^3}
+\end{align*}\]&lt;p&gt;而这个与微正则系综、正则系综的答案都吻合。&lt;/p&gt;
+&lt;p&gt;现在你已经是系综高手了.&lt;/p&gt;
+&lt;h3 id=&#34;量子系统&#34;&gt;量子系统
+&lt;/h3&gt;&lt;p&gt;有一个该写在系综里的, 不知道写在哪好&lt;/p&gt;
+&lt;p&gt;对于一个有 $m$ 个态的系统, 态 $i$ 的概率为 $p_i$, 则其 Shannon 熵&lt;/p&gt;
+\[S=-\sum_i p_i\log p_i.\]&lt;p&gt;而对于量子系统, 某密度矩阵正交化后拥有特征值 $\lambda_i$, 则定义其 von Neumann 熵为&lt;/p&gt;
+\[S=-\sum_i \lambda_i\log \lambda_i.\]</description>
+        </item>
+        <item>
+        <title>电动力学</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/37.jpg" alt="Featured image of post 电动力学" /&gt;&lt;h2 id=&#34;电动力学复习提纲&#34;&gt;电动力学复习提纲
+&lt;/h2&gt;&lt;h3 id=&#34;杂七杂八的公公式式&#34;&gt;杂七杂八的公公式式
+&lt;/h3&gt;&lt;h5 id=&#34;电荷守恒定律&#34;&gt;电荷守恒定律
+&lt;/h5&gt;\[\frac{\partial \rho}{\partial t}+\nabla\cdot\vec{j}=0.\]&lt;h5 id=&#34;coulombs-定律&#34;&gt;Coulomb&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;两个电荷 $q,q&amp;rsquo;$ 在位置 $\vec{r},\vec{r}&amp;rsquo;$, 那么粒子 $q$ 会受到力&lt;/p&gt;
+\[\vec{F}=\frac{1}{4\pi\epsilon_0}qq&#39;\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;h5 id=&#34;amperes-定律-gausss-定律&#34;&gt;Ampere&amp;rsquo;s 定律, Gauss&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;实际上说的就是磁场无源, 旋度由电流产生. 用人话讲就是&lt;/p&gt;
+\[\begin{cases}
+    \nabla\times\vec{B}=\mu_0\vec{j}\\
+    \nabla\cdot\vec{B}=0.
+\end{cases}\]&lt;h5 id=&#34;gauss-定律&#34;&gt;Gauss 定律
+&lt;/h5&gt;&lt;p&gt;一个很好用的定律. 区域表面电场与外法向量点乘的积分等于内部电荷量除以 $\epsilon_0$.&lt;/p&gt;
+&lt;p&gt;这样就可以利用对称性算一些复杂的电场强度.&lt;/p&gt;
+&lt;h5 id=&#34;lorentz-力公式&#34;&gt;Lorentz 力公式
+&lt;/h5&gt;&lt;p&gt;在场里的电荷 $q$, 收到力&lt;/p&gt;
+\[\vec{F}=q(\vec{E}+\vec{v}\times\vec{B}).\]&lt;h5 id=&#34;biot-savart-定律&#34;&gt;Biot-Savart 定律
+&lt;/h5&gt;&lt;p&gt;来自于&lt;/p&gt;
+\[\begin{cases}
+    \nabla\times\vec{B}=\mu_0\vec{j}\\
+    \nabla\cdot\vec{B}=0.
+\end{cases}\]&lt;p&gt;其解为&lt;/p&gt;
+\[\vec{B}(\vec{r})=\frac{\mu_0}{4\pi}\int d^3r&#39;\vec{j}(\vec{r}&#39;)\times\frac{\vec{r}-\vec{r}&#39;}{|\vec{r}-\vec{r}&#39;|^3}.\]&lt;p&gt;并顺带一提矢量势(vector potential)&lt;/p&gt;
+\[\vec{A}=\frac{\mu_0}{4\pi}\int d^3r&#39;\frac{\vec{j}}{|\vec{r}-\vec{r}&#39;|}.\]\[\nabla\times\vec{A}=\vec{B}.\]&lt;p&gt;上次博士资格考试的那个积分是什么一坨啊&amp;hellip;&lt;/p&gt;
+&lt;h5 id=&#34;faradays-定律&#34;&gt;Faraday&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;磁通量的变化产生电场. 具体来说 $S$ 被 $C$ 圈住的表面, 有&lt;/p&gt;
+\[-\frac{d}{dt}\int_Sd\vec{S}\cdot\vec{B}=\int_Cd\vec{r}\cdot\vec{E}.\]&lt;h5 id=&#34;lenzs-定律&#34;&gt;Lenz&amp;rsquo;s 定律
+&lt;/h5&gt;&lt;p&gt;来拒去留, 大家都是合格的高中生啊.&lt;/p&gt;
+&lt;p&gt;牢记左手给力, 右手给电.&lt;/p&gt;
+&lt;p&gt;其余的部分明天更新.&lt;/p&gt;
+&lt;h4 id=&#34;maxwells-方程组&#34;&gt;Maxwell&amp;rsquo;s 方程组
+&lt;/h4&gt;\[\begin{cases}
+    \nabla \cdot \vec{E}=\frac{\rho}{\epsilon_0}\\
+    \nabla \cdot \vec{B}=0\\
+    \nabla \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}\\
+    \nabla\times\vec{B}=\mu_0(\vec{j}+\epsilon_0\frac{\partial \vec{E}}{\partial t})
+\end{cases}\]&lt;p&gt;几何地, 考虑&lt;/p&gt;
+\[F=(E_xdx+E_ydy+E_zdz)\wedge dt+B_xdy\wedge dz+B_ydz\wedge dx+B_zdx\wedge dy,\]\[J=\rho/\epsilon_0dt-\mu_0(j_xdx+j_ydy+j_zdz).\]&lt;p&gt;那么 Maxwell&amp;rsquo;s 方程组即&lt;/p&gt;
+\[\begin{cases}
+    dF=0\\
+    d^*F=J.
+\end{cases}\]&lt;p&gt;并顺带一提他的介质中形式为&lt;/p&gt;
+\[\begin{cases}
+    \nabla \cdot \vec{E}=\frac{\rho}{\epsilon}\\
+    \nabla \cdot \vec{B}=0\\
+    \nabla \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}\\
+    \nabla\times\vec{B}=\mu(\vec{j}+\epsilon\frac{\partial \vec{E}}{\partial t})
+\end{cases}\]&lt;p&gt;$\epsilon,\mu$ 为介质的电容率和磁导率.&lt;/p&gt;
+&lt;h4 id=&#34;电磁能和-poynting-矢量&#34;&gt;电磁能和 Poynting 矢量
+&lt;/h4&gt;&lt;p&gt;在区域 $V$ 内, 单位时间的总做功为&lt;/p&gt;
+\[\frac{dW}{dt}=\int_Vd^3r\vec{E}\cdot\vec{j}.\]&lt;p&gt;运用安培定律和法拉第定律, 我们得到&lt;/p&gt;
+\[\vec{E}\cdot\vec{j}=-\epsilon_0\vec{E}\cdot\frac{d\vec{E}}{dt}-\frac{1}{\mu_0}\vec{B}\cdot\frac{d\vec{B}}{dt}-\frac{1}{\mu_0}\nabla\cdot(\vec{E}\times\vec{B}).\]&lt;p&gt;于是,&lt;/p&gt;
+\[\frac{dW}{dt}=-\frac{d}{dt}\int_V\frac{1}{2}(\epsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2)-\frac{1}{\mu_0}\int_{\partial V}d\vec{\sigma}\cdot(\vec{E}\times\vec{B}).\]&lt;p&gt;从这个式子里我们可以读出两个东西. 一个是电磁场总能量&lt;/p&gt;
+\[U=\frac{1}{2}\int_V\epsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2,\]&lt;p&gt;另一个是 Poynting 矢量&lt;/p&gt;
+\[\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B},\]&lt;p&gt;这个描述了能量流出 $V$ 的大小与方向.&lt;/p&gt;
+\[\frac{dW}{dt}=-\frac{dU}{dt}-\int_{\partial V}d\vec{\sigma}\cdot \vec{S}.\]&lt;p&gt;Remark: 在没有做功的条件下, 取 $u=\frac{1}{2}\left(\epsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2\right)$. 有&lt;/p&gt;
+\[\frac{\partial u}{\partial t}+\nabla\cdot\vec{S}=0.\]&lt;h3 id=&#34;更多的电动力学&#34;&gt;更多的电动力学
+&lt;/h3&gt;&lt;h4 id=&#34;电磁波&#34;&gt;电磁波
+&lt;/h4&gt;&lt;p&gt;现在考虑真空.&lt;/p&gt;
+\[\begin{cases}
+    \nabla \cdot \vec{E}=0\\
+    \nabla \cdot \vec{B}=0\\
+    \nabla \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}\\
+    \nabla\times\vec{B}=\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}
+\end{cases}\]\[\mu_0\epsilon_0=1/c^2.\]&lt;p&gt;总之可以化简为&lt;/p&gt;
+\[\begin{cases}
+    \frac{1}{c^2}\frac{\partial^2\vec{E}}{\partial t^2}-\nabla^2\vec{E}=0\\
+    \frac{1}{c^2}\frac{\partial^2\vec{B}}{\partial t^2}-\nabla^2\vec{B}=0
+\end{cases}\]&lt;p&gt;也就是说, 电磁波沿着光速前进.&lt;/p&gt;
+&lt;p&gt;不妨考虑复的解, 原方程其拥有解&lt;/p&gt;
+\[\begin{cases}
+    \vec{E}=\vec{E}_0e^{i(\vec{k}\cdot\vec{r}-\omega t)}\\
+    \vec{B}=\vec{B}_0e^{i(\vec{k}\cdot\vec{r}-\omega t)}
+\end{cases},\]&lt;p&gt;其中 $\omega=ck, k=|\vec{k}|$.&lt;/p&gt;
+&lt;p&gt;那么考虑 Maxwell 方程组, 有&lt;/p&gt;
+\[c\vec{B}_0=\hat{k}\times\vec{E}_0, \hat{k}=\frac{\vec{k}}{|\vec{k}|}.\]&lt;p&gt;利用傅里叶分析我们可以得出其全部的解&lt;/p&gt;
+\[\vec{E}=\frac{1}{(2\pi)^3}\int d^3k\vec{\mathcal{E}}(\vec{k})e^{i(\vec{k}\cdot\vec{r}-\omega t)}\]\[\vec{B}=\frac{1}{(2\pi)^3}\int d^3k\frac{1}{c}\left(\hat{k}\times\vec{\mathcal{E}}(\vec{k})\right)e^{i(\vec{k}\cdot\vec{r}-\omega t)}.\]&lt;p&gt;于是通过&lt;/p&gt;
+\[U=\frac{\epsilon_0}{2}\int d^3r\left(|\operatorname{Re}\vec{\hat{E}}|^2+|\operatorname{Re}c\vec{\hat{B}}|^2\right).\]&lt;p&gt;最终计算得&lt;/p&gt;
+\[U=\frac{\epsilon_0}{2}\frac{1}{(2\pi)^3}\int d^3k|\vec{\mathcal{E}}(\vec{k})|^2.\]&lt;h4 id=&#34;电磁辐射&#34;&gt;电磁辐射
+&lt;/h4&gt;&lt;p&gt;我以前居然还会这个? 不可思议.&lt;/p&gt;
+&lt;p&gt;大致意思就是, 静止电荷产生电场, 稳定电流产生磁场. 加速电荷会产生辐射.&lt;/p&gt;
+&lt;p&gt;利用 Green 函数的方式 (具体方式得见讲义kk), 对于某一个运动的电荷, 我们可以解出 $\vec{E},\vec{B}$ 垂直于电磁波传播方向. 那么 Poynting 矢量&lt;/p&gt;
+\[\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B}\simeq \frac{\mu_0}{16\pi^2r^2c}|\hat{r}\times\ddot{\vec{p}}|^2\hat{r}.\]&lt;p&gt;于是总的辐射能量&lt;/p&gt;
+\[P=\int_{S^2}d\hat{\theta}\cdot\vec{S}=\frac{\mu_0}{16\pi^2r^2c}|\ddot{p}|^2\int_{S^2}\sin^2\theta=\frac{\mu_0}{6\pi c}|\ddot{p}|^2.\]&lt;h3 id=&#34;相对论&#34;&gt;相对论
+&lt;/h3&gt;&lt;p&gt;Minkowski 时空 $(1,3)$ 和洛伦兹变换的定义可以跳过一下人生.&lt;/p&gt;
+&lt;p&gt;考虑 Lorentz boost&lt;/p&gt;
+\[\Lambda=\begin{pmatrix}
+\gamma&amp;-\gamma v/c&amp;&amp;\\
+-\gamma v/c&amp;\gamma&amp;&amp;\\
+&amp;&amp;1&amp;\\
+&amp;&amp;&amp;1
+\end{pmatrix}.\]&lt;p&gt;回顾先前定义的 $2$-形式 $F$, 取&lt;/p&gt;
+\[F=\frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}dx^\mu\wedge dx^\nu.\]\[F_{\mu\nu}=\begin{pmatrix}
+0&amp;-E_x/c&amp;-E_y/c&amp;-E_z/c\\
+E_x/c&amp;0&amp;B_z&amp;-B_y\\
+E_y/c&amp;-B_z&amp;0&amp;B_x\\
+E_z/c&amp;B_y&amp;-B_x&amp;0
+\end{pmatrix}.\]&lt;p&gt;于是&lt;/p&gt;
+\[\tilde{F}_{\mu\nu}=\Lambda F_{\mu\nu}\Lambda\]&lt;p&gt;如此便能解出来 $\tilde{F}_{\mu\nu}$.&lt;/p&gt;
+\[\begin{cases}
+    \tilde{E}_x=E_x\\
+    \tilde{E}_y=\gamma(E_y+vB_z)\\
+    \tilde{E}_z=\gamma(E_z-vB_y)\\
+    \tilde{B}_x=B_x\\
+    \tilde{B}_y=\gamma(B_z-vE_z/c^2)\\
+    \tilde{B}_z=\gamma(B_z+vE_y/c^2).
+\end{cases}\]&lt;p&gt;同样地, 考虑 $1$-形式 $J$, 利用 $\tilde J=\Lambda^*(J)$ 也可以得到 $J$ 的形式.&lt;/p&gt;
+\[\begin{cases}
+    \tilde{\rho}=\gamma(\rho+j_xv/c^2)\\
+    \tilde{j}_x=\gamma(j_x+\rho v)\\
+    \tilde{j}_y=j_y\\
+    \tilde{j}_z=j_z
+\end{cases}\]&lt;p&gt;实际上, 利用 Hodge 星 $*$ 与 Lorentz 变换交换的特点, 我们可以看出如下方程依旧满足&lt;/p&gt;
+\[\begin{cases}
+    d\tilde{F}=0\\
+    d^*\tilde{F}=\tilde{J}.
+\end{cases}\]&lt;p&gt;这也就是说, Lorentz 变换把 Maxwell 方程的解变换到 Maxwell 方程的解.&lt;/p&gt;
+&lt;h3 id=&#34;pde&#34;&gt;PDE!
+&lt;/h3&gt;&lt;p&gt;解决静电学问题时, 我们希望解方程&lt;/p&gt;
+\[\nabla^2 \phi=-\rho/\epsilon_0.\]&lt;p&gt;在某种特定边界条件下的解. 通常, 是 Dirichlet 和 Neumann 两种边界条件.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Dirichlet: $\phi|_S=f$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Neumann: $\partial_{\hat{n}}\phi|_S=g$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意, 在如上边界条件下, 其解唯一.&lt;/p&gt;
+&lt;h4 id=&#34;相电法我不记得是不是这么翻译了&#34;&gt;相电法(我不记得是不是这么翻译了)
+&lt;/h4&gt;&lt;p&gt;通过假设待求部分外界的电荷的方式, 凑出边界条件并直接算出答案.&lt;/p&gt;
+&lt;h4 id=&#34;green-函数&#34;&gt;Green 函数
+&lt;/h4&gt;&lt;p&gt;记 $G=G(\hat{r},\hat{r}&amp;rsquo;)$ 满足&lt;/p&gt;
+\[{\nabla^2}&#39;G(\hat{r},\hat{r}&#39;)=-4\pi\delta(\hat{r}-\hat{r}&#39;).\]&lt;p&gt;也就是说&lt;/p&gt;
+\[G(\hat{r},\hat{r}&#39;)=\frac{1}{|\vec{r}-\vec{r}&#39;|}+F(\hat{r},\hat{r}&#39;).\]\[\nabla^2\phi=0.\]&lt;p&gt;于是&lt;/p&gt;
+\[\begin{align*}
+    \phi(\vec{r})&amp;=\int_Vd^3r&#39;\phi(\vec{r}&#39;)\delta(\vec{r}-\vec{r}&#39;)=-\frac{1}{4\pi}\int_Vd^3r&#39;\phi(\vec{r}&#39;){\nabla^2}&#39;G(\vec{r},\vec{r}&#39;)\\
+    &amp;=两次分部积分\\
+    &amp;=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\vec{r}&#39;)G(\vec{r},\vec{r}&#39;)+\frac{1}{4\pi}\int_S[\partial&#39;_{\hat{n}}\phi(\vec{r}&#39;)G(\vec{r},\vec{r}&#39;)-\phi(\vec{r}&#39;)\partial&#39;_{\hat{n}}G(\vec{r},\vec{r}&#39;)].
+\end{align*}\]&lt;p&gt;从而对于&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Direchlet 边界条件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;取 $G$ 满足 $G(\vec{r},\vec{r}&amp;rsquo;)=0$, $\hat{r}&amp;rsquo;\in S$, 那么&lt;/p&gt;
+\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\vec{r}&#39;)G(\vec{r},\vec{r}&#39;)-\frac{1}{4\pi}\int_S\phi(\vec{r}&#39;)\partial_{\hat{n}}&#39;G(\vec{r},\vec{r}&#39;).\]&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Neumann 边界条件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;取 $G$ 满足 $\partial_{\hat{n}}&amp;lsquo;G(\vec{r},\vec{r}&amp;rsquo;)=-4\pi/A$, $A=Area(S)$, 那么&lt;/p&gt;
+\[\phi(r)=\frac{1}{A}\int_S\phi(\hat{r}&#39;)+\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\hat{r}&#39;)G(\hat{r},\hat{r}&#39;)+\frac{1}{\pi}\int_S\partial_{\hat{n}}&#39;\phi(\hat{r}&#39;)G(\hat{r},\hat{r}&#39;).\]&lt;h4 id=&#34;电多极扩张&#34;&gt;电多极扩张(?)
+&lt;/h4&gt;\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\frac{\rho(\vec{r}&#39;)}{|\vec{r}-\vec{r}&#39;|}.\]&lt;p&gt;我们要考虑 $r&amp;raquo;r&amp;rsquo;$ 情况下的 $\phi$. 其大致操作是利用&lt;/p&gt;
+\[\frac{1}{|\vec{r}-\vec{r}&#39;|}=\frac{1}{r\sqrt{1-2(\hat{r}\cdot\hat{r}&#39;)\frac{r&#39;}{r}+\left(\frac{r&#39;}{r}\right)^2}}.\]&lt;p&gt;通过 Legendre 多项式展开. 最终得到对于 $\vec{P}=\int_Vd^3r&amp;rsquo;\rho(\vec{r}&amp;rsquo;)\vec{r}&amp;rsquo;$, 有&lt;/p&gt;
+\[\phi(\vec{r})\simeq\frac{1}{4\pi\epsilon_0}\frac{\vec{P}\cdot\vec{r}}{r^3},r&gt;&gt;0.\]&lt;p&gt;于是&lt;/p&gt;
+\[\vec{E}=-\nabla\phi(\vec{r})\simeq \frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}.\]&lt;h5 id=&#34;电偶极子&#34;&gt;电偶极子
+&lt;/h5&gt;&lt;p&gt;考虑电偶极子动量&lt;/p&gt;
+\[\vec{P}=\int_V d^3r&#39;\rho(\vec{r}&#39;)\vec{r}&#39;.\]&lt;p&gt;对于电荷量 $\pm q$, 距离为 $d$ 的两电荷. 总电荷量是 $0$. 他们的电偶极子动量&lt;/p&gt;
+\[\vec{P}=q\vec{d}.\]&lt;p&gt;于是, 总电场&lt;/p&gt;
+\[\vec{E}(\vec{r})\approx\frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}. r&gt;&gt;0\]&lt;h5 id=&#34;磁偶极子&#34;&gt;磁偶极子
+&lt;/h5&gt;&lt;p&gt;考虑磁偶极子动量&lt;/p&gt;
+\[\vec{m}=\frac{1}{2}\int_V d^3r&#39;\vec{r}&#39;\times\vec{j}(\vec{r}&#39;).\]&lt;p&gt;于是, 总磁场&lt;/p&gt;
+\[\vec{B}=\frac{\mu_0}{4\pi}\frac{3(\hat{r}\cdot\vec{m})\hat{r}-\vec{m}}{r^3}, r&gt;&gt;0.\]</description>
+        </item>
+        <item>
+        <title>理论力学</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/f2.jpg" alt="Featured image of post 理论力学" /&gt;&lt;h2 id=&#34;理论力学复习提纲&#34;&gt;理论力学复习提纲
+&lt;/h2&gt;&lt;p&gt;对于拉格朗日量 $\mathscr{L}$, 我们有 Euler-Lagrange 方程&lt;/p&gt;
+\[\frac{d}{dt} \left(\frac{\partial \mathscr{L}}{\partial\dot{q}}\right)=\frac{\partial \mathscr{L}}{\partial q}\]&lt;p&gt;对于这一部分而言, 重要的只有两个东西: Noether&amp;rsquo;s 定理和 Hamiltonian 力学.&lt;/p&gt;
+&lt;h3 id=&#34;noethers-定理&#34;&gt;Noether&amp;rsquo;s 定理
+&lt;/h3&gt;&lt;p&gt;&amp;ldquo;连续的对称性蕴含了守恒量&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;为此, 考察空间 (注意这里只涉及 $q$) 中无穷小变换&lt;/p&gt;
+\[\delta_\epsilon q=\epsilon X(q,\dot{q},t)\]&lt;p&gt;其被称作一个对称, 如果&lt;/p&gt;
+\[\delta_\epsilon \mathscr{L}=\epsilon \frac{d}{dt}l,\]&lt;p&gt;对于某个 $l$.&lt;/p&gt;
+&lt;p&gt;我们希望考虑变分 $\epsilon(t)$. 于是&lt;/p&gt;
+\[\begin{align*}
+    \delta_{\epsilon(t)}\mathscr{L}&amp;=\delta_{\epsilon(t)}\mathscr{L}(q,\dot{q},t)\\
+    &amp;=\frac{\partial \mathscr{L}}{\partial q}\cdot \epsilon(t)X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\frac{d}{dt}(\epsilon(t)X)\\
+    &amp;=\epsilon(t)\left(\frac{\partial \mathscr{L}}{\partial q}X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\dot{X}\right)+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X\\
+    &amp;=\epsilon(t)\frac{d}{dt}l+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X.
+\end{align*}\]&lt;p&gt;于是, 我们有&lt;/p&gt;
+\[\begin{align*}
+    \delta_{\epsilon(t)}S&amp;=\delta_{\epsilon(t)}\int \mathscr{L}dt\\
+    &amp;=一步分部积分\\
+    &amp;=\int \epsilon(t)\frac{d}{dt}\left(l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X\right)dt.
+\end{align*}\]&lt;p&gt;于是我们得到守恒量&lt;/p&gt;
+\[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X.\]&lt;p&gt;以角动量守恒为例, 比方说 $\mathscr{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2)+f(x^2+y^2)$, 对于&lt;/p&gt;
+\[(x,y)\mapsto (y\sin\theta+x\cos\theta,-x\sin\theta+y\cos\theta),\]&lt;p&gt;有 $\delta_\epsilon x=\epsilon y$, $\delta_\epsilon y=-\epsilon x$. $\delta_\epsilon \mathscr{L}=0$. 于是我们得到守恒量&lt;/p&gt;
+\[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X=-m\dot{x}y+mx\dot{y}.\]&lt;p&gt;这就是角动量守恒.&lt;/p&gt;
+&lt;h4 id=&#34;eulers-方程&#34;&gt;Euler&amp;rsquo;s 方程
+&lt;/h4&gt;&lt;p&gt;计算转动惯量利用积分&lt;/p&gt;
+\[I=\int dxdydz\rho\begin{pmatrix}
+    y^2+z^2&amp;-xy&amp;-xz\\
+    -xy&amp;x^2+z^2&amp;-yz\\
+    -xz&amp;-yz&amp;x^2+y^2
+\end{pmatrix}.\]&lt;p&gt;然后由方程&lt;/p&gt;
+\[\vec{J}=I\vec{\omega}\]&lt;p&gt;并利用角动量守恒, 即可得到角速度的方程. 这就是 Euler&amp;rsquo;s 方程.&lt;/p&gt;
+&lt;h3 id=&#34;hamiltonian-力学&#34;&gt;Hamiltonian 力学
+&lt;/h3&gt;&lt;p&gt;定义啥的都跳过一下人生.&lt;/p&gt;
+\[\mathscr{H}=\sum p_i\dot{q_i}-\mathscr{L}.\]&lt;p&gt;通过简单的推导, 我们得到 Hamiltonian 方程组&lt;/p&gt;
+\[\begin{cases}
+    \dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\\
+    \dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}\]&lt;h4 id=&#34;守恒量&#34;&gt;守恒量
+&lt;/h4&gt;&lt;p&gt;于是, 我们可以直接导出, 对于相空间函数 $f$, 在运动曲线上,&lt;/p&gt;
+\[\frac{d f}{d t}+\{f,\mathscr{H}\}=0.\]&lt;p&gt;这也意味着不含时的 $f$ 如果满足 ${ f,\mathscr{H} }=0$, 那他是一个守恒量.&lt;/p&gt;
+&lt;h4 id=&#34;流与-liouville-定理&#34;&gt;流与 Liouville 定理
+&lt;/h4&gt;&lt;p&gt;根据 Hamiltonian 方程组, 我们实际上诱导了相空间的流. 而熟知的微分几何结论告诉我们, 一个流是保体积的等价于其散度为 $0$, $\sum_i\partial_i\dot{x}^i=0$. 于是直接代入方程组我们就能得到相空间上的流是保体积的, 这就是 Liouville 定理.&lt;/p&gt;
+&lt;p&gt;从这里我们也能看出, 诸如 Damped Harmonic Oscillator, 所有解最终都会收敛. 他是不保相空间体积的, 因此不能从某个 Lagrangian 力学或 Hamiltonian 力学得到.&lt;/p&gt;
+&lt;h4 id=&#34;正则变换&#34;&gt;正则变换
+&lt;/h4&gt;&lt;p&gt;如果, $Q_i,P_i$ 在 $q_i,p_i$ 诱导的泊松括号下&amp;quot;表现得跟 $q_i,p_i$ 一样&amp;quot;, 那么 $Q_i,P_i$ 诱导的泊松括号就与 $q_i,p_i$ 诱导的泊松括号相同. 这被称作正则变换. 在不会用 \newcommand 之前, 去打他的数学形式和证明实在麻烦得过分. 因此先摆了, 反正不太难, 也不会产生歧义.&lt;/p&gt;
+&lt;p&gt;实际上, 所谓 &amp;ldquo;正则变换&amp;rdquo; 构成了一个群.&lt;/p&gt;
+&lt;p&gt;这一章可以结束于解释 &amp;ldquo;如何找一个正则变换&amp;rdquo;. 实际上对于一个一般函数 $G(q,p)$, 考虑流&lt;/p&gt;
+\[\begin{cases}
+    \frac{\partial Q_i}{\partial s}=\{Q_i,G\}\\
+    \frac{\partial P_i}{\partial s}=\{P_i,G\}.
+\end{cases}\]&lt;p&gt;这便给出了一个正则变换. 为证明它, 我们只需去计算诸如 $\frac{\partial}{\partial s} {P_i,Q_j}$ 即可.&lt;/p&gt;
+&lt;p&gt;我并不确定考试是否会涉及含时的正则变换. 这里有时间再补充吧.&lt;/p&gt;
+&lt;h4 id=&#34;hamilton-jacobi-方程&#34;&gt;Hamilton-Jacobi 方程
+&lt;/h4&gt;&lt;p&gt;$W(q,t)$ 是一个极值曲线, 那么他满足 Hamilton-Jacobi 方程&lt;/p&gt;
+\[\frac{\partial W}{\partial t}+\mathscr{H}(q,\frac{\partial W}{\partial q},t)=0.\]&lt;h3 id=&#34;辛几何&#34;&gt;辛几何
+&lt;/h3&gt;&lt;p&gt;我觉得吧, 定义啥的没什么可讲的&lt;/p&gt;
+&lt;h4 id=&#34;moment-map&#34;&gt;moment map
+&lt;/h4&gt;&lt;p&gt;碎碎念: 这玩意搞箭图表示论的二重图的时候, 有一个奇怪的概念, 粮食跟我说是来自于辛几何的 moment map, 但我没有太理解kk&lt;/p&gt;
+&lt;p&gt;对于李群 $G$ 作用在辛流形上, 其诱导了李代数 $\mathfrak{g}\to \text{Vect}(M)$ 的映射. 这是一个李代数同态.&lt;/p&gt;
+&lt;p&gt;那么对于辛作用, $L_{V_A}\omega=0$. 根据魔术公式, $dl_{V_A}\omega=0$.&lt;/p&gt;
+&lt;p&gt;于是我们会希望 $V_A$ 是 Hamiltonian 的, 也就是说&lt;/p&gt;
+\[l_{V_A}\omega=df_A\]&lt;p&gt;这便给出了一个 Poisson 的映射&lt;/p&gt;
+\[\mathscr{H}:\mathfrak{g}\to C^{\infty}(M).\]&lt;p&gt;使得&lt;/p&gt;
+\[l_{V_A}\omega=d\mathscr{H}_A,\]\[\{\mathscr{H}_A,\mathscr{H}_B\}=\mathscr{H}_{[A,B]}.\]&lt;p&gt;对偶地, 给出映射&lt;/p&gt;
+\[\mu: M\to \mathfrak{g}^*,\]\[\langle \mu(-),A\rangle=\mathscr{H}_A(-).\]&lt;p&gt;这个 $\mu$ 被称为 moment map.&lt;/p&gt;
+&lt;h4 id=&#34;symplectic-reduction&#34;&gt;Symplectic Reduction
+&lt;/h4&gt;&lt;p&gt;等待施工.&lt;/p&gt;
+&lt;h4 id=&#34;回到-hamilton-jacobi-方程&#34;&gt;回到 Hamilton-Jacobi 方程
+&lt;/h4&gt;&lt;p&gt;一个 PDE 的结论. 大致的意思是去解一个 Hamiltonian 系统, 等价于去寻找 Hamilton-Jacobi 方程&lt;/p&gt;
+\[\mathscr{H}(q,\frac{\partial F}{\partial q},t)+\frac{\partial F}{\partial t}=0.\]&lt;p&gt;的解.&lt;/p&gt;
+&lt;h3 id=&#34;可积系统&#34;&gt;可积系统
+&lt;/h3&gt;&lt;p&gt;如果去解 $n$ 维简谐振子的 Hamiltonian 方程组,&lt;/p&gt;
+\[\mathscr{H}=\sum_{i=1}^n\left(\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2\right)\]&lt;p&gt;我们发现他有 $n$ 个守恒量 $f_i=\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2$. 特别地, 他们是泊松交换的.&lt;/p&gt;
+&lt;p&gt;这便引出了 Liouville 的定义.&lt;/p&gt;
+&lt;h4 id=&#34;liouville-可积性&#34;&gt;Liouville 可积性
+&lt;/h4&gt;&lt;p&gt;一个 Hamiltonian 系统是一个三元组 $(M,\omega,\mathscr{H})$, 其中 $(M,\omega)$ 是一个辛流形, $\mathscr{H}$ 是 $M$ 上一个 Hamiltonian 函数. 如果其上有 $n=\frac{1}{2}\dim M$ 个无关且两两泊松交换的守恒量 $f_1,\cdots,f_n$, 称其为(完全)刘维尔可积.&lt;/p&gt;
+&lt;p&gt;于是有 Liouville-Arnold 定理: 若 $(M,\omega,\mathscr{H})$ 完全刘维尔可积, $\dim=2n$, 则对于 $f=(f_1,\cdots,f_n)$ 正则值 $c\in \mathbb{R}^n$, 有&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$f^{-1}(c)$ 是在 Hamilton 流下不变的光滑流形.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果 $f^{-1}(c)$ 紧且联通, 那么他微分同胚于 $n$ 维环面.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+\[T^n=\{(\phi_1,\cdots,\phi_n)\pmod{2\pi}\}.\]&lt;p&gt;且在这种微分同胚下, 其上的流是线性的.&lt;/p&gt;
+\[\frac{d\phi_i}{dt}=\omega_i(c).\]&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;存在守恒量 $I_1,\cdots,I_n$, $\omega=\sum_idI_i\wedge d\phi_i$, 在 $f^{-1}(c)$ 的某个邻域内.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运动方程可以&amp;quot;由二次型积分&amp;quot;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里 $\phi_i$ 称为角坐标, $I_i$ 称为运动坐标.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
