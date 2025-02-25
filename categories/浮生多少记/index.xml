@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>浮生多少记 on 代数tv</title>
+        <link>https://Jinbz-ayaka.github.io/categories/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0/</link>
+        <description>Recent content in 浮生多少记 on 代数tv</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Jinbz</copyright>
+        <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>浮生多少记-其一</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/</link>
+        <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/225.jpg" alt="Featured image of post 浮生多少记-其一" /&gt;&lt;p&gt;没错, 这就是新坑. 与此同时, 我很好奇这个长得像cypher的头图是谁.&lt;/p&gt;
+&lt;p&gt;如果你不知道cypher是谁, 可以去问问玩那个以勇敢者命名的游戏的人. 他会告诉你, cypher是保安, 也是零.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;2025 年 2 月 25 日, 伟大的代数tv又一次回到了他忠实的双清综合楼. 他曾经在这里准备过很多很多的博资考. 他曾说, 等博资考通过了, 高低要给这个东西写点什么. 而现在, 显然是时候了.&lt;/p&gt;
+&lt;p&gt;故事要从 2024 年的 ICBS 说起, 那个时候的代数tv逐渐能够对以怀尔斯为首的一大批优秀学者的报告有些眉目, 并为其揭露的精巧数学结构而震撼. 于是在大会结束之际, 代数tv写下如下一段话.&lt;/p&gt;
+&lt;p&gt;Enjoy Mathematics, enjoy:)&lt;/p&gt;
+&lt;p&gt;但很遗憾, 就像你很难去预测盒子里下一块巧克力的味道和原神下一个版本的up角色那样, 代数tv也不知道/那个时候的他已经没有太多时间去enjoy mathematics了. 在7月末欣赏完王楚钦选手的高超乒乓球技术并去雪如意玩了两天后, 他发现有一个大问题摆在了他眼前: 他要准备博资考了.&lt;/p&gt;
+&lt;p&gt;八月的北京总是一直在下雨, 仿佛要把整个冬天的雨下干了一样. 乒乓球团体决赛的那天, 唐诗转段说明会那天, 黑神话开服那天, EDG夺冠那天, 代数tv脑海里总是有这样的画面——一边听着银临的山色有无中专辑, 或者是与某个英文单词谐音的国风乐团的口水歌, 一边缩在双清的座位上, 在漫天的雨声里翻找qual.zip. 哈基数五六年来的肌肉记忆告诉他, 想考得好就要像应激了一样刷题. 但就像他刷过的那些题一样, 半年后他会讲这些悉数忘却, 只记得他当时特别喜欢的一个旋律.&lt;/p&gt;
+&lt;p&gt;世道如雨, 两眼空空故难测.&lt;/p&gt;
+&lt;p&gt;Remark 1: 如果你对这个旋律是什么感兴趣, 我可以告诉你是&lt;/p&gt;
+\[1=\text{B}\ \ \ \ 000\underset{\ \ \ \cdot\ \ \cdot\ \ \cdot}{\underline{\underline{1753}}}\ |\underset{\cdot}{\underline{5}}\underset{\cdot}{\underline{\underline{6}}}\overset{\frown}{\underset{\cdot}{\underline{\underline{6}}}\ \underset{\cdot}{\underline{\underline{6}}}}\underline{3}.\ \underline{3}\underline{\underline{2}}\overset{\frown}{\underline{\underline{2}}\ \underline{2}}\underline{0}\]&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1=\text{B}\ \ \ \ 000\underset{\ \ \ \cdot\ \ \cdot\ \ \cdot}{\underline{\underline{1753}}}\ |\underset{\cdot}{\underline{5}}\underset{\cdot}{\underline{\underline{6}}}\overset{\frown}{\underset{\cdot}{\underline{\underline{6}}}\ \underset{\cdot}{\underline{\underline{6}}}}\underline{3}.\ \underline{3}\underline{\underline{2}}\overset{\frown}{\underline{\underline{2}}\ \underline{2}}\underline{0}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;是的, 我是如此热爱这段旋律以至于用LaTeX把他打出来了.&lt;/p&gt;
+&lt;p&gt;对代数tv来说, 他前几年的考试都相当好运, 但这次并不如愿. 第一天的分析那天, 恰好是代数tv的生日. 可在这次考试里, 虽然他靠着突击的泛函分析吃下了很多分, 但由于不等式放缩之&amp;quot;高联时期的传统弱项&amp;quot;, 与当初学复分析时对Riemann核的卷积埋下的炸弹, 依然导致了他的力战不敌. 而代数作为研究方向, 算四平八稳地拿下. 最后一天的几何, 则像路边拿了10分光荣交卷.&lt;/p&gt;
+&lt;p&gt;虽然从某种意义上, 这并不是很难接受的成绩, 但只过一科, 也不能让人满意. 在求真这一神仙与神人都很多的地方, 即使你尝试保有平和之心态, 也难免会感觉到偶发的压力. 而在大家普遍面对未知的时刻, 各种思潮也算暗流涌动. 在新的学期里, 代数tv也不得不继续他大二上最后接触的几何学习, 在学习计划里添置了微分几何II与代数拓扑两门课. 今天的代数tv很难去回忆他当时的想法, 不过有一个念头是, 选这些课就不能再云了.&lt;/p&gt;
+&lt;p&gt;当代数tv像肌肉训练一样地去算截面曲率的时候, 我们很难说这是Enjoy Mathematics. 但是在英国的时候, 他访问的学者Petr说过, 要&amp;quot;get hands dirty&amp;quot;. 或许这是他这一年来少有的把手弄脏的时刻. 他开始适应在双清和ddl赛跑的生活, 就这样从曲率算到第二基本形式, 从外微分算到测地方程, 又从雅可比场算到Hessian比较定理. 伴随着德国舞蹈的上行与Menuet的下行曲调, 代数tv收官了这半年的学习. 回到家里的那一天, 代数tv觉得他可以休息一下, 但很遗憾, 就像是莎头要展望洛杉矶周期一样, 代数tv也要开始春季博资考的新一轮突击了.&lt;/p&gt;
+&lt;p&gt;几何方向并没有什么大问题, 突击的重心就放在了分析和四大力学上. 时间并不允许他二者兼抓, 他必须做出选择. 于是, 代数tv做出了一个堪比第一次给原神氪金一样的错误决定: 他决定突击四大力学.&lt;/p&gt;
+&lt;p&gt;你可以在这个网站的历史记录里发现一些端倪, 以这个复习量来说, 相比于往年的考题代数tv可以说是武装到牙齿了. 当时的他想, 只要不要有脑袋不好使的哥们照着眼睛来一箭, 将寰宇大定，海县清一.&lt;/p&gt;
+&lt;p&gt;很遗憾, 历史无数次的经验告诉我们, 当你感觉到万事大吉的时候, 你就差不多该4了. 代数tv没怎么做过具体计算, 于是经典力学第一题让他剥蒜了一个小时; 代数tv没仔细学过量子力学的具体原理, 于是面对基础的原理题束手无策; 代数tv复习统计力学的时候果断地判断不会考量子气体, 于是只能对试卷上的Fermi gas发呆; 代数tv决定战略放弃最后一题, 于是最后一题真的就没怎么吃到分.&lt;/p&gt;
+&lt;p&gt;那天的代数tv应该很感谢自己之前没有报名转段, 否则按照他的行动力, 在我正在叙述这段故事的时刻, 他应该已经完成了2025考研的报名. 但后来的故事还算戏剧性: 一位非常优秀的老师在分析最后一题里偷偷塞了道水题, 正好被&amp;quot;考试能力不差&amp;quot;的代数tv逮捕了. 几何虽然发生了某某人很幽默地顶着&amp;quot;我去年想考这个, 但觉得太麻烦了最后没考&amp;quot;的话考了截面曲率的计算这一我本来就怀疑他能不能算明白的同时还很幽默地少抄了个平方导致大家都算不出来这种事情, 但是好在他很仁慈地给够了作业题的分让通过并不成问题. 峰回路转, 在瞎写完第四题拍下笔的那一刻, 代数tv意识到, 要通过的话, 就是现在了.&lt;/p&gt;
+&lt;p&gt;后来呢? 后来其实就是现在了. 代数tv得到通过消息的那一天, 并不能说不兴奋. 但是代数几何II的ddl, 像宿命一样地扑了过来. 但其实这已经无所谓了, 他甚至有闲心去回忆过去的感受, 因为他知道, 已经没有什么复杂的笔试考试, 能够再阻挡他取得他这份名为数学研究的第一份工作了. 他并不想从应试或者什么别的角度来批判这过去的半年. 从某种意义上来说, 博资考像一个支点一样, 让他像风格优秀的mc玩家一样把之前寄存在一堆假人里的东西丢到全物品里, 并准备建设新的奇观. 但与此同时, 他也意识到, 好像能够一直活着, 还挺不错的.&lt;/p&gt;
+&lt;p&gt;那就, 仅此一命矣, 就再锋利些吧!&lt;/p&gt;
+&lt;p&gt;2025.2.25 22:10 在双清&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;好像写日记还挺有意思的xd&lt;/p&gt;
+&lt;p&gt;新坑! 争取每个月上/中/下三旬都至少写两篇, 虽然以后包写不了这么多了.&lt;/p&gt;
+&lt;p&gt;饿死我了, 下班! 吃饭!&lt;/p&gt;
+&lt;p&gt;顺便一提, 神里绫华可爱捏.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="从 qualify 到 qualified">
+<title>浮生多少记-其一</title>
+
+<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="浮生多少记-其一">
+<meta property='og:description' content="从 qualify 到 qualified">
+<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/'>
+<meta property='og:site_name' content='代数tv'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-25T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/225.jpg' />
+<meta name="twitter:title" content="浮生多少记-其一">
+<meta name="twitter:description" content="从 qualify 到 qualified"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/225.jpg' />
+    <link rel="shortcut icon" href="/emptyset.png" />
+<style>
+     
+    :root {
+        --article-font-family: "Merriweather", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";
+    
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+    
+        document.head.appendChild(customFont);
+    }());
+</script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_2da766625f77ada1.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">代数tv</a></h1>
+            <h2 class="site-description">做网站是不是有点简单了</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/407762935'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/Jinbz-ayaka'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://Jinbz-ayaka.github.io/" selected>中文</option>
+                                
+                                    <option value="https://Jinbz-ayaka.github.io/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/">
+                <img src="/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/225_hu_6384b06c39155eb1.jpg"
+                        srcset="/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/225_hu_6384b06c39155eb1.jpg 800w, /p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/225_hu_afb2bb9a99306e2c.jpg 1600w"
+                        width="800" 
+                        height="477" 
+                        loading="lazy"
+                        alt="Featured image of post 浮生多少记-其一" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0/" >
+                浮生多少记
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%80/">浮生多少记-其一</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            从 qualify 到 qualified
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 25, 2025</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>没错, 这就是新坑. 与此同时, 我很好奇这个长得像cypher的头图是谁.</p>
+<p>如果你不知道cypher是谁, 可以去问问玩那个以勇敢者命名的游戏的人. 他会告诉你, cypher是保安, 也是零.</p>
+<hr>
+<p>2025 年 2 月 25 日, 伟大的代数tv又一次回到了他忠实的双清综合楼. 他曾经在这里准备过很多很多的博资考. 他曾说, 等博资考通过了, 高低要给这个东西写点什么. 而现在, 显然是时候了.</p>
+<p>故事要从 2024 年的 ICBS 说起, 那个时候的代数tv逐渐能够对以怀尔斯为首的一大批优秀学者的报告有些眉目, 并为其揭露的精巧数学结构而震撼. 于是在大会结束之际, 代数tv写下如下一段话.</p>
+<p>Enjoy Mathematics, enjoy:)</p>
+<p>但很遗憾, 就像你很难去预测盒子里下一块巧克力的味道和原神下一个版本的up角色那样, 代数tv也不知道/那个时候的他已经没有太多时间去enjoy mathematics了. 在7月末欣赏完王楚钦选手的高超乒乓球技术并去雪如意玩了两天后, 他发现有一个大问题摆在了他眼前: 他要准备博资考了.</p>
+<p>八月的北京总是一直在下雨, 仿佛要把整个冬天的雨下干了一样. 乒乓球团体决赛的那天, 唐诗转段说明会那天, 黑神话开服那天, EDG夺冠那天, 代数tv脑海里总是有这样的画面——一边听着银临的山色有无中专辑, 或者是与某个英文单词谐音的国风乐团的口水歌, 一边缩在双清的座位上, 在漫天的雨声里翻找qual.zip. 哈基数五六年来的肌肉记忆告诉他, 想考得好就要像应激了一样刷题. 但就像他刷过的那些题一样, 半年后他会讲这些悉数忘却, 只记得他当时特别喜欢的一个旋律.</p>
+<p>世道如雨, 两眼空空故难测.</p>
+<p>Remark 1: 如果你对这个旋律是什么感兴趣, 我可以告诉你是</p>
+\[1=\text{B}\ \ \ \ 000\underset{\ \ \ \cdot\ \ \cdot\ \ \cdot}{\underline{\underline{1753}}}\ |\underset{\cdot}{\underline{5}}\underset{\cdot}{\underline{\underline{6}}}\overset{\frown}{\underset{\cdot}{\underline{\underline{6}}}\ \underset{\cdot}{\underline{\underline{6}}}}\underline{3}.\ \underline{3}\underline{\underline{2}}\overset{\frown}{\underline{\underline{2}}\ \underline{2}}\underline{0}\]<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1=\text{B}\ \ \ \ 000\underset{\ \ \ \cdot\ \ \cdot\ \ \cdot}{\underline{\underline{1753}}}\ |\underset{\cdot}{\underline{5}}\underset{\cdot}{\underline{\underline{6}}}\overset{\frown}{\underset{\cdot}{\underline{\underline{6}}}\ \underset{\cdot}{\underline{\underline{6}}}}\underline{3}.\ \underline{3}\underline{\underline{2}}\overset{\frown}{\underline{\underline{2}}\ \underline{2}}\underline{0}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>是的, 我是如此热爱这段旋律以至于用LaTeX把他打出来了.</p>
+<p>对代数tv来说, 他前几年的考试都相当好运, 但这次并不如愿. 第一天的分析那天, 恰好是代数tv的生日. 可在这次考试里, 虽然他靠着突击的泛函分析吃下了很多分, 但由于不等式放缩之&quot;高联时期的传统弱项&quot;, 与当初学复分析时对Riemann核的卷积埋下的炸弹, 依然导致了他的力战不敌. 而代数作为研究方向, 算四平八稳地拿下. 最后一天的几何, 则像路边拿了10分光荣交卷.</p>
+<p>虽然从某种意义上, 这并不是很难接受的成绩, 但只过一科, 也不能让人满意. 在求真这一神仙与神人都很多的地方, 即使你尝试保有平和之心态, 也难免会感觉到偶发的压力. 而在大家普遍面对未知的时刻, 各种思潮也算暗流涌动. 在新的学期里, 代数tv也不得不继续他大二上最后接触的几何学习, 在学习计划里添置了微分几何II与代数拓扑两门课. 今天的代数tv很难去回忆他当时的想法, 不过有一个念头是, 选这些课就不能再云了.</p>
+<p>当代数tv像肌肉训练一样地去算截面曲率的时候, 我们很难说这是Enjoy Mathematics. 但是在英国的时候, 他访问的学者Petr说过, 要&quot;get hands dirty&quot;. 或许这是他这一年来少有的把手弄脏的时刻. 他开始适应在双清和ddl赛跑的生活, 就这样从曲率算到第二基本形式, 从外微分算到测地方程, 又从雅可比场算到Hessian比较定理. 伴随着德国舞蹈的上行与Menuet的下行曲调, 代数tv收官了这半年的学习. 回到家里的那一天, 代数tv觉得他可以休息一下, 但很遗憾, 就像是莎头要展望洛杉矶周期一样, 代数tv也要开始春季博资考的新一轮突击了.</p>
+<p>几何方向并没有什么大问题, 突击的重心就放在了分析和四大力学上. 时间并不允许他二者兼抓, 他必须做出选择. 于是, 代数tv做出了一个堪比第一次给原神氪金一样的错误决定: 他决定突击四大力学.</p>
+<p>你可以在这个网站的历史记录里发现一些端倪, 以这个复习量来说, 相比于往年的考题代数tv可以说是武装到牙齿了. 当时的他想, 只要不要有脑袋不好使的哥们照着眼睛来一箭, 将寰宇大定，海县清一.</p>
+<p>很遗憾, 历史无数次的经验告诉我们, 当你感觉到万事大吉的时候, 你就差不多该4了. 代数tv没怎么做过具体计算, 于是经典力学第一题让他剥蒜了一个小时; 代数tv没仔细学过量子力学的具体原理, 于是面对基础的原理题束手无策; 代数tv复习统计力学的时候果断地判断不会考量子气体, 于是只能对试卷上的Fermi gas发呆; 代数tv决定战略放弃最后一题, 于是最后一题真的就没怎么吃到分.</p>
+<p>那天的代数tv应该很感谢自己之前没有报名转段, 否则按照他的行动力, 在我正在叙述这段故事的时刻, 他应该已经完成了2025考研的报名. 但后来的故事还算戏剧性: 一位非常优秀的老师在分析最后一题里偷偷塞了道水题, 正好被&quot;考试能力不差&quot;的代数tv逮捕了. 几何虽然发生了某某人很幽默地顶着&quot;我去年想考这个, 但觉得太麻烦了最后没考&quot;的话考了截面曲率的计算这一我本来就怀疑他能不能算明白的同时还很幽默地少抄了个平方导致大家都算不出来这种事情, 但是好在他很仁慈地给够了作业题的分让通过并不成问题. 峰回路转, 在瞎写完第四题拍下笔的那一刻, 代数tv意识到, 要通过的话, 就是现在了.</p>
+<p>后来呢? 后来其实就是现在了. 代数tv得到通过消息的那一天, 并不能说不兴奋. 但是代数几何II的ddl, 像宿命一样地扑了过来. 但其实这已经无所谓了, 他甚至有闲心去回忆过去的感受, 因为他知道, 已经没有什么复杂的笔试考试, 能够再阻挡他取得他这份名为数学研究的第一份工作了. 他并不想从应试或者什么别的角度来批判这过去的半年. 从某种意义上来说, 博资考像一个支点一样, 让他像风格优秀的mc玩家一样把之前寄存在一堆假人里的东西丢到全物品里, 并准备建设新的奇观. 但与此同时, 他也意识到, 好像能够一直活着, 还挺不错的.</p>
+<p>那就, 仅此一命矣, 就再锋利些吧!</p>
+<p>2025.2.25 22:10 在双清</p>
+<hr>
+<p>好像写日记还挺有意思的xd</p>
+<p>新坑! 争取每个月上/中/下三旬都至少写两篇, 虽然以后包写不了这么多了.</p>
+<p>饿死我了, 下班! 吃饭!</p>
+<p>顺便一提, 神里绫华可爱捏.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+    data-repo-id="R_kgDONu5gqQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONu5gqc4CnCfo"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Jinbz
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
