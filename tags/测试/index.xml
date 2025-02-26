@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>测试 on 代数tv</title>
-        <link>https://algebratv.com/tags/%E6%B5%8B%E8%AF%95/</link>
+        <link>https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
         <description>Recent content in 测试 on 代数tv</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://algebratv.com/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>测试latex</title>
-        <link>https://algebratv.com/p/%E6%B5%8B%E8%AF%95latex/</link>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</link>
         <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://algebratv.com/p/%E6%B5%8B%E8%AF%95latex/</guid>
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95latex/</guid>
         <description>&lt;p&gt;111&lt;/p&gt;
 &lt;p&gt;$a+b\neq c.$&lt;/p&gt;
 &lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
@@ -55,11 +55,11 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
         </item>
         <item>
         <title>测试测试</title>
-        <link>https://algebratv.com/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</link>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://algebratv.com/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</guid>
-        <description>&lt;img src="https://algebratv.com/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/yau.jpg" alt="Featured image of post 测试测试" /&gt;&lt;p&gt;这段东西是什么?&lt;/p&gt;
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/yau.jpg" alt="Featured image of post 测试测试" /&gt;&lt;p&gt;这段东西是什么?&lt;/p&gt;
 &lt;h2 id=&#34;测试一下标题&#34;&gt;测试一下标题
 &lt;/h2&gt;&lt;h1 id=&#34;测试一下section&#34;&gt;测试一下\section
 &lt;/h1&gt;&lt;h2 id=&#34;测试一下subsection&#34;&gt;测试一下\subsection
