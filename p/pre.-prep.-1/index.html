@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="代数几何讨论班的准备\n你看看你这个图都糊成啥了@lc\n上回书说到\nProposition 2 $A$ ring, $M$ module, if $\\forall i$, $1\\leq i\\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\\cdots,x_{i-1})M$, then $H_p(\\vec{x},M)=0$ for $p&gt;0$.\n实际上我们有这样的结论:\nProposition 3 $A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:\n">
+<title>pre. prep. 1</title>
+
+<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="pre. prep. 1">
+<meta property='og:description' content="代数几何讨论班的准备\n你看看你这个图都糊成啥了@lc\n上回书说到\nProposition 2 $A$ ring, $M$ module, if $\\forall i$, $1\\leq i\\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\\cdots,x_{i-1})M$, then $H_p(\\vec{x},M)=0$ for $p&gt;0$.\n实际上我们有这样的结论:\nProposition 3 $A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:\n">
+<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/'>
+<meta property='og:site_name' content='代数tv'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/dushu.jpg' />
+<meta name="twitter:title" content="pre. prep. 1">
+<meta name="twitter:description" content="代数几何讨论班的准备\n你看看你这个图都糊成啥了@lc\n上回书说到\nProposition 2 $A$ ring, $M$ module, if $\\forall i$, $1\\leq i\\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\\cdots,x_{i-1})M$, then $H_p(\\vec{x},M)=0$ for $p&gt;0$.\n实际上我们有这样的结论:\nProposition 3 $A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/dushu.jpg' />
+    <link rel="shortcut icon" href="/emptyset.png" />
+<style>
+     
+    :root {
+        --article-font-family: "Merriweather", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";
+    
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+    
+        document.head.appendChild(customFont);
+    }());
+</script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_2da766625f77ada1.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">代数tv</a></h1>
+            <h2 class="site-description">做网站是不是有点简单了</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/407762935'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/Jinbz-ayaka'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#proposition-2">Proposition 2</a></li>
+        <li><a href="#proposition-3">Proposition 3</a>
+          <ol>
+            <li><a href="#corollary-1">Corollary 1</a></li>
+            <li><a href="#corollary-2">Corollary 2</a></li>
+            <li><a href="#corollary-3">Corollary 3</a></li>
+          </ol>
+        </li>
+        <li><a href="#proposition-4">Proposition 4</a>
+          <ol>
+            <li><a href="#lemma">lemma</a></li>
+          </ol>
+        </li>
+        <li><a href="#theorem-2hilbert">Theorem 2:(Hilbert)</a></li>
+        <li><a href="#theorem-2">Theorem 2'</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/pre.-prep.-1/">
+                <img src="/p/pre.-prep.-1/dushu_hu_86e26cbd8fc6a49f.jpg"
+                        srcset="/p/pre.-prep.-1/dushu_hu_86e26cbd8fc6a49f.jpg 800w, /p/pre.-prep.-1/dushu_hu_cff8256aaa8d0892.jpg 1600w"
+                        width="800" 
+                        height="713" 
+                        loading="lazy"
+                        alt="Featured image of post pre. prep. 1" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/" >
+                代数几何
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/pre.-prep.-1/">pre. prep. 1</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 01, 2025</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>代数几何讨论班的准备</p>
+<p>你看看你这个图都糊成啥了@lc</p>
+<hr>
+<p>上回书说到</p>
+<h3 id="proposition-2">Proposition 2
+</h3><p>$A$ ring, $M$ module, if $\forall i$, $1\leq i\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\cdots,x_{i-1})M$, then $H_p(\vec{x},M)=0$ for $p&gt;0$.</p>
+<p>实际上我们有这样的结论:</p>
+<h3 id="proposition-3">Proposition 3
+</h3><p>$A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:</p>
+<p>a) $H_p(\vec{x},M)=0$ for $p&gt;0$,</p>
+<p>b) $H_1(\vec{x},M)=0$,</p>
+<p>c) $\forall i$, $1\leq i\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\cdots,x_{i-1})M$.</p>
+<p>c)$\implies$ a) 已经在 Prop.2 中证过了, a)$\implies$ b) 是平凡的. 我们实际上只需要证明 b)$\implies$ c)</p>
+<p>Prove by ind. For $r=1$, triv.</p>
+<p>在上节课里, 我们证明过存在这样的短正合列:</p>
+\[0\to H_0(x_r, H_1(\vec{x}',M))\to H_1(\vec{x},M)\to H_1(x_r,H_0(\vec{x}',M))\to 0.\]<p>$H_1(\vec{x},M)=0\implies H_0(x_i, H_1(\vec{x}&rsquo;,M))=0\implies H_1(\vec{x}&rsquo;,M)/x_iH_1(\vec{x}&rsquo;,M)=0\implies H_1(\vec{x}&rsquo;,M)=0$, c) holds for $1\leq i\leq r-1$. For $i=r$, note that $0=H_1(x_r,H_0(\vec{x}&rsquo;,M))=\ker(M/\vec{x}M\overset{x_r}{\to} M/\vec{x}M)$.</p>
+<p>目前来看, 这个定理的目的是导出如下推论:</p>
+<h4 id="corollary-1">Corollary 1
+</h4><p>c) does not depend on the order of the sequence $\vec{x}={x_1,\cdots,x_r}$.</p>
+<p>注意 $H_0(\vec{x},M)$ 自然地同构于 $A/\vec{x}\otimes_A M$, 函子 $M\mapsto K(\vec{x},M)$ 唯一地延拓到自然变换.</p>
+\[\psi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]<h4 id="corollary-2">Corollary 2
+</h4><p>Suppose that conditions a),b),c) of Prop 3 are satisfied for $A$, then the map</p>
+\[\phi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]<p>is an isom. for every $i$ and for every $A$-mod $M$.</p>
+<p>这个是由于前述条件给出了 $A$ 的自由消解.</p>
+<p>注意 $K(x,M)$ 作为外代数, 有自然的同构于 $Hom_A(K(\vec{x}),M)$. 有</p>
+\[H^i(Hom_A(K(x),M))\simeq H_{r-i}(x,M).\]<p>于是我们有自然的映射</p>
+\[\phi:Ext^i_A(A/x,M)\to H_{r-i}(x,M).\]<p>且同理我们有,</p>
+<h4 id="corollary-3">Corollary 3
+</h4><p>Under the same hypothesis as in cor. 2, the map</p>
+\[\phi:Ext^i_A(A/x,M)\to H_{r-i}(x,M).\]<p>is an isom. for every $i$ and for every $A$-mod $M$.</p>
+<p>从目前来看, cor.2 与 cor.3 的关键在于如下定理:</p>
+<h3 id="proposition-4">Proposition 4
+</h3><p>The annihilator of $H_i(\vec{x}, M),-\infty&lt;i&lt;+\infty$ contains $\vec{x}$ and $\operatorname{Ann}(M)$.</p>
+<p>出于某种原因, 我们不能直接对 $A$ 搞. 考虑多项式环 $B=A[X_1,\cdots, X_r]$, 对 $A$ 和 $M$ 赋予 $B$-模结构: $X_ia=0$, $X_im=x_im$, 于是我们有</p>
+\[H_i(\vec{x}, M)\simeq \operatorname{Tor}_i^B(A,M)\implies \operatorname{Ann}(H_i(\vec{x}, M))=\operatorname{Ann}(\operatorname{Tor}_i^B(A,M))\subset \operatorname{Ann} A+\operatorname{Ann}M.\]<p>而 $(X_i)\in \operatorname{Ann} A, (x_i-X_i)\in \operatorname{Ann}M$.</p>
+<hr>
+<p>我们接下来的主要目标是去研究 Koszul complex 的 filtration. 为此, 在接下来的章节里我们会假设 $(A,m)$ 是局部诺特环, $\vec{x}$ 包含在 $m$ 里, $M$ 是一个有限生成的 $A$-模使得 $l(M/\vec{x}M)&lt;\infty$.</p>
+<p>于是, 根据前文的 prop 4, 我们有 $H_p(\vec{x},M)$ 被 $\vec{x}+\operatorname{Ann}M$ 消灭, 于是拥有有限长度. 我们可以考虑 Euler-Poincare characteristic:</p>
+\[\chi(\vec{x},M)=\sum_{p=0}^r(-1)^pl(H_p(\vec{x},M)).\]<p>在这里, 我们要引入 Samuel 多项式的概念.</p>
+<hr>
+<p>称一个函数 $f:\mathbb{Z}\to \mathbb{Z}$ 或 $f:{n\geq n_0}\to\mathbb{Z}$ 是 polynomial-like 的, 如果存在多项式 $P_f(X)$ s.t. $f(n)=P_f(n)$ 对充分大的 $n$ 成立.</p>
+<h4 id="lemma">lemma
+</h4><p>TFAE:</p>
+<p>i) $f$ is polynomial-like;</p>
+<p>ii) $\Delta f$ is polynomial-like;</p>
+<p>iii) there exists $r\geq 0$ s.t. $\Delta^r f(n)=0$, for all large enough $n$.</p>
+<p>接下来我们要介绍 Hilbert polynomial: 一个交换环 $A$ 被称作 artinian 的, 如果</p>
+<p>(i) $A$ 作为 $A$-模有 finite length.</p>
+<p>(ii) $A$ 是诺特的, 且任何 $A$ 的素理想都是极大理想.</p>
+<p>我们考虑一个 graded ring $H=\oplus H_n$ 具有如下特征:</p>
+<p>a) $H_0$ is artinian,</p>
+<p>b) $H$ 由 $H_0$ 和 $H_1$ 中的有限多元素 $(x_1,\cdots, x_r)$ 生成.</p>
+<p>所以 $H$ 可以看做一个多项式环商掉某个其次理想.</p>
+<p>在这里我们可以想象 $H=gr(A)=\oplus x^n/x^{n+1}$, 然后去考虑一个 graded $H$-mod $M=\oplus M_n$. 在后面我们会让 $M_n$ 是一个比较好的东西. 但在这里我们先假设他是一个有限生成的 $H$-模. 于是每一个 $M_n$ 都是有限生成的 $H_0$ 模, 从而是 finite length 的. 我们定义函数 $n\mapsto \chi(M,n)$:</p>
+\[\chi(M,n)=l_{H_0}(M_n).\]<h3 id="theorem-2hilbert">Theorem 2:(Hilbert)
+</h3><p>$\chi(M,n)$ is a polynomial-like function of $n$ of degree $\leq r-1$.</p>
+<p>为此, 可以假设 $H=H_0[X_1,\cdots,X_r]$, 对 $r$ 归纳.</p>
+<p>当 $r=0$ 的时候, $M$ 是有限生成的 $H_0$ 模, 所以 $\chi(M,n)=0$, 当 $n$ 很大.</p>
+<p>假设其已经对 $r-1$ 证明, 对 $r$, 考察 $\phi=X_r$ 定义在 $M$ 上的 endomorphism, 考虑 $N,R$ $\phi$ 的 kernel 和 cokernel, 我们有exact sequence</p>
+\[0\to N_n\to M_n\to M_{n+1}\to R_{n+1}\to 0.\]<p>根据 Atiyah Prop 6.9 有 $l$ 是 additive 的, 于是 $\Delta \chi(M,n)=\chi(M,n+1)-\chi(M,n)=\chi(R,n+1)-\chi(N,n)$.</p>
+<p>通过追图我们可以得到&hellip;&hellip;</p>
+<p>总之 $N,R$ 可以被看做有限生成的 $H_0[X_1,\cdots,X_{r-1}]$-模. 根据归纳假设证毕.</p>
+<h3 id="theorem-2">Theorem 2'
+</h3><p>我不确定这个是否要讲, 也许写到这里应该就差不多了.</p>
+<p>a) $\Delta^{r-1}Q(M)\leq l(M_0)$.</p>
+<p>b) TFAE:</p>
+<p>b1) $\Delta^{r-1}Q(M)= l(M_0)$;</p>
+<p>b2) $\chi(M,n)=l(M_0)C^{r-1}_{n+r-1}$;</p>
+<p>b3) the natural map $M_0\otimes_{H_0}H_0[X_1,\cdots,X_r]\to M$ is an isom.</p>
+<p>要让讲证明就开始抄书)</p>
+<p>Samuel polynomial是什么? 不知道, 摸了</p>
+<p>edg打的是牛魔</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+    data-repo-id="R_kgDONu5gqQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONu5gqc4CnCfo"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Jinbz
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

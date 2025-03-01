@@ -7,7 +7,87 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>pre. prep. 1</title>
+        <link>https://Jinbz-ayaka.github.io/p/pre.-prep.-1/</link>
+        <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/pre.-prep.-1/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/pre.-prep.-1/dushu.jpg" alt="Featured image of post pre. prep. 1" /&gt;&lt;p&gt;代数几何讨论班的准备&lt;/p&gt;
+&lt;p&gt;你看看你这个图都糊成啥了@lc&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;上回书说到&lt;/p&gt;
+&lt;h3 id=&#34;proposition-2&#34;&gt;Proposition 2
+&lt;/h3&gt;&lt;p&gt;$A$ ring, $M$ module, if $\forall i$, $1\leq i\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\cdots,x_{i-1})M$, then $H_p(\vec{x},M)=0$ for $p&amp;gt;0$.&lt;/p&gt;
+&lt;p&gt;实际上我们有这样的结论:&lt;/p&gt;
+&lt;h3 id=&#34;proposition-3&#34;&gt;Proposition 3
+&lt;/h3&gt;&lt;p&gt;$A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:&lt;/p&gt;
+&lt;p&gt;a) $H_p(\vec{x},M)=0$ for $p&amp;gt;0$,&lt;/p&gt;
+&lt;p&gt;b) $H_1(\vec{x},M)=0$,&lt;/p&gt;
+&lt;p&gt;c) $\forall i$, $1\leq i\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\cdots,x_{i-1})M$.&lt;/p&gt;
+&lt;p&gt;c)$\implies$ a) 已经在 Prop.2 中证过了, a)$\implies$ b) 是平凡的. 我们实际上只需要证明 b)$\implies$ c)&lt;/p&gt;
+&lt;p&gt;Prove by ind. For $r=1$, triv.&lt;/p&gt;
+&lt;p&gt;在上节课里, 我们证明过存在这样的短正合列:&lt;/p&gt;
+\[0\to H_0(x_r, H_1(\vec{x}&#39;,M))\to H_1(\vec{x},M)\to H_1(x_r,H_0(\vec{x}&#39;,M))\to 0.\]&lt;p&gt;$H_1(\vec{x},M)=0\implies H_0(x_i, H_1(\vec{x}&amp;rsquo;,M))=0\implies H_1(\vec{x}&amp;rsquo;,M)/x_iH_1(\vec{x}&amp;rsquo;,M)=0\implies H_1(\vec{x}&amp;rsquo;,M)=0$, c) holds for $1\leq i\leq r-1$. For $i=r$, note that $0=H_1(x_r,H_0(\vec{x}&amp;rsquo;,M))=\ker(M/\vec{x}M\overset{x_r}{\to} M/\vec{x}M)$.&lt;/p&gt;
+&lt;p&gt;目前来看, 这个定理的目的是导出如下推论:&lt;/p&gt;
+&lt;h4 id=&#34;corollary-1&#34;&gt;Corollary 1
+&lt;/h4&gt;&lt;p&gt;c) does not depend on the order of the sequence $\vec{x}={x_1,\cdots,x_r}$.&lt;/p&gt;
+&lt;p&gt;注意 $H_0(\vec{x},M)$ 自然地同构于 $A/\vec{x}\otimes_A M$, 函子 $M\mapsto K(\vec{x},M)$ 唯一地延拓到自然变换.&lt;/p&gt;
+\[\psi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]&lt;h4 id=&#34;corollary-2&#34;&gt;Corollary 2
+&lt;/h4&gt;&lt;p&gt;Suppose that conditions a),b),c) of Prop 3 are satisfied for $A$, then the map&lt;/p&gt;
+\[\phi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]&lt;p&gt;is an isom. for every $i$ and for every $A$-mod $M$.&lt;/p&gt;
+&lt;p&gt;这个是由于前述条件给出了 $A$ 的自由消解.&lt;/p&gt;
+&lt;p&gt;注意 $K(x,M)$ 作为外代数, 有自然的同构于 $Hom_A(K(\vec{x}),M)$. 有&lt;/p&gt;
+\[H^i(Hom_A(K(x),M))\simeq H_{r-i}(x,M).\]&lt;p&gt;于是我们有自然的映射&lt;/p&gt;
+\[\phi:Ext^i_A(A/x,M)\to H_{r-i}(x,M).\]&lt;p&gt;且同理我们有,&lt;/p&gt;
+&lt;h4 id=&#34;corollary-3&#34;&gt;Corollary 3
+&lt;/h4&gt;&lt;p&gt;Under the same hypothesis as in cor. 2, the map&lt;/p&gt;
+\[\phi:Ext^i_A(A/x,M)\to H_{r-i}(x,M).\]&lt;p&gt;is an isom. for every $i$ and for every $A$-mod $M$.&lt;/p&gt;
+&lt;p&gt;从目前来看, cor.2 与 cor.3 的关键在于如下定理:&lt;/p&gt;
+&lt;h3 id=&#34;proposition-4&#34;&gt;Proposition 4
+&lt;/h3&gt;&lt;p&gt;The annihilator of $H_i(\vec{x}, M),-\infty&amp;lt;i&amp;lt;+\infty$ contains $\vec{x}$ and $\operatorname{Ann}(M)$.&lt;/p&gt;
+&lt;p&gt;出于某种原因, 我们不能直接对 $A$ 搞. 考虑多项式环 $B=A[X_1,\cdots, X_r]$, 对 $A$ 和 $M$ 赋予 $B$-模结构: $X_ia=0$, $X_im=x_im$, 于是我们有&lt;/p&gt;
+\[H_i(\vec{x}, M)\simeq \operatorname{Tor}_i^B(A,M)\implies \operatorname{Ann}(H_i(\vec{x}, M))=\operatorname{Ann}(\operatorname{Tor}_i^B(A,M))\subset \operatorname{Ann} A+\operatorname{Ann}M.\]&lt;p&gt;而 $(X_i)\in \operatorname{Ann} A, (x_i-X_i)\in \operatorname{Ann}M$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我们接下来的主要目标是去研究 Koszul complex 的 filtration. 为此, 在接下来的章节里我们会假设 $(A,m)$ 是局部诺特环, $\vec{x}$ 包含在 $m$ 里, $M$ 是一个有限生成的 $A$-模使得 $l(M/\vec{x}M)&amp;lt;\infty$.&lt;/p&gt;
+&lt;p&gt;于是, 根据前文的 prop 4, 我们有 $H_p(\vec{x},M)$ 被 $\vec{x}+\operatorname{Ann}M$ 消灭, 于是拥有有限长度. 我们可以考虑 Euler-Poincare characteristic:&lt;/p&gt;
+\[\chi(\vec{x},M)=\sum_{p=0}^r(-1)^pl(H_p(\vec{x},M)).\]&lt;p&gt;在这里, 我们要引入 Samuel 多项式的概念.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;称一个函数 $f:\mathbb{Z}\to \mathbb{Z}$ 或 $f:{n\geq n_0}\to\mathbb{Z}$ 是 polynomial-like 的, 如果存在多项式 $P_f(X)$ s.t. $f(n)=P_f(n)$ 对充分大的 $n$ 成立.&lt;/p&gt;
+&lt;h4 id=&#34;lemma&#34;&gt;lemma
+&lt;/h4&gt;&lt;p&gt;TFAE:&lt;/p&gt;
+&lt;p&gt;i) $f$ is polynomial-like;&lt;/p&gt;
+&lt;p&gt;ii) $\Delta f$ is polynomial-like;&lt;/p&gt;
+&lt;p&gt;iii) there exists $r\geq 0$ s.t. $\Delta^r f(n)=0$, for all large enough $n$.&lt;/p&gt;
+&lt;p&gt;接下来我们要介绍 Hilbert polynomial: 一个交换环 $A$ 被称作 artinian 的, 如果&lt;/p&gt;
+&lt;p&gt;(i) $A$ 作为 $A$-模有 finite length.&lt;/p&gt;
+&lt;p&gt;(ii) $A$ 是诺特的, 且任何 $A$ 的素理想都是极大理想.&lt;/p&gt;
+&lt;p&gt;我们考虑一个 graded ring $H=\oplus H_n$ 具有如下特征:&lt;/p&gt;
+&lt;p&gt;a) $H_0$ is artinian,&lt;/p&gt;
+&lt;p&gt;b) $H$ 由 $H_0$ 和 $H_1$ 中的有限多元素 $(x_1,\cdots, x_r)$ 生成.&lt;/p&gt;
+&lt;p&gt;所以 $H$ 可以看做一个多项式环商掉某个其次理想.&lt;/p&gt;
+&lt;p&gt;在这里我们可以想象 $H=gr(A)=\oplus x^n/x^{n+1}$, 然后去考虑一个 graded $H$-mod $M=\oplus M_n$. 在后面我们会让 $M_n$ 是一个比较好的东西. 但在这里我们先假设他是一个有限生成的 $H$-模. 于是每一个 $M_n$ 都是有限生成的 $H_0$ 模, 从而是 finite length 的. 我们定义函数 $n\mapsto \chi(M,n)$:&lt;/p&gt;
+\[\chi(M,n)=l_{H_0}(M_n).\]&lt;h3 id=&#34;theorem-2hilbert&#34;&gt;Theorem 2:(Hilbert)
+&lt;/h3&gt;&lt;p&gt;$\chi(M,n)$ is a polynomial-like function of $n$ of degree $\leq r-1$.&lt;/p&gt;
+&lt;p&gt;为此, 可以假设 $H=H_0[X_1,\cdots,X_r]$, 对 $r$ 归纳.&lt;/p&gt;
+&lt;p&gt;当 $r=0$ 的时候, $M$ 是有限生成的 $H_0$ 模, 所以 $\chi(M,n)=0$, 当 $n$ 很大.&lt;/p&gt;
+&lt;p&gt;假设其已经对 $r-1$ 证明, 对 $r$, 考察 $\phi=X_r$ 定义在 $M$ 上的 endomorphism, 考虑 $N,R$ $\phi$ 的 kernel 和 cokernel, 我们有exact sequence&lt;/p&gt;
+\[0\to N_n\to M_n\to M_{n+1}\to R_{n+1}\to 0.\]&lt;p&gt;根据 Atiyah Prop 6.9 有 $l$ 是 additive 的, 于是 $\Delta \chi(M,n)=\chi(M,n+1)-\chi(M,n)=\chi(R,n+1)-\chi(N,n)$.&lt;/p&gt;
+&lt;p&gt;通过追图我们可以得到&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;总之 $N,R$ 可以被看做有限生成的 $H_0[X_1,\cdots,X_{r-1}]$-模. 根据归纳假设证毕.&lt;/p&gt;
+&lt;h3 id=&#34;theorem-2&#34;&gt;Theorem 2&#39;
+&lt;/h3&gt;&lt;p&gt;我不确定这个是否要讲, 也许写到这里应该就差不多了.&lt;/p&gt;
+&lt;p&gt;a) $\Delta^{r-1}Q(M)\leq l(M_0)$.&lt;/p&gt;
+&lt;p&gt;b) TFAE:&lt;/p&gt;
+&lt;p&gt;b1) $\Delta^{r-1}Q(M)= l(M_0)$;&lt;/p&gt;
+&lt;p&gt;b2) $\chi(M,n)=l(M_0)C^{r-1}_{n+r-1}$;&lt;/p&gt;
+&lt;p&gt;b3) the natural map $M_0\otimes_{H_0}H_0[X_1,\cdots,X_r]\to M$ is an isom.&lt;/p&gt;
+&lt;p&gt;要让讲证明就开始抄书)&lt;/p&gt;
+&lt;p&gt;Samuel polynomial是什么? 不知道, 摸了&lt;/p&gt;
+&lt;p&gt;edg打的是牛魔&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其二</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%8C/</link>
         <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
