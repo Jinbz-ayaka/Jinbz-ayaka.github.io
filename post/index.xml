@@ -32,7 +32,7 @@
 &lt;p&gt;目前来看, 这个定理的目的是导出如下推论:&lt;/p&gt;
 &lt;h4 id=&#34;corollary-1&#34;&gt;Corollary 1
 &lt;/h4&gt;&lt;p&gt;c) does not depend on the order of the sequence $\vec{x}={x_1,\cdots,x_r}$.&lt;/p&gt;
-&lt;p&gt;注意 $H_0(\vec{x},M)$ 自然地同构于 $A/\vec{x}\otimes_A M$, 函子 $M\mapsto K(\vec{x},M)$ 唯一地延拓到自然变换.&lt;/p&gt;
+&lt;p&gt;注意 $H_0(\vec{x},M)$ 自然地同构于 $A/\vec{x}\otimes_A M$, 利用 A-free resolution, 我们诱导了同构.&lt;/p&gt;
 \[\psi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]&lt;h4 id=&#34;corollary-2&#34;&gt;Corollary 2
 &lt;/h4&gt;&lt;p&gt;Suppose that conditions a),b),c) of Prop 3 are satisfied for $A$, then the map&lt;/p&gt;
 \[\phi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]&lt;p&gt;is an isom. for every $i$ and for every $A$-mod $M$.&lt;/p&gt;
@@ -46,7 +46,7 @@
 &lt;p&gt;从目前来看, cor.2 与 cor.3 的关键在于如下定理:&lt;/p&gt;
 &lt;h3 id=&#34;proposition-4&#34;&gt;Proposition 4
 &lt;/h3&gt;&lt;p&gt;The annihilator of $H_i(\vec{x}, M),-\infty&amp;lt;i&amp;lt;+\infty$ contains $\vec{x}$ and $\operatorname{Ann}(M)$.&lt;/p&gt;
-&lt;p&gt;出于某种原因, 我们不能直接对 $A$ 搞. 考虑多项式环 $B=A[X_1,\cdots, X_r]$, 对 $A$ 和 $M$ 赋予 $B$-模结构: $X_ia=0$, $X_im=x_im$, 于是我们有&lt;/p&gt;
+&lt;p&gt;请注意这里的 $x$ 不一定是一个 regular sequence, 我们不能直接对 $A$ 搞. 考虑多项式环 $B=A[X_1,\cdots, X_r]$, 对 $A$ 和 $M$ 赋予 $B$-模结构: $X_ia=0$, $X_im=x_im$, 于是我们有&lt;/p&gt;
 \[H_i(\vec{x}, M)\simeq \operatorname{Tor}_i^B(A,M)\implies \operatorname{Ann}(H_i(\vec{x}, M))=\operatorname{Ann}(\operatorname{Tor}_i^B(A,M))\subset \operatorname{Ann} A+\operatorname{Ann}M.\]&lt;p&gt;而 $(X_i)\in \operatorname{Ann} A, (x_i-X_i)\in \operatorname{Ann}M$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;我们接下来的主要目标是去研究 Koszul complex 的 filtration. 为此, 在接下来的章节里我们会假设 $(A,m)$ 是局部诺特环, $\vec{x}$ 包含在 $m$ 里, $M$ 是一个有限生成的 $A$-模使得 $l(M/\vec{x}M)&amp;lt;\infty$.&lt;/p&gt;
