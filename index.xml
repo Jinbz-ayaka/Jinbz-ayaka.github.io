@@ -7,7 +7,69 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>浮生多少记-其五</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94/</link>
+        <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94/chuchun.jpg" alt="Featured image of post 浮生多少记-其五" /&gt;&lt;p&gt;这张图怎么感觉还是有点糊() 虽然氛围还算不错&lt;/p&gt;
+&lt;p&gt;好笑吗? 我只看到一个写不完作业被迫在双清加班到现在而且还没带卡要等舍友先回去所以打不了卡拉彼丘现在非常急急急的唐诗tv.&lt;/p&gt;
+&lt;p&gt;o 原来他今天还没原啊, 那没事了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天代数tv做Kac-Moody代数作业的时候被这样的引理卡住了:&lt;/p&gt;
+&lt;p&gt;Lemma: For $\mathfrak{g}$ semisimple, $ad:\mathfrak{g}\to \mathfrak{gl}(\mathfrak{g})$ is an isomorphism of $\mathfrak{g}$ onto the algebra $Der(\mathfrak{g})$ of derivations of g.&lt;/p&gt;
+&lt;p&gt;然后上网搜过去一串, 发现没有人问这个kk, 这绝对不是一个简单的东西吧.&lt;/p&gt;
+&lt;p&gt;于是代数tv就去问问神奇的ds和gemini. ds给出的做法大概是这样:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;利用Killing形式的非退化性 &amp;ndash;en看起来很对&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;构造导子Δ并分析其迹 &amp;ndash;这好像有点道理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;利用单李代数的导子结构 &amp;ndash;对, 我也觉得该划到单李代数的形式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对单李代数 $L$，其导子代数满足 $Der\mathfrak{g}=ad\mathfrak{g}$ （即所有导子均为内导子）, 证毕 &amp;ndash;啊?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;没错, 他直接把可能&amp;quot;最关键的一步&amp;quot;跳了. 然后我重开了若干次之后只得到一堆车轱辘话orz&lt;/p&gt;
+&lt;p&gt;gemini倒是啪啦啪拉给我说了一大堆, 但是我觉得除了一个一眼没道理的证明以外, 唯一的有点道理的东西就是&amp;quot;利用$H^1(\mathfrak{g},\mathbb{C})=0$&amp;quot;. 不过你猜我用这个引理是为了证什么()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;然后代数tv就一直找一直找, 然后惊讶地发现原来他以前做过这个题.&lt;/p&gt;
+&lt;p&gt;Proof: For $x\in\mathfrak{g},\delta\in Der(\mathfrak{g})$, one may check directly that $Der(\mathfrak{g})$ is a Lie algebra. Furthermore, $ad(\delta(X))(Y)=[\delta X,Y]=\delta[X,Y]-[X,\delta Y]=(\delta\circ ad(X)-ad(X)\circ \delta)Y=([\delta,ad(X)])Y$. Hence $ad\mathfrak{g}$ is an ideal of $Der\mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;Since $\mathfrak{g}$ semisimple, there exists $ad^\perp\mathfrak{g}$ s.t. $ad^\perp\mathfrak{g}\oplus ad\mathfrak{g}=Der\mathfrak{g}$. Take $\delta\in ad^\perp\mathfrak{g}$, $[\delta,ad(X)]=0$ for all $X\in\mathfrak{g}$. Hence $ad(\delta(X))=0$, $\delta(X)\in Z(\mathfrak{g})\implies\delta(X)=0$. But this holds for all $X$, hence $\delta=0$. $ad\mathfrak{g}=Der\mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;然后&amp;hellip;就没有然后了.&lt;/p&gt;
+&lt;p&gt;然后代数tv在想, 他当时为什么能做出来这个题, 于是他惊讶地发现在Fulton-Harris后面给了这题的提示.&lt;/p&gt;
+&lt;p&gt;哎, 太久没看Fulton了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天的代数tv还做了一件重要的事情, 他去找了中心的老师聊天. 聊天的主题是未来想研究几何表示论的话, 应该做些什么.&lt;/p&gt;
+&lt;p&gt;于是代数tv就得到了如下的建议:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;去看Okounkov的文章, 尤其是Introduction部分&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;去读CG, 这个真得读, 不读不行.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;去报小暑朗兰兹.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;现在代数tv已经完成了后1/3了, 剩下的等代数tv有空了再慢慢做吧orz&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;你知道吗, 博资考成绩是2/24出的, 也就是说, 快过去一个月了.&lt;/p&gt;
+&lt;p&gt;代数tv距离原先找导师的ddl, 只剩下了一个月时间.&lt;/p&gt;
+&lt;p&gt;与此同时, 代数tv数学史论文进度依旧是(5/50).&lt;/p&gt;
+&lt;p&gt;别急.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;但是现在真得下班了, 再不下班没时间打卡拉彼丘了&lt;/p&gt;
+&lt;p&gt;2025.3.18 22:39 在双清&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>25.3.16 更新</title>
         <link>https://Jinbz-ayaka.github.io/p/25.3.16-%E6%9B%B4%E6%96%B0/</link>
         <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
