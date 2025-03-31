@@ -7,7 +7,72 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>浮生多少记-其八</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%85%AB/</link>
+        <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%85%AB/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%85%AB/buy.jpg" alt="Featured image of post 浮生多少记-其八" /&gt;&lt;p&gt;真不错, 这次都不用我亲自裁了&lt;/p&gt;
+&lt;p&gt;但这哥们是?&lt;/p&gt;
+&lt;p&gt;而且为什么这个季节拿梅花, 我有意见.&lt;/p&gt;
+&lt;p&gt;哎, 梅粉&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;恭喜代数tv在3月的不要串挑战达成了0天的好成绩. 说来挺神奇的, 3月有31天.&lt;/p&gt;
+&lt;p&gt;所以就可以顺理成章地晚更一天, 不错.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;首先修改一个上一篇的问题, 神人里氏震级他的原理是2级1000倍.&lt;/p&gt;
+&lt;p&gt;不能理解. 不过这个带来的唯一的好处就是, 我们可以很快看出4.6级地震是4.4级地震的2倍.&lt;/p&gt;
+&lt;p&gt;哎, $2^{10}=10^3$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;感觉这些天过得好快, 好像如果你在11点起来, 然后经过一个下午, 一个傍晚, 一个晚上和一个凌晨, 一天就结束了.&lt;/p&gt;
+&lt;p&gt;CG还是没怎么看, 但是数学史倒是推进了一点点.&lt;/p&gt;
+&lt;p&gt;虽然还是没有写到 Weyl Character Formula 和 Macdonald Formula, 但是把那个 twisted algebra 搞明白了一点点.&lt;/p&gt;
+&lt;p&gt;哎, Kac 写的太折磨了.&lt;/p&gt;
+&lt;p&gt;立个 flag, 这几天把作业写完了之后写一篇那个的读书笔记.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;之前是不是说要搞 AI 朗读来着的吗, 很显然这个的前置科技树是炼 AI, 但是代数 tv 还没有开工.&lt;/p&gt;
+&lt;p&gt;清明节应该有时间, 那个时候搞一下吧.&lt;/p&gt;
+&lt;p&gt;搞得比图床tv那边的 AI 宵宫好就算成功.&lt;/p&gt;
+&lt;p&gt;不过, 炼完之后有什么让他更像一点的手段吗, 不知道.&lt;/p&gt;
+&lt;p&gt;再说.&lt;/p&gt;
+&lt;p&gt;还有一点, 就是代数tv发现好像, 确实应该在字母附近加空格.&lt;/p&gt;
+&lt;p&gt;记得某个蓝色的, 跟大海与海盐有关的岛资网站就有人吐槽过这个问题.&lt;/p&gt;
+&lt;p&gt;不过他都没做, 代数tv为什么要做()&lt;/p&gt;
+&lt;p&gt;别急, 会做的, 别急.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这个Spectral Seq也太搞人心态了, 代数tv实在有点不明白这个东西是个啥, 他是怎么来的, 又能发挥什么用处.&lt;/p&gt;
+&lt;p&gt;等搞明白了高低也得写一篇, 看看这两天行不行吧.&lt;/p&gt;
+&lt;p&gt;怎么从数学聊到网站, 然后又聊到数学了.&lt;/p&gt;
+&lt;p&gt;很符合代数tv这几天学数学的状态.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;突然发现全文字的话, 看起来有点费劲()&lt;/p&gt;
+&lt;p&gt;插张图吧, 反正也是从图床tv那里偷.&lt;/p&gt;
+&lt;img src=&#34;https://Jinbz-ayaka.github.io/moping.jpg&#34; alt=&#34;示例图片&#34; style=&#34;width: 80%; max-width: 600px; height: auto; display: block; margin: 1rem auto; border-radius: 8px;&#34;&gt;
+&lt;p&gt;又素净, 又讲究, 又雅致.——《百万英镑》马克·吐温&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;前两天在凌晨例行刷b站, 看到高志豪Pianoboy的演奏的 The Truth That You Leave, 又勾起了代数tv弹钢琴的欲望.&lt;/p&gt;
+&lt;p&gt;如果能弹出来平常听的那些歌, 那也太不错了()&lt;/p&gt;
+&lt;p&gt;改天一定去弹钢琴!&lt;/p&gt;
+&lt;p&gt;哪一天呢?&lt;/p&gt;
+&lt;p&gt;等代数tv什么时候给老师发邮件了, 什么时候就去弹吧(&lt;/p&gt;
+&lt;p&gt;有一说一, 在粉色软件看到别人把钢琴曲弹出来和在红色软件音乐软件上听钢琴曲, 完全是不同的感觉.&lt;/p&gt;
+&lt;p&gt;可能视听体验和纯粹的听觉, 中间还是有难以跨越的隔阂.&lt;/p&gt;
+&lt;p&gt;这也就是为什么代数tv只在粉色软件上听周杰伦的歌.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;笑点解析 0.1:&lt;/strong&gt; 由于一些比较众所周知的原因, 红色软件上没有周杰伦的歌.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;但话说回来, 这几天代数tv又挺忙的. 要写各种各样的作业, 学各种各样的数学, 应付各种各样的事情.&lt;/p&gt;
+&lt;p&gt;比如找老师之类的orz.&lt;/p&gt;
+&lt;p&gt;为数不多的时间, 还要应付原神的新版本. 开新地图乐orz&lt;/p&gt;
+&lt;p&gt;还有点时间呢? 全上供给那个神人游戏了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;别带玛拉节奏&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+&lt;p&gt;2025.3.31 18:50 于双清 明志斋 D区.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其七</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%83/</link>
         <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
