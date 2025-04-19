@@ -462,7 +462,9 @@
 \end{cases},\]<p>其中 $\omega=ck, k=|\vec{k}|$.</p>
 <p>那么考虑 Maxwell 方程组, 有</p>
 \[c\vec{B}_0=\hat{k}\times\vec{E}_0, \hat{k}=\frac{\vec{k}}{|\vec{k}|}.\]<p>利用傅里叶分析我们可以得出其全部的解</p>
-\[\vec{E}=\frac{1}{(2\pi)^3}\int d^3k\vec{\mathcal{E}}(\vec{k})e^{i(\vec{k}\cdot\vec{r}-\omega t)}\]\[\vec{B}=\frac{1}{(2\pi)^3}\int d^3k\frac{1}{c}\left(\hat{k}\times\vec{\mathcal{E}}(\vec{k})\right)e^{i(\vec{k}\cdot\vec{r}-\omega t)}.\]<p>于是通过</p>
+\[\vec{E}=\frac{1}{(2\pi)^3}\int d^3k\vec{\mathcal{E}}(\vec{k})e^{i(\vec{k}\cdot\vec{r}-\omega t)}\]<p>
+</p>
+\[\vec{B}=\frac{1}{(2\pi)^3}\int d^3k\frac{1}{c}\left(\hat{k}\times\vec{\mathcal{E}}(\vec{k})\right)e^{i(\vec{k}\cdot\vec{r}-\omega t)}.\]<p>于是通过</p>
 \[U=\frac{\epsilon_0}{2}\int d^3r\left(|\operatorname{Re}\vec{\hat{E}}|^2+|\operatorname{Re}c\vec{\hat{B}}|^2\right).\]<p>最终计算得</p>
 \[U=\frac{\epsilon_0}{2}\frac{1}{(2\pi)^3}\int d^3k|\vec{\mathcal{E}}(\vec{k})|^2.\]<h4 id="电磁辐射">电磁辐射
 </h4><p>我以前居然还会这个? 不可思议.</p>
@@ -535,7 +537,9 @@ E_z/c&B_y&-B_x&0
 </ol>
 <p>取 $G$ 满足 $\partial_{\hat{n}}&lsquo;G(\vec{r},\vec{r}&rsquo;)=-4\pi/A$, $A=Area(S)$, 那么</p>
 \[\phi(r)=\frac{1}{A}\int_S\phi(\hat{r}')+\frac{1}{4\pi\epsilon_0}\int_Vd^3r'\rho(\hat{r}')G(\hat{r},\hat{r}')+\frac{1}{\pi}\int_S\partial_{\hat{n}}'\phi(\hat{r}')G(\hat{r},\hat{r}').\]<h4 id="电多极扩张">电多极扩张(?)
-</h4>\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r'\frac{\rho(\vec{r}')}{|\vec{r}-\vec{r}'|}.\]<p>我们要考虑 $r&raquo;r&rsquo;$ 情况下的 $\phi$. 其大致操作是利用</p>
+</h4><p>已知
+</p>
+\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r'\frac{\rho(\vec{r}')}{|\vec{r}-\vec{r}'|}.\]<p>我们要考虑 $r&raquo;r&rsquo;$ 情况下的 $\phi$. 其大致操作是利用</p>
 \[\frac{1}{|\vec{r}-\vec{r}'|}=\frac{1}{r\sqrt{1-2(\hat{r}\cdot\hat{r}')\frac{r'}{r}+\left(\frac{r'}{r}\right)^2}}.\]<p>通过 Legendre 多项式展开. 最终得到对于 $\vec{P}=\int_Vd^3r&rsquo;\rho(\vec{r}&rsquo;)\vec{r}&rsquo;$, 有</p>
 \[\phi(\vec{r})\simeq\frac{1}{4\pi\epsilon_0}\frac{\vec{P}\cdot\vec{r}}{r^3},r>>0.\]<p>于是</p>
 \[\vec{E}=-\nabla\phi(\vec{r})\simeq \frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}.\]<h5 id="电偶极子">电偶极子

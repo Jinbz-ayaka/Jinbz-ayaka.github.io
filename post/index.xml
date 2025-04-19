@@ -7,7 +7,181 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其一 P127-135</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/</link>
+        <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/na1.jpg" alt="Featured image of post CG饲养日记-其一 P127-135" /&gt;&lt;p&gt;先借一下代数几何的tag()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;新开这个系列, 主要是为了督促自己看CG.&lt;/p&gt;
+&lt;p&gt;CG总共486页, 算上前面几章不用看的大概还剩400页, 以半个小时一页的速度的话, 每天花4h, 只用50天就能读完🤔&lt;/p&gt;
+&lt;p&gt;话虽如此, 在3/18和z老师聊完天之后, 这一个月大概看了一小章🙂&lt;/p&gt;
+&lt;p&gt;太忙了qwq&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ss李代数和flag-var&#34;&gt;s.s.李代数和flag var.
+&lt;/h2&gt;&lt;h3 id=&#34;代数群与sr-elements&#34;&gt;代数群与s.r. elements
+&lt;/h3&gt;&lt;p&gt;从3.1开始吧, 这一张之前云过一部分, 看起来问题不大()&lt;/p&gt;
+&lt;p&gt;$G$ 有限维半单连通复李群, $\mathfrak{g}$ 李代数. 考虑 $B$ 是他的 Borel 子群, 也就是说, 极大可解子群. $T$ 其上的极大 torus, $U$ unipotent radical 使得 $TU=B$. 还有 $\mathfrak{b},\mathfrak{n}$ 为 $T,U$ 的李代数.&lt;/p&gt;
+&lt;p&gt;先是俩代数群的定理.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.1: Any orbit of a unip. gp. acting on an affine var. is closed in the Zar. top.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.2: Any Borel subgp equals to its normalizer i.e. $N_G(B)=B$.&lt;/p&gt;
+&lt;p&gt;以及&lt;/p&gt;
+&lt;p&gt;Fact &amp;amp; Defn 3.1.3: any $x\in \mathfrak{g}, \dim Z_{\mathfrak{g}}(x)\geq \operatorname{rank}\mathfrak{g}$. $x$ is regular if $\dim Z_{\mathfrak{g}}(x)=\operatorname{rank} \mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;$\mathfrak{g}$ 里面的 s.s. 和 nilp. elements 以及 Jordan Decomp. 就略了, 反正是博资考内容, 太熟知了()&lt;/p&gt;
+&lt;p&gt;记 $\mathfrak{g}^{sr}$ 为里面的 s.s., regular elements, 他只是一个set.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.4: fix $\mathfrak{h}\subset\mathfrak{b}$,&lt;/p&gt;
+&lt;p&gt;(a) any elem. in $\mathfrak{h}$ is s.s. and any s.s. element of $\mathfrak{g}$ is $G$-conj. to an element in $\mathfrak{h}$.&lt;/p&gt;
+&lt;p&gt;(b) The centralizer of a s.s. regular element is a Cartan subalg.&lt;/p&gt;
+&lt;p&gt;(c) If $x\in\mathfrak{b}$ s.s. reg. element then $Z_\mathfrak{g}(x)\subset\mathfrak{b}$.&lt;/p&gt;
+&lt;p&gt;(d) $\mathfrak{g}^{sr}$ is a $G$-stable dense subset of $\mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;以及 (d) 的加强版本&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.5: $\mathfrak{g}$ 上存在 $G$ 不变的多项式 $P$ s.t. $x\in \mathfrak{g}^{sr}\iff P\neq 0$. 也就是说, $\mathfrak{g}\backslash\mathfrak{g}^{sr}$ 是一个在 Zar.Top. 下开的 affine subvar.&lt;/p&gt;
+&lt;p&gt;好吧, 从证明来看, 我们应该假设 $G,\mathfrak{g}$ 是有限维的, 不过反正一般说 s.s. lie alg 都得是有限维的()&lt;/p&gt;
+&lt;p&gt;这个证明大概就是说, 取 Jordan decomp. $x=s+n$, 根据 (b), $s$ reg. 推出 $n=0,x=s$. 然后考虑 $s$ 的特征多项式 $P(t)=\det(tI-\operatorname{ad} s)=\det(tI-\operatorname{ad} x)$. 由于 $ad(s)$ 是 s.s. 的, $s$ reg. 等价于说 $P(t)$ 在 $0$ 处恰有 $\operatorname{rank}\mathfrak{g}$ 阶零点, 也就是说 $P_r(x)\neq 0$.&lt;/p&gt;
+&lt;p&gt;现在考虑 $\cal{B}$ 为 $\mathfrak{g}$ 的所有 Borel sub.alg. 那么&lt;/p&gt;
+\[\cal{B}=\{x\in \operatorname{Gr}(\dim(\mathfrak{b}),\dim(\mathfrak{g}))|x\text{ solvable sub Lie. alg.}\}.\]&lt;p&gt;通过一些&lt;strong&gt;代数的&lt;/strong&gt;讨论你可以知道他是闭的, 所以也是 proj. 的.&lt;/p&gt;
+&lt;p&gt;根据 Lemma 3.1.2 以及所有 Borel subalg. 在 $G$ 作用下可迁的性质, 我们可以给出同构&lt;/p&gt;
+\[G/B\simeq \cal{B}.\]&lt;p&gt;Cor 3.1.6 就是一个很直接的结论, 懒得切英文了()&lt;/p&gt;
+&lt;p&gt;(a). $\mathfrak{b}\in\cal{B}$ 在 $g\in G$ 作用下不变等价于 $g\in B$.&lt;/p&gt;
+&lt;p&gt;(b). $\mathfrak{b}\in\cal{B}$ 在 $x\in\mathfrak{g}$ 向量场作用下不变等价于 $x\in\mathfrak{b}$.&lt;/p&gt;
+&lt;h3 id=&#34;317-bruhat-decomp&#34;&gt;3.1.7 Bruhat decomp.
+&lt;/h3&gt;&lt;p&gt;从名字上看是跟 Weyl gp. 有关的结论.&lt;/p&gt;
+&lt;p&gt;首先根据上面那个映射我们给出了&lt;/p&gt;
+\[B\backslash G/B\simeq \{B-\text{orbits on }\cal{B}\}.\]&lt;p&gt;其次, 我们要给出&lt;/p&gt;
+\[\{B-\text{orbits on }\cal{B}\}\to \{G-\text{orbits on }\cal{B}\times\cal{B}\}.\]\[\mathfrak{b}\mapsto (\mathfrak{b}_0,\mathfrak{b}).\]&lt;p&gt;他这里的符号不好(), 实际上他这里的 $\mathfrak{b}_0$ 是 $B$ 的(Borel)李子代数. 然后同样通过一些&lt;strong&gt;代数的&lt;/strong&gt;讨论你可以知道他是bij.
+最后, 记 $W_T=N_G(T)/T$, 考虑&lt;/p&gt;
+\[W_T\to B\backslash G/B\]\[\bar{w}\mapsto BwB.\]&lt;p&gt;于是我们给出了映射&lt;/p&gt;
+\[W_T\to B\backslash G/B\to \{B-\text{orbits on }\cal{B}\}\to\{G-\text{orbits on }\cal{B}\times\cal{B}\}.\]&lt;p&gt;Theorem 3.1.9: All the maps above are bij.&lt;/p&gt;
+&lt;p&gt;他这里Remark了一下, 说最左边和最右边的map与$T$和$B$的选取无关. 虽然, 怎么可能无关, 集合 ${B-\text{orbits on }\cal{B}}$ 就不会与 $B$ 无关.&lt;/p&gt;
+&lt;p&gt;不过, 对于 $B&amp;rsquo;=gBg^{-1}$ 以及 $T&amp;rsquo;=gT&amp;rsquo;g^{-1}$, 我们确实可以 induce 对应集合自然的映射(), 然后通过一些&lt;strong&gt;代数的&lt;/strong&gt;讨论你可以知道他是交换的.&lt;/p&gt;
+&lt;p&gt;中间的和右边的映射是bij是triv的. 我们只需要证明最左边那个就行. 他选择证明前两项的复合是bij.&lt;/p&gt;
+&lt;p&gt;考虑 $W_T\to {B-\text{orbits on }\cal{B}}, w\mapsto wB$. 他希望用 Bialynicki-Birula的结果:&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.10: (i) $\mathfrak{t}$ Cartan subalg, $\mathfrak{b}\supset \mathfrak{t}$ Borel subalg. Then any Borel subalg. containing $\mathfrak{t}$ has the form $w\cdot b\cdot w^{-1}$, $w\in N(T)/T$.&lt;/p&gt;
+&lt;p&gt;(ii) The $T$-fixed pts. in $\cal{B}$ are in natural bij. corresp. with $W_T=N(T)/T$.&lt;/p&gt;
+&lt;p&gt;(i) 是简单的, 而且 (i)$\implies$(ii).&lt;/p&gt;
+&lt;p&gt;然后, 我们说明每一个 $B-\text{orbits on }\cal{B}$ 恰包含了一个 $T$-fixed pt.&lt;/p&gt;
+&lt;h3 id=&#34;或许我们要-review-一下-bialynicki-birula-decomp&#34;&gt;或许我们要 &amp;ldquo;review&amp;rdquo; 一下 Bialynicki-Birula Decomp.
+&lt;/h3&gt;&lt;p&gt;对于 $X$ 光滑复proj.(射影?好像是这么翻译)代数簇, 其上包含了一个 $\mathbb{C}^\times$ 作用, 那么&lt;/p&gt;
+&lt;p&gt;Lemma 2.4.1: For all $x\in X$, mapping $z\mapsto z\cdot x$ has a limit of $z\to 0,z\to \infty$. Furthermore, the limit points $\lim_{z\to 0(\infty)}z\cdot x$ are fixed pts. of the $\mathbb{C}^\times$-action.&lt;/p&gt;
+&lt;p&gt;这个实际上就是利用 $\mathbb{C}\mathbb{P}^1=\mathbb{C}\cup 0\cup \infty$ complete 的性质. 以及,&lt;/p&gt;
+&lt;p&gt;Cor 2.4.2: The fixed pts on a proj. var. is always non-empty.&lt;/p&gt;
+&lt;p&gt;对于 $W$ fixed pt set, 假设他是有限的, 对任意 $W$, 我们可以定义 attracting set&lt;/p&gt;
+\[X_w=\{x\in W|\lim_{z\to 0}zx=w\}.\]&lt;p&gt;然后! 请回忆 ODE 中关于不动点方面的内容, 从哲学上, 你可以相信这样的事, 对于 $T_wX$, 可以让 $\mathbb{C}^\times$ 作用在 $T_wX$. 我们有&lt;/p&gt;
+\[T_wX=T^+_wX\oplus T_w^-X, T^+_w=\oplus_{n&gt;0,n\in \mathbb{Z}}T_wX(n),T^+_w=\oplus_{n&lt;0,n\in \mathbb{Z}}T_wX(n).\]\[T_wX(n)=\{x\in T_wX|z\cdot x=z^nx, \forall z\in\mathbb{C}\}.\]&lt;p&gt;有&lt;/p&gt;
+&lt;p&gt;Theorem 2.4.3:(B-B Decomp.)&lt;/p&gt;
+&lt;p&gt;(a) The attracting sets form a decomp. $X=\sqcup X_w$ into smooth locally closed alg. var.&lt;/p&gt;
+&lt;p&gt;(b) There are natural isoms. of alg. vars. $X_w\simeq T_wX_w=T^+_wX$ which commute with the $\mathbb{C}$-action.&lt;/p&gt;
+&lt;p&gt;真是分分又析析啊.&lt;/p&gt;
+&lt;p&gt;现在取一个 $h\in\mathfrak{h}$ s.r., 他给出了一个 $\mathbb{C}^\times\hookrightarrow T$.&lt;/p&gt;
+&lt;p&gt;于是我们可以考虑 $\mathfrak{g}=\oplus\mathfrak{g}_{\alpha}=\mathfrak{n}^+\oplus\mathfrak{h}\oplus\mathfrak{n}^-,\alpha\in\mathbb{Z}$,&lt;/p&gt;
+&lt;p&gt;其中 $\mathfrak{g}_\alpha$ 上的 $\mathbb{C}^\times$ action 为 $z\cdot x=z^nx$. 在此, 我们选取 $B$ 使得 $\operatorname{Lie}B=\mathfrak{h}\oplus \mathfrak{n}^+$.&lt;/p&gt;
+&lt;p&gt;那么, $\mathfrak{b}\in\cal{B}$ 在 $\mathbb{C}^\times$ 作用下不变, 根据 3.1.6, 当且仅当 $h\in \mathfrak{b}$, 再根据 3.1.4, $\mathfrak{h}\subset\mathfrak{b}$. 于是, $\mathbb{C}^\times$-fixed points 的数量等于 $T$-fixed pts 的数量, 根据 3.1.10, 他们是 $w\cdot B/B$.&lt;/p&gt;
+&lt;p&gt;现在, 根据 2.4.3, 有&lt;/p&gt;
+\[\cal{B}\simeq \sqcup_{w\in W}B_{w}.\]&lt;p&gt;而现在我们应该做的是研究 $T_w^+X$. 通过一些讨论我们可以得出 $T^+_w\cal{B}=\mathfrak{n}^+\cdot w$. 于是&lt;/p&gt;
+\[\dim \cal{B}_w=\dim T^+_w\cal{B}=\dim (\mathfrak{n}^+\cdot w)=\dim (U\cdot w).\]&lt;p&gt;而, 对于任意的 $n\in \mathfrak{n}^+$ 以及 $t\in \mathbb{C}^\times\subset T$, $t\to 0$ 时 $t\cdot n\to 0$. 这意味着对任意的 $u\in U$, $tut^{-1}\to 1$. 也就是说, $U\cdot w\subset \cal{B}_w$.&lt;/p&gt;
+&lt;p&gt;然后, 根据上面那个 $\dim$ 的等式, 我们得到 $U\to B_w,u\mapsto U\cdot w$ 的微分是一个满射. 因此 $U\cdot w$ 是 $\cal{B}$ 内的一个开集, 而根据 3.1.1, 他也是闭集. 因此他是一个连通分支. 由于 $\cal{B}_w$ 是一个吸收集, 他当然要连通. 因此 $\cal{B}_w=U\cdot w$.&lt;/p&gt;
+&lt;p&gt;当然, $U\cdot w=UT\cdot w=B\cdot w$. 因此我们得到 $B$-轨道恰好就是 $\cal{B}_w$, 证毕.&lt;/p&gt;
+&lt;p&gt;Cor 3.1.12: 对任意 $B\subset G$ Borel subalg 的选择, $B$-轨道给出了 $\cal{B}$ 的 $#$ cells 分解, 称为w.r.t.$B$ 的 Bruhat cells.&lt;/p&gt;
+&lt;img src=&#34;https://Jinbz-ayaka.github.io/zyys.jpg&#34; alt=&#34;示例图片&#34; style=&#34;width: 40%; max-width: 600px; height: auto; display: block; margin: 1rem auto; border-radius: 8px;&#34;&gt;
+&lt;h3 id=&#34;plucker-embedding-of-the-flag-var&#34;&gt;Plucker Embedding of the flag var.
+&lt;/h3&gt;&lt;p&gt;如果你上过代数几何I, 也许你会记得 Gr 的 Plucker 嵌入. 现在我们希望给出来 $\cal{B}$ 到某个 proj. var. 的嵌入. 这段写得也太晦涩了()&lt;/p&gt;
+&lt;p&gt;对于 irr. 的 $G$-表示 $V$, 对任意 Borel subalg. $\mathfrak{b}$, 有唯一的一维不变子空间 $1_\mathfrak{b}$.&lt;/p&gt;
+&lt;p&gt;我们现在想要选取一个 &amp;ldquo;non-deg&amp;rdquo; 的 $V$, 使得保证 $1_{\mathfrak{b}}$ 不变的 $\mathfrak{g}$-子代数是 $\mathfrak{b}$. 根据 Hum, 只要最高权是 &amp;ldquo;non-deg&amp;rdquo; 的, $V$ 就是 nondeg 的. 于是,&lt;/p&gt;
+\[i:\cal{B}\to \mathbb{P}(V),\]\[\mathfrak{b}\mapsto 1_{\mathfrak{b}}.\]&lt;p&gt;给出了一个嵌入. 以及,&lt;/p&gt;
+\[\bar{\cal{B}}_w=i^{-1}(\mathbb{P}(U(\mathfrak{n})\cdot w(1_{\mathfrak{b}})))\]&lt;p&gt;(他没证这个, 直接引用的文献, 他是人握持.)&lt;/p&gt;
+&lt;p&gt;我怎么随手一打就是俳句()&lt;/p&gt;
+&lt;h3 id=&#34;3114-sl_n-case&#34;&gt;3.1.14 $SL_n$ case.
+&lt;/h3&gt;&lt;p&gt;熟知(lemma 3.1.15) $\cal{B}$ 对应到 complete flags in $\mathbb{C}^n$.&lt;/p&gt;
+&lt;p&gt;他希望证明 $\mathbb{C}^n/S^n$ 这个 orbit space 同构于某个 $n$ 维线性空间, 然后叽里呱啦说了一大堆. 其实就是考虑 $(x_i)\mapsto (e_i)$, $e_i$ 牛顿多项式.&lt;/p&gt;
+&lt;p&gt;然后考虑映射&lt;/p&gt;
+\[\phi:\mathfrak{sl}_n\to \{x|\sum x_i=0\}/S^n\simeq \mathbb{C}^{n-1}/S^n,\]\[x\mapsto\{\text{eigenvalues}\}.\]&lt;p&gt;现在考虑&lt;/p&gt;
+\[\tilde{\mathfrak{g}}=\{(x,F)\in\mathfrak{sl}_n\times\cal{B}|x(F_i)\subset F_i,\forall i\}.\]&lt;p&gt;那么 $x:F_i/F_{i-1}\to F_i/F_{i-1}$ 就是一个一维表示, 取 $x_n$ 为其特征根. 我们给出&lt;/p&gt;
+\[\nu:\tilde{\mathfrak{g}}\mapsto \mathbb{C}^{n-1}.\]&lt;p&gt;那么, 我们显然有这个交换图表:&lt;/p&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcZ2d9Il0sWzIsMCwiXFxDQ157bi0xfSJdLFswLDIsIlxcZ2ciXSxbMiwyLCJcXENDXntuLTF9L1NebiJdLFswLDEsIlxcbnUiXSxbMCwyLCJwcl8xIiwyXSxbMSwzLCJcXHRleHR7bmF0dXJhbH0iXSxbMiwzLCJcXHBoaSIsMl1d&amp;embed&#34; width=&#34;524&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;与这个Claim 3.1.19:&lt;/p&gt;
+&lt;p&gt;For any $x\in\mathfrak{g}^{sr}$ the set $\cal{B}_x={F\in\cal{B}|xF_i\subset F_i}$ consists of $n!$ pts, amd there is a an. free action of the symm. $S_n$ on $\cal{B}_x$ making it a principal homog. $S_n$-space.&lt;/p&gt;
+&lt;p&gt;感觉都是 trivial 的().&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;awc, 怎么这么难读kk&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>浮生多少记-其十一</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80/</link>
+        <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80/nil.jpg" alt="Featured image of post 浮生多少记-其十一" /&gt;&lt;p&gt;妮露的能力是不是可以叫nilpotent&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;欢迎给代数tv的新坑 &lt;a class=&#34;link&#34; href=&#34;https://Jinbz-ayaka.github.io/p/cg%e9%a5%b2%e5%85%bb%e6%97%a5%e8%ae%b0-%e5%85%b6%e4%b8%80-p127-135/&#34; &gt;CG饲养日记&lt;/a&gt; 捧捧场. 虽然这个坑可能更不下去多久()&lt;/p&gt;
+&lt;p&gt;连浮生都要赶ddl了, 令人感叹.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;首先是, 恭喜代数tv完成了一件大事, 他找到了L爹来当导师.&lt;/p&gt;
+&lt;p&gt;awc, 原本还想要不要就去做点热带几何或者是纯代数几何得了. 结果现在不仅能研究几何表示论还能研究几何朗兰兹, 还有这种好事?&lt;/p&gt;
+&lt;p&gt;明天就去交表, 我看这找个导师也不是啥难事啊[汤圆][汤圆].&lt;/p&gt;
+&lt;p&gt;两个月还是有点简单了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在代数tv清了一周作业之后, 终于有时间看一看CG了. 真不错()&lt;/p&gt;
+&lt;p&gt;感觉CG写得还是有些难了. L爹提到了里面有几何朗兰兹的内容, 虽然我没从目录里看出来()&lt;/p&gt;
+&lt;p&gt;我有些时候挺想去找个讨论班讲这个的, 可惜找不到kk&lt;/p&gt;
+&lt;p&gt;要是找得到就不用搞这个CG饲养日记了()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;代数tv翻了翻日历, 发现他第一次跟Z老师聊天是3月18日, 从那天开始, 他得知要学几何表示论的话, 要看CG.&lt;/p&gt;
+&lt;p&gt;这1个月过去了, 代数tv看的页数是:3.&lt;/p&gt;
+&lt;p&gt;正好是看到那个&lt;/p&gt;
+\[G/B\simeq \mathcal{B}.\]&lt;p&gt;哎.&lt;/p&gt;
+&lt;p&gt;找补一下的话, 那段时间代数tv还不知道未来要学什么, 说不定去搞代数几何的话, 这个就白看了()&lt;/p&gt;
+&lt;p&gt;那这样的话, 代数tv不如花这个时间去写数学史或打()()()()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;其实代数tv有些时候还是挺焦虑的.&lt;/p&gt;
+&lt;p&gt;比方说博资考/导师的事情. 而现在就是, 他意识到, 如果不能再21岁前把CG这本&amp;quot;几何表示论入门&amp;quot;的书读完的话, 他没有什么道理相信他能在22岁前写出本科毕业论文, 更没有什么道理在24岁时写完博士论文() 总不能水一篇&amp;quot;下等的论文&amp;quot;吧, 那也太fw了.&lt;/p&gt;
+&lt;p&gt;但不管怎样, 至少现在活下来了, 而且周围有一批交流起来非常方便的同学.&lt;/p&gt;
+&lt;p&gt;非常好.&lt;/p&gt;
+&lt;p&gt;暑假会有空的吧. 有空的话, 就把CG读完吧.&lt;/p&gt;
+&lt;p&gt;CG可比Achar容易读多了()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;代数tv这几天大约的确是有点忙了, 以至于没时间回很多的消息.&lt;/p&gt;
+&lt;p&gt;有多忙呢? 有一个哥们这么问我:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80/mysm.jpg&#34;
+	width=&#34;685&#34;
+	height=&#34;319&#34;
+	srcset=&#34;https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80/mysm_hu_b98d87e9a6430655.jpg 480w, https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80/mysm_hu_ee5798c7d9f8ccb3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;没似喵qaq&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;214&#34;
+		data-flex-basis=&#34;515px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;可能是切换了一种生活方式带来的阵痛期, 确实要适应一段时间&lt;/p&gt;
+&lt;p&gt;这几天可是连原神都经常忘了打呢()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;也许白天确实应该早起, 在早睡的前提下.&lt;/p&gt;
+&lt;p&gt;代数tv也不知道他的生物钟是什么状况, 好像哪怕他在12点闭上眼睛, 也只能在12点起床.&lt;/p&gt;
+&lt;p&gt;不管怎样, 感觉要打出来很多学数学的时间的话, 早起是必选项.&lt;/p&gt;
+&lt;p&gt;qwq.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这些天代数tv立了个flag: 只在9:00-11:59pm打游戏.&lt;/p&gt;
+&lt;p&gt;也许再不学数学的话, 人真的就老了()&lt;/p&gt;
+&lt;p&gt;不过好在, 代数tv才20岁, 而且代数tv20岁的时候还没有22岁.&lt;/p&gt;
+&lt;p&gt;这Hugo就是对的啊, 我从做网站开始就是Hugo单推人了[汤圆][汤圆].&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;明天? 是不是要去海关博物馆来着?&lt;/p&gt;
+&lt;p&gt;去那能吃卤煮吗()&lt;/p&gt;
+&lt;p&gt;不过, 今天代数tv已经吃过了()&lt;/p&gt;
+&lt;p&gt;kk&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+&lt;p&gt;()()()()启动!&lt;/p&gt;
+&lt;p&gt;2025/4/19 22:06 于双清C04.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其十</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81/</link>
         <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
@@ -1268,7 +1442,9 @@ id=&amp;ldquo;dynamic-image&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;于是计算微观状态. 我们应当考虑&lt;/p&gt;
 \[\Gamma_{phys}=\Gamma_{dE}(E)=\{\vec{x}\in\Gamma|E\leq H\leq E+dE\}.\]&lt;p&gt;你可能会觉得这个 $dE$ 的选取会很大地影响熵的计算. 但实际上不会. 我将在下面进行解释.&lt;/p&gt;
 &lt;p&gt;还有一个问题: 针对 $d^{3N}qd^{3N}p$ 的积分是有量纲的, 我们显然不能对着量纲求对数. 为了修复它, 我们采取的方式是在度量中除以若干拥有量纲 $[q][p]$ 的 $h$, 度量成为&lt;/p&gt;
-\[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.\]\[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.\]&lt;p&gt;运用球面积公式, 我们有&lt;/p&gt;
+\[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.\]&lt;p&gt;现在我们便可以对球壳积分.
+&lt;/p&gt;
+\[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.\]&lt;p&gt;运用球面积公式, 我们有&lt;/p&gt;
 \[Vol(S^{3N-1}_{2mdE}(2mE))=\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]&lt;p&gt;于是&lt;/p&gt;
 \[Vol(\Gamma_{phys})=\frac{V^N(2m\pi E)}{h^{3N}N!}\sqrt{\frac{m}{2E}}\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]\[=\frac{V^N(2\pi mE)^{3N/2}dE}{h^{3N}N!\Gamma(3N/2)E}.\]&lt;p&gt;注意: $\sqrt{\frac{m}{2E}}$ 项是由 $2mE\leq \sum p^2\leq 2mE+2mdE$, 大致来说 $dE=\sqrt{1/2mE}d\hat{n}$.&lt;/p&gt;
 &lt;p&gt;于是, 利用估计&lt;/p&gt;
@@ -1310,7 +1486,9 @@ id=&amp;ldquo;dynamic-image&amp;rdquo;&lt;/p&gt;
 \[Z_G=\sum_{N_1=0}^{N_T}e^{\beta\mu N_1}Z_C(T,N_1),Z_C(T,N_1)=\int dE_1\tilde{\Omega}(E_1,N_1)e^{-\beta E_1}.\]&lt;p&gt;这个求和也可以做 $N_T=\infty$ 估计.&lt;/p&gt;
 &lt;p&gt;$z=e^{\beta\mu}$ 称为逸度(fugacity), 描述的是粒子往外逃逸的程度. 顺便一提致人受伤构成犯罪的处有期徒刑3-7年, 致人死亡的7年以上.&lt;/p&gt;
 &lt;p&gt;考虑巨势能 $\Omega_G=A-\mu N=-PV$, 同样经过复杂的计算, 我们有&lt;/p&gt;
-\[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}\]&lt;p&gt;回到理想气体, 有&lt;/p&gt;
+\[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).\]&lt;p&gt;于是,
+&lt;/p&gt;
+\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}\]&lt;p&gt;回到理想气体, 有&lt;/p&gt;
 \[Z(N,T)=\frac{1}{N!}V^N\int e^{-\beta H}dp^{3N}=\frac{1}{N!}(Z(T))^N.\]&lt;p&gt;于是,&lt;/p&gt;
 \[Z_G(N,T)=\sum_{N=0}^\infty z^NZ(N,T)=\sum_{n=0}^{\infty} \frac{z^nZ(T)^n}{n!}=\exp(zZ(T)).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}=zZ(T)=zV\left(\frac{2\pi m}{h^2}\right)^{3/2}(\beta)^{-3/2}.\]&lt;p&gt;因此, 我们将 $PV=\Omega_G=-kT\log Z_G=-kTzZ(T)$ 转换为了 $V,T,\mu$ 的函数. 于是, 根据 Maxwell 关系&lt;/p&gt;
 \[\begin{align*}
@@ -1411,7 +1589,9 @@ id=&amp;ldquo;dynamic-image&amp;rdquo;&lt;/p&gt;
 \end{cases},\]&lt;p&gt;其中 $\omega=ck, k=|\vec{k}|$.&lt;/p&gt;
 &lt;p&gt;那么考虑 Maxwell 方程组, 有&lt;/p&gt;
 \[c\vec{B}_0=\hat{k}\times\vec{E}_0, \hat{k}=\frac{\vec{k}}{|\vec{k}|}.\]&lt;p&gt;利用傅里叶分析我们可以得出其全部的解&lt;/p&gt;
-\[\vec{E}=\frac{1}{(2\pi)^3}\int d^3k\vec{\mathcal{E}}(\vec{k})e^{i(\vec{k}\cdot\vec{r}-\omega t)}\]\[\vec{B}=\frac{1}{(2\pi)^3}\int d^3k\frac{1}{c}\left(\hat{k}\times\vec{\mathcal{E}}(\vec{k})\right)e^{i(\vec{k}\cdot\vec{r}-\omega t)}.\]&lt;p&gt;于是通过&lt;/p&gt;
+\[\vec{E}=\frac{1}{(2\pi)^3}\int d^3k\vec{\mathcal{E}}(\vec{k})e^{i(\vec{k}\cdot\vec{r}-\omega t)}\]&lt;p&gt;
+&lt;/p&gt;
+\[\vec{B}=\frac{1}{(2\pi)^3}\int d^3k\frac{1}{c}\left(\hat{k}\times\vec{\mathcal{E}}(\vec{k})\right)e^{i(\vec{k}\cdot\vec{r}-\omega t)}.\]&lt;p&gt;于是通过&lt;/p&gt;
 \[U=\frac{\epsilon_0}{2}\int d^3r\left(|\operatorname{Re}\vec{\hat{E}}|^2+|\operatorname{Re}c\vec{\hat{B}}|^2\right).\]&lt;p&gt;最终计算得&lt;/p&gt;
 \[U=\frac{\epsilon_0}{2}\frac{1}{(2\pi)^3}\int d^3k|\vec{\mathcal{E}}(\vec{k})|^2.\]&lt;h4 id=&#34;电磁辐射&#34;&gt;电磁辐射
 &lt;/h4&gt;&lt;p&gt;我以前居然还会这个? 不可思议.&lt;/p&gt;
@@ -1484,7 +1664,9 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
 &lt;/ol&gt;
 &lt;p&gt;取 $G$ 满足 $\partial_{\hat{n}}&amp;lsquo;G(\vec{r},\vec{r}&amp;rsquo;)=-4\pi/A$, $A=Area(S)$, 那么&lt;/p&gt;
 \[\phi(r)=\frac{1}{A}\int_S\phi(\hat{r}&#39;)+\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\rho(\hat{r}&#39;)G(\hat{r},\hat{r}&#39;)+\frac{1}{\pi}\int_S\partial_{\hat{n}}&#39;\phi(\hat{r}&#39;)G(\hat{r},\hat{r}&#39;).\]&lt;h4 id=&#34;电多极扩张&#34;&gt;电多极扩张(?)
-&lt;/h4&gt;\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\frac{\rho(\vec{r}&#39;)}{|\vec{r}-\vec{r}&#39;|}.\]&lt;p&gt;我们要考虑 $r&amp;raquo;r&amp;rsquo;$ 情况下的 $\phi$. 其大致操作是利用&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;已知
+&lt;/p&gt;
+\[\phi(\vec{r})=\frac{1}{4\pi\epsilon_0}\int_Vd^3r&#39;\frac{\rho(\vec{r}&#39;)}{|\vec{r}-\vec{r}&#39;|}.\]&lt;p&gt;我们要考虑 $r&amp;raquo;r&amp;rsquo;$ 情况下的 $\phi$. 其大致操作是利用&lt;/p&gt;
 \[\frac{1}{|\vec{r}-\vec{r}&#39;|}=\frac{1}{r\sqrt{1-2(\hat{r}\cdot\hat{r}&#39;)\frac{r&#39;}{r}+\left(\frac{r&#39;}{r}\right)^2}}.\]&lt;p&gt;通过 Legendre 多项式展开. 最终得到对于 $\vec{P}=\int_Vd^3r&amp;rsquo;\rho(\vec{r}&amp;rsquo;)\vec{r}&amp;rsquo;$, 有&lt;/p&gt;
 \[\phi(\vec{r})\simeq\frac{1}{4\pi\epsilon_0}\frac{\vec{P}\cdot\vec{r}}{r^3},r&gt;&gt;0.\]&lt;p&gt;于是&lt;/p&gt;
 \[\vec{E}=-\nabla\phi(\vec{r})\simeq \frac{1}{4\pi\epsilon_0}\frac{3(\hat{r}\cdot\vec{P})\hat{r}-\vec{P}}{r^3}.\]&lt;h5 id=&#34;电偶极子&#34;&gt;电偶极子
@@ -1608,6 +1790,8 @@ E_z/c&amp;B_y&amp;-B_x&amp;0
         <description>&lt;p&gt;111&lt;/p&gt;
 &lt;p&gt;$a+b\neq c.$&lt;/p&gt;
 &lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
+&lt;p&gt;你说得对, 但是 Jacobi Triple identity 指的是
+&lt;/p&gt;
 \[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
 \[这篇文章这一部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
 &lt;p&gt;1.28&lt;/p&gt;
@@ -2052,35 +2236,26 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Placeholder Text</title>
-        <link>https://Jinbz-ayaka.github.io/p/placeholder-text/</link>
+        <title>مثال نص</title>
+        <link>https://Jinbz-ayaka.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/p/placeholder-text/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
-&lt;li&gt;Duce pollice&lt;/li&gt;
-&lt;li&gt;Eris modo&lt;/li&gt;
-&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
-&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
-&lt;li&gt;Flumen querellas&lt;/li&gt;
-&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
-&lt;li&gt;Quidem et&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt
-&lt;/h1&gt;&lt;p&gt;&lt;svg class=&#34;canon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; overflow=&#34;visible&#34; viewBox=&#34;0 0 496 373&#34; height=&#34;373&#34; width=&#34;496&#34;&gt;&lt;g fill=&#34;none&#34;&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#ED1C24&#34; stroke-width=&#34;.75&#34; d=&#34;M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.479.375h495v372h-495zM247.979.875v372&#34;&gt;&lt;/path&gt;&lt;ellipse cx=&#34;498.729&#34; cy=&#34;177.625&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;ellipse cx=&#34;247.229&#34; cy=&#34;377.375&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat
-&lt;/h2&gt;&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
-&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
-&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;</description>
+        <guid>https://Jinbz-ayaka.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post مثال نص" /&gt;&lt;h2 id=&#34;فقرة-1&#34;&gt;فقرة 1
+&lt;/h2&gt;&lt;p&gt;هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من &lt;a class=&#34;link&#34; href=&#34;https://colorslab.com/textgator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;مولد النص العربى&lt;/a&gt;، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.&lt;/p&gt;
+&lt;h2 id=&#34;فقرة-2&#34;&gt;فقرة 2
+&lt;/h2&gt;&lt;p&gt;هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من &lt;a class=&#34;link&#34; href=&#34;https://colorslab.com/textgator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;مولد النص العربى&lt;/a&gt;، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.&lt;/p&gt;
+&lt;h2 id=&#34;تجربة-rtl&#34;&gt;تجربة RTL
+&lt;/h2&gt;&lt;p&gt;كلمة 1 Text كلمة 2&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Math Typesetting</title>
@@ -2118,6 +2293,8 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 
 &lt;h3 id=&#34;examples&#34;&gt;Examples
 &lt;/h3&gt;&lt;p&gt;Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/p&gt;
+&lt;p&gt;Block math:
+&lt;/p&gt;
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$</description>

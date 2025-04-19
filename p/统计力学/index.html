@@ -464,7 +464,9 @@
 <p>于是计算微观状态. 我们应当考虑</p>
 \[\Gamma_{phys}=\Gamma_{dE}(E)=\{\vec{x}\in\Gamma|E\leq H\leq E+dE\}.\]<p>你可能会觉得这个 $dE$ 的选取会很大地影响熵的计算. 但实际上不会. 我将在下面进行解释.</p>
 <p>还有一个问题: 针对 $d^{3N}qd^{3N}p$ 的积分是有量纲的, 我们显然不能对着量纲求对数. 为了修复它, 我们采取的方式是在度量中除以若干拥有量纲 $[q][p]$ 的 $h$, 度量成为</p>
-\[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.\]\[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.\]<p>运用球面积公式, 我们有</p>
+\[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.\]<p>现在我们便可以对球壳积分.
+</p>
+\[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.\]<p>运用球面积公式, 我们有</p>
 \[Vol(S^{3N-1}_{2mdE}(2mE))=\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]<p>于是</p>
 \[Vol(\Gamma_{phys})=\frac{V^N(2m\pi E)}{h^{3N}N!}\sqrt{\frac{m}{2E}}\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.\]\[=\frac{V^N(2\pi mE)^{3N/2}dE}{h^{3N}N!\Gamma(3N/2)E}.\]<p>注意: $\sqrt{\frac{m}{2E}}$ 项是由 $2mE\leq \sum p^2\leq 2mE+2mdE$, 大致来说 $dE=\sqrt{1/2mE}d\hat{n}$.</p>
 <p>于是, 利用估计</p>
@@ -506,7 +508,9 @@
 \[Z_G=\sum_{N_1=0}^{N_T}e^{\beta\mu N_1}Z_C(T,N_1),Z_C(T,N_1)=\int dE_1\tilde{\Omega}(E_1,N_1)e^{-\beta E_1}.\]<p>这个求和也可以做 $N_T=\infty$ 估计.</p>
 <p>$z=e^{\beta\mu}$ 称为逸度(fugacity), 描述的是粒子往外逃逸的程度. 顺便一提致人受伤构成犯罪的处有期徒刑3-7年, 致人死亡的7年以上.</p>
 <p>考虑巨势能 $\Omega_G=A-\mu N=-PV$, 同样经过复杂的计算, 我们有</p>
-\[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}\]<p>回到理想气体, 有</p>
+\[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).\]<p>于是,
+</p>
+\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}\]<p>回到理想气体, 有</p>
 \[Z(N,T)=\frac{1}{N!}V^N\int e^{-\beta H}dp^{3N}=\frac{1}{N!}(Z(T))^N.\]<p>于是,</p>
 \[Z_G(N,T)=\sum_{N=0}^\infty z^NZ(N,T)=\sum_{n=0}^{\infty} \frac{z^nZ(T)^n}{n!}=\exp(zZ(T)).\]\[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}=zZ(T)=zV\left(\frac{2\pi m}{h^2}\right)^{3/2}(\beta)^{-3/2}.\]<p>因此, 我们将 $PV=\Omega_G=-kT\log Z_G=-kTzZ(T)$ 转换为了 $V,T,\mu$ 的函数. 于是, 根据 Maxwell 关系</p>
 \[\begin{align*}

@@ -269,6 +269,8 @@ id=&amp;ldquo;dynamic-image&amp;rdquo;&lt;/p&gt;
         <description>&lt;p&gt;111&lt;/p&gt;
 &lt;p&gt;$a+b\neq c.$&lt;/p&gt;
 &lt;p&gt;这里居然可以直接套用LaTeX语法? 太方便了&lt;/p&gt;
+&lt;p&gt;你说得对, 但是 Jacobi Triple identity 指的是
+&lt;/p&gt;
 \[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,\]&lt;p&gt;其中 $x,y$ 是复数, 且 $|x|&amp;lt;1,y\neq 0$. 而且&lt;/p&gt;
 \[这篇文章这一部分的中文汉字数=67.\]&lt;p&gt;但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.&lt;/p&gt;
 &lt;p&gt;1.28&lt;/p&gt;
