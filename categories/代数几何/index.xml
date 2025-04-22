@@ -7,7 +7,64 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二 P135-144</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/</link>
+        <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/slp.jpg" alt="Featured image of post CG饲养日记-其二 P135-144" /&gt;&lt;p&gt;这部分应该是21号整理完的, 但整理完就去玩()()()()了&lt;/p&gt;
+&lt;p&gt;桎化行动ddl, 没办法&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接下来是抽象Weyl gp., 感觉这块没什么好说的啊()&lt;/p&gt;
+&lt;p&gt;要把这个 abstract Weyl gp. 实现成某一个 Coxeter group. 参考 Bour 就行了.&lt;/p&gt;
+&lt;p&gt;我们要研究的事情就是, 为什么这个我们通常了解的 Weyl gp (也就是这里的abstract w.g.) 和那个 $N(T)/T$ 定义出来的 w.g. 一样.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.26: 对任意 $\mathfrak{b},\mathfrak{b}&amp;rsquo;\in\cal{B}$, 我们有典范同构&lt;/p&gt;
+\[\mathfrak{b}/[\mathfrak{b},\mathfrak{b}]\simeq \mathfrak{b}&#39;/[\mathfrak{b}&#39;,\mathfrak{b}&#39;].\]&lt;p&gt;这个实际上就是通过共轭给出() 于是我们可以 fix 这个抽象 Cartan subalg. 然后, 试着给出他到原先定义的 $\mathfrak{h}$ 的同构.&lt;/p&gt;
+&lt;p&gt;这个实际上就是&lt;/p&gt;
+\[\mathfrak{h}\hookrightarrow\mathfrak{b}\twoheadrightarrow \mathfrak{b}/[\mathfrak{b},\mathfrak{b}],\]&lt;p&gt;我们要做的一些工作就是check这给出了根系和 $S={\text{simple roots}}$ 上的同构, 不过这不难()&lt;/p&gt;
+&lt;p&gt;关键的问题是, 对于不同的 $\mathfrak{b},\mathfrak{b}&amp;rsquo;$, 这个映射会怎么表现呢? 考察 $\mathfrak{h}\subset \mathfrak{b}\cap\mathfrak{b}&amp;rsquo;$, 我们存在 $w\in W$, $\mathfrak{b}&amp;rsquo;=w(\mathfrak{b})$. 关键的结论是, 记 $\mathbb{W}$ 为 $\mathfrak{b}/[\mathfrak{b},\mathfrak{b}]$, $w(\mathfrak{b},\mathfrak{b}&amp;rsquo;)$ 定义为 $w$ 在 $W\simeq\mathbb{W}$ 下的像, 那么, 根据共轭的办法, 对不同的 $\mathfrak{h}$ 的选取, 咱们给出了同样的 $w(\mathfrak{b},\mathfrak{b}&amp;rsquo;)$.&lt;/p&gt;
+&lt;p&gt;Defn 3.1.28: 两个 $\mathfrak{b}_1,\mathfrak{b}_2$ 被称作在 $w$ 的相对位置, 如果 $w(\mathfrak{b}_1,\mathfrak{b}_2)=w$.&lt;/p&gt;
+&lt;p&gt;然后, 我们有如下定理:&lt;/p&gt;
+&lt;p&gt;Proposition 3.1.29: 任意两个 pairs $(\mathfrak{b}_i,\mathfrak{b}_i&amp;rsquo;)$, $i=1,2$, 他们在相同的相对位置, 当且仅当他们在相同的 $G$-对角轨道上. 也就是说, 这个相对位置给出了 bij.&lt;/p&gt;
+\[\{G\text{-diagonal orbits on }\cal{B}\times\cal{B}\}\simeq \mathbb{W}.\]&lt;p&gt;3.1.31 universal resolution&lt;/p&gt;
+&lt;p&gt;我们想要复刻 3.1.14 的活()&lt;/p&gt;
+&lt;p&gt;考虑 $\tilde{\mathfrak{g}}={(x,\mathfrak{b})\in\mathfrak{g}\times\cal{B}|x\in\mathfrak{b}}$, 我们有遮样的diagram&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMSwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzAsMSwiXFxtYXRoZnJha3tnfSJdLFsyLDEsIlxcY2Fse0J9Il0sWzAsMiwiXFxwaSJdLFswLDEsIlxcbXUiLDJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMSwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzAsMSwiXFxtYXRoZnJha3tnfSJdLFsyLDEsIlxcY2Fse0J9Il0sWzAsMiwiXFxwaSJdLFswLDEsIlxcbXUiLDJdXQ==&amp;embed&#34; width=&#34;432&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;考虑 $G\times \mathfrak{b}$, $B$ 在其上作用通过 $(g,x)\mapsto (b\cdot x\cdot b^{-1})$ 给出. 于是轨道空间 $G\times_{B}\cal{B}\to G/B$ 给出了 $G$-等价的 vector bundle with fiber $\mathfrak{b}$. 于是&lt;/p&gt;
+&lt;p&gt;Cor 3.1.33: $\pi:\tilde{\mathfrak{g}}\to \cal{B}$ 给出了 $\tilde{\mathfrak{g}}$ 到 $\cal{B}=G/B$ 上的 vector bundle, $G\times_B\mathfrak{b}\to\tilde{\mathfrak{g}}$, $(g,x)\mapsto (gxg^{-1},g^{-1})$ 给出了 $G$-等价的 isom.&lt;/p&gt;
+&lt;p&gt;Proposition 3.1.34: $\mu$ 是 proper 的.&lt;/p&gt;
+\[\tilde{\mathfrak{g}}\hookrightarrow \mathfrak{g}\times \cal{B}\to \mathfrak{g}.\]&lt;p&gt;大家代数几何功底都很好啊.&lt;/p&gt;
+&lt;p&gt;定义 $\cal{B}_x$ 为所有包含了 $x$ 的 Borel subalg. 3.1.35 说的是一些特殊状况, 不难()&lt;/p&gt;
+&lt;p&gt;然后是 $\nu$, 这里考虑 $\mathfrak{H}$ 为那个 abstract Cartan subalg, 考虑&lt;/p&gt;
+\[(x,\mathfrak{b})\mapsto x\pmod{[\mathfrak{b},\mathfrak{b}]}\in \mathfrak{b}/[\mathfrak{b},\mathfrak{b}]=\mathfrak{H}.\]&lt;p&gt;Proposition 3.1.36: For each $x\in\mathfrak{g}^{sr}$, there is a canonical free $\mathbb{W}$-action on $\mu^{-1}(x)$ making $\tilde{\mathfrak{g}}^{sr}\to \mathfrak{g}^{sr}$ a principal $\mathbb{W}$-bundle.&lt;/p&gt;
+&lt;p&gt;这实际上就是 3.1.19 的 generalization.&lt;/p&gt;
+&lt;p&gt;3.1.37 Chevelley Restriction Thm.&lt;/p&gt;
+&lt;p&gt;$\mathbb{C}[\mathfrak{g}]$ 是 polynom. functions on $\mathfrak{g}$, $\mathbb{C}[\mathfrak{g}]^{G}$ 是 $G$-inv polys 构成的 subalg. 我们有 restriction map:&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]\to \mathbb{C}[\mathfrak{h}].\]&lt;p&gt;于是, 也不难check, 他诱导了&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]^G\to \mathbb{C}[\mathfrak{h}]^W.\]&lt;p&gt;Theorem 3.1.38: For any Cartan subalg $\mathfrak{h}\subset \mathfrak{g}$, the restriction map gives a canonical graded alg. isom.&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]^G\simeq \mathbb{C}[\mathfrak{h}]^W.\]&lt;p&gt;首先是 inj 部分, 注意 $x\in \mathfrak{g}^{sr}$ conj. to $\mathfrak{h}$ 中的 element, 然后他们在 $\mathfrak{g}$ 里 dense 就行了.&lt;/p&gt;
+&lt;p&gt;surj 部分有点复杂. 对于 $P\in \mathbb{C}[\mathfrak{h}]^W$, 首先, 通过&lt;/p&gt;
+\[\mathfrak{h}\hookrightarrow \mathfrak{b}\to\mathfrak{b}/[\mathfrak{b},\mathfrak{b}]=\mathfrak{H},\]&lt;p&gt;给出 $\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}$ 上的映射, 然后通过&lt;/p&gt;
+\[\nu:\tilde{\mathfrak{g}}\to \mathfrak{H},\]&lt;p&gt;给出 $\tilde{P}$ 在 $\tilde{\mathfrak{g}}$ 上的映射, 并限制在 Zar. open set $\tilde{\mathfrak{g}}^{sr}$ 上. 再次, 利用 Galois covering 给出 $\mathfrak{g}^{sr}$ 上的 rational function, 并利用紧性证明他是poly. 最后就能比较显然地验证他限制确实得到原先的 $P$ 了.&lt;/p&gt;
+&lt;p&gt;而实际上, 考虑&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]^G\to \mathbb{C}[\mathfrak{h}]^W\simeq \mathbb{C}[\mathfrak{H}]^{\mathbb{W}},\]&lt;p&gt;这给出了一个典范的同构, 并且是和 $\mathfrak{h}$ 的选取无关的, 于是我们给出了嵌入&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}\to\mathbb{C}[\mathfrak{g}]^G\hookrightarrow\mathbb{C}[\mathfrak{g}].\]&lt;p&gt;可以验证, $\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}$ 中的多项式分离 $\mathfrak{H}$ 中的 $\mathbb{W}$-轨道. 所以&lt;/p&gt;
+\[\operatorname{Specm}(\mathbb{C}[\mathfrak{H}]^{\mathbb{W}})=\mathfrak{H}/\mathbb{W}\]&lt;p&gt;那么, 这个映射实际上就诱导了映射&lt;/p&gt;
+\[\rho:\mathfrak{g}\to \mathfrak{H}/\mathbb{W}.\]&lt;p&gt;他被称作 Grothendieck&amp;rsquo;s simultaneous resolution. 我们于是得到了这样的图&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzIsMCwiXFxtYXRoZnJha3tnfSJdLFswLDIsIlxcbWF0aGZyYWt7SH0iXSxbMiwyLCJcXG1hdGhmcmFre0h9L1xcbWF0aGJie1d9Il0sWzAsMV0sWzAsMl0sWzEsM10sWzIsM11d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzIsMCwiXFxtYXRoZnJha3tnfSJdLFswLDIsIlxcbWF0aGZyYWt7SH0iXSxbMiwyLCJcXG1hdGhmcmFre0h9L1xcbWF0aGJie1d9Il0sWzAsMV0sWzAsMl0sWzEsM10sWzIsM11d&amp;embed&#34; width=&#34;438&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Lemma 3.1.42: (i) 如上图表交换&lt;/p&gt;
+&lt;p&gt;(ii) $\mu^{-1}(\mathfrak{g}^{sr})=\tilde{\mathfrak{g}}^{sr}=\nu^{-1}(\mathfrak{H}^{reg})$.&lt;/p&gt;
+&lt;p&gt;证明这个图标交换, 只需考虑 rings of functions 交换就行. 然后就有这个自然的推论:&lt;/p&gt;
+&lt;p&gt;Cor 3.1.43: 对于 $\mathfrak{b}$ Borel subalg. nil. radical $\mathfrak{n}$, 对任意 $G$-不变多项式 $P$, $x\in\mathfrak{b}$, $P|_{x+\mathfrak{n}}$ 为常数.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.44 大概是为提供这个的另一种证法给出的, $x\in \mathfrak{b}$ s.r. element, 则 $x+\mathfrak{n}=B\cdot x$ 是一个 $B$-orbit.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这样 3.1 就结了, 开3.2!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其一 P127-135</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/</link>
         <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
