@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="代数几何讨论班的准备\n你看看你这个图都糊成啥了@lc\n上回书说到\nProposition 2 $A$ ring, $M$ module, if $\\forall i$, $1\\leq i\\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\\cdots,x_{i-1})M$, then $H_p(\\vec{x},M)=0$ for $p&gt;0$.\n实际上我们有这样的结论:\nProposition 3 $A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:\n">
-<title>pre. prep. 1</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="天色尚早">
+<title>CG饲养日记-其三 P144-153</title>
 
-<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/'>
+<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="pre. prep. 1">
-<meta property='og:description' content="代数几何讨论班的准备\n你看看你这个图都糊成啥了@lc\n上回书说到\nProposition 2 $A$ ring, $M$ module, if $\\forall i$, $1\\leq i\\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\\cdots,x_{i-1})M$, then $H_p(\\vec{x},M)=0$ for $p&gt;0$.\n实际上我们有这样的结论:\nProposition 3 $A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:\n">
-<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="CG饲养日记-其三 P144-153">
+<meta property='og:description' content="天色尚早">
+<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/'>
 <meta property='og:site_name' content='代数tv'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/dushu.jpg' />
-<meta name="twitter:title" content="pre. prep. 1">
-<meta name="twitter:description" content="代数几何讨论班的准备\n你看看你这个图都糊成啥了@lc\n上回书说到\nProposition 2 $A$ ring, $M$ module, if $\\forall i$, $1\\leq i\\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\\cdots,x_{i-1})M$, then $H_p(\\vec{x},M)=0$ for $p&gt;0$.\n实际上我们有这样的结论:\nProposition 3 $A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/pre.-prep.-1/dushu.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-04-23T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-23T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc.jpg' />
+<meta name="twitter:title" content="CG饲养日记-其三 P144-153">
+<meta name="twitter:description" content="天色尚早"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc.jpg' />
     <link rel="shortcut icon" href="/artemptyset.png" />
 <style>
      
@@ -259,68 +259,19 @@
     </ol>
 </aside>
 
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">目录</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li>
-      <ol>
-        <li><a href="#proposition-2">Proposition 2</a></li>
-        <li><a href="#proposition-3">Proposition 3</a>
-          <ol>
-            <li><a href="#corollary-1">Corollary 1</a></li>
-            <li><a href="#corollary-2">Corollary 2</a></li>
-            <li><a href="#corollary-3">Corollary 3</a></li>
-          </ol>
-        </li>
-        <li><a href="#proposition-4">Proposition 4</a>
-          <ol>
-            <li><a href="#lemma">lemma</a></li>
-          </ol>
-        </li>
-        <li><a href="#theorem-2hilbert">Theorem 2:(Hilbert)</a></li>
-        <li><a href="#theorem-2">Theorem 2'</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
+    
 
             <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/pre.-prep.-1/">
-                <img src="/p/pre.-prep.-1/dushu_hu_86e26cbd8fc6a49f.jpg"
-                        srcset="/p/pre.-prep.-1/dushu_hu_86e26cbd8fc6a49f.jpg 800w, /p/pre.-prep.-1/dushu_hu_cff8256aaa8d0892.jpg 1600w"
+            <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc_hu_b728a5bb60debb1f.jpg"
+                        srcset="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc_hu_b728a5bb60debb1f.jpg 800w, /p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc_hu_b7a5afe2834211e4.jpg 1600w"
                         width="800" 
-                        height="713" 
+                        height="794" 
                         loading="lazy"
-                        alt="Featured image of post pre. prep. 1" />
+                        alt="Featured image of post CG饲养日记-其三 P144-153" />
                 
             </a>
         </div>
@@ -339,9 +290,13 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/pre.-prep.-1/">pre. prep. 1</a>
+            <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/">CG饲养日记-其三 P144-153</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            天色尚早
+        </h3>
         
     </div>
 
@@ -361,7 +316,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Mar 01, 2025</time>
+                <time class="article-time--published">Apr 23, 2025</time>
             </div>
         
 
@@ -377,78 +332,57 @@
     <section class="article-content">
     
     
-    <p>代数几何讨论班的准备</p>
-<p>你看看你这个图都糊成啥了@lc</p>
+    <p>好吃</p>
 <hr>
-<p>上回书说到</p>
-<h3 id="proposition-2">Proposition 2
-</h3><p>$A$ ring, $M$ module, if $\forall i$, $1\leq i\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\cdots,x_{i-1})M$, then $H_p(\vec{x},M)=0$ for $p&gt;0$.</p>
-<p>实际上我们有这样的结论:</p>
-<h3 id="proposition-3">Proposition 3
-</h3><p>$A$ ring, $M$ module, we furthermore assume $A$ is noetherian, $M$ f.g. and $x_i$ belongs to the (Jacobson) radical $J(A)$, then TFAE:</p>
-<p>a) $H_p(\vec{x},M)=0$ for $p&gt;0$,</p>
-<p>b) $H_1(\vec{x},M)=0$,</p>
-<p>c) $\forall i$, $1\leq i\leq r$, $x_i$ is not a zero-divisor in $M/(x_1,\cdots,x_{i-1})M$.</p>
-<p>c)$\implies$ a) 已经在 Prop.2 中证过了, a)$\implies$ b) 是平凡的. 我们实际上只需要证明 b)$\implies$ c)</p>
-<p>Prove by ind. For $r=1$, triv.</p>
-<p>在上节课里, 我们证明过存在这样的短正合列:</p>
-\[0\to H_0(x_r, H_1(\vec{x}',M))\to H_1(\vec{x},M)\to H_1(x_r,H_0(\vec{x}',M))\to 0.\]<p>$H_1(\vec{x},M)=0\implies H_0(x_i, H_1(\vec{x}&rsquo;,M))=0\implies H_1(\vec{x}&rsquo;,M)/x_iH_1(\vec{x}&rsquo;,M)=0\implies H_1(\vec{x}&rsquo;,M)=0$, c) holds for $1\leq i\leq r-1$. For $i=r$, note that $0=H_1(x_r,H_0(\vec{x}&rsquo;,M))=\ker(M/\vec{x}M\overset{x_r}{\to} M/\vec{x}M)$.</p>
-<p>目前来看, 这个定理的目的是导出如下推论:</p>
-<h4 id="corollary-1">Corollary 1
-</h4><p>c) does not depend on the order of the sequence $\vec{x}={x_1,\cdots,x_r}$.</p>
-<p>注意 $H_0(\vec{x},M)$ 自然地同构于 $A/\vec{x}\otimes_A M$, 利用 A-free resolution, 我们诱导了同构.</p>
-\[\psi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]<h4 id="corollary-2">Corollary 2
-</h4><p>Suppose that conditions a),b),c) of Prop 3 are satisfied for $A$, then the map</p>
-\[\phi: H_i(\vec{x},M)\to\operatorname{Tor}_i^A(A/\vec{x},M).\]<p>is an isom. for every $i$ and for every $A$-mod $M$.</p>
-<p>这个是由于前述条件给出了 $A$ 的自由消解.</p>
-<p>注意 $K(x,M)$ 作为外代数, 有自然的同构于 $Hom_A(K(\vec{x}),M)$. 有</p>
-\[H^i(Hom_A(K(x),M))\simeq H_{r-i}(x,M).\]<p>于是我们有自然的映射</p>
-\[\phi:Ext^i_A(A/x,M)\to H_{r-i}(x,M).\]<p>且同理我们有,</p>
-<h4 id="corollary-3">Corollary 3
-</h4><p>Under the same hypothesis as in cor. 2, the map</p>
-\[\phi:Ext^i_A(A/x,M)\to H_{r-i}(x,M).\]<p>is an isom. for every $i$ and for every $A$-mod $M$.</p>
-<p>从目前来看, cor.2 与 cor.3 的关键在于如下定理:</p>
-<h3 id="proposition-4">Proposition 4
-</h3><p>The annihilator of $H_i(\vec{x}, M),-\infty&lt;i&lt;+\infty$ contains $\vec{x}$ and $\operatorname{Ann}(M)$.</p>
-<p>请注意这里的 $x$ 不一定是一个 regular sequence, 我们不能直接对 $A$ 搞. 考虑多项式环 $B=A[X_1,\cdots, X_r]$, 对 $A$ 和 $M$ 赋予 $B$-模结构: $X_ia=0$, $X_im=x_im$, 于是我们有</p>
-\[H_i(\vec{x}, M)\simeq \operatorname{Tor}_i^B(A,M)\implies \operatorname{Ann}(H_i(\vec{x}, M))=\operatorname{Ann}(\operatorname{Tor}_i^B(A,M))\subset \operatorname{Ann} A+\operatorname{Ann}M.\]<p>而 $(X_i)\in \operatorname{Ann} A, (x_i-X_i)\in \operatorname{Ann}M$.</p>
+<p>3.2 介绍的 nilp. cone, 感觉是偏向于几何的方向的.</p>
+<p>首先定义 $\mathcal{N}$ 是所有在 $ad$ 作用下 nilp. 的 element, $\tilde{\mathcal{N}}=\mu^{-1}(\mathcal{N})$.</p>
+<p>当然有</p>
+\[\tilde{\mathcal{N}}=G\times_B \mathfrak{n}.\]<p>Lemma 3.2.2: $\tilde{\mathcal{N}}\simeq T^*\mathcal{B}$.</p>
+<p>Cor 3.2.3: $\mu:T^*\mathcal{B}\to \mathcal{N}$ moment map, 且 surj.</p>
+<p>Defn: 3.2.4: $\mu: T^*\mathcal{B}\to \mathcal{N}$ 称为 Springer resolution.</p>
+<p>定义 $\mathbb{C}[\mathfrak{g}]^G_+$ 为所有 $G$-不变的, constant-term 非零的多项式, 则</p>
+<p>Proposition 3.2.5: An element $x\in\mathfrak{g}$ is nilp. iff $P(x)=0$ for all $P\in \mathbb{C}[\mathfrak{g}]^G_+$.</p>
+<p>这个给出了 nilp. element 的 &ldquo;内蕴的&rdquo; 定义. 某种意义上就是说, $\mathfrak{g}\to \mathfrak{H}/\mathbb{W}$ 的这个映射映到 $0$. 不难证()</p>
+<p>他给出了交换图</p>
+<!-- https://q.uiver.app/#q=WzAsNyxbMSwwLCJcXHRpbGRle1xcbWF0aGNhbHtOfX0iXSxbMCwxLCJ7XFxtYXRoY2Fse059fSJdLFsxLDIsIlxcezBcXH0iXSxbMSwxLCJcXG1hdGhmcmFre2d9Il0sWzIsMCwiXFx0aWxkZXtcXG1hdGhmcmFre2d9fSJdLFsyLDIsIlxcbWF0aGZyYWt7SH0vXFxtYXRoYmJ7V30iXSxbMywxLCJcXG1hdGhmcmFre0h9Il0sWzQsNl0sWzYsNV0sWzQsM10sWzMsNV0sWzAsNF0sWzEsM10sWzAsMV0sWzEsMl0sWzIsNV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNyxbMSwwLCJcXHRpbGRle1xcbWF0aGNhbHtOfX0iXSxbMCwxLCJ7XFxtYXRoY2Fse059fSJdLFsxLDIsIlxcezBcXH0iXSxbMSwxLCJcXG1hdGhmcmFre2d9Il0sWzIsMCwiXFx0aWxkZXtcXG1hdGhmcmFre2d9fSJdLFsyLDIsIlxcbWF0aGZyYWt7SH0vXFxtYXRoYmJ7V30iXSxbMywxLCJcXG1hdGhmcmFre0h9Il0sWzQsNl0sWzYsNV0sWzQsM10sWzMsNV0sWzAsNF0sWzEsM10sWzAsMV0sWzEsMl0sWzIsNV1d&embed" width="566" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>Cor 3.2.8: $\mathcal{N}$ is irr var. of dim $2\dim \mathfrak{n}$.</p>
+<p>放一放, 不难的() 接下来这个定理的比较有趣, 某种意义上, 他说那个 Jordan decomp</p>
+<p>Proposition 3.2.9: the number of nilp. conj. classes of $\mathfrak{g}$ is finite.</p>
+<p>Proposition 3.2.10: The regular nilp. elements form a single Zar-open, dense conj. class in $\mathcal{N}$.</p>
+<p>然后还是一堆关于 regular 的讨论 fix 一个 $\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}$,</p>
+<p>Lemma 3.2.12: $\mathfrak{n}^{reg}$ is a single $B$-orbit consisting of regular nilp. elements in $\mathfrak{g}$.</p>
+<p>取 $e_i$ 那些 simple roots 对应的 vector, 那么</p>
+<p>Lemma 3.2.13: $n=e_1+\cdots+ e_l$ is regular.</p>
+<p>然后</p>
+<p>Proposition 3.2.14: Any regular nilp. contained in a unique Borel alg.</p>
+<p>zzz</p>
 <hr>
-<p>我们接下来的主要目标是去研究 Koszul complex 的 filtration. 为此, 在接下来的章节里我们会假设 $(A,m)$ 是局部诺特环, $\vec{x}$ 包含在 $m$ 里, $M$ 是一个有限生成的 $A$-模使得 $l(M/\vec{x}M)&lt;\infty$.</p>
-<p>于是, 根据前文的 prop 4, 我们有 $H_p(\vec{x},M)$ 被 $\vec{x}+\operatorname{Ann}M$ 消灭, 于是拥有有限长度. 我们可以考虑 Euler-Poincare characteristic:</p>
-\[\chi(\vec{x},M)=\sum_{p=0}^r(-1)^pl(H_p(\vec{x},M)).\]<p>在这里, 我们要引入 Samuel 多项式的概念.</p>
+<p>3.2.15 Characterization of nilp. elements in $\mathfrak{g}^*$.</p>
+<p>核心定理就一个:</p>
+<p>Proposition 3.2.16: An element $\lambda\in\mathfrak{g}^*$ is nilp. iff $\langle\lambda,\mathfrak{g}^{\lambda}\rangle=0$.</p>
+<p>其中 $\mathfrak{g}^{\lambda}$ 是 $\lambda$ 的 isotropy group (i.e. $\lambda$ 在 coadjoint 作用下的 stabilizer)对应的 subalg.</p>
+<p>3.2.18 Stratified spaces and trannsversal slices.</p>
+<p>分层的空间(?) fix $Y\subset X\subset V$, $X,Y$ alg var. $V$ (通常)是一个 v.s.</p>
+<p>Defn 3.2.19: 称 $S\subset X$ 包含点 $y$ 的 analytic subset 为一个 $Y$ 的 transverse slide, 如果存在邻域 $U\subset X$, 同构</p>
+\[f:(Y\cap U)\times S\to U\]<p>且能够 restricts to</p>
+\[f:\{y\}\times S\to S,(Y\cap U)\times \{y\}\to (Y\cap U).\]<p>感觉就是微分拓扑里那个定义啊()</p>
+<p>考虑 $G\circlearrowright V$ (勾石记号, 因为在这里说的是 alg $G$-var.), $\mathbb{O}$ 为一个 $G$-轨道, 那么我们希望说, 对任意点 $y$, 存在 transverse slice. More precisely, 称 $S_V\subset V$ 是 transverse to $\mathbb{O}$ 的, 如果 $T_y\mathbb{O}$ 和 $T_yS_V$ 是 transverse 的, 也就是说, $T_y\mathbb{O}\oplus T_yS_V=T_y V$.</p>
+<p>Lemma 3.2.20: $S_V$ locally-closed, complex-ana. submanifold transverse to $\mathbb{O}$ at $y$. Then, the intersection with $X$ of a small enough open nbhd is a transverse slice.</p>
+<p>这个拓扑啥的都是 analytic 的, 所以不难证. 为什么要假设 $G,X$ alg的呢? 主要希望 $\mathbb{O}$ 在 $X$ 里 locally-closed.</p>
+<p>否则考虑无理流那种勾石东西, 会出问题().</p>
+<p>Cor 3.2.21: 考虑 $S,U$ transverse slice to $\mathbb{O}$, $\pi:\tilde{X}\to X$ $G$-equiv. morph, $\tilde{S}=\pi^{-1}(S), \tilde{U}=\pi^{-1}(U)$. 那么</p>
+\[\tilde{U}\simeq (\mathbb{O}\cap U)\times S.\]<p>然后, 定义 transverse slice $S$ of $X_j$ 是 stratified slice, 如果 $f:(X_j\cap U)\times S\to U$ 将 $(X_j\cap U)\times S=\sqcup_i (X_j\cap U)\times (S	\cap X_i)$ 这个 partition 映到 $U=\sqcup_i(U\cap X_i)$.</p>
+<p>Defn 3.2.23: a finite partition $X=\sqcup_i X_i$ of an alg.var. $X$ is called an alg. stratification of $X$ if the following holds</p>
+<p>(1) Each pieces $X_i$ is a smooth locally closed alg. subvar. of $X$,</p>
+<p>(2) For any $j\in I$, the closure of $X_j$ is a union of $X_i$&rsquo;s</p>
+<p>(3) For any $j\in I$, $y\in X_j$, there exists a stratified slice to $X_j$ at $y$.</p>
+<p>于是,</p>
+<p>Proposition 3.2.24: $V$ smooth alg $G$-var. and $X\subset V$, $G$-stable alg. subvar. consisting of finitely many $G$-orbits. Then the partition of $X$ into $G$-orbits is an alg. stratification of $X$.</p>
+<p>Cor 3.2.25: The partition $\mathcal{N}=\sqcup \mathbb{O}$ is an alg. stratification.</p>
 <hr>
-<p>称一个函数 $f:\mathbb{Z}\to \mathbb{Z}$ 或 $f:{n\geq n_0}\to\mathbb{Z}$ 是 polynomial-like 的, 如果存在多项式 $P_f(X)$ s.t. $f(n)=P_f(n)$ 对充分大的 $n$ 成立.</p>
-<h4 id="lemma">lemma
-</h4><p>TFAE:</p>
-<p>i) $f$ is polynomial-like;</p>
-<p>ii) $\Delta f$ is polynomial-like;</p>
-<p>iii) there exists $r\geq 0$ s.t. $\Delta^r f(n)=0$, for all large enough $n$.</p>
-<p>接下来我们要介绍 Hilbert polynomial: 一个交换环 $A$ 被称作 artinian 的, 如果</p>
-<p>(i) $A$ 作为 $A$-模有 finite length.</p>
-<p>(ii) $A$ 是诺特的, 且任何 $A$ 的素理想都是极大理想.</p>
-<p>我们考虑一个 graded ring $H=\oplus H_n$ 具有如下特征:</p>
-<p>a) $H_0$ is artinian,</p>
-<p>b) $H$ 由 $H_0$ 和 $H_1$ 中的有限多元素 $(x_1,\cdots, x_r)$ 生成.</p>
-<p>所以 $H$ 可以看做一个多项式环商掉某个其次理想.</p>
-<p>在这里我们可以想象 $H=gr(A)=\oplus x^n/x^{n+1}$, 然后去考虑一个 graded $H$-mod $M=\oplus M_n$. 在后面我们会让 $M_n$ 是一个比较好的东西. 但在这里我们先假设他是一个有限生成的 $H$-模. 于是每一个 $M_n$ 都是有限生成的 $H_0$ 模, 从而是 finite length 的. 我们定义函数 $n\mapsto \chi(M,n)$:</p>
-\[\chi(M,n)=l_{H_0}(M_n).\]<h3 id="theorem-2hilbert">Theorem 2:(Hilbert)
-</h3><p>$\chi(M,n)$ is a polynomial-like function of $n$ of degree $\leq r-1$.</p>
-<p>为此, 可以假设 $H=H_0[X_1,\cdots,X_r]$, 对 $r$ 归纳.</p>
-<p>当 $r=0$ 的时候, $M$ 是有限生成的 $H_0$ 模, 所以 $\chi(M,n)=0$, 当 $n$ 很大.</p>
-<p>假设其已经对 $r-1$ 证明, 对 $r$, 考察 $\phi=X_r$ 定义在 $M$ 上的 endomorphism, 考虑 $N,R$ $\phi$ 的 kernel 和 cokernel, 我们有exact sequence</p>
-\[0\to N_n\to M_n\to M_{n+1}\to R_{n+1}\to 0.\]<p>根据 Atiyah Prop 6.9 有 $l$ 是 additive 的, 于是 $\Delta \chi(M,n)=\chi(M,n+1)-\chi(M,n)=\chi(R,n+1)-\chi(N,n)$.</p>
-<p>通过追图我们可以得到&hellip;&hellip;</p>
-<p>总之 $N,R$ 可以被看做有限生成的 $H_0[X_1,\cdots,X_{r-1}]$-模. 根据归纳假设证毕.</p>
-<h3 id="theorem-2">Theorem 2'
-</h3><p>我不确定这个是否要讲, 也许写到这里应该就差不多了.</p>
-<p>a) $\Delta^{r-1}Q(M)\leq l(M_0)$.</p>
-<p>b) TFAE:</p>
-<p>b1) $\Delta^{r-1}Q(M)= l(M_0)$;</p>
-<p>b2) $\chi(M,n)=l(M_0)C^{r-1}_{n+r-1}$;</p>
-<p>b3) the natural map $M_0\otimes_{H_0}H_0[X_1,\cdots,X_r]\to M$ is an isom.</p>
-<p>要让讲证明就开始抄书)</p>
-<p>Samuel polynomial是什么? 不知道, 摸了</p>
-<p>edg打的是牛魔</p>
+<p>这样 3.2 就结了, 开3.3!</p>
+<p>3.2真比3.1要容易一些吧()</p>
 
 </section>
 
@@ -496,30 +430,6 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/">
-        
-        
-            <div class="article-image">
-                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc.c9ae0363cda5d6c3f47d0c09a84b9d5a_hu_423b2454be3c89e.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post CG饲养日记-其三 P144-153"
-                        
-                        data-hash="md5-ya4DY82l1sP0fQwJqEudWg==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">CG饲养日记-其三 P144-153</h2>
-        </div>
-    </a>
-</article>
-
             
                 
 <article class="has-image">
@@ -588,6 +498,30 @@
 
         <div class="article-details">
             <h2 class="article-title">代数几何, 启动!</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/pre.-prep.-1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/pre.-prep.-1/dushu.6c7377f517a8a5e6c599dcfcfa9cbe58_hu_38f3f7aa063a2ffb.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post pre. prep. 1"
+                        
+                        data-hash="md5-bHN39ReopebFmdz8&#43;py&#43;WA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">pre. prep. 1</h2>
         </div>
     </a>
 </article>

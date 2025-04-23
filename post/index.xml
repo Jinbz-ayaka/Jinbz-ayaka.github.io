@@ -7,7 +7,66 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 23 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三 P144-153</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/</link>
+        <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc.jpg" alt="Featured image of post CG饲养日记-其三 P144-153" /&gt;&lt;p&gt;好吃&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;3.2 介绍的 nilp. cone, 感觉是偏向于几何的方向的.&lt;/p&gt;
+&lt;p&gt;首先定义 $\mathcal{N}$ 是所有在 $ad$ 作用下 nilp. 的 element, $\tilde{\mathcal{N}}=\mu^{-1}(\mathcal{N})$.&lt;/p&gt;
+&lt;p&gt;当然有&lt;/p&gt;
+\[\tilde{\mathcal{N}}=G\times_B \mathfrak{n}.\]&lt;p&gt;Lemma 3.2.2: $\tilde{\mathcal{N}}\simeq T^*\mathcal{B}$.&lt;/p&gt;
+&lt;p&gt;Cor 3.2.3: $\mu:T^*\mathcal{B}\to \mathcal{N}$ moment map, 且 surj.&lt;/p&gt;
+&lt;p&gt;Defn: 3.2.4: $\mu: T^*\mathcal{B}\to \mathcal{N}$ 称为 Springer resolution.&lt;/p&gt;
+&lt;p&gt;定义 $\mathbb{C}[\mathfrak{g}]^G_+$ 为所有 $G$-不变的, constant-term 非零的多项式, 则&lt;/p&gt;
+&lt;p&gt;Proposition 3.2.5: An element $x\in\mathfrak{g}$ is nilp. iff $P(x)=0$ for all $P\in \mathbb{C}[\mathfrak{g}]^G_+$.&lt;/p&gt;
+&lt;p&gt;这个给出了 nilp. element 的 &amp;ldquo;内蕴的&amp;rdquo; 定义. 某种意义上就是说, $\mathfrak{g}\to \mathfrak{H}/\mathbb{W}$ 的这个映射映到 $0$. 不难证()&lt;/p&gt;
+&lt;p&gt;他给出了交换图&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNyxbMSwwLCJcXHRpbGRle1xcbWF0aGNhbHtOfX0iXSxbMCwxLCJ7XFxtYXRoY2Fse059fSJdLFsxLDIsIlxcezBcXH0iXSxbMSwxLCJcXG1hdGhmcmFre2d9Il0sWzIsMCwiXFx0aWxkZXtcXG1hdGhmcmFre2d9fSJdLFsyLDIsIlxcbWF0aGZyYWt7SH0vXFxtYXRoYmJ7V30iXSxbMywxLCJcXG1hdGhmcmFre0h9Il0sWzQsNl0sWzYsNV0sWzQsM10sWzMsNV0sWzAsNF0sWzEsM10sWzAsMV0sWzEsMl0sWzIsNV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNyxbMSwwLCJcXHRpbGRle1xcbWF0aGNhbHtOfX0iXSxbMCwxLCJ7XFxtYXRoY2Fse059fSJdLFsxLDIsIlxcezBcXH0iXSxbMSwxLCJcXG1hdGhmcmFre2d9Il0sWzIsMCwiXFx0aWxkZXtcXG1hdGhmcmFre2d9fSJdLFsyLDIsIlxcbWF0aGZyYWt7SH0vXFxtYXRoYmJ7V30iXSxbMywxLCJcXG1hdGhmcmFre0h9Il0sWzQsNl0sWzYsNV0sWzQsM10sWzMsNV0sWzAsNF0sWzEsM10sWzAsMV0sWzEsMl0sWzIsNV1d&amp;embed&#34; width=&#34;566&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Cor 3.2.8: $\mathcal{N}$ is irr var. of dim $2\dim \mathfrak{n}$.&lt;/p&gt;
+&lt;p&gt;放一放, 不难的() 接下来这个定理的比较有趣, 某种意义上, 他说那个 Jordan decomp&lt;/p&gt;
+&lt;p&gt;Proposition 3.2.9: the number of nilp. conj. classes of $\mathfrak{g}$ is finite.&lt;/p&gt;
+&lt;p&gt;Proposition 3.2.10: The regular nilp. elements form a single Zar-open, dense conj. class in $\mathcal{N}$.&lt;/p&gt;
+&lt;p&gt;然后还是一堆关于 regular 的讨论 fix 一个 $\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}$,&lt;/p&gt;
+&lt;p&gt;Lemma 3.2.12: $\mathfrak{n}^{reg}$ is a single $B$-orbit consisting of regular nilp. elements in $\mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;取 $e_i$ 那些 simple roots 对应的 vector, 那么&lt;/p&gt;
+&lt;p&gt;Lemma 3.2.13: $n=e_1+\cdots+ e_l$ is regular.&lt;/p&gt;
+&lt;p&gt;然后&lt;/p&gt;
+&lt;p&gt;Proposition 3.2.14: Any regular nilp. contained in a unique Borel alg.&lt;/p&gt;
+&lt;p&gt;zzz&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;3.2.15 Characterization of nilp. elements in $\mathfrak{g}^*$.&lt;/p&gt;
+&lt;p&gt;核心定理就一个:&lt;/p&gt;
+&lt;p&gt;Proposition 3.2.16: An element $\lambda\in\mathfrak{g}^*$ is nilp. iff $\langle\lambda,\mathfrak{g}^{\lambda}\rangle=0$.&lt;/p&gt;
+&lt;p&gt;其中 $\mathfrak{g}^{\lambda}$ 是 $\lambda$ 的 isotropy group (i.e. $\lambda$ 在 coadjoint 作用下的 stabilizer)对应的 subalg.&lt;/p&gt;
+&lt;p&gt;3.2.18 Stratified spaces and trannsversal slices.&lt;/p&gt;
+&lt;p&gt;分层的空间(?) fix $Y\subset X\subset V$, $X,Y$ alg var. $V$ (通常)是一个 v.s.&lt;/p&gt;
+&lt;p&gt;Defn 3.2.19: 称 $S\subset X$ 包含点 $y$ 的 analytic subset 为一个 $Y$ 的 transverse slide, 如果存在邻域 $U\subset X$, 同构&lt;/p&gt;
+\[f:(Y\cap U)\times S\to U\]&lt;p&gt;且能够 restricts to&lt;/p&gt;
+\[f:\{y\}\times S\to S,(Y\cap U)\times \{y\}\to (Y\cap U).\]&lt;p&gt;感觉就是微分拓扑里那个定义啊()&lt;/p&gt;
+&lt;p&gt;考虑 $G\circlearrowright V$ (勾石记号, 因为在这里说的是 alg $G$-var.), $\mathbb{O}$ 为一个 $G$-轨道, 那么我们希望说, 对任意点 $y$, 存在 transverse slice. More precisely, 称 $S_V\subset V$ 是 transverse to $\mathbb{O}$ 的, 如果 $T_y\mathbb{O}$ 和 $T_yS_V$ 是 transverse 的, 也就是说, $T_y\mathbb{O}\oplus T_yS_V=T_y V$.&lt;/p&gt;
+&lt;p&gt;Lemma 3.2.20: $S_V$ locally-closed, complex-ana. submanifold transverse to $\mathbb{O}$ at $y$. Then, the intersection with $X$ of a small enough open nbhd is a transverse slice.&lt;/p&gt;
+&lt;p&gt;这个拓扑啥的都是 analytic 的, 所以不难证. 为什么要假设 $G,X$ alg的呢? 主要希望 $\mathbb{O}$ 在 $X$ 里 locally-closed.&lt;/p&gt;
+&lt;p&gt;否则考虑无理流那种勾石东西, 会出问题().&lt;/p&gt;
+&lt;p&gt;Cor 3.2.21: 考虑 $S,U$ transverse slice to $\mathbb{O}$, $\pi:\tilde{X}\to X$ $G$-equiv. morph, $\tilde{S}=\pi^{-1}(S), \tilde{U}=\pi^{-1}(U)$. 那么&lt;/p&gt;
+\[\tilde{U}\simeq (\mathbb{O}\cap U)\times S.\]&lt;p&gt;然后, 定义 transverse slice $S$ of $X_j$ 是 stratified slice, 如果 $f:(X_j\cap U)\times S\to U$ 将 $(X_j\cap U)\times S=\sqcup_i (X_j\cap U)\times (S	\cap X_i)$ 这个 partition 映到 $U=\sqcup_i(U\cap X_i)$.&lt;/p&gt;
+&lt;p&gt;Defn 3.2.23: a finite partition $X=\sqcup_i X_i$ of an alg.var. $X$ is called an alg. stratification of $X$ if the following holds&lt;/p&gt;
+&lt;p&gt;(1) Each pieces $X_i$ is a smooth locally closed alg. subvar. of $X$,&lt;/p&gt;
+&lt;p&gt;(2) For any $j\in I$, the closure of $X_j$ is a union of $X_i$&amp;rsquo;s&lt;/p&gt;
+&lt;p&gt;(3) For any $j\in I$, $y\in X_j$, there exists a stratified slice to $X_j$ at $y$.&lt;/p&gt;
+&lt;p&gt;于是,&lt;/p&gt;
+&lt;p&gt;Proposition 3.2.24: $V$ smooth alg $G$-var. and $X\subset V$, $G$-stable alg. subvar. consisting of finitely many $G$-orbits. Then the partition of $X$ into $G$-orbits is an alg. stratification of $X$.&lt;/p&gt;
+&lt;p&gt;Cor 3.2.25: The partition $\mathcal{N}=\sqcup \mathbb{O}$ is an alg. stratification.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这样 3.2 就结了, 开3.3!&lt;/p&gt;
+&lt;p&gt;3.2真比3.1要容易一些吧()&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二 P135-144</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/</link>
         <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
@@ -2293,26 +2352,35 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>مثال نص</title>
-        <link>https://Jinbz-ayaka.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</link>
+        <title>Placeholder Text</title>
+        <link>https://Jinbz-ayaka.github.io/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post مثال نص" /&gt;&lt;h2 id=&#34;فقرة-1&#34;&gt;فقرة 1
-&lt;/h2&gt;&lt;p&gt;هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من &lt;a class=&#34;link&#34; href=&#34;https://colorslab.com/textgator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;مولد النص العربى&lt;/a&gt;، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
-هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.&lt;/p&gt;
-&lt;h2 id=&#34;فقرة-2&#34;&gt;فقرة 2
-&lt;/h2&gt;&lt;p&gt;هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من &lt;a class=&#34;link&#34; href=&#34;https://colorslab.com/textgator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;مولد النص العربى&lt;/a&gt;، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
-هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.&lt;/p&gt;
-&lt;h2 id=&#34;تجربة-rtl&#34;&gt;تجربة RTL
-&lt;/h2&gt;&lt;p&gt;كلمة 1 Text كلمة 2&lt;/p&gt;
-</description>
+        <guid>https://Jinbz-ayaka.github.io/p/placeholder-text/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
+&lt;li&gt;Duce pollice&lt;/li&gt;
+&lt;li&gt;Eris modo&lt;/li&gt;
+&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
+&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
+&lt;li&gt;Flumen querellas&lt;/li&gt;
+&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
+&lt;li&gt;Quidem et&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt
+&lt;/h1&gt;&lt;p&gt;&lt;svg class=&#34;canon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; overflow=&#34;visible&#34; viewBox=&#34;0 0 496 373&#34; height=&#34;373&#34; width=&#34;496&#34;&gt;&lt;g fill=&#34;none&#34;&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#ED1C24&#34; stroke-width=&#34;.75&#34; d=&#34;M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.479.375h495v372h-495zM247.979.875v372&#34;&gt;&lt;/path&gt;&lt;ellipse cx=&#34;498.729&#34; cy=&#34;177.625&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;ellipse cx=&#34;247.229&#34; cy=&#34;377.375&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat
+&lt;/h2&gt;&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
+&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
+&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;</description>
         </item>
         <item>
         <title>Math Typesetting</title>
