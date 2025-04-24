@@ -7,7 +7,66 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 23 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四 P153-161</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/</link>
+        <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/qaq1.jpg" alt="Featured image of post CG饲养日记-其四 P153-161" /&gt;&lt;p&gt;唉, Jordan 标准型.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;定义 Steinberg var.&lt;/p&gt;
+\[Z=\tilde{\mathcal{N}}\times_{\mathcal{N}}\tilde{\mathcal{N}}=\{(x,\mathfrak{b}),(x&#39;,\mathfrak{b}&#39;)|x=x&#39;\}.\]&lt;p&gt;我们有&lt;/p&gt;
+\[\tilde{\mathcal{N}}\times\tilde{\mathcal{N}}\simeq T^*\mathcal{B}\times T^*\mathcal{B}\simeq T^*(\mathcal{B}\times \mathcal{B}).\]&lt;p&gt;在这里, 我们在最后一项里, 希望把 $n$ 打到 $-n$. 这样就有这个Prop:&lt;/p&gt;
+&lt;p&gt;Proposition 3.3.4: $Z$ is the union of the conormal bundles to all $G$-orbits in $\mathcal{B}\times \mathcal{B}$.&lt;/p&gt;
+&lt;p&gt;然后, 在 $\mathcal{B}\times \mathcal{B}$ 里, 记 $w\in\mathbb{W}$ 对应的轨道为 $Y_w$,&lt;/p&gt;
+&lt;p&gt;Cor 3.3.5: (i) $Z=\sqcup_{w\in\mathbb{W}} T^*_{Y_w}(\mathcal{B}\times \mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;(ii) Irr. components of $Z$ are parametrized by elements of $W$. Every irr components is the closure of $T^*_{Y_w}(\mathcal{B}\times \mathcal{B})$ for a uniquely determined $w\in \mathbb{W}$.&lt;/p&gt;
+&lt;p&gt;现在取 $\mathfrak{b}\subset \mathfrak{g},\mathfrak{n}=[\mathfrak{b},\mathfrak{b}]$, 下面这个定理是本章的核心:&lt;/p&gt;
+&lt;p&gt;Theorem 3.3.6: $\mathbb{O}$ coadjoint orbit in $\mathfrak{g}^*$. Let $x\in\mathbb{O}$ be s.t. $x|_{\mathfrak{n}}=0$, then $\mathbb{O}\cap (x+\mathfrak{b}^\perp)$ is a (possibly singular) lagrangian subvariety in $\mathbb{O}$ w.r.t. the natural sympletic structure on coadjoint orbits.&lt;/p&gt;
+&lt;p&gt;如果通过 Killing form 给定 $\mathfrak{g}\simeq \mathfrak{g}^*$, 那么这个也可以看做&lt;/p&gt;
+&lt;p&gt;Theorem 3.3.7: $\mathbb{O}\subset \mathfrak{g}$ conj. class, $x\in \mathbb{O}\cap \mathfrak{b}$. Then $\mathbb{O}\cap(x+\mathfrak{n})$ is a lagrangian subvar. in $\mathbb{O}$.&lt;/p&gt;
+&lt;p&gt;他只对 $x$ nilp. 的 case 进行说明. 其他的 case 是 &amp;ldquo;less difficult and less interesting&amp;rdquo; 的&lt;/p&gt;
+&lt;p&gt;Lemma 3.3.8: $\dim( \mathbb{O}\cap\mathfrak{n})\leq \frac{1}{2}\dim\mathbb{O}$.&lt;/p&gt;
+&lt;p&gt;取 $n=\dim\mathfrak{n}=\dim \mathcal{B}$. Then, $\dim T^*\mathcal{B}=2n=\dim Z$, $Z_0={(x,\mathfrak{b},\mathfrak{b}&amp;rsquo;)\in Z|x\in O}$.&lt;/p&gt;
+&lt;p&gt;$Z_0\to \mathbb{O}$ 给出 fiber equals to $\mathcal{B}_x\times \mathcal{B}_x$:&lt;/p&gt;
+\[\dim \mathbb{O}+2\dim \mathcal{B}_x\leq \dim Z_0.\]&lt;p&gt;由于 $\dim Z_0\leq \dim Z=2n$.&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim \mathcal{B}_x\leq n.\]&lt;p&gt;考虑 $S={g|gxg^{-1}\in \mathfrak{b}}$, 通过(不难但要想一下)的代数讨论有 $B\mathfrak{b}s S\simeq \mathcal{B}_x$. 于是,&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim S-\dim B\leq n.\]&lt;p&gt;而 $y\in \mathbb{O}\cap \mathfrak{n}\iff y=gxg^{-1}, g\in S$. 有 $\dim(\mathbb{O}\cap \mathfrak{n})=\dim S-\dim Z_G(x)$.&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim(\mathbb{O}\cap \mathfrak{n})+\dim Z_G(x)\leq n+\dim B=\dim G.\]&lt;p&gt;于是,&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim(\mathbb{O}\cap \mathfrak{n})\leq \dim G-\dim Z_G(x)=\dim \mathbb{O},\]\[\dim(\mathbb{O}\cap \mathfrak{n})\leq\frac{1}{2}\dim \mathbb{O}.\]&lt;p&gt;原 Thm 的证明要用到这样的定理:&lt;/p&gt;
+&lt;p&gt;Theorem 1.5.7: $A$ solvable alg. gp with a Hamiltonian action acts on a symplectic alg. var. $M$. Let $\mathfrak{a}=Lie A$, $\mu: M\to \mathfrak{a}$ moment map. Then for any coadjoint orbit $\mathbb{O}\subset \mathfrak{a}$, $\mu^{-1}\mathbb{O}$ either empty or coisotropic subvar.&lt;/p&gt;
+&lt;p&gt;这个从某种意义上来说, 就是隐函数定理. 我们现在考虑 $B$ 在其上的作用, 得到 moment map, 从而得到交换图&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiYntPfSJdLFsyLDAsIlxcbWF0aGZyYWt7Z31eKiJdLFsxLDEsIlxcbWF0aGZyYWt7Yn1eKiJdLFsxLDJdLFswLDIsIlxcbXVfQiIsMl0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiYntPfSJdLFsyLDAsIlxcbWF0aGZyYWt7Z31eKiJdLFsxLDEsIlxcbWF0aGZyYWt7Yn1eKiJdLFsxLDJdLFswLDIsIlxcbXVfQiIsMl0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;然后根据定理, $\mu_B^{-1}(0)=\mathbb{O}\cap \mathfrak{n}$ coisotropic. 再根据前面lemma的维数公式, 得到 $\mathbb{O}\cap\mathfrak{n}$ lagrangian.&lt;/p&gt;
+&lt;p&gt;考虑 $SL_n$, $\mathbb{O}$ 为所有 rank 1 的 nilpotent 矩阵. 如果你博资考复习比较充分, 可以发现他们都&amp;quot;实相似&amp;quot;. 当然我们只需要知道他们复相似. 不难说明 $\dim\mathbb{O}=2n-2$.&lt;/p&gt;
+&lt;p&gt;然后取 $\mathfrak{n}$ 是上三角矩阵, 那么不难发现, $\mathfrak{n}\cap\mathbb{O}$ 是那些 $k\times (n-k-1)$ 的右上矩阵全体的有限并, 拥有 $\dim=n-1$.&lt;/p&gt;
+&lt;p&gt;现在考虑 $x\in \mathbb{O}$ s.r. 根据 3.1.43, 有 $x+\mathfrak{n}=B\cdot x$. 于是, 我们有&lt;/p&gt;
+&lt;p&gt;Lemma 3.3.16: For s.r. $x\in\mathfrak{b}$, $x+\mathfrak{n}$ is a $B$-stable lagrangian subvar. of $\mathbb{O}$.&lt;/p&gt;
+&lt;p&gt;现在考虑 $\tilde{\mathbb{O}}=\mu^{-1}\mathbb{O}$ 包含了某个 sr element. 我们有 $\mathbb{O}\simeq G/T$. 但是根据 fibration&lt;/p&gt;
+\[T\to G\to G/T,\]&lt;p&gt;我们可以得到 $\pi_1(G/T)=0$, for $\pi_0(T)=\pi_1(G)=0$.&lt;/p&gt;
+&lt;p&gt;于是 $\mu:\tilde{\mathbb{O}}\to \mathbb{O}$ 是一个trivial covering of $# W$ components. 考虑 $\pi:\tilde{\mathfrak{g}}\to \mathcal{B}$, 我们有, 一个 $\tilde{\mathbb{O}}$ 的连通分支同构于 $G\times_B(x+\mathfrak{n})$. $\pi$ 是一个 fibration with the form&lt;/p&gt;
+\[\pi:\tilde{\mathbb{O}}\simeq G\times_B (x+\mathfrak{n})\to G/B\simeq\mathcal{B}.\]&lt;p&gt;然后, 通过 $\mu:\tilde{\mathbb{O}}\to \mathbb{O}$, 可以将这个 fibration 转移到 $\mathbb{O}$ 上去. 具体的转移方法跳了() 只需知道不同的连通分支对应不同的 fibration.&lt;/p&gt;
+&lt;p&gt;我们现在需要一些 3.3.6 的 cor. 对于 $\mathbb{O}\subset \mathcal{N}$,&lt;/p&gt;
+&lt;p&gt;Cor 3.3.20: For any coadjoint orbit $\mathbb{O}$, each irr. component of $Z_0$ has the same $\dim Z_0$, and&lt;/p&gt;
+\[\dim Z_0=\dim Z=m.\]&lt;p&gt;利用 $\pi:\tilde{N}=G\times_B \mathfrak{n}\to G/B$ restricted to $\tilde{\mathbb{O}}$, gives an isom $\tilde{\mathbb{O}}\simeq G\times_B(\mathbb{O}\cap\mathfrak{n})$. 因此所有的irr comp. 都有维数&lt;/p&gt;
+\[\dim \mathbb{O}\cap \mathfrak{n}=\frac{1}{2}\dim \mathbb{O}\implies \dim \tilde{\mathbb{O}}=\dim(G/B)+\frac{1}{2}\dim \mathbb{O}\]\[\implies \dim \tilde{\mathbb{O}}\times_{\mathbb{O}}\tilde{\mathbb{O}}=2\dim \tilde{\mathbb{O}}-\dim \mathbb{O}=2\dim(G/B)=\dim Z.\]&lt;p&gt;于是, $Z=\cap_\mathbb{O} Z_{0}$ 给出了等维度的 locally closed subsets of the full dim.&lt;/p&gt;
+&lt;p&gt;考虑 $x\in\mathbb{O}$, $G(x)$ 使 $x$ 共轭不变的子群. 那么 $\mathbb{O}\simeq G/G(x)$.&lt;/p&gt;
+&lt;p&gt;令 $G$ 作用在 $\mathcal{B}$ 下, 得到 isom $\tilde{\mathbb{O}}=G\times_{G(x)} \mathcal{B}_x$. 于是&lt;/p&gt;
+\[Z_0=\tilde{\mathbb{O}}\times_{\mathbb{O}}\tilde{\mathbb{O}}=G\times_{G(x)}(\mathcal{B}_x\times \mathcal{B}_x).\]&lt;p&gt;于是, 他的 irr comp 为 $\mathcal{B}_1\times \mathcal{B}_2$, 其中 $\mathcal{B}_i$ 为 $\mathcal{B}_x$ 的 irrcomp.&lt;/p&gt;
+\[\dim \mathbb{O}+\dim \mathcal{B}_1+\dim \mathcal{B}_2=2\dim \mathcal{B}.\]&lt;p&gt;特别地, 取 $\mathcal{B}_1=\mathcal{B}_2$, 有&lt;/p&gt;
+&lt;p&gt;Cor 3.3.24: 所有 irr comp of $\mathcal{B}_x$ 都拥有相同的维数 $\dim \mathcal{B}_x$. 且&lt;/p&gt;
+\[1/2\dim\mathbb{O}+\dim \mathcal{B}_x=\dim \mathcal{B}.\]&lt;p&gt;考虑 $C(x)=G(x)/G^0(x)$, $G^0(x)$ conn. component of $G(x)$. 于是 $G(x)$ 的作用 induces 了 $C(x)$ 在 ${\mathcal{B}_x^{\alpha}}$ irr components 上的作用.&lt;/p&gt;
+&lt;p&gt;Cor 3.3.27: The irr components of $Z_0$ are of the form $Z^{\alpha,\beta}_0=G\times _{G(x)}(\mathcal{B}_x^{\alpha}\times \mathcal{B}_x^{\beta})$ s.t. the components of $Z_0$ are in 1-1 corre with the $C(x)$-orbits on pairs of components of $\mathcal{B}_x$.&lt;/p&gt;
+&lt;p&gt;Cor 3.3.28: The number of nilp. conj. classes in $\mathfrak{g}$ is finite.&lt;/p&gt;
+&lt;p&gt;$Z=\cap Z_0$, with each $Z_0$ locally closed of pure dim. equal to $\dim Z$, the union must be finite.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;?&lt;/p&gt;
+&lt;p&gt;怎么这么几何()&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其三 P144-153</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/</link>
         <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
