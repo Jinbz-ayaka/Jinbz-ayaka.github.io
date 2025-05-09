@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>CG on 代数tv</title>
+        <link>https://Jinbz-ayaka.github.io/categories/cg/</link>
+        <description>Recent content in CG on 代数tv</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Jinbz</copyright>
+        <lastBuildDate>Fri, 09 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其五 P161-168</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%94-p161-168/</link>
+        <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%94-p161-168/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%94-p161-168/who.jpg" alt="Featured image of post CG饲养日记-其五 P161-168" /&gt;&lt;p&gt;这一章前前后后, 牵扯的有点多()&lt;/p&gt;
+&lt;p&gt;不要在这上面纠结掉太多时间, 能动一动已是仁慈()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;3.4 讲的是关于 Weyl gp. 的一个主题. 想象一下包含 $x$ 的所有 Borel subalg $\mathcal{B}&lt;em&gt;x=\mu^{-1}(x)$, 我们希望研究 $\mathbb{W}$ 在 $H&lt;/em&gt;{{*}}(\mathcal{B}_x)$ 上的作用.&lt;/p&gt;
+&lt;p&gt;$x$ 是 sr 的 case 当然是容易的, 他只是有限元素的置换而已. 那我们对于 singular 一点的元素呢?&lt;/p&gt;
+&lt;p&gt;对于 $w\in \mathbb{W}$, 考虑 $\operatorname{Graph}(w)\subset \tilde{\mathfrak{g}}^{sr}\times\tilde{\mathfrak{g}}^{sr}$ 为那些 $(n,\mathfrak{b},wn,w\mathfrak{b})$. 有, $\operatorname{Graph}(w)\subset \tilde{\mathfrak{g}}^{sr}\times_{\mathfrak{g}^{sr}}\tilde{\mathfrak{g}}^{sr}$.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $\Gamma_w$ 是 $\operatorname{Graph}(w)$ 在 $\tilde{\mathfrak{g}}\times_{\mathfrak{g}}\tilde{\mathfrak{g}}$ 中的 closure.&lt;/p&gt;
+&lt;p&gt;我们有一个神奇的 convolution, 他是我们要考虑的这个 Borel-Moore Homology 里面的. 这个细节也许暂时不太重要(?) 总之由于 $\Gamma_w\circ \mathcal{B}_x=\mathcal{B}_x$, 我们得到了一个 convolution 诱导的 operator&lt;/p&gt;
+\[w_{{*}}:H_{{{*}}}(\mathcal{B}_x)\to H_{{{*}}}(\mathcal{B}_x).\]&lt;p&gt;CG上说这么给出 $w_{{&lt;em&gt;}}$ 的定义有一点坏处, 就是不好去验证 $y_{{&lt;/em&gt;}}\circ w_{{&lt;em&gt;}}=(yw)_{{&lt;/em&gt;}}$.&lt;/p&gt;
+&lt;p&gt;他在这里给出了另一个 approach. 具体来说就是取 $Z=\tilde{\mathcal{N}}\times_{\mathcal{N}}\tilde{\mathcal{N}}$ Steinberg var. 根据 Cor.3.3.5,&lt;/p&gt;
+\[Z=\sqcup_{w\in\mathbb{W}} T^{{*}}_{Y_w}(\mathcal{B}\times \mathcal{B}).\]&lt;p&gt;于是 $Z$ 的 irr components 都拥有 $\dim m=\dim_{\mathbb{R}}\tilde{\mathcal{N}}$. 记 $H(Z)=H_m(Z,\mathbb{Q})$, 他是一个 $# W$-dim $\mathbb{Q}$-v.s, 于是也是一个 subalg of $H_{{*}}(Z,\mathbb{Q})$.&lt;/p&gt;
+&lt;p&gt;现在, 取 $\mathbb{Q}[\mathbb{W}]$ 为 $\mathbb{W}$ 对应的群代数, 我们有&lt;/p&gt;
+&lt;p&gt;Theorem 3.4.1: There is a canonical alg. isom.&lt;/p&gt;
+\[H(Z)\simeq \mathbb{Q}[W].\]&lt;p&gt;距离真的做出来这个thm, 我们还有一段路要走() 这个定理其实是 Steinberg theory 的一部分, 然后也许这个通过 Borel-Moore 的具体讨论会比较繁琐. 而且, 粮食说在后面会给出一个 sheaf 层面的证明. 因此在这里我们先把他 treat as blackbox 一下().&lt;/p&gt;
+&lt;p&gt;大致描绘一下 Borel-Moore homology 的 picture:&lt;/p&gt;
+&lt;p&gt;我们现在只考虑 &amp;ldquo;reasonable&amp;rdquo; 的空间, 也就是说, 局部紧且拥有有限 CW-复形的homotopy type. Furthermore, 要求他可以嵌入某个可数多 infinity 的 $C^\infty$ 的 manifold $M$ 里, 并要求存在开的子集 $U\supset X$ 使得 $X$ 是 $U$ 的 retract. Similarly, 对于 $M$ 的 closed &amp;ldquo;subset&amp;rdquo; $X$ 我们也要求他是某个 $U$
+的 retract. 在这个条件下我们可以找到更小的闭的 $V\subset U$ 使得 $X$ 是 $V$ 的 proper homotopy retract. 注意这里的 proper 指紧集的原像是紧的.&lt;/p&gt;
+&lt;p&gt;于是, 一个集合 $X$ 的 Borel-Moore homology 可以定义为 $\hat{X} =X\cap{\infty}$ 一点紧化,&lt;/p&gt;
+\[H^{BM}_{{*}}(X)=H_{{*}}(\hat{X},\infty).\]&lt;p&gt;注意 (通过拓扑的办法可以得到) 他有以下三个等价形式:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对 $\bar{X}$ 是 $X$ 任意一个紧化, $(\bar{X},\bar{X}\backslash X)$ CW-pair,&lt;/li&gt;
+&lt;/ol&gt;
+\[H^{BM}_{{*}}(X)=H_{{*}}(\bar{X},\bar{X}\backslash X)\]&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;$C_{{*}}^{BM}(X)$ 是 chain cpx of infinite singular chains $\sum_{i=0}^\infty a_i\sigma_i$ 且对于任意 compact set, 只有 finite $a_i$ s.t. $D\cap supp\sigma_i\neq \emptyset$. 于是&lt;/li&gt;
+&lt;/ol&gt;
+\[H^{BM}_{{*}}(X)=H_{{*}}(C_{{*}}^{BM}(X),\partial).\]&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;取 $M$ smooth, ori, $\dim M=m$, $X$ 是一个 closed subset of $M$ with 存在 $U\subset M$ closed, $X$ 是 $U$ 的一个proper deform. retract. 那么 $H^{BM}_i(X)=H^{m-i}(M,M\backslash X)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意, 如果我们取 $X=M$ smooth, not necessarily compact var., 有&lt;/p&gt;
+\[H_i^{BM}(M)\simeq H^{m-i}(M).\]&lt;p&gt;然后, 考虑 $D_*$ 是 supported on $X$ 上的 distribution 构成的 complex, 则&lt;/p&gt;
+\[H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).\]&lt;p&gt;然后是push forward, 注意 $f:X\to Y$ proper 诱导了连续的 $\bar{f}:\bar{X}\to \bar{Y}$, 于是诱导了 push forward&lt;/p&gt;
+\[f_{{*}}:H_{{*}}(X)\to H_{{*}}(Y).\]&lt;p&gt;而对于 $F$ 是 $X$ 的 closed subset, set $U=X\backslash F$, 我们可以拉出长正合列&lt;/p&gt;
+\[\cdots\to H_p(F)\to H_p(X)\to H_p(U)\to H_{p-1}(F)\to \cdots.\]&lt;p&gt;Borel-Moore homology 的关键在于 fundamental class 的存在性. 对于 $X$ smooth ori. of $\dim m$, 我们一定有一个 well-defined 的&lt;/p&gt;
+\[[X]\in H_{m}(X),\]&lt;p&gt;不难看出这对, 比方说 $\mathbb{R}^n$ 的一般同调是不成立的. 然后, 由于对一般的 smooth complex mfd,&lt;/p&gt;
+&lt;p&gt;$\dim(X\backslash X^{reg})\leq m$, 有&lt;/p&gt;
+\[H_k(X\backslash X^{reg})=0,\forall k&gt;m-2.\]&lt;p&gt;而, 我们有&lt;/p&gt;
+&lt;p&gt;Proposition 2.6.14: $X$ complex var. of cpx dim $n$, $X_1,\cdots, X_n$ $n$-dim&amp;rsquo;l irr components, then the fundamental classes $[X_1],\cdots,[X_n]$ form a basis for the vector space $H_{top}(X)=H_{2n}(X)$.&lt;/p&gt;
+&lt;p&gt;还有啥事呢? 通过 3. 中 庞加莱对偶那个定义, 我们可以给出一个 intersection pairing 的结构.&lt;/p&gt;
+\[\cap: H_i(Z)\times H_i(\bar{Z})\to H_{i+j-m}(Z\cap \bar{Z}).\]&lt;p&gt;对于 $Z,\bar{Z}$ 作为 $M$ 的子集.&lt;/p&gt;
+&lt;p&gt;以及, 可以得到这样的 intersection pairing&lt;/p&gt;
+\[\cap: H_{i}^{ord}(Z)\times H_j(\bar{Z})\to H_{i+j-m}^{ord}(Z\cap \bar{Z}).\]&lt;p&gt;我们有&lt;/p&gt;
+&lt;p&gt;Proposition 2.6.18: (Poincare duality) 考虑 $M$ ori. connected smooth var. Then for any $j$, the map&lt;/p&gt;
+\[\cap: H_{m-j}^{ord}(M)\times H_j(M)\to H_{0}^{ord}(M)\simeq \mathbb{C}.\]&lt;p&gt;is nondegenerate.&lt;/p&gt;
+&lt;p&gt;先说这么多() 后面要用了再写.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;开 3.5!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;您好, 请问&lt;/p&gt;
+&lt;p&gt;$H_{{&lt;em&gt;}}(D_&lt;/em&gt;(X),d)\simeq H^{BM}_{{{*}}}(X).$&lt;/p&gt;
+&lt;pre style=&#34;white-space: pre-wrap; word-wrap: break-word;&#34;&gt;
+$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$ 
+&lt;/pre&gt;
+&lt;p&gt;为什么过不了他自带的 Katex 的编译, 但是&lt;/p&gt;
+$$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$$&lt;pre style=&#34;white-space: pre-wrap; word-wrap: break-word;&#34;&gt;
+$$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$$
+&lt;/pre&gt;
+&lt;p&gt;却可以?&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>CG饲养日记-其四 P153-161</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/</link>
+        <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/qaq1.jpg" alt="Featured image of post CG饲养日记-其四 P153-161" /&gt;&lt;p&gt;唉, Jordan 标准型.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;定义 Steinberg var.&lt;/p&gt;
+\[Z=\tilde{\mathcal{N}}\times_{\mathcal{N}}\tilde{\mathcal{N}}=\{(x,\mathfrak{b}),(x&#39;,\mathfrak{b}&#39;)|x=x&#39;\}.\]&lt;p&gt;我们有&lt;/p&gt;
+\[\tilde{\mathcal{N}}\times\tilde{\mathcal{N}}\simeq T^*\mathcal{B}\times T^*\mathcal{B}\simeq T^*(\mathcal{B}\times \mathcal{B}).\]&lt;p&gt;在这里, 我们在最后一项里, 希望把 $n$ 打到 $-n$. 这样就有这个Prop:&lt;/p&gt;
+&lt;p&gt;Proposition 3.3.4: $Z$ is the union of the conormal bundles to all $G$-orbits in $\mathcal{B}\times \mathcal{B}$.&lt;/p&gt;
+&lt;p&gt;然后, 在 $\mathcal{B}\times \mathcal{B}$ 里, 记 $w\in\mathbb{W}$ 对应的轨道为 $Y_w$,&lt;/p&gt;
+&lt;p&gt;Cor 3.3.5: (i) $Z=\sqcup_{w\in\mathbb{W}} T^*_{Y_w}(\mathcal{B}\times \mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;(ii) Irr. components of $Z$ are parametrized by elements of $W$. Every irr components is the closure of $T^*_{Y_w}(\mathcal{B}\times \mathcal{B})$ for a uniquely determined $w\in \mathbb{W}$.&lt;/p&gt;
+&lt;p&gt;现在取 $\mathfrak{b}\subset \mathfrak{g},\mathfrak{n}=[\mathfrak{b},\mathfrak{b}]$, 下面这个定理是本章的核心:&lt;/p&gt;
+&lt;p&gt;Theorem 3.3.6: $\mathbb{O}$ coadjoint orbit in $\mathfrak{g}^*$. Let $x\in\mathbb{O}$ be s.t. $x|_{\mathfrak{n}}=0$, then $\mathbb{O}\cap (x+\mathfrak{b}^\perp)$ is a (possibly singular) lagrangian subvariety in $\mathbb{O}$ w.r.t. the natural sympletic structure on coadjoint orbits.&lt;/p&gt;
+&lt;p&gt;如果通过 Killing form 给定 $\mathfrak{g}\simeq \mathfrak{g}^*$, 那么这个也可以看做&lt;/p&gt;
+&lt;p&gt;Theorem 3.3.7: $\mathbb{O}\subset \mathfrak{g}$ conj. class, $x\in \mathbb{O}\cap \mathfrak{b}$. Then $\mathbb{O}\cap(x+\mathfrak{n})$ is a lagrangian subvar. in $\mathbb{O}$.&lt;/p&gt;
+&lt;p&gt;他只对 $x$ nilp. 的 case 进行说明. 其他的 case 是 &amp;ldquo;less difficult and less interesting&amp;rdquo; 的&lt;/p&gt;
+&lt;p&gt;Lemma 3.3.8: $\dim( \mathbb{O}\cap\mathfrak{n})\leq \frac{1}{2}\dim\mathbb{O}$.&lt;/p&gt;
+&lt;p&gt;取 $n=\dim\mathfrak{n}=\dim \mathcal{B}$. Then, $\dim T^*\mathcal{B}=2n=\dim Z$, $Z_0={(x,\mathfrak{b},\mathfrak{b}&amp;rsquo;)\in Z|x\in O}$.&lt;/p&gt;
+&lt;p&gt;$Z_0\to \mathbb{O}$ 给出 fiber equals to $\mathcal{B}_x\times \mathcal{B}_x$:&lt;/p&gt;
+\[\dim \mathbb{O}+2\dim \mathcal{B}_x\leq \dim Z_0.\]&lt;p&gt;由于 $\dim Z_0\leq \dim Z=2n$.&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim \mathcal{B}_x\leq n.\]&lt;p&gt;考虑 $S={g|gxg^{-1}\in \mathfrak{b}}$, 通过(不难但要想一下)的代数讨论有 $B\mathfrak{b}s S\simeq \mathcal{B}_x$. 于是,&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim S-\dim B\leq n.\]&lt;p&gt;而 $y\in \mathbb{O}\cap \mathfrak{n}\iff y=gxg^{-1}, g\in S$. 有 $\dim(\mathbb{O}\cap \mathfrak{n})=\dim S-\dim Z_G(x)$.&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim(\mathbb{O}\cap \mathfrak{n})+\dim Z_G(x)\leq n+\dim B=\dim G.\]&lt;p&gt;于是,&lt;/p&gt;
+\[\frac{1}{2}\dim \mathbb{O}+\dim(\mathbb{O}\cap \mathfrak{n})\leq \dim G-\dim Z_G(x)=\dim \mathbb{O},\]\[\dim(\mathbb{O}\cap \mathfrak{n})\leq\frac{1}{2}\dim \mathbb{O}.\]&lt;p&gt;原 Thm 的证明要用到这样的定理:&lt;/p&gt;
+&lt;p&gt;Theorem 1.5.7: $A$ solvable alg. gp with a Hamiltonian action acts on a symplectic alg. var. $M$. Let $\mathfrak{a}=Lie A$, $\mu: M\to \mathfrak{a}$ moment map. Then for any coadjoint orbit $\mathbb{O}\subset \mathfrak{a}$, $\mu^{-1}\mathbb{O}$ either empty or coisotropic subvar.&lt;/p&gt;
+&lt;p&gt;这个从某种意义上来说, 就是隐函数定理. 我们现在考虑 $B$ 在其上的作用, 得到 moment map, 从而得到交换图&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiYntPfSJdLFsyLDAsIlxcbWF0aGZyYWt7Z31eKiJdLFsxLDEsIlxcbWF0aGZyYWt7Yn1eKiJdLFsxLDJdLFswLDIsIlxcbXVfQiIsMl0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiYntPfSJdLFsyLDAsIlxcbWF0aGZyYWt7Z31eKiJdLFsxLDEsIlxcbWF0aGZyYWt7Yn1eKiJdLFsxLDJdLFswLDIsIlxcbXVfQiIsMl0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;然后根据定理, $\mu_B^{-1}(0)=\mathbb{O}\cap \mathfrak{n}$ coisotropic. 再根据前面lemma的维数公式, 得到 $\mathbb{O}\cap\mathfrak{n}$ lagrangian.&lt;/p&gt;
+&lt;p&gt;考虑 $SL_n$, $\mathbb{O}$ 为所有 rank 1 的 nilpotent 矩阵. 如果你博资考复习比较充分, 可以发现他们都&amp;quot;实相似&amp;quot;. 当然我们只需要知道他们复相似. 不难说明 $\dim\mathbb{O}=2n-2$.&lt;/p&gt;
+&lt;p&gt;然后取 $\mathfrak{n}$ 是上三角矩阵, 那么不难发现, $\mathfrak{n}\cap\mathbb{O}$ 是那些 $k\times (n-k-1)$ 的右上矩阵全体的有限并, 拥有 $\dim=n-1$.&lt;/p&gt;
+&lt;p&gt;现在考虑 $x\in \mathbb{O}$ s.r. 根据 3.1.43, 有 $x+\mathfrak{n}=B\cdot x$. 于是, 我们有&lt;/p&gt;
+&lt;p&gt;Lemma 3.3.16: For s.r. $x\in\mathfrak{b}$, $x+\mathfrak{n}$ is a $B$-stable lagrangian subvar. of $\mathbb{O}$.&lt;/p&gt;
+&lt;p&gt;现在考虑 $\tilde{\mathbb{O}}=\mu^{-1}\mathbb{O}$ 包含了某个 sr element. 我们有 $\mathbb{O}\simeq G/T$. 但是根据 fibration&lt;/p&gt;
+\[T\to G\to G/T,\]&lt;p&gt;我们可以得到 $\pi_1(G/T)=0$, for $\pi_0(T)=\pi_1(G)=0$.&lt;/p&gt;
+&lt;p&gt;于是 $\mu:\tilde{\mathbb{O}}\to \mathbb{O}$ 是一个trivial covering of $# W$ components. 考虑 $\pi:\tilde{\mathfrak{g}}\to \mathcal{B}$, 我们有, 一个 $\tilde{\mathbb{O}}$ 的连通分支同构于 $G\times_B(x+\mathfrak{n})$. $\pi$ 是一个 fibration with the form&lt;/p&gt;
+\[\pi:\tilde{\mathbb{O}}\simeq G\times_B (x+\mathfrak{n})\to G/B\simeq\mathcal{B}.\]&lt;p&gt;然后, 通过 $\mu:\tilde{\mathbb{O}}\to \mathbb{O}$, 可以将这个 fibration 转移到 $\mathbb{O}$ 上去. 具体的转移方法跳了() 只需知道不同的连通分支对应不同的 fibration.&lt;/p&gt;
+&lt;p&gt;我们现在需要一些 3.3.6 的 cor. 对于 $\mathbb{O}\subset \mathcal{N}$,&lt;/p&gt;
+&lt;p&gt;Cor 3.3.20: For any coadjoint orbit $\mathbb{O}$, each irr. component of $Z_0$ has the same $\dim Z_0$, and&lt;/p&gt;
+\[\dim Z_0=\dim Z=m.\]&lt;p&gt;利用 $\pi:\tilde{N}=G\times_B \mathfrak{n}\to G/B$ restricted to $\tilde{\mathbb{O}}$, gives an isom $\tilde{\mathbb{O}}\simeq G\times_B(\mathbb{O}\cap\mathfrak{n})$. 因此所有的irr comp. 都有维数&lt;/p&gt;
+\[\dim \mathbb{O}\cap \mathfrak{n}=\frac{1}{2}\dim \mathbb{O}\implies \dim \tilde{\mathbb{O}}=\dim(G/B)+\frac{1}{2}\dim \mathbb{O}\]\[\implies \dim \tilde{\mathbb{O}}\times_{\mathbb{O}}\tilde{\mathbb{O}}=2\dim \tilde{\mathbb{O}}-\dim \mathbb{O}=2\dim(G/B)=\dim Z.\]&lt;p&gt;于是, $Z=\cap_\mathbb{O} Z_{0}$ 给出了等维度的 locally closed subsets of the full dim.&lt;/p&gt;
+&lt;p&gt;考虑 $x\in\mathbb{O}$, $G(x)$ 使 $x$ 共轭不变的子群. 那么 $\mathbb{O}\simeq G/G(x)$.&lt;/p&gt;
+&lt;p&gt;令 $G$ 作用在 $\mathcal{B}$ 下, 得到 isom $\tilde{\mathbb{O}}=G\times_{G(x)} \mathcal{B}_x$. 于是&lt;/p&gt;
+\[Z_0=\tilde{\mathbb{O}}\times_{\mathbb{O}}\tilde{\mathbb{O}}=G\times_{G(x)}(\mathcal{B}_x\times \mathcal{B}_x).\]&lt;p&gt;于是, 他的 irr comp 为 $\mathcal{B}_1\times \mathcal{B}_2$, 其中 $\mathcal{B}_i$ 为 $\mathcal{B}_x$ 的 irrcomp.&lt;/p&gt;
+\[\dim \mathbb{O}+\dim \mathcal{B}_1+\dim \mathcal{B}_2=2\dim \mathcal{B}.\]&lt;p&gt;特别地, 取 $\mathcal{B}_1=\mathcal{B}_2$, 有&lt;/p&gt;
+&lt;p&gt;Cor 3.3.24: 所有 irr comp of $\mathcal{B}_x$ 都拥有相同的维数 $\dim \mathcal{B}_x$. 且&lt;/p&gt;
+\[1/2\dim\mathbb{O}+\dim \mathcal{B}_x=\dim \mathcal{B}.\]&lt;p&gt;考虑 $C(x)=G(x)/G^0(x)$, $G^0(x)$ conn. component of $G(x)$. 于是 $G(x)$ 的作用 induces 了 $C(x)$ 在 ${\mathcal{B}_x^{\alpha}}$ irr components 上的作用.&lt;/p&gt;
+&lt;p&gt;Cor 3.3.27: The irr components of $Z_0$ are of the form $Z^{\alpha,\beta}_0=G\times _{G(x)}(\mathcal{B}_x^{\alpha}\times \mathcal{B}_x^{\beta})$ s.t. the components of $Z_0$ are in 1-1 corre with the $C(x)$-orbits on pairs of components of $\mathcal{B}_x$.&lt;/p&gt;
+&lt;p&gt;Cor 3.3.28: The number of nilp. conj. classes in $\mathfrak{g}$ is finite.&lt;/p&gt;
+&lt;p&gt;$Z=\cap Z_0$, with each $Z_0$ locally closed of pure dim. equal to $\dim Z$, the union must be finite.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;?&lt;/p&gt;
+&lt;p&gt;怎么这么几何()&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>CG饲养日记-其二 P135-144</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/</link>
+        <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C-p135-144/slp.jpg" alt="Featured image of post CG饲养日记-其二 P135-144" /&gt;&lt;p&gt;这部分应该是21号整理完的, 但整理完就去玩()()()()了&lt;/p&gt;
+&lt;p&gt;桎化行动ddl, 没办法&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接下来是抽象Weyl gp., 感觉这块没什么好说的啊()&lt;/p&gt;
+&lt;p&gt;要把这个 abstract Weyl gp. 实现成某一个 Coxeter group. 参考 Bour 就行了.&lt;/p&gt;
+&lt;p&gt;我们要研究的事情就是, 为什么这个我们通常了解的 Weyl gp (也就是这里的abstract w.g.) 和那个 $N(T)/T$ 定义出来的 w.g. 一样.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.26: 对任意 $\mathfrak{b},\mathfrak{b}&amp;rsquo;\in\cal{B}$, 我们有典范同构&lt;/p&gt;
+\[\mathfrak{b}/[\mathfrak{b},\mathfrak{b}]\simeq \mathfrak{b}&#39;/[\mathfrak{b}&#39;,\mathfrak{b}&#39;].\]&lt;p&gt;这个实际上就是通过共轭给出() 于是我们可以 fix 这个抽象 Cartan subalg. 然后, 试着给出他到原先定义的 $\mathfrak{h}$ 的同构.&lt;/p&gt;
+&lt;p&gt;这个实际上就是&lt;/p&gt;
+\[\mathfrak{h}\hookrightarrow\mathfrak{b}\twoheadrightarrow \mathfrak{b}/[\mathfrak{b},\mathfrak{b}],\]&lt;p&gt;我们要做的一些工作就是check这给出了根系和 $S={\text{simple roots}}$ 上的同构, 不过这不难()&lt;/p&gt;
+&lt;p&gt;关键的问题是, 对于不同的 $\mathfrak{b},\mathfrak{b}&amp;rsquo;$, 这个映射会怎么表现呢? 考察 $\mathfrak{h}\subset \mathfrak{b}\cap\mathfrak{b}&amp;rsquo;$, 我们存在 $w\in W$, $\mathfrak{b}&amp;rsquo;=w(\mathfrak{b})$. 关键的结论是, 记 $\mathbb{W}$ 为 $\mathfrak{b}/[\mathfrak{b},\mathfrak{b}]$, $w(\mathfrak{b},\mathfrak{b}&amp;rsquo;)$ 定义为 $w$ 在 $W\simeq\mathbb{W}$ 下的像, 那么, 根据共轭的办法, 对不同的 $\mathfrak{h}$ 的选取, 咱们给出了同样的 $w(\mathfrak{b},\mathfrak{b}&amp;rsquo;)$.&lt;/p&gt;
+&lt;p&gt;Defn 3.1.28: 两个 $\mathfrak{b}_1,\mathfrak{b}_2$ 被称作在 $w$ 的相对位置, 如果 $w(\mathfrak{b}_1,\mathfrak{b}_2)=w$.&lt;/p&gt;
+&lt;p&gt;然后, 我们有如下定理:&lt;/p&gt;
+&lt;p&gt;Proposition 3.1.29: 任意两个 pairs $(\mathfrak{b}_i,\mathfrak{b}_i&amp;rsquo;)$, $i=1,2$, 他们在相同的相对位置, 当且仅当他们在相同的 $G$-对角轨道上. 也就是说, 这个相对位置给出了 bij.&lt;/p&gt;
+\[\{G\text{-diagonal orbits on }\cal{B}\times\cal{B}\}\simeq \mathbb{W}.\]&lt;p&gt;3.1.31 universal resolution&lt;/p&gt;
+&lt;p&gt;我们想要复刻 3.1.14 的活()&lt;/p&gt;
+&lt;p&gt;考虑 $\tilde{\mathfrak{g}}={(x,\mathfrak{b})\in\mathfrak{g}\times\cal{B}|x\in\mathfrak{b}}$, 我们有遮样的diagram&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMSwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzAsMSwiXFxtYXRoZnJha3tnfSJdLFsyLDEsIlxcY2Fse0J9Il0sWzAsMiwiXFxwaSJdLFswLDEsIlxcbXUiLDJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMSwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzAsMSwiXFxtYXRoZnJha3tnfSJdLFsyLDEsIlxcY2Fse0J9Il0sWzAsMiwiXFxwaSJdLFswLDEsIlxcbXUiLDJdXQ==&amp;embed&#34; width=&#34;432&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;考虑 $G\times \mathfrak{b}$, $B$ 在其上作用通过 $(g,x)\mapsto (b\cdot x\cdot b^{-1})$ 给出. 于是轨道空间 $G\times_{B}\cal{B}\to G/B$ 给出了 $G$-等价的 vector bundle with fiber $\mathfrak{b}$. 于是&lt;/p&gt;
+&lt;p&gt;Cor 3.1.33: $\pi:\tilde{\mathfrak{g}}\to \cal{B}$ 给出了 $\tilde{\mathfrak{g}}$ 到 $\cal{B}=G/B$ 上的 vector bundle, $G\times_B\mathfrak{b}\to\tilde{\mathfrak{g}}$, $(g,x)\mapsto (gxg^{-1},g^{-1})$ 给出了 $G$-等价的 isom.&lt;/p&gt;
+&lt;p&gt;Proposition 3.1.34: $\mu$ 是 proper 的.&lt;/p&gt;
+\[\tilde{\mathfrak{g}}\hookrightarrow \mathfrak{g}\times \cal{B}\to \mathfrak{g}.\]&lt;p&gt;大家代数几何功底都很好啊.&lt;/p&gt;
+&lt;p&gt;定义 $\cal{B}_x$ 为所有包含了 $x$ 的 Borel subalg. 3.1.35 说的是一些特殊状况, 不难()&lt;/p&gt;
+&lt;p&gt;然后是 $\nu$, 这里考虑 $\mathfrak{H}$ 为那个 abstract Cartan subalg, 考虑&lt;/p&gt;
+\[(x,\mathfrak{b})\mapsto x\pmod{[\mathfrak{b},\mathfrak{b}]}\in \mathfrak{b}/[\mathfrak{b},\mathfrak{b}]=\mathfrak{H}.\]&lt;p&gt;Proposition 3.1.36: For each $x\in\mathfrak{g}^{sr}$, there is a canonical free $\mathbb{W}$-action on $\mu^{-1}(x)$ making $\tilde{\mathfrak{g}}^{sr}\to \mathfrak{g}^{sr}$ a principal $\mathbb{W}$-bundle.&lt;/p&gt;
+&lt;p&gt;这实际上就是 3.1.19 的 generalization.&lt;/p&gt;
+&lt;p&gt;3.1.37 Chevelley Restriction Thm.&lt;/p&gt;
+&lt;p&gt;$\mathbb{C}[\mathfrak{g}]$ 是 polynom. functions on $\mathfrak{g}$, $\mathbb{C}[\mathfrak{g}]^{G}$ 是 $G$-inv polys 构成的 subalg. 我们有 restriction map:&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]\to \mathbb{C}[\mathfrak{h}].\]&lt;p&gt;于是, 也不难check, 他诱导了&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]^G\to \mathbb{C}[\mathfrak{h}]^W.\]&lt;p&gt;Theorem 3.1.38: For any Cartan subalg $\mathfrak{h}\subset \mathfrak{g}$, the restriction map gives a canonical graded alg. isom.&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]^G\simeq \mathbb{C}[\mathfrak{h}]^W.\]&lt;p&gt;首先是 inj 部分, 注意 $x\in \mathfrak{g}^{sr}$ conj. to $\mathfrak{h}$ 中的 element, 然后他们在 $\mathfrak{g}$ 里 dense 就行了.&lt;/p&gt;
+&lt;p&gt;surj 部分有点复杂. 对于 $P\in \mathbb{C}[\mathfrak{h}]^W$, 首先, 通过&lt;/p&gt;
+\[\mathfrak{h}\hookrightarrow \mathfrak{b}\to\mathfrak{b}/[\mathfrak{b},\mathfrak{b}]=\mathfrak{H},\]&lt;p&gt;给出 $\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}$ 上的映射, 然后通过&lt;/p&gt;
+\[\nu:\tilde{\mathfrak{g}}\to \mathfrak{H},\]&lt;p&gt;给出 $\tilde{P}$ 在 $\tilde{\mathfrak{g}}$ 上的映射, 并限制在 Zar. open set $\tilde{\mathfrak{g}}^{sr}$ 上. 再次, 利用 Galois covering 给出 $\mathfrak{g}^{sr}$ 上的 rational function, 并利用紧性证明他是poly. 最后就能比较显然地验证他限制确实得到原先的 $P$ 了.&lt;/p&gt;
+&lt;p&gt;而实际上, 考虑&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{g}]^G\to \mathbb{C}[\mathfrak{h}]^W\simeq \mathbb{C}[\mathfrak{H}]^{\mathbb{W}},\]&lt;p&gt;这给出了一个典范的同构, 并且是和 $\mathfrak{h}$ 的选取无关的, 于是我们给出了嵌入&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}\to\mathbb{C}[\mathfrak{g}]^G\hookrightarrow\mathbb{C}[\mathfrak{g}].\]&lt;p&gt;可以验证, $\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}$ 中的多项式分离 $\mathfrak{H}$ 中的 $\mathbb{W}$-轨道. 所以&lt;/p&gt;
+\[\operatorname{Specm}(\mathbb{C}[\mathfrak{H}]^{\mathbb{W}})=\mathfrak{H}/\mathbb{W}\]&lt;p&gt;那么, 这个映射实际上就诱导了映射&lt;/p&gt;
+\[\rho:\mathfrak{g}\to \mathfrak{H}/\mathbb{W}.\]&lt;p&gt;他被称作 Grothendieck&amp;rsquo;s simultaneous resolution. 我们于是得到了这样的图&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzIsMCwiXFxtYXRoZnJha3tnfSJdLFswLDIsIlxcbWF0aGZyYWt7SH0iXSxbMiwyLCJcXG1hdGhmcmFre0h9L1xcbWF0aGJie1d9Il0sWzAsMV0sWzAsMl0sWzEsM10sWzIsM11d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcbWF0aGZyYWt7Z319Il0sWzIsMCwiXFxtYXRoZnJha3tnfSJdLFswLDIsIlxcbWF0aGZyYWt7SH0iXSxbMiwyLCJcXG1hdGhmcmFre0h9L1xcbWF0aGJie1d9Il0sWzAsMV0sWzAsMl0sWzEsM10sWzIsM11d&amp;embed&#34; width=&#34;438&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Lemma 3.1.42: (i) 如上图表交换&lt;/p&gt;
+&lt;p&gt;(ii) $\mu^{-1}(\mathfrak{g}^{sr})=\tilde{\mathfrak{g}}^{sr}=\nu^{-1}(\mathfrak{H}^{reg})$.&lt;/p&gt;
+&lt;p&gt;证明这个图标交换, 只需考虑 rings of functions 交换就行. 然后就有这个自然的推论:&lt;/p&gt;
+&lt;p&gt;Cor 3.1.43: 对于 $\mathfrak{b}$ Borel subalg. nil. radical $\mathfrak{n}$, 对任意 $G$-不变多项式 $P$, $x\in\mathfrak{b}$, $P|_{x+\mathfrak{n}}$ 为常数.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.44 大概是为提供这个的另一种证法给出的, $x\in \mathfrak{b}$ s.r. element, 则 $x+\mathfrak{n}=B\cdot x$ 是一个 $B$-orbit.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这样 3.1 就结了, 开3.2!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>CG饲养日记-其一 P127-135</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/</link>
+        <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%80-p127-135/na1.jpg" alt="Featured image of post CG饲养日记-其一 P127-135" /&gt;&lt;p&gt;先借一下代数几何的tag()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;新开这个系列, 主要是为了督促自己看CG.&lt;/p&gt;
+&lt;p&gt;CG总共486页, 算上前面几章不用看的大概还剩400页, 以半个小时一页的速度的话, 每天花4h, 只用50天就能读完🤔&lt;/p&gt;
+&lt;p&gt;话虽如此, 在3/18和z老师聊完天之后, 这一个月大概看了一小章🙂&lt;/p&gt;
+&lt;p&gt;太忙了qwq&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ss李代数和flag-var&#34;&gt;s.s.李代数和flag var.
+&lt;/h2&gt;&lt;h3 id=&#34;代数群与sr-elements&#34;&gt;代数群与s.r. elements
+&lt;/h3&gt;&lt;p&gt;从3.1开始吧, 这一张之前云过一部分, 看起来问题不大()&lt;/p&gt;
+&lt;p&gt;$G$ 有限维半单连通复李群, $\mathfrak{g}$ 李代数. 考虑 $B$ 是他的 Borel 子群, 也就是说, 极大可解子群. $T$ 其上的极大 torus, $U$ unipotent radical 使得 $TU=B$. 还有 $\mathfrak{b},\mathfrak{n}$ 为 $T,U$ 的李代数.&lt;/p&gt;
+&lt;p&gt;先是俩代数群的定理.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.1: Any orbit of a unip. gp. acting on an affine var. is closed in the Zar. top.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.2: Any Borel subgp equals to its normalizer i.e. $N_G(B)=B$.&lt;/p&gt;
+&lt;p&gt;以及&lt;/p&gt;
+&lt;p&gt;Fact &amp;amp; Defn 3.1.3: any $x\in \mathfrak{g}, \dim Z_{\mathfrak{g}}(x)\geq \operatorname{rank}\mathfrak{g}$. $x$ is regular if $\dim Z_{\mathfrak{g}}(x)=\operatorname{rank} \mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;$\mathfrak{g}$ 里面的 s.s. 和 nilp. elements 以及 Jordan Decomp. 就略了, 反正是博资考内容, 太熟知了()&lt;/p&gt;
+&lt;p&gt;记 $\mathfrak{g}^{sr}$ 为里面的 s.s., regular elements, 他只是一个set.&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.4: fix $\mathfrak{h}\subset\mathfrak{b}$,&lt;/p&gt;
+&lt;p&gt;(a) any elem. in $\mathfrak{h}$ is s.s. and any s.s. element of $\mathfrak{g}$ is $G$-conj. to an element in $\mathfrak{h}$.&lt;/p&gt;
+&lt;p&gt;(b) The centralizer of a s.s. regular element is a Cartan subalg.&lt;/p&gt;
+&lt;p&gt;(c) If $x\in\mathfrak{b}$ s.s. reg. element then $Z_\mathfrak{g}(x)\subset\mathfrak{b}$.&lt;/p&gt;
+&lt;p&gt;(d) $\mathfrak{g}^{sr}$ is a $G$-stable dense subset of $\mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;以及 (d) 的加强版本&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.5: $\mathfrak{g}$ 上存在 $G$ 不变的多项式 $P$ s.t. $x\in \mathfrak{g}^{sr}\iff P\neq 0$. 也就是说, $\mathfrak{g}\backslash\mathfrak{g}^{sr}$ 是一个在 Zar.Top. 下开的 affine subvar.&lt;/p&gt;
+&lt;p&gt;好吧, 从证明来看, 我们应该假设 $G,\mathfrak{g}$ 是有限维的, 不过反正一般说 s.s. lie alg 都得是有限维的()&lt;/p&gt;
+&lt;p&gt;这个证明大概就是说, 取 Jordan decomp. $x=s+n$, 根据 (b), $s$ reg. 推出 $n=0,x=s$. 然后考虑 $s$ 的特征多项式 $P(t)=\det(tI-\operatorname{ad} s)=\det(tI-\operatorname{ad} x)$. 由于 $ad(s)$ 是 s.s. 的, $s$ reg. 等价于说 $P(t)$ 在 $0$ 处恰有 $\operatorname{rank}\mathfrak{g}$ 阶零点, 也就是说 $P_r(x)\neq 0$.&lt;/p&gt;
+&lt;p&gt;现在考虑 $\cal{B}$ 为 $\mathfrak{g}$ 的所有 Borel sub.alg. 那么&lt;/p&gt;
+\[\cal{B}=\{x\in \operatorname{Gr}(\dim(\mathfrak{b}),\dim(\mathfrak{g}))|x\text{ solvable sub Lie. alg.}\}.\]&lt;p&gt;通过一些&lt;strong&gt;代数的&lt;/strong&gt;讨论你可以知道他是闭的, 所以也是 proj. 的.&lt;/p&gt;
+&lt;p&gt;根据 Lemma 3.1.2 以及所有 Borel subalg. 在 $G$ 作用下可迁的性质, 我们可以给出同构&lt;/p&gt;
+\[G/B\simeq \cal{B}.\]&lt;p&gt;Cor 3.1.6 就是一个很直接的结论, 懒得切英文了()&lt;/p&gt;
+&lt;p&gt;(a). $\mathfrak{b}\in\cal{B}$ 在 $g\in G$ 作用下不变等价于 $g\in B$.&lt;/p&gt;
+&lt;p&gt;(b). $\mathfrak{b}\in\cal{B}$ 在 $x\in\mathfrak{g}$ 向量场作用下不变等价于 $x\in\mathfrak{b}$.&lt;/p&gt;
+&lt;h3 id=&#34;317-bruhat-decomp&#34;&gt;3.1.7 Bruhat decomp.
+&lt;/h3&gt;&lt;p&gt;从名字上看是跟 Weyl gp. 有关的结论.&lt;/p&gt;
+&lt;p&gt;首先根据上面那个映射我们给出了&lt;/p&gt;
+\[B\backslash G/B\simeq \{B-\text{orbits on }\cal{B}\}.\]&lt;p&gt;其次, 我们要给出&lt;/p&gt;
+\[\{B-\text{orbits on }\cal{B}\}\to \{G-\text{orbits on }\cal{B}\times\cal{B}\}.\]\[\mathfrak{b}\mapsto (\mathfrak{b}_0,\mathfrak{b}).\]&lt;p&gt;他这里的符号不好(), 实际上他这里的 $\mathfrak{b}_0$ 是 $B$ 的(Borel)李子代数. 然后同样通过一些&lt;strong&gt;代数的&lt;/strong&gt;讨论你可以知道他是bij.
+最后, 记 $W_T=N_G(T)/T$, 考虑&lt;/p&gt;
+\[W_T\to B\backslash G/B\]\[\bar{w}\mapsto BwB.\]&lt;p&gt;于是我们给出了映射&lt;/p&gt;
+\[W_T\to B\backslash G/B\to \{B-\text{orbits on }\cal{B}\}\to\{G-\text{orbits on }\cal{B}\times\cal{B}\}.\]&lt;p&gt;Theorem 3.1.9: All the maps above are bij.&lt;/p&gt;
+&lt;p&gt;他这里Remark了一下, 说最左边和最右边的map与$T$和$B$的选取无关. 虽然, 怎么可能无关, 集合 ${B-\text{orbits on }\cal{B}}$ 就不会与 $B$ 无关.&lt;/p&gt;
+&lt;p&gt;不过, 对于 $B&amp;rsquo;=gBg^{-1}$ 以及 $T&amp;rsquo;=gT&amp;rsquo;g^{-1}$, 我们确实可以 induce 对应集合自然的映射(), 然后通过一些&lt;strong&gt;代数的&lt;/strong&gt;讨论你可以知道他是交换的.&lt;/p&gt;
+&lt;p&gt;中间的和右边的映射是bij是triv的. 我们只需要证明最左边那个就行. 他选择证明前两项的复合是bij.&lt;/p&gt;
+&lt;p&gt;考虑 $W_T\to {B-\text{orbits on }\cal{B}}, w\mapsto wB$. 他希望用 Bialynicki-Birula的结果:&lt;/p&gt;
+&lt;p&gt;Lemma 3.1.10: (i) $\mathfrak{t}$ Cartan subalg, $\mathfrak{b}\supset \mathfrak{t}$ Borel subalg. Then any Borel subalg. containing $\mathfrak{t}$ has the form $w\cdot b\cdot w^{-1}$, $w\in N(T)/T$.&lt;/p&gt;
+&lt;p&gt;(ii) The $T$-fixed pts. in $\cal{B}$ are in natural bij. corresp. with $W_T=N(T)/T$.&lt;/p&gt;
+&lt;p&gt;(i) 是简单的, 而且 (i)$\implies$(ii).&lt;/p&gt;
+&lt;p&gt;然后, 我们说明每一个 $B-\text{orbits on }\cal{B}$ 恰包含了一个 $T$-fixed pt.&lt;/p&gt;
+&lt;h3 id=&#34;或许我们要-review-一下-bialynicki-birula-decomp&#34;&gt;或许我们要 &amp;ldquo;review&amp;rdquo; 一下 Bialynicki-Birula Decomp.
+&lt;/h3&gt;&lt;p&gt;对于 $X$ 光滑复proj.(射影?好像是这么翻译)代数簇, 其上包含了一个 $\mathbb{C}^\times$ 作用, 那么&lt;/p&gt;
+&lt;p&gt;Lemma 2.4.1: For all $x\in X$, mapping $z\mapsto z\cdot x$ has a limit of $z\to 0,z\to \infty$. Furthermore, the limit points $\lim_{z\to 0(\infty)}z\cdot x$ are fixed pts. of the $\mathbb{C}^\times$-action.&lt;/p&gt;
+&lt;p&gt;这个实际上就是利用 $\mathbb{C}\mathbb{P}^1=\mathbb{C}\cup 0\cup \infty$ complete 的性质. 以及,&lt;/p&gt;
+&lt;p&gt;Cor 2.4.2: The fixed pts on a proj. var. is always non-empty.&lt;/p&gt;
+&lt;p&gt;对于 $W$ fixed pt set, 假设他是有限的, 对任意 $W$, 我们可以定义 attracting set&lt;/p&gt;
+\[X_w=\{x\in W|\lim_{z\to 0}zx=w\}.\]&lt;p&gt;然后! 请回忆 ODE 中关于不动点方面的内容, 从哲学上, 你可以相信这样的事, 对于 $T_wX$, 可以让 $\mathbb{C}^\times$ 作用在 $T_wX$. 我们有&lt;/p&gt;
+\[T_wX=T^+_wX\oplus T_w^-X, T^+_w=\oplus_{n&gt;0,n\in \mathbb{Z}}T_wX(n),T^+_w=\oplus_{n&lt;0,n\in \mathbb{Z}}T_wX(n).\]\[T_wX(n)=\{x\in T_wX|z\cdot x=z^nx, \forall z\in\mathbb{C}\}.\]&lt;p&gt;有&lt;/p&gt;
+&lt;p&gt;Theorem 2.4.3:(B-B Decomp.)&lt;/p&gt;
+&lt;p&gt;(a) The attracting sets form a decomp. $X=\sqcup X_w$ into smooth locally closed alg. var.&lt;/p&gt;
+&lt;p&gt;(b) There are natural isoms. of alg. vars. $X_w\simeq T_wX_w=T^+_wX$ which commute with the $\mathbb{C}$-action.&lt;/p&gt;
+&lt;p&gt;真是分分又析析啊.&lt;/p&gt;
+&lt;p&gt;现在取一个 $h\in\mathfrak{h}$ s.r., 他给出了一个 $\mathbb{C}^\times\hookrightarrow T$.&lt;/p&gt;
+&lt;p&gt;于是我们可以考虑 $\mathfrak{g}=\oplus\mathfrak{g}_{\alpha}=\mathfrak{n}^+\oplus\mathfrak{h}\oplus\mathfrak{n}^-,\alpha\in\mathbb{Z}$,&lt;/p&gt;
+&lt;p&gt;其中 $\mathfrak{g}_\alpha$ 上的 $\mathbb{C}^\times$ action 为 $z\cdot x=z^nx$. 在此, 我们选取 $B$ 使得 $\operatorname{Lie}B=\mathfrak{h}\oplus \mathfrak{n}^+$.&lt;/p&gt;
+&lt;p&gt;那么, $\mathfrak{b}\in\cal{B}$ 在 $\mathbb{C}^\times$ 作用下不变, 根据 3.1.6, 当且仅当 $h\in \mathfrak{b}$, 再根据 3.1.4, $\mathfrak{h}\subset\mathfrak{b}$. 于是, $\mathbb{C}^\times$-fixed points 的数量等于 $T$-fixed pts 的数量, 根据 3.1.10, 他们是 $w\cdot B/B$.&lt;/p&gt;
+&lt;p&gt;现在, 根据 2.4.3, 有&lt;/p&gt;
+\[\cal{B}\simeq \sqcup_{w\in W}B_{w}.\]&lt;p&gt;而现在我们应该做的是研究 $T_w^+X$. 通过一些讨论我们可以得出 $T^+_w\cal{B}=\mathfrak{n}^+\cdot w$. 于是&lt;/p&gt;
+\[\dim \cal{B}_w=\dim T^+_w\cal{B}=\dim (\mathfrak{n}^+\cdot w)=\dim (U\cdot w).\]&lt;p&gt;而, 对于任意的 $n\in \mathfrak{n}^+$ 以及 $t\in \mathbb{C}^\times\subset T$, $t\to 0$ 时 $t\cdot n\to 0$. 这意味着对任意的 $u\in U$, $tut^{-1}\to 1$. 也就是说, $U\cdot w\subset \cal{B}_w$.&lt;/p&gt;
+&lt;p&gt;然后, 根据上面那个 $\dim$ 的等式, 我们得到 $U\to B_w,u\mapsto U\cdot w$ 的微分是一个满射. 因此 $U\cdot w$ 是 $\cal{B}$ 内的一个开集, 而根据 3.1.1, 他也是闭集. 因此他是一个连通分支. 由于 $\cal{B}_w$ 是一个吸收集, 他当然要连通. 因此 $\cal{B}_w=U\cdot w$.&lt;/p&gt;
+&lt;p&gt;当然, $U\cdot w=UT\cdot w=B\cdot w$. 因此我们得到 $B$-轨道恰好就是 $\cal{B}_w$, 证毕.&lt;/p&gt;
+&lt;p&gt;Cor 3.1.12: 对任意 $B\subset G$ Borel subalg 的选择, $B$-轨道给出了 $\cal{B}$ 的 $#$ cells 分解, 称为w.r.t.$B$ 的 Bruhat cells.&lt;/p&gt;
+&lt;img src=&#34;https://Jinbz-ayaka.github.io/zyys.jpg&#34; alt=&#34;示例图片&#34; style=&#34;width: 40%; max-width: 600px; height: auto; display: block; margin: 1rem auto; border-radius: 8px;&#34;&gt;
+&lt;h3 id=&#34;plucker-embedding-of-the-flag-var&#34;&gt;Plucker Embedding of the flag var.
+&lt;/h3&gt;&lt;p&gt;如果你上过代数几何I, 也许你会记得 Gr 的 Plucker 嵌入. 现在我们希望给出来 $\cal{B}$ 到某个 proj. var. 的嵌入. 这段写得也太晦涩了()&lt;/p&gt;
+&lt;p&gt;对于 irr. 的 $G$-表示 $V$, 对任意 Borel subalg. $\mathfrak{b}$, 有唯一的一维不变子空间 $1_\mathfrak{b}$.&lt;/p&gt;
+&lt;p&gt;我们现在想要选取一个 &amp;ldquo;non-deg&amp;rdquo; 的 $V$, 使得保证 $1_{\mathfrak{b}}$ 不变的 $\mathfrak{g}$-子代数是 $\mathfrak{b}$. 根据 Hum, 只要最高权是 &amp;ldquo;non-deg&amp;rdquo; 的, $V$ 就是 nondeg 的. 于是,&lt;/p&gt;
+\[i:\cal{B}\to \mathbb{P}(V),\]\[\mathfrak{b}\mapsto 1_{\mathfrak{b}}.\]&lt;p&gt;给出了一个嵌入. 以及,&lt;/p&gt;
+\[\bar{\cal{B}}_w=i^{-1}(\mathbb{P}(U(\mathfrak{n})\cdot w(1_{\mathfrak{b}})))\]&lt;p&gt;(他没证这个, 直接引用的文献, 他是人握持.)&lt;/p&gt;
+&lt;p&gt;我怎么随手一打就是俳句()&lt;/p&gt;
+&lt;h3 id=&#34;3114-sl_n-case&#34;&gt;3.1.14 $SL_n$ case.
+&lt;/h3&gt;&lt;p&gt;熟知(lemma 3.1.15) $\cal{B}$ 对应到 complete flags in $\mathbb{C}^n$.&lt;/p&gt;
+&lt;p&gt;他希望证明 $\mathbb{C}^n/S^n$ 这个 orbit space 同构于某个 $n$ 维线性空间, 然后叽里呱啦说了一大堆. 其实就是考虑 $(x_i)\mapsto (e_i)$, $e_i$ 牛顿多项式.&lt;/p&gt;
+&lt;p&gt;然后考虑映射&lt;/p&gt;
+\[\phi:\mathfrak{sl}_n\to \{x|\sum x_i=0\}/S^n\simeq \mathbb{C}^{n-1}/S^n,\]\[x\mapsto\{\text{eigenvalues}\}.\]&lt;p&gt;现在考虑&lt;/p&gt;
+\[\tilde{\mathfrak{g}}=\{(x,F)\in\mathfrak{sl}_n\times\cal{B}|x(F_i)\subset F_i,\forall i\}.\]&lt;p&gt;那么 $x:F_i/F_{i-1}\to F_i/F_{i-1}$ 就是一个一维表示, 取 $x_n$ 为其特征根. 我们给出&lt;/p&gt;
+\[\nu:\tilde{\mathfrak{g}}\mapsto \mathbb{C}^{n-1}.\]&lt;p&gt;那么, 我们显然有这个交换图表:&lt;/p&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcZ2d9Il0sWzIsMCwiXFxDQ157bi0xfSJdLFswLDIsIlxcZ2ciXSxbMiwyLCJcXENDXntuLTF9L1NebiJdLFswLDEsIlxcbnUiXSxbMCwyLCJwcl8xIiwyXSxbMSwzLCJcXHRleHR7bmF0dXJhbH0iXSxbMiwzLCJcXHBoaSIsMl1d&amp;embed&#34; width=&#34;524&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;与这个Claim 3.1.19:&lt;/p&gt;
+&lt;p&gt;For any $x\in\mathfrak{g}^{sr}$ the set $\cal{B}_x={F\in\cal{B}|xF_i\subset F_i}$ consists of $n!$ pts, amd there is a an. free action of the symm. $S_n$ on $\cal{B}_x$ making it a principal homog. $S_n$-space.&lt;/p&gt;
+&lt;p&gt;感觉都是 trivial 的().&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;awc, 怎么这么难读kk&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
