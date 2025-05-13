@@ -335,14 +335,14 @@
     <p>这一章前前后后, 牵扯的有点多()</p>
 <p>不要在这上面纠结掉太多时间, 能动一动已是仁慈()</p>
 <hr>
-<p>3.4 讲的是关于 Weyl gp. 的一个主题. 想象一下包含 $x$ 的所有 Borel subalg $\mathcal{B}<em>x=\mu^{-1}(x)$, 我们希望研究 $\mathbb{W}$ 在 $H</em>{{*}}(\mathcal{B}_x)$ 上的作用.</p>
+<p>3.4 讲的是关于 Weyl gp. 的一个主题. 想象一下包含 $x$ 的所有 Borel subalg $\mathcal{B}<em>x=\mu^{-1}(x)$, 我们希望研究 $\mathbb{W}$ 在 $H</em>{{\ast}}(\mathcal{B}_x)$ 上的作用.</p>
 <p>$x$ 是 sr 的 case 当然是容易的, 他只是有限元素的置换而已. 那我们对于 singular 一点的元素呢?</p>
 <p>对于 $w\in \mathbb{W}$, 考虑 $\operatorname{Graph}(w)\subset \tilde{\mathfrak{g}}^{sr}\times\tilde{\mathfrak{g}}^{sr}$ 为那些 $(n,\mathfrak{b},wn,w\mathfrak{b})$. 有, $\operatorname{Graph}(w)\subset \tilde{\mathfrak{g}}^{sr}\times_{\mathfrak{g}^{sr}}\tilde{\mathfrak{g}}^{sr}$.</p>
 <p>现在, 考虑 $\Gamma_w$ 是 $\operatorname{Graph}(w)$ 在 $\tilde{\mathfrak{g}}\times_{\mathfrak{g}}\tilde{\mathfrak{g}}$ 中的 closure.</p>
 <p>我们有一个神奇的 convolution, 他是我们要考虑的这个 Borel-Moore Homology 里面的. 这个细节也许暂时不太重要(?) 总之由于 $\Gamma_w\circ \mathcal{B}_x=\mathcal{B}_x$, 我们得到了一个 convolution 诱导的 operator</p>
-\[w_{{*}}:H_{{{*}}}(\mathcal{B}_x)\to H_{{{*}}}(\mathcal{B}_x).\]<p>CG上说这么给出 $w_{{<em>}}$ 的定义有一点坏处, 就是不好去验证 $y_{{</em>}}\circ w_{{<em>}}=(yw)_{{</em>}}$.</p>
+\[w_{{\ast}}:H_{{{\ast}}}(\mathcal{B}_x)\to H_{{{\ast}}}(\mathcal{B}_x).\]<p>CG上说这么给出 $w_{{\ast}}$ 的定义有一点坏处, 就是不好去验证 $y_{{\ast}}\circ w_{{\ast}}=(yw)_{{\ast}}$.</p>
 <p>他在这里给出了另一个 approach. 具体来说就是取 $Z=\tilde{\mathcal{N}}\times_{\mathcal{N}}\tilde{\mathcal{N}}$ Steinberg var. 根据 Cor.3.3.5,</p>
-\[Z=\sqcup_{w\in\mathbb{W}} T^{{*}}_{Y_w}(\mathcal{B}\times \mathcal{B}).\]<p>于是 $Z$ 的 irr components 都拥有 $\dim m=\dim_{\mathbb{R}}\tilde{\mathcal{N}}$. 记 $H(Z)=H_m(Z,\mathbb{Q})$, 他是一个 $# W$-dim $\mathbb{Q}$-v.s, 于是也是一个 subalg of $H_{{*}}(Z,\mathbb{Q})$.</p>
+\[Z=\sqcup_{w\in\mathbb{W}} T^{{\ast}}_{Y_w}(\mathcal{B}\times \mathcal{B}).\]<p>于是 $Z$ 的 irr components 都拥有 $\dim m=\dim_{\mathbb{R}}\tilde{\mathcal{N}}$. 记 $H(Z)=H_m(Z,\mathbb{Q})$, 他是一个 $# W$-dim $\mathbb{Q}$-v.s, 于是也是一个 subalg of $H_{{\ast}}(Z,\mathbb{Q})$.</p>
 <p>现在, 取 $\mathbb{Q}[\mathbb{W}]$ 为 $\mathbb{W}$ 对应的群代数, 我们有</p>
 <p>Theorem 3.4.1: There is a canonical alg. isom.</p>
 \[H(Z)\simeq \mathbb{Q}[W].\]<p>距离真的做出来这个thm, 我们还有一段路要走() 这个定理其实是 Steinberg theory 的一部分, 然后也许这个通过 Borel-Moore 的具体讨论会比较繁琐. 而且, 粮食说在后面会给出一个 sheaf 层面的证明. 因此在这里我们先把他 treat as blackbox 一下().</p>
@@ -350,20 +350,20 @@
 <p>我们现在只考虑 &ldquo;reasonable&rdquo; 的空间, 也就是说, 局部紧且拥有有限 CW-复形的homotopy type. Furthermore, 要求他可以嵌入某个可数多 infinity 的 $C^\infty$ 的 manifold $M$ 里, 并要求存在开的子集 $U\supset X$ 使得 $X$ 是 $U$ 的 retract. Similarly, 对于 $M$ 的 closed &ldquo;subset&rdquo; $X$ 我们也要求他是某个 $U$
 的 retract. 在这个条件下我们可以找到更小的闭的 $V\subset U$ 使得 $X$ 是 $V$ 的 proper homotopy retract. 注意这里的 proper 指紧集的原像是紧的.</p>
 <p>于是, 一个集合 $X$ 的 Borel-Moore homology 可以定义为 $\hat{X} =X\cap{\infty}$ 一点紧化,</p>
-\[H^{BM}_{{*}}(X)=H_{{*}}(\hat{X},\infty).\]<p>注意 (通过拓扑的办法可以得到) 他有以下三个等价形式:</p>
+\[H^{BM}_{{\ast}}(X)=H_{{\ast}}(\hat{X},\infty).\]<p>注意 (通过拓扑的办法可以得到) 他有以下三个等价形式:</p>
 <ol>
 <li>对 $\bar{X}$ 是 $X$ 任意一个紧化, $(\bar{X},\bar{X}\backslash X)$ CW-pair,</li>
 </ol>
-\[H^{BM}_{{*}}(X)=H_{{*}}(\bar{X},\bar{X}\backslash X)\]<ol start="2">
-<li>$C_{{*}}^{BM}(X)$ 是 chain cpx of infinite singular chains $\sum_{i=0}^\infty a_i\sigma_i$ 且对于任意 compact set, 只有 finite $a_i$ s.t. $D\cap supp\sigma_i\neq \emptyset$. 于是</li>
+\[H^{BM}_{{\ast}}(X)=H_{{\ast}}(\bar{X},\bar{X}\backslash X)\]<ol start="2">
+<li>$C_{{\ast}}^{BM}(X)$ 是 chain cpx of infinite singular chains $\sum_{i=0}^\infty a_i\sigma_i$ 且对于任意 compact set, 只有 finite $a_i$ s.t. $D\cap supp\sigma_i\neq \emptyset$. 于是</li>
 </ol>
-\[H^{BM}_{{*}}(X)=H_{{*}}(C_{{*}}^{BM}(X),\partial).\]<ol start="3">
+\[H^{BM}_{{\ast}}(X)=H_{{\ast}}(C_{{\ast}}^{BM}(X),\partial).\]<ol start="3">
 <li>取 $M$ smooth, ori, $\dim M=m$, $X$ 是一个 closed subset of $M$ with 存在 $U\subset M$ closed, $X$ 是 $U$ 的一个proper deform. retract. 那么 $H^{BM}_i(X)=H^{m-i}(M,M\backslash X)$.</li>
 </ol>
 <p>注意, 如果我们取 $X=M$ smooth, not necessarily compact var., 有</p>
-\[H_i^{BM}(M)\simeq H^{m-i}(M).\]<p>然后, 考虑 $D_*$ 是 supported on $X$ 上的 distribution 构成的 complex, 则</p>
-\[H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).\]<p>然后是push forward, 注意 $f:X\to Y$ proper 诱导了连续的 $\bar{f}:\bar{X}\to \bar{Y}$, 于是诱导了 push forward</p>
-\[f_{{*}}:H_{{*}}(X)\to H_{{*}}(Y).\]<p>而对于 $F$ 是 $X$ 的 closed subset, set $U=X\backslash F$, 我们可以拉出长正合列</p>
+\[H_i^{BM}(M)\simeq H^{m-i}(M).\]<p>然后, 考虑 $D_\ast$ 是 supported on $X$ 上的 distribution 构成的 complex, 则</p>
+\[H_{{\ast}}(D_\ast(X),d)\simeq H^{BM}_{{{\ast}}}(X).\]<p>然后是push forward, 注意 $f:X\to Y$ proper 诱导了连续的 $\bar{f}:\bar{X}\to \bar{Y}$, 于是诱导了 push forward</p>
+\[f_{{\ast}}:H_{{\ast}}(X)\to H_{{\ast}}(Y).\]<p>而对于 $F$ 是 $X$ 的 closed subset, set $U=X\backslash F$, 我们可以拉出长正合列</p>
 \[\cdots\to H_p(F)\to H_p(X)\to H_p(U)\to H_{p-1}(F)\to \cdots.\]<p>Borel-Moore homology 的关键在于 fundamental class 的存在性. 对于 $X$ smooth ori. of $\dim m$, 我们一定有一个 well-defined 的</p>
 \[[X]\in H_{m}(X),\]<p>不难看出这对, 比方说 $\mathbb{R}^n$ 的一般同调是不成立的. 然后, 由于对一般的 smooth complex mfd,</p>
 <p>$\dim(X\backslash X^{reg})\leq m$, 有</p>
@@ -380,15 +380,17 @@
 <p>开 3.5!</p>
 <hr>
 <p>您好, 请问</p>
-<p>$H_{{<em>}}(D_</em>(X),d)\simeq H^{BM}_{{{*}}}(X).$</p>
+<p>$H_{{\ast}}(D_\ast(X),d)\simeq H^{BM}_{{{\ast}}}(X).$</p>
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$ 
+$H_{{\ast}}(D_\ast(X),d)\simeq H^{BM}_{{{\ast}}}(X).$ 
 </pre>
 <p>为什么过不了他自带的 Katex 的编译, 但是</p>
-$$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$$<pre style="white-space: pre-wrap; word-wrap: break-word;">
-$$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$$
+$$H_{{\ast}}(D_\ast(X),d)\simeq H^{BM}_{{{\ast}}}(X).$$<pre style="white-space: pre-wrap; word-wrap: break-word;">
+$$H_{{\ast}}(D_\ast(X),d)\simeq H^{BM}_{{{\ast}}}(X).$$
 </pre>
 <p>却可以?</p>
+<hr>
+<p>↑已解决</p>
 
 </section>
 
@@ -439,6 +441,30 @@ $$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$$
             
                 
 <article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%85%AD-p168-175/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%85%AD-p168-175/ayk3.b1730ccab3f54b69ad5b2ebb7167aa6d_hu_af30ae9101924cb6.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其六 P168-175"
+                        
+                        data-hash="md5-sXMMyrP1S2mtWy67cWeqbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其六 P168-175</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B-p153-161/">
         
         
@@ -456,6 +482,30 @@ $$H_{{*}}(D_*(X),d)\simeq H^{BM}_{{{*}}}(X).$$
 
         <div class="article-details">
             <h2 class="article-title">CG饲养日记-其四 P153-161</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89-p144-153/hc.c9ae0363cda5d6c3f47d0c09a84b9d5a_hu_423b2454be3c89e.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其三 P144-153"
+                        
+                        data-hash="md5-ya4DY82l1sP0fQwJqEudWg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其三 P144-153</h2>
         </div>
     </a>
 </article>
