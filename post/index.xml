@@ -225,7 +225,7 @@ KaTeX 使用 &lt;code&gt;_&lt;/code&gt; 表示下标（如 &lt;code&gt;x_1&lt;/c
         <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%94-p161-168/who.jpg" alt="Featured image of post CG饲养日记-其五 P161-168" /&gt;&lt;p&gt;这一章前前后后, 牵扯的有点多()&lt;/p&gt;
 &lt;p&gt;不要在这上面纠结掉太多时间, 能动一动已是仁慈()&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;3.4 讲的是关于 Weyl gp. 的一个主题. 想象一下包含 $x$ 的所有 Borel subalg $\mathcal{B}&lt;em&gt;x=\mu^{-1}(x)$, 我们希望研究 $\mathbb{W}$ 在 $H&lt;/em&gt;{{\ast}}(\mathcal{B}_x)$ 上的作用.&lt;/p&gt;
+&lt;p&gt;3.4 讲的是关于 Weyl gp. 的一个主题. 想象一下包含 $x$ 的所有 Borel subalg $\mathcal{B}_x=\mu^{-1}(x)$, 我们希望研究 $\mathbb{W}$ 在 $H_{{\ast}}(\mathcal{B}_x)$ 上的作用.&lt;/p&gt;
 &lt;p&gt;$x$ 是 sr 的 case 当然是容易的, 他只是有限元素的置换而已. 那我们对于 singular 一点的元素呢?&lt;/p&gt;
 &lt;p&gt;对于 $w\in \mathbb{W}$, 考虑 $\operatorname{Graph}(w)\subset \tilde{\mathfrak{g}}^{sr}\times\tilde{\mathfrak{g}}^{sr}$ 为那些 $(n,\mathfrak{b},wn,w\mathfrak{b})$. 有, $\operatorname{Graph}(w)\subset \tilde{\mathfrak{g}}^{sr}\times_{\mathfrak{g}^{sr}}\tilde{\mathfrak{g}}^{sr}$.&lt;/p&gt;
 &lt;p&gt;现在, 考虑 $\Gamma_w$ 是 $\operatorname{Graph}(w)$ 在 $\tilde{\mathfrak{g}}\times_{\mathfrak{g}}\tilde{\mathfrak{g}}$ 中的 closure.&lt;/p&gt;
@@ -280,7 +280,9 @@ $$H_{{\ast}}(D_\ast(X),d)\simeq H^{BM}_{{{\ast}}}(X).$$
 &lt;/pre&gt;
 &lt;p&gt;却可以?&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;↑已解决&lt;/p&gt;
+&lt;p&gt;5.13 把上述问题解决了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;5.14 修复了一个_斜体_导致的bug&lt;/p&gt;
 </description>
         </item>
         <item>
