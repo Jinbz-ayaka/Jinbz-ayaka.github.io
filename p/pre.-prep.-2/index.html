@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="没错, 这张头图是用 latex 中的 tikz 画的:)\n放在这里让大伙再欣赏欣赏:\n但是, 牛魔, Stack 居然没有提供缩放图片的方法, 让我们看看他是怎么说的. 他说:\nInserting external images is supported, but it is not recommended.\n">
-<title>代数几何, 启动!</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第二次代数几何讨论班的准备\n虽然已经结束了()\n扔上来总是没问题()\n从 2 开始说? setting 就是 $A$ 是一个有限 global dimension 的 Noetherian local ring. 我们考虑 ${x_1,\\cdots,x_p}$ 作为 $\\mathfrak{m}$ 的一组生成元 (regular system of parameters of $A$), 然后, 根据前文我们有他是 $A$-sequence.\n">
+<title>pre. prep. 2</title>
 
-<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/'>
+<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/pre.-prep.-2/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="代数几何, 启动!">
-<meta property='og:description' content="没错, 这张头图是用 latex 中的 tikz 画的:)\n放在这里让大伙再欣赏欣赏:\n但是, 牛魔, Stack 居然没有提供缩放图片的方法, 让我们看看他是怎么说的. 他说:\nInserting external images is supported, but it is not recommended.\n">
-<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="pre. prep. 2">
+<meta property='og:description' content="第二次代数几何讨论班的准备\n虽然已经结束了()\n扔上来总是没问题()\n从 2 开始说? setting 就是 $A$ 是一个有限 global dimension 的 Noetherian local ring. 我们考虑 ${x_1,\\cdots,x_p}$ 作为 $\\mathfrak{m}$ 的一组生成元 (regular system of parameters of $A$), 然后, 根据前文我们有他是 $A$-sequence.\n">
+<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/pre.-prep.-2/'>
 <meta property='og:site_name' content='代数tv'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-02T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag.jpg' />
-<meta name="twitter:title" content="代数几何, 启动!">
-<meta name="twitter:description" content="没错, 这张头图是用 latex 中的 tikz 画的:)\n放在这里让大伙再欣赏欣赏:\n但是, 牛魔, Stack 居然没有提供缩放图片的方法, 让我们看看他是怎么说的. 他说:\nInserting external images is supported, but it is not recommended.\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-05-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/pre.-prep.-2/dushu1.jpg' />
+<meta name="twitter:title" content="pre. prep. 2">
+<meta name="twitter:description" content="第二次代数几何讨论班的准备\n虽然已经结束了()\n扔上来总是没问题()\n从 2 开始说? setting 就是 $A$ 是一个有限 global dimension 的 Noetherian local ring. 我们考虑 ${x_1,\\cdots,x_p}$ 作为 $\\mathfrak{m}$ 的一组生成元 (regular system of parameters of $A$), 然后, 根据前文我们有他是 $A$-sequence.\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/pre.-prep.-2/dushu1.jpg' />
     <link rel="shortcut icon" href="/artemptyset.png" />
 <style>
      
@@ -265,13 +265,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/">
-                <img src="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag_hu_45001c157de7aca4.jpg"
-                        srcset="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag_hu_45001c157de7aca4.jpg 800w, /p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag_hu_77cc946e8cc00688.jpg 1600w"
+            <a href="/p/pre.-prep.-2/">
+                <img src="/p/pre.-prep.-2/dushu1_hu_be928eb8bb9e7bff.jpg"
+                        srcset="/p/pre.-prep.-2/dushu1_hu_be928eb8bb9e7bff.jpg 800w, /p/pre.-prep.-2/dushu1_hu_a5788ebc5426bb08.jpg 1600w"
                         width="800" 
-                        height="800" 
+                        height="566" 
                         loading="lazy"
-                        alt="Featured image of post 代数几何, 启动!" />
+                        alt="Featured image of post pre. prep. 2" />
                 
             </a>
         </div>
@@ -280,10 +280,6 @@
     <div class="article-details">
     
     <header class="article-category">
-        
-            <a href="/categories/%E6%8E%A2%E7%B4%A2/" style="background-color: #757575; color: #fff;">
-                探索
-            </a>
         
             <a href="/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/" style="background-color: #CCC400; color: #fff;">
                 代数几何
@@ -294,7 +290,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/">代数几何, 启动!</a>
+            <a href="/p/pre.-prep.-2/">pre. prep. 2</a>
         </h2>
     
         
@@ -316,7 +312,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Mar 02, 2025</time>
+                <time class="article-time--published">May 17, 2025</time>
             </div>
         
 
@@ -332,34 +328,120 @@
     <section class="article-content">
     
     
-    <p>没错, 这张头图是用 latex 中的 tikz 画的:)</p>
-<p>放在这里让大伙再欣赏欣赏:</p>
-<p><img src="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag.jpg"
-	width="1190"
-	height="1190"
-	srcset="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag_hu_3448cf32e8523cdb.jpg 480w, /p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag_hu_edeaac03c251f158.jpg 1024w"
+    <p>第二次代数几何讨论班的准备</p>
+<p>虽然已经结束了()</p>
+<p>扔上来总是没问题()</p>
+<hr>
+<p><img src="/p/pre.-prep.-2/pp3.jpg"
+	width="966"
+	height="308"
+	srcset="/p/pre.-prep.-2/pp3_hu_57fbbec741a989a9.jpg 480w, /p/pre.-prep.-2/pp3_hu_76d076f60b062199.jpg 1024w"
 	loading="lazy"
-	
-		alt="学吧你就"
 	
 	
 		class="gallery-image" 
-		data-flex-grow="100"
-		data-flex-basis="240px"
+		data-flex-grow="313"
+		data-flex-basis="752px"
 	
 ></p>
-<p>但是, 牛魔, Stack 居然没有提供缩放图片的方法, 让我们看看他是怎么说的. 他说:</p>
-<p>Inserting external images is supported, but it is not recommended.</p>
-<p>Features like image gallery and image zooming will not work with external images. Those feature needs to know the image&rsquo;s dimensions, which is not possible with external images.</p>
-<p>orz</p>
-<p>那以后如果想搞地理志一样的东西, 得慢慢来.</p>
+<p>从 2 开始说? setting 就是 $A$ 是一个有限 global dimension 的 Noetherian local ring. 我们考虑 ${x_1,\cdots,x_p}$ 作为 $\mathfrak{m}$ 的一组生成元 (regular system of parameters of $A$), 然后, 根据前文我们有他是 $A$-sequence.</p>
+<p>Nakayama(或者通过上节课的内容)告诉我们, 实际上这说的就是 ${x_i}$ 构成了 $\mathfrak{m}/\mathfrak{m}^2$ 的一组 $k$-basis.</p>
+<p>Proposition 22: ${x_1,\cdots,x_p}$ 是 $\mathfrak{m}$ 的 $p$ elements, TFAE:</p>
+<p>a) $x_1,\cdots,x_p$ is a subset of a regular system of parameters of $A$.</p>
+<p>b) The image of $x_1,\cdots,x_p$ in $\mathfrak{m}/\mathfrak{m}^2$ are linearly independent over $k$.</p>
+<p>(a) 和 (b) 等价是显然的</p>
+<p>c) The local ring $A/(x_1,\cdots,x_p)$ is regular, and has $\dim=\dim A-p$.</p>
+\[0\to \mathfrak{p}/\mathfrak{p}\cap \mathfrak{m}^2\to \mathfrak{m}/\mathfrak{m}^2\to \mathfrak{n}/\mathfrak{n}^2\to 0.\]<p>with $\mathfrak{p}=(x_1,\cdots,x_p)$. 于是</p>
+\[(b)\iff [\mathfrak{p}/\mathfrak{p}\cap \mathfrak{m}^2:k]=p\iff [\mathfrak{n}/\mathfrak{n}^2:k]=\dim A-p\]<p>(需要详细说明!)</p>
+<p>然后就说完了.</p>
+<p>而 $(c)\to (b)$ side, by Thm 9,</p>
+<p>$A/\mathfrak{p}$ regular $\implies [\mathfrak{n}/\mathfrak{n}^2:k]=\dim A/\mathfrak{p}$, 而根据上面那个 s.e.s, $\dim A/\mathfrak{p}=\dim A-p$ 等价于 $(b)$.</p>
+<p>(regular ring 都是 normal 的, in particular, noetherian domain. 因此 $\mathfrak{p}$ prime).</p>
+<p>Cor: If $\mathfrak{p}$ an ideal of a regular, TFAE:</p>
+<p>a) $A/\mathfrak{p}$ regular local ring,</p>
+<p>b) $\mathfrak{p}$ generated by a subset of a regular system of parameters of $A$.</p>
+<p>(b) $\implies$ (a) direct by prop.</p>
+<p>考虑 $\mathfrak{n}=\mathfrak{m}/\mathfrak{p}$,</p>
+\[0\to \mathfrak{p}/\mathfrak{p}\cap \mathfrak{m}^2\to \mathfrak{m}/\mathfrak{m}^2\to \mathfrak{n}/\mathfrak{n}^2\to 0.\]<p>如果 regular, $[\mathfrak{n}/\mathfrak{n}^2:k]=\dim A/\mathfrak{p}$, 于是, $[\mathfrak{p}/\mathfrak{p}\cap \mathfrak{m}^2]=\operatorname{ht}_A\mathfrak{p}$. (why?)</p>
+<p>take $x_1\cdots x_p$ $\mathfrak{p}/\mathfrak{p}\cap \mathfrak{m}^2$ 的一组基, 于是, $(x_1,\cdots,x_p)\subset \mathfrak{p}$ prime and of height $p=\operatorname{ht}_A\mathfrak{p}$, 于是 $\mathfrak{p}=(x_1,\cdots,x_p)$.</p>
+<p>Prop 23: $\mathfrak{p}$ prime ideal of regular ring $A$, then $A_{\mathfrak{p}}$ is regular.</p>
+<p>$\operatorname{glob}\dim A_{\mathfrak{p}}\leq \operatorname{glob}\dim A&lt;\infty.$</p>
+<p><img src="/p/pre.-prep.-2/pp2.jpg"
+	width="934"
+	height="318"
+	srcset="/p/pre.-prep.-2/pp2_hu_3790921953c073fa.jpg 480w, /p/pre.-prep.-2/pp2_hu_4c25a4635fedb628.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="293"
+		data-flex-basis="704px"
+	
+></p>
+<p>Prop 24: $\hat{A}$ completion of local ring $A$ for the $\mathfrak{m}$-adic topology, we have the equivalences:</p>
+\[A\text{ regular}\iff \hat{A}\text{ regular.}\]<p>这个 follows from $\hat{A}\simeq \varprojlim M/\mathfrak{m}^nA$, with</p>
+\[\hat{A}_n=\ker(\hat{A}\to A/\mathfrak{m}^nA).\]<p>于是, $\operatorname{gr}(A)=\operatorname{gr}(\hat{A}).$</p>
+<p>Thm 10: $A$ complete local ring. $k=A/\mathfrak{m}$ have the same char. TFAE:</p>
+<p>a) $A$ regular of dim $n$.</p>
+<p>b) $A$ isom. to the formal power series ring $k[[X_1,\cdots,X_n]]$.</p>
+<p>有, $b)\implies a)$ by regular 的d) 等价条件, 他的 gr 是 polynomial alg. $k[X_1,\cdots,X_r]$.</p>
+<p>$a)\implies b)$ by Cohen&rsquo;s thm, 对于 complete local ring $A$, 存在 $k&rsquo;\subset A$, $k&rsquo;\overset{\sim,A\to k}{\to} k$.</p>
+<p>然后考虑 regular system ${x_1,\cdots,x_n}$, 有</p>
+\[k'[X_1,\cdots,X_n]\to A\]<p>于是 induces 了 $k&rsquo;[[X_1,\cdots,X_n]]\to A$. 他是 inj 的 (一大段argument)</p>
+<p>然后, 根据 Prop 6, 由于 $gr\phi$ 是 surj, $\phi$ 也是 surj.</p>
+<p><img src="/p/pre.-prep.-2/pp1.jpg"
+	width="949"
+	height="535"
+	srcset="/p/pre.-prep.-2/pp1_hu_9156bab4979fc0e5.jpg 480w, /p/pre.-prep.-2/pp1_hu_9b730634aaf37fac.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="425px"
+	
+></p>
+<p>于是 $\phi $ isom.</p>
 <hr>
-<p>简单介绍一下搞法吧. 第一步, 将图片导入 Photoshop, 然后用弯线钢笔照着描出来路径.</p>
-<p>第二步, 将路径文件导出. 如果可以成为 SVG 文件, 那自然是最好的. 如果不行, 先保存为.ai, 然后用 Adobe Illustrator 搞成.svg.</p>
-<p>第三步, 如果你不嫌麻烦, 可以直接读.svg, 然后照着慢慢搞. 库&quot;hobby&quot;给出了实现弯线钢笔的方法. 如果你嫌麻烦, 可以用脚本 svg2tikz.</p>
-<p>第四步, 在.tex 中运行, 就能得到这样的好东西了[给心心]</p>
+<p>&ldquo;It follows from the above that&rdquo;, 一个 ring 是 regular ring 当且仅当对任意 $\mathfrak{m}$, $A_\mathfrak{m}$ local regular ring.</p>
+<p><img src="/p/pre.-prep.-2/pp4.jpg"
+	width="960"
+	height="459"
+	srcset="/p/pre.-prep.-2/pp4_hu_85a9df96f95f22a4.jpg 480w, /p/pre.-prep.-2/pp4_hu_6b5fcd6ad547db0b.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="209"
+		data-flex-basis="501px"
+	
+></p>
+<p>以及</p>
+\[\dim A=\operatorname{glob}\dim A.\]<p>Prop 25: $A$ regular, $A[X]$ ring of polynomial with coeff in $A$, then, $A[X]$ is regular and</p>
+\[\operatorname{glob}\dim A[X]=\operatorname{glob}\dim A+1.\]<p>Lemma 1: $M$ $A[X]$-mod, then</p>
+\[\operatorname{proj}\dim_{A[X]}(M)\leq \operatorname{proj}\dim_{A}(M)+1.\]<p>首先, 对于 $M=A[X]\otimes N$, 由于 $A[X]$ $A$-flat, 有 $\operatorname{proj}\dim_{A[X]}N[X]\leq \operatorname{proj}\dim_{A}M.$ Moreover, clear that $\operatorname{proj}\dim_{A}N=\operatorname{proj}\dim_{A}M$.</p>
+<p>一个 $A[X]$ 从某种意义上来说就是, 一个 $A$-mod $M$, equipped with 一个 $A$-morph $X:M\to M$.</p>
+<p>于是, 诱导了 surj $M[X]\to M$. 根据一个过于容易的 degree 的 argument, 我们可以得到他的 ker,</p>
+\[\psi:X^i\otimes m_i\mapsto X^{i+1}\otimes m_i-X^{i}\otimes Xm_i.\]<p>然后就可以根据那个长正合列搞出来 $\operatorname{proj}\dim_{A[X]}M\leq \operatorname{proj}\dim_{A}M+1$. 从而 $A[X]$ 确实是 regular 的.</p>
+<p>然后我们想 show that $\operatorname{glob}\dim A[X]\geq \operatorname{glob}\dim A+1$. 取 $\mathfrak{m}$ prime ideal of $A$, s.t. $ht_A\mathfrak{m}=\dim A=glob\dim A$. 那么, 考虑 $(\mathfrak{m}[X],X)$, 实际上 $(\mathfrak{m}[X],X)$ 就是一个素理想 (因为 $A[X]/(\mathfrak{m}[X],X)=A/\mathfrak{m}$). 但有</p>
+\[(\mathfrak{m}[X],X)\supset \mathfrak{m}[X] \supset\cdots\supset awa\]<p>打到这里就比较ez了.</p>
+<p>Corollary: $k$ field, then $k[X_1,\cdots,X_n]$ regular.</p>
+<p>Remark: 对于 $A=k[X_1,\cdots,X_n]/\frak{a}$, $\frak{a}$ ideal. $X$ corresponding affine var. One says $X$ is nonsingular if $A$ regular. when $k$ perfect i.e. field such that every algebraic extension is separable, TFAE:</p>
+<ul>
+<li>
+<p>$X$ nonsingular;</p>
+</li>
+<li>
+<p>$X$ smooth over $k$;</p>
+</li>
+<li>
+<p>$k&rsquo;\otimes_k A$ is regular for every extension $k&rsquo;$ of $k$.</p>
+</li>
+</ul>
+<p>Bourbaki buhui kk</p>
 <hr>
-<p>不收徒</p>
+<p>赛尔 赛尔</p>
+<p>用热血写下我们的骄傲</p>
 
 </section>
 
@@ -410,47 +492,23 @@
             
                 
 <article class="has-image">
-    <a href="/p/pre.-prep.-2/">
+    <a href="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/">
         
         
             <div class="article-image">
-                <img src="/p/pre.-prep.-2/dushu1.67a017a3231403ae3d68e3e55b3f509c_hu_9c5b42afc67d9150.jpg" 
+                <img src="/p/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95-%E5%90%AF%E5%8A%A8/ag.cffdf71eb80c10ebf3862e0ff7d4145d_hu_3198f0678f12b5d8.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post pre. prep. 2"
+                        alt="Featured image of post 代数几何, 启动!"
                         
-                        data-hash="md5-Z6AXoyMUA649aOPlWz9QnA==">
+                        data-hash="md5-z/33HrgMEOvzhi4P99QUXQ==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">pre. prep. 2</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%E6%B5%8B%E8%AF%95q.uiver-html%E5%9B%BE%E7%89%87%E7%AD%89/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%E6%B5%8B%E8%AF%95q.uiver-html%E5%9B%BE%E7%89%87%E7%AD%89/layla.d0894cbbc8fc0e05e22b74806cf10743_hu_7e4b19c73d0ca4fe.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 测试q.uiver, html图片等"
-                        
-                        data-hash="md5-0IlMu8j8DgXiK3SAbPEHQw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">测试q.uiver, html图片等</h2>
+            <h2 class="article-title">代数几何, 启动!</h2>
         </div>
     </a>
 </article>
@@ -475,43 +533,6 @@
 
         <div class="article-details">
             <h2 class="article-title">pre. prep. 1</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/%E6%B5%8B%E8%AF%95latex/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">测试latex</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%E6%B5%8B%E8%AF%95%E6%B5%8B%E8%AF%95/yau.30d7d51dbe22a76bbefd585ff051b280_hu_320738ef5d1e8360.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 测试测试"
-                        
-                        data-hash="md5-MNfVHb4ip2u&#43;/Vhf8FGygA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">测试测试</h2>
         </div>
     </a>
 </article>

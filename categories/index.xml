@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 17 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>代数几何</title>
+        <link>https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/</link>
+        <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/ag.jpg" alt="Featured image of post 代数几何" /&gt;</description>
+        </item>
+        <item>
         <title>CG</title>
         <link>https://Jinbz-ayaka.github.io/categories/cg/</link>
         <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
@@ -38,14 +46,6 @@
         
         <guid>https://Jinbz-ayaka.github.io/categories/%E6%8E%A2%E7%B4%A2/</guid>
         <description>&lt;img src="https://Jinbz-ayaka.github.io/categories/%E6%8E%A2%E7%B4%A2/sagasu.jpg" alt="Featured image of post 探索" /&gt;</description>
-        </item>
-        <item>
-        <title>代数几何</title>
-        <link>https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/</link>
-        <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/categories/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/ag.jpg" alt="Featured image of post 代数几何" /&gt;</description>
         </item>
         <item>
         <title>复习</title>
