@@ -7,7 +7,69 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 20 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其七 P175-183</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%83-p175-183/</link>
+        <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%83-p175-183/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%83-p175-183/gaoge.jpg" alt="Featured image of post CG饲养日记-其七 P175-183" /&gt;&lt;p&gt;该放假了吗? 该放假了吧!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;考虑 $S^n$ 置换群, 他是 $\sl_n$ 的 Weyl gp. 我们知道他的共轭类和 $\sl_n$ 中幂零元素的共轭类都对应到 $n$ 的 partition. 对于 $S^n=W$, 我们熟知 $H(Z)\simeq \mathbb{Q}(W)$, 我们有&lt;/p&gt;
+&lt;p&gt;Theorem 3.6.2: (Irreps of the Symmetric Group). Let $G=SL_n(\mathbb{C})$, for any $x\in \mathcal{N}, d(x)=\dim_{\mathbb{R}}\mathcal{B}_x$, then:&lt;/p&gt;
+&lt;p&gt;(a) The $H_m(Z)$-mod $H_{d(x)}(\mathcal{B}_x)$ is simple;&lt;/p&gt;
+&lt;p&gt;(b) The modules $H_{d(x)}(\mathcal{B}_x)$ and $H_{d(y)}(\mathcal{B}_y)$ are isom iff $x$ conj. to $y$;&lt;/p&gt;
+&lt;p&gt;(c) The collection ${H_{d(x)}(\mathcal{B}_x)|x\in\mathbb{O}\subset \mathcal{N}}$ is a complete collection of isom classes of simple $H_m(Z)$-mods.&lt;/p&gt;
+&lt;p&gt;这个实际上是后面 3.6.9 的一个 $SL_n$-case 的推论. 这个情况简单很多, 因为没有 $C(x)$ 这个 component gps 的影响:&lt;/p&gt;
+&lt;p&gt;Lemma 3.6.3: Let $G=GL_n(\mathbb{C})$, then for all $x\in\mathfrak{g}$, $G(x)$ is connected s.t. $C(x)=G(x)/G^0(x)=1$.&lt;/p&gt;
+&lt;p&gt;注意, 其实这里的东西, 包括 $\mathcal{N},\mathcal{B},Z$ 在内, 如果我们把某个 s.s. 的 $\mathfrak{g}&amp;rsquo;$ 换成reductive 的 $\mathfrak{g}$, 使得 $[\mathfrak{g},\mathfrak{g}]=\mathfrak{g}&amp;rsquo;$, 那么实际上, 我们考虑 $SL_n$ 的case, 只用考虑 $GL_n$ 就行了.&lt;/p&gt;
+&lt;p&gt;3.6.3 证明还挺有意思的(也许吧). 由于 $G(x)={y|yx=xy,\det y=0}$.&lt;/p&gt;
+&lt;p&gt;$yx=xy$ 是一个复平面, 而 $\det y\neq 0$ 给出了 codim 为 $2$ 的 complex hypersurface (其实并非流形, 但是是 CW cpx.). 根据传说中的横截相交理论即得 $G(x)$ 连通.&lt;/p&gt;
+&lt;p&gt;(但这个对 $SL_n$ 的 case 不一定对, 比方说 regular 的 center 是有限个 $\lambda I$, 其中 $\lambda$ 是单位根.)&lt;/p&gt;
+&lt;p&gt;我们熟知,&lt;/p&gt;
+\[|S_n|=\sum (\dim V)^2.\]&lt;p&gt;这实际上可以根据如下给出: 我们知道&lt;/p&gt;
+\[\sqcup_{w\in W}T^\ast_{Y_w}(\mathcal{B}\times \mathcal{B})=Z=\sqcup_{\mathbb{O}\subset \mathcal{N}}Z_{\mathbb{O}}=\sqcup_{\mathbb{O}\subset \mathcal{N}} Z_{\mathbb{O}}^{\alpha,\beta}.\]&lt;p&gt;然后,&lt;/p&gt;
+\[\# S_n=\#\{\text{components of }Z\}=\sum_{\mathbb{O}}\#\{\text{components of }\mathcal{B}_x\text{ for some }x\in\mathbb{O}\}^2=\sum_{\mathbb{O}}(\dim H_{d(x)}(\mathcal{B}_x))^2.\]&lt;p&gt;Cor 3.6.8: We have&lt;/p&gt;
+\[\sum_{V\in \hat{S}}\dim V=\#\{\text{involutions in }S_n\}\]&lt;p&gt;这是因为对于 $T^\ast_{Y_w}(\mathcal{B}\times \mathcal{B})$, $w$ 是 involution 当且仅当 $T^\ast_{Y_w}(\mathcal{B}\times \mathcal{B})$ 在 switching factor 的作用下不变. 于是, Steinberg var. 在 switching components 作用下不变的 factors 的 irr components 数量恰等于 involutions 的数量.&lt;/p&gt;
+&lt;p&gt;但, 在 $Z_{\mathbb{O}}$ 里, 在 switching components 作用下不变的 irr components 一定是 $Z^{\alpha,\alpha}_{x}=G\times_{G(x)}(\mathcal{B}^\alpha_x\times \mathcal{B}^\alpha_x)$. 这个的数量恰好等于 $\dim H_{d(x)}(\mathcal{B}_x)$. 证毕.&lt;/p&gt;
+&lt;p&gt;实际上 Thm 3.6.2 是基于, 对一般的 s.s. 群 $G$, 我们依然有&lt;/p&gt;
+\[H_{d(x)}(\mathcal{B}_x,\mathbb{C})\simeq\oplus_{\psi\in C(x)^{\wedge}}\psi\otimes H_{d(x)}(\mathcal{B}_x,\mathbb{C})_{\psi}.\]&lt;p&gt;根据lemma 3.5.3, 这些 $H_{d(x)}(\mathcal{B}_x,\mathbb{C})_{\psi}$ isotypic components 拥有自然的 $H(Z)$-mod structure, 且&lt;/p&gt;
+&lt;p&gt;Theorem 3.6.9: (Springer classification of simple $W$-mods) The set&lt;/p&gt;
+\[\{H_{d(x)}(\mathcal{B}_x,\mathbb{C})_{\psi}|G\text{-conj. classes of pairs }(x\in\mathcal{N};\psi\in C(x)^{\wedge})\}\]&lt;p&gt;is a complete collections of isom classes of simple $W$-mods.&lt;/p&gt;
+&lt;p&gt;It is only left to show that, 3.5.5. 也就是说,&lt;/p&gt;
+\[H(\cal{B}_x)_{R}=(H(\cal{B}_x)_{L})^{\vee}.\]&lt;p&gt;而这个不太难. 我们注意到 $\tilde{\mathcal{N}}\times\tilde{\mathcal{N}}$ 上有 involution 结构, given by switching factor. 有&lt;/p&gt;
+\[(c_1\ast c_2)^t=c_2^t\ast c_1^t.\]&lt;p&gt;$c\cdot v=v\cdot c^t$ 给出了从 $H(Z)$-右模到左模的映射. 显然有&lt;/p&gt;
+\[H(\mathcal{B}_x)_R^t=H(\mathcal{B}_x)_L.\]&lt;p&gt;我们只需要, w.r.t. Thm 3.4.1, 对任意 $V$ 作为 $W$-mod, 我们需要说明&lt;/p&gt;
+\[V\simeq (V^\vee)^t.\]&lt;p&gt;而,&lt;/p&gt;
+&lt;p&gt;Lemma 3.6.11: 在 $H(Z)\simeq\mathbb{Q}[W]$ 下, anti-involution $c\mapsto c^t$ 对应到 $w\mapsto w^{-1}$.&lt;/p&gt;
+&lt;p&gt;于是, 只需要说明, 作为 $W$-mod, $V\simeq V^\ast$. 而这个选取一个 $V$ 上的 $W$-不变的 nondeg pairing 即可.&lt;/p&gt;
+&lt;p&gt;根据上文我们实际上说明了&lt;/p&gt;
+\[H_i(\mathcal{B}_x,\mathbb{Q})\simeq H_i(\mathcal{B}_x,\mathbb{Q})^\ast\simeq H^i(\mathcal{B}_x,\mathbb{Q}).\]&lt;hr&gt;
+&lt;p&gt;我们现在要考虑 $H^\ast(\mathcal{B},\mathbb{Q})$ 上的 Weyl gp. action.&lt;/p&gt;
+&lt;p&gt;要知道我们是没有一个 abstract Weyl group $\mathbb{W}$ 在 $\mathcal{B}$ 上的作用的. 但是, 如果我们选定了 $T$ torus, $B=TU$ Borel subgroup, 我们可以 identify $\mathbb{W}\simeq N(T)/T$, 以及&lt;/p&gt;
+\[p:G/T\to G/B\simeq \mathcal{B}.\]&lt;p&gt;而, 这是一个 locally trivial fibration with contractible fibers isom. to $U$. 于是我们得到&lt;/p&gt;
+\[p^\ast:H^\ast(\mathcal{B})\overset{\sim}{\to} H^\ast(G/T), p_\ast:H^{ord}_\ast(G/T)\overset{\sim}{\to} H_\ast(\mathcal{B})\]&lt;p&gt;前面那个是 Borel-Moore 的拉回, 后面那个是 ordinary 的推前. 而 $\mathcal{B}$ 是 proj. 的, 二者自然相同.&lt;/p&gt;
+&lt;p&gt;通过大一学生应该会的代数 argument, 我们得到 $N(T)$ 在 $G/T$ 上的右作用. In particular, it factor through $W=N(T)/T$. 于是, 我们给出了 $W$ 在 $H^\ast(G/T)$ 和 $H_\ast^{ord}(G/T)$ 上的作用, 从而对应到 $H^\ast(\mathcal{B})$ 和 $H_\ast(\mathcal{B})$ 的作用.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这松岛辉空打的跟一投注一样, 张本智和有福了[捂脸]&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;根据 Bruhat decomp, 我们将 $\mathcal{B}$ 分成了一堆 \ast\ast偶数维\ast\ast 的 \ast\ast可缩\ast\ast cells. 于是根据 CW-复形的理论, 给出了&lt;/p&gt;
+\[\dim H_\ast(\mathcal{B})=\#W.\]&lt;p&gt;然后, 由于 $\mathcal{B}$ connected smooth var, $H_{top}(\mathcal{B})$ 是一维的. 也许根据3.1里的论述我们得到 simple reflection 改变 $G/B$ 的定向, 于是 $W$ 在 $H_{top}(\mathcal{B})$ 上的作用是 given by sign 的.&lt;/p&gt;
+&lt;p&gt;现在, 我们将 $\mathbb{W}$ fixed by $(T,B)$, 于是给出了 $\mathbb{W}$ 在 $H_\ast(\mathcal{B})$ 上的作用. 但是, 实际上这个作用与 $(T,B)$ 的选取无关: 这里有 $\mathcal{B}=\mathcal{B}_0$, 而&lt;/p&gt;
+&lt;p&gt;Claim 3.6.17: The $\mathbb{W}$-action on $H_\ast(\mathcal{B})$ arising from the convolution construction via Thm 3.4.1 is the same as one described above.&lt;/p&gt;
+&lt;p&gt;这个 Claim 的证明先跳过() 总之我们这里先强调一下, 我们是有一个 $\mathbb{W}$-action 作用在 $H(Z)$ 上的.&lt;/p&gt;
+&lt;p&gt;而, $\mathcal{B}_x\hookrightarrow \mathcal{B}$ 给出了 $H_\ast(\mathcal{B}_x)\to H_\ast(\mathcal{B})$, 且在 $G(x)$ 作用下相容, 因此在 $C(x)$ 作用下依然相容. 但是后者在 $C(x)$ 的作用下是 trivial 的, 因为, 更准确地说, 他在 $G$ 的作用下都是 trivial 的. 因此, 可以想象这个映射不是单射, 否则整个 $C(x)$ 轨道里的元素像都落在同一个对象里.&lt;/p&gt;
+&lt;p&gt;但是, 我们依然有结论&lt;/p&gt;
+&lt;p&gt;Claim 3.6.23: The morph $H_\ast(\mathcal{B}_x)\to H_\ast(\mathcal{B})$ commutes with the $\mathbb{W}$-action. Furthermore, for $d(x)=\dim_{\mathbb{R}}\mathcal{B}_x$, the map&lt;/p&gt;
+\[H_{d(x)}(\mathcal{B}_x)^{C(x)}\to H_{d(x)}(\mathcal{B})\]&lt;p&gt;is injective.&lt;/p&gt;
+&lt;p&gt;因此 $H_\ast(\mathcal{B}_x)\to H_\ast(\mathcal{B})$ 的 image 是一个 $\mathbb{W}$ 不变的子空间. 书上有一个remark, 就是说, 我们没有 elementary 的方法去 check $H_\ast(\mathcal{B}_x)\to H_\ast(\mathcal{B})$ 的 image 在 $\mathbb{W}$ 作用下不变, 只能通过这种复杂的办法搞定()&lt;/p&gt;
+&lt;p&gt;本章的收尾是如下的 example: $x\in \mathcal{N}$ regular nilp. Then there is $\mathfrak{b}$ containing $x$ s.t. $\mathcal{B}_x={\mathfrak{b}}$, 于是 $H_\ast(\mathcal{B}_x,\mathbb{Q})=H_0(\mathcal{B}_x,\mathbb{Q})=\mathbb{Q}$ 且 $W$ 在其上 trivial 作用.&lt;/p&gt;
+&lt;p&gt;zzz&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;什么时候放假&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其十七</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83/</link>
         <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
