@@ -15,7 +15,7 @@
         <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%83-p175-183/</guid>
         <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%83-p175-183/gaoge.jpg" alt="Featured image of post CG饲养日记-其七 P175-183" /&gt;&lt;p&gt;该放假了吗? 该放假了吧!&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;考虑 $S^n$ 置换群, 他是 $\sl_n$ 的 Weyl gp. 我们知道他的共轭类和 $\sl_n$ 中幂零元素的共轭类都对应到 $n$ 的 partition. 对于 $S^n=W$, 我们熟知 $H(Z)\simeq \mathbb{Q}(W)$, 我们有&lt;/p&gt;
+&lt;p&gt;考虑 $S^n$ 置换群, 他是 $\mathfrak{sl}_n$ 的 Weyl gp. 我们知道他的共轭类和 $\mathfrak{sl}_n$ 中幂零元素的共轭类都对应到 $n$ 的 partition. 对于 $S^n=W$, 我们熟知 $H(Z)\simeq \mathbb{Q}(W)$, 我们有&lt;/p&gt;
 &lt;p&gt;Theorem 3.6.2: (Irreps of the Symmetric Group). Let $G=SL_n(\mathbb{C})$, for any $x\in \mathcal{N}, d(x)=\dim_{\mathbb{R}}\mathcal{B}_x$, then:&lt;/p&gt;
 &lt;p&gt;(a) The $H_m(Z)$-mod $H_{d(x)}(\mathcal{B}_x)$ is simple;&lt;/p&gt;
 &lt;p&gt;(b) The modules $H_{d(x)}(\mathcal{B}_x)$ and $H_{d(y)}(\mathcal{B}_y)$ are isom iff $x$ conj. to $y$;&lt;/p&gt;
