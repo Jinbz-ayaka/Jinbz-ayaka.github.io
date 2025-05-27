@@ -7,7 +7,106 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 27 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>pre. prep. 3</title>
+        <link>https://Jinbz-ayaka.github.io/p/pre.-prep.-3/</link>
+        <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/pre.-prep.-3/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/pre.-prep.-3/sw.jpg" alt="Featured image of post pre. prep. 3" /&gt;&lt;p&gt;Kac-Moody Pre 的准备&lt;/p&gt;
+&lt;p&gt;同样的, 也一样结束了()&lt;/p&gt;
+&lt;p&gt;好热&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;由于老师BV是外国人, 只能用英文了()&lt;/p&gt;
+&lt;p&gt;ok&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We shall talk about the affine Lie algebra of nontwisted case. Take $\mathfrak{g}^\prime=\mathbb{C}[t,t^{-1}]\otimes_\mathbb{C}\overset{\circ}{\mathfrak{g}} +\mathbb{C} K$. Consider the &amp;ldquo;base&amp;rdquo; Lie algebra $\overset{\circ}{\mathfrak{g}}$ with nondegenerate invariant bilinear form $(\cdot|\cdot)$. Take ${u_i},{u^{i}}$ dual basis. We have Casimir operator&lt;/p&gt;
+\[\overset{\circ}{\Omega}=\sum u_iu^i.\]&lt;p&gt;We know that the Casimir operator is independent w.r.t. the choice of basis. Then, in particular,&lt;/p&gt;
+\[\overset{\circ}{\Omega}=\sum u_iu^i=\sum u^iu_i\implies \sum_i [u_i,u^i]=0.\]&lt;p&gt;And this proves that&lt;/p&gt;
+\[\sum_i [u_i^{(m)},u^{i(n)}]=\sum_i [u_i,u^i]^{(m+n)}+m\delta_{m,-n}K=m\delta_{m,-n}(\dim \overset{\circ}{\mathfrak{g}})K.\]&lt;p&gt;Now, recall that we have defined the generalized Casimir operator acts on reduced module&lt;/p&gt;
+\[\Omega=2(K+\check{h})d+\overset{\circ}{\Omega}+2\sum_{n=1}^\infty \sum_i u_i^{(-n)}u^{i(n)}.\]&lt;p&gt;of $\mathfrak{g}=\mathfrak{g}&amp;rsquo;+\mathbb{C} d, [d,x^{(n)}]=nx^{(n)}$.&lt;/p&gt;
+&lt;p&gt;We shall, for the $\overset{\circ}{\mathfrak{g}}=\overset{\circ}{\mathfrak{h}}\oplus(\oplus\mathbb{C} e_\alpha)$, since for $e_\alpha,e_{-\alpha}$ the chosen dual basis, $[e_\alpha,e_{-\alpha}]=\nu^{-1}(\alpha)$. Then&lt;/p&gt;
+\[\overset{\circ}{\Omega}=\sum_{i} h_ih^i+2\nu^{-1}(\overset{\circ}{\rho})+2\sum_{\alpha\in \overset{\circ}{\Delta}_+}e_{-\alpha}e_{\alpha}.\]&lt;p&gt;Now, we shall consider the restricted completion $U_c(\mathfrak{g}&amp;rsquo;)$ that is, $\sum_{j=1}^{\infty}u_j$ with $u_j\in U(\mathfrak{g}&amp;rsquo;)$ s.t. for all $v\in V$ reduced module, $u_j(v)\neq 0$ for all but finitely many $u_j$. Now, there are $d_n=-t^{n+1}\frac{d}{dt}$ extend to $U_c(\mathfrak{g}&amp;rsquo;)$.&lt;/p&gt;
+&lt;p&gt;Now, define the Sugawara Operators $T_n(n\in \mathbb{Z})$:&lt;/p&gt;
+\[T_0=\sum_i u_iu^i+2\sum_{n=1}^{\infty}\sum_i u_i^{(-n)}u^{i(n)},\]\[T_n=\sum_{m\in \mathbb{Z}}\sum_i u_i^{(-m)}u^{i(m+n)},n\neq 0.\]&lt;p&gt;(need to explain, why $T_n\in U_{c}$.)&lt;/p&gt;
+&lt;p&gt;We have,&lt;/p&gt;
+&lt;p&gt;Lemma 12.8: a) For $x\in \circ\mathfrak{g}$, $m,n\in\mathbb{Z}$,&lt;/p&gt;
+\[[x^{(m)},T_n]=2(K+\check{h})mx^{(m+n)}.\]&lt;p&gt;b) $V$ restricted $\mathfrak{g}$-mod, $v\in V$ s.t. $\nn_+v=0,h(v)=\langle\lambda,h\rangle v$ for some $\lambda\in\mathfrak{h}^*$, then $T_0(v)=(\bar{\lambda}|\bar{\lambda}+2\bar{\rho})v$.&lt;/p&gt;
+&lt;p&gt;Proof: (a) We proof this in the semidirect product (to in duces $d_n$) $\mathfrak{d}\ltimes U_c(\mathfrak{g}&amp;rsquo;)$.&lt;/p&gt;
+\[T_0=-2(K+\check{h})d+\Omega.\]&lt;p&gt;Then,&lt;/p&gt;
+\[[x^{(m)},T_0]=[x^{(m)},2(K+\check{h})d_0]=2(K+\check{h})mx^{(m)},\]&lt;p&gt;
+for $[K+\check{h},x^{(m)}]=0$.&lt;/p&gt;
+&lt;p&gt;Secondly, we could check (on Pad) that&lt;/p&gt;
+\[T_j=\frac{1}{j}[d_j,T_0],j\neq 0\]&lt;p&gt;Then, (By one Jacobi identity on Pad)&lt;/p&gt;
+\[[x^{(m)},T_j]=2(K+\check{h})mx^{(m+j)}.\]&lt;p&gt;For (b), there are&lt;/p&gt;
+\[\begin{align*}
+    T_0(v)&amp;=(\sum_i u_iu^i+2\sum_{n=1}^{\infty}\sum_i u_i^{(-n)}u^{i(n)})v\\
+    &amp;=(\sum_i u_iu^i) v\\
+    &amp;=(\sum h_ih^i+2\nu^{-1}(\rho))v\\
+    &amp;=(\langle\lambda,h_i\rangle\langle\lambda,h^i\rangle+2(\lambda|\rho))v\\
+    &amp;=finish.
+\end{align*}\]&lt;p&gt;And then, we shall calculate the Lie brackets of Sugawara operators. There are&lt;/p&gt;
+\[\begin{align*}
+    [T_m,T_n]&amp;=\sum_{j\in\mathbb{Z}}\sum_i[u_i^{(-j)}u^{i(m+j)},T_n]\\
+    &amp;=\sum_{j\in\mathbb{Z}}\sum_iu_i^{(-j)}[u^{i(m+j)},T_n]+[u_i^{(-j)},T_n]u^{i(m+j)}\\
+    &amp;=2(K+\check{h})\sum_{j\in \mathbb{Z}}\sum_i((m+j)u^{(-j)}u^{i(m+j+n)}-ju_i^{-j+n}u^{i(m+j)}).
+\end{align*}\]&lt;p&gt;replace $j$ by $j+n$ we obtain:&lt;/p&gt;
+\[[T_m,T_n]=2(K+\check{h})\sum_{j\in\mathbb{Z}}\sum_i(m-n)u_i^{(-j)}u^{i(m+n-j)}.\]&lt;p&gt;Thus, for $m+n\neq 0,m,n\neq 0$, we have&lt;/p&gt;
+\[[T_m,T_n]=2(K+\check{h})(m-n)T_{m+n}.\]&lt;p&gt;Note that, for $m=0$ or $n=0$, $m+n\neq 0$, we can still assume $n=0$ an perform the same argument.&lt;/p&gt;
+&lt;p&gt;It left to argue that $m+n=0$. Here, we shall assume $m\neq 0$. Then&lt;/p&gt;
+\[T_m=\sum_{j\geq 0}u_i^{(-j)}u^{i(j+m)}+\sum_{j&gt; 0}u_i^{(-j+m)}u^{i(j)}.\]\[\begin{align*}
+    [T_m,T_{-m}]&amp;=\sum_i [u_iu^{i(m)},T_{-m}]+\sum_{j&gt;0} \sum_i [u_i^{(-j)}u^{i(j+m)}+u_i^{(-j+m)}u^{i(j)},T_{-m}]\\
+    &amp;=2(K+\check{h})m\overset{\circ}{\Omega}+2(K+\check{h}(j+m)u_i^{(-j)}-ju_i^{-j-m}u^{i(j+m)})\\
+    &amp;\ \ +ju_i^{(-j+m)}u^{i(j-m)}+(m-j)u_i^{(-j)}u^{i(j)})\\
+    &amp;=2(K+\check{h})(mT_0+\sum_{j&gt;0}ju_i^{(-j+m)}u^{i(j-m)}-\sum_{j&gt;0} ju_i^{-j-m}u^{i(j+m)}).
+\end{align*}\]&lt;p&gt;And then, it equals to, by replace $j$ by $j+m$ in the first and $j$ by $j-m$, we obtain that (don&amp;rsquo;t want to copy kk)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Jinbz-ayaka.github.io/p/pre.-prep.-3/pp1.jpg&#34;
+	width=&#34;934&#34;
+	height=&#34;372&#34;
+	srcset=&#34;https://Jinbz-ayaka.github.io/p/pre.-prep.-3/pp1_hu_63e7efe85ab3672b.jpg 480w, https://Jinbz-ayaka.github.io/p/pre.-prep.-3/pp1_hu_9abe2484162b90f.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;251&#34;
+		data-flex-basis=&#34;602px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;And there are $\sum_{j=0}^{m-1}j(m-j)=(m^3-m)/6$, there are&lt;/p&gt;
+\[[T_m,T_n]=2(K+\check{h})((m-n)T_{m+n}+\delta_{m,-n}\frac{m^3-m}{6}(\dim\overset{\circ}{\mathfrak{g}})K).\]&lt;p&gt;Now,(cor 12.8) by the above, for $V$ restricted $\mathfrak{g}&amp;rsquo;$-mod, $K$ scalar operator $kI$ with $k\neq \check{h}$, take&lt;/p&gt;
+\[L_n=\frac{1}{2(k+\check{h})}T_n,n\in\mathbb{Z},\]\[c(k)=\frac{k(\dim\overset{\circ}{\mathfrak{g}})}{k+\check{h}},\]\[h_{\lambda}=\frac{(\Lambda+2\rho|\Lambda)}{2(k+\check{h})}, V=L(\Lambda).\]&lt;p&gt;a) Letting&lt;/p&gt;
+\[d_n\mapsto L_n,c\mapsto c(k)\]&lt;p&gt;extends $V$ to a module over $\mathfrak{g}&amp;rsquo;+Vir$ ($\mathfrak{g}&amp;rsquo;\rtimes  Vir$). In particular, $V$ extends to a module over $\mathfrak{g}=\mathfrak{g}&amp;rsquo;+\mathbb{C} d$ by $d\mapsto -L_0$.&lt;/p&gt;
+&lt;p&gt;b) If $V$ is the $\mathfrak{g}$-mod $L(\Lambda)$, $L_0=h_\Lambda I-d$.&lt;/p&gt;
+&lt;p&gt;$c(k)$: corformal anomaly of the $\mathfrak{g}&amp;rsquo;$-mod $V$,&lt;/p&gt;
+&lt;p&gt;$h_\Lambda:$ vacuum anomaly of $L(\Lambda)$.&lt;/p&gt;
+&lt;p&gt;For nontwisted affine algebra $\mathfrak{g}$ we have the &amp;ldquo;strange&amp;rdquo; formula of Freudenthal-de Vries:&lt;/p&gt;
+\[\frac{|\bar{\rho}|^2}{2\check{h}}=\frac{\dim \overset{\circ}{\mathfrak{g}}}{24}.\]&lt;p&gt;($\bar{\rho}=\rho-h^\vee\Lambda_0$, with $\Lambda_0$ the fundamental weight corresponds to $\alpha_0^\vee$, the simple imaginary root).&lt;/p&gt;
+&lt;p&gt;For the so-called modular anomaly,&lt;/p&gt;
+\[m_{\Lambda}=\frac{|\Lambda+\rho|^2}{2(k+h^{\vee})}-\frac{|\rho|^2}{2h^\vee},\]\[m_\Lambda=h_\Lambda-\frac{1}{24}c(k).\]&lt;p&gt;Prop 12.8: $V$ restricted $\mathfrak{g}&amp;rsquo;$-mod with a non-deg contravariant Hermitian form. Then the operator $T_n$ and $T_{-n}$ are adjoint w.r.t. the form.&lt;/p&gt;
+&lt;p&gt;recall $w_0:e_i\mapsto f_i,f_i\mapsto -e_i,h\mapsto -h$ for $h\in \mathfrak{h}_\mathbb{R}$ the compact involution, with $\mathfrak{l}(A)$ the fixed point set of $\mathfrak{g}(A)$.&lt;/p&gt;
+&lt;p&gt;There are $(\cdot|\cdot)$ is negative def. on $\overset{\circ}{\mathfrak{l}}$. Then we choose $v_i$ s.t. $(v_i|v_j)=-\delta_{ij}$, then for $u_i=\sqrt{-1}v_i$, there are $u_i=u^i$, $w_0(u_i)=-u_i$, thus $w_0(u_i(n))=-u_i(n)$ and thus the contravariant Hemitian form $H$ means that&lt;/p&gt;
+\[H(g(x),y)=-H(x,w_0(g)y).\]&lt;p&gt;Finishes the proof.&lt;/p&gt;
+&lt;p&gt;The last remark is for, $\circ{\mathfrak{g}}_\mathbb{R}$ f.d. v.s. over $\mathbb{R}$ with p.d. bilinear form $(\cdot|\cdot)$, $\overset{\circ}{\mathfrak{g}}$ complexification, $(\cdot|\cdot)$ extend by bilinearity. Take $h^\vee=0$ we have&lt;/p&gt;
+\[c(k)=\dim \overset{\circ}{\mathfrak{g}},h_\Lambda=\frac{(\Lambda|\Lambda)}{2k}\]&lt;p&gt;with $k=\langle\Lambda,K\rangle$ the level of $V$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Jinbz-ayaka.github.io/p/pre.-prep.-3/pp2.jpg&#34;
+	width=&#34;939&#34;
+	height=&#34;304&#34;
+	srcset=&#34;https://Jinbz-ayaka.github.io/p/pre.-prep.-3/pp2_hu_21a077657a50d9f8.jpg 480w, https://Jinbz-ayaka.github.io/p/pre.-prep.-3/pp2_hu_8bb4dcf56a1cd1f2.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;308&#34;
+		data-flex-basis=&#34;741px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;where $\delta|_{\mathfrak{h}+C}=0, \langle\delta,d\rangle=1, \phi(q)=\prod_{n=1}^{\infty}(1-q^{n})$, $\chi_\Lambda$ normalized character.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;做这个 pre. 主要是下个学期要学共形场论了. 也许现在应该先打打基础()&lt;/p&gt;
+&lt;p&gt;这个 Sugawara operator 挺重要的.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其八 P183-192</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%85%AB-p183-192/</link>
         <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
