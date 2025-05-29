@@ -7,7 +7,76 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 27 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其九 P193-199</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B9%9D-p193-199/</link>
+        <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B9%9D-p193-199/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B9%9D-p193-199/sf.jpg" alt="Featured image of post CG饲养日记-其九 P193-199" /&gt;&lt;p&gt;我现在满脑子都是&lt;/p&gt;
+&lt;p&gt;🍋那一天的忧郁 忧郁起来💪💪💪&lt;/p&gt;
+&lt;p&gt;🍋那一天的寂寞 寂寞起来💪💪💪&lt;/p&gt;
+&lt;p&gt;连同着迷这个😡炎炎夏日☀万般滋味🔥那个你🥵&lt;/p&gt;
+&lt;p&gt;可能人类饮食的发展就注定了, 人总是会被石吸引.&lt;/p&gt;
+&lt;p&gt;Beyond, 这词比我日推里的某些缺乏职业道德的古风歌曲都晦涩难懂.&lt;/p&gt;
+&lt;p&gt;↑当然不是说我 description 里的那首. 那首是我爹.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;开工!&lt;/p&gt;
+&lt;p&gt;fix $n,d$, 我们现在来考虑 $\mathfrak{sl}_n$, 线性空间 $\mathbb{C}^d$. 考虑 $n$-step partial flag $F$ given by seq. $0=F_0\subset F_1\subset \cdots\subset F_n\subset \mathbb{C}^d$. 不难看出 $\mathcal{F}$ 包含连通分支 $\mathcal{F}_{\vec{d}}$, with&lt;/p&gt;
+\[\vec{d}=(d_1+\cdots+d_n=d).\]&lt;p&gt;每一个 $d_i$ 在 $0\leq d_i\leq d$ 中选取.&lt;/p&gt;
+\[\mathcal{F}_{\vec{d}}=\{0=F_0\subset F_1\subset \cdots\subset F_n\subset \mathbb{C}^d|\dim F_i/F_{i-1}=d_i\}.\]&lt;p&gt;好, 你可以看出这些 argument 有点像 3.x 里面的 $\mathcal{B}$ 论断. 那, 我们自然地想去搞 $\mathcal{B}\implies\mathcal{N}\implies \tilde{\mathcal{N}}\implies Z$. 我们定义 $N={x:\mathbb{C}^d\to \mathbb{C}^d|x^n=0}$, $M={(x,F)|x(F_i)\subset F_{i-1}}$.&lt;/p&gt;
+&lt;p&gt;于是, 有 natural morph $N\overset{\mu}{\leftarrow}M\overset{\pi}{\rightarrow}\mathcal{F}$. 比较容易看出, 这个 commute with 其上自然的 $\operatorname{GL}_d(\mathbb{C})$-action.&lt;/p&gt;
+&lt;p&gt;我们有这样的prop, 可以看出他几乎可以 follows by arguments of flag var. case&lt;/p&gt;
+&lt;p&gt;Prop 4.1.2: There is a natural $\operatorname{GL}_d(\mathbb{C})$-equiv vector bundle isom&lt;/p&gt;
+\[M\simeq T^\ast\mathcal{F}\]&lt;p&gt;making the map $\pi$ into the canonical proj $T^\ast\mathcal{F}\to \mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;$\mathcal{F}=\sqcup \mathcal{F}_{\vec{d}}$ 给出了 $M=\sqcup M_{\vec{d}}$, $M_{\vec{d}}=T^\ast\mathcal{F}_{\vec{d}}$.&lt;/p&gt;
+&lt;p&gt;下面这个定理是从 Spaltenstein 的文章 The fixed pt. set of a nilpotent transf. on the flag mfd. 中来的&lt;/p&gt;
+&lt;p&gt;Lemma 4.1.3: $x\in N$, then $\mathcal{F}_x\cap \mathcal{F}_{\vec{d}}$ (原文这里是 typo) is a conn. var. of pure dim. and&lt;/p&gt;
+\[\dim\mathbb{O}_x+2\dim (\mathcal{F}_x\cap \mathcal{F}_{\vec{d}})=2\dim \mathcal{F}_{\vec{d}}.\]&lt;p&gt;证明略去. 提一嘴, 这个证明并不能直接通过 3.3.25 的类似方法完成. 哲学上讲, 这是因为 parabolic subgp 与 Borel subgp 不一样导致的().&lt;/p&gt;
+&lt;p&gt;Lemma 4.1.4: $#\operatorname{GL}_d(\mathbb{C})$-diag orbits on $\mathcal{F}\times \mathcal{F}$ is finite.&lt;/p&gt;
+&lt;p&gt;这是因为我们有 surj. $\operatorname{GL}_d(\mathbb{C})$-equiv map $\mathcal{B}\twoheadrightarrow \mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;$x\in N,\mathcal{F}_x=\mu^{-1}(x)$. 现在, 我们可以定义&lt;/p&gt;
+\[Z=M\times_NM\subset M\times M=T^\ast\mathcal{F}\times T^\ast\mathcal{F}\overset{sign}{=}T^\ast(\mathcal{F}\times\mathcal{F}).\]&lt;p&gt;Prop 4.1.6: $Z$ is the union of conormal bundles to all $\operatorname{GL}_d(\mathbb{C})$-orbits in $\mathcal{F}\times\mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;Cor 4.1.7: $Z\circ Z=Z$, in particular&lt;/p&gt;
+&lt;p&gt;a) $H_\ast(Z)$ is an associate alg with unit.&lt;/p&gt;
+&lt;p&gt;b) $H_\ast(\mathcal{F}&lt;em&gt;x)$ is an $H&lt;/em&gt;\ast(Z)$-mod, for any $x\in N$.&lt;/p&gt;
+&lt;p&gt;注意, $\mathcal{F}$ 和 $\mathcal{B}$ 有一个本质区别: 前者不是联通的, 且 $\mathcal{F}$ 和 $Z$ 的 irr comp. 的 dim 可以变化非常大. 但, 根据 4.1.6, 我们依然有&lt;/p&gt;
+&lt;p&gt;Cor 4.1.8: $Z^\alpha$ irr. component of $Z$ contained in $M_{d_1}\times M_{d_2}$ for the $n$-step partitions $d_1,d_2$ of $d$, then&lt;/p&gt;
+\[\dim Z^{\alpha}=\frac{1}{2}\dim(M_{\vec{d}_1}\times M_{\vec{d}_2}).\]&lt;hr&gt;
+&lt;p&gt;それから, 我们要 $H(Z)$, 热血在燃烧!&lt;/p&gt;
+&lt;p&gt;$H(Z)$ 有一个问题是, 没有统一的 $\dim$ over $Z$. 我们考虑所有 irr. component 对应的 fundamental classes 构成的 $H_\ast(Z)$ 之子空间 $H(Z)$, 以及 构成的 $H_\ast(\mathcal{F}_x)$ 之子空间 $H(\mathcal{F}_x)$&lt;/p&gt;
+&lt;p&gt;Cor 4.1.10: $H(Z)$ 是 $H_\ast(Z)$ 的 subalg.&lt;/p&gt;
+&lt;p&gt;这是因为, 每一个 fundamental classes, 根据 4.1.8, 都是 middle dim 的. 以及&lt;/p&gt;
+&lt;p&gt;Prop 4.1.11: $H(\mathcal{F}_x)$ is an $H(Z)$-stable subspace of $H_\ast(\mathcal{F}_x)$.&lt;/p&gt;
+&lt;p&gt;Follows from 4.1.3.&lt;/p&gt;
+&lt;p&gt;我们的 main theorem 是,&lt;/p&gt;
+&lt;p&gt;Theorem 4.1.12: There is a natural surj. alg. homo.&lt;/p&gt;
+\[U(\mathfrak{sl}_n(\mathbb{C}))\twoheadrightarrow H(Z).\]&lt;p&gt;4.1.13 是说, 这是想复刻 $H(Z)\simeq \mathbb{Q}[W]$. 但我们做不到这么好: 前者是无穷维的, 而后者拥有有限 irr comp.&lt;/p&gt;
+&lt;p&gt;我们想要给出证明: 注意接下来这些实际上就接近几何表示论的 argument 了.&lt;/p&gt;
+&lt;p&gt;我们 Set 所谓的 Chevalley generators $S={e_{\alpha},f_{\alpha},h_{\alpha}|\alpha=1,\cdots,n-1}$. 熟悉 Kac-Moody argument 的人应该很快能将它对应到, 比方说, 矩阵上. 他们 generate 了 $\mathfrak{sl}_n$.&lt;/p&gt;
+&lt;p&gt;我们要将它几何地对应到 $H(Z)$ 里. 考虑&lt;/p&gt;
+\[\Theta:S\to H(Z).\]&lt;p&gt;首先处理 $h_{\alpha}$, 对于 diag subvar. $\Delta\hookrightarrow \mathcal{F}_{\vec{d}}\times \mathcal{F}_{\vec{d}}$, 我们考虑&lt;/p&gt;
+\[\Theta:h_\alpha\mapsto \sum_{\vec{d}}(d_{\alpha}-d_{\alpha+1})[T^\ast_{\Delta}(\mathcal{F}_{\vec{d}}\times \mathcal{F}_{\vec{d}})].\]&lt;p&gt;这里的 $T^\ast_{\Delta}(\mathcal{F}_{\vec{d}}\times \mathcal{F}_{\vec{d}})\subset Z$ by 先前的&lt;/p&gt;
+\[Z=M\times_NM\subset M\times M=T^\ast\mathcal{F}\times T^\ast\mathcal{F}\overset{sign}{=}T^\ast(\mathcal{F}\times\mathcal{F}).\]&lt;p&gt;我们记 $\P$ 为所有 $d$ 的 $n$ 次 partition. 我们可以将这个 partition 真的想象成一个 partition, 也就是说, $\vec{d}=d_1+\cdots+d_n$, 将 $[1,d]$ 分割成 $[1,d_1],[d_1+1,d_1+d_2],\cdots$. 我们定义 maps&lt;/p&gt;
+\[\P\to \P\cup \{\nabla\}.\]&lt;p&gt;他这个 $\nabla$ 是传说中的 &amp;ldquo;ghost&amp;rdquo; partition, 一个盘旋在这些 partition 上的符号. 对于 $\vec{d}$, 定义&lt;/p&gt;
+\[\vec{d}_{\alpha}^+=d_1+\cdots+d_{\alpha-1}+(d_\alpha+1)+(d_{\alpha+1}-1)+d_{\alpha+2}+\cdots+d_n,\]\[\vec{d}_{\alpha}^-=d_1+\cdots+d_{\alpha-1}+(d_\alpha-1)+(d_{\alpha+1}+1)+d_{\alpha+2}+\cdots+d_n.\]&lt;p&gt;如果这些 mapping 把某个 $d_{\alpha}$ 或是 $d_{\alpha+1}$ 变到了 $-1$, 那么我们定义其为这个 ghost partition.&lt;/p&gt;
+&lt;p&gt;对于 $\vec{d}$, 如果 $\vec{d}_{\alpha}^+\neq \nabla$ (resp. $\vec{d}_{\alpha}^-\neq \nabla$), 我们定义一个 $\mathcal{F}_{\vec{d}_{\alpha}^+}\times \mathcal{F}_{\vec{d}}$ 与 $\mathcal{F}_{\vec{d}_{\alpha}^-}\times \mathcal{F}_{\vec{d}}$ 的 subset as follows:&lt;/p&gt;
+\[Y_{\vec{d}_{\alpha}^+,\vec{d}}=\left\{(F,F&#39;)\in \mathcal{F}_{\vec{d}_{\alpha}^+}\times \mathcal{F}_{\vec{d}}|F_i=F_{i}&#39;,\forall i\neq \alpha,F&#39;\alpha\subset F_\alpha, \dim(F_{\alpha}/F&#39;_{\alpha})=1\right\},\]\[Y_{\vec{d}_{\alpha}^-,\vec{d}}=\left\{(F,F&#39;)\in \mathcal{F}_{\vec{d}_{\alpha}^-}\times \mathcal{F}_{\vec{d}}|F_i=F_{i}&#39;,\forall i\neq \alpha,F&#39;\alpha\subset F_\alpha, \dim(F&#39;_{\alpha}/F_{\alpha})=1\right\}.\]&lt;p&gt;可以发现, $Y_{\vec{d}_{\alpha}^+,\vec{d}}$ 确实是 closed under $G=\operatorname{GL}_n(\mathbb{C})$ 的, in particular, 他是一个 single $G$-orbit in $\mathcal{F}_{\vec{d}_{\alpha}^\pm}\times \mathcal{F}_{\vec{d}}$.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $\vec{c}=\vec{d}_{\alpha}^+$, 有 $(\vec{d}_{\alpha}^+,\vec{d})$ 恰等于 $(\vec{c}_\alpha^-,\vec{c})$ that switching the order of factor. 也就是说,&lt;/p&gt;
+\[Y_{\vec{d}_{\alpha}^+,\vec{d}}=Y_{\vec{d},\vec{c}}, \text{ under }\mathcal{F}_{\vec{d}}\times \mathcal{F}_{\vec{c}}\overset{\sim}{\to} \mathcal{F}_{\vec{c}}\times \mathcal{F}_{\vec{d}}.\]&lt;p&gt;我们 write $Y_{\vec{c},\vec{d}}=(Y_{\vec{d},\vec{c}})^t$ transpose, 同样的 $T^\ast_{Y_{\vec{c},\vec{d}}}(\mathcal{F}_{\vec{c}}\times \mathcal{F}_{\vec{d}})$ transpose to $T^\ast_{Y_{\vec{d},\vec{c}}}(\mathcal{F}_{\vec{d}}\times \mathcal{F}_{\vec{c}})$.&lt;/p&gt;
+&lt;p&gt;于是我们给出&lt;/p&gt;
+\[e_{\alpha}\mapsto \sum_{\vec{d}}[T^\ast_{Y_{\vec{d}^+_\alpha,\vec{d}}}(\mathcal{F}_{\vec{d}^+_\alpha}\times \mathcal{F}_{\vec{d}})],\]\[f_{\alpha}\mapsto \sum_{\vec{d}}[T^\ast_{Y_{\vec{d}^-_\alpha,\vec{d}}}(\mathcal{F}_{\vec{d}^-_\alpha}\times \mathcal{F}_{\vec{d}})].\]&lt;p&gt;你可以看出后者实际上就是前者的 transpose. 这个就给出了整个 $\Theta:S\to H(Z)$. 我们在后面会给出他 uniquely extended to surj hom. $U(\mathfrak{sl}_n(\mathbb{C}))\twoheadrightarrow H(Z)$ 的证明. 但在现在, 我们先看一下他的性质.&lt;/p&gt;
+&lt;p&gt;Prop 4.1.21: (a) $H(Z)$ f.d., s.s. associative alg. with unit.&lt;/p&gt;
+&lt;p&gt;(b) $H(\mathcal{F}_x)$ and $H(\mathcal{F}_y)$ isom as $H(Z)$-mod iff $x,y$ conj. by $\operatorname{GL}_d(\mathbb{C})$.&lt;/p&gt;
+&lt;p&gt;(a) trivial. (b) the &amp;ldquo;if&amp;rdquo; side is trivial, only if side holds by 4.1.23.&lt;/p&gt;
+&lt;p&gt;Remark 4.1.22 是说, $H(Z)$ s.s. 的性质是一个很几何的性质, 等到第8章才会讨论.&lt;/p&gt;
+&lt;p&gt;Theorem 4.1.23: The collection ${H(\mathcal{F}_x)}$ as $x$ runs over representatives of the $\operatorname{GL}_d(\mathbb{C})$-conj. classes in $N$ is a complete collection of the isom classes of simple $H(Z)$-mods.&lt;/p&gt;
+&lt;p&gt;这就是 3.5.7. 回忆 &lt;a class=&#34;link&#34; href=&#34;https://Jinbz-ayaka.github.io/p/cg%e9%a5%b2%e5%85%bb%e6%97%a5%e8%ae%b0-%e5%85%b6%e5%85%ad-p168-175/&#34; &gt;CG饲养日记-其六&lt;/a&gt;, 实际上&lt;/p&gt;
+\[3.5.5+3.5.6\implies 3.5.7.\]&lt;p&gt;3.5.6 by 4.1.21.(a). 3.5.5 是因为 $e_{\alpha}\leftrightarrow f_{\alpha}, h_{\alpha}\leftrightarrow h_{\alpha}$ 是一个 &lt;strong&gt;anti&lt;/strong&gt;-involution that compactible with &lt;strong&gt;anti&lt;/strong&gt;-involution on $Z$, by 前面那个 transpose 的论断.&lt;/p&gt;
+&lt;p&gt;我们有这个 anti-involution $\implies 3.5.5$. 证毕.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>pre. prep. 3</title>
         <link>https://Jinbz-ayaka.github.io/p/pre.-prep.-3/</link>
         <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
