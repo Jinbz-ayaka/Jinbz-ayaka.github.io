@@ -7,7 +7,68 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十一 P214-222</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80-p214-222/</link>
+        <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80-p214-222/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80-p214-222/buyayi.jpg" alt="Featured image of post CG饲养日记-其十一 P214-222" /&gt;&lt;p&gt;这两篇谁会在上面呢?&lt;/p&gt;
+&lt;p&gt;不知道() 希望顺序是对的&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;准备开 4.4, 他讲的是 Stabilization. 我也不知道这是个啥()&lt;/p&gt;
+&lt;p&gt;首先先在 $d$ 的划分上定义 $\geq$, $d\geq d&amp;rsquo;$ 如果&lt;/p&gt;
+\[d_1\geq d_1&#39;,d_1+d_2\geq d_1&#39;+d_2&#39;,\cdots\]&lt;p&gt;注意每一个划分定义了一个 $\mathbb{O}$ conj. class, 有&lt;/p&gt;
+&lt;p&gt;Lemma 4.4.1:&lt;/p&gt;
+\[\mathbb{O}\geq \mathbb{O}&#39;\iff \overline{\mathbb{O}}\supset \mathbb{O}&#39;.\]&lt;p&gt;我们还有一个直接计算得到的结论:&lt;/p&gt;
+&lt;p&gt;Lemma 4.4.2: $x$ nilp. $d\times d$-mat. with Jordan blocks of sizes $d_1\geq \cdots$, then $\dim Z(x)=d_1+3d_2+5d_3+\cdots$.&lt;/p&gt;
+&lt;p&gt;回忆之前定义的 $N_d,M_d,Z_d$, $N_d={x:\mathbb{C}^d\to \mathbb{C}^d|x^n=0}$. 有&lt;/p&gt;
+&lt;p&gt;Cor 4.4.3: $N_d$ is irr. var.&lt;/p&gt;
+&lt;p&gt;这是因为, 取 $\mathbb{O}$ 对应 $d=n+n+\cdots+n+r$, 对任意 $x\in N_d$, $x$ 对应划分 $d&amp;rsquo;$, 有 $d\geq d&amp;rsquo;$, 从而 $N_d=\overline{\mathbb{O}}$.&lt;/p&gt;
+&lt;p&gt;现在对一组 fixed basis of $\mathbb{C}^n$, take $e$ 对应 $n\times n$ Jordan block. 我们需要考虑 embedding&lt;/p&gt;
+\[i:\mathfrak{gl}_d(\mathbb{C})\to \mathfrak{gl}_{d+n}(\mathbb{C}),x\mapsto x\oplus e.\]&lt;p&gt;对于 $\mathbb{O}\ni x$, take $\mathbb{O}^\dagger\ni i(x)$.&lt;/p&gt;
+&lt;p&gt;Lem 4.4.4:&lt;/p&gt;
+&lt;p&gt;(1) $\mathbb{O}^\dagger \cap i(N_d)=i(\mathbb{O})$,&lt;/p&gt;
+&lt;p&gt;(2) $\mathbb{O}^\dagger &amp;lt;\mathbb{O}&amp;rsquo;\iff \mathbb{O}&amp;rsquo;=(\mathbb{O}_1)^\dagger$ for some $\mathbb{O}_1\subset N_d,\mathbb{O}&amp;lt;\mathbb{O}_1$.&lt;/p&gt;
+&lt;p&gt;set-theoretical 地可以 check 这个 lemma. 接下来这个 lemma 很重要&lt;/p&gt;
+&lt;p&gt;Lemma 4.4.5:&lt;/p&gt;
+\[\dim \mathbb{O}_1-\dim\mathbb{O}_2=\dim \mathbb{O}_1^\dagger-\dim \mathbb{O}_2^\dagger.\]&lt;p&gt;这个实际上就是说, $-\dim \mathbb{O}+\dim \mathbb{O}^\dagger$ 与 $\mathbb{O}$ 的选取无关. 这个直接计算就可, 利用 4.4.2 中对于 centre 的控制. 有&lt;/p&gt;
+\[-\dim \mathbb{O}+\dim \mathbb{O}^\dagger=(2d+n)(n-1).\]&lt;p&gt;现在, 对于 $x\in \mathbb{O}\subset N_d$, 取 3.7 我们给的 triple,&lt;/p&gt;
+\[\gamma:\mathfrak{sl}_2(\mathbb{C})\to \mathfrak{gl}_d(\mathbb{C}), \gamma(e)=x.\]&lt;p&gt;我们可以取 $x+\mathfrak{s}$ 先前提到过的 transversal slide at $x$ to the orbit $\mathbb{O}$, 取 $S=(x+\mathfrak{s})\cap N_d$, 有&lt;/p&gt;
+&lt;p&gt;Lemma 4.4.8: $S$ is irreducible.&lt;/p&gt;
+&lt;p&gt;考虑 $\mu:M_d\to N_d$, $N_d$ irr. $\implies \exists M_{\vec{d}},\mu(M_{\vec{d}})=N_d\implies$ for $\hat{S}=\mu^{-1}(S)\cap M_{\vec{d}}$, $\hat{S}$ contracts to $\mathcal{F}_{\vec{d},x}$ is connected. $\implies \hat{S}$ smooth conn. var. $\implies$ $S$ irr.&lt;/p&gt;
+&lt;p&gt;对于 $x$, 我们可以 set $i(x)+\mathfrak{s}^\dagger$ standard transversal slide 与 $S^\dagger=N_{d+n}\cap(i(x)+\mathfrak{s}^\dagger)$.&lt;/p&gt;
+&lt;p&gt;Prop 4.4.9: given $\mathbb{O}\subset N_d$, 与 $S$ corresp. var., 有 $i(S)=S^\dagger$. Furthermore 对任意 $\mathbb{O}_1\subset N_d$, 有&lt;/p&gt;
+\[i(S\cap \mathbb{O}_1)=S^\dagger\cap \mathbb{O}_1^\dagger.\]&lt;p&gt;首先对 $\mathbb{O}_1$ unique open dense conj class 说明, 然后通过维数计算说明 $\dim i(S)=\dim S=\dim \mathbb{O}_1-\dim \mathbb{O}$. 再根据 $S^\dagger$ irr 推出 $i(S)=S^\dagger$. 利用&lt;/p&gt;
+\[S=\sqcup_\alpha (S\cap \mathbb{O}_\alpha),S^\dagger=\sqcup_\alpha (S^\dagger\cap \mathbb{O}_\alpha^\dagger).\]&lt;p&gt;得到&lt;/p&gt;
+\[\sqcup_\alpha i(S\cap \mathbb{O}_\alpha)=\sqcup_\alpha (S^\dagger\cap \mathbb{O}_\alpha^\dagger).\]&lt;p&gt;从而得证.&lt;/p&gt;
+&lt;p&gt;根据 445, 我们有&lt;/p&gt;
+\[\dim\mathbb{O}_{i(0)}=\dim N_{d+n}-\dim N_d.\]&lt;p&gt;Thm 4.4.16: There exists an open nbhd $U\subset N_{d+n}$ of $i(N_d)$ s.t. there is a strata preserving isom.&lt;/p&gt;
+\[U\simeq (\mathbb{O}_{i(0)}\cap U)\times i(N_d).\]&lt;p&gt;这是因为 by 3.2.23,&lt;/p&gt;
+\[U\simeq (\mathbb{O}_{i(0)}\cap U)\times (S^\dagger\cap U).\]&lt;p&gt;而 $S^\dagger=i(S)=i(N_d)$. 由于我们有 $\mathbb{C}^*$ 作用于 $N_d$ 上, 在 $0$ 附近的 nbhd 实际上可以由整个 global nbhd 代替. 因此可以取 $i(N_d)\subset U$, 得证.&lt;/p&gt;
+&lt;p&gt;他的意思是, 我们希望考虑这样一个 limit of $N_d$, $d\to 0$. fix&lt;/p&gt;
+\[\mathbb{C}^{r+\infty}=\mathbb{C}^r\times \prod_{j=0}^\infty \mathbb{C}^n.\]&lt;p&gt;有 s.e.s.&lt;/p&gt;
+\[0\to \Gamma^k\to \mathbb{C}^{r+\infty}\to \mathbb{C}^{r+kn}\to 0.\]&lt;p&gt;with $\Gamma^k=\prod_{j\geq k}^\infty\mathbb{C}^n$. The space form a decreasing seq $\Gamma^0\supset \Gamma^1\supset\cdots$, $\cap \Gamma^k=0$.&lt;/p&gt;
+&lt;p&gt;有 comm diag (也许可以省略掉?).&lt;/p&gt;
+&lt;p&gt;定义 infinite linear group&lt;/p&gt;
+\[GL_{r+\infty}=\{g\in GL(\mathbb{C}^{r+\infty})|\exists k=k(g),g|_{\Gamma^k}=Id_{\Gamma^k}\}.\]&lt;p&gt;有&lt;/p&gt;
+\[GL_{r+\infty}=\varinjlim GL_{r+k\cdot n}.\]&lt;p&gt;Take&lt;/p&gt;
+\[e_{\Gamma^k}=\prod_{j\geq k}^\infty e\in \operatorname{End}\Gamma^k.\]&lt;p&gt;同样地, set&lt;/p&gt;
+\[N_{r+\infty}=\{x\in \operatorname{End}(\mathbb{C}^{r+\infty})|\exists k=k(x),x|_{\Gamma^k}=e_{\Gamma^k}\}.\]&lt;p&gt;有&lt;/p&gt;
+\[N_{r+\infty}=\varinjlim N_{r+k\cdot n}.\]&lt;p&gt;我们希望找到一个 $GL_{r+\infty}$-orbits 的 paraetrization.&lt;/p&gt;
+&lt;p&gt;Defn 4.4.21: 一个可数集合 $I$ 称作一个 Dirac sea 如果:&lt;/p&gt;
+&lt;p&gt;(1) Any element of $I$ is an integer $1,2,\cdots,n$ and all but finitely many elements of $I$ are equals to $n$,&lt;/p&gt;
+&lt;p&gt;(2) For any sufficiently large finite set $p_1,\cdots,p_m\in I$ we have $p_1+\cdots+p_m\equiv r[n]$.&lt;/p&gt;
+&lt;p&gt;定义 $S_r$ 为 Dirac seas 构成的集合. 可以想象一个 Dirac sea 可以实现到某个对应的 $N_{r+\infty}$ 里的元素, 每一个对应 Dirac sea 里的元素 $i$ 对应了一个大小为 $i$ 的 Jordan Block. 对于 Dirac sea $I$, 我们可以定义 conj class $\mathbb{O}_I$. 同样地, 我们也可以在 $S_r$ 上定义偏序关系. 我们拥有极大元素 $I_{max}$ given by $(r,n,n,\cdots)$. 特别地, 对于一般的 $\mathbb{O}_I$, 取他的一个 large enough 集合. 他在 $N_d$ 上是 of finite codim 的. 而, 根据 445, 他在 $N_{r+\infty}$ 上也是 of finite codim 的! 因此我们给出了 $N_{r+\infty}$ 中 $x^n=0$ 元素的 finite-codim stratification.&lt;/p&gt;
+&lt;p&gt;同样地, 我们有&lt;/p&gt;
+\[\mathbb{O}_I\subset \overline{\mathbb{O}}_{I&#39;}\iff I\leq I&#39;.\]&lt;p&gt;我们可以考虑 finite dim 的 transversal slide $S$ of $i_d^{-1}(\mathbb{O}_I)$ in $N_d$, 记 $S_d(\mathbb{O}_I,\mathbb{O}_{I&amp;rsquo;})=S\cap i^{-1}_d(\mathbb{O}_{I&amp;rsquo;})$. 4.4.9 说明了这个和 $d$ 的选取无关, 也就是说, 后者实际上就是前者在 embedding 下的像. 因此我们可以在正向极限下考虑, 并把 $d$ 丢掉. 我们在 $N_{r+\infty}$ 上给出了 well-def. finite-dim structure in the directions transverse to the strata.&lt;/p&gt;
+&lt;p&gt;剩下的就是利用这个给出讨论了() 留到下次.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这章就 挺多的()&lt;/p&gt;
+&lt;p&gt;他一路到 230 了.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十 P199-214</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81-p199-214/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
