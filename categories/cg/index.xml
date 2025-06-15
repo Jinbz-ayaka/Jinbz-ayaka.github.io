@@ -7,7 +7,61 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十二 P222-226</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%8C-p222-226/</link>
+        <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%8C-p222-226/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%8C-p222-226/nbzdnydnt.png" alt="Featured image of post CG饲养日记-其十二 P222-226" /&gt;&lt;p&gt;1個　頂戴　ベイビー！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;还是不能两天不看数学()&lt;/p&gt;
+&lt;p&gt;总是要多拉扯拉扯, 马上有那个很好很好的暑校了&lt;/p&gt;
+&lt;p&gt;不稍稍打点基础感觉身上有神里绫华在爬()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;考虑 $M_{d}={(x,F)|x(F_j)\subset F_{j-1}}$. 我们自然有 proj. $\mu:M_d\to N_d$. 于是有 $\mathbb{F}=(0\subset \mathbb{C}\subset \mathbb{C}^2\subset \cdots\subset \mathbb{C}^n)$. 我们可以给出 $i:\mathcal{F}_d\hookrightarrow\mathcal{F}_{d+n}$ by&lt;/p&gt;
+\[F\mapsto F\oplus \mathbb{F}=(F_i\oplus\mathbb{F}_i).\]&lt;p&gt;那么, 实际上我们就可以给出来 embedding $i:M_d\hookrightarrow M_{d+n}$ by $(x,F)\mapsto (i(x),i(F)).$ 于是我们得到 commutative diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJNX2QiXSxbMiwwLCJNX3tkK259Il0sWzAsMiwiTl9kIl0sWzIsMiwiTl97ZCtufSJdLFswLDEsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIlxcbXUiLDFdLFsxLDMsIlxcbXUiLDFdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJNX2QiXSxbMiwwLCJNX3tkK259Il0sWzAsMiwiTl9kIl0sWzIsMiwiTl97ZCtufSJdLFswLDEsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIlxcbXUiLDFdLFsxLDMsIlxcbXUiLDFdXQ==&amp;embed&#34; width=&#34;442&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;而根据&lt;/p&gt;
+&lt;p&gt;lemma 4.4.23: $\forall x\in N_d$, $i(\mathcal{F}_x)=\mathcal{F}_{i(x)}$.&lt;/p&gt;
+&lt;p&gt;上述 diag 是一个 cartesian square.&lt;/p&gt;
+&lt;p&gt;这个 lemma 的证明是比较 set-theoretical 的, 会者不难().&lt;/p&gt;
+&lt;p&gt;于是, 我们可以将 $N_d$ 上的结论 lift 到 $M_d$ 上. 对于 $x\in N_d$ 我们可以考虑 $S$ standard transverse slice at $x$ to $\mathbb{O}$. Take $\tilde{S}=\mu^{-1}(S)\subset M_d$ inverse image in $M_d$, $\tilde{S}^\dagger$ inverse image of $S^\dagger$ in $M_{d+n}$. 有&lt;/p&gt;
+&lt;p&gt;Lemma 4.4.25: $i(\tilde{S})=\tilde{S}^\dagger$.&lt;/p&gt;
+&lt;p&gt;好, 接下来我们要研究 $Z$. take $U\subset N_{d+n}$ open nbhd of $i(N_d)$ by Thm 4.4.16, $\tilde{U}=\mu^{-1}(U)$, set $D=\mathbb{O}_{i(0)}\cap U$ small nbhd of point $i(0)$.&lt;/p&gt;
+&lt;p&gt;Prop 4.4.26: There is isom $\phi:\tilde{U}\simeq D\times M_d$ s.t. $i:m\mapsto (i(0),m)$ and $i:n\mapsto (i(0),n)$ make the upper diagram (4.4.22) isom. to&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJNX2QiXSxbMiwwLCJEXFx0aW1lcyBNX3tkfSJdLFswLDIsIk5fZCJdLFsyLDIsIkRcXHRpbWVzIE5fe2R9Il0sWzQsMCwiXFx0aWxkZXtVfSJdLFs0LDIsIntVfSJdLFswLDEsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIlxcbXUiLDFdLFsxLDMsIlxcb3BlcmF0b3JuYW1le2lkfVxcdGltZXNcXG11IiwxXSxbMyw1LCJcXHBzaSJdLFsxLDQsIlxccGhpIl0sWzQsNSwiXFxtdSIsMV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwwLCJNX2QiXSxbMiwwLCJEXFx0aW1lcyBNX3tkfSJdLFswLDIsIk5fZCJdLFsyLDIsIkRcXHRpbWVzIE5fe2R9Il0sWzQsMCwiXFx0aWxkZXtVfSJdLFs0LDIsIntVfSJdLFswLDEsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIlxcbXUiLDFdLFsxLDMsIlxcb3BlcmF0b3JuYW1le2lkfVxcdGltZXNcXG11IiwxXSxbMyw1LCJcXHBzaSJdLFsxLDQsIlxccGhpIl0sWzQsNSwiXFxtdSIsMV1d&amp;embed&#34; width=&#34;733&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;$\psi$ decomp. of the isom. in 4.4.16 and $N_d\to i(N_d)$.&lt;/p&gt;
+&lt;p&gt;证明是 direct followed by 4.4.16 的. 我们的最后一步是考虑 $Z_d=M_d\times_{N_d}M_d$. 由于 4.4.22 的 square, 有 natural cartesian square (4.4.27):&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJaX2Q9TV9kXFx0aW1lc197Tl9kfU1fZCJdLFsyLDAsIlpfe2Qrbn09TV97ZCtufVxcdGltZXNfe05fe2Qrbn19TV97ZCtufSJdLFsyLDIsIk1fe2Qrbn1cXHRpbWVzX3t9TV97ZCtufSJdLFswLDIsIk1fe2R9XFx0aW1lc197fU1fe2R9Il0sWzAsMywiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwyLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDFdLFszLDJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJaX2Q9TV9kXFx0aW1lc197Tl9kfU1fZCJdLFsyLDAsIlpfe2Qrbn09TV97ZCtufVxcdGltZXNfe05fe2Qrbn19TV97ZCtufSJdLFsyLDIsIk1fe2Qrbn1cXHRpbWVzX3t9TV97ZCtufSJdLFswLDIsIk1fe2R9XFx0aW1lc197fU1fe2R9Il0sWzAsMywiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwyLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDFdLFszLDJdXQ==&amp;embed&#34; width=&#34;879&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Cor 4.4.28: The diagram 4.4.27 is isom by the isom of Prop 4.4.26 to the diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJaX2Q9TV9kXFx0aW1lc197Tl9kfU1fZCJdLFsyLDAsIkRfXFxEZWx0YVxcdGltZXMgKE1fe2R9XFx0aW1lc197Tl97ZH19TV97ZH0pPVpfe2Qrbn1cXGNhcCAoXFx0aWxkZXtVfVxcdGltZXNcXHRpbGRle1V9KSJdLFsyLDIsIihEXFx0aW1lcyBEKVxcdGltZXMoTV97ZH1cXHRpbWVzX3t9TV97ZH0pIl0sWzAsMiwiTV97ZH1cXHRpbWVzX3t9TV97ZH0iXSxbMCwzLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMV0sWzMsMl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJaX2Q9TV9kXFx0aW1lc197Tl9kfU1fZCJdLFsyLDAsIkRfXFxEZWx0YVxcdGltZXMgKE1fe2R9XFx0aW1lc197Tl97ZH19TV97ZH0pPVpfe2Qrbn1cXGNhcCAoXFx0aWxkZXtVfVxcdGltZXNcXHRpbGRle1V9KSJdLFsyLDIsIihEXFx0aW1lcyBEKVxcdGltZXMoTV97ZH1cXHRpbWVzX3t9TV97ZH0pIl0sWzAsMiwiTV97ZH1cXHRpbWVzX3t9TV97ZH0iXSxbMCwzLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMV0sWzMsMl1d&amp;embed&#34; width=&#34;1053&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;好像前面没有介绍什么事 $D_\Delta$, 不过也许你可以直接看出来() $D$ 嵌入 $D\times D$ 的对角线.&lt;/p&gt;
+&lt;p&gt;Cor 4.4.29: The inverse image in $M_{d}\times M_d$ of an irred. component of the var. $Z_{d+n}$ is either empty or is an irred components of the var. $Z$.&lt;/p&gt;
+&lt;p&gt;设 $\Lambda&amp;rsquo;$ irr. 如果其与 $\tilde{U}\times \tilde{U}$ 不交, 其逆像为 $\emptyset$. 否则, $\Lambda&amp;rsquo;_U=\Lambda&amp;rsquo;\cap (\tilde{U}\times \tilde{U})$, $\Lambda_U^\dagger$ irr. component of $Z_{d+n}\cap(\tilde{U}\times \tilde{U})$. 根据 4.4.28, $\Lambda_U^\dagger\simeq D_\Delta\times \Lambda$, 因此 $\Lambda$ 且 $i^{-1}(\Lambda&amp;rsquo;)=\Lambda$.&lt;/p&gt;
+&lt;p&gt;现在, 回到 Borel-Moore hom. 的时候, recall $H(Y)$ subspace generated by irr. components. 由于 4.4.23 给出了&lt;/p&gt;
+\[\mathcal{F}_x\simeq \mathcal{F}_{i(x)},\]&lt;p&gt;他诱导了 natural isom $i^\ast:H(\mathcal{F}_{i(x)})\overset{\sim}{\to }H(\mathcal{F}_{x}).$&lt;/p&gt;
+&lt;p&gt;然后, square 4.4.27 给出了限制到 support 诱导的 morph.&lt;/p&gt;
+\[i^\ast:H_\ast(Z_{d+n})\to H_\ast(Z_d),i^\ast(c)=c\cap[M_d\times M_d].\]&lt;p&gt;而根据 4.4.28 我们给出了 $H(Z_{d+n})$ 到 $H(Z_d)$ 的映射. 于是, 我们可以 state the main result: Stabilization Theorem 了:&lt;/p&gt;
+&lt;p&gt;Theorem 4.4.30: (1) The morph. $i^\ast:H(Z_{d+n})\to H(Z_d)$ is an alg. homo. (w.r.t. the convolution product).&lt;/p&gt;
+&lt;p&gt;(2) For any $x\in N_d$ the following diag, whose vertical maps are given by the convolution action, commutes&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIKFpfe2Qrbn0pXFxvdGltZXMgSChcXG1hdGhjYWx7Rn1fe2koeCl9KSJdLFsyLDAsIkgoWl97ZH0pXFxvdGltZXMgSChcXG1hdGhjYWx7Rn1fe3h9KSJdLFswLDIsIkgoXFxtYXRoY2Fse0Z9X3tpKHgpfSkiXSxbMiwyLCJIKFxcbWF0aGNhbHtGfV97eH0pIl0sWzAsMiwiKiJdLFswLDEsImleKlxcb3RpbWVzIGleeyp9IiwyXSxbMiwzLCJpXioiXSxbMSwzLCIqIiwyXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIKFpfe2Qrbn0pXFxvdGltZXMgSChcXG1hdGhjYWx7Rn1fe2koeCl9KSJdLFsyLDAsIkgoWl97ZH0pXFxvdGltZXMgSChcXG1hdGhjYWx7Rn1fe3h9KSJdLFswLDIsIkgoXFxtYXRoY2Fse0Z9X3tpKHgpfSkiXSxbMiwyLCJIKFxcbWF0aGNhbHtGfV97eH0pIl0sWzAsMiwiKiJdLFswLDEsImleKlxcb3RpbWVzIGleeyp9IiwyXSxbMiwzLCJpXioiXSxbMSwzLCIqIiwyXV0=&amp;embed&#34; width=&#34;791&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;可以看出来, (2) 实际上就是说, 将 $H(\mathcal{F}_x)$ 看做 $H(Z)$-mod, 他是 stable under $i$ 的.&lt;/p&gt;
+&lt;p&gt;这个的证明其实就是相似的. 对于 (2), 他 factor through&lt;/p&gt;
+\[i^\ast:H(Z_{d+n})\to H(Z_{d+n}\cap(\tilde{U}\times \tilde{U}))\to H(Z_d).\]&lt;p&gt;而第一个映射是 restriction to an open subset, 根据 convolution 的性质是交换的. 而第二个映射则是通过 embedding $Z_d\hookrightarrow Z_{d+n}\cap (\tilde{U}\times \tilde{U})$, 而其 isom to $Z_d\hookrightarrow D_\Delta\times Z_d,z\mapsto (i(0),z)$, 当然也 commutes with convolution by Kunneth formula.&lt;/p&gt;
+&lt;p&gt;好! 我们的主定理就施工成功了. 接下来该讲 pro-finite completion of $U(\mathfrak{sl}_n(\mathbb{C}))$.&lt;/p&gt;
+&lt;p&gt;可以再水一次().&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这里连网太慢了kk&lt;/p&gt;
+&lt;p&gt;@图床tv 新图 急急急&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十一 P214-222</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%80-p214-222/</link>
         <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
