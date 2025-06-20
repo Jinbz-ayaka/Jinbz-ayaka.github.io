@@ -7,7 +7,48 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十三 P226-230</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%89-p226-230/</link>
+        <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%89-p226-230/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%89-p226-230/hanabi---.jpg" alt="Featured image of post CG饲养日记-其十三 P226-230" /&gt;&lt;p&gt;考虑所有 $I$ finite codim two-sided ideal of $U(\mathfrak{sl}_n)$, 其给出了 $U(\mathfrak{sl}_n)$ 上的拓扑. 而由于 $\forall x\in U(\mathfrak{sl}_n)$, 我们可以给出有限维表示 $V$ 使得 $x$ 在上面作用是非平凡的, 这个拓扑是 separating 的. 于是我们考虑&lt;/p&gt;
+\[\hat{U}:=\varprojlim U(\mathfrak{sl}_n)/I,\]&lt;p&gt;我们给出了嵌入 $U(\mathfrak{sl}_n(\mathbb{C}))\hookrightarrow \hat{U}$. 与此同时, 对任意 $U(\mathfrak{sl}_n)$ 的有限维表示, 其自然地给出了 $\hat{U}$ 的表示.&lt;/p&gt;
+&lt;p&gt;这样就把有限维的 $\mathfrak{sl}_n$ 表示转化到了 $\hat{U}$ 上. 事实上, 我们可以几何地看 $\hat{U}$.&lt;/p&gt;
+&lt;p&gt;对于 $\mathbf{SL}_n$ 的 module $M$, 我们当然可以分解出&lt;/p&gt;
+\[M=\oplus_{\chi\in Z(\mathbf{SL}_n)^\vee} M_\chi, Z(\mathbf{SL}_n)=\{\xi\cdot \operatorname{Id},\xi^n=1\}.\]&lt;p&gt;我们可以自然地 identify $Z(\mathbf{SL}_n)^\vee$ with $\mathbb{Z}/n\mathbb{Z}$, 那么&lt;/p&gt;
+\[M=\oplus_{d\in \mathbb{Z}/n\mathbb{Z}} M_d.\]&lt;p&gt;于是对任意 finite codim 的 $I$ 我们得到了&lt;/p&gt;
+\[U(\mathfrak{sl}_n)/I=\oplus_d U_d,\]&lt;p&gt;而这个是 compatible with 逆向极限的结构的, 有&lt;/p&gt;
+\[\hat{U}=\varprojlim U(\mathfrak{sl}_n)/I=\oplus_r U_r.\]&lt;p&gt;$U_r$ 可以被 characterized by 所有 acts non-trivially on 某个 central character 为 $\chi_r$ 的 f.d. mod, 且 trivially on 所有 central character 为 $\chi_s,s\neq r$ 的 f.d. mod. 回忆 4.4.30(a), 我们有&lt;/p&gt;
+\[H(Z_r)\overset{i^\ast}{\twoheadleftarrow}H(Z_{r+n})\overset{i^\ast}{\twoheadleftarrow}H(Z_{r+2n})\overset{i^\ast}{\twoheadleftarrow}\cdots.\]&lt;p&gt;这样我们也可以考虑其 proj. lim. 由于, 根据 4.1.12, 我们有 $\phi_d:U(\mathfrak{sl}_n)\twoheadrightarrow H(Z_{d})$, 且 $\phi_d=i^*\circ \phi_{d+n}$. 我们实际上诱导了 well-def. 的 homo.&lt;/p&gt;
+\[j:U(\mathfrak{sl}_n(\mathbb{C}))\to \varprojlim H(Z_{r+kn}), r=1,2,\cdots,n.\]&lt;p&gt;而更精确的刻画是:&lt;/p&gt;
+&lt;p&gt;Proposition 4.4.36: For each $r=1,2,\cdots,n$, there is a natural (&amp;amp; contin&lt;strong&gt;u&lt;/strong&gt;ous) isom. of complete topological algs&lt;/p&gt;
+\[U_r\simeq \varprojlim H(Z_{r+k\cdot n}).\]&lt;p&gt;s.t. $j:U(\mathfrak{sl}_n(\mathbb{C}))\hookrightarrow \hat{U} \twoheadrightarrow U_r\simeq \varprojlim H(Z_{r+k\cdot n})$&lt;/p&gt;
+&lt;p&gt;Proof: fix $r$, 根据 diagram&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNSxbMiwwLCJcXHZhcnByb2psaW0gSChaX3tyK2tcXGNkb3Qgbn0pIl0sWzAsMiwiSChaX2QpIl0sWzQsMiwiSChaX3tkK259KSJdLFswLDQsIlxcb3BlcmF0b3JuYW1le0VuZH0gSChcXG1hdGhjYWx7Rn1feCkiXSxbNCw0LCJcXG9wZXJhdG9ybmFtZXtFbmR9IEgoXFxtYXRoY2Fse0Z9X3tpKHgpfSkiXSxbMiwxLCJpXioiXSxbMCwxLCJwX2QiLDJdLFswLDIsInBfe2Qrbn0iXSxbMSwzXSxbMiw0XSxbNCwzLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNSxbMiwwLCJcXHZhcnByb2psaW0gSChaX3tyK2tcXGNkb3Qgbn0pIl0sWzAsMiwiSChaX2QpIl0sWzQsMiwiSChaX3tkK259KSJdLFswLDQsIlxcb3BlcmF0b3JuYW1le0VuZH0gSChcXG1hdGhjYWx7Rn1feCkiXSxbNCw0LCJcXG9wZXJhdG9ybmFtZXtFbmR9IEgoXFxtYXRoY2Fse0Z9X3tpKHgpfSkiXSxbMiwxLCJpXioiXSxbMCwxLCJwX2QiLDJdLFswLDIsInBfe2Qrbn0iXSxbMSwzXSxbMiw0XSxbNCwzLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==&amp;embed&#34; width=&#34;1008&#34; height=&#34;688&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;我们给出了 $H(\mathcal{F}_x)$ 上的 ${\varprojlim H(Z_{r+k\cdot n})}$-mod 结构.&lt;/p&gt;
+&lt;p&gt;在写 4.2 的时候我们提到过, 由于 &lt;em&gt;所有 highest weight 为 $m_1,\cdots,m_n$ 使得 $\sum m_i=d$ 的 $\mathfrak{sl}_n$ 表示都在 $(\mathbb{C}^n)^{\otimes d}$ 中出现过. 因此, 取 $I_d=\operatorname{Ann}((\mathbb{C}^n)^{\otimes d})\subset U(\mathfrak{sl}_n)$, 我们有&lt;/em&gt;&lt;/p&gt;
+\[U(\mathfrak{sl}_n)/I_d\simeq H(Z).\]&lt;p&gt;那么&lt;/p&gt;
+\[\varprojlim H(Z_{r+k\cdot n})\simeq \varprojlim U(\mathfrak{sl}_n)/I(r+kn).\]&lt;p&gt;显然, $\xi\cdot Id$ 在 $(\mathbb{C}^n)^{\otimes d}$ acts by multiplication by $\xi$ on each tensor components, 也就是说, multiplication by&lt;/p&gt;
+\[\xi^{r+k\cdot n}=\chi_r(\xi\cdot \operatorname{Id}).\]&lt;p&gt;最后, 由于任意 simple f.d. $\mathbf{SL}_n$-mod with central char. $\chi_r$ 都在 $(\mathbb{C}^n)^{\otimes r+kn}$ 中出现, $I(r+kn)$ 构成了 $0$ 附近的拓扑基, 得证.&lt;/p&gt;
+&lt;p&gt;不要温柔地走进那个两页&lt;/p&gt;
+&lt;p&gt;fix $r=1,\cdots,n$, take $\mathbb{C}^{r+\infty}\supset \Gamma^0\supset \Gamma^1\supset \cdots$ with $\Gamma^k=\prod_{i=k+1}^\infty \mathbb{C}^n$.&lt;/p&gt;
+&lt;p&gt;我们对于 $\mathbb{C}^n$, 给出其上的标准 coord. $n$-step flag $\mathbb{F}(\Gamma^k)=\prod_{i=k+1}^\infty\mathbb{F}$, $\mathbb{F}=(0\subset \mathbb{C}\subset \mathbb{C}^2\subset \cdots\subset \mathbb{C}^n)$. 于是我们可以定义 flag var.&lt;/p&gt;
+\[\mathcal{F}_{r+\infty}=\{F=(0=F_0\subset F_1\subset\cdots\subset F_n=\mathbb{C}^{r+\infty})|\exists k=k(F): F\cap \Gamma^k=\mathbb{F}(\Gamma^k).\}\]&lt;p&gt;以及 &amp;ldquo;Springer&amp;rsquo;s resolution&amp;rdquo;:&lt;/p&gt;
+\[M_{r+\infty}=\{(x,F)\in N_{r+\infty}\times\mathcal{F}_{r+\infty}|x(F_i)\subset F_{i-1},i=1,2,\cdots,n\}.\]&lt;p&gt;那么, $M_{r+\infty}$ 就是 $\mathcal{F}_{r+\infty}$ 的 cotangent bundle. 注意, 这和一般的 Springer resol. 不一样: 他并没有一个 zero-section, $0\notin N_{r+\infty}$.&lt;/p&gt;
+&lt;p&gt;我们有 proj. $\mu:M_{r+\infty}\to N_{r+\infty}$. 根据 4.4.23, $\mu$ 的 fibres 总是有限维的 proj. var. 最后, 我们考虑 $Z_{r+\infty}=M_{r+\infty}\times_{N_{r+\infty}}M_{r+\infty}$, $U_r$ 可以看做 $Z_{r+\infty}$ 的 irr. components 之 fundamental classes 的无限和.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;那么第四章就结束了. 这一章就是比较具体的构造, 在 4.1 我们考虑 $M$ 是&amp;quot;比较一般的&amp;quot;, 也就是说, codim 取值在某一个分划里的 flag, $Z=M\times_N M$. 利用分划上的操作, 给出了 $U(\mathfrak{sl}_n)$ 到 $H(Z)$ 的满射. 而 4.2 则是开始具体利用之构造 $U(\mathfrak{sl}_n)$ 的表示: 让 $H(Z)$ 作用在 $H(\mathcal{F}_x)$ 上, 这里面比较重要的结论就是最标准的 (利用 $\ker,\operatorname{im}$ 给出最 &amp;ldquo;极限&amp;rdquo; 的构造得到的 flag) $F^{min},F^{max}$, 在作用下恰好对应最低与最高权向量.&lt;/p&gt;
+&lt;p&gt;而, 我又要引用一遍这个&amp;quot;熟知的表示论结论&amp;quot;, &lt;em&gt;所有 highest weight 为 $m_1,\cdots,m_n$ 使得 $\sum m_i=d$ 的 $\mathfrak{sl}_n$ 表示都在 $(\mathbb{C}^n)^{\otimes d}$ 中出现过.&lt;/em&gt; 在给出&lt;/p&gt;
+\[U(\mathfrak{sl}_n)/I_d\simeq H(Z), I_d=\operatorname{Ann}((\mathbb{C}^n)^{\otimes d})\]&lt;p&gt;的同时, 也启发我们将这些空间&amp;quot;并起来&amp;quot;&amp;ndash;实际上是取逆向极限, 得到所有有限维 $U(\mathfrak{sl}_n)$ 表示. 这也就是最后一章 Stabilization 的内容. 最终我们能得到 4.4.36, 也就是上面结果的推广.&lt;/p&gt;
+&lt;p&gt;至少到现在为止, 这些东西都是比较 set-theoretical 的. 他的几何部分来自于 variety 的 Borel-Moore homology, 更准确地说, 来自于其上的 convolution product 结构.&lt;/p&gt;
+&lt;p&gt;而下一章就要涉及升级的数学了: K-理论, Koszul complex, Chern char, localization 和函子性, 这可能就是 real AG.&lt;/p&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其二十二</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%8C/</link>
         <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
