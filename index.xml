@@ -7,7 +7,67 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十四 P231-236</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%9B%9B-p231-236/</link>
+        <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%9B%9B-p231-236/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%9B%9B-p231-236/zmhbg.jpg" alt="Featured image of post CG饲养日记-其十四 P231-236" /&gt;&lt;p&gt;等变 $K$ 理论!&lt;/p&gt;
+&lt;p&gt;我们本章提到的所有 $G$, 都是 $GL$ 的一个闭子群.&lt;/p&gt;
+&lt;p&gt;首先考虑 $X$ $G$-var. 有 two natural maps&lt;/p&gt;
+\[G\times X\overset{a,p}{\rightarrow}X.\]&lt;p&gt;而 $f: X\to \mathbb{C}$ 被称作 invar. function, 如果&lt;/p&gt;
+\[f(gx)=f(x).\]&lt;p&gt;我们希望, 忘掉这些 points, 也就是说我们定义 pull-back of functions on $G\times X$, 有&lt;/p&gt;
+\[a^\ast f=p^\ast f.\]&lt;p&gt;而, $G$ 在 $X$ 作用下的结合律, 就可以看做在 $G\times G\times X\to G\times X$ 上,&lt;/p&gt;
+\[(\operatorname{id}_G\times a)^\ast a^\ast f=(m\times \operatorname{id}_X)^\ast p^\ast f.\]&lt;p&gt;熟悉代数几何的人应该知道, 对于 $u:Y\to X$ morph. of var., $\mathcal{F}$ 是 $X$ 上的 sheaf. 有 $u^\cdot \mathcal{F}$ sheaf on $Y$. 而对于 $\mathcal{O}_X$-mod, 可以 pull-back 为 $\mathcal{O}_Y$-mod $u^\ast\mathcal{F}$, by $u^\ast\mathcal{F}=\mathcal{O}_Y\otimes_{u^\cdot \mathcal{O}_X}u^\cdot\mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;好, 以防你是个神人, 忘了这几个 pull-back 是什么. 我在这里抄一遍定义.&lt;/p&gt;
+&lt;p&gt;$u^\cdot$, 实际上在 Hartshorne 上的记号是 $u^{-1}$, given by sheaf associated to the presheaf $U\mapsto \lim_{V\supset f(U)}\mathcal{F}(V)$. 对于 $\mathcal{O}_X$-mod $f^\ast\mathcal{F}$, pull-back 定义为 $f^{-1}\mathcal{F}\otimes_{f^{-1}\mathcal{O}_X}\mathcal{O}_Y$.&lt;/p&gt;
+&lt;p&gt;Defn 5.1.6: $\mathcal{F}$ of $\mathcal{O}_X$-mods on an alg. $G$-var. $X$ is called $G$-equiv if the following conditions holds&lt;/p&gt;
+&lt;p&gt;(a) There is a given isom of sheaves on $G\times X$&lt;/p&gt;
+\[I:a^\ast\mathcal{F}\overset{\sim}{\to} p^\ast\mathcal{F}.\]&lt;p&gt;(b) The pullbacks by $\operatorname{id}\times a$ and $m\times \operatorname{id}$ of the isom $I$ are related by the eqn.&lt;/p&gt;
+\[p_{23}^\ast I\circ (\operatorname{id}_G\times a)^\ast I=(m\times \operatorname{id}_X)^\ast I,\]&lt;p&gt;where $p_{23}:G\times G\times X\to  G\times X$ is the proj. along the first factor $G$.&lt;/p&gt;
+&lt;p&gt;(c) $I_{e\times X}=\operatorname{id}$: $\mathcal{F}=a^\ast\mathcal{F}|_{e\times X}\overset{\sim}{\to} p^\ast\mathcal{F}|_{e\times X}=\mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;对于并非 $\mathcal{O}_X$-mods 的 $\mathcal{F}$ 我们也可以有相似定义, 只是把所有 $-^\ast$ 的 pull-back 换成 sheaf-version 的 $-^\cdot$.&lt;/p&gt;
+&lt;p&gt;Remarks 都是为了加深这个定义的理解的:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对于 sheaf $\mathcal{O}_X$, 我们有自然的 canonical $G$-equiv. structure given by&lt;/li&gt;
+&lt;/ol&gt;
+\[p^\ast\mathcal{O}_X\simeq \mathcal{O}_{G\times X}\simeq a^\ast\mathcal{O}_X.\]&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;实际上 (c) 是&amp;quot;多余的&amp;quot;, 他可以由 (a)(b) 导出.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;尽管 &amp;ldquo;等变层&amp;rdquo; 和 &amp;ldquo;不变函数&amp;rdquo; 的定义很像, 他俩还是本质不同的: 一个函数要么是不变的要么不是不变的, 但纠结一个层是不是等变的好像没啥用. 等变层给出了更多信息, 而这些信息不是唯一的(这句话没太懂orz). 此外, 不变函数的 $a^\ast f=p^\ast f$ 可以直接推出 $(\operatorname{id}_G\times a)^\ast a^\ast f=(m\times \operatorname{id}_X)^\ast p^\ast f$, 但等变层定义的 (a) 并不能推出 (b).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;考虑 $\mathcal{F}$ 是一个 locally free sheaf, 也就是说, $X$ 上的 line bundle. 考虑 $\mathbb{F}$ total space, 有 $\pi:\mathbb{F}\to X$ projection. 于是给出 $I$, 等价于给出 $\Phi:G\times \mathbb{F}\to \mathbb{F}$, 满足&lt;/p&gt;
+\[\Phi(h,\Phi(g,f))=\Phi(gh,f),\Phi(e,f)=f.\]&lt;p&gt;也就是说, 给出 $\mathbb{F}$ 上的 $G$-action. 而, 给出 $G$-equivariant structure 则等价于给出这样的 $G$-action, 满足&lt;/p&gt;
+&lt;p&gt;(1) The proj. $\pi:\mathbb{F}\to X$ commutes with $G$-action; in particular, $g$ takes $\mathbb{F}_x$ to $\mathbb{F}_{g\cdot x}$.&lt;/p&gt;
+&lt;p&gt;(2) 对任意 $x,g$, $\Phi(g,\cdot):\mathbb{F}_x\to \mathbb{F}_{g\cdot x}$ 是一个 v.s. 的 linear map.&lt;/p&gt;
+&lt;p&gt;Theorem 5.1.9: $G$ linear alg. gp, $X$ smooth (more generally, normal), $L$ arbitrary alg line bundle on $X$. There exists $n$ s.t. $L^{\otimes n}$ admits a $G$-equiv. structure (possibly not unique).&lt;/p&gt;
+&lt;p&gt;Remark 是说, 如果不假设这个 normality, 这个定理是错的.&lt;/p&gt;
+&lt;p&gt;我们接下来要证明这个定理. 设 $X$ normal alg. var. $Cl(X)$ abelian group for the classes of divisors (linear combinations of codim 1 subvar. with multiplicities) in $X$ modulo linear equiv.&lt;/p&gt;
+&lt;p&gt;Prop 5.1.11: For a normal alg. var $X$, we have&lt;/p&gt;
+&lt;p&gt;(1) If $X$ smooth then the abelian gp. the isom. classes of line bundles on $X$ is naturally isom. to $Cl(X)$.&lt;/p&gt;
+&lt;p&gt;(2) For any $X$, the pullback of divisors w.r.t. the proj. $p:\mathbb{C}\times X\to X$ gives an isom. $p^\ast:Cl(X)\overset{\sim}{\to} Cl(\mathbb{C}\times X)$.&lt;/p&gt;
+&lt;p&gt;(3) Let $U\subset X$ be a Zar. open subset and write $C_1,\cdots,C_n$ for the distinct irr. components of $X\backslash U$ of codim $1$ in $X$, then one has a natural exact seq. of the pair $(X,U)$:&lt;/p&gt;
+\[\mathbb{Z}^n\to Cl(X)\to Cl(U)\to 0,\]&lt;p&gt;where the first map sends $(k_i)$ to $\sum k_iC_i$, and the second is given by restriction to $U$.&lt;/p&gt;
+&lt;p&gt;(1) 的证明可以 follow 代数几何II hw10 的 3, by $f\mapsto \sum v_C(f)C$. (3) 比较 trivial, (2) &amp;hellip; 也许我们应该相信在 Hartshorne 上面能找到. 根据 (3) 自然有 $Cl(X)\simeq Cl(\mathbb{C}^\ast\times X)$, 虽然这句也没太明白(). 于是, 有 isom.&lt;/p&gt;
+\[Cl(X)\overset{\sim}{\to } Cl(\mathbb{C}^r\times (\mathbb{C}^\ast)^s\times X).\]&lt;p&gt;结合 (a), 有&lt;/p&gt;
+&lt;p&gt;Cor 5.1.12: Let $M$, $X$ smooth var., $p_M,p_X$ proj. of $M\times X$. Let $M$ has Zar-open dense subset to $\mathbb{C}^r\times (\mathbb{C}^\ast)^s$. Then, any line bundle $L$ on $M\times X$ isom. to an externel tensor prod. of line bundles on the factors. Specifically, for any $m\in M,x\in X$, there is an isom&lt;/p&gt;
+\[L\simeq p^\ast_M(L|_{M\times\{x\}})\otimes p^\ast_{X}(L|_{\{m\}\times X}).\]&lt;p&gt;这是因为有&lt;/p&gt;
+\[\mathbb{Z}^n\to Cl(M\times X)\to Cl((\mathbb{C}^r\times (\mathbb{C}^\ast)^s\times X))\to 0.\]&lt;p&gt;于是, $Cl(M\times X)$ 由 $\mathbb{Z}^n$, 也就是 $\sum k_i[C_i\times X]\subset p^\ast_M(Cl(M))$, 和 $Cl(X)$ 中的元素, 也就是 $p^\ast_X(Cl(X))$ 生成.&lt;/p&gt;
+&lt;p&gt;这里有个 Remark, 是说对于 $M,X$ normal, $m,x$ smooth points 的情况, 我们的 cor. 也对.&lt;/p&gt;
+&lt;p&gt;对于 $X$, 我们 write $\mathcal{O}(X)^\times$ 为其上的 regular invertible function, 也就是说, alg. maps $X\to \mathbb{C}^\ast$.&lt;/p&gt;
+&lt;p&gt;Lemma 5.1.15: For any irr. alg. var. $X,Y$, canonical map $\mathcal{O}(X)^\times \times \mathcal{O}^(Y)^\times \to \mathcal{O}(X\times Y)^\times$ is surj.&lt;/p&gt;
+&lt;p&gt;为此, 考虑 $F(x,y)=f(x,y)^{-1}f(x_0,y)f(x,y_0)$, 我们需要说明 $f=F$. 于是, 只需要对 $X\times Y$ 中 $(x_0,y_0)$ 的 Zar. open nbhd 说明即可.&lt;/p&gt;
+&lt;p&gt;现在, WLOG, assume $X,Y$ smooth affine, 于是我们可以考虑 $\bar{X},\bar{Y}$ 包含 $X,Y$ 作为 open dense subsets. 为此我们只需要将其嵌入 $\PP^n$ 然后考虑闭包, normalize 即可.&lt;/p&gt;
+&lt;p&gt;考虑 $\frac{f}{F}$ rational function on $\bar{X}\times \bar{Y}$, 其 divisor $div(\frac{f}{F})$ 包含于 $((\bar{X}\backslash X)\times \bar{Y})\cup (\bar{X}\times (\bar{Y}\backslash Y))$. 于是, $div(\frac{f}{F})$ 由 $D\times \bar{Y}$ 和 $\bar{X}\times E$ 生成. 若 $f/F$ 在 $D\times \bar{Y}$ 上有 order 为 $d$ 的 zero, 则其在某个 $(x&amp;rsquo;,y_0)$ 的取值为 $0$. 由于 $X$ 在 $\bar{X}$ 里 dense, 我们可假设 $x&amp;rsquo;\in X$. 但, $F(x,y_0)=f(x_0,y_0)\neq 0$, 得到矛盾.&lt;/p&gt;
+&lt;p&gt;同样地方法我们可以处理 $D\times \bar{Y}$ 上有 order 为 $d$ 的 pole 和 $\bar{X}\times E$ 上有 zero 或 pole 的情况. 于是 $div(f/F)=0$. 但由于 $\bar{X},\bar{Y}$ proj, $f/F\equiv 1$.&lt;/p&gt;
+&lt;p&gt;先写到这().&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十三 P226-230</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%89-p226-230/</link>
         <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
