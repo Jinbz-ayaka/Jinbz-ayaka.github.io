@@ -7,7 +7,37 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 05 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十五 P236-239</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%94-p236-239/</link>
+        <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%94-p236-239/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%94-p236-239/sbzx.jpg" alt="Featured image of post CG饲养日记-其十五 P236-239" /&gt;&lt;p&gt;有&lt;/p&gt;
+&lt;p&gt;Lemma 5.1.16: Any connected linear algebraic group $G$ contains a Zar. open dense subset isom. to $\mathbb{C}^r\times \mathbb{C}^\ast $.&lt;/p&gt;
+&lt;p&gt;这个思想就是取 $B^+\cdot B^-\simeq U^+\times T\times U^-$. 证明需要 reduce to s.s. case 和具体的讨论.&lt;/p&gt;
+&lt;p&gt;Prop 5.1.17: $L$ 是 $G$ 上的 line bundle, 于是存在 $n$ 使得 $L^{\otimes n}$ 是 trivial bundle.&lt;/p&gt;
+&lt;p&gt;利用 5.1.16, 有&lt;/p&gt;
+\[\mathbb{Z}^n\to Cl(G)\to Cl(U^+\cdot T\cdot U^-)=0.\]&lt;p&gt;于是我们需要证明, 每一个 irr. 的 $C_i\subset G\backslash (B^+\cdot B^-)$ 都给出 $Cl(G)$ 内的 finite order element.&lt;/p&gt;
+&lt;p&gt;这些非零的 elements, 是 codim 1 的 irr comp. 根据 Bruhat, 他们是 $B^+s_iB^-$. 于是 $C_i$ 由 $B^-$ 中的 simple roots 给出.&lt;/p&gt;
+&lt;p&gt;但, 我们有熟知的结论, 对于 $G$ s.s. 以及 simply connected, $\alpha_i$ 对应的 $C_i$, 取 $V_i$ simple rational $G$-mod with highest weight $\alpha_i$, 取 $V_i$ 中 $B^-$-steable 的 line $v_i$ (也就是 lowest weight vector), 那么 $\overline{B^+s_iB^-}$ 就是 $g\mapsto \langle v^i,g\cdot v_i\rangle$. 于是 $C_i$ principal, $Cl(G)=0$.&lt;/p&gt;
+&lt;p&gt;现在考虑 finite covering $\pi: G&amp;rsquo;\to G$, 于是诱导了 natural direct image $\pi_\ast :Cl(G&amp;rsquo;)\to Cl(G)$, 且, 根据 Hartshorne,&lt;/p&gt;
+\[\pi_\ast \pi^\ast (D)=(\deg\pi)\cdot D.\]&lt;p&gt;这便说明了 finite order 的性质.&lt;/p&gt;
+&lt;p&gt;现在我们要给出 Thm 5.1.9 的证明.&lt;/p&gt;
+&lt;p&gt;考虑 $a:G\times X\to X$, set $E:=a^\ast L\simeq L$, 有, 存在 $F$,&lt;/p&gt;
+\[a^\ast L\simeq (p_G\ast F)\otimes (p_X^\ast E).\]&lt;p&gt;考虑 $F^{\otimes n}$ trivial bundle, 有 isom&lt;/p&gt;
+\[a^\ast (L^{\otimes n})\simeq p^\ast _X(L^{\otimes n}).\]&lt;p&gt;于是我们希望给出 $L^{\otimes n}$ 上的等变 $G$-bundle 结构. 记 $\mathbb{L}$ $L^{\otimes n}$ 的 total space with the zero-section removed. 于是上式诱导了 $\Phi:G\times\mathbb{L}\to \mathbb{L}$, the following diagram commute:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJHXFx0aW1lcyBcXG1hdGhiYntMfSJdLFsyLDAsIlxcbWF0aGJie0x9Il0sWzAsMiwiR1xcdGltZXMgWCJdLFsyLDIsIlgiXSxbMCwxLCJcXFBoaSJdLFsyLDMsImEiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtpZH1cXHRpbWVzIFxccGkiLDFdLFsxLDMsIlxccGkiLDFdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJHXFx0aW1lcyBcXG1hdGhiYntMfSJdLFsyLDAsIlxcbWF0aGJie0x9Il0sWzAsMiwiR1xcdGltZXMgWCJdLFsyLDIsIlgiXSxbMCwxLCJcXFBoaSJdLFsyLDMsImEiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtpZH1cXHRpbWVzIFxccGkiLDFdLFsxLDMsIlxccGkiLDFdXQ==&amp;embed&#34; width=&#34;460&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Furthermore, $\Phi$ restricted to ${e}\times\mathbb{L}$ 与 $\mathbb{L}$ 同构, 作为 $X$ 上的 principal $\mathbb{C}^\ast $-bundle. 于是, 我们诱导了 $\phi:X\to \mathbb{C}^\ast $, $\Phi(e,l)=\phi(\pi(l))\cdot l$.&lt;/p&gt;
+&lt;p&gt;我们用 $\frac{1}{\pi^\ast \phi}\Phi$ 代替 $\Phi$, 上述 comm. diag. 仍然成立. 在这种情况下, $\Phi(g,\cdot)$ 与 $\mathbb{C}^\ast $ 作用交换. 于是我们诱导了 $f:G\times G\times \mathbb{L}\to \mathbb{C}^\ast $ by&lt;/p&gt;
+\[\Phi(gh,l)=f(-,-,-)\Phi(g,\Phi(h,l)).\]&lt;p&gt;而, by 5.1.15, 我们可以选出 $r,s\in \mathcal{O}(G)^\times, t\in \mathcal{O}(\mathbb{L})^\times$ s.t.&lt;/p&gt;
+\[f(g,h,l)=r(g)\cdot s(h)\cdot t(l).\]&lt;p&gt;再结合 $\Phi(e,l)=l$ 推出&lt;/p&gt;
+\[f\equiv 1,\]&lt;p&gt;也就是&lt;/p&gt;
+\[\Phi(gh,l)=\Phi(g,\Phi(h,l)).\]&lt;p&gt;于是 $\Phi$ 给出了 $\mathbb{L}$ 上的 $G$-action, 且其作为 $G$ 在 $X$ 上作用的 lifting.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十四 P231-236</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%9B%9B-p231-236/</link>
         <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>

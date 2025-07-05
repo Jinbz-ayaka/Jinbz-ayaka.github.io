@@ -7,7 +7,45 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 05 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 05 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>一种基于 Python 和 deepseek 的在 hugo-stack 环境中使用 newcommand 的方法</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-python-%E5%92%8C-deepseek-%E7%9A%84%E5%9C%A8-hugo-stack-%E7%8E%AF%E5%A2%83%E4%B8%AD%E4%BD%BF%E7%94%A8-newcommand-%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+        <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-python-%E5%92%8C-deepseek-%E7%9A%84%E5%9C%A8-hugo-stack-%E7%8E%AF%E5%A2%83%E4%B8%AD%E4%BD%BF%E7%94%A8-newcommand-%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-python-%E5%92%8C-deepseek-%E7%9A%84%E5%9C%A8-hugo-stack-%E7%8E%AF%E5%A2%83%E4%B8%AD%E4%BD%BF%E7%94%A8-newcommand-%E7%9A%84%E6%96%B9%E6%B3%95/bdfnn.jpg" alt="Featured image of post 一种基于 Python 和 deepseek 的在 hugo-stack 环境中使用 newcommand 的方法" /&gt;&lt;p&gt;我可能并不是讨厌压抑, 只是讨厌有点缺少那种和谐与美感的纯擦边()&lt;/p&gt;
+&lt;p&gt;培养良好审美习惯还是很重要的, 比方说这个图就给人一种很和谐的感觉&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;好, 言归正传&lt;/p&gt;
+&lt;p&gt;代数tv在先前学期更新 CG 系列以及一系列数学中, 并不会直接在 hugo server 中输入, 而是先在自己已有模板的 vscode 中, 使用 LaTeX 编译为 .pdf 后, 将 Tex 源码复制到 .md 中, 再参考本地 hugo server 进行进一步修改.&lt;/p&gt;
+&lt;p&gt;除去复制模板, 修改标题等工作, 修改的过程一般分为三步:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;寻找在哪些部分使用了先前 Latex 模板中定义的 \newcommand, 并删掉.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将行内的部分下划线和 $*$ 修改掉, 防止被 markdown 转义为斜体.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将使用的 tikz-q.uiver 使用 q.uiver 转化成 markdown.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;而这个过程中, 第一步通常要耗费大量时间, 第二步通常也要花费一定时间, 第三步则相对简单.&lt;/p&gt;
+&lt;p&gt;而目测来看的话, 自动化部分难度则是第一步小于第二步, 又小于第三步.&lt;/p&gt;
+&lt;p&gt;因此代数tv做了这个 python 脚本, 用来处理第一步.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;脚本被放在了 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Jinbz-ayaka/.txt-newcommand&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;, 欢迎各位指点一二.&lt;/p&gt;
+&lt;p&gt;如果暑假闲的话, 争取把整个流程都自动化了.&lt;/p&gt;
+&lt;p&gt;感觉还是有点意思的. 虽然八月也有些额外的要学()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这个脚本其实还没完善, 比方说他只能处理 \newcommand\gg\mathfrak{g} 这种东西, 而对 \newcommand{\ang}[2][]{\langle {#1},{#2}\rangle} 这样相对复杂的定义式束手无策.&lt;/p&gt;
+&lt;p&gt;慢慢来吧, 这是v1.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;不错, 终于又开始探索了()&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>测试q.uiver, html图片等</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%8B%E8%AF%95q.uiver-html%E5%9B%BE%E7%89%87%E7%AD%89/</link>
         <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
