@@ -7,7 +7,58 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sat, 05 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十六 P239-242</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AD-p239-242/</link>
+        <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AD-p239-242/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AD-p239-242/keqqq.jpg" alt="Featured image of post CG饲养日记-其十六 P239-242" /&gt;&lt;p&gt;为了得到这张图, 我们付出了多少努力&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;主定理证明结束后, 5.1还剩一点尾巴()&lt;/p&gt;
+&lt;p&gt;考虑 line bundle 上的 ample bundle $\mathcal{L}$, i.e., 对任意 $\mathcal{F}$ coherent, 存在 $n=n(\mathcal{F})$, $\mathcal{L}^{\otimes n}\otimes \mathcal{F}$ 由一些 global section 生成.&lt;/p&gt;
+&lt;p&gt;由于 quasi-proj 的 $X$ 都 admit 一个 $\mathcal{O}(1)$ 限制下去的 ample bundle ,有如下结论:&lt;/p&gt;
+&lt;p&gt;Cor 5.1.21: $G$ linear alg gp. $X$ smooth quasi-proj. $G$-var. Then there exists a $G$-equiv ample line bundle on $X$.&lt;/p&gt;
+&lt;p&gt;对于 $G\circlearrowright M$ (possibly inf.dim) v.s., 称这个作用是 alg. 的, 当对任意 $m\in M$ 都 contained in f.d. $G$-stable v.s. $V$, 且 $G\mapsto GL(V)$ 是 alg. 的.&lt;/p&gt;
+&lt;p&gt;考虑 $Map(G,M)$ v.s. of arbitrary map $G\to M$, $\mathbb{C}[G]$ righ of regular alg. functions on $G$. 有 $Map(G,M)$ 自然包含 $\mathbb{C}[G]\otimes M$ 作为其子空间. 于是, 由于 $G$-action on $M$ 给出了 natural linear map&lt;/p&gt;
+\[a_M:M\to M\mapsto Map(G,M), m\mapsto(g\mapsto gm).\]&lt;p&gt;$G$-作用是 alg. 的, 当且仅当 $a_M$ 的 image 包含在 $\mathbb{C}[G]\otimes M$ 中.&lt;/p&gt;
+&lt;p&gt;Lemma 5.1.23: $\mathcal{F}$ $G$-equiv. coh. sheaf on an alg. $G$-var. $X$. $\Gamma(X,\mathcal{F})$ 自然地拥有 alg. $G$-mod 结构.&lt;/p&gt;
+&lt;p&gt;这是因为, by Hartshorne, $\Gamma(G\times X,p^*_X\mathcal{F})=\mathbb{C}[G]\otimes \Gamma(X,\mathcal{F})$.&lt;/p&gt;
+&lt;p&gt;$a:G\times X\to X$ 与 $I:a^\ast\mathcal{F}\overset{\sim}{\to} p^\ast\mathcal{F}$ 给出&lt;/p&gt;
+\[\Gamma(X,\mathcal{F})\overset{a^*}{\to} \Gamma(G\times X,a^*_X\mathcal{F})\overset{I}{\to} \Gamma(G\times X, p^*_X\mathcal{F})=\mathbb{C}[G]\otimes \Gamma(X,\mathcal{F}).\]&lt;p&gt;对于 $m\in \Gamma(X,\mathcal{F})$, $a_{\Gamma(X,\mathcal{F})}$ 其实就是将 $g$ 先打到 $m(g,x)=m(x)$, 再通过 $I$ 打到 $m(g,x)=m(gx)$, 再由 equiv. 性质其打到 $m(g,x)=(g\cdot m)(x)$, 也就是 $g\mapsto g\cdot m$, 而这个像落在 $\mathbb{C}[G]\otimes \Gamma(X,\mathcal{F})$ 中, 得证.&lt;/p&gt;
+&lt;p&gt;Theorem 5.1.25: (Equiv. proj. embedding) $G$ linear alg. gp. $X$ normal quasi-proj. $G$-var. $\exists$ f.d.v.s. $V$, an alg. gp. homo. $\rho: G\to GL(V)$, an equiv. embedding $i:X\hookrightarrow \mathbb{P}(V)$. Here equiv. means&lt;/p&gt;
+\[i(g\cdot x)=\rho(g)\cdot i(x),\]&lt;p&gt;dot stands for std. $GL(V)$-action on $\mathbb{P}(V)$.&lt;/p&gt;
+&lt;p&gt;意思就是说, 所有 $(G,X)$, $G$-linear alg. gp, quasi-proj. $G$-var. $X$, 都可以看做某个 $(\mathbb{P}(V),GL(V))$ 的某种意义下的 sub. 还是很有意思的.&lt;/p&gt;
+&lt;p&gt;这个证明并不复杂. 考虑 $X$ 作为 proj. var. $\bar{X}$ 的 open dense subvar., $\mathcal{L}$ 由 $\mathcal{O}(1)$ induce, $\Gamma(\bar{X},\mathcal{L})$ of fin. dim. 证明的关键在于考虑 morph.&lt;/p&gt;
+\[\bar{X}\hookrightarrow \mathbb{P}(\Gamma(\bar{X},\mathcal{L})^*).\]\[x\mapsto H_x=\{m\in \Gamma(\bar{X},\mathcal{L})|m|_x=0\}.\]&lt;p&gt;根据 5.1.9, 我们可以用 equiv. 的 $\mathcal{L}^{\otimes n}$ 来代替 $\mathcal{L}$, 根据 5.1.23, $G$ 在 $\Gamma(X,\mathcal{L})$ 上的作用是 alg. 的, 因此存在有限维的 $V$, 包含了整个 $\Gamma(\bar{X},\mathcal{L})\subset \Gamma(X,\mathcal{L})$. 考虑 $X\hookrightarrow \mathbb{P}(V^*)$ 命题得证.&lt;/p&gt;
+&lt;p&gt;Prop 5.1.26: $X$ smooth (more generally, normal) quasi-proj. $G$-var. Then any $G$-equiv. coh. sheaf $\mathcal{F}$ on $X$ is a quotient of a $G$-equiv. locally free sheaf.&lt;/p&gt;
+&lt;p&gt;如上考虑 $X\hookrightarrow\bar{X}$, $\mathcal{L}$ ample line bundle on $\bar{X}$. 我们预先知道的是, 根据 [BS], 我们可以将 $\mathcal{F}$ 提升至一个不一定 $G$-equiv. 的 sheaf on $\bar{X}$. denoted by $\bar{\mathcal{F}}$. 于是, 根据 ample 的性质, 考虑 $n$ 足够大使得 $\bar{\mathcal{F}}\otimes (\mathcal{L})^{\otimes n}$ 由 finite number of global sections ${s_i}$ 生成 (事实上, 可以取他们生成 $\mathcal{F}\otimes(\mathcal{L}^{\otimes n})|_{X}$).&lt;/p&gt;
+&lt;p&gt;By 5.1.9, 不妨 $(\mathcal{L})^{\otimes n}$ 上有 $G$-equiv. structure. 由上命题证明我们可以找到 $V\subset \Gamma(X,\mathcal{F}\otimes(\mathcal{L}^{\otimes n}|_X))$ $G$-stable, fin-dim. 于是, 由于 $\bar{\mathcal{F}}\otimes(\mathcal{L}^{\otimes n})$ 由 ${s_i}$ 有限生成, 我们得到 surj. natural map&lt;/p&gt;
+\[V\otimes (\mathcal{L}^*|_X)^{\otimes n}\twoheadrightarrow \mathcal{F}.\]&lt;p&gt;接下来这个 prop 是说, 对于 quasi-proj. 的 $X$, 它上面的 $G$-equiv. sheaf 实际上就是从 $\bar{X}$ 上限制下来的.&lt;/p&gt;
+&lt;p&gt;Prop 5.1.27: $\mathcal{F}$ $G$-equiv. coh. sheaf on $X$.&lt;/p&gt;
+&lt;p&gt;(i) There exists a $G$-equiv. coh. sheaf $\bar{\mathcal{F}}$ on $\bar{X}$ s.t. $\bar{\mathcal{F}}$ restricted to $X$ equals to $\mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;(ii) Let $f:\mathcal{F}\to \mathcal{G}$ $G$-equiv. morph. of equiv. sheaves. Then there exists $\bar{f}:\bar{\mathcal{F}}\to \bar{\mathcal{G}}$ extends $f$.&lt;/p&gt;
+&lt;p&gt;byd用电怎么这么快qwq&lt;/p&gt;
+&lt;p&gt;麻了&lt;/p&gt;
+&lt;p&gt;Prop 5.1.28: $X$ smooth quasi-proj. $G$-var. then any $G$-equiv. coh. sheaf $\mathcal{F}$ on $X$ has a finite locally free $G$-equiv. resolution.&lt;/p&gt;
+&lt;p&gt;finite resolution 是好的()&lt;/p&gt;
+&lt;p&gt;根据 5.2.16 我们可以拉出来无限长 resolution of locally free coh. $G$-equiv. sheaves&lt;/p&gt;
+\[\cdots\to \mathcal{F}^{n+1}\to \mathcal{F}^n\to \cdots \to \mathcal{F}^1\to \mathcal{F}\to 0.\]&lt;p&gt;这个 finite 的性质是根据下面这个 Hilbert&amp;rsquo;s Syzygy Theorem 保证的.&lt;/p&gt;
+&lt;p&gt;Thm 5.1.30: (Hilbert&amp;rsquo;s Syzygy Theorem) Let $X$ be a smooth $n$-dim. var, and $\mathcal{F}$ an arbitrary coh. sheaf on $X$. Suppose we are given any locally free resolution of $\mathcal{F}$ of the form above, then the sheaf $\ker (\mathcal{F}^n\to \mathcal{F}^{n-1})$ is itself locally free.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Remain 一个 5.1.27 的证明. 大致 sketch 一下:&lt;/p&gt;
+&lt;p&gt;首先, 设 $\bar{X}$ normal, 于是根据 5.1.26 的证明, 我们可以考虑 $\mathcal{F}$ 为某个 $G$-inv morph. $f: W\otimes \mathcal{L}^{\otimes -m}\rightarrow V\otimes \mathcal{L}^{\otimes -n}$ 限制到 $X$ 后的 coker., 其中 $V,W$ 都是某个 f.d. $G$-v.s.&lt;/p&gt;
+&lt;p&gt;这里, $f$ 对应到某个 sheaf $\operatorname{Hom}(W,V)\otimes \mathcal{L}^{\otimes (m-n)}$ 的 $G$-inv. section, 而其在 $X$ 上 regular. choose ${e_i}$ basis of v.s. $D\subset \bar{X}$ 为所有 $s$ 使得在这组基下的分量至少有一项具有 pole. 注意 $D$ 是 $\bar{X}$ 的 divisor, $s$ 可以视为 $\operatorname{Hom}(W,V)\otimes \mathcal{L}^{\otimes(m-n)}(k\cdot D)$, 其 regular 且 G-equiv. 因此给出了 $G$-equiv. morph&lt;/p&gt;
+\[\bar{f}:W\otimes (\mathcal{L}^*)^{\otimes m}\rightarrow V\otimes (\mathcal{L}^*)^{\otimes n}(k\cdot D).\]&lt;p&gt;于是, 考虑 $\bar{\mathcal{F}}$ 为 $\bar{f}$ 的 coker. 由于 $\bar{f}$ 先知道 $X$ 上与 $f$ 一致, $\bar{\mathcal{F}}$ restriction 到 $X$ 上恰为 $\mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;对于 $\bar{X}$ normal 的情况, 我们已经说明了. 现在考虑 normalization $\pi:\tilde{X}\to \bar{X}$. 我们存在 $\tilde{\mathcal{F}}$ on $\tilde{X}$ extend $\phi_*\mathcal{F}$. 这里 $\phi: X\hookrightarrow \bar{X}$. 于是, $\bar{X}$ 定义为 subsheaf of $\pi_{\cdot} \tilde{\mathcal{F}}$ as:&lt;/p&gt;
+\[\bar{\mathcal{F}}=\{\bar{s}\in \pi_\cdot\tilde{\mathcal{F}}, \bar{s}|_{X}\in\mathcal{F}\}.\]&lt;p&gt;得证.&lt;/p&gt;
+&lt;p&gt;Remark: 他这里好多的 typo, 首先映射 $W\otimes (\mathcal{L}^\ast)^{\otimes m}\rightarrow V\otimes (\mathcal{L}^\ast)^{\otimes n}$ 一般不是 surj. 不该用双箭头, 其次 $\pi^\ast\mathcal{F}$ 也不是正确的.&lt;/p&gt;
+&lt;p&gt;可能 Chriss 和 Ginzberg 也不想写了() 介绍工具确实不像介绍那种很 intriguing 的东西一样, 挺体力活的()&lt;/p&gt;
+&lt;p&gt;好消息是, 5.1结束了!&lt;/p&gt;
+&lt;p&gt;开 5.2&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十五 P236-239</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%BA%94-p236-239/</link>
         <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
