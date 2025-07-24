@@ -7,7 +7,49 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 22 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十七 P243-246</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83-p243-246/</link>
+        <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83-p243-246/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83-p243-246/guys.jpg" alt="Featured image of post CG饲养日记-其十七 P243-246" /&gt;&lt;p&gt;$K$-theory!&lt;/p&gt;
+&lt;p&gt;$X$ quasi-proj. var. $G$ linear alg. gp. 定义 $Coh^G(X)$ cat. of $G$-equiv. sheaves on $X$. 他是 abelian cat. $K^G(X)$ 定义为这个 cat. 的 Grothendieck group.&lt;/p&gt;
+&lt;p&gt;我们本书中只考虑 $K_0^G(X)=K^G(X)$. &amp;ldquo;higher K-groups&amp;rdquo; 以后再学()&lt;/p&gt;
+&lt;p&gt;有, $Coh^G(pt)=\operatorname{Rep}G$, 于是 $K^G(\operatorname{pt}) =R(G)$ Groth. gp. of $\operatorname{Rep}G$. 有 canonical embedding&lt;/p&gt;
+\[R(G)\hookrightarrow \mathcal{O}(G)^G.\]&lt;p&gt;熟知, 对于 $G$ reductive,&lt;/p&gt;
+\[\mathbb{C}\otimes R(G)\to \mathcal{O}(G)^G\]&lt;p&gt;是一个 isom. 而对于一般的 linear alg. gp. 其 image 是所有在 unipotent radical 的 coset 上为 const. 的 $f$.&lt;/p&gt;
+&lt;p&gt;Remark 5.2.3 是说, $R(G)$ 是有 simple repn. 自由生成的. 而对于 unipotent gp., 其唯一的 simple repn 就是 $1$. 于是 $R(G)\simeq \mathbb{Z}$. 但和上面比较, 显然 $\mathcal{O}^G(G)$ 会大得多().&lt;/p&gt;
+&lt;p&gt;$X$ 是 $G$-var. $G=G_1\times G_2$ 且 $G_1$ 在 $X$ 作用下 trivial. 于是&lt;/p&gt;
+\[Coh^G(X)=Coh^{G_2}(X)\otimes \operatorname{Rep}(G_1),\]\[K^G(X)=R(G_1)\otimes_{\mathbb{Z}}K^{G_2}(X).\]&lt;p&gt;在 underlying var. 上的 operation, 我们可以搞出来 $K$-gp. 上的 morph.&lt;/p&gt;
+&lt;p&gt;5.2.5: Pullback.&lt;/p&gt;
+&lt;p&gt;对于 $f:Y\to X$ $G$-equiv. morph of $G$-var.&lt;/p&gt;
+&lt;p&gt;(i). $f$ open embedding, or more generally, $f$ flat. exists mapping&lt;/p&gt;
+\[f^*:K_i^G\to K_i^G(Y)\]&lt;p&gt;induce by exact pullback&lt;/p&gt;
+\[f^*:Coh^G(X)\to Coh^G(Y),\]\[\mathcal{F}\mapsto f^*\mathcal{F}:=\mathcal{O}_Y\otimes_{f^\cdot \mathcal{O}_X}f^\cdot \mathcal{F}.\]&lt;p&gt;5.1.27 implies 了, 这样的 $f^\ast $ 是 essentially surjective 的. Moreover, cat. $Coh^G(Y)$ 可以看做是 $Coh^G(X)$ 商掉所有 supported on $X\backslash Y$ 的 sheaves.&lt;/p&gt;
+&lt;p&gt;(ii) $G$-equiv. closed embedding $f:Y\hookrightarrow X$, 依然定义 pullback map&lt;/p&gt;
+\[f^*:Coh^G(X)\to Coh^G(Y),\]&lt;p&gt;不妨 $\mathcal{I}_Y\subset \mathcal{O}_X$ 为 $Y$ 的 difining ideal. $\mathcal{O}_Y=\mathcal{O}_X/\mathcal{I}_Y$. 我们可以定义&lt;/p&gt;
+\[f^*\mathcal{F}:=\mathcal{F}/\mathcal{I}_Y\cdot \mathcal{F} \simeq \mathcal{O}_Y\otimes_{\mathcal{O}_X}\mathcal{F}.\]&lt;p&gt;先写两页() 下次再施工.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;back&lt;/p&gt;
+&lt;p&gt;但我们这么定义, 他并不是 exact 的. 我们只能给他 corres. 一个类似 $\sum(-1)^nL^nf^\ast \mathcal{F}$ 一样的东西, 在 homolgical alg. 的背景下, $L^nf^\ast \mathcal{F}=\mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,\mathcal{F})$. 所以我们可能要考虑 perverse sheaf 这样的东西. 但是暂时还不会()&lt;/p&gt;
+&lt;p&gt;我们考虑 pullback 的时候, 除了 5.3 中会考虑的 $\mathcal{O}_X$ flat w.r.t. $\mathcal{O}_Y$ 的情况, 其他时候我们都会假设 $X,Y$ smooth quasi-proj. $G$-var. $f:Y\hookrightarrow X$ closed $G$-equiv. embedding. 于是, 根据 5.1.28, 有 finite $G$-equiv. locally free resol. $F^\cdot$ of $\mathcal{F}$&lt;/p&gt;
+\[\cdots \to F^0\to \mathcal{F}\to 0.\]&lt;p&gt;于是, 我们 identify $f_\ast \mathcal{O}_Y$ cohomology sheaves $\mathcal{H}^i(f_\ast \mathcal{O}_Y\otimes_{\mathcal{O}_X}F^\cdot)$ of complex. 于是&lt;/p&gt;
+\[f^*[\mathcal{F}]=\sum(-1)^i[\mathcal{H}^i(f_*\mathcal{O}_Y\otimes \mathcal{O}_X F^\cdot)]\in K^G(Y).\]&lt;p&gt;在 Homological alg. 的角度来说&lt;/p&gt;
+\[\mathcal{H}^i(f_*\mathcal{O}_Y\otimes_{\mathcal{O}_X}F^\cdot)=\mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,\mathcal{F}).\]&lt;p&gt;而, $Tor$ 函子是 symmetric w.r.t. two arguments 的. 因此实际上我们可以选取 $f_\ast \mathcal{O}_Y$ 的 resolution $E^\cdot$, 而不是 $F^\cdot$ 来进行计算.&lt;/p&gt;
+&lt;p&gt;(iii) Restriction with supports.&lt;/p&gt;
+&lt;p&gt;考虑 $f:Y\hookrightarrow X$ closed embedding, $Z\subset X$ possibly singular $G$-stable subvar. 我们希望定义 restriction with support map&lt;/p&gt;
+\[f^*:K^G(Z)\to K^G(f^{-1}(Z))=K^G(Y\cap Z).\]&lt;p&gt;咕咕嘎嘎&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMCwyLCJZIl0sWzIsMiwiWCJdLFsyLDAsIloiXSxbMiwxLCJpIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMCwxLCJmIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMCwyLCJZIl0sWzIsMiwiWCJdLFsyLDAsIloiXSxbMiwxLCJpIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMCwxLCJmIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;一个长在 $Z$ 上的 sheaf $\mathcal{E}$, 我们先把他推到 $X$ 上 $\mathcal{F}=i_\ast \mathcal{E}$, 然后考虑 (ii) 中定义的拉回&lt;/p&gt;
+\[\sum_n(-1)^n[\mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,i_*\mathcal{E})].\]&lt;p&gt;每一个 term 都 supported on $Y\cap Z$, 然后根据 (ii), 他们都是 $\mathcal{O}_Y$ module.&lt;/p&gt;
+&lt;p&gt;但我们希望给出来的是一个 $K^G(Y\cap Z)$ 里的东西. 换句话说, $\mathcal{O}_{Y\cap Z}$ module. 我们知道后者 ($Y\cap Z$) 是前者 ($Y$) 的闭子集. 我们会考虑 $Z\cap Y$ 在 $Y$ 中的 annihilation ideal $\mathcal{I}$, 由于各项 supported on $Z\cap Y$, 有 $\mathcal{I}^k\cdot \mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,i_\ast \mathcal{E})=0$. 于是我们可以考虑 grading&lt;/p&gt;
+\[\operatorname{gr}\mathcal{A}:=\sum[\mathcal{I}^j\cdot \mathcal{A}/\mathcal{I}^{j+1}\cdot \mathcal{A}].\]&lt;p&gt;and finally put&lt;/p&gt;
+\[f^*[\mathcal{E}]:=\sum_n(-1)^n\operatorname{gr}\mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,i_*\mathcal{E}).\]&lt;p&gt;这便给出了我们需要的 restriction.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其三十</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81/</link>
         <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
@@ -42,15 +84,6 @@
 &lt;p&gt;恭喜 xxxx 使用率 sub30!&lt;/p&gt;
 &lt;p&gt;下班&lt;/p&gt;
 &lt;p&gt;2025.7.22 20:32 于怀柔集贤山庄&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>CG饲养日记-其十七 P243-</title>
-        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83-p243-/</link>
-        <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83-p243-/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/keqqq.jpg" alt="Featured image of post CG饲养日记-其十七 P243-" /&gt;&lt;p&gt;这个先放这.&lt;/p&gt;
 </description>
         </item>
         <item>
