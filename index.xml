@@ -7,7 +7,74 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 28 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十八 P246-250</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AB-p246-250/</link>
+        <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AB-p246-250/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AB-p246-250/mnbt.jpg" alt="Featured image of post CG饲养日记-其十八 P246-250" /&gt;&lt;p&gt;接下来是 tensor product&lt;/p&gt;
+&lt;p&gt;这个就很贴近于几何表示论的构造了. 考虑 $X,Y$ $G$-var. 我们考虑&lt;/p&gt;
+\[\boxtimes :(\mathcal{F},\mathcal{F}^\prime)\mapsto \mathcal{F}\boxtimes \mathcal{F}^\prime:=p_X^* \mathcal{F}\otimes p_Y^*\mathcal{F}^\prime.\]&lt;p&gt;这个 functor 是 exact 的. 那么这个诱导了&lt;/p&gt;
+\[K^G(X)\otimes_\mathbb{Z} K^G(Y)\to K^G(X\times Y).\]&lt;ol&gt;
+&lt;li&gt;考虑 $X=Y$ 的 case, 这实际上给出了类似 intersection pairing 的结构! 考虑 embedding $\Delta:X_\Delta\hookrightarrow X\times X$. 通过&lt;/li&gt;
+&lt;/ol&gt;
+\[[\mathcal{F}]\otimes [\mathcal{F}^\prime]=\Delta^*(\mathcal{F}\boxtimes \mathcal{F}^\prime),\]&lt;p&gt;我们给出了 bilinear 的 $R(G)$-mod homo. 这实际上给出了&lt;/p&gt;
+\[K^G(X)\otimes K^G(X)\to K^G(X).\]&lt;p&gt;注意这个实际上只给出了 smooth var. 上的构造. 于是我们给出了 $K^G(X)$ 一个 commutative associative $R(G)$-alg. 的结构.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;with support 的 case. 这个case 就跟上面的比较类似. 对于 $Z,Z^\prime\subset X,\mathcal{F}\ni K^G(Z),\mathcal{F}^\prime\in K^G(Z^\prime)$, 仍旧考虑 $\Delta^\ast (\mathcal{F}\boxtimes \mathcal{F}^\prime)$ 即可.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tensor. with a vector bundle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对于 $X$ quasi-proj. $G$-var. $E$ $G$-equiv v.b. 有&lt;/p&gt;
+\[E\otimes_{\mathcal{O}_X}:\mathcal{C}oh^G(X)\to \mathcal{C}oh^G(X)\]&lt;p&gt;是 exact 的. 于是诱导了&lt;/p&gt;
+\[E\otimes :K_i^G(X)\to K_i^G(X).\]&lt;p&gt;他在这里怎么又 typo 了..&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;那 pullback, tensor 搞定 (并非完全搞定) 了, pushforward 这一块呢?&lt;/p&gt;
+&lt;p&gt;对于 $f:X\to Y$ normal morph of quasi-proj, 你当然希望去考虑&lt;/p&gt;
+\[f_*:K^G(X)\to K^G(Y).\]\[[\mathcal{F}]\mapsto [f_*\mathcal{F}].\]&lt;p&gt;but, 这有一个问题, 对于一个一般的这样的函子,&lt;/p&gt;
+\[0\to \mathcal{F}^\prime\to \mathcal{F}\to \mathcal{F}^{\prime\prime}\to 0,\]&lt;p&gt;这可不一定是 exact 的. 为此, 考虑 $X=\mathbb{P}^1, Y={\operatorname{pt}}$. $Z={x}\subset X$, $U=X-Z$. 考虑&lt;/p&gt;
+&lt;p&gt;$\mathcal{F}^\prime=j_!(\mathcal{F}|_{U})$, &amp;ldquo;extend by zero&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;$\mathcal{F}={\text{holo. funct.}}$.&lt;/p&gt;
+&lt;p&gt;$\mathcal{F}^{\prime\prime}={\text{Skyscraper sheaf of }\mathcal{F}_x \text{ on }x}$.&lt;/p&gt;
+&lt;p&gt;这个构造实际上就是来自 Hartshorne II Ex.1.19. 在这种情况下, 去考虑 $f_\ast $ 在 $y$ 处的 stalk, 我们得到&lt;/p&gt;
+\[0\to \mathbb{C}\to \mathcal{F}_x.\]&lt;p&gt;这当然不是 exact 的. 因此, 这个函子不是 exact 的.&lt;/p&gt;
+&lt;p&gt;那咋办呢? 我们定义&lt;/p&gt;
+\[f_*[\mathcal{F}]=\sum(-1)^i[R^if_*\mathcal{F}].\]&lt;p&gt;这下根据代数几何II的知识, 这个就 exact 了.&lt;/p&gt;
+&lt;p&gt;现在考虑&lt;/p&gt;
+\[X\overset{i\text{closed}}{\hookrightarrow} Y\overset{j,\text{open}}{\hookleftarrow} Y-X.\]&lt;p&gt;在 5.1.26(其实还要加上27) 中, 我们 identify 了 $\mathcal{C}oh^G(U)=\mathcal{C}oh^G(X)/\mathcal{C}oh^G(Z)$. 于是根据 Quillen 的一个 result 我们有 l.e.s&lt;/p&gt;
+\[\cdots\to K_i^G(X)\overset{i_*}{\to} K_i^G(Y)\overset{j^*}{\to} K_i^G(U)\to K_{i-1}^G(X)\to \cdots.\]&lt;hr&gt;
+&lt;p&gt;接下来是 equiv. descent. 他开头讲的这一系列大概就是关于 Zar. top 和 etale top 的一些哲学. 感觉暂时跳了问题也不大.&lt;/p&gt;
+&lt;p&gt;给定 $\pi:P\to X$ principal $G$-bundle. 我们有 canonical equiv&lt;/p&gt;
+\[\mathcal{C}oh(X)\overset{\sim}{\to}\mathcal{C}oh^G(P).\]&lt;p&gt;(SGA, 要求 $\pi$ flat). 于是其给出 canonical gp. isom&lt;/p&gt;
+\[\pi^*:K(X)\overset{\sim}{\to }K^G(P).\]&lt;p&gt;这就是 equiv. descent.&lt;/p&gt;
+&lt;p&gt;考虑 $H\subset G$ closed alg. subgp. $H\circlearrowright X$. 考虑 $G\times_H X$ orbit space of $(g,x)\sim(gh^{-1},hx).$ 那么有一个结论是 $G\times_HX$ 也有自然的代数簇结构. 这个并不 trivial. 你可以看到 $X={\operatorname{pt}}$ 的 case 就是喜闻乐见的 $G/H$. 我们先承认这个事情.&lt;/p&gt;
+&lt;p&gt;我们有, $G\times X\to G$ induces $G\times_H X\to G/H$, 而这是一个 fibration with fiber $X$. 于是 fix $e\in G/H$, 对于 $\mathcal{G}$ $G$-equiv. sheaf 我们可以考虑其 restrict 到 $e$ 上, 得到 $\operatorname{res}\mathcal{G}$. 我们诱导了 exact functor&lt;/p&gt;
+\[\operatorname{res}:\mathcal{C}oh^G(G\times_H X)\to \mathcal{C}oh^H(X).\]&lt;p&gt;你可以想象这是一个 equivalence, 因为你可以往 $G\times_HX$ 上 induce 这个 bundle. 具体的构造则是这样的: 考虑&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMCwwLCJHXFx0aW1lcyBYIl0sWzIsMCwiWCJdLFswLDIsIkdcXHRpbWVzX0hYIl0sWzAsMl0sWzAsMSwicCIsMl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMCwwLCJHXFx0aW1lcyBYIl0sWzIsMCwiWCJdLFswLDIsIkdcXHRpbWVzX0hYIl0sWzAsMl0sWzAsMSwicCIsMl1d&amp;embed&#34; width=&#34;481&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;首先把 $H$-equiv 的 $\mathcal{F}$ 拉到 $G\times X$ 上, 得到在 $H$-diag. 作用下 equiv. 的 $p^\ast \mathcal{F}$. 然后通过 descent 得到 $G\times_H X$ 上的 Coh. bundle.&lt;/p&gt;
+\[\mathcal{C}oh(G\times_H X)\overset{\sim}{\to }\mathcal{C}oh^H(G\times X).\]&lt;p&gt;而由于 $G$ 自然地左作用在 $G\times X$ 上. 我们得到的 $p^\ast \mathcal{F}$ 是 $G$-等变的. 于是 descent 得到的自然也是 $G$-等变的. 而根据 direct check, 这么定义出来的 Ind 确实是 res 的逆.&lt;/p&gt;
+&lt;p&gt;再写一页, 把 Reduction 写了, 然后给 Convolution prod. 开个头, 就可以再搞一篇上去了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;全部弾きない！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;不知不觉又拖了一天orz&lt;/p&gt;
+&lt;p&gt;入党还是太麻烦了&lt;/p&gt;
+&lt;p&gt;现在我们要考虑 $G=R\ltimes U$, 对 $X$ $G$-equiv. sheaf,  $R\hookrightarrow G$ 给出了 $K_i^G(X)\to K^R_i(X)$. 我们的 Claim 是, 这是一个 isom.&lt;/p&gt;
+&lt;p&gt;注意, $X$ 上有 $G$-equiv 结构. 于是我们有 isom.&lt;/p&gt;
+\[p\boxtimes a:G\times_RX\to (G/R)\times X,\]\[(g,x)\mapsto(\bar{g},gx),\]\[(g,g^{-1}x)\leftarrow(\bar{g},x).\]&lt;p&gt;by 仔细的 check, 你会发现他是 well-def. 的&lt;/p&gt;
+&lt;p&gt;于是, 我们有&lt;/p&gt;
+\[K^R(X)\simeq K^G(G\times_RX)\simeq K^G((G/R)\times X).\]&lt;p&gt;而, $(G/R)\times X\to X$ induce 了 $K^G(X)\to K^G((G/R)\times X)$ by $\mathcal{F}\mapsto \mathcal{O}_{G/R}\boxtimes \mathcal{F}$. 我们希望说明这是一个 isom.&lt;/p&gt;
+&lt;p&gt;这个要用到一个叫 Thom isom 的 material. 具体来说就是, 考虑 $G/R\simeq U$. $U$ $G$-space by conj. 我们取 central series of $U$&lt;/p&gt;
+\[U=U^0\supset U^1\supset \cdots\supset U^n=\{e\},U^{i+1}=[U^i,U^i].\]&lt;p&gt;于是, $U^i$ $\operatorname{Ad}G$-stable. 有 $\pi_i:U/U^i\to U/U^{i-1}$ non-canonically trivial fibration with affine space. 于是根据 Thom isom,&lt;/p&gt;
+\[\pi_i^*:K^G(U/U^{i-1}\times X)\overset{\sim}{\to} K^G(U/U^{i}\times X).\]&lt;p&gt;然后归纳就做完了.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十七 P243-246</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B8%83-p243-246/</link>
         <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
@@ -47,6 +114,51 @@
 &lt;p&gt;但我们希望给出来的是一个 $K^G(Y\cap Z)$ 里的东西. 换句话说, $\mathcal{O}_{Y\cap Z}$ module. 我们知道后者 ($Y\cap Z$) 是前者 ($Y$) 的闭子集. 我们会考虑 $Z\cap Y$ 在 $Y$ 中的 annihilation ideal $\mathcal{I}$, 由于各项 supported on $Z\cap Y$, 有 $\mathcal{I}^k\cdot \mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,i_\ast \mathcal{E})=0$. 于是我们可以考虑 grading&lt;/p&gt;
 \[\operatorname{gr}\mathcal{A}:=\sum[\mathcal{I}^j\cdot \mathcal{A}/\mathcal{I}^{j+1}\cdot \mathcal{A}].\]&lt;p&gt;and finally put&lt;/p&gt;
 \[f^*[\mathcal{E}]:=\sum_n(-1)^n\operatorname{gr}\mathcal{T}or_n^{\mathcal{O}_X}(\mathcal{O}_Y,i_*\mathcal{E}).\]&lt;p&gt;这便给出了我们需要的 restriction.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>浮生多少记-其三十一</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80/</link>
+        <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80/hjw.jpg" alt="Featured image of post 浮生多少记-其三十一" /&gt;&lt;p&gt;不知放什么&lt;/p&gt;
+&lt;p&gt;扔个哈基汪上去&lt;/p&gt;
+&lt;p&gt;怎么这么糊&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;终于, 我们迎来了在 ICBS2025 的最后一天.&lt;/p&gt;
+&lt;p&gt;这一周好像, 想听的报告少了不少.&lt;/p&gt;
+&lt;p&gt;虽然感觉, 好像代数tv今年也没听什么报告就是了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在手头空闲得很, 好像没什么事情再需要做了.&lt;/p&gt;
+&lt;p&gt;等我处理完2000+6000的入党材料, 就可以放松一个月了吧.&lt;/p&gt;
+&lt;p&gt;原来只有一个月时间吗.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;小时候 (好像也不是太小的时候) 也许是在b站听过达拉崩吧的一个魔改ver.&lt;/p&gt;
+&lt;p&gt;已经不太记得词了. 大概的意思就是现在放假了, 我要做啥啥啥啥学啥啥啥啥, 然后发现时间好短.&lt;/p&gt;
+&lt;p&gt;感觉现在精神状态好像已经差不多了()&lt;/p&gt;
+&lt;p&gt;虽然经常持续性地身心俱疲, 但偶尔接触一次新东西, 还是会有一些powerful.&lt;/p&gt;
+&lt;p&gt;立个 flag, 在这个暑假把这个网站装修好()&lt;/p&gt;
+&lt;p&gt;我是不是还要做个啥网站, 还要学 mmd 来着的.&lt;/p&gt;
+&lt;p&gt;争取吧()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这里的网络条件也太ex了.&lt;/p&gt;
+&lt;p&gt;看视频时不时顿一下, 打卡拉彼丘也总是在排位的关键节点卡住.&lt;/p&gt;
+&lt;p&gt;这能不红的是这个.&lt;/p&gt;
+&lt;p&gt;可能统战部的那些人, 他们来这边是不会来玩 CS2 的.&lt;/p&gt;
+&lt;p&gt;但有些人确实刚需玩一下瓦罗兰特.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;哦对了, 有人说我的英文加空格是随缘空格.&lt;/p&gt;
+&lt;p&gt;别尬黑. 能给你加不错了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我还要写地理志来着的. 上海要有一篇.&lt;/p&gt;
+&lt;p&gt;不知道我还记不记得了.&lt;/p&gt;
+&lt;p&gt;怀柔也值得写一篇吧() 这两天听说了点有意思的东西.&lt;/p&gt;
+&lt;p&gt;等着.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;人間に、なりたいですわ&lt;/p&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+&lt;p&gt;2025.7.24 22:21 于怀柔集贤山庄&lt;/p&gt;
 </description>
         </item>
         <item>
