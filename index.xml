@@ -7,7 +7,109 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 28 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其十九 P250-254</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B9%9D-p250-254/</link>
+        <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B9%9D-p250-254/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B9%9D-p250-254/summer.jpg" alt="Featured image of post CG饲养日记-其十九 P250-254" /&gt;&lt;p&gt;这个世界这个大学圈子怎么这么乱..&lt;/p&gt;
+&lt;p&gt;对于搞研究的人来说, 研究本身才是一切的厚势.&lt;/p&gt;
+&lt;p&gt;莫忆魑魅魍魉忆江南.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;事已至此, 不具体介绍一下 Borel-Moore 的 Convolution prod. 恐怕不行.&lt;/p&gt;
+&lt;p&gt;对于 $M_1,M_2,M_3$, 考虑 $p_{ij}:M_1\times M_2\times M_3\to M_i\times M_j$ proj, $d=\dim M_2$, 定义 convolution prod&lt;/p&gt;
+\[\Omega^i(M_1\times M_2)\otimes\Omega^j(M_2\times M_3)\to \Omega^{i+j-d}(M_1\times M_3).\]\[f_{12}\ast f_{23}=\int_{M_2}p_{12}^*f_{12}\wedge p_{23}^*f_{23}.\]&lt;p&gt;这便诱导了&lt;/p&gt;
+\[H^i(M_1\times M_2)\otimes H^j(M_2\times M_3)\to H^{i+j-d}(M_1\times M_3).\]&lt;p&gt;通过 Poincare dual. transp. to homology case.&lt;/p&gt;
+&lt;p&gt;而一个 alternative defn 是这么给出的: 对于&lt;/p&gt;
+\[Z_{12}\subset M_1\times M_2, Z_{23}\supset -,\]&lt;p&gt;$G$-stable closed subvar, 定义&lt;/p&gt;
+\[Z_{12}\circ Z_{23}=p_{13}(p_{12}^{-1}(Z_{12})\cap p_{23}^{-1}(Z_{23})).\]&lt;p&gt;这似乎就是一个比较好的convolution 定义(). 在这里, 如果&lt;/p&gt;
+\[p_{13}:p_{12}^{-1}(Z_{12})\cap p_{23}^{-1}(Z_{23})\to M_1\times M_3\]&lt;p&gt;proper, 对于 $\mathcal{F}_{12}\in K^{G}(Z_{12}),\mathcal{F}_{23}\in -$. 有 $p_{12}^\ast \mathcal{F}_{12}\otimes p_{23}^\ast \mathcal{F}_{23}$ well-def. 然后, 你应该相信求积分 morelessly 就是 push forward, 而 proper 性保证了 $(p_{13})_\ast $ well-def. 于是定义&lt;/p&gt;
+\[\mathcal{F}_{12}*\mathcal{F}_{23}=(p_{13})_*(p_{12}^*\mathcal{F}_{12}\otimes p_{23}^*\mathcal{F}_{23})\in K^G(Z_{12}\circ Z_{23}).\]&lt;p&gt;这便给出了 convol. map&lt;/p&gt;
+\[K^G(Z_{12})\otimes K^G(Z_{23})\to K^G(Z_{12}\circ Z_{23}).\]&lt;p&gt;后面跟了个 Remark. 是说对于 $M_i$ finite sets, $G=1$, 那么考虑 $\mathcal{F}_{ij}$ sheaf on $Z_{ij}$, 考虑&lt;/p&gt;
+\[f_{[\mathcal{F}]}:(m,n)\mapsto \dim \mathcal{F}(m,n)\]&lt;p&gt;则有&lt;/p&gt;
+\[f_{[\mathcal{F}_{12}*\mathcal{F}_{23}]}=f_{\mathcal{F}_{12}}*f_{\mathcal{F}_{23}}.\]&lt;p&gt;其中后面的卷积, 就是来自&lt;/p&gt;
+\[(f_{\mathcal{F}_{12}}*f_{\mathcal{F}_{23}})(m_1,m_3)=\sum_{m_2,(m_1,m_2)\in-,(m_2,m_3)\in-}f_{12}(m_1,m_2)f_{23}(m_2,m_3).\]&lt;p&gt;接下来这个 lemma 是说, 如果 $\epsilon:\tilde{Z}_{23}\hookrightarrow Z_{23}$ $G$-equiv. closed embedding. 那么&lt;/p&gt;
+\[\epsilon: Z_{12}\circ \tilde{Z}_{23}\hookrightarrow Z_{12}\circ Z_{23}\]&lt;p&gt;$G$-equiv. closed embedding. 有&lt;/p&gt;
+&lt;p&gt;Lemma 5.2.23: The following diag commutes:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWl97MTJ9KVxcb3RpbWVzIEteRyhaX3syM30pIl0sWzIsMCwiS15HKFpfezEyfVxcY2lyYyBaX3syM30pIl0sWzIsMiwiS15HKFpfezEyfVxcY2lyYyBaX3syM30pIl0sWzAsMiwiS15HKFpfezEyfSlcXG90aW1lcyBLXkcoXFx0aWxkZXtafV97MjN9KSJdLFswLDMsIjFcXG90aW1lc1xcZXBzaWxvbl9cXGFzdCJdLFsxLDIsIlxcZXBzaWxvbl9cXGFzdCJdLFswLDEsIlxcb3BlcmF0b3JuYW1le2NvbnZvbHV0aW9ufSJdLFszLDIsIlxcb3BlcmF0b3JuYW1le2NvbnZvbHV0aW9ufSJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWl97MTJ9KVxcb3RpbWVzIEteRyhaX3syM30pIl0sWzIsMCwiS15HKFpfezEyfVxcY2lyYyBaX3syM30pIl0sWzIsMiwiS15HKFpfezEyfVxcY2lyYyBaX3syM30pIl0sWzAsMiwiS15HKFpfezEyfSlcXG90aW1lcyBLXkcoXFx0aWxkZXtafV97MjN9KSJdLFswLDMsIjFcXG90aW1lc1xcZXBzaWxvbl9cXGFzdCJdLFsxLDIsIlxcZXBzaWxvbl9cXGFzdCJdLFswLDEsIlxcb3BlcmF0b3JuYW1le2NvbnZvbHV0aW9ufSJdLFszLDIsIlxcb3BlcmF0b3JuYW1le2NvbnZvbHV0aW9ufSJdXQ==&amp;embed&#34; width=&#34;769&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;我们要考虑的 case 是 $M_1=M_2=M$, $M_3=pt$. 在这种情况下 $Z=Z_{12}\hookrightarrow M\times M$, $\tilde{Y}=\tilde{Z}_{23}\subset Y=Z_{23}\subset M$ 给出了 compactible 的 $K^G(Z)$-action on $K^G(\tilde{Y})$ and $K^G(Y)$.&lt;/p&gt;
+&lt;p&gt;在 $X,X,X$ setting 下, clearly $X_{\Delta}\circ X_{\Delta}=X_{\Delta}$. 于是 conv. map&lt;/p&gt;
+\[K^G(X_{\Delta})\times K^G(X_{\Delta})\to K^G(X_{\Delta})\]&lt;p&gt;well-def. 而, 由于 $X_\Delta$ smooth, 我们可以定义 tensor prod. 你可以简单地验证 tensor prod. 和 convol. prod. 是等价的(Cor 5.2.25.)&lt;/p&gt;
+&lt;p&gt;然后是 Duality Pairing, 首先, 考虑 $X$ proj. $G$-var. 由于 $p:X\to pt$ proj. of $X$ to a pt. 于是 $p$ proper $G$-equiv. 于是 direct image (也许有点像 evaluation? 不知道)&lt;/p&gt;
+\[p_*:K^G(X)\to K^G(pt)=R(G).\]&lt;p&gt;$R(G)$-linear map. 于是, 我们可以 introduce bilinear pairing:&lt;/p&gt;
+\[\mathcal{F},\mathcal{F}&#39;\mapsto p_*([\mathcal{F}]\otimes [\mathcal{F}&#39;]).\]&lt;p&gt;注意右侧那个是 $K$-理论中的 tensor prod.&lt;/p&gt;
+&lt;p&gt;更一般的, 对于 $Y,Y&amp;rsquo;\subset X$ s.t. $Y\cap Y&amp;rsquo;$ compact, 但 $X,Y,Y&amp;rsquo;$ 本身不一定, 我们同样可以 def. $K^G(Y&amp;rsquo;)\times K^G(Y&amp;rsquo;&amp;rsquo;)\to R(G)$.&lt;/p&gt;
+&lt;p&gt;考虑 $M_1,M_2,M_3$, $Y&amp;rsquo;,Y&amp;rsquo;&amp;rsquo;\subset M_2$, $Y&amp;rsquo;\cap Y&amp;rsquo;&amp;rsquo;$ 非空 compact. 于是 $(M_1\times Y&amp;rsquo;)\circ (Y&amp;rsquo;&amp;rsquo;\times M_3)=M_1\times M_3$, 而 corresp. conv. map:&lt;/p&gt;
+\[*:K^G(M_1\times Y&#39;)\times K^G(Y&#39;&#39;\times M_3)\to K^G(M_1\times M_3).\]&lt;p&gt;而, 他的具体计算算这边第一个非平凡的命题?&lt;/p&gt;
+&lt;p&gt;Lemma 5.2.28: $\mathcal{F}_1,\mathcal{F}_3\in K^G(M_-)$, $\mathscr{G}&amp;rsquo;,\mathscr{G}&amp;rsquo;&amp;rsquo;\in K^G(Y^-)$, then&lt;/p&gt;
+\[(\mathcal{F}_1\boxtimes \mathscr{G}&#39;)*(\mathscr{G}&#39;&#39;\boxtimes \mathcal{F}_3)=\langle \mathscr{G}&#39;,\mathscr{G}&#39;&#39;\rangle\cdot (\mathcal{F}_1\boxtimes\mathcal{F}_3),\]&lt;p&gt;where $\langle \mathscr{G}&amp;rsquo;,\mathscr{G}&amp;rsquo;&amp;rsquo;\rangle\in R(G)$ 作用在 $K^G(M_1\times M_3)$ 上.&lt;/p&gt;
+&lt;p&gt;这个是 projection formula 的推论. 上过几何表示论I的应该不会对 projection formula 陌生. 但是在 CG setting 下的 pf 还是要等 5.3 开()&lt;/p&gt;
+&lt;p&gt;本章应该以两个 Thm 收尾. 其一是 5.2.30 的 Proj. Bundle Theorem. $E\to X$ $G$-equiv. $n$-diml (alg.) vector bundle on a $G$-var. $X$, $\pi:\mathbb{P}(E)\to X$ associated proj. bundle with fiber $\mathbb{P}^{n-1}$. For each $k\in \mathbb{Z}$ there is a natural $G$-equiv. line bundle $\mathcal{O}(k)$ on $\mathbb{P}(E)$ whose germs of sections are the germs of reg funct. on $E\setminus (\text{zero-section})$ that are homog. of deg. $k$ along the fibers.&lt;/p&gt;
+&lt;p&gt;Thm 5.2.31. For each $j\geq 0$, $K_i^G(\mathbb{P}(E))$ 由 $[\mathcal{O}(k)]$ 自由生成 over $K_j^G(X)$. 也就是说, 任意 $\mathcal{F}\in K_j^G(\mathbb{P}(E))$ 都 has a unique repn of the form&lt;/p&gt;
+\[\mathcal{F}=\sum_{k=0}^{n-1}\mathcal{O}(k)\otimes \pi^*\mathcal{F}_k, \mathcal{F}_k\in K_j^G(X).\]&lt;p&gt;在 5.6 会给一个 modern proof. 虽然我不一定到时候会写就是了.&lt;/p&gt;
+&lt;p&gt;5.2 也拖得有点久了 sad.&lt;/p&gt;
+&lt;p&gt;不知道 5.3 会怎么样. 我还是很想在9月前把 5.x 都清了的.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>浮生多少记-其三十二</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%8C/</link>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%8C/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%8C/fg3aiwad.png" alt="Featured image of post 浮生多少记-其三十二" /&gt;&lt;p&gt;一年前的今天&lt;/p&gt;
+&lt;p&gt;(好像现在搜索 Chuqin Moregard, 很难找到一张小莫的正脸和王的背影的照片)&lt;/p&gt;
+&lt;p&gt;(可惜, 这张图来自 &lt;a class=&#34;link&#34; href=&#34;https://www.independent.co.uk/sport/olympics/olympics-china-table-tennis-photographer-wang-chuqin-b2589021.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;独立报&lt;/a&gt;)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;30号的时候代数tv还在感叹, 好像这王楚钦拧拉还真有点用.&lt;/p&gt;
+&lt;p&gt;至少, 把21年那会昕雯错失的金牌抢了回来.&lt;/p&gt;
+&lt;p&gt;然后31号, 就发生了这样的事情.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;代数tv还记得那天的状态. 那天下午代数tv百无聊赖地上着肖老师的PDE博资考辅导.&lt;/p&gt;
+&lt;p&gt;现在翻了翻当时的笔记, 那次的授课内容应该是 Entire Function 的 Hadamard 刻画和 Elliptic function 的初步分类.&lt;/p&gt;
+&lt;p&gt;这些对代数tv来说实在是过于 trivial, 于是代数tv就翻开了懂球帝.&lt;/p&gt;
+&lt;p&gt;先是去看忘了什么项目的评论区, 看到有人在说&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;今天的王怎么回事, 被莫雷高德0:2了&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;2:2扳平了&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;2:4, 寄了&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;然后就看到懂球帝头版: 巨大冷门！世界第一王楚钦不敌莫雷加德，止步乒乓球男单32强&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;写到这里, 已经是8月1日的0:10了.&lt;/p&gt;
+&lt;p&gt;樊振东和张本那场史诗级大战, 翻了翻评论区, 应该是0:17结束的.&lt;/p&gt;
+&lt;p&gt;如果时间差不多的话, 这应该就是最后一局换边后, 最紧张的那个阶段. 5:4, 6:4, 6:5, 6:6, 6:7&lt;/p&gt;
+&lt;p&gt;然后, 如果没有记错, 樊振东连砍5分, 11:7终结比赛.&lt;/p&gt;
+&lt;p&gt;如果看奥运会的话, 可能很难接受乒乓球男单丢金这个事情.&lt;/p&gt;
+&lt;p&gt;至少当时的代数tv绝对是这么想的, 好在, 樊振东抗住了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;奥运会真的还是很有意思的.&lt;/p&gt;
+&lt;p&gt;至少他给当时参加博资考辅导, 每天一股死感的代数tv, 增添了很多活人气息.&lt;/p&gt;
+&lt;p&gt;其实有些时候确实挺妙不可言的.&lt;/p&gt;
+&lt;p&gt;那天上肖老师的课, 实在没有专心听的原因还有一个.&lt;/p&gt;
+&lt;p&gt;就是在那之前, 代数tv已经背靠背地听了一节代数博资考辅导了.&lt;/p&gt;
+&lt;p&gt;那节代数博资考辅导, 讲的是有限群的表示.&lt;/p&gt;
+&lt;p&gt;他最最后, 也就是讲了&lt;/p&gt;
+\[K(\operatorname{Rep}(G))\otimes_{\mathbb{Z}}\mathbb{C}\overset{\sim}{\to} \mathcal{H}\]\[[V]\mapsto \chi_V.\]&lt;p&gt;是一个 isomorphism, 这样 trivial 的事. 代数tv那节课也是一边听, 一边做自己的事.&lt;/p&gt;
+&lt;p&gt;这个自己的事, 就是画画. 而画的东西, 就是现在代数tv的头像, 像要罚任意球了一样, 眼神里带着一丝坚毅, 又带着一丝凶狠的神里绫华.&lt;/p&gt;
+&lt;p&gt;而这次博资考的授课教师, 就是我今天的老板, 一位优秀的几何表示论学者, 数学家, 牢李.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;忆往昔, 峥嵘岁月稠.&lt;/p&gt;
+&lt;p&gt;不过今天代数tv要处理的事就简单多了.&lt;/p&gt;
+&lt;p&gt;首先, 把手上这个左键双击的鼠标换掉.&lt;/p&gt;
+&lt;p&gt;其次, 更网站, 看CG.&lt;/p&gt;
+&lt;p&gt;最后, 玩原神.&lt;/p&gt;
+&lt;p&gt;该说不说, 这确实比博资考辅导有意思多了.&lt;/p&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+&lt;p&gt;2025.8.1 0:27 于深圳南山&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;remark: 昨天没有成功传上来, 也许是因为封面这张图片.&lt;/p&gt;
+&lt;p&gt;他本来是一个四个字母的杂牌格式的, 这边懒得修改就直接改后缀名了.&lt;/p&gt;
+&lt;p&gt;但是这样好像会出问题, 想不明白orz&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十八 P246-250</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E5%85%AB-p246-250/</link>
         <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
