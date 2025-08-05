@@ -7,7 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>25.8.5 更新</title>
+        <link>https://Jinbz-ayaka.github.io/p/25.8.5-%E6%9B%B4%E6%96%B0/</link>
+        <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/25.8.5-%E6%9B%B4%E6%96%B0/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/25.8.5-%E6%9B%B4%E6%96%B0/olee.jpg" alt="Featured image of post 25.8.5 更新" /&gt;&lt;p&gt;把评论区互串的 bug 修掉了.&lt;/p&gt;
+&lt;p&gt;这个 bug 一言以蔽之, 是由于 Github 的模糊搜索导致的.&lt;/p&gt;
+&lt;p&gt;giscus 的工作原理, 是会使用 GitHub Discussions 搜索 API 根据选定的映射方式 (在这里是 pathname) 来查找与当前页面关联的 discussion. (Ref: &lt;a class=&#34;link&#34; href=&#34;https://giscus.app/zh-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;giscus&lt;/a&gt;). 而这个搜索 API 是从 Github 的搜索功能搞出来的. 而这个搜索功能是带模糊搜索的. 也就是说, giscus 会把 discussion 搬到所有包含相似标题的地方, 这非常不好.&lt;/p&gt;
+&lt;p&gt;在 giscus 里, 他自带了 strict 选项 (&lt;a class=&#34;link&#34; href=&#34;https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#data-strict&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gis.-data-strict&lt;/a&gt;), 开启之后, 他会将所有新建的 discussion 标题中加入其 SHA-1 字段, 并在搜索时使用 SHA-1, 避免了标题相似导致的互串. 理论上来说, 我应该在旧有的 discussion 中添加其 SHA-1. 但似乎出于某些奇怪的原因, 不添加后原先的 discussion 依然能工作(至少在本地可以). 因此, 先不动他()&lt;/p&gt;
+&lt;p&gt;不管怎样, 可以把 issue close 了.&lt;/p&gt;
+&lt;p&gt;吧&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其三十三</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%89/</link>
         <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
