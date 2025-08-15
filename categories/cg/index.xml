@@ -7,7 +7,90 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十一 P260-264</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%80-p260-264/</link>
+        <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%80-p260-264/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%80-p260-264/onegoodayk.jpg" alt="Featured image of post CG饲养日记-其二十一 P260-264" /&gt;&lt;p&gt;晚安 代数tv&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接下来, 就是喜闻乐见的 Koszul cpx. 这一章也讲 Thom Isom 的东西.&lt;/p&gt;
+&lt;p&gt;在这里, 考虑 $\pi:V\to X$ $G$-equiv. vector bundle, $i: X\hookrightarrow V$ 一个 section. 于是, 我们可以给出来 $i_\ast \mathcal{O}_X$ 的一个 resolution.&lt;/p&gt;
+&lt;p&gt;考虑 $\wedge^iV$ $i$ 次 exterior power. 定义&lt;/p&gt;
+\[\lambda(V)=\sum_{i=0}^{\dim V}(-1)^i\cdot \wedge^i V\in K^G(X).\]&lt;p&gt;为此, 考虑 $Eu$ Euler vector field on $V$ 由 $\mathbb{C}^\ast $-action 生成. 为此, 考虑 $\Omega^j_{V/X}$ 为 $V$ over $X$ 上的 relative $j$-form. 我们有 Koszul complex&lt;/p&gt;
+\[\cdots\to \Omega^2_{V/X}\overset{i_{Eu}}{\to} \Omega^1_{V/X}\overset{i_{Eu}}{\to} \Omega^0_{V/X}\overset{\epsilon}{\to}i_\ast \mathcal{O}_X.\]&lt;p&gt;$\epsilon$ 是 restrict to section, $i_{Eu}$ 是跟 $Eu$ 的 contraction. 在 local basis 的角度讲, 考虑 $\pi:V^\vee\to X$, 有 $\Omega_{V/X}^j\simeq \pi^\ast (\wedge^jV^\vee)$, $\wedge^jV^\vee_x\to \wedge^{j-1
+}V^\vee_x$ 就是 given by&lt;/p&gt;
+\[\check{v}_1\wedge\cdots\wedge\check{v}_j\mapsto \sum_{k=1}^j(-1)^k\langle \check{v}_k,v\rangle\cdot \check{v}_1\wedge\cdots\hat{\check{v}}_k\cdots\wedge\check{v}_j\]&lt;p&gt;Prop 5.4.5: 上述 complex exact, 于是在 Grothendieck gp. 里我们有&lt;/p&gt;
+\[i_*\mathcal{O}_X=\pi^*(\lambda(V^\vee)).\]&lt;p&gt;现在, 对于 vector bundle $V\to X$, $\mathcal{F}\in K^G(V)$, 利用 $i_\ast \mathcal{O}_X$ 的 Kozul resol., 我们定义 $[i^\ast \mathcal{F}]\in K^G$ 为如下 complex 的 alternating sum&lt;/p&gt;
+\[\cdots\to\pi^*\wedge^2 V^\vee \otimes \mathcal{F}\to\pi^*\wedge^1 V^\vee \otimes \mathcal{F}\to \mathcal{F}. \]&lt;p&gt;Lemma 5.4.9: $\bar{\mathcal{F}}\in K^G(X)$, 于是&lt;/p&gt;
+\[i^*\pi^*\bar{\mathcal{F}}=\bar{\mathcal{F}}, i^*i_*\bar{\mathcal{F}}=\lambda(V^\vee)\otimes \bar{\mathcal{F}}.\]&lt;p&gt;第一部分我还没太想懂, 第二部分是由于 Proj. formula&lt;/p&gt;
+\[i_*(\bar{\mathcal{F}}\otimes i^*\mathcal{E})=i_*\bar{\mathcal{F}}\otimes \mathcal{E},\]&lt;p&gt;在这里取 $\mathcal{E}=\pi^\ast \wedge^nV$ 然后利用第一部分有 $i^\ast \mathcal{E}=\wedge^nV$,得到其每一项同构于 $i^\ast (\wedge^nV\otimes \bar{\mathcal{F}})$. 而这恰好是 support on zero section 的部分. 在 $X$ 上考虑, 可以得到其就是 $\lambda(V^\vee)\otimes \bar{\mathcal{F}}$.&lt;/p&gt;
+&lt;p&gt;Prop 5.4.10. $i: N\hookrightarrow M$ $G$-equiv. closed embedding of a smooth $G$-var. $N$ as a submfd. of a smooth $G$-var. $M$. Then the composite map $K^G(N)\overset{i_\ast }{\to} K^G(M)\to \overset{i^\ast }{\to}K^G(N)$ is given by $i^\ast i_\ast \bar{\mathcal{F}}=\lambda(T^\ast _NM)\otimes \bar{\mathcal{F}}$.&lt;/p&gt;
+&lt;p&gt;Cor 5.4.11. $G$-equiv s.e.s. $V_1\hookrightarrow V\twoheadrightarrow V_2$ of vector bundle on $X$, we have $\lambda(V)=\lambda(V_1)\otimes \lambda(V_2)$.&lt;/p&gt;
+&lt;p&gt;Prop 5.4.10 的证明就先省略了() 我来写一下 5.4.11 的证明.&lt;/p&gt;
+&lt;p&gt;考虑&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJWXzEiXSxbMiwwLCJWIl0sWzQsMCwiVl8yIl0sWzAsMiwiWCJdLFszLDAsImlfe1ZfMX0iLDAseyJvZmZzZXQiOi0xfV0sWzAsMywiXFxwaV97Vl8xfSIsMCx7Im9mZnNldCI6LTF9XSxbMCwxLCJqIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwyLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMywxLCJpX3tWfSIsMCx7Im9mZnNldCI6LTF9XSxbMSwzLCJcXHBpX3tWfSIsMCx7Im9mZnNldCI6LTF9XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJWXzEiXSxbMiwwLCJWIl0sWzQsMCwiVl8yIl0sWzAsMiwiWCJdLFszLDAsImlfe1ZfMX0iLDAseyJvZmZzZXQiOi0xfV0sWzAsMywiXFxwaV97Vl8xfSIsMCx7Im9mZnNldCI6LTF9XSxbMCwxLCJqIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwyLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMywxLCJpX3tWfSIsMCx7Im9mZnNldCI6LTF9XSxbMSwzLCJcXHBpX3tWfSIsMCx7Im9mZnNldCI6LTF9XV0=&amp;embed&#34; width=&#34;688&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;实际上, $j(V_1)$ 在 $V$ 中的 normal bundle 就是 $\pi_{V_1}^\ast V_2$. 于是, 根据 Prop.&lt;/p&gt;
+\[j^*j_*(\mathcal{F})=\pi^*_{V_1}\lambda(V_2^\vee)\otimes\mathcal{F}.\]&lt;p&gt;有&lt;/p&gt;
+\[\begin{align*}
+	i^*_V(i_V)_*(\mathcal{O}_X)&amp;=i^*_{V_1}j^*j_*(i_{V_1})_*(\mathcal{O}_X)\\
+	&amp;=i^*_{V_1}\big(\pi^*_{V_1}\lambda(V_2^\vee)\otimes(i_{V_1})_*(\mathcal{O}_X)\big)\\
+	&amp;=\lambda(V_2^\vee)\otimes(i^*_{V_1}i_{V_1*}\mathcal{O}_X)\\
+	&amp;=\lambda(V_2^\vee)\otimes\lambda(V_1^\vee)\otimes \mathcal{O}_X=\lambda(V_2^\vee)\otimes\lambda(V_1^\vee).
+\end{align*}\]&lt;p&gt;而, $i^\ast _V(i_V)_\ast (\mathcal{O}_X)=\lambda(V^\vee)$.&lt;/p&gt;
+&lt;p&gt;然后把 5.4.10 的证明跳过了之后, 就是关键定理了: 考虑 $\pi:E\to X$ $G$-equiv. affine bundle on $X$.&lt;/p&gt;
+&lt;p&gt;Theorem 5.4.17. (The Thom isom. thm.). For any $j\geq 0$ the morph. $\pi^\ast :K_j^G(X)\to K_j^G(E)$ is an isom.&lt;/p&gt;
+&lt;p&gt;也许这个定理的证明也会跳过, 谁知道呢.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>CG饲养日记-其二十 P254-260</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81-p254-260/</link>
+        <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81-p254-260/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81-p254-260/lmp.jpg" alt="Featured image of post CG饲养日记-其二十 P254-260" /&gt;&lt;p&gt;这一章是讲 Specialization 的. 也许领会精神就行了, 不用 check 太 technique 的东西.&lt;/p&gt;
+&lt;p&gt;对于 $p:X\to C$ $G$-equiv. morph, $C$ smooth alg. curver with base pt $o\in C$. $X$ $G$-var, $p:X\to C$ $G$-equiv. morph. 考虑 $X_o=p^{-1}(o)$, $X^\ast =X\setminus X_o$.&lt;/p&gt;
+&lt;p&gt;我们希望给出 specialization morph.&lt;/p&gt;
+\[\operatorname{lim}_{t\to 0}:K^G(X^*)\to K^G(X_o).\]&lt;p&gt;定义 $\mathcal{F}$ 是 $G$-equiv. coh. sheaf $\mathcal{F}^\ast $ on $X^\ast $ 的 lattice. 如果&lt;/p&gt;
+&lt;p&gt;(i) $\mathcal{F}$ $G$-equiv. coh. sheaf on $X$ s.t. $\mathcal{F}|_{X^\ast }=\mathcal{F}^\ast $.&lt;/p&gt;
+&lt;p&gt;(ii) $\mathcal{F}$ has no subsheaves supported on $X_o$.&lt;/p&gt;
+&lt;p&gt;Lemma 5.3.2 则是说, 对于如上的 setting, lattice 存在. 且对于 $\mathcal{F}_i$ lattices,&lt;/p&gt;
+\[\mathcal{F}_1/t\cdot \mathcal{F}_1=\mathcal{F}_2/t\cdot \mathcal{F}_2.\]&lt;p&gt;其中 $t$ 是一个 local para. s.t. $t(o)=0$.&lt;/p&gt;
+&lt;p&gt;存在性就是考虑, 由于 $X^\ast $ open dense, $\mathcal{F}^\ast $ 可以扩充成 $\tilde{\mathcal{F}}$. 于是考虑 $\mathcal{F}$ 为 $\tilde{\mathcal{F}}$ 商掉所有 $t^k$ 作用下的 ker. 满足题意. 而 &amp;ldquo;唯一性&amp;rdquo; 则 follow by $i_\ast \mathcal{F}=\mathcal{F}/t\cdot\mathcal{F}$.&lt;/p&gt;
+&lt;p&gt;现在, 我们定义&lt;/p&gt;
+\[\lim_{t\to 0}\mathcal{F}^*=[\mathcal{F}/t\cdot \mathcal{F}], \mathcal{F}\text{ lattice for }\mathcal{F}^*.\]&lt;p&gt;根据等价关系上简单的 argument, 这给出了&lt;/p&gt;
+\[K^G(X^*)\to K^G(X_o).\]&lt;p&gt;接下来来考虑这个 limit (specialization) 和 reduction 之间的关系. 首先, 他 note 了一下他所提到的 &amp;ldquo;fibration&amp;rdquo; 指处处 surj. diff. 的 morph.&lt;/p&gt;
+&lt;p&gt;考虑 $X$ smooth $G$-var. $p:X\to C$ smooth $G$-equiv. fibration over $C$ (with trivial $G$-action). $Z\subset X$ closed $G$-stable subvar. put $Z_o=Z\cap X_o$, $Z^\ast =-$. 有&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJaX28iXSxbMiwwLCJaIl0sWzQsMCwiWl4qIl0sWzQsMiwiWF4qIl0sWzIsMiwiWCJdLFswLDIsIlhfbyJdLFs1LDQsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDEsImlfWiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsNSwiXFxlcHNpbG9uXm8iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDQsIlxcZXBzaWxvbiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMyw0LCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsIiIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwwLCJaX28iXSxbMiwwLCJaIl0sWzQsMCwiWl4qIl0sWzQsMiwiWF4qIl0sWzIsMiwiWCJdLFswLDIsIlhfbyJdLFs1LDQsImkiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDEsImlfWiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsNSwiXFxlcHNpbG9uXm8iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDQsIlxcZXBzaWxvbiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMyw0LCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsIiIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d&amp;embed&#34; width=&#34;688&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Lemma 5.3.6: $\mathcal{F}$ $G$-equiv. coh. sheaf on $Z$. Then we have, in $K^G(Z_o)$,&lt;/p&gt;
+\[\lim_{t\to 0}[\mathcal{F}|_{Z^*}]=i_Z^*[\mathcal{F}],\]&lt;p&gt;where the specialization on LHS is taken w.r.t. a (non-flat) morph. $p:Z\to C$, $i^\ast _Z$ 表示 restriction with supports.&lt;/p&gt;
+&lt;p&gt;这个证明是一个 purely a.g.(?) 的东西. 留着明天看吧.&lt;/p&gt;
+&lt;p&gt;这个证明也许还值得说一下.&lt;/p&gt;
+&lt;p&gt;接下来的一个事情是, specialization 和 convolution 交换. set $M_1,M_2,M_3$ smooth. alg. $G$-var., $f_i:M_i\to C$ fibration. Take $M^o_i=f_i^{-1}(o)$, $M_i^\ast $ 定义如上. take $Z_{12}\subset M_1\times M_2, Z_{23}\cdots$. 考虑 $Z_{13}=Z_{12}\circ Z_{23}$. 考虑 $f_{ij}:Z_{ij}\to C$ 为 $f_i\times f_j:M_i\times M_j\to C$ 在 $Z_{ij}$ 上的限制. Put $Z_{ij}^o=f_{ij}^{-1}(o), Z_{ij}^\ast =-$. 有&lt;/p&gt;
+&lt;p&gt;Theorem 5.3.9: The following diag. commutes.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWl97MTJ9XiopXFxvdGltZXMgS15HKFpfezIzfV4qKSJdLFsyLDAsIkteRyhaX3sxMn1ebylcXG90aW1lcyBLXkcoWl97MjN9Xm8pIl0sWzAsMiwiS15HKFpfezEzfV4qKSJdLFsyLDIsIkteRyhaX3sxM31ebykiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtjb252fSJdLFsxLDMsIlxcb3BlcmF0b3JuYW1le2NvbnZ9Il0sWzAsMSwiXFxsaW0iXSxbMiwzLCJcXGxpbSJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWl97MTJ9XiopXFxvdGltZXMgS15HKFpfezIzfV4qKSJdLFsyLDAsIkteRyhaX3sxMn1ebylcXG90aW1lcyBLXkcoWl97MjN9Xm8pIl0sWzAsMiwiS15HKFpfezEzfV4qKSJdLFsyLDIsIkteRyhaX3sxM31ebykiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtjb252fSJdLFsxLDMsIlxcb3BlcmF0b3JuYW1le2NvbnZ9Il0sWzAsMSwiXFxsaW0iXSxbMiwzLCJcXGxpbSJdXQ==&amp;embed&#34; width=&#34;850&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;说实话, 我对那个 $f_i\times f_j$ 很迷惑: 很显然我们不可能从 $f_i,f_j$ 搞出 $M_i\times M_j$ 到 $C$ 的映射.&lt;/p&gt;
+&lt;p&gt;好, 问了神奇的粮食, 我们可以考虑 fiber prod $C\times_C C$ 作为一个 curve. 在这种情况下当然可以诱导 $M_i\times M_j\to C\times_C C$.&lt;/p&gt;
+&lt;p&gt;fiber prod. 很神奇吧()&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接下来是 Proj. formula 和 base change. 下面这个结论来自于 Hartshorne II Ex.5.1: $f:X\to Y$, $\mathcal{F}$ coh. sheaf on $X$, $\mathcal{E}$ equiv. locally free sheaf on $Y$. 于是, 有&lt;/p&gt;
+\[f_*(\mathcal{F}\otimes f^*\mathcal{E})=f_*\mathcal{F}\otimes \mathcal{E}.\]&lt;p&gt;当然, 要注意他的定义是直接 follow 的 Hartshorne 上的, 并不是我们定义的 $K^G$ 上的 mapping. 这个的证明要到 Fulton 的 Intersection Theory 找()&lt;/p&gt;
+&lt;p&gt;然后是 base change, 先来那个 Setting $\phi: \tilde{S}\to S, f:Z\to S$ $G$-equiv. 考虑 natural cartesian&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1p9PVpcXHRpbWVzX1NcXHRpbGRle1N9Il0sWzIsMiwiUyJdLFsyLDAsIlxcdGlsZGV7U30iXSxbMCwyLCJaIl0sWzAsM10sWzMsMSwiZiJdLFswLDJdLFsyLDEsIlxccGhpIiwyXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1p9PVpcXHRpbWVzX1NcXHRpbGRle1N9Il0sWzIsMiwiUyJdLFsyLDAsIlxcdGlsZGV7U30iXSxbMCwyLCJaIl0sWzAsM10sWzMsMSwiZiJdLFswLDJdLFsyLDEsIlxccGhpIiwyXV0=&amp;embed&#34; width=&#34;533&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;现在考虑, either $\phi$ flat or $\phi$ closed embedding of smooth var and there is smooth fibration $f:X\to S$ s.t. $f:Z\to S$ 是 $f$ 在 $Z\subset X$ 上的限制. 在这种条件下, 我们可以定义 $\tilde{\phi}^\ast :K^G(Z)\to K^G(\tilde{Z})$: flat case 是通过 $\tilde{\phi}:\tilde{Z}\to Z$ 和 5.2.5, closed embedding case 则是考虑 $\tilde{X}=\tilde{S}\times_S X$, 然后考虑上述的 Cartesian diag. with smooth ambient var. 然后利用 restriction with support $K^G(Z)\to K^G(\tilde{X}\cap Z)=K^G(Z)$.&lt;/p&gt;
+&lt;p&gt;Prop 5.3.15: 如果 either of 上述两个 assumption hold 且, $f:Z\to S$ proper, 那么following diag. commutes:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoXFx0aWxkZXtafSkiXSxbMiwyLCJLXkcoUykiXSxbMiwwLCJLXkcoXFx0aWxkZXtTfSkiXSxbMCwyLCJLXkcoWikiXSxbMywwLCJcXHRpbGRle1xccGhpfV4qIl0sWzEsMiwie1xccGhpfV4qIl0sWzAsMiwiXFx0aWxkZXtmfV8qIl0sWzMsMSwiZl8qIl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoXFx0aWxkZXtafSkiXSxbMiwyLCJLXkcoUykiXSxbMiwwLCJLXkcoXFx0aWxkZXtTfSkiXSxbMCwyLCJLXkcoWikiXSxbMywwLCJcXHRpbGRle1xccGhpfV4qIl0sWzEsMiwie1xccGhpfV4qIl0sWzAsMiwiXFx0aWxkZXtmfV8qIl0sWzMsMSwiZl8qIl1d&amp;embed&#34; width=&#34;493&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;flat case 是 follows from SGA, 而 closed embedding case 则尤为简单: 考虑 $\tilde{\phi}_\ast \mathcal{O}_{\tilde{X}}$, 他拥有 finite $G$-equiv resol. $E^\cdot$. 于是, $\tilde{\phi}^\ast :K^G(Z)\to K^G(\tilde{Z})$ 是 given by tensoring $E^\cdot$. 因此&lt;/p&gt;
+\[\tilde{f}_*\tilde{\phi}^*\mathcal{F}=\tilde{f}_*(\tilde{f}^*E^\cdot\otimes\mathcal{F})=E^\cdot\otimes (f_*\mathcal{F})=\phi^*f_*\mathcal{F}.\]</description>
+        </item>
+        <item>
         <title>CG饲养日记-其十九 P250-254</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%8D%81%E4%B9%9D-p250-254/</link>
         <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
