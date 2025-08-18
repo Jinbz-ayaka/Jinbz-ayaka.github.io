@@ -7,7 +7,47 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十二 P264-269</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%8C-p264-269/</link>
+        <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%8C-p264-269/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%8C-p264-269/darknight.jpg" alt="Featured image of post CG饲养日记-其二十二 P264-269" /&gt;&lt;p&gt;这个定理, 结合 Lemma 5.4.9, 可以直接看出对于其 zero-section $i:X\hookrightarrow V$, $i^\ast $ 为 Thom isom $\pi^\ast $ 的逆.&lt;/p&gt;
+&lt;p&gt;接下来是 Convolution action. Setting 是 $K$-theory 给出了 $R(G)$-linear 的 map&lt;/p&gt;
+\[K^G(M_1\times M_2)\otimes_{R(G)}K^G(M_2)\to K^G(M_1),\]&lt;p&gt;或者等价地&lt;/p&gt;
+\[\rho_M:K^G(M_1\times M_2)\to \operatorname{Hom}_{R(G)}(K^G(M_2), K^G(M_1)).\]&lt;p&gt;
+s
+现在我们给出 $\rho_r:E_r\to M_r$ $G$-equiv. v.b., 我们可能想搞一个 v.b. 的版本, 但由于 $E_r$ 不一定 compact, 上述构造中的 proper condition 不一定成立. 因此, 搞不出来这个 action.&lt;/p&gt;
+&lt;p&gt;现在, 我们要考虑 $\bar{p}:E_1\times E_2\to E_1\times M_2$ natural proj. 考虑 closed $G$-stable var. $Z\subset E_1\times E_2$, 我们希望 $Z$ 足够好使得 $\bar{p}|_{Z}$ 是 proper 的. 这样 convolution 和 closed embedding $(Z\circ E_2)\hookrightarrow E_1$ 就诱导了 well-def. 的 morph. $K^G(Z)\otimes K^G(E_2)\to K^G(Z\circ E_2)\to K^G(E_1)$. 于是就给出了&lt;/p&gt;
+\[\rho_E:K^G(Z)\to\operatorname{Hom}_{R(G)}(K^G(E_2),K^G(E_1)).\]&lt;p&gt;而, 与此同时, 根据 zero-section $i_r:M_r\hookrightarrow E_r$, $\bar{i}:M_1\times M_2\hookrightarrow E_1\times M_2$, 有&lt;/p&gt;
+\[K^G(Z)\overset{\bar{p}_*}{\to}K^G(E_1\times M_2)\overset{\bar{i}^*}{\to}K^G(M_1\times M_2).\]&lt;p&gt;Lemma 5.4.27: The follow diag. commutes&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWikiXSxbMiwwLCJcXG9wZXJhdG9ybmFtZXtIb219X3tSKEcpfShLXkcoRV8yKSxLXkcoRV8xKSkiXSxbMiwyLCJcXG9wZXJhdG9ybmFtZXtIb219X3tSKEcpfShLXkcoTV8yKSxLXkcoTV8xKSkiXSxbMCwyLCJLXkcoTV8xXFx0aW1lcyBNXzIpIl0sWzAsMywiXFxiYXJ7cH1fKlxcYmFye2l9XioiXSxbMCwxLCJcXHJob19FIiwyXSxbMywyLCJcXHJob19NIl0sWzEsMiwiXFx0ZXh0e1Rob219IiwyLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWikiXSxbMiwwLCJcXG9wZXJhdG9ybmFtZXtIb219X3tSKEcpfShLXkcoRV8yKSxLXkcoRV8xKSkiXSxbMiwyLCJcXG9wZXJhdG9ybmFtZXtIb219X3tSKEcpfShLXkcoTV8yKSxLXkcoTV8xKSkiXSxbMCwyLCJLXkcoTV8xXFx0aW1lcyBNXzIpIl0sWzAsMywiXFxiYXJ7cH1fKlxcYmFye2l9XioiXSxbMCwxLCJcXHJob19FIiwyXSxbMywyLCJcXHJob19NIl0sWzEsMiwiXFx0ZXh0e1Rob219IiwyLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=&amp;embed&#34; width=&#34;889&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;考虑如下 diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwxLCJaIl0sWzIsMSwiRV8xXFx0aW1lcyBNXzIiXSxbNCwxLCJNXzFcXHRpbWVzIE1fMiJdLFsyLDMsIkVfMSJdLFs0LDMsIk1fMSJdLFsxLDAsIkVfMVxcdGltZXMgRV8yIl0sWzAsMSwiXFxiYXJ7cH0iXSxbMiwxLCJcXGJhcntpfSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzEsMywicF8xIiwyXSxbMCwzLCJcXGJhcntwfV8xIiwxXSxbMiw0LCJxXzEiXSxbNCwzLCJpXzEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFs1LDFdLFswLDUsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwxLCJaIl0sWzIsMSwiRV8xXFx0aW1lcyBNXzIiXSxbNCwxLCJNXzFcXHRpbWVzIE1fMiJdLFsyLDMsIkVfMSJdLFs0LDMsIk1fMSJdLFsxLDAsIkVfMVxcdGltZXMgRV8yIl0sWzAsMSwiXFxiYXJ7cH0iXSxbMiwxLCJcXGJhcntpfSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzEsMywicF8xIiwyXSxbMCwzLCJcXGJhcntwfV8xIiwxXSxbMiw0LCJxXzEiXSxbNCwzLCJpXzEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFs1LDFdLFswLDUsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d&amp;embed&#34; width=&#34;848&#34; height=&#34;560&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;其中中间的方块是一个 commutative diag. 于是根据 5.3.15, 我们诱导了右下的(自然整个的) commutative diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMSwxLCJLXkcoRV8xXFx0aW1lcyBNXzIpIl0sWzEsMywiS15HKE1fMVxcdGltZXMgTV8yKSJdLFszLDEsIkteRyhFXzEpIl0sWzMsMywiS15HKE1fMSkiXSxbMCwwLCJLXkcoWikiXSxbMiwyLCJcXGNpcmNsZWFycm93cmlnaHQiXSxbMCwyLCJwX3sxKn0iLDJdLFsxLDMsInFfezEqfSJdLFsyLDMsImlfMV4qIl0sWzQsMCwiXFxiYXJ7cH1fKiJdLFswLDEsIlxcYmFye2l9XioiXSxbNCwyLCJcXGJhcntwfV97MSp9Il0sWzQsMSwiXFxiYXJ7aX1eKlxcYmFye3B9XyoiXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMSwxLCJLXkcoRV8xXFx0aW1lcyBNXzIpIl0sWzEsMywiS15HKE1fMVxcdGltZXMgTV8yKSJdLFszLDEsIkteRyhFXzEpIl0sWzMsMywiS15HKE1fMSkiXSxbMCwwLCJLXkcoWikiXSxbMiwyLCJcXGNpcmNsZWFycm93cmlnaHQiXSxbMCwyLCJwX3sxKn0iLDJdLFsxLDMsInFfezEqfSJdLFsyLDMsImlfMV4qIl0sWzQsMCwiXFxiYXJ7cH1fKiJdLFswLDEsIlxcYmFye2l9XioiXSxbNCwyLCJcXGJhcntwfV97MSp9Il0sWzQsMSwiXFxiYXJ7aX1eKlxcYmFye3B9XyoiXV0=&amp;embed&#34; width=&#34;776&#34; height=&#34;560&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;而原 lemma 等价于说明&lt;/p&gt;
+\[(\bar{i}^*\bar{p}_*\mathcal{F})\ast \mathcal{G}=i_1^*(\mathcal{F}\ast p_2^*\mathcal{G}).\]&lt;p&gt;根据 convolution 的定义, 其等价于&lt;/p&gt;
+\[q_{1*}(\bar{i}^*\bar{p}_*\mathcal{F}\otimes q_2^*\mathcal{G})=i^*_1(\bar{p}_{1*}(\mathcal{F}\otimes\operatorname{pr}^*\mathcal{G})).\]&lt;p&gt;而&lt;/p&gt;
+\[i^*_1\bar{p}_{1*}(\mathcal{F}\otimes\operatorname{pr}^*\mathcal{G})=q_{1*}(\bar{i}^*\bar{p}_*)(\mathcal{F}\otimes\operatorname{pr}^*\mathcal{G}).\]&lt;p&gt;注意 $\operatorname{pr}^\ast \mathcal{G}$ 其实就是 $p^\ast \operatorname{pr}^\ast \mathcal{G}$. 于是根据 proj. formula&lt;/p&gt;
+\[q_{1*}(\bar{i}^*\bar{p}_*)(\mathcal{F}\otimes\operatorname{pr}^*\mathcal{G})=q_{1*}\bar{i}^*(\bar{p}_*\mathcal{F}\otimes\operatorname{pr}^*\mathcal{G})=q_{1*}(\bar{i}^*\bar{p}_*\mathcal{F}\otimes q^*\mathcal{G}).\]&lt;p&gt;命题得证.&lt;/p&gt;
+&lt;p&gt;现在, 取 $M_1=M_2=M$, $E_1=E_2=E$, $Z\subset E\times E$, 我们有&lt;/p&gt;
+&lt;p&gt;Cor 5.4.34: assume $Z\circ Z\subset Z$, 则 5.4.27 转化为如下 comm. diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWikiXSxbMCwyLCJLXkcoTVxcdGltZXMgTSkiXSxbMiwwLCJcXG9wZXJhdG9ybmFtZXtFbmR9X3tSKEcpfUteRyhFKSJdLFsyLDIsIlxcb3BlcmF0b3JuYW1le0VuZH1fe1IoRyl9S15HKE0pIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwyLCJcXHJob19FIl0sWzEsMywiXFxyaG9fTSIsMl0sWzAsMSwiXFxiYXJ7aX1eKlxcY2lyYyBcXGJhcntwfV8qIiwyXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWikiXSxbMCwyLCJLXkcoTVxcdGltZXMgTSkiXSxbMiwwLCJcXG9wZXJhdG9ybmFtZXtFbmR9X3tSKEcpfUteRyhFKSJdLFsyLDIsIlxcb3BlcmF0b3JuYW1le0VuZH1fe1IoRyl9S15HKE0pIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwyLCJcXHJob19FIl0sWzEsMywiXFxyaG9fTSIsMl0sWzAsMSwiXFxiYXJ7aX1eKlxcY2lyYyBcXGJhcntwfV8qIiwyXV0=&amp;embed&#34; width=&#34;704&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;(哪有 $\operatorname{End}$ 后面还写俩元素的啊..)&lt;/p&gt;
+&lt;p&gt;而, 我们注意 Borel-Moore 拥有如下性质: 在 $\pi:V\to X$ locally-trivial oriented $C^\infty$-v.b. 对于 $i:X\hookrightarrow V$ zero-sec. 有 $i^\ast ,\pi^\ast $ 实际上给出了 mutually inverse isom. of Borel-Moore hom:&lt;/p&gt;
+\[H_*(X)\leftrightarrow H_{*+r}(V).\]&lt;p&gt;(2.6.42)&lt;/p&gt;
+&lt;p&gt;因此, 我们有 commute diag. (Lemma 5.4.35)&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIXyooWikiXSxbMCwyLCJIXyooTV8xXFx0aW1lcyBNXzIpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7SG9tfV97UihHKX0oSF8qKEVfMiksSF8qKEVfMSkpIl0sWzIsMiwiXFxvcGVyYXRvcm5hbWV7SG9tfV97UihHKX0oSF8qKE1fMiksSF8qKE1fMSkpIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwyLCJcXHJob19FIl0sWzEsMywiXFxyaG9fTSIsMl0sWzAsMSwiXFxiYXJ7aX1eKlxcY2lyYyBcXGJhcntwfV8qIiwyXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIXyooWikiXSxbMCwyLCJIXyooTV8xXFx0aW1lcyBNXzIpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7SG9tfV97UihHKX0oSF8qKEVfMiksSF8qKEVfMSkpIl0sWzIsMiwiXFxvcGVyYXRvcm5hbWV7SG9tfV97UihHKX0oSF8qKE1fMiksSF8qKE1fMSkpIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwyLCJcXHJob19FIl0sWzEsMywiXFxyaG9fTSIsMl0sWzAsMSwiXFxiYXJ7aX1eKlxcY2lyYyBcXGJhcntwfV8qIiwyXV0=&amp;embed&#34; width=&#34;862&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二十一 P260-264</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%80-p260-264/</link>
         <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
