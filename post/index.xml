@@ -7,7 +7,44 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十三 P269-273</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%89-p269-273/</link>
+        <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%89-p269-273/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%89-p269-273/xgw.jpg" alt="Featured image of post CG饲养日记-其二十三 P269-273" /&gt;&lt;p&gt;5.5 则不长, 讲的是 Cellular Fibration Lemma&lt;/p&gt;
+&lt;p&gt;对于 $\pi:F\to X$ morph. of $G$-var. 我们称 $F$ 是一个 cellular fibration over $X$, 如果 $F$ equipped with a finite decreasing filt. $F=F^n\supset F^{n-1}\supset\cdots\supset F^0=\emptyset$. s.t.&lt;/p&gt;
+&lt;p&gt;(a) $F^i$ $G$-stable closed alg. subvar.; furthermore, $F^i\to X$ $G$-equiv locally trivial fibration.&lt;/p&gt;
+&lt;p&gt;(b) $\pi_i:F^i\setminus F^{i+1}\to X$ $G$-equiv. affine fibration.&lt;/p&gt;
+&lt;p&gt;记, $E^i=F^i\setminus F^{i+1}$, 考虑&lt;/p&gt;
+\[X\overset{\bar{\pi}_i}{\leftarrow} \bar{E}^i\overset{\epsilon_i}{\hookrightarrow} F.\]&lt;p&gt;如下 Lemma, 即被称作 cellular fibration lemma:&lt;/p&gt;
+&lt;p&gt;Lemma 5.5.1. In the above setup, the following holds.&lt;/p&gt;
+&lt;p&gt;(a) 对任意 $i$, 有 s.e.s.&lt;/p&gt;
+\[0\to K^G(F^{i-1})\to K^G(F^{i})\to K^G(F^{i}\setminus F^{i-1})\to 0.\]&lt;p&gt;(b) 如果 $K^G(X)$ free $R(G)$-mod. with basis $\mathcal{F}_1,\cdots,\mathcal{F}_m$, 于是上述所有 s.e.s. 都 (non-canonically) split. Moreover, $K^G(F)$ free $R(G)$-mod. with basis ${(\epsilon_i)_\ast \bar{\pi}_i^\ast (\mathcal{F}_j), i=1,\cdots,n;j=1,\cdots,m}$.&lt;/p&gt;
+&lt;p&gt;(c) $H\subset G$ closed alg. subgp., suppose that $(b)$ holdsfor both $G,H$, 如果 natural map&lt;/p&gt;
+\[R(H)\otimes_{R(G)}K^G(X)\to K^H(X)\ (553)\]&lt;p&gt;isom, then so is&lt;/p&gt;
+\[R(H)\otimes_{R(G)}K^G(F)\to K^H(F).\]&lt;p&gt;(553) 是来自 $R(G)\to R(H)$ 这个 (inflation? 我一直记得能这么叫, 但找不到出处了kk).&lt;/p&gt;
+&lt;p&gt;这个证明如下, 是一些符号练习()&lt;/p&gt;
+&lt;p&gt;首先, 考虑&lt;/p&gt;
+\[F^{k-1}\overset{i}{\hookrightarrow}F^k\overset{j}{\hookleftarrow} E^k,\]&lt;!-- https://q.uiver.app/#q=WzAsNyxbMCwwLCJLXzEoRl5rKSJdLFsxLDAsIktfMShFXmspIl0sWzIsMCwiS18wKEZee2stMX0pIl0sWzMsMCwiS18wKEZee2t9KSJdLFs0LDAsIktfMChFXmspIl0sWzUsMCwiMCJdLFswLDEsIktfMShYKSJdLFs2LDEsIlxccGlfa14qLFRob20sXFxzaW0iLDJdLFs2LDAsIlxccGlfa14qIl0sWzAsMSwial4qIl0sWzEsMiwiXFxwYXJ0aWFsIl0sWzIsM10sWzMsNF0sWzQsNV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNyxbMCwwLCJLXzEoRl5rKSJdLFsxLDAsIktfMShFXmspIl0sWzIsMCwiS18wKEZee2stMX0pIl0sWzMsMCwiS18wKEZee2t9KSJdLFs0LDAsIktfMChFXmspIl0sWzUsMCwiMCJdLFswLDEsIktfMShYKSJdLFs2LDEsIlxccGlfa14qLFRob20sXFxzaW0iLDJdLFs2LDAsIlxccGlfa14qIl0sWzAsMSwial4qIl0sWzEsMiwiXFxwYXJ0aWFsIl0sWzIsM10sWzMsNF0sWzQsNV1d&amp;embed&#34; width=&#34;1036&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;可以导出 $j^\ast $ surj, 于是 $\partial$ triv. (a) 得证.&lt;/p&gt;
+&lt;p&gt;(b) 通过 induction 证明之. 首先, $F^1=E^1$ 的情况下, 我们有 Thom $\pi_1^\ast :K^G(X)\overset{\sim}{\to} K^G(E^1)$, 原命题显然成立. 而对于归纳过程, 我们只需要注意到 $\pi_k^\ast :K^G(X)\overset{\sim}{\to} K^G(E^k)$, 然后利用 (a) 中 s.e.s., 我们可以得到 $F^k$ free, 且 s.e.s. splits.&lt;/p&gt;
+&lt;p&gt;(c) 则是, 由于 $K^G(F^i)$ free, tensoring $R(H)$ 之后 (a) 依然是 s.e.s.&lt;/p&gt;
+\[0\to R(H)\otimes_{R(G)}K^G(F^{i-1})\to R(H)\otimes_{R(G)}K^G(F^{i})\to R(H)\otimes_{R(G)}K^G(E^{i})\to 0.\]&lt;p&gt;而直接考虑 $H$-equiv. bundle, 其导出&lt;/p&gt;
+\[0\to K^H(F^{i-1})\to K^H(F^{i})\to K^H(E^{i})\to 0.\]&lt;p&gt;我们得到 commutative diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMTAsWzEsMCwiUihIKVxcb3RpbWVzX3tSKEcpfUteRyhGXntrLTF9KSJdLFsyLDAsIlIoSClcXG90aW1lc197UihHKX1LXkcoRl57a30pIl0sWzMsMCwiUihIKVxcb3RpbWVzX3tSKEcpfUteRyhFXmspIl0sWzQsMCwiMCJdLFswLDAsIjAiXSxbMywxLCJLXkgoRV5rKSJdLFsyLDEsIkteSChGXmspIl0sWzEsMSwiS15HKEZee2stMX0pIl0sWzAsMSwiMCJdLFs0LDEsIjAiXSxbMCwxXSxbMSwyXSxbMiwzXSxbNCwwXSxbOCw3XSxbNSw5XSxbNyw2XSxbNiw1XSxbMiw1LCJcXHNpbSxUaG9tIl0sWzEsNl0sWzAsN11d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMTAsWzEsMCwiUihIKVxcb3RpbWVzX3tSKEcpfUteRyhGXntrLTF9KSJdLFsyLDAsIlIoSClcXG90aW1lc197UihHKX1LXkcoRl57a30pIl0sWzMsMCwiUihIKVxcb3RpbWVzX3tSKEcpfUteRyhFXmspIl0sWzQsMCwiMCJdLFswLDAsIjAiXSxbMywxLCJLXkgoRV5rKSJdLFsyLDEsIkteSChGXmspIl0sWzEsMSwiS15HKEZee2stMX0pIl0sWzAsMSwiMCJdLFs0LDEsIjAiXSxbMCwxXSxbMSwyXSxbMiwzXSxbNCwwXSxbOCw3XSxbNSw5XSxbNyw2XSxbNiw1XSxbMiw1LCJcXHNpbSxUaG9tIl0sWzEsNl0sWzAsN11d&amp;embed&#34; width=&#34;1362&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;然后通过归纳和五引理, 得证.&lt;/p&gt;
+&lt;p&gt;5.5.5 讲的则是 Topological $K$-theory. 对于一个 locally compact top. space $X$ with 一个 compact gp $G_{comp}$-action, 我们通过向量丛的结构来定义其拓扑 $K$ 群 $K_{top}^{G_{comp}}(X)$. 这个跟我们先前的代数 $K$ 群 $K^G(X)$ 构造是不一样的: 他完全没有用到代数的结构.&lt;/p&gt;
+&lt;p&gt;这二者关系是这样的: 首先, 考虑 $G$ complex red. gp., $G_{comp}\subset G$ maximal compact subgp. 于是, 按照如下定义, 我们有自然的 homo. $K^G(X)\to K^{G_{comp}}_{top}$. 首先, 对于 $X$ smooth compact 的情况, 直接取 equiv. v.b., 将它 regard as top. v.b. 对于 $X$ singular proj. var. 的情况下, 我们将 $X$ 嵌入 smooth proj. $G$-var. $M$. 于是 $X$ 上的 coh. sheaf. 在 $M$ 上有 finite equiv. resol. 于是 $K^G(X)\to K^{G_{comp}}_{top}$ 把每一个 equiv. v.b. 打到 $M$ 上的 resol. 即可. 对于 noncompact 的情况, CG 直接引用的 [BFM], 我们跳过()&lt;/p&gt;
+&lt;p&gt;我们有如下结论:&lt;/p&gt;
+&lt;p&gt;Prop 5.5.6. $F\to X$ $G$-equiv. cellular fibration. 如果 $K^G(X)\to K^{G_{comp}}_{top}(X)$ isom. then so is $K^G(F)\to K^{G_{comp}}_{top}(F)$.&lt;/p&gt;
+&lt;p&gt;你应该已经猜到怎么证了: 没错, 在 top. ver. 的 $K$ 群里也有 Thom-like isom. 然后五引理+归纳即可.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其三十五</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%94/</link>
         <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
