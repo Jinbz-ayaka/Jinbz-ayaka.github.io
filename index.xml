@@ -7,7 +7,54 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十四 P273-276</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%9B%9B-p273-276/</link>
+        <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%9B%9B-p273-276/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%9B%9B-p273-276/itsaday.jpg" alt="Featured image of post CG饲养日记-其二十四 P273-276" /&gt;&lt;p&gt;Kunneth Formula!&lt;/p&gt;
+&lt;p&gt;对于 $X$, write $\Delta\in K^G(X\times X)$ 其 diagnal 的 structure sheaf. 特别地, 对于 $X$ smooth compact, 我们还有 convolution map $K^G(Y\times X)\otimes K^G(X)\to K^G(Y)$.&lt;/p&gt;
+&lt;p&gt;Theorem 5.6.1. $G$ linear alg. gp., $X$ smooth proj. $G$-var. TFAE:&lt;/p&gt;
+&lt;p&gt;(a) The natural map&lt;/p&gt;
+\[\pi:K^G(X)\otimes_{R(G)} K^G(Y)\to K^G(X\times Y), (\mathcal{F},\mathcal{G})\mapsto \mathcal{F}\boxtimes \mathcal{G}\]&lt;p&gt;is isom. for an arbitrary $G$-var. $Y$.&lt;/p&gt;
+&lt;p&gt;(b) The class $\Delta\in K^G(X\times X)$ belongs to the im. of $\pi$ for $Y=X$.&lt;/p&gt;
+&lt;p&gt;(c) $K^G(X)$ f.g. proj. $R(G)$-mod, and for any $G$-var. $Y$, the hom. induced by conv. is an isom&lt;/p&gt;
+\[K^G(Y\times X)\to \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y)).\]&lt;p&gt;(d) $K^G(X)$ f.g. proj. $R(G)$-mod, $K^G(X\times X)$ f.g. proj. $R(G)$-mod. s.t. $\operatorname{rank} K^G(X\times X)=(\operatorname{rank} K^G(X))^2$ and moreover, the bilinear mapping&lt;/p&gt;
+\[\langle,\rangle:K^G(X)\times K^G(X)\to R(G),\]&lt;p&gt;is non-deg. in the sense explained below.&lt;/p&gt;
+&lt;p&gt;给出这个定理的证明是这一章要做的全部事情.&lt;/p&gt;
+&lt;p&gt;为此, 我们再引入 4 个 intermediate steps()&lt;/p&gt;
+&lt;p&gt;(1) $\forall R(G)$-mod $M$, the map&lt;/p&gt;
+\[K^G(X)\otimes_{R(G)}M\to \operatorname{Hom}_{R(G)}(K^G(X),M),\]\[a\otimes m\mapsto \langle\cdot,a\rangle m\]&lt;p&gt;is surj. and $\pi$ in (a) is surj.&lt;/p&gt;
+&lt;p&gt;(2) (i) $K^G(X)$ f.g. proj. $R(G)$-mod, and&lt;/p&gt;
+&lt;p&gt;(ii) (1) holds for all $M=K^G(Y)$ and&lt;/p&gt;
+&lt;p&gt;(iii) $\pi$ surj.&lt;/p&gt;
+&lt;p&gt;(3) (i) $K^G(X)$ proj. (ii) $K^G(X)\to K^G(X)^\vee$ surj. (iv) $\pi$ surj.&lt;/p&gt;
+&lt;p&gt;(iii) $K^G(Y)\otimes_{R(G)}K^G(X)\to \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y))$ surj.&lt;/p&gt;
+&lt;p&gt;(4) (i) $K^G(X)$ proj. (ii) $K^G(X)\simeq K^G(X)^\vee$,  (iv) $\pi$ surj.&lt;/p&gt;
+&lt;p&gt;(iii) $K^G(Y\times X)\overset{\rho}{\to} \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y))$ surj.&lt;/p&gt;
+&lt;p&gt;我们的前进路线是&lt;/p&gt;
+\[(a)\implies (b)\implies (1)\implies (2)\implies (3)\implies (4)\implies (c)\implies (a),\]\[(a)\iff (d).\]&lt;p&gt;第一步 $(a)\implies (b)$ 是容易的: 取 $X=Y$ 即可.&lt;/p&gt;
+&lt;p&gt;$(b)\implies (1)$: 记 $\Delta=\sum \delta_i\boxtimes \delta^i$, 一方面讲, $\Delta \ast  a=a,\forall a\in K^G(X\times Y),$ 另一方面讲, 通过 5.2.28 的证明, 有&lt;/p&gt;
+\[(\delta_i\boxtimes \delta^i)*a=\delta_i\boxtimes (p_Y)_*(p_X^*\delta^i\otimes a).\]&lt;p&gt;于是&lt;/p&gt;
+\[a=\sum_i \delta_i\boxtimes (p_Y)_*(p_X^*\delta^i\otimes a)\in K^G(X)\otimes K^G(Y).\]&lt;p&gt;因此 $(1)(ii)$ 成立. 而, 取 $Y=pt$, 回忆 $\langle \mathcal{F},\mathcal{F}&amp;rsquo;\rangle=p_\ast (\mathcal{F}\otimes\mathcal{F}&amp;rsquo;)$, 对 $a\in K^G(X)$, 有 $a=\sum \langle \delta^i,a\rangle \delta_i$. 于是, 对于 $f\in \operatorname{Hom}_{R(G)}(K^G(X),M)$,&lt;/p&gt;
+\[f(a)=\sum \langle \delta^i,a\rangle f(\delta_i).\]&lt;p&gt;$(1)\implies (2): $ (ii)(iii) triv. 对于 (i), 我们需要说明 $\operatorname{Hom}_{R(G)}(K^G(X),\cdot)$ exact. 显然, 这个只需要 check right exact 的部分, 也就是说, $M\twoheadrightarrow N\implies \operatorname{Hom}_{R(G)}(K^G(X),M)\twoheadrightarrow \operatorname{Hom}_{R(G)}(K^G(X),N)$. 而熟知 $K^G(X)\otimes-$ 是 right exact 的. by (1) 和如下 comm. diag. 就做完了.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwyLCJcXEhvbV97UihHKX0oS15HKFgpLE0pIl0sWzIsMiwiXFxIb21fe1IoRyl9KEteRyhYKSxOKSJdLFswLDAsIkteRyhYKVxcb3RpbWVzIE0iXSxbMiwwLCJLXkcoWClcXG90aW1lcyBOIl0sWzMsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMywiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzAsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwyLCJcXEhvbV97UihHKX0oS15HKFgpLE0pIl0sWzIsMiwiXFxIb21fe1IoRyl9KEteRyhYKSxOKSJdLFswLDAsIkteRyhYKVxcb3RpbWVzIE0iXSxbMiwwLCJLXkcoWClcXG90aW1lcyBOIl0sWzMsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMywiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzAsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XV0=&amp;embed&#34; width=&#34;913&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;$(2)\implies (3):$ 那还说啥呢, 取 $Y=pt$ 就完了呗. 这个条件也太性情了.&lt;/p&gt;
+&lt;p&gt;$(3)\implies (4):$ 考虑 $K^G(X)\to K^G(X)^\vee$ surj, 如果 $a\in \ker$, 那么 $\langle a,\delta^i \rangle=0$. 于是, $a=\sum \delta_i\langle \delta^i,a\rangle=0$. (iii) 只需注意 $K^G(Y)\otimes_{R(G)}K^G(X)\to \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y))$ factor through $K^G(Y\times X)$ 即可.&lt;/p&gt;
+&lt;p&gt;$(4)\implies (c):$ 首先我们有, $M$ proj. $\implies M^\vee$ proj. 且,&lt;/p&gt;
+\[\operatorname{Hom}_{R(G)}(M^\vee,-)\simeq M\otimes_{R(G)}(-).\]&lt;p&gt;于是, 有&lt;/p&gt;
+\[\operatorname{Hom}_{R(G)}(K^G(X)^\vee,M)= K^G(X)\otimes_{R(G)}M.\]&lt;p&gt;因此, 我们有&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWClcXG90aW1lcyBLXkcoWSkiXSxbMiwwLCJLXkcoWFxcdGltZXMgWSkiXSxbNCwwLCJcXG9wZXJhdG9ybmFtZXtIb219KEteRyhYKSxLXkcoWSkpIl0sWzQsMiwiS15HKFgpXFxvdGltZXMgS15HKFkpIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyXSxbMSwzLCJcXHJobyIsMl0sWzAsMSwiXFxwaSIsMl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWClcXG90aW1lcyBLXkcoWSkiXSxbMiwwLCJLXkcoWFxcdGltZXMgWSkiXSxbNCwwLCJcXG9wZXJhdG9ybmFtZXtIb219KEteRyhYKSxLXkcoWSkpIl0sWzQsMiwiS15HKFgpXFxvdGltZXMgS15HKFkpIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyXSxbMSwzLCJcXHJobyIsMl0sWzAsMSwiXFxwaSIsMl1d&amp;embed&#34; width=&#34;1200&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;通过 5.2.28 的计算, 我们可以看出 $\rho\circ \pi=\operatorname{id}$. 而, $\pi$ surj. 因此 $\pi,\rho$ 都是 isom, 得证.&lt;/p&gt;
+&lt;p&gt;$(c)\implies (a): $ $K^G(X)$ f.g. proj. implies 了 $\operatorname{Hom}_{R(G)}(K^G(X)^\vee,K^G(Y))= K^G(X)\otimes_{R(G)}K^G(Y)$. 而 5.6.3 中的 comp 是 identity 的性质是由 5.2.28 给出的, 依然成立. 因此 $\rho$ isom $\implies \pi$ isom.&lt;/p&gt;
+&lt;p&gt;$(a)\implies (d)$: 有 $K^G(X)\otimes_{R(G)}K^G(X)\simeq K^G(X\times X)$, 因此 $K^G(X\times X)$ proj. $\operatorname{rank}=(\operatorname{rank} K^G(X))^2$. 而 $\langle,\rangle$ nondeg. 则是因为 (4)(ii).&lt;/p&gt;
+&lt;p&gt;$(d)\implies (a)$: $\langle,\rangle$ nondeg. 加上 $K^G(X)$ f.g. proj. $R(G)$-mod. 我们可以构造 $\rho: K^G(X\times X)\to K^G(X)\otimes_{R(G)}K^G(X)$. 于是 $\rho(\pi(a\otimes b))=a\otimes b$. 于是 $\rho$ surj. 而 proj., same rank 加上 surj. implies 了 isom. 得证.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二十三 P269-273</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%89-p269-273/</link>
         <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
