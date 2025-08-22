@@ -7,7 +7,66 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十五 P276-280</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/</link>
+        <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/ayakaumb.jpg" alt="Featured image of post CG饲养日记-其二十五 P276-280" /&gt;&lt;p&gt;Proj. Bundle thm and Beilinson Thm.&lt;/p&gt;
+&lt;p&gt;Setting 是, $V$ complex. v.s., $\mathbb{P}=\mathbb{P}(V)$, proj. space. $\epsilon:\mathbb{P}_{\Delta}\hookrightarrow \mathbb{P}\times \mathbb{P}$.&lt;/p&gt;
+&lt;p&gt;Beilinson resol. 是说, $\epsilon_\ast \mathcal{O}_{\mathbb{P}_{\Delta}}$ 拥有一个 canonical resol. by locally free sheaves. 这是一个很代数几何的结论.&lt;/p&gt;
+&lt;p&gt;Construction: 考虑 $\mathcal{O}_\mathbb{P}(-1)$ tautological line bundle on $\mathbb{P}$ with fibre on $\mathfrak{b}ar{v}$ is $\mathbb{C}\cdot v$. 考虑 $\mathcal{O}_\mathbb{P}(1)$ dual bundle. 对任意 $\check{v}\in V^\ast $ 我们给出了一个 global section of $\mathcal{O}_{\mathbb{P}}(1)$. 于是我们有 canonical isom.&lt;/p&gt;
+\[V^*\simeq H^0(\mathbb{P},\mathcal{O}_\mathbb{P}(1)).\]&lt;p&gt;于是, 我们可以将 $\operatorname{id}\in V^\ast \otimes V=\operatorname{Hom}(V,V)$ 看做 $V\otimes \mathcal{O}_{\mathbb{P}}(1)$ 的一个 global section. 而, $\mathcal{O}_{\mathbb{P}}\to V\otimes \mathcal{O}_{\mathbb{P}}(1)$ given by $f\mapsto f\cdot \operatorname{id}$ 给出了一个在 $\mathfrak{b}ar{v}$ 处的 coker 是与 $v$ 正交的所有向量的一个 morph. 也就是 s.e.s.&lt;/p&gt;
+\[0\to \mathcal{O}_{\mathbb{P}}\to V\otimes \mathcal{O}_{\mathbb{P}}(1)\to \mathcal{T}\to 0.\]&lt;p&gt;而, by tensor 一个 $\mathcal{O}_{\mathbb{P}}(-1)$ 给出了 Euler seq.&lt;/p&gt;
+\[0\to \mathcal{O}_{\mathbb{P}}(-1)\to V\otimes \mathcal{O}_{\mathbb{P}}\to \mathcal{Q}\to 0.\]&lt;p&gt;with $\mathcal{Q}=\mathcal{T}\otimes \mathcal{O}_{\mathbb{P}}(-1)$.&lt;/p&gt;
+&lt;p&gt;而上面那个则给出一个 canonical isom.&lt;/p&gt;
+\[H^0(\mathbb{P},\mathcal{Q})=H^0(\mathbb{P},V\otimes \mathcal{O}_{\mathbb{P}})=V.\]&lt;p&gt;现在, 对于&lt;/p&gt;
+\[\mathbb{P}\overset{\operatorname{pr}_1}{\leftarrow} \mathbb{P}\times \mathbb{P}\overset{\operatorname{pr}_2}{\rightarrow}\mathbb{P}.\]&lt;p&gt;对于 $A,B$ bundles over $\mathbb{P}$, 记 $A\boxtimes B=pr_1^\ast A\otimes pr_2^\ast B$. 根据 Kunneth formula 我们有&lt;/p&gt;
+\[H^0(\mathbb{P}\times \mathbb{P},\mathcal{O}_{\mathbb{P}}(1)\boxtimes \mathcal{Q})\simeq H^0(\mathbb{P},\mathcal{O}_{\mathbb{P}}(1))\otimes H^0(\mathbb{P},\mathcal{Q})\simeq V^*\otimes V\simeq \operatorname{Hom}_\mathbb{C}(V,V).\]&lt;p&gt;我们希望考虑 $s$ global section of $\mathcal{O}_\mathbb{P}(1)\boxtimes \mathcal{Q}$ corresp. to identity. 我们接下来要刻画这个 $s$: 考虑&lt;/p&gt;
+\[\mathcal{O}_\mathbb{P}(1)\boxtimes \mathcal{Q}=\mathcal{H}om(pr_1^*\mathcal{O}_{\mathbb{P}}(-1),pr_2^*\mathcal{Q}).\]&lt;p&gt;那么考虑 global section&lt;/p&gt;
+\[\hat{s}:pr^*_1\mathcal{O}_\mathbb{P}(-1)\to pr_2^*\mathcal{Q}.\]&lt;p&gt;对于 $\mathfrak{b}ar{v},\mathfrak{b}ar{w}$, 在我们的定义下&lt;/p&gt;
+\[\mathcal{O}_{\mathbb{P}}(-1)|_{\mathfrak{b}ar{v}}=\mathbb{C}\cdot v,\mathcal{Q}|_{\mathfrak{b}ar{w}}=V/\mathbb{C}\cdot w.\]&lt;p&gt;给出这样的 $\check{s}$ 就是说&lt;/p&gt;
+\[\mathbb{C}\cdot v\to V/\mathbb{C}\cdot w,\]\[c\cdot v\mapsto c\cdot v\pmod{\mathbb{C}\cdot w}.\]&lt;p&gt;于是, $\check{s}$ vanishes iff $v,w$ linearly indep., 也就是说, 其 zero locus 为 $\Delta\subset  \mathbb{P}\times \mathbb{P}$.&lt;/p&gt;
+&lt;p&gt;而, 与 $s\in \mathcal{O}_{\mathbb{P}}(1)\boxtimes \mathcal{Q}$ 的 contraction 给出了 sheaf morph.&lt;/p&gt;
+\[i_s:\wedge^k(\mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*)\to\wedge^{k-1}(\mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*).\]&lt;p&gt;于是, 我们得到了 free resol. of $\mathcal{O}_\Delta=\mathcal{O}_{\mathbb{P}\times \mathbb{P}}/\mathcal{I}_{\Delta}$:&lt;/p&gt;
+\[\wedge^n(\mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*)\to\wedge^{n-1}(\mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*)\to \cdots\to \mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*\to \mathcal{O}_{\mathbb{P}\times \mathbb{P}}\twoheadrightarrow \mathcal{O}_{\Delta}.\]&lt;p&gt;而, $\mathcal{Q}^\ast \simeq T^\ast \otimes \mathcal{O}_{\mathbb{P}}(1)=\Omega_\mathbb{P}^1(1)$. 我们记 $\mathcal{F}(k)=\mathcal{F}\otimes \mathcal{O}_\mathbb{P}(k)$. 有 $\wedge^k\mathcal{Q}^\ast =\Omega_{\mathbb{P}}^k(k)$. 于是我们得到 resol.&lt;/p&gt;
+\[0\to \mathcal{O}_{\mathbb{P}}(-n)\boxtimes \Omega_{\mathbb{P}}^n(n)\to \mathcal{O}_{\mathbb{P}}(-n+1)\boxtimes \Omega_{\mathbb{P}}^{n-1}(n-1)\to \cdots\to \mathcal{O}_{\mathbb{P}}(-1)\boxtimes \Omega_{\mathbb{P}}^1(1)\to \mathcal{O}_{\mathbb{P}\times \mathbb{P}}\to \mathcal{O}_{\Delta}\to 0.\]&lt;p&gt;这便给出了这样的 resol.&lt;/p&gt;
+&lt;p&gt;特别地, 由于这样给出了 $[\mathcal{O}_\Delta]$ 的一个 $K^G(\mathbb{P})\otimes K^G(\mathbb{P})$ 的一个 interpretation, 我们有&lt;/p&gt;
+&lt;p&gt;Cor 5.7.5. The Kunneth theorem holds for $X=\mathbb{P}^n$.&lt;/p&gt;
+&lt;p&gt;回顾一下 proj. bundle thm, 他是说对于 $E\to X$ $G$-equiv. $n$-dim. alg. v.b. on $G$-var. $X$, let $\pi:\mathbb{P}(E)\to X$ associated proj. bundel. 有 $K^G_j(\mathbb{P}(E))$ freely gen. over $K^G_j(X)$ by $[\mathcal{O}(k)]$. 我们现在要给出他的证明. 为此, 先考虑&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiYntQfVxcdGltZXNfWCBcXG1hdGhiYntQfSJdLFsyLDAsIlxcbWF0aGJie1B9Il0sWzEsMSwiXFxtYXRoYmJ7UH1fXFxEZWx0YSJdLFswLDIsIlxcbWF0aGJie1B9Il0sWzIsMiwiWCJdLFszLDQsIlxccGkiLDJdLFsxLDQsIlxccGkiXSxbMCwzLCJcXG9wZXJhdG9ybmFtZXtwcn1fMSIsMl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7cHJ9XzIiXSxbMSwyLCJwXzIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDIsInBfMSIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMCwiXFxlcHNpbG9uIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiw0LCJcXHBpX1xcRGVsdGEiXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiYntQfVxcdGltZXNfWCBcXG1hdGhiYntQfSJdLFsyLDAsIlxcbWF0aGJie1B9Il0sWzEsMSwiXFxtYXRoYmJ7UH1fXFxEZWx0YSJdLFswLDIsIlxcbWF0aGJie1B9Il0sWzIsMiwiWCJdLFszLDQsIlxccGkiLDJdLFsxLDQsIlxccGkiXSxbMCwzLCJcXG9wZXJhdG9ybmFtZXtwcn1fMSIsMl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7cHJ9XzIiXSxbMSwyLCJwXzIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDIsInBfMSIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMCwiXFxlcHNpbG9uIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiw0LCJcXHBpX1xcRGVsdGEiXV0=&amp;embed&#34; width=&#34;466&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;边界的四个映射构成 Cartesian diag. 我们有 relative ver. Euler seq.&lt;/p&gt;
+\[0\to \mathcal{O}_{\mathbb{P}/X}(-1)\to \pi^*V\to \mathcal{Q}_{\mathbb{P}/X}\to 0.\]&lt;p&gt;于是其给出了 canonical resol. of $\epsilon_\ast \mathcal{O}_{\mathbb{P}_\Delta}$:&lt;/p&gt;
+\[0\to \mathcal{O}_{\mathbb{P}/X}(-n)\boxtimes \Omega_{\mathbb{P}/X}^n(n)\to \mathcal{O}_{\mathbb{P}/X}(-n+1)\boxtimes \Omega_{\mathbb{P}/X}^{n-1}(n-1)\to \cdots \to \mathcal{O}_{\mathbb{P}^n\times_X\mathbb{P}^n}\to \epsilon_*\mathcal{O}_{\mathbb{P}_\Delta}\to 0.\]&lt;p&gt;现在, 考虑 $\mathbb{P}\times_X\mathbb{P}$ 上 $\mathcal{K}$ 拥有 finite locally free $G$-equiv. resol. 定义&lt;/p&gt;
+\[K*:K^G(\mathbb{P})\to K^G(\mathbb{P}),\mathcal{F}\mapsto \mathcal{K}*\mathcal{F},\]\[\mathcal{K}*\mathcal{F}=\sum (-1)^i(\operatorname{pr}_1)_*\mathcal{T}or_i(\mathcal{K},\operatorname{pr}_2^*\mathcal{F}).\]&lt;p&gt;现在考虑 $\mathcal{K}=\epsilon_\ast \mathcal{O}_{\mathbb{P}_\Delta}$, 有&lt;/p&gt;
+\[\sum (-1)^i\mathcal{T}or_i(\epsilon_*\mathcal{O}_{\mathbb{P}_\Delta},\operatorname{pr}_2^*\mathcal{F})=\epsilon_*\mathcal{O}_{\mathbb{P}_\Delta}\otimes \operatorname{pr}_1^*\mathcal{F}=\epsilon_*(\mathcal{O}_{\mathbb{P}_\Delta}\otimes \epsilon^* \operatorname{pr}_1^*\mathcal{F})=\epsilon_*\epsilon^*\operatorname{pr}_2^*\mathcal{F}=\epsilon_*p_2^*\mathcal{F}.\]&lt;p&gt;于是,&lt;/p&gt;
+\[(\epsilon_*\mathcal{O}_{\mathbb{P}_\Delta})*\mathcal{F}=(\operatorname{pr}_1)_*\epsilon_*p_2^*\mathcal{F}=(p_1)_*p_2^*\mathcal{F}=\mathcal{F}.\]&lt;p&gt;但,&lt;/p&gt;
+\[(\epsilon_*\mathcal{O}_{\mathbb{P}_\Delta})*\mathcal{F}=(\mathcal{O}_{\mathbb{P}\times_X\mathbb{P}}-\mathcal{O}_{\mathbb{P}/X}(-1)\boxtimes \Omega^1_{\mathbb{P}/X}(1)+\cdots)*\mathcal{F}=\cdots=\sum(-1)^i\mathcal{O}_{\mathbb{P}/X}(-i)\otimes \pi^*\pi_*(\Omega^i_{\mathbb{P}/X}(i)\otimes \mathcal{F}).\]&lt;p&gt;于是,&lt;/p&gt;
+\[\mathcal{F}=\sum(-1)^i\mathcal{O}_{\mathbb{P}/X}(-i)\otimes \pi^*\pi_*(\Omega^i_{\mathbb{P}/X}(i)\otimes \mathcal{F}).\]&lt;p&gt;tensor by $\mathcal{O}_{\mathbb{P}/X}(n)$, set $\mathcal{E}=\mathcal{F}(n)$, 我们得到&lt;/p&gt;
+\[\mathcal{E}=\sum(-1)^i\mathcal{O}_{\mathbb{P}/X}(n-i)\otimes\pi^*\pi_*(\Omega^i_{\mathbb{P}/X}(i)\otimes \mathcal{F})=\sum(-1)^i\mathcal{O}_{\mathbb{P}/X}(n-i)\otimes\pi^*\pi_*(\Omega^i_{\mathbb{P}/X}(i-n)\otimes \mathcal{E}).\]&lt;p&gt;于是 $K_0^G$ 的 surj. 部分得证. 而由于&lt;/p&gt;
+\[(\epsilon_*\mathcal{O}_{\mathbb{P}_\Delta})*\mathcal{F}=(\operatorname{pr}_1)_*\epsilon_*p_2^*\mathcal{F}=(p_1)_*p_2^*\mathcal{F}=\mathcal{F},\]&lt;p&gt;每一个 sheaf on $\mathbb{P}$ 都 quasi-isom. to 一个 complex of sheaves with all terms being direct sum of copies of $\mathcal{O}_{\mathbb{P}/X}(i)$, 于是 $K^G_i,i\geq 1$ 的 proj. bundle thm 可以通过 Quillen 的 &amp;ldquo;Resolution Thm&amp;rdquo; 给出. (Ref: Quillen, D., Higher algebraic $K$-theory I, Higher $K$-theories.) 是个纯代数的部分().&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;阿蕾奇诺生日快乐!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/Alqnn.png&#34;
+	width=&#34;2013&#34;
+	height=&#34;1605&#34;
+	srcset=&#34;https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/Alqnn_hu_f710886d1665a08e.png 480w, https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/Alqnn_hu_33d04a6bb5face7c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Arlecchino&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;301px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;(快给我画成枫原万叶了kk)&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二十四 P273-276</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%9B%9B-p273-276/</link>
         <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
