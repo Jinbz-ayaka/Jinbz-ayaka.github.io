@@ -7,7 +7,79 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 24 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十六 P280-286</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AD-p280-286/</link>
+        <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AD-p280-286/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AD-p280-286/har.jpg" alt="Featured image of post CG饲养日记-其二十六 P280-286" /&gt;&lt;p&gt;Chern Character!&lt;/p&gt;
+&lt;p&gt;$X$ closed subvar. of a smooth quasi-proj. var. $M$. 我们要定义 homology Chern char. map for the non-equiv. $K$-theory&lt;/p&gt;
+\[\operatorname{ch}:K(X)\to H_*(X,\mathbb{C}).\]&lt;p&gt;这个涉及到 ambient var. $M$. 给出这个定义不是一个简单的事情()&lt;/p&gt;
+&lt;p&gt;第一步: $E$ $C^\infty$-vector bundle on $M$. 我们忽略 $M$ 上的 complex structure, 记 $\Omega^i(M)$ vector space of $C^\infty$-forms of deg. $i$, 记 $\Omega^i(E)$ v.s. of $E$-valued  $C^\infty$-forms, i.e. $C^\infty$-sections of $E\otimes \Omega^i$. 由于 partition of unity, 我们可以构造出 smooth connection on $E$,&lt;/p&gt;
+\[\nabla:C^\infty(E)\to \Omega^1(E),\]\[\nabla(f\cdot s)=df\cdot s+f\cdot \nabla s.\]&lt;p&gt;而这个 connection 可以 canonically extend to $\nabla:\Omega^i(E)\to \Omega^{i+1}(E),i\geq 0$. Furthermore, 通过一些简单的计算可以得到&lt;/p&gt;
+\[\nabla^2=\nabla\circ \nabla:C^\infty(E)\to \Omega^2(E)\]&lt;p&gt;是 $C^\infty(M)$-linear 的. 也就是说, given by $s\mapsto \omega(s)$, $\omega\in \Omega^2(\operatorname{End} E)$. $\omega$ 称作 connection $\nabla$ 给出的 curvature-form.&lt;/p&gt;
+&lt;p&gt;于是, cohomology Chern char. of $E$ 定义为 de Rham cohomology class&lt;/p&gt;
+\[\operatorname{ch}^*(E,\nabla):=\operatorname{Tr}(e^{i\omega/2\pi})=\operatorname{Tr}(1+\frac{i}{2\pi}\omega+\frac{1}{2!}(\frac{i}{2\pi})^2\cdot \omega\wedge \omega+\cdots).\]&lt;p&gt;定义 homoloy Chern char. by Poincare dual.&lt;/p&gt;
+\[\operatorname{ch}(E)=\operatorname{ch}^*(E)\cap [M]\in H_*(M).\]&lt;p&gt;第二步: 对于 $U$ open dense subse of $M$. 我们有 restriction map 给出了 de Rham complexes&lt;/p&gt;
+\[\Omega^\cdot(M)\to \Omega^\cdot(U).\]&lt;p&gt;这个 morph. 是 inj. 的. 于是我们可以将 $\Omega^\cdot (M)$ 视作 $\Omega^\cdot(U)$ 的 sub. 现在, 定义&lt;/p&gt;
+\[\Omega^i(M,U):=\Omega^{i-1}(U)/\Omega^{i-1}(M),\]&lt;p&gt;有&lt;/p&gt;
+\[0\to \Omega^\cdot(M)\to \Omega^\cdot(U)\to \Omega^\cdot(U)/\Omega^\cdot(M)\to 0.\]&lt;p&gt;于是给出 cohom. 的 long exact seq.&lt;/p&gt;
+\[\cdots\to H^i(\Omega^\cdot(M,U))\to H^i(\Omega^\cdot(M))\to H^i(\Omega^\cdot(U))\to H^{i+1}(\Omega^\cdot(M,U))\to \cdots\]&lt;p&gt;有, 根据 de Rham Thm, $H^i(\Omega^i(M))=H^i(M)$ and $H^i(\Omega^\cdot(U))$. 于是, 根据 derived cat. 中的 mapping-cone construction, 有&lt;/p&gt;
+&lt;p&gt;Prop 5.8.5. There is a natural isom.&lt;/p&gt;
+\[H^i(\Omega^\cdot(M,U))\simeq H^i(M,U)\]&lt;p&gt;so that the long exact seq. becomes the std. cohom. exact seq. of $(M,U)$.&lt;/p&gt;
+&lt;p&gt;接下来, 如下定义 multiplication:&lt;/p&gt;
+\[\cup:H^i(\Omega^\cdot(M,U))\times H^j(\Omega^\cdot(M,U))\to H^{i+j}(\Omega^\cdot(M,U)).\]&lt;p&gt;对于 $\alpha\in \Omega^{i-1}(U)$ 为 $[\alpha]$ 的一个 representative, 以及 $\beta\in \Omega^{j-1}$ 同样的 setting. 满足 $\beta,\alpha$ 是 cocycle i.e. $d\alpha\in \Omega^i(M),d\beta\cdots$. 现在, 定义&lt;/p&gt;
+\[[\alpha]\cup[\beta]=[\alpha\wedge d\beta].\]&lt;p&gt;可以验证, 这个定义是良定义的, 且&lt;/p&gt;
+\[[\alpha]\cup[\beta]+(-1)^{ij}[\beta]\cup [\alpha]=0\]&lt;p&gt;此外, 这个 multiplication 在 5.8.5 那个 mapping-cone 的定义下定义的 $\cup$ 是相同的.&lt;/p&gt;
+&lt;p&gt;第三步: 明天再修()&lt;/p&gt;
+&lt;p&gt;开修! Chern-Simons 楼.&lt;/p&gt;
+&lt;p&gt;$U$ open dense subset of $M$, $E,E&amp;rsquo;$ two $C^\infty$-v.b. on $M$, $u:E|_{U}\overset{\sim}{\to} E&amp;rsquo;|_{U}$ v.b. isom of the restrictions to $U$.&lt;/p&gt;
+&lt;p&gt;我们需要对这样的 $E,E&amp;rsquo;$, 给出一个 $\operatorname{ch}(E,E&amp;rsquo;,u)$ in $H^\ast (M,U)$ s.t. $\partial \operatorname{ch}(E,E&amp;rsquo;,u)=\operatorname{ch}(E)-\operatorname{ch}(E&amp;rsquo;)\in H^\ast (M)$. with $\partial$ connecting homo.&lt;/p&gt;
+&lt;p&gt;现在, 取 explicit representative of these class, 并选择 $\nabla,\nabla&amp;rsquo;$ 为 $E,E&amp;rsquo;$ 上的 connection. 于是, 在 $U$ 上, 有&lt;/p&gt;
+\[u^*(\nabla&#39;)=\nabla-\theta,\]&lt;p&gt;with $\theta$ $(\operatorname{End} E)$-valued $1$-form on $U$. 取 $\omega,\omega&amp;rsquo;$ 其对应的 curvature form, 有&lt;/p&gt;
+\[u^*(\omega&#39;)=\omega-\nabla(\theta)+\theta\wedge \theta.\]&lt;p&gt;注意 $\nabla-\theta$ 同样构成 $E|_U$ 上的 connection, 有, 两个不同的 connections 给出了 相同的 Chern char. form.&lt;/p&gt;
+\[\operatorname{ch}(E|_U,\nabla-\theta)-\operatorname{ch}(E|_{U},\nabla)=d\beta,\beta\in \Omega^\cdot(U).\]&lt;p&gt;实际上, 这个 $\beta$ 是可以被计算的. 考虑 $\tilde{U}=U\times [0,1]$, $\pi:\tilde{U}\to U$ natural proj, $\tilde{E}=\pi^\ast E$. 于是, 在 $\tilde{E}$ 上, 定义&lt;/p&gt;
+\[\tilde{\nabla}=\nabla-t\cdot\theta+dt\wedge \frac{d}{dt}.\]&lt;p&gt;于是, Chern-Simons form 由 $\beta=\pi_\ast \operatorname{Tr}(e^{\frac{i}{2\pi}\tilde{\nabla}^2})$ 给出. 这里的 $\pi_\ast $ 表示 intergral of Chern char. form $\operatorname{ch}(\tilde{E},\tilde{\nabla})=\operatorname{Tr}(e^{\frac{i}{2\pi}\tilde{\nabla}^2})$ along the fibers of $\pi$.&lt;/p&gt;
+&lt;p&gt;对于 $A,B\in M_n(\mathbb{C})$, 定义&lt;/p&gt;
+\[\Phi(A,B)=\sum_{k=1}^\infty \frac{1}{(k-1)!}(\frac{i}{2\pi})^k\operatorname{Tr}(A\cdot B^{k-1}).\]&lt;p&gt;有&lt;/p&gt;
+&lt;p&gt;Lemma 5.8.9. There are&lt;/p&gt;
+\[\beta=\int_0^1\operatorname{Tr}(\theta e^{\frac{i\cdot \nabla-it\theta^2}{2\pi}})=\int_0^1\Phi(\nabla(\theta)-t\cdot \theta\wedge \theta,\omega-t\cdot \nabla(\theta)+t^2\cdot \theta\wedge \theta).\]&lt;p&gt;现在, 由于 $\operatorname{ch}(E|_{U},\nabla-\theta)=\operatorname{ch}(E&amp;rsquo;,\nabla&amp;rsquo;)|_{U}$, 我们有&lt;/p&gt;
+\[d\beta=[\operatorname{ch}(E&#39;,\nabla&#39;)-\operatorname{ch}(E,\nabla)]|_{U}.\]&lt;p&gt;现在, 由于右侧式子能扩展到整个 $M$ 上, $\beta$ 是一个 cocycle. 于是, 我们定义 $\operatorname{ch}^\ast (E&amp;rsquo;,E,u)$ 为该 cocycle 对应的 cohomology class.&lt;/p&gt;
+&lt;p&gt;事实上, 这个 $[\beta]$ 的选取与 $\nabla,\nabla&amp;rsquo;$ 无关. 这是一个微分几何的结论.&lt;/p&gt;
+&lt;p&gt;第四步: 对于 $X$ closed alg. subvar. of a smooth quasi-proj. var. $M$ and $\mathcal{F}$ coh. sheaf of $\mathcal{O}_X$-mod. 记 $i:X\hookrightarrow M$ embedding, 有 finite locally free resol.&lt;/p&gt;
+\[0\to F_n\to \cdots \to F_1\to F_0\to i_*\mathcal{F}\to 0.\]&lt;p&gt;set $U:=M\backslash X$, let $K_i:=\ker (F_i|_U\to F_{i-1}|_U), i=1,2,\cdots,n$. Put $K_0=F_0|_U$, 我们有, 在 $U$ 上,&lt;/p&gt;
+\[0\to K_{i+1}\to F_{i+1}\to K_i\to 0,i=0,1,\cdots.\]&lt;p&gt;由于 $F_i$ 都是 locally free 的, 这些 exact seq. 都是 split 的. 因此, 我们有 isom. of $C^\infty$-v.b.&lt;/p&gt;
+\[F_{i+1}|_U\simeq K_i\oplus K_{i+1}.\]&lt;p&gt;现在, set $F^{ev}=\oplus_{i\geq 0} F_{2i}, F^{odd}=\oplus_{i\geq 0} F_{2i+1}$. 有&lt;/p&gt;
+\[F^{ev}|_{U}\simeq \oplus_{i\geq 0}K_i \simeq F^{odd}|_U. \]&lt;p&gt;我们给出&lt;/p&gt;
+\[u:F^{ev}|_{U}\simeq F^{odd}|_{U}.\]&lt;p&gt;于是, 根据 Chern-Simons construction, 我们给出&lt;/p&gt;
+\[\operatorname{ch}^*(F^{ev},F^{odd},u)\in H^*(M,M\backslash X)\]&lt;p&gt;现在, 令 $\operatorname{ch}_\ast (\mathcal{F})$ 定义为 $\operatorname{ch}^\ast (F^{ev},F^{odd},u)$ 在 $H_\ast (X)\simeq H^\ast (M.M\setminus X)$ 下的像. 于是可以证明 $\operatorname{ch}_\ast (\mathcal{F})$ 与上述 construction 的选取无关.&lt;/p&gt;
+&lt;p&gt;这样, 我们便完成了这纷乱复杂的构造.&lt;/p&gt;
+&lt;p&gt;Remark (5.8.12) 是说, 对于 $X$ smooth, 我们可以在 $X$ 上找出 free resol. $0\to E^m\to E^{m-1}\to \cdots\to \mathcal{F}\to 0.$&lt;/p&gt;
+&lt;p&gt;在这种情况下, 取 $\operatorname{ch}_\ast (\mathcal{F})=\operatorname{ch}^\ast \mathcal{F}\cap [X]\in H_\ast (X)$, $\operatorname{ch}^\ast \mathcal{F}=\sum (-1)^i\operatorname{ch}^\ast (E^i)$, 这么定义出来的 Chern class 与 $\operatorname{ch}^\ast (F^{ev},F^{odd},u)$, $X\hookrightarrow M$ 下定义的 Chern class 是一致的.&lt;/p&gt;
+&lt;p&gt;Prop. 5.8.13. The Chern char. map has the following properties,&lt;/p&gt;
+&lt;p&gt;(i) Normalization: For any complex alg. var. $X$, we have $\operatorname{ch}_\ast (\mathcal{O}_X)=[X]+r\in H_\ast (X)$, where $r$ a sum of hom. classes of degree $&amp;lt;2\dim_{\mathbb{C}}X$.&lt;/p&gt;
+&lt;p&gt;(ii) Additivity: For s.e.s. of sheaves on $X$,&lt;/p&gt;
+\[0\to \mathcal{F}&#39;\to \mathcal{F}\to \mathcal{F}&#39;&#39;\to 0,\]&lt;p&gt;we have $\operatorname{ch}_\ast (\mathcal{F})=\operatorname{ch}_\ast (\mathcal{F}&amp;rsquo;)+\operatorname{ch}_\ast (\mathcal{F}&amp;rsquo;&amp;rsquo;)$. Hence $\mathcal{F}\mapsto \operatorname{ch}_\ast (\mathcal{F})$ 给出了 homo. of abelian gps $\operatorname{ch}_\ast :K(X)\to H_\ast (X)$.&lt;/p&gt;
+&lt;p&gt;(iii) Restriction to an open subset: $U$ Zar. open subset of a smooth var. $M$, $X\subset M$ closed subvar. $i:X\cap U\hookrightarrow X$ induced embedding. Then the following diag. commutes:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLKFgpIl0sWzAsMiwiSF8qKFgpIl0sWzIsMiwiSF8qKFhcXGNhcCBVKSJdLFsyLDAsIksoWFxcY2FwIFUpIl0sWzAsMywiaV4qIl0sWzEsMiwiaV4qIl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7Y2h9XyoiLDFdLFszLDIsIlxcb3BlcmF0b3JuYW1le2NofV8qIiwxXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLKFgpIl0sWzAsMiwiSF8qKFgpIl0sWzIsMiwiSF8qKFhcXGNhcCBVKSJdLFsyLDAsIksoWFxcY2FwIFUpIl0sWzAsMywiaV4qIl0sWzEsMiwiaV4qIl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7Y2h9XyoiLDFdLFszLDIsIlxcb3BlcmF0b3JuYW1le2NofV8qIiwxXV0=&amp;embed&#34; width=&#34;548&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Theorem 5.8.14. (Riemann-Roch for singular var.) given a comm. diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzIsMCwiWSJdLFswLDIsIk0iXSxbMiwyLCJOIl0sWzAsMSwiZiJdLFsyLDMsIlxcYmFye2Z9Il0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzIsMCwiWSJdLFswLDIsIk0iXSxbMiwyLCJOIl0sWzAsMSwiZiJdLFsyLDMsIlxcYmFye2Z9Il0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;where the morph $f$ is proper, and $M,N$ are smooth, one has&lt;/p&gt;
+\[Td_N\cdot f_*(\operatorname{ch_*(\mathcal{F})})=f_*(Td_M\cdot \operatorname{ch}_*\mathcal{F}), \mathcal{F}\in K(X).\]&lt;p&gt;这里的 $Td$, 指的是 Todd class. 他是原代数簇切丛的陈类.&lt;/p&gt;
+&lt;p&gt;Prop. 5.8.15.&lt;/p&gt;
+&lt;p&gt;(i) The homological Chern char. map 与 $K$-theory 中的 specialization 交换, 以及&lt;/p&gt;
+&lt;p&gt;(ii) $Z,Z&amp;rsquo;\subset M$ closed subvar. of a smooth var. $M$. Then the following diag. commutes:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLKFopXFxvdGltZXMgSyhaJykiXSxbMiwwLCJLKFpcXGNhcCBaJycpIl0sWzAsMiwiSF8qKFopXFxvdGltZXMgSF8qKFonKSJdLFsyLDIsIkhfKihaXFxjYXAgWicpIl0sWzAsMSwiXFxvdGltZXMiXSxbMiwzLCJcXGNhcCJdLFswLDIsIlxcb3BlcmF0b3JuYW1le2NofV8qIl0sWzEsMywiXFxvcGVyYXRvcm5hbWV7Y2h9XyoiXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLKFopXFxvdGltZXMgSyhaJykiXSxbMiwwLCJLKFpcXGNhcCBaJycpIl0sWzAsMiwiSF8qKFopXFxvdGltZXMgSF8qKFonKSJdLFsyLDIsIkhfKihaXFxjYXAgWicpIl0sWzAsMSwiXFxvdGltZXMiXSxbMiwzLCJcXGNhcCJdLFswLDIsIlxcb3BlcmF0b3JuYW1le2NofV8qIl0sWzEsMywiXFxvcGVyYXRvcm5hbWV7Y2h9XyoiXV0=&amp;embed&#34; width=&#34;677&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;horizontal maps given by tensor prod. with supports in $K$-theory and the intersection pairing in homology respectively.&lt;/p&gt;
+&lt;p&gt;注意, 我们并没有 claim homological Chern char. 和 convolution 之间的 commute 关系. 实际上, 5.8.14 表示了, 我们需要 &amp;ldquo;correction factors&amp;rdquo; involving Todd classes. 在这 chapter 的末尾, 我们会讨论这个.&lt;/p&gt;
+&lt;p&gt;不管怎样, 5.8 竣工了().&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二十五 P276-280</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/</link>
         <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
@@ -16,8 +88,8 @@
         <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/ayakaumb.jpg" alt="Featured image of post CG饲养日记-其二十五 P276-280" /&gt;&lt;p&gt;Proj. Bundle thm and Beilinson Thm.&lt;/p&gt;
 &lt;p&gt;Setting 是, $V$ complex. v.s., $\mathbb{P}=\mathbb{P}(V)$, proj. space. $\epsilon:\mathbb{P}_{\Delta}\hookrightarrow \mathbb{P}\times \mathbb{P}$.&lt;/p&gt;
 &lt;p&gt;Beilinson resol. 是说, $\epsilon_\ast \mathcal{O}_{\mathbb{P}_{\Delta}}$ 拥有一个 canonical resol. by locally free sheaves. 这是一个很代数几何的结论.&lt;/p&gt;
-&lt;p&gt;Construction: 考虑 $\mathcal{O}_\mathbb{P}(-1)$ tautological line bundle on $\mathbb{P}$ with fibre on $\mathfrak{b}ar{v}$ is $\mathbb{C}\cdot v$. 考虑 $\mathcal{O}_\mathbb{P}(1)$ dual bundle. 对任意 $\check{v}\in V^\ast $ 我们给出了一个 global section of $\mathcal{O}_{\mathbb{P}}(1)$. 于是我们有 canonical isom.&lt;/p&gt;
-\[V^*\simeq H^0(\mathbb{P},\mathcal{O}_\mathbb{P}(1)).\]&lt;p&gt;于是, 我们可以将 $\operatorname{id}\in V^\ast \otimes V=\operatorname{Hom}(V,V)$ 看做 $V\otimes \mathcal{O}_{\mathbb{P}}(1)$ 的一个 global section. 而, $\mathcal{O}_{\mathbb{P}}\to V\otimes \mathcal{O}_{\mathbb{P}}(1)$ given by $f\mapsto f\cdot \operatorname{id}$ 给出了一个在 $\mathfrak{b}ar{v}$ 处的 coker 是与 $v$ 正交的所有向量的一个 morph. 也就是 s.e.s.&lt;/p&gt;
+&lt;p&gt;Construction: 考虑 $\mathcal{O}_\mathbb{P}(-1)$ tautological line bundle on $\mathbb{P}$ with fibre on $\bar{v}$ is $\mathbb{C}\cdot v$. 考虑 $\mathcal{O}_\mathbb{P}(1)$ dual bundle. 对任意 $\check{v}\in V^\ast $ 我们给出了一个 global section of $\mathcal{O}_{\mathbb{P}}(1)$. 于是我们有 canonical isom.&lt;/p&gt;
+\[V^*\simeq H^0(\mathbb{P},\mathcal{O}_\mathbb{P}(1)).\]&lt;p&gt;于是, 我们可以将 $\operatorname{id}\in V^\ast \otimes V=\operatorname{Hom}(V,V)$ 看做 $V\otimes \mathcal{O}_{\mathbb{P}}(1)$ 的一个 global section. 而, $\mathcal{O}_{\mathbb{P}}\to V\otimes \mathcal{O}_{\mathbb{P}}(1)$ given by $f\mapsto f\cdot \operatorname{id}$ 给出了一个在 $\bar{v}$ 处的 coker 是与 $v$ 正交的所有向量的一个 morph. 也就是 s.e.s.&lt;/p&gt;
 \[0\to \mathcal{O}_{\mathbb{P}}\to V\otimes \mathcal{O}_{\mathbb{P}}(1)\to \mathcal{T}\to 0.\]&lt;p&gt;而, by tensor 一个 $\mathcal{O}_{\mathbb{P}}(-1)$ 给出了 Euler seq.&lt;/p&gt;
 \[0\to \mathcal{O}_{\mathbb{P}}(-1)\to V\otimes \mathcal{O}_{\mathbb{P}}\to \mathcal{Q}\to 0.\]&lt;p&gt;with $\mathcal{Q}=\mathcal{T}\otimes \mathcal{O}_{\mathbb{P}}(-1)$.&lt;/p&gt;
 &lt;p&gt;而上面那个则给出一个 canonical isom.&lt;/p&gt;
@@ -25,8 +97,8 @@
 \[\mathbb{P}\overset{\operatorname{pr}_1}{\leftarrow} \mathbb{P}\times \mathbb{P}\overset{\operatorname{pr}_2}{\rightarrow}\mathbb{P}.\]&lt;p&gt;对于 $A,B$ bundles over $\mathbb{P}$, 记 $A\boxtimes B=pr_1^\ast A\otimes pr_2^\ast B$. 根据 Kunneth formula 我们有&lt;/p&gt;
 \[H^0(\mathbb{P}\times \mathbb{P},\mathcal{O}_{\mathbb{P}}(1)\boxtimes \mathcal{Q})\simeq H^0(\mathbb{P},\mathcal{O}_{\mathbb{P}}(1))\otimes H^0(\mathbb{P},\mathcal{Q})\simeq V^*\otimes V\simeq \operatorname{Hom}_\mathbb{C}(V,V).\]&lt;p&gt;我们希望考虑 $s$ global section of $\mathcal{O}_\mathbb{P}(1)\boxtimes \mathcal{Q}$ corresp. to identity. 我们接下来要刻画这个 $s$: 考虑&lt;/p&gt;
 \[\mathcal{O}_\mathbb{P}(1)\boxtimes \mathcal{Q}=\mathcal{H}om(pr_1^*\mathcal{O}_{\mathbb{P}}(-1),pr_2^*\mathcal{Q}).\]&lt;p&gt;那么考虑 global section&lt;/p&gt;
-\[\hat{s}:pr^*_1\mathcal{O}_\mathbb{P}(-1)\to pr_2^*\mathcal{Q}.\]&lt;p&gt;对于 $\mathfrak{b}ar{v},\mathfrak{b}ar{w}$, 在我们的定义下&lt;/p&gt;
-\[\mathcal{O}_{\mathbb{P}}(-1)|_{\mathfrak{b}ar{v}}=\mathbb{C}\cdot v,\mathcal{Q}|_{\mathfrak{b}ar{w}}=V/\mathbb{C}\cdot w.\]&lt;p&gt;给出这样的 $\check{s}$ 就是说&lt;/p&gt;
+\[\hat{s}:pr^*_1\mathcal{O}_\mathbb{P}(-1)\to pr_2^*\mathcal{Q}.\]&lt;p&gt;对于 $\bar{v},\bar{w}$, 在我们的定义下&lt;/p&gt;
+\[\mathcal{O}_{\mathbb{P}}(-1)|_{\bar{v}}=\mathbb{C}\cdot v,\mathcal{Q}|_{\bar{w}}=V/\mathbb{C}\cdot w.\]&lt;p&gt;给出这样的 $\check{s}$ 就是说&lt;/p&gt;
 \[\mathbb{C}\cdot v\to V/\mathbb{C}\cdot w,\]\[c\cdot v\mapsto c\cdot v\pmod{\mathbb{C}\cdot w}.\]&lt;p&gt;于是, $\check{s}$ vanishes iff $v,w$ linearly indep., 也就是说, 其 zero locus 为 $\Delta\subset  \mathbb{P}\times \mathbb{P}$.&lt;/p&gt;
 &lt;p&gt;而, 与 $s\in \mathcal{O}_{\mathbb{P}}(1)\boxtimes \mathcal{Q}$ 的 contraction 给出了 sheaf morph.&lt;/p&gt;
 \[i_s:\wedge^k(\mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*)\to\wedge^{k-1}(\mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*).\]&lt;p&gt;于是, 我们得到了 free resol. of $\mathcal{O}_\Delta=\mathcal{O}_{\mathbb{P}\times \mathbb{P}}/\mathcal{I}_{\Delta}$:&lt;/p&gt;
