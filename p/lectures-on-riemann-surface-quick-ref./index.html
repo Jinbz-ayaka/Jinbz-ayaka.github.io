@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="精巧又遥远">
+<title>Lectures on Riemann Surface - Quick Ref.</title>
+
+<link rel='canonical' href='https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./'>
+
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Lectures on Riemann Surface - Quick Ref.">
+<meta property='og:description' content="精巧又遥远">
+<meta property='og:url' content='https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./'>
+<meta property='og:site_name' content='代数tv'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-08-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-28T00:00:00&#43;00:00'/><meta property='og:image' content='https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./wedfff.jpg' />
+<meta name="twitter:title" content="Lectures on Riemann Surface - Quick Ref.">
+<meta name="twitter:description" content="精巧又遥远"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./wedfff.jpg' />
+    <link rel="shortcut icon" href="/artemptyset.png" />
+<style>
+     
+    :root {
+        --article-font-family: "Merriweather", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";
+    
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+    
+        document.head.appendChild(customFont);
+    }());
+</script>
+<link rel="stylesheet" href="/css/custom.min.0bca9da6d8b445466b098d948ec4a17afd76ed43bbe3cda39dad9d3e8a455675.css">
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_2da766625f77ada1.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">代数tv</a></h1>
+            <h2 class="site-description">做网站是不是有点简单了</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/407762935'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/Jinbz-ayaka'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#chapter-1-covering-spaces">Chapter 1 Covering Spaces.</a>
+      <ol>
+        <li><a href="#1-the-defn-of-riemann-surfaces">1. The Defn. of Riemann Surfaces.</a></li>
+        <li><a href="#2-elementary-properties-of-holo-mappings">2. Elementary Properties of Holo. Mappings.</a></li>
+        <li><a href="#3-homotopy-of-curves-the-fundamental-gp">3. Homotopy of Curves. The Fundamental gp.</a></li>
+        <li><a href="#4-branched-and-unbranched-coverings">4. Branched and Unbranched Coverings.</a></li>
+        <li><a href="#5-the-universal-covering-and-covering-transf">5. The Universal Covering and Covering Transf.</a></li>
+        <li><a href="#6-sheaves">6. Sheaves.</a></li>
+        <li><a href="#7-analytic-continuation">7. Analytic Continuation.</a></li>
+        <li><a href="#8-algebraic-functions">8. Algebraic Functions.</a></li>
+        <li><a href="#9-diff-forms">9. Diff. forms</a></li>
+        <li><a href="#10-integration-of-diff-forms">10. Integration of Diff. Forms.</a></li>
+        <li><a href="#11-linear-diff-eqn">11. Linear Diff. Eqn.</a></li>
+      </ol>
+    </li>
+    <li><a href="#chapter-2-compact-riemann-surfaces">Chapter 2. Compact Riemann Surfaces.</a>
+      <ol>
+        <li><a href="#12-cohomology-gps">12. Cohomology Gps.</a></li>
+        <li><a href="#13-dolbeaults-lemma">13. Dolbeault&rsquo;s Lemma.</a></li>
+        <li><a href="#14-finiteness-thm">14. Finiteness Thm.</a></li>
+        <li><a href="#15-the-exact-coh-seq">15. The Exact Coh. Seq.</a></li>
+        <li><a href="#16-the-riemann-roch-theorem">16. The Riemann-Roch Theorem.</a></li>
+        <li><a href="#17-the-serre-duality-theorem">17. The Serre Duality Theorem.</a></li>
+        <li><a href="#18-functions-and-diff-forms-with-prescribed-principal-parts">18. Functions and Diff. forms with prescribed principal parts.</a></li>
+        <li><a href="#19-harmonic-differential-forms">19. Harmonic Differential Forms.</a></li>
+        <li><a href="#20-abels-theorem">20. Abel&rsquo;s Theorem</a></li>
+        <li><a href="#21-the-jacobi-inversion-problem">21. The Jacobi Inversion Problem</a></li>
+      </ol>
+    </li>
+    <li><a href="#chapter-3-non-compact-riemann-surfaces">Chapter 3. Non-compact Riemann Surfaces.</a>
+      <ol>
+        <li><a href="#22-dirichlet-boundary-value-problem">22. Dirichlet Boundary Value Problem.</a></li>
+        <li><a href="#23-countable-topology">23. Countable Topology.</a></li>
+        <li><a href="#24-weyls-lemma">24. Weyl&rsquo;s Lemma.</a></li>
+        <li><a href="#25-the-runge-approximation-theorem">25. The Runge Approximation Theorem.</a></li>
+        <li><a href="#26-the-theorems-of-mittag-leffler-and-weierstrass">26. The Theorems of Mittag-Leffler and Weierstrass.</a></li>
+        <li><a href="#27-the-riemann-mapping-theorem">27. The Riemann Mapping Theorem.</a></li>
+        <li><a href="#28-functions-with-prescribed-summands-of-automorphy">28. Functions with Prescribed Summands of Automorphy</a></li>
+        <li><a href="#29-line-and-vector-bundles">29. Line and Vector Bundles.</a></li>
+        <li><a href="#30-the-triviality-of-vector-bundles">30. The Triviality of Vector Bundles.</a></li>
+        <li><a href="#31-the-riemann-hilbert-problem">31. The Riemann-Hilbert Problem.</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/lectures-on-riemann-surface-quick-ref./">
+                <img src="/p/lectures-on-riemann-surface-quick-ref./wedfff_hu_2d9d28b4f88d2105.jpg"
+                        srcset="/p/lectures-on-riemann-surface-quick-ref./wedfff_hu_2d9d28b4f88d2105.jpg 800w, /p/lectures-on-riemann-surface-quick-ref./wedfff_hu_b44819cf21453c12.jpg 1600w"
+                        width="800" 
+                        height="575" 
+                        loading="lazy"
+                        alt="Featured image of post Lectures on Riemann Surface - Quick Ref." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/cg/" style="background-color: #9DB9AB; color: #fff;">
+                CG
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/lectures-on-riemann-surface-quick-ref./">Lectures on Riemann Surface - Quick Ref.</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            精巧又遥远
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 28, 2025</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>感觉, 把一个东西学懂的标准, 就是意识到这些东西都是 trivial 的.</p>
+<p>吗</p>
+<hr>
+<p>这是 Lectures on Riemann Surface 的 quick reference. 代数tv 在 ICBS 期间花了五天时间看完了这本书. 现在写一下他的 quick reference.</p>
+<h2 id="chapter-1-covering-spaces">Chapter 1 Covering Spaces.
+</h2><p>这个 Chapter 叫这个名字, 就能看出来, 他其实是很拓扑的.</p>
+<p>就是一堆基础知识.</p>
+<h3 id="1-the-defn-of-riemann-surfaces">1. The Defn. of Riemann Surfaces.
+</h3><p>这一章没啥可说的, 就是很基础的定义, 以及 formulate 一些复分析的内容. 注意那些复分析中比较局部的结论可以直接搬过来.</p>
+<h3 id="2-elementary-properties-of-holo-mappings">2. Elementary Properties of Holo. Mappings.
+</h3><ul>
+<li>
+<p>$f:X\to Y$ 在 singularities 上大致是 $f(z)=z^k$ 的形式. 这实际上就是引出了分歧 (ramification) 理论.</p>
+</li>
+<li>
+<p>开映射给出, 若对于非常值 $f:X\to Y$ $X$ 紧, 则 $Y$ 紧且 $f$ 满.</p>
+</li>
+</ul>
+<p>这是这章两个比较重要的结论.</p>
+<h3 id="3-homotopy-of-curves-the-fundamental-gp">3. Homotopy of Curves. The Fundamental gp.
+</h3><p>代数拓扑.. 基本群定义以下的东西.</p>
+<h3 id="4-branched-and-unbranched-coverings">4. Branched and Unbranched Coverings.
+</h3><p>对于 $p:Y\to X$, 定义 $y\in Y$ branch point, 如果对于任意 $V\ni y$ $p|_V$ 都不是单射. 称有 branch pt. 的映射是 branched 的, 反之则是 unbranched 的. 熟知 unbranched 的有良好的 local homeo. 性质.</p>
+<p>然后是一些关于 lifting 的性质. 可以跳过. 这里一个比较有营养的定理就是对于 local homeo. $f:X\to Y$, $Y$ 上面的 complex structure unique lift to $X$. 不过也是一个基础定理, 不太重要(确信).</p>
+<p>然后是, proper 的 $f$ 如果是 local homeo. 就是 covering. 以及所有 proper 映射 counting multiplicities 下都拥有相同的 $n$ 个原像. 比较 triv.</p>
+<h3 id="5-the-universal-covering-and-covering-transf">5. The Universal Covering and Covering Transf.
+</h3><p>simply conn. mfd 和 universal covering 的关系就跳了, 还有 Deck transf. 和 Galois covering. 我相信一个优秀的大学生应该掌握.</p>
+<h3 id="6-sheaves">6. Sheaves.
+</h3><p>看家本事, 略.</p>
+<p>或者说, Riemann Surface 上的 sheaf theory 已经是最简单的 sheaf theory 了()</p>
+<h3 id="7-analytic-continuation">7. Analytic Continuation.
+</h3><p>simply connected 蕴含了 unique continuation. Main Theorem 是说, 对于 $X$ R.S., $a\in X$, $\phi\in \mathcal{O}_a$ 函数芽, 于是存在一个 maximal analytic continuation 到某一个 R.S. $Y$ 上. 给出了一个函数芽-黎曼面对应.</p>
+<h3 id="8-algebraic-functions">8. Algebraic Functions.
+</h3><ul>
+<li>
+<p>Continuation 定理: $\pi: Y\to X$ branched $n$-sheet covering, $A\subset X$ closed discrete subset contains all critical values 且 $B=\pi^{-1}(A)$. $f\in \mathcal{O}(X\backslash A)$, (resp. $\mathcal{M}(X\backslash A)$). 定义 $f_\nu$ 为其在 deck transf. 下的像, $c_n$ 为他们生成的对称函数, 则 $f$ continued to $Y$ iff $c_n$ continued to $X$.</p>
+</li>
+<li>
+<p>代数定理: 对于 $\pi:Y\to X$, $f\in \mathcal{M}(Y)$, $c_i\in \mathcal{M}(X)$ elementary symm. functions. 于是 $f$ 满足</p>
+</li>
+</ul>
+\[f^n+(\pi^*c_1)f^{n-1}+\cdots+\pi^*c_n=0.\]<p>因此, $\pi^\ast :\mathcal{M}(X)\to \mathcal{M}(Y)$ 是一个 alg. field ext. of $\deg\leq n$. Moreover, 如果存在 $f\in \mathcal{M}(Y),x\in X, \pi^{-1}(x)={y_i}$, $f(y_i)$ 各不相同, 那么 $\deg=n$.</p>
+<ul>
+<li>Extend 定理: $A\subset X$ closed disc. subset, $X&rsquo;=X\backslash A$. 于是到 $X&rsquo;$ 的 unbranched holom. covering 可以 extends to $X$ 的 branched covering.</li>
+</ul>
+<p>Deck transf. 定理, 等等等等. 这些实际上, 应该不太会用到了. 这些是一些可以简单想象的拓扑.</p>
+<h3 id="9-diff-forms">9. Diff. forms
+</h3><p>diff., holom. 的 diff. forms. 然后可以定义 Residue. Merom. form, 外微分的定义.</p>
+<p>在下面会不加定义地写 $\mathcal{E}^{xxxx}$, $xxxx$ 可能是 $(1)$ $(2)$ $0,1$ $1,0$ 等等等等. 具体的定义参照书上吧.</p>
+<h3 id="10-integration-of-diff-forms">10. Integration of Diff. Forms.
+</h3><p>微分形式, 可以怎么进行积分. 这些直接略应该没啥问题.</p>
+<h3 id="11-linear-diff-eqn">11. Linear Diff. Eqn.
+</h3><p>最最后一章我们会提到 $d\omega=A\omega$ 的 soln. system. 但实际上, 想象一下这个的解的结构应该会能想明白.</p>
+<h2 id="chapter-2-compact-riemann-surfaces">Chapter 2. Compact Riemann Surfaces.
+</h2><p>Compact 的黎曼面, 我们会关心他精巧的几何结构. 一方面, 我们会导出一些公式, 来刻画其上面 w.r.t. 某些 sheaf 的同调. 另一方面, 我们也会考虑其上 global 的亚纯函数. 注意极大值原理告诉我们 holo. 的函数一定只有常值, 因此其 divisor 的结构唯一决定了函数本身. 因此, 也会关心这样的问题: 什么样的 divisor 会有全纯函数解. 最最后, 跳到模空间的复结构里, 引出一些模空间层面的结论.</p>
+<h3 id="12-cohomology-gps">12. Cohomology Gps.
+</h3><p>Cochains Cocycles Coboundaries 的定义略.</p>
+<p>微分函数的好性质: $X$ Riemann Surface</p>
+<ul>
+<li>$H^1(X,\mathcal{E})=0$.</li>
+</ul>
+<p>这个是 follows from 单位分解. differentiable 的函数没有那么多限制. 这点跟 holom. 的函数是本质不同的.</p>
+<p>对于 $X$ simply conn.</p>
+<ul>
+<li>
+<p>$H^1(X,\mathbb{C})=0$,</p>
+</li>
+<li>
+<p>$H^1(X,\mathbb{Z})=0$.</p>
+</li>
+</ul>
+<p>这些都是 simply conn. 的好性质. 也揭示了我们可以用 local const sheaves 来算一些(拓扑意义下?)的同调.</p>
+<p>Leray 的 Thm 在代数几何 II 就讲过, 但是可以再复述一遍: 可以用 acyclic 的 covering 的 &ldquo;Cech cohom.&rdquo; 来计算一般的 sheaf 在某空间上的 cohom.</p>
+<p>零维的 Cohom. gp., follow by defn, 就是 global section. 我们在前两天更新的 CG 也用过这个结论.</p>
+<h3 id="13-dolbeaults-lemma">13. Dolbeault&rsquo;s Lemma.
+</h3><ul>
+<li>
+<p>$g\in \mathcal{E}(\mathbb{C})$ compact supp. 于是存在 $f\in \mathcal{E}(\mathbb{C})$ s.t. $\frac{\partial f}{\partial \bar{z}}=g$.</p>
+</li>
+<li>
+<p>(Dolbeault Lemma) $X:={z\in \mathbb{C}:|z|&lt;R},0&lt;R\leq \infty$, $g\in \mathcal{E}(X)$. 于是存在 $f\in \mathcal{E}(X)$ s.t. $\frac{\partial f}{\partial \bar{z}}=g$.</p>
+</li>
+<li>
+<p>$X:={z\in \mathbb{C}:|z|&lt;R},0&lt;R\leq \infty$, $g\in \mathcal{E}(X)$. 于是存在 $f\in \mathcal{E}(X)$ s.t. $\Delta f=g$.</p>
+</li>
+</ul>
+<p>于是, 对于 $X:={z\in \mathbb{C}:|z|&lt;R},0&lt;R\leq \infty$, $H^1(X,\mathcal{O})=0$. 与此同时, 可以利用 $U_1\cup U_2$ covering 说明 $H^1(\mathbb{P}^1,\mathcal{O})=0$.</p>
+<h3 id="14-finiteness-thm">14. Finiteness Thm.
+</h3><ul>
+<li>$X$ R.S., $Y_2\subset X$ open subset, $Y_1\subset Y_2$ open 相对紧. 于是 Restriction homo.</li>
+</ul>
+\[H^1(Y_2,\mathcal{O})\to H^1(Y_1,\mathcal{O})\]<p>has a finite dim. image.</p>
+<p>于是推出来 $\dim H^1(X,\mathcal{O})&lt;\infty$, 对于 $X$ 紧. 这实际上就是 genus 的定义.</p>
+<p>而在如上条件下, 如果 $X$ non-compt, $\operatorname{im}(H^1(Y_2,\mathcal{O})\to H^1(Y_1,\mathcal{O}))=0$.</p>
+<p>另一个定理会在讲 divisor 的时候用到 (实际上上一个定理也要用).</p>
+<ul>
+<li>$Y\Subset X$ open 相对紧. 于是, 对任意 $a\in Y$, 总存在 $f\in\mathcal{M}(Y)$, $f$ 在 $a$ 处是一个 pole, 而在其余地方 holom. 这个定理能推出来很多结论, 包括 fix disc. set 上的任意取值总能搞到全局的 merom. 的 $f$, 以及其推论 noncompt. 的 ralative compt. subset 总存在 nonconst. holom.</li>
+</ul>
+<h3 id="15-the-exact-coh-seq">15. The Exact Coh. Seq.
+</h3><p>黎曼面上有一些 exact seq.</p>
+<p>(a).</p>
+\[0\to \mathcal{O}\to \mathcal{E}\overset{d''}{\to} \mathcal{E}^{0,1}\to 0.\]<p>(b). $\mathcal{L}=\ker(\mathcal{E}^{(1)}\overset{d}{\to }\mathcal{E}^{(2)})$, 有</p>
+\[0\to \mathbb{C}\to \mathcal{E}\overset{d}{\to} \mathcal{L}\to 0.\]<p>(c).</p>
+\[0\to \mathbb{C}\to \mathcal{O}\overset{d}{\to} \Omega\to 0.\]<p>(d).</p>
+\[0\to \Omega\to \mathcal{E}^{1,0}\overset{d}{\to} \mathcal{E}^{(2)}\to 0.\]<p>(e).</p>
+\[0\to \mathbb{Z}\to \mathcal{O}\to \mathcal{O}^*\to 0.\]<p>于是, 拉长整合列我们得到, 对于 $0\to \mathcal{F}\overset{\alpha}{\to} \mathcal{G}\overset{\beta}{\to}\mathcal{H}\to 0$. 若 $H^1(X,\mathcal{G})=0$, 则</p>
+\[H^1(X,\mathcal{F})\simeq \mathcal{H}(X)/\beta\mathcal{G}(X).\]<p>这便给出了 Dolbeault&rsquo;s thm (也许不要和 Dolbeault&rsquo;s lemma 混淆):</p>
+\[H^1(X,\mathcal{O})\simeq \mathcal{E^{0,1}}(X)/d''\mathcal{E}(X),\]\[H^1(X,\Omega)\simeq \mathcal{E^{(2)}}(X)/d\mathcal{E}^{1,0}(X).\]<p>以及 de Rham&rsquo;s Thm:</p>
+\[H^1(X,\mathbb{C})\simeq \operatorname{Rh}^1(X).\]<h3 id="16-the-riemann-roch-theorem">16. The Riemann-Roch Theorem.
+</h3><p>Divisor 的定义略. 可以参考 Hartshorne 或者 CG, 虽然后者参考的也是 Hartshorne. 我们定义 $\mathcal{O}_D$ s.t. $\mathcal{O}_D(U)$ 为 $u$ 上所有 order 为 $\geq -D$ 的 mero. funct.</p>
+<ul>
+<li>
+<p>$X$ cpt. $\deg D&lt;0$, 于是 $H^0(X,\mathcal{O}_D)=0$.</p>
+</li>
+<li>
+<p>Riemann-Roch:</p>
+</li>
+</ul>
+\[\dim H^0(X,\mathcal{O}_D)-\dim H^1(X,\mathcal{O}_D)=1-g+\deg D.\]<p>证明有一个值得注意的点, 就是</p>
+\[0\to \mathcal{O}_D\to \mathcal{O}_{D+P}\to \mathbb{C}_P\to 0.\]<p>的 s.e.s.</p>
+<p>然后可以给出, 对于 $X$ genus $g$, 我们在 14 的 &ldquo;另一个定理&quot;里, 可以给出 pole 的 order 的上界 $g+1$. 也就是说, 给出了 $X$ 到 $\mathbb{P}^1$ 的不多于 $g+1$ 阶 covering.</p>
+<h3 id="17-the-serre-duality-theorem">17. The Serre Duality Theorem.
+</h3><p>Mittag-Leffler Dist. 等等都是工具. 不多写</p>
+<ul>
+<li>Divisor $D$ on compact Riemann surface $X$,</li>
+</ul>
+\[\iota_D:H^0(X,\Omega_{-D})\to H^1(X,\mathcal{O}_D)^*\]<p>是一个 isom.</p>
+<p>这个是 given by</p>
+\[\langle,\rangle: H^0(X,\Omega_{-D})\times H^1(X,\mathcal{O}_D)\to \mathbb{C},\]\[\langle \omega, \xi\rangle=\operatorname{Res}(\omega\xi).\]<ul>
+<li>divisor of a non-vaishing merom. $1$-form $\omega$ on a cpt. genus $g$ satisfies</li>
+</ul>
+\[\deg(\omega)=2g-2.\]<ul>
+<li>Riemann-Hurwitz: $f:X\to Y$, $v(x,f)$ 为 $f$ 在 $x$ 处取 $f(x)$ 的 multiplicity, $b(f,x)=v(f,x)-1$ branching order, $b(f)=\sum b(f,x)$ total branching order. 于是, 对 $n$-sheet $f:X\to Y$, $X,Y$ with genus $g,g&rsquo;$, 有</li>
+</ul>
+\[(2g-2)-n(2g'-2)=b.\]<ul>
+<li>$X$ compact R.S., $D$ divisor on $X$, 有</li>
+</ul>
+\[H^1(X,\mathcal{O}_D)=0,\forall \deg D>2g-2.\]<p>以及 $H^1(X,\mathcal{M})=0$.</p>
+<ul>
+<li>
+<p>$X$ compact R.S., $D$ divisor on $X$ with $\deg D\geq 2g$, 对任意 $x\in X$, 存在 $f\in \mathcal{O}_D(X)$ 有 $\mathcal{O}_{D,x}=f\mathcal{O}_x$. (globally generated).</p>
+</li>
+<li>
+<p>$X$ compact, $D$ divisor of $\deg\geq 2g+1$. 取 $f_0,\cdots,f_N$ basis of $H^0(X,\mathcal{O}_D)$, 则</p>
+</li>
+</ul>
+\[F=(f_0:\cdots:f_N):X\to \mathbb{P}^N\]<p>is an embedding.</p>
+<h3 id="18-functions-and-diff-forms-with-prescribed-principal-parts">18. Functions and Diff. forms with prescribed principal parts.
+</h3><p>定义邬荣斯基(Wronskian) Determinant: 在 $X$ 上, 取 $\omega_i$ basis of $\Omega(X)$. 对于 local coord $z$, 取 $f_idz=\omega_i$. 考虑</p>
+\[W(f_1,\cdots,f_g)=\det\begin{pmatrix}
+  f_1&f_2&\cdots&f_g\\
+  f_1'&f_2'&\cdots&f_g'\\
+  \ddots&\ddots&&\ddots\\
+  f_1^{(g-1)}&f_2^{(g-1)}&\cdots&f_g^{(g-1)}
+\end{pmatrix}.\]<p>这个选取和 coord. 选取只有倍数关系. 因此可以考虑其零点, 记为 Weierstrass pts.</p>
+<ul>
+<li>
+<p>14 中&quot;另一个定理&rdquo; pole 的 deg 可以选取 order $\leq g$ 当且仅当 $p$ 是一个 Weierstrass pt.</p>
+</li>
+<li>
+<p>Weierstrass pts 记重数下恰有 $(g-1)g(g+1)$ 个.</p>
+</li>
+</ul>
+<p>上面那个译名是我瞎写的.</p>
+<h3 id="19-harmonic-differential-forms">19. Harmonic Differential Forms.
+</h3><p>对于 $\omega=\omega_1+\omega_2$, $\omega_1\in \mathcal{E}^{1,0}(X), \omega_2\in \mathcal{E}^{0,1}(X)$. 取 $\ast \omega=i(\bar{w}_1-\bar{w}_2)$. 一个 form 称作 Harmonic 的, 如果 $d\omega=d\ast \omega=0$.</p>
+<ul>
+<li>
+<p>$\omega$ Harmonic, iff for any $a$ there is $U$, $f$ on $U$ harmonic s.t. $\omega=df$, iff $\omega_1\in \Omega(X),\omega_2\in \bar{\Omega}(X)$.</p>
+</li>
+<li>
+<p>$\dim \operatorname{Harm}^1(X)=2g$.</p>
+</li>
+<li>
+<p>Every real harm. $1$-form is the real part of precisely one holom. $1$-form $\omega\in \Omega(X)$.</p>
+</li>
+</ul>
+<p>注意我们有厄米特型</p>
+\[\langle \omega_1,\omega_2\rangle=\int_X\omega_1\wedge *\omega_2.\]<ul>
+<li>有 orthogonal 分解</li>
+</ul>
+\[\mathcal{E}^{(1)}=*d\mathcal{E}(X)\oplus d\mathcal{E}(X)\oplus \operatorname{Harm}^1(X).\]<ul>
+<li>有 $\ker(\mathcal{E}^{(1)}\overset{d}{\to}\mathcal{E}^{(2)})=d\mathcal{E}(X)\oplus \operatorname{Harm}^1(X)$.</li>
+</ul>
+<p>于是其诱导了映射</p>
+\[\operatorname{Harm}^1(X)\simeq H^1(X,\mathbb{C})\simeq \operatorname{Rh}^1(X).\]<h3 id="20-abels-theorem">20. Abel&rsquo;s Theorem
+</h3><ul>
+<li>$X$ compact, $D$ divisor with $\deg D=0$. 于是 $D$ 拥有一个解, 当且仅当存在 $1$-chain $c\in C_1(X)$ with $\partial c=D$ s.t.</li>
+</ul>
+\[\int_c\omega=0,\forall \omega\in \Omega(X).\]<h3 id="21-the-jacobi-inversion-problem">21. The Jacobi Inversion Problem
+</h3><p>取 $\omega_1,\cdots,\omega_g$ 为 $\Omega(X)$ 的一组基. 定义 Period Lattice $\operatorname{Per}(\omega_i)$ consists of</p>
+\[\left(\int_\alpha\omega_1,\int_\alpha\omega_2,\cdots,\int_\alpha\omega_g\right)\in \mathbb{C}^g, \forall \alpha\in \pi_1(X).\]<ul>
+<li>$\operatorname{Per}(\omega_i)$ 确为一个 lattice.</li>
+</ul>
+<p>定义 $\operatorname{Jac}(X):=\mathbb{C}^g/\operatorname{Per}(\omega_i)$. 虽然这个定义与 $\omega_i$ 的选取有关, 但他们典范地同构. 因此我们仍然可以考虑这个 var. 称作 Jacobi var.</p>
+<p>定义 $\operatorname{Pic}(X):=\operatorname{Div}(X)/\operatorname{Div}_{principal}(X)$, $\operatorname{Pic}_0(X):=\operatorname{Div}_0(X)/\operatorname{Div}_{principal}(X)$</p>
+<ul>
+<li>可以定义 $j:\operatorname{Pic}_0(X)\to \operatorname{Jac}(X)$. 且, 其为 isom.</li>
+</ul>
+<p>fix $a_i\in X$, 定义</p>
+\[\psi: X^g\to \operatorname{Pic}_0(X)\]\[\psi(x_i)=\sum_j(D_{x_j}-D_{a_j})\pmod{\operatorname{Div}_{prin.}(X)}.\]<p>与上述 isom 复合, 可以得到 $J:X^g\to \operatorname{Jac}(X)$.</p>
+<ul>
+<li>
+<p>上述 $J$ 是 surj.</p>
+</li>
+<li>
+<p>对于 $g=1$ case, 上述 $J$ 是 isom.</p>
+</li>
+</ul>
+<h2 id="chapter-3-non-compact-riemann-surfaces">Chapter 3. Non-compact Riemann Surfaces.
+</h2><p>非紧的曲面, 我们关心的问题是, 他上面的性质能有多好. 首先, 由于没有极大值原理的限制, 在其上考虑 Dir. Prob. 是有道理的. 其次, 即使熟知不是所有黎曼面都能嵌入 $3$ 维, 非紧黎曼面他也 &ldquo;不会太大&rdquo;. Runge Approx. Thm 指出, 往 &ldquo;有界的地方&rdquo; 限制不会损失掉太多函数. 而在其上, 我们可以建立类似 Hadamard 的东西, 从而随便在 discrete 的层面给出全纯函数. 熟知 $\mathbb{P}^1$ 上有类似 $\mathcal{O}(n)$ 这样抽象的 line bundle, 实际上, divisor 给出了到 line bundle 的对应. 但非紧的情况下, line bundle 全部都是 trivial 的. 此外, automorphy 问题在非紧黎曼面上一定有解, 这给出了 $d\omega=A\omega$ 的解的存在性.</p>
+<p>最后, Riemann Mapping Thm 唯一分类了所有黎曼曲面的 universal covering.</p>
+<h3 id="22-dirichlet-boundary-value-problem">22. Dirichlet Boundary Value Problem.
+</h3><p>本章唯一关键定理:</p>
+<ul>
+<li>$Y$ open subset of a Riemann surface $X$ s.t. all boundary pts of $Y$ are regular. Then for every continuous bounded function $f:\partial Y\to \mathbb{R}$, the Dirichlet Problem on $Y$ can be solved.</li>
+</ul>
+<p>Dirichlet Problem: Find $u:U\to \mathbb{R}$,</p>
+\[\begin{cases}
+  \Delta u=0, x\in U^\circ\\
+  u|_{\partial U}=f.
+\end{cases}\]<p>Regular: 与 subharmonic funct. 的存在性有关. 不过,</p>
+<ul>
+<li>如果 $a\in \partial Y$ s.t. $\exists D={z\in \mathbb{C}:|z-m|&lt;r}$ with $m\in \mathbb{C},r&gt;0$ s.t. $a\in \partial D,\bar{D}\cap Y=\emptyset$, 则 $a$ 一定是 regular 的.</li>
+</ul>
+<p>具体的证明要参考 Perron&rsquo;s method, 非常有趣的分析工作.</p>
+<h3 id="23-countable-topology">23. Countable Topology.
+</h3><ul>
+<li>(Rado) Every Riemann surface $X$ has a countable topology.</li>
+</ul>
+<p>我们讲的 R.S., 都 assume 是 <del>automatic</del> connected 的.</p>
+<p>对 $X$, $Y\subset X$, 定义 $h(Y)$ 为 $Y$ 与 $X\backslash Y$ 的所有相对紧的 conn. components 的并. 称 $Y$ 是 Runge 的, 如果 $h(Y)=Y$.</p>
+<ul>
+<li>
+<p>$X$ R.S.,  $Y\subset X$ Runge, 于是 $Y$ 所有 conn. components Runge.</p>
+</li>
+<li>
+<p>$X$ non-comp. R.S. Then There exists $Y_0\Subset Y_1\Subset Y_2\Subset \cdots$ relatively comp. Runge domains with $\cap Y_\nu=X$ s.t. $Y_\nu$ has a regular bdry w.r.t. solving the Dirichlet Problem.</p>
+</li>
+</ul>
+<h3 id="24-weyls-lemma">24. Weyl&rsquo;s Lemma.
+</h3><p>为后面准备的泛函材料</p>
+<p>-(Weyl&rsquo;s lemma) $U\subset \mathbb{C}$ open. $T$ dist. with $\Delta T=0$. Then $T$ smooth.</p>
+<ul>
+<li>$\partial T/\partial\bar{z}=0$, 则 $T$ holom.</li>
+</ul>
+<h3 id="25-the-runge-approximation-theorem">25. The Runge Approximation Theorem.
+</h3><ul>
+<li>
+<p>$Y$ rel. comp. open Runge subset of non-comp. R.S. $X$. Then for every $Y&rsquo;$ open, $Y\subset Y&rsquo;\Subset X$, restriction $\mathcal{O}(Y&rsquo;)\to \mathcal{O}(Y)$ is dense.</p>
+</li>
+<li>
+<p>(The Runge Approximation Theorem) $X$ non-comp. R.S. $Y\subset X$ open Runge. Then every holom. function on $Y$ can be approximated uniformly on every comp. subset $Y$ by holom. funct. on $X$.</p>
+</li>
+<li>
+<p>$X$ non-comp. R.S. Then given a $1$-form $\omega\in \mathcal{E}^{0,1}(X), \exists f\in \mathcal{E}(X), d&rsquo;&lsquo;f=\omega$.</p>
+</li>
+</ul>
+<h3 id="26-the-theorems-of-mittag-leffler-and-weierstrass">26. The Theorems of Mittag-Leffler and Weierstrass.
+</h3><p>$X$ non-comp. R.S.</p>
+<ul>
+<li>
+<p>$H^1(X,\mathcal{O})=0$.</p>
+</li>
+<li>
+<p>Every Mittag-Leffler dist. has a soln. (Mittag-Leffler, 某种意义上, 是 divisor 的&quot;中间形式&quot;. 所以不多赘述了)</p>
+</li>
+<li>
+<p>Every divisor $D\in \operatorname{Div}(X)$ is the divisor of a merom. function $f\in M^\ast (X)$.</p>
+</li>
+<li>
+<p>$(a_\nu)_{\nu\in \mathbb{N}}$ no accumulation, $(c_{\nu})$ arbitrary complex num. There exists a holom. function $f\in \mathcal{O}(X)$ with $f(a_{\nu})=c_\nu$.</p>
+</li>
+</ul>
+<h3 id="27-the-riemann-mapping-theorem">27. The Riemann Mapping Theorem.
+</h3><ul>
+<li>(The Riemann Mapping Theorem) $X$ R.S. with $\operatorname{Rh}^1_\mathcal{O}(X)=0$. Then $X$ can be mapped biholom. onto either $\mathbb{P}^1$, $\mathbb{C}$ or $D$.</li>
+</ul>
+<p>于是 $X$ 的 univ. covering 一定取这三者之一. 称这三种情况为 elliptic, parabolic 和 hyperbolic. 通过分析 autom. gp., 可以得到</p>
+<ul>
+<li>
+<p>elliptic: $\mathbb{P}^1$,</p>
+</li>
+<li>
+<p>parabolic: $\mathbb{C},\mathbb{C}^\ast ,\mathbb{C}/\Gamma$,</p>
+</li>
+<li>
+<p>hyperbolic: other Riemann surface.</p>
+</li>
+</ul>
+<p>一个有意思的推论:</p>
+<ul>
+<li>$f:\mathbb{C}\to \mathbb{C}$ non-const. holom. takes every value $c\in \mathbb{C}$ with at most one exception.</li>
+</ul>
+<h3 id="28-functions-with-prescribed-summands-of-automorphy">28. Functions with Prescribed Summands of Automorphy
+</h3><p>对于一个作用 $G\circlearrowright Y$, 考虑 $f\in \mathcal{O}_Y$. 定义 $a_{\sigma}=f-\sigma f$. 则 $a_{\sigma}$ 满足 $a_{\sigma\tau}=a_\sigma+\sigma a_\tau$. 称满足这个条件的 $\sigma\mapsto a_\sigma$ 为一个 crossed homom.</p>
+<ul>
+<li>
+<p>$X,Y$ non-compt R.S. $p:Y\to X$ holom. unbranched Gal. covering. $G=\operatorname{Deck}(Y/X)$. 于是对任意 crossed homom. $G\to \mathcal{O}(Y)$, 都存在 holom. function $f\in \mathcal{O}(Y)$ s.t. $a_{\sigma}=f-\sigma f$.</p>
+</li>
+<li>
+<p>$X,Y$ R.S. $p:Y\to X$ holom. unbranched Gal. covering. $G=\operatorname{Deck}(Y/X)$. 于是对任意 crossed homom. $G\to \mathcal{E}(Y)$, 都存在 holom. function $f\in \mathcal{E}(Y)$ s.t. $a_{\sigma}=f-\sigma f$.</p>
+</li>
+<li>
+<p>(Behnke-Stein) $X$ non-comp. R.S.,</p>
+</li>
+</ul>
+\[\pi_1(X)\to \mathbb{C}_+,\sigma\mapsto a_\sigma,\]<p>gp. homo. Then there exists a holom. $1$-form $\omega\in \Omega(X)$ with</p>
+\[\int_{\sigma}\omega=a_\sigma,\forall \sigma\in \pi_1(X).\]<ul>
+<li>$X$ comp. R.S.,</li>
+</ul>
+\[\pi_1(X)\to \mathbb{C}_+,\sigma\mapsto a_\sigma,\]<p>gp. homo. Then there exists a unique harmonic $1$-form $\omega\in \operatorname{Harm}^1(X)$ with</p>
+\[\int_{\sigma}\omega=a_\sigma,\forall \sigma\in \pi_1(X).\]<h3 id="29-line-and-vector-bundles">29. Line and Vector Bundles.
+</h3><p>V.B. 和 L.B. 的定义略. 只需要知道一个满足 $g_{ij}g_{jk}=g_{ik}$ 的一组 cocycle $(g_{ij})$ 就能给出一个 line bundle.</p>
+<p>对与 $D$ divisor on $X$, 我们可以定义 $E_D$ 一个 holom. L.B. on $X$. 在 $(U_i)$ 上考虑 $\Psi_i$ s.t. $\operatorname{ord}(\Psi_i)=D|_{U_i}$. 于是考虑 $g_{ij}=\frac{\Psi_i}{\Psi_j}$ 给出的一组 holom. cocycle, 就给出了一个 line bundle.</p>
+<ul>
+<li>
+<p>$X$ R.S. $E$ holom. V.B. $Y\subset X$ rel.comp. open, $Y_0\subset Y$ open. Then the restriction $H^1(Y,\mathcal{O}_E)\to H^1(Y_0,\mathcal{O}_E)$ surj.</p>
+</li>
+<li>
+<p>$X$ R.S. $E$ holom. V.B. $Y\subset X$ rel.comp. open. Then $H^1(Y,\mathcal{O}_E)$ f.d.</p>
+</li>
+<li>
+<p>$X$ comp. R.S. $E$ holom. V.B. $Y\subset X$ rel.comp. open. Then $H^1(X,\mathcal{O}_E)$ f.d.</p>
+</li>
+</ul>
+<p>对于 $E$, 在 $Y\subset X$ open 上总是可以找到这样的 sections: $f\in\mathcal{O}_{E}(Y&rsquo;)$, 且 $Y\backslash Y&rsquo;$ discrete. $f$ 在每个 $a\in Y\backslash Y&rsquo;$ 上都是一个 pole.</p>
+<ul>
+<li>$E,X$. $Y$ rel. comp. on $X$. 于是对任意 $a\in Y$ 总存在 merom. section $\Psi$ of $E$ over $Y$, which has a pole at $a$ and holom. on $Y\backslash {a}$.</li>
+</ul>
+<p>考虑 $\Psi$ 的 divisor, 给出了某个 line bundle 到 divisor 的对应.</p>
+<p>考虑 $\operatorname{Pic}(X)=\operatorname{Div}(X)/\operatorname{Div}_{principal}(X)$,</p>
+<ul>
+<li>$X$ comp. R.S., there is a natural isom of gps</li>
+</ul>
+\[H^1(X,\mathcal{O}^*)\overset{\simeq}{\to}\operatorname{Pic}(X)=\operatorname{Div}(X)/\operatorname{Div}_{principal}(X).\]<h3 id="30-the-triviality-of-vector-bundles">30. The Triviality of Vector Bundles.
+</h3><p>大 Theorem 是一个很几何的东西, 比较 trivial, 就不写了. 考虑$X$ non-comp. R.S.</p>
+<ul>
+<li>
+<p>Every holom. L.B. $E$ on $X$ is holomorphically trivial.</p>
+</li>
+<li>
+<p>Every holom. V.B. $E$ on $X$ is holomorphically trivial.</p>
+</li>
+<li>
+<p>$H^1(X,\operatorname{GL}(n,\mathcal{O}))=0$. In particular, $H^1(X,\operatorname{GL}(n,\mathcal{O}^\ast ))=0$.</p>
+</li>
+</ul>
+<h3 id="31-the-riemann-hilbert-problem">31. The Riemann-Hilbert Problem.
+</h3><p>$p:Y\to X$ holom. unbranched covering. $G$ deck transf. 称 $\Phi:Y\to \operatorname{GL}(n,\mathbb{C})$ 是 &ldquo;multiplicatively automorphic with constant factors of automorphy $T_\sigma\in \operatorname{GL}(n,\mathbb{C}),\sigma\in G$&rdquo; 的, 如果</p>
+\[\sigma \Phi=\Phi T_{\sigma},\forall \sigma\in G.\]<ul>
+<li>$X,Y$ non-comp. R.S. $p:X\to Y$ holom. unbranched Gal. covering. $G=\operatorname{Deck}(Y/X)$. Then given any homom.</li>
+</ul>
+\[T:G\to \operatorname{GL}(n,\mathbb{C}),\sigma\mapsto T_\sigma.\]<p>There exists $\Phi:Y\to \operatorname{GL}(n,\mathbb{C})$, MAWCFOA $T_\sigma$.</p>
+<ul>
+<li>$X$ non-comp. R.S.</li>
+</ul>
+\[T:\pi_1(X)\to \operatorname{GL}(n,\mathbb{C}),\sigma\mapsto T_\sigma.\]<p>gp. homo. Then there exists $A\in M(n\times n,\Omega(X))$ and a fundamental system of solns. of the D.E. $d\omega=A\omega$ on the universal covering of $X$ which has the $T_\sigma$ as factors of automorphy.</p>
+<ul>
+<li>$X$ non-comp. R.S. $S\subset X$ discrete. $X&rsquo;=X\backslash S$. Suppose</li>
+</ul>
+\[T:\pi_1(X')\to \operatorname{GL}(n,\mathbb{C}),\sigma\mapsto T_\sigma.\]<p>gp. homo. Then there exists $A\in M(n\times n,\Omega(X&rsquo;))$ which has a singular pt. at every $a\in S$ and a fundamental system of solns. $\Phi\in \text{GL}(n,\mathcal{O}(Y))$ of the D.E. $d\omega=A\omega$ on the universal covering $p:Y\to X&rsquo;$ which has the $T_\sigma$ as factors of automorphy.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AD-p280-286/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AD-p280-286/har.38e2bb259dfcb59f5525959a3fd417e9_hu_f5cfa37baa1f8dad.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其二十六 P280-286"
+                        
+                        data-hash="md5-OOK7JZ38tZ9VJZWaP9QX6Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其二十六 P280-286</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%94-p276-280/ayakaumb.90147368924e44fb3a0a4f65153f8494_hu_294101bfbee1a790.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其二十五 P276-280"
+                        
+                        data-hash="md5-kBRzaJJORPs6Ck9lFT&#43;ElA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其二十五 P276-280</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%9B%9B-p273-276/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%9B%9B-p273-276/itsaday.ebde00d5dd3cedb5deeeb0a3e0089e37_hu_d578d9523672067e.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其二十四 P273-276"
+                        
+                        data-hash="md5-694A1d087bXe7rCj4AieNw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其二十四 P273-276</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%89-p269-273/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%89-p269-273/xgw.100d3c68b83d722bf49021a768ac2159_hu_2a0cf5b292b3c7e8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其二十三 P269-273"
+                        
+                        data-hash="md5-EA08aLg9civ0kCGnaKwhWQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其二十三 P269-273</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%8C-p264-269/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%BA%8C-p264-269/darknight.9037fda7f86516476422572394d9362c_hu_f9948c0e08ddcaf.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CG饲养日记-其二十二 P264-269"
+                        
+                        data-hash="md5-kDf9p/hlFkdkIlcjlNk2LA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CG饲养日记-其二十二 P264-269</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+    data-repo-id="R_kgDONu5gqQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONu5gqc4CnCfo"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Jinbz
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

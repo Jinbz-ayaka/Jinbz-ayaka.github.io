@@ -7,7 +7,377 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sun, 24 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Lectures on Riemann Surface - Quick Ref.</title>
+        <link>https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./</link>
+        <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./wedfff.jpg" alt="Featured image of post Lectures on Riemann Surface - Quick Ref." /&gt;&lt;p&gt;感觉, 把一个东西学懂的标准, 就是意识到这些东西都是 trivial 的.&lt;/p&gt;
+&lt;p&gt;吗&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这是 Lectures on Riemann Surface 的 quick reference. 代数tv 在 ICBS 期间花了五天时间看完了这本书. 现在写一下他的 quick reference.&lt;/p&gt;
+&lt;h2 id=&#34;chapter-1-covering-spaces&#34;&gt;Chapter 1 Covering Spaces.
+&lt;/h2&gt;&lt;p&gt;这个 Chapter 叫这个名字, 就能看出来, 他其实是很拓扑的.&lt;/p&gt;
+&lt;p&gt;就是一堆基础知识.&lt;/p&gt;
+&lt;h3 id=&#34;1-the-defn-of-riemann-surfaces&#34;&gt;1. The Defn. of Riemann Surfaces.
+&lt;/h3&gt;&lt;p&gt;这一章没啥可说的, 就是很基础的定义, 以及 formulate 一些复分析的内容. 注意那些复分析中比较局部的结论可以直接搬过来.&lt;/p&gt;
+&lt;h3 id=&#34;2-elementary-properties-of-holo-mappings&#34;&gt;2. Elementary Properties of Holo. Mappings.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$f:X\to Y$ 在 singularities 上大致是 $f(z)=z^k$ 的形式. 这实际上就是引出了分歧 (ramification) 理论.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开映射给出, 若对于非常值 $f:X\to Y$ $X$ 紧, 则 $Y$ 紧且 $f$ 满.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这是这章两个比较重要的结论.&lt;/p&gt;
+&lt;h3 id=&#34;3-homotopy-of-curves-the-fundamental-gp&#34;&gt;3. Homotopy of Curves. The Fundamental gp.
+&lt;/h3&gt;&lt;p&gt;代数拓扑.. 基本群定义以下的东西.&lt;/p&gt;
+&lt;h3 id=&#34;4-branched-and-unbranched-coverings&#34;&gt;4. Branched and Unbranched Coverings.
+&lt;/h3&gt;&lt;p&gt;对于 $p:Y\to X$, 定义 $y\in Y$ branch point, 如果对于任意 $V\ni y$ $p|_V$ 都不是单射. 称有 branch pt. 的映射是 branched 的, 反之则是 unbranched 的. 熟知 unbranched 的有良好的 local homeo. 性质.&lt;/p&gt;
+&lt;p&gt;然后是一些关于 lifting 的性质. 可以跳过. 这里一个比较有营养的定理就是对于 local homeo. $f:X\to Y$, $Y$ 上面的 complex structure unique lift to $X$. 不过也是一个基础定理, 不太重要(确信).&lt;/p&gt;
+&lt;p&gt;然后是, proper 的 $f$ 如果是 local homeo. 就是 covering. 以及所有 proper 映射 counting multiplicities 下都拥有相同的 $n$ 个原像. 比较 triv.&lt;/p&gt;
+&lt;h3 id=&#34;5-the-universal-covering-and-covering-transf&#34;&gt;5. The Universal Covering and Covering Transf.
+&lt;/h3&gt;&lt;p&gt;simply conn. mfd 和 universal covering 的关系就跳了, 还有 Deck transf. 和 Galois covering. 我相信一个优秀的大学生应该掌握.&lt;/p&gt;
+&lt;h3 id=&#34;6-sheaves&#34;&gt;6. Sheaves.
+&lt;/h3&gt;&lt;p&gt;看家本事, 略.&lt;/p&gt;
+&lt;p&gt;或者说, Riemann Surface 上的 sheaf theory 已经是最简单的 sheaf theory 了()&lt;/p&gt;
+&lt;h3 id=&#34;7-analytic-continuation&#34;&gt;7. Analytic Continuation.
+&lt;/h3&gt;&lt;p&gt;simply connected 蕴含了 unique continuation. Main Theorem 是说, 对于 $X$ R.S., $a\in X$, $\phi\in \mathcal{O}_a$ 函数芽, 于是存在一个 maximal analytic continuation 到某一个 R.S. $Y$ 上. 给出了一个函数芽-黎曼面对应.&lt;/p&gt;
+&lt;h3 id=&#34;8-algebraic-functions&#34;&gt;8. Algebraic Functions.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Continuation 定理: $\pi: Y\to X$ branched $n$-sheet covering, $A\subset X$ closed discrete subset contains all critical values 且 $B=\pi^{-1}(A)$. $f\in \mathcal{O}(X\backslash A)$, (resp. $\mathcal{M}(X\backslash A)$). 定义 $f_\nu$ 为其在 deck transf. 下的像, $c_n$ 为他们生成的对称函数, 则 $f$ continued to $Y$ iff $c_n$ continued to $X$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;代数定理: 对于 $\pi:Y\to X$, $f\in \mathcal{M}(Y)$, $c_i\in \mathcal{M}(X)$ elementary symm. functions. 于是 $f$ 满足&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+\[f^n+(\pi^*c_1)f^{n-1}+\cdots+\pi^*c_n=0.\]&lt;p&gt;因此, $\pi^\ast :\mathcal{M}(X)\to \mathcal{M}(Y)$ 是一个 alg. field ext. of $\deg\leq n$. Moreover, 如果存在 $f\in \mathcal{M}(Y),x\in X, \pi^{-1}(x)={y_i}$, $f(y_i)$ 各不相同, 那么 $\deg=n$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extend 定理: $A\subset X$ closed disc. subset, $X&amp;rsquo;=X\backslash A$. 于是到 $X&amp;rsquo;$ 的 unbranched holom. covering 可以 extends to $X$ 的 branched covering.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Deck transf. 定理, 等等等等. 这些实际上, 应该不太会用到了. 这些是一些可以简单想象的拓扑.&lt;/p&gt;
+&lt;h3 id=&#34;9-diff-forms&#34;&gt;9. Diff. forms
+&lt;/h3&gt;&lt;p&gt;diff., holom. 的 diff. forms. 然后可以定义 Residue. Merom. form, 外微分的定义.&lt;/p&gt;
+&lt;p&gt;在下面会不加定义地写 $\mathcal{E}^{xxxx}$, $xxxx$ 可能是 $(1)$ $(2)$ $0,1$ $1,0$ 等等等等. 具体的定义参照书上吧.&lt;/p&gt;
+&lt;h3 id=&#34;10-integration-of-diff-forms&#34;&gt;10. Integration of Diff. Forms.
+&lt;/h3&gt;&lt;p&gt;微分形式, 可以怎么进行积分. 这些直接略应该没啥问题.&lt;/p&gt;
+&lt;h3 id=&#34;11-linear-diff-eqn&#34;&gt;11. Linear Diff. Eqn.
+&lt;/h3&gt;&lt;p&gt;最最后一章我们会提到 $d\omega=A\omega$ 的 soln. system. 但实际上, 想象一下这个的解的结构应该会能想明白.&lt;/p&gt;
+&lt;h2 id=&#34;chapter-2-compact-riemann-surfaces&#34;&gt;Chapter 2. Compact Riemann Surfaces.
+&lt;/h2&gt;&lt;p&gt;Compact 的黎曼面, 我们会关心他精巧的几何结构. 一方面, 我们会导出一些公式, 来刻画其上面 w.r.t. 某些 sheaf 的同调. 另一方面, 我们也会考虑其上 global 的亚纯函数. 注意极大值原理告诉我们 holo. 的函数一定只有常值, 因此其 divisor 的结构唯一决定了函数本身. 因此, 也会关心这样的问题: 什么样的 divisor 会有全纯函数解. 最最后, 跳到模空间的复结构里, 引出一些模空间层面的结论.&lt;/p&gt;
+&lt;h3 id=&#34;12-cohomology-gps&#34;&gt;12. Cohomology Gps.
+&lt;/h3&gt;&lt;p&gt;Cochains Cocycles Coboundaries 的定义略.&lt;/p&gt;
+&lt;p&gt;微分函数的好性质: $X$ Riemann Surface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$H^1(X,\mathcal{E})=0$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个是 follows from 单位分解. differentiable 的函数没有那么多限制. 这点跟 holom. 的函数是本质不同的.&lt;/p&gt;
+&lt;p&gt;对于 $X$ simply conn.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$H^1(X,\mathbb{C})=0$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$H^1(X,\mathbb{Z})=0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些都是 simply conn. 的好性质. 也揭示了我们可以用 local const sheaves 来算一些(拓扑意义下?)的同调.&lt;/p&gt;
+&lt;p&gt;Leray 的 Thm 在代数几何 II 就讲过, 但是可以再复述一遍: 可以用 acyclic 的 covering 的 &amp;ldquo;Cech cohom.&amp;rdquo; 来计算一般的 sheaf 在某空间上的 cohom.&lt;/p&gt;
+&lt;p&gt;零维的 Cohom. gp., follow by defn, 就是 global section. 我们在前两天更新的 CG 也用过这个结论.&lt;/p&gt;
+&lt;h3 id=&#34;13-dolbeaults-lemma&#34;&gt;13. Dolbeault&amp;rsquo;s Lemma.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$g\in \mathcal{E}(\mathbb{C})$ compact supp. 于是存在 $f\in \mathcal{E}(\mathbb{C})$ s.t. $\frac{\partial f}{\partial \bar{z}}=g$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Dolbeault Lemma) $X:={z\in \mathbb{C}:|z|&amp;lt;R},0&amp;lt;R\leq \infty$, $g\in \mathcal{E}(X)$. 于是存在 $f\in \mathcal{E}(X)$ s.t. $\frac{\partial f}{\partial \bar{z}}=g$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X:={z\in \mathbb{C}:|z|&amp;lt;R},0&amp;lt;R\leq \infty$, $g\in \mathcal{E}(X)$. 于是存在 $f\in \mathcal{E}(X)$ s.t. $\Delta f=g$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是, 对于 $X:={z\in \mathbb{C}:|z|&amp;lt;R},0&amp;lt;R\leq \infty$, $H^1(X,\mathcal{O})=0$. 与此同时, 可以利用 $U_1\cup U_2$ covering 说明 $H^1(\mathbb{P}^1,\mathcal{O})=0$.&lt;/p&gt;
+&lt;h3 id=&#34;14-finiteness-thm&#34;&gt;14. Finiteness Thm.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;$X$ R.S., $Y_2\subset X$ open subset, $Y_1\subset Y_2$ open 相对紧. 于是 Restriction homo.&lt;/li&gt;
+&lt;/ul&gt;
+\[H^1(Y_2,\mathcal{O})\to H^1(Y_1,\mathcal{O})\]&lt;p&gt;has a finite dim. image.&lt;/p&gt;
+&lt;p&gt;于是推出来 $\dim H^1(X,\mathcal{O})&amp;lt;\infty$, 对于 $X$ 紧. 这实际上就是 genus 的定义.&lt;/p&gt;
+&lt;p&gt;而在如上条件下, 如果 $X$ non-compt, $\operatorname{im}(H^1(Y_2,\mathcal{O})\to H^1(Y_1,\mathcal{O}))=0$.&lt;/p&gt;
+&lt;p&gt;另一个定理会在讲 divisor 的时候用到 (实际上上一个定理也要用).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$Y\Subset X$ open 相对紧. 于是, 对任意 $a\in Y$, 总存在 $f\in\mathcal{M}(Y)$, $f$ 在 $a$ 处是一个 pole, 而在其余地方 holom. 这个定理能推出来很多结论, 包括 fix disc. set 上的任意取值总能搞到全局的 merom. 的 $f$, 以及其推论 noncompt. 的 ralative compt. subset 总存在 nonconst. holom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;15-the-exact-coh-seq&#34;&gt;15. The Exact Coh. Seq.
+&lt;/h3&gt;&lt;p&gt;黎曼面上有一些 exact seq.&lt;/p&gt;
+&lt;p&gt;(a).&lt;/p&gt;
+\[0\to \mathcal{O}\to \mathcal{E}\overset{d&#39;&#39;}{\to} \mathcal{E}^{0,1}\to 0.\]&lt;p&gt;(b). $\mathcal{L}=\ker(\mathcal{E}^{(1)}\overset{d}{\to }\mathcal{E}^{(2)})$, 有&lt;/p&gt;
+\[0\to \mathbb{C}\to \mathcal{E}\overset{d}{\to} \mathcal{L}\to 0.\]&lt;p&gt;(c).&lt;/p&gt;
+\[0\to \mathbb{C}\to \mathcal{O}\overset{d}{\to} \Omega\to 0.\]&lt;p&gt;(d).&lt;/p&gt;
+\[0\to \Omega\to \mathcal{E}^{1,0}\overset{d}{\to} \mathcal{E}^{(2)}\to 0.\]&lt;p&gt;(e).&lt;/p&gt;
+\[0\to \mathbb{Z}\to \mathcal{O}\to \mathcal{O}^*\to 0.\]&lt;p&gt;于是, 拉长整合列我们得到, 对于 $0\to \mathcal{F}\overset{\alpha}{\to} \mathcal{G}\overset{\beta}{\to}\mathcal{H}\to 0$. 若 $H^1(X,\mathcal{G})=0$, 则&lt;/p&gt;
+\[H^1(X,\mathcal{F})\simeq \mathcal{H}(X)/\beta\mathcal{G}(X).\]&lt;p&gt;这便给出了 Dolbeault&amp;rsquo;s thm (也许不要和 Dolbeault&amp;rsquo;s lemma 混淆):&lt;/p&gt;
+\[H^1(X,\mathcal{O})\simeq \mathcal{E^{0,1}}(X)/d&#39;&#39;\mathcal{E}(X),\]\[H^1(X,\Omega)\simeq \mathcal{E^{(2)}}(X)/d\mathcal{E}^{1,0}(X).\]&lt;p&gt;以及 de Rham&amp;rsquo;s Thm:&lt;/p&gt;
+\[H^1(X,\mathbb{C})\simeq \operatorname{Rh}^1(X).\]&lt;h3 id=&#34;16-the-riemann-roch-theorem&#34;&gt;16. The Riemann-Roch Theorem.
+&lt;/h3&gt;&lt;p&gt;Divisor 的定义略. 可以参考 Hartshorne 或者 CG, 虽然后者参考的也是 Hartshorne. 我们定义 $\mathcal{O}_D$ s.t. $\mathcal{O}_D(U)$ 为 $u$ 上所有 order 为 $\geq -D$ 的 mero. funct.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ cpt. $\deg D&amp;lt;0$, 于是 $H^0(X,\mathcal{O}_D)=0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Riemann-Roch:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+\[\dim H^0(X,\mathcal{O}_D)-\dim H^1(X,\mathcal{O}_D)=1-g+\deg D.\]&lt;p&gt;证明有一个值得注意的点, 就是&lt;/p&gt;
+\[0\to \mathcal{O}_D\to \mathcal{O}_{D+P}\to \mathbb{C}_P\to 0.\]&lt;p&gt;的 s.e.s.&lt;/p&gt;
+&lt;p&gt;然后可以给出, 对于 $X$ genus $g$, 我们在 14 的 &amp;ldquo;另一个定理&amp;quot;里, 可以给出 pole 的 order 的上界 $g+1$. 也就是说, 给出了 $X$ 到 $\mathbb{P}^1$ 的不多于 $g+1$ 阶 covering.&lt;/p&gt;
+&lt;h3 id=&#34;17-the-serre-duality-theorem&#34;&gt;17. The Serre Duality Theorem.
+&lt;/h3&gt;&lt;p&gt;Mittag-Leffler Dist. 等等都是工具. 不多写&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Divisor $D$ on compact Riemann surface $X$,&lt;/li&gt;
+&lt;/ul&gt;
+\[\iota_D:H^0(X,\Omega_{-D})\to H^1(X,\mathcal{O}_D)^*\]&lt;p&gt;是一个 isom.&lt;/p&gt;
+&lt;p&gt;这个是 given by&lt;/p&gt;
+\[\langle,\rangle: H^0(X,\Omega_{-D})\times H^1(X,\mathcal{O}_D)\to \mathbb{C},\]\[\langle \omega, \xi\rangle=\operatorname{Res}(\omega\xi).\]&lt;ul&gt;
+&lt;li&gt;divisor of a non-vaishing merom. $1$-form $\omega$ on a cpt. genus $g$ satisfies&lt;/li&gt;
+&lt;/ul&gt;
+\[\deg(\omega)=2g-2.\]&lt;ul&gt;
+&lt;li&gt;Riemann-Hurwitz: $f:X\to Y$, $v(x,f)$ 为 $f$ 在 $x$ 处取 $f(x)$ 的 multiplicity, $b(f,x)=v(f,x)-1$ branching order, $b(f)=\sum b(f,x)$ total branching order. 于是, 对 $n$-sheet $f:X\to Y$, $X,Y$ with genus $g,g&amp;rsquo;$, 有&lt;/li&gt;
+&lt;/ul&gt;
+\[(2g-2)-n(2g&#39;-2)=b.\]&lt;ul&gt;
+&lt;li&gt;$X$ compact R.S., $D$ divisor on $X$, 有&lt;/li&gt;
+&lt;/ul&gt;
+\[H^1(X,\mathcal{O}_D)=0,\forall \deg D&gt;2g-2.\]&lt;p&gt;以及 $H^1(X,\mathcal{M})=0$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ compact R.S., $D$ divisor on $X$ with $\deg D\geq 2g$, 对任意 $x\in X$, 存在 $f\in \mathcal{O}_D(X)$ 有 $\mathcal{O}_{D,x}=f\mathcal{O}_x$. (globally generated).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ compact, $D$ divisor of $\deg\geq 2g+1$. 取 $f_0,\cdots,f_N$ basis of $H^0(X,\mathcal{O}_D)$, 则&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+\[F=(f_0:\cdots:f_N):X\to \mathbb{P}^N\]&lt;p&gt;is an embedding.&lt;/p&gt;
+&lt;h3 id=&#34;18-functions-and-diff-forms-with-prescribed-principal-parts&#34;&gt;18. Functions and Diff. forms with prescribed principal parts.
+&lt;/h3&gt;&lt;p&gt;定义邬荣斯基(Wronskian) Determinant: 在 $X$ 上, 取 $\omega_i$ basis of $\Omega(X)$. 对于 local coord $z$, 取 $f_idz=\omega_i$. 考虑&lt;/p&gt;
+\[W(f_1,\cdots,f_g)=\det\begin{pmatrix}
+  f_1&amp;f_2&amp;\cdots&amp;f_g\\
+  f_1&#39;&amp;f_2&#39;&amp;\cdots&amp;f_g&#39;\\
+  \ddots&amp;\ddots&amp;&amp;\ddots\\
+  f_1^{(g-1)}&amp;f_2^{(g-1)}&amp;\cdots&amp;f_g^{(g-1)}
+\end{pmatrix}.\]&lt;p&gt;这个选取和 coord. 选取只有倍数关系. 因此可以考虑其零点, 记为 Weierstrass pts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;14 中&amp;quot;另一个定理&amp;rdquo; pole 的 deg 可以选取 order $\leq g$ 当且仅当 $p$ 是一个 Weierstrass pt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Weierstrass pts 记重数下恰有 $(g-1)g(g+1)$ 个.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上面那个译名是我瞎写的.&lt;/p&gt;
+&lt;h3 id=&#34;19-harmonic-differential-forms&#34;&gt;19. Harmonic Differential Forms.
+&lt;/h3&gt;&lt;p&gt;对于 $\omega=\omega_1+\omega_2$, $\omega_1\in \mathcal{E}^{1,0}(X), \omega_2\in \mathcal{E}^{0,1}(X)$. 取 $\ast \omega=i(\bar{w}_1-\bar{w}_2)$. 一个 form 称作 Harmonic 的, 如果 $d\omega=d\ast \omega=0$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\omega$ Harmonic, iff for any $a$ there is $U$, $f$ on $U$ harmonic s.t. $\omega=df$, iff $\omega_1\in \Omega(X),\omega_2\in \bar{\Omega}(X)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\dim \operatorname{Harm}^1(X)=2g$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every real harm. $1$-form is the real part of precisely one holom. $1$-form $\omega\in \Omega(X)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注意我们有厄米特型&lt;/p&gt;
+\[\langle \omega_1,\omega_2\rangle=\int_X\omega_1\wedge *\omega_2.\]&lt;ul&gt;
+&lt;li&gt;有 orthogonal 分解&lt;/li&gt;
+&lt;/ul&gt;
+\[\mathcal{E}^{(1)}=*d\mathcal{E}(X)\oplus d\mathcal{E}(X)\oplus \operatorname{Harm}^1(X).\]&lt;ul&gt;
+&lt;li&gt;有 $\ker(\mathcal{E}^{(1)}\overset{d}{\to}\mathcal{E}^{(2)})=d\mathcal{E}(X)\oplus \operatorname{Harm}^1(X)$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是其诱导了映射&lt;/p&gt;
+\[\operatorname{Harm}^1(X)\simeq H^1(X,\mathbb{C})\simeq \operatorname{Rh}^1(X).\]&lt;h3 id=&#34;20-abels-theorem&#34;&gt;20. Abel&amp;rsquo;s Theorem
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;$X$ compact, $D$ divisor with $\deg D=0$. 于是 $D$ 拥有一个解, 当且仅当存在 $1$-chain $c\in C_1(X)$ with $\partial c=D$ s.t.&lt;/li&gt;
+&lt;/ul&gt;
+\[\int_c\omega=0,\forall \omega\in \Omega(X).\]&lt;h3 id=&#34;21-the-jacobi-inversion-problem&#34;&gt;21. The Jacobi Inversion Problem
+&lt;/h3&gt;&lt;p&gt;取 $\omega_1,\cdots,\omega_g$ 为 $\Omega(X)$ 的一组基. 定义 Period Lattice $\operatorname{Per}(\omega_i)$ consists of&lt;/p&gt;
+\[\left(\int_\alpha\omega_1,\int_\alpha\omega_2,\cdots,\int_\alpha\omega_g\right)\in \mathbb{C}^g, \forall \alpha\in \pi_1(X).\]&lt;ul&gt;
+&lt;li&gt;$\operatorname{Per}(\omega_i)$ 确为一个 lattice.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义 $\operatorname{Jac}(X):=\mathbb{C}^g/\operatorname{Per}(\omega_i)$. 虽然这个定义与 $\omega_i$ 的选取有关, 但他们典范地同构. 因此我们仍然可以考虑这个 var. 称作 Jacobi var.&lt;/p&gt;
+&lt;p&gt;定义 $\operatorname{Pic}(X):=\operatorname{Div}(X)/\operatorname{Div}_{principal}(X)$, $\operatorname{Pic}_0(X):=\operatorname{Div}_0(X)/\operatorname{Div}_{principal}(X)$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以定义 $j:\operatorname{Pic}_0(X)\to \operatorname{Jac}(X)$. 且, 其为 isom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;fix $a_i\in X$, 定义&lt;/p&gt;
+\[\psi: X^g\to \operatorname{Pic}_0(X)\]\[\psi(x_i)=\sum_j(D_{x_j}-D_{a_j})\pmod{\operatorname{Div}_{prin.}(X)}.\]&lt;p&gt;与上述 isom 复合, 可以得到 $J:X^g\to \operatorname{Jac}(X)$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;上述 $J$ 是 surj.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于 $g=1$ case, 上述 $J$ 是 isom.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chapter-3-non-compact-riemann-surfaces&#34;&gt;Chapter 3. Non-compact Riemann Surfaces.
+&lt;/h2&gt;&lt;p&gt;非紧的曲面, 我们关心的问题是, 他上面的性质能有多好. 首先, 由于没有极大值原理的限制, 在其上考虑 Dir. Prob. 是有道理的. 其次, 即使熟知不是所有黎曼面都能嵌入 $3$ 维, 非紧黎曼面他也 &amp;ldquo;不会太大&amp;rdquo;. Runge Approx. Thm 指出, 往 &amp;ldquo;有界的地方&amp;rdquo; 限制不会损失掉太多函数. 而在其上, 我们可以建立类似 Hadamard 的东西, 从而随便在 discrete 的层面给出全纯函数. 熟知 $\mathbb{P}^1$ 上有类似 $\mathcal{O}(n)$ 这样抽象的 line bundle, 实际上, divisor 给出了到 line bundle 的对应. 但非紧的情况下, line bundle 全部都是 trivial 的. 此外, automorphy 问题在非紧黎曼面上一定有解, 这给出了 $d\omega=A\omega$ 的解的存在性.&lt;/p&gt;
+&lt;p&gt;最后, Riemann Mapping Thm 唯一分类了所有黎曼曲面的 universal covering.&lt;/p&gt;
+&lt;h3 id=&#34;22-dirichlet-boundary-value-problem&#34;&gt;22. Dirichlet Boundary Value Problem.
+&lt;/h3&gt;&lt;p&gt;本章唯一关键定理:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$Y$ open subset of a Riemann surface $X$ s.t. all boundary pts of $Y$ are regular. Then for every continuous bounded function $f:\partial Y\to \mathbb{R}$, the Dirichlet Problem on $Y$ can be solved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dirichlet Problem: Find $u:U\to \mathbb{R}$,&lt;/p&gt;
+\[\begin{cases}
+  \Delta u=0, x\in U^\circ\\
+  u|_{\partial U}=f.
+\end{cases}\]&lt;p&gt;Regular: 与 subharmonic funct. 的存在性有关. 不过,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 $a\in \partial Y$ s.t. $\exists D={z\in \mathbb{C}:|z-m|&amp;lt;r}$ with $m\in \mathbb{C},r&amp;gt;0$ s.t. $a\in \partial D,\bar{D}\cap Y=\emptyset$, 则 $a$ 一定是 regular 的.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;具体的证明要参考 Perron&amp;rsquo;s method, 非常有趣的分析工作.&lt;/p&gt;
+&lt;h3 id=&#34;23-countable-topology&#34;&gt;23. Countable Topology.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;(Rado) Every Riemann surface $X$ has a countable topology.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们讲的 R.S., 都 assume 是 &lt;del&gt;automatic&lt;/del&gt; connected 的.&lt;/p&gt;
+&lt;p&gt;对 $X$, $Y\subset X$, 定义 $h(Y)$ 为 $Y$ 与 $X\backslash Y$ 的所有相对紧的 conn. components 的并. 称 $Y$ 是 Runge 的, 如果 $h(Y)=Y$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ R.S.,  $Y\subset X$ Runge, 于是 $Y$ 所有 conn. components Runge.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ non-comp. R.S. Then There exists $Y_0\Subset Y_1\Subset Y_2\Subset \cdots$ relatively comp. Runge domains with $\cap Y_\nu=X$ s.t. $Y_\nu$ has a regular bdry w.r.t. solving the Dirichlet Problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;24-weyls-lemma&#34;&gt;24. Weyl&amp;rsquo;s Lemma.
+&lt;/h3&gt;&lt;p&gt;为后面准备的泛函材料&lt;/p&gt;
+&lt;p&gt;-(Weyl&amp;rsquo;s lemma) $U\subset \mathbb{C}$ open. $T$ dist. with $\Delta T=0$. Then $T$ smooth.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\partial T/\partial\bar{z}=0$, 则 $T$ holom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;25-the-runge-approximation-theorem&#34;&gt;25. The Runge Approximation Theorem.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$Y$ rel. comp. open Runge subset of non-comp. R.S. $X$. Then for every $Y&amp;rsquo;$ open, $Y\subset Y&amp;rsquo;\Subset X$, restriction $\mathcal{O}(Y&amp;rsquo;)\to \mathcal{O}(Y)$ is dense.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(The Runge Approximation Theorem) $X$ non-comp. R.S. $Y\subset X$ open Runge. Then every holom. function on $Y$ can be approximated uniformly on every comp. subset $Y$ by holom. funct. on $X$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ non-comp. R.S. Then given a $1$-form $\omega\in \mathcal{E}^{0,1}(X), \exists f\in \mathcal{E}(X), d&amp;rsquo;&amp;lsquo;f=\omega$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;26-the-theorems-of-mittag-leffler-and-weierstrass&#34;&gt;26. The Theorems of Mittag-Leffler and Weierstrass.
+&lt;/h3&gt;&lt;p&gt;$X$ non-comp. R.S.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$H^1(X,\mathcal{O})=0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every Mittag-Leffler dist. has a soln. (Mittag-Leffler, 某种意义上, 是 divisor 的&amp;quot;中间形式&amp;quot;. 所以不多赘述了)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every divisor $D\in \operatorname{Div}(X)$ is the divisor of a merom. function $f\in M^\ast (X)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$(a_\nu)_{\nu\in \mathbb{N}}$ no accumulation, $(c_{\nu})$ arbitrary complex num. There exists a holom. function $f\in \mathcal{O}(X)$ with $f(a_{\nu})=c_\nu$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;27-the-riemann-mapping-theorem&#34;&gt;27. The Riemann Mapping Theorem.
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;(The Riemann Mapping Theorem) $X$ R.S. with $\operatorname{Rh}^1_\mathcal{O}(X)=0$. Then $X$ can be mapped biholom. onto either $\mathbb{P}^1$, $\mathbb{C}$ or $D$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是 $X$ 的 univ. covering 一定取这三者之一. 称这三种情况为 elliptic, parabolic 和 hyperbolic. 通过分析 autom. gp., 可以得到&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;elliptic: $\mathbb{P}^1$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;parabolic: $\mathbb{C},\mathbb{C}^\ast ,\mathbb{C}/\Gamma$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hyperbolic: other Riemann surface.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一个有意思的推论:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$f:\mathbb{C}\to \mathbb{C}$ non-const. holom. takes every value $c\in \mathbb{C}$ with at most one exception.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;28-functions-with-prescribed-summands-of-automorphy&#34;&gt;28. Functions with Prescribed Summands of Automorphy
+&lt;/h3&gt;&lt;p&gt;对于一个作用 $G\circlearrowright Y$, 考虑 $f\in \mathcal{O}_Y$. 定义 $a_{\sigma}=f-\sigma f$. 则 $a_{\sigma}$ 满足 $a_{\sigma\tau}=a_\sigma+\sigma a_\tau$. 称满足这个条件的 $\sigma\mapsto a_\sigma$ 为一个 crossed homom.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$X,Y$ non-compt R.S. $p:Y\to X$ holom. unbranched Gal. covering. $G=\operatorname{Deck}(Y/X)$. 于是对任意 crossed homom. $G\to \mathcal{O}(Y)$, 都存在 holom. function $f\in \mathcal{O}(Y)$ s.t. $a_{\sigma}=f-\sigma f$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X,Y$ R.S. $p:Y\to X$ holom. unbranched Gal. covering. $G=\operatorname{Deck}(Y/X)$. 于是对任意 crossed homom. $G\to \mathcal{E}(Y)$, 都存在 holom. function $f\in \mathcal{E}(Y)$ s.t. $a_{\sigma}=f-\sigma f$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Behnke-Stein) $X$ non-comp. R.S.,&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+\[\pi_1(X)\to \mathbb{C}_+,\sigma\mapsto a_\sigma,\]&lt;p&gt;gp. homo. Then there exists a holom. $1$-form $\omega\in \Omega(X)$ with&lt;/p&gt;
+\[\int_{\sigma}\omega=a_\sigma,\forall \sigma\in \pi_1(X).\]&lt;ul&gt;
+&lt;li&gt;$X$ comp. R.S.,&lt;/li&gt;
+&lt;/ul&gt;
+\[\pi_1(X)\to \mathbb{C}_+,\sigma\mapsto a_\sigma,\]&lt;p&gt;gp. homo. Then there exists a unique harmonic $1$-form $\omega\in \operatorname{Harm}^1(X)$ with&lt;/p&gt;
+\[\int_{\sigma}\omega=a_\sigma,\forall \sigma\in \pi_1(X).\]&lt;h3 id=&#34;29-line-and-vector-bundles&#34;&gt;29. Line and Vector Bundles.
+&lt;/h3&gt;&lt;p&gt;V.B. 和 L.B. 的定义略. 只需要知道一个满足 $g_{ij}g_{jk}=g_{ik}$ 的一组 cocycle $(g_{ij})$ 就能给出一个 line bundle.&lt;/p&gt;
+&lt;p&gt;对与 $D$ divisor on $X$, 我们可以定义 $E_D$ 一个 holom. L.B. on $X$. 在 $(U_i)$ 上考虑 $\Psi_i$ s.t. $\operatorname{ord}(\Psi_i)=D|_{U_i}$. 于是考虑 $g_{ij}=\frac{\Psi_i}{\Psi_j}$ 给出的一组 holom. cocycle, 就给出了一个 line bundle.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ R.S. $E$ holom. V.B. $Y\subset X$ rel.comp. open, $Y_0\subset Y$ open. Then the restriction $H^1(Y,\mathcal{O}_E)\to H^1(Y_0,\mathcal{O}_E)$ surj.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ R.S. $E$ holom. V.B. $Y\subset X$ rel.comp. open. Then $H^1(Y,\mathcal{O}_E)$ f.d.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$X$ comp. R.S. $E$ holom. V.B. $Y\subset X$ rel.comp. open. Then $H^1(X,\mathcal{O}_E)$ f.d.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于 $E$, 在 $Y\subset X$ open 上总是可以找到这样的 sections: $f\in\mathcal{O}_{E}(Y&amp;rsquo;)$, 且 $Y\backslash Y&amp;rsquo;$ discrete. $f$ 在每个 $a\in Y\backslash Y&amp;rsquo;$ 上都是一个 pole.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$E,X$. $Y$ rel. comp. on $X$. 于是对任意 $a\in Y$ 总存在 merom. section $\Psi$ of $E$ over $Y$, which has a pole at $a$ and holom. on $Y\backslash {a}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;考虑 $\Psi$ 的 divisor, 给出了某个 line bundle 到 divisor 的对应.&lt;/p&gt;
+&lt;p&gt;考虑 $\operatorname{Pic}(X)=\operatorname{Div}(X)/\operatorname{Div}_{principal}(X)$,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$X$ comp. R.S., there is a natural isom of gps&lt;/li&gt;
+&lt;/ul&gt;
+\[H^1(X,\mathcal{O}^*)\overset{\simeq}{\to}\operatorname{Pic}(X)=\operatorname{Div}(X)/\operatorname{Div}_{principal}(X).\]&lt;h3 id=&#34;30-the-triviality-of-vector-bundles&#34;&gt;30. The Triviality of Vector Bundles.
+&lt;/h3&gt;&lt;p&gt;大 Theorem 是一个很几何的东西, 比较 trivial, 就不写了. 考虑$X$ non-comp. R.S.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Every holom. L.B. $E$ on $X$ is holomorphically trivial.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Every holom. V.B. $E$ on $X$ is holomorphically trivial.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$H^1(X,\operatorname{GL}(n,\mathcal{O}))=0$. In particular, $H^1(X,\operatorname{GL}(n,\mathcal{O}^\ast ))=0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;31-the-riemann-hilbert-problem&#34;&gt;31. The Riemann-Hilbert Problem.
+&lt;/h3&gt;&lt;p&gt;$p:Y\to X$ holom. unbranched covering. $G$ deck transf. 称 $\Phi:Y\to \operatorname{GL}(n,\mathbb{C})$ 是 &amp;ldquo;multiplicatively automorphic with constant factors of automorphy $T_\sigma\in \operatorname{GL}(n,\mathbb{C}),\sigma\in G$&amp;rdquo; 的, 如果&lt;/p&gt;
+\[\sigma \Phi=\Phi T_{\sigma},\forall \sigma\in G.\]&lt;ul&gt;
+&lt;li&gt;$X,Y$ non-comp. R.S. $p:X\to Y$ holom. unbranched Gal. covering. $G=\operatorname{Deck}(Y/X)$. Then given any homom.&lt;/li&gt;
+&lt;/ul&gt;
+\[T:G\to \operatorname{GL}(n,\mathbb{C}),\sigma\mapsto T_\sigma.\]&lt;p&gt;There exists $\Phi:Y\to \operatorname{GL}(n,\mathbb{C})$, MAWCFOA $T_\sigma$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$X$ non-comp. R.S.&lt;/li&gt;
+&lt;/ul&gt;
+\[T:\pi_1(X)\to \operatorname{GL}(n,\mathbb{C}),\sigma\mapsto T_\sigma.\]&lt;p&gt;gp. homo. Then there exists $A\in M(n\times n,\Omega(X))$ and a fundamental system of solns. of the D.E. $d\omega=A\omega$ on the universal covering of $X$ which has the $T_\sigma$ as factors of automorphy.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$X$ non-comp. R.S. $S\subset X$ discrete. $X&amp;rsquo;=X\backslash S$. Suppose&lt;/li&gt;
+&lt;/ul&gt;
+\[T:\pi_1(X&#39;)\to \operatorname{GL}(n,\mathbb{C}),\sigma\mapsto T_\sigma.\]&lt;p&gt;gp. homo. Then there exists $A\in M(n\times n,\Omega(X&amp;rsquo;))$ which has a singular pt. at every $a\in S$ and a fundamental system of solns. $\Phi\in \text{GL}(n,\mathcal{O}(Y))$ of the D.E. $d\omega=A\omega$ on the universal covering $p:Y\to X&amp;rsquo;$ which has the $T_\sigma$ as factors of automorphy.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二十六 P280-286</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AD-p280-286/</link>
         <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
