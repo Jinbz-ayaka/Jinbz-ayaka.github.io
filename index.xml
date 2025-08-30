@@ -7,7 +7,90 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 30 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十七 P286-292</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%83-p286-292/</link>
+        <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%83-p286-292/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B8%83-p286-292/mcbffffff.jpg" alt="Featured image of post CG饲养日记-其二十七 P286-292" /&gt;&lt;p&gt;这一章, 讲 non-equiv. 的 $K$-theory.&lt;/p&gt;
+&lt;p&gt;$X$ $m$-dim. var. $K(X)$. 定义 $0=\Gamma_{-1}\subset \Gamma_0\subset \cdots\subset \Gamma_m=K(X)$. $\Gamma$ 由所有 $\operatorname{supp}\mathcal{F}\leq j$ 的 $\mathcal{F}$ 张成. 我们也可以在 $\mathbb{C}\otimes_\mathbb{Z} K(X)$ 上定义类似的 $\Gamma_j$.&lt;/p&gt;
+&lt;p&gt;我们有, 对任意 V.B. $E$,&lt;/p&gt;
+\[\mathcal{F}\subset \Gamma_j\operatorname{im}plies E\otimes \mathcal{F}\in \Gamma_j.\]&lt;p&gt;对于 $X$, tensor prod. 给出 $K(X)$ 一个 comm. ring. 的结构. 于是, 由于 $K(X)$ 由 V.B. 张成, $\Gamma_j$ 是 $K(X)$ 的一个 ideal.&lt;/p&gt;
+&lt;p&gt;对于 $\mathcal{F}$ coh. sheaf on an arbitrary var. $X$, $S_i$ irr. comp. of subvar. $\operatorname{supp}\mathcal{F}\subset X$. 于是&lt;/p&gt;
+&lt;p&gt;Lemma 5.9.2. $\forall S_i$, $\exists$ Zar. open $U_i\subset S_i$ and a uniquely determined positive integer $mult(\mathcal{F};S_i)$ s.t. the following equality holds in $K(U_i)$:&lt;/p&gt;
+\[\mathcal{F}|_{U_i}=mult(\mathcal{F};S_i)\cdot \mathcal{O}_{U_i}.\]&lt;p&gt;$\mathcal{J}$ defining ideal of $supp\mathcal{F}$, 只需对 $\mathcal{J}\cdot \mathcal{F}=0$ 说明即可. 而在这种情况下, 把 coh. 的 $\mathcal{F}$ pass 到 $\mathbb{C}(S_i)$ field 上, 他是一个 f.g. mod. over a field, 于是 free. 于是, 只要取 $U_i$, 使所有被 invert 的 $f_i$ non-vanish 即可.&lt;/p&gt;
+&lt;p&gt;一个练习题().&lt;/p&gt;
+&lt;p&gt;于是其引出如下 prop.&lt;/p&gt;
+&lt;p&gt;Prop. 5.9.3. (Devissage) Let $\mathcal{F}$ be a coh. sheaf on an alg. var. $X$ s.t. $\dim supp \mathcal{F}=d$ and let $S_i$ be all the $d$-diml irr. comp. of $supp\mathcal{F}$. Then we have $[\mathcal{F}]\in \Gamma_d$ and in the $K$-gp.&lt;/p&gt;
+\[[\mathcal{F}]=\sum_{i=1}^n\operatorname{mult}(\mathcal{F};S_i)\cdot [\mathcal{O}_{S_i}]\pmod{\Gamma_{d-1}}.\]&lt;p&gt;于是, 称这个 $\operatorname{mult}(\mathcal{F};S_i)$ 为 $\mathcal{F}$ 在 $S_i$ 上的 multiplicity. 且 $[\operatorname{supp}\mathcal{F}]=\sum_{i|\dim S_i=d}\operatorname{mult}(\mathcal{F};S_i)[S_i]\in H_{2d}(X,\mathbb{Z})$ 称作 $\mathcal{F}$ 的 support cycle in BMHomology.&lt;/p&gt;
+&lt;p&gt;他提到了一个有点意思的事情, 就是这玩意其实没什么用. 具体的原因是, 不同的 orbits 一般拥有不同的 dim.&lt;/p&gt;
+&lt;p&gt;Prop 5.9.5. $E$ rank $d$ v.b., $\mathcal{O}_X$ trivial $1$-diml v.b. on $X$. Then tensor prod. by $E-d\mathcal{O}_X$ induces a nilp. operator on $K(X)$; more precisely we have&lt;/p&gt;
+\[(E-d\cdot \mathcal{O}_X)^{\dim X+1}=0\]&lt;p&gt;as an endom. of $K(X)$.&lt;/p&gt;
+&lt;p&gt;这个直接 follows from lemma. 我们可以选取某 open $U_i$, $[E|_{U_i}]=d\cdot[\mathcal{O}_X]$. 于是 $(E-d\cdot id)$ 将 $\Gamma_j$ 映至 $\Gamma_{j-1}$.&lt;/p&gt;
+&lt;p&gt;定义 $H_{2i}(X,\mathbb{C})^{alg}$ 为 BMHom. 中所有由 fundamental classes of all $i$-diml alg. subvar. 张成的 subvar. 称 $H_\ast (X,\mathbb{C})$ spanned by alg. cycles if $H_\ast (X,\mathbb{C})=H_\ast (X,\mathbb{C})^{alg}$. 注意在这种情况下, 奇数维 homology vanish.&lt;/p&gt;
+&lt;p&gt;Prop 5.9.7. The Chern char. map $\mathbb{C}\otimes_{\mathbb{Z}}K(X)\to H_\ast (X)$ induces, for each $j$, a surj. morph.&lt;/p&gt;
+\[\mathbb{C}\otimes \Gamma_j\twoheadrightarrow \oplus_{i\leq j} H_{2i}(X,\mathbb{C})^{alg}.\]&lt;p&gt;注意, Chern char. 仅对 $X\hookrightarrow M$ embedding into smooth ambient 有定义. 我们现在 fix 一个这样的 embedding.&lt;/p&gt;
+&lt;p&gt;Theorem 5.9.9. (Hironaka) Any irr.cpx.alg.var. $S$ has a resol. of singularities, that is, there exists an irr. smooth alg. var. $\check{S}$ and a map $\check{S}\to S$ s.t.&lt;/p&gt;
+&lt;p&gt;(1) $\pi$ birational isom. i.e. there is a Zar. open dense subset $U\subset S$ s.t. $\pi^{-1}(U)$ open dense and the restriction $\pi: \pi^{-1}(U)\to U$ is an isom.&lt;/p&gt;
+&lt;p&gt;(2) $\pi:\check{S}\to S$ is proper.&lt;/p&gt;
+&lt;p&gt;这是一个代数几何结论. 我们利用它给出 Prop 5.9.7 的证明.&lt;/p&gt;
+&lt;p&gt;我们对 $j$ 进行归纳. 对 $j=0$, triv. 若对于 $i&amp;lt;j$ 成立, 对于 $i=j$, 考虑 $\mathcal{F}\in \Gamma_j$ coh. sheaf, $S_i$ $j$-diml irr. comp. of $supp\mathcal{F}$. 于是, 根据 5.9.3, 有&lt;/p&gt;
+\[\operatorname{ch}_*\mathcal{F}-\sum \operatorname{mult}(\mathcal{F};S_i)\operatorname{ch}_*\mathcal{O}_{S_i}\in \oplus_{i\leq j-1} H_{2i}(X,\mathbb{C})^{alg}. \]&lt;p&gt;于是, 欲证 $\operatorname\ast {ch}(\Gamma_j)\subset \oplus_{i\leq j} H_{2i}(-,-)$, 我们只需证 $\operatorname{ch}(\mathcal{O}_{S_i})\subset \oplus_{i\leq j} H_{2i}(-,-)$. 而直接 follows from 5.8.13(i).&lt;/p&gt;
+&lt;p&gt;于是, 其 induces 了&lt;/p&gt;
+\[(5.9.12)\operatorname*{ch}_*:\Gamma_j/\Gamma_{j-1}\to \oplus_{i\leq j} H_{2i}(X)^{alg}/\oplus_{i&lt; j} H_{2i}(X)^{alg}= H_{2j}(X)^{alg}.\]&lt;p&gt;于是, 如果我们证明了 $\operatorname\ast {ch}_\ast $ 的 complexification 是 surj. 的, 我们便完成了归纳证明.&lt;/p&gt;
+&lt;p&gt;而, 我们有如下性质:&lt;/p&gt;
+&lt;p&gt;Lemma 5.9.13. The map (5.9.12) is given by the assinment: $\mathcal{F}\mapsto [supp\mathcal{F}]$.&lt;/p&gt;
+&lt;p&gt;现在, 我们给出 5.9.13, together with 5.8.13(i) 的证明. 你可以看出, 5.8.13, 就不仅仅是 Springer 的范围了. 它打开了 Deligne-Lusztig 的大门()&lt;/p&gt;
+&lt;p&gt;对于 $S\subset X$, 考虑 resol $\check{S}\to S$. 定义 $\pi:\check{S}\to X$ proper. 有, 在 $K(X)$ 中,&lt;/p&gt;
+\[[\mathcal{O}_S]-[\pi_*\mathcal{O}_{\check{S}}]\in \Gamma_{j-1}.\]&lt;p&gt;于是, $\operatorname{ch}_\ast ([\mathcal{O}_S]-[\pi_\ast \mathcal{O}_{\check{S}}])\in \oplus_{i&amp;lt;j}H_{2i}$.&lt;/p&gt;
+&lt;p&gt;由于, 对于 smooth mfd, 有 $\operatorname{ch}_\ast (\mathcal{O}_{\check{S}})+\check{r}$. 于是, 我们希望说明&lt;/p&gt;
+\[\operatorname{ch}_*(\pi_*(\mathcal{O}_{\check{S}}))=\pi_*[\check{S}]+\check{r}=[S]+r.\]&lt;p&gt;对于 $X\hookrightarrow M$, 考虑 $\operatorname{Td}_{\check{S}}$, $\operatorname{Td}_{M}$ Todd classes of the corresp. smooth var. 熟知 $\operatorname{Td}_N=1+(\text{higher order terms})$. 根据 Riemann-Roch 5.8.14.&lt;/p&gt;
+\[\operatorname{Td}_M\cdot \operatorname{ch}_*(\pi_*\mathcal{O}_{\check{S}})=\pi_*(\operatorname{Td}_{\check{S}}\cdot \operatorname{ch}_*\mathcal{O}_{\check{S}}).\]&lt;p&gt;于是,&lt;/p&gt;
+\[\operatorname{ch}_*(\pi_*\mathcal{O}_{\check{S}})=(\operatorname{Td}_M)^{-1}\cdot \pi_*([\check{S}]+\cdots).\]&lt;p&gt;得证.&lt;/p&gt;
+&lt;p&gt;Cor 5.9.16. The assignment $\mathcal{F}\mapsto [supp\mathcal{F}]$ can be extended additively to a well-def. homo. $supp:\Gamma_jK(X)\to H_{2j}^{alg}(X)$.&lt;/p&gt;
+&lt;p&gt;Cor 5.9.17. The above defined homom. &amp;ldquo;supp&amp;rdquo; commutes with specialization.&lt;/p&gt;
+&lt;p&gt;后面的 Remark 是说, 对于 $X$, $X$ 的 dim-$n$ irr.comp. 构成 $H_{2n}(X,\mathbb{Z})$. 的一组基. 于是, 实际上我们有 isom. of abelian gps.&lt;/p&gt;
+\[supp:\Gamma_nK(X)/\Gamma_{n-1}K(X)\overset{\sim}{\to} H_{2n}(X,\mathbb{Z}),[\mathcal{O}_{X_i}]\mapsto [X_i].\]&lt;p&gt;现在, 记 $H_\ast (X)$ for $H_\ast (X,\mathbb{C})$.&lt;/p&gt;
+&lt;p&gt;Theorem 5.9.19. Let $\pi:F\to X$ cellular fibration. Suppose $H_\ast (X)$ spanned by alg. cycles and the Chern char. map&lt;/p&gt;
+\[\operatorname{ch}_*:\mathbb{C}\otimes K(X)\to H_*(X)\]&lt;p&gt;is an isom. Then $H_\ast (F)$ is spanned by alg. cycles and the Chern char. map&lt;/p&gt;
+\[\operatorname{ch}_*:\mathbb{C}\otimes K(F)\to H_*(F)\]&lt;p&gt;is also an isom.&lt;/p&gt;
+&lt;p&gt;Lemma 5.9.20. Suppose we have $i:F\hookrightarrow F&amp;rsquo;\hookleftarrow U=F&amp;rsquo;\backslash F$ where $i$ is a closed embedding. Then if $H_\ast (F)$ and $H_\ast (U)$ are spanned by alg. cycles then so is $H_\ast (F&amp;rsquo;)$.&lt;/p&gt;
+&lt;p&gt;Pf. of lemma:&lt;/p&gt;
+&lt;p&gt;由于偶数维 $H_j$ 全部 vanish, 我们总有 exact seq.&lt;/p&gt;
+\[0\to H_j(F)\to H_j(F&#39;)\to H_j(U)\to 0,j\in 2\mathbb{Z}.\]&lt;p&gt;于是, 我们有 comm. diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsOCxbMiwwLCJIX2ooRilee2FsZ30iXSxbNCwwLCJIX2ooRicpXnthbGd9Il0sWzYsMCwiSF9qKFUpXnthbGd9Il0sWzYsMiwiSF9qKFUpIl0sWzQsMiwiSF9qKEYnKSJdLFsyLDIsIkhfaihGKSJdLFswLDIsIjAiXSxbOCwyLCIwIl0sWzYsNV0sWzUsNF0sWzQsM10sWzMsN10sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCw1LCIiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDFdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxLDQsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn0sImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9LCJoZWFkIjp7Im5hbWUiOiJlcGkifX19XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsOCxbMiwwLCJIX2ooRilee2FsZ30iXSxbNCwwLCJIX2ooRicpXnthbGd9Il0sWzYsMCwiSF9qKFUpXnthbGd9Il0sWzYsMiwiSF9qKFUpIl0sWzQsMiwiSF9qKEYnKSJdLFsyLDIsIkhfaihGKSJdLFswLDIsIjAiXSxbOCwyLCIwIl0sWzYsNV0sWzUsNF0sWzQsM10sWzMsN10sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCw1LCIiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDFdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxLDQsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn0sImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9LCJoZWFkIjp7Im5hbWUiOiJlcGkifX19XV0=&amp;embed&#34; width=&#34;1372&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;这之中, $H_j(F&amp;rsquo;)^{alg}\to H_j(U)^{alg}$ 是surj. 这是因为 $H_j(U)^{alg}$ 中的 cycle 由 $F&amp;rsquo;$ 中的 cycle 限制得到. 于是, 通过追图, 我们可以得到 $H_j(F&amp;rsquo;)^{alg}\to H_j(F&amp;rsquo;)$ 是surj.&lt;/p&gt;
+&lt;p&gt;Pf. of Thm.&lt;/p&gt;
+&lt;p&gt;第一步, 说明 $\dim_{\mathbb{C}}(\mathbb{C}\otimes K(F))=\dim H_\ast (F)$.&lt;/p&gt;
+&lt;p&gt;对于 $X$, it holds. 于是, 通过 Thom, 这个对 affine bundle 成立.&lt;/p&gt;
+&lt;p&gt;现在考虑 induction on fibration. 我们有 s.e.s.&lt;/p&gt;
+\[0\to K(F^0)\to K(F^1)\to K(E^1)\to 0,\]\[0\to H_*(F^0)\to H_*(F^1)\to H_*(E^1)\to 0.\]&lt;p&gt;于是, $\dim \mathbb{C}\otimes K(F^1)=\dim H_\ast (F^1)$. 由归纳成立.&lt;/p&gt;
+&lt;p&gt;第二步, $\operatorname{ch}_\ast :\mathbb{C}\otimes K(F)\to H_\ast (F)$ surj, 通过 Prop. 5.9.7 和 Lemma 5.9.20 (以及 Thom.), 由归纳成立. 于是, 由于维数相同, 其为 isom.&lt;/p&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+&lt;p&gt;热似你爹了.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>浮生多少记-其三十七</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83/</link>
+        <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83/ty.jpg" alt="Featured image of post 浮生多少记-其三十七" /&gt;&lt;p&gt;这姐们是谁来着&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天代数tv可以说是, 一点工作的欲望都没有.&lt;/p&gt;
+&lt;p&gt;家里空调坏了orz 这对于深圳人来说无疑是致命的.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;明天要去hk那边了 祝我好运&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;awc, 真要热4了&lt;/p&gt;
+&lt;p&gt;下班&lt;/p&gt;
+&lt;p&gt;2025.8.30 18:18 于深圳南山&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Lectures on Riemann Surface - Quick Ref.</title>
         <link>https://Jinbz-ayaka.github.io/p/lectures-on-riemann-surface-quick-ref./</link>
         <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
