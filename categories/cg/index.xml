@@ -7,15 +7,85 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/cg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其二十九 P296-302</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B9%9D-p296-302/</link>
+        <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B9%9D-p296-302/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E4%B9%9D-p296-302/praying.jpg" alt="Featured image of post CG饲养日记-其二十九 P296-302" /&gt;&lt;p&gt;【最终一战】代数tv v.s. Chapter 5!&lt;/p&gt;
+&lt;p&gt;函子性!&lt;/p&gt;
+&lt;p&gt;Lemma 5.11.1. $G$ reductive gp, $G\circlearrowright M$ smooth complex alg. var. $M$. $M^G$ fixed pts of $G$ is a smooth subvar. of $M$.&lt;/p&gt;
+&lt;p&gt;这个的证明是比较黎曼几何的: 取 $G_{comp}$ maximal cpt subgp. 由于 $G_{comp}$ 在 $G$ 中 Zar. dense, 有 $M^G=M^{G_{comp}}$. 对于 $G_{comp}$, $x\in M^G$, 我们可以取出一个 $G_{comp}$-inv. metric on $M$. 现在, 考虑 $G_{comp}$-equiv. 的 $\operatorname{exp}:T_xM\overset{\sim}{\to}M$ local diffeom., $G_{comp}$-inv. in $T_xM$ 一定是一个 subspace, 于是 $M^G$ submfd.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $A\circlearrowright M$, 称 $a\in A$ 是 $M$-reg. 的, 如果 $M^A=M^a$. 这是 r.s. element in maximal torus 的 generalized.&lt;/p&gt;
+&lt;p&gt;对于 $M^A\subset M$, 考虑 normal bundle $N=T_{M^A}M$. 有 $A$-action on $M$ induces 了 linear $A$-action along fibers of $N$. 也就是说, 有&lt;/p&gt;
+\[N=\oplus_{\alpha}N_\alpha.\]&lt;p&gt;且, $a$ $M$-reg. iff $\alpha(a)\neq 1,\forall \alpha\in \operatorname{Sp}N$.&lt;/p&gt;
+&lt;p&gt;现在, 定义&lt;/p&gt;
+\[\lambda_A=\sum(-1)^i\cdot \wedge^i N^\vee\in K^A(M^A)=R(A)\otimes K(M^A).\]&lt;p&gt;Cor 5.11.3. $i:M^A\hookrightarrow M$ natural inclusion. Then the composite $i^\ast i_\ast :K^A(M^A)\to K^A(M^A)$ is given by mult. by $\lambda_A$. Moreover, if $a$ $M$-reg. then the induced map of the localized gps is an isom.&lt;/p&gt;
+\[\lambda_A:K^A(M^A)_a\overset{\sim}{\to} K^A(M^A)_a.\]&lt;p&gt;对于 $a\in A$ $M$-reg. 我们有 evaluation map $\operatorname{ev}:R(A)\to \mathbb{C}$, $f\mapsto f(a)$. 于是, 我们给出了 $R(A)$ 的一个 $1$-diml 表示 $\mathbb{C}_a$. 注意他实际上也是一个 $R_a$-mod.&lt;/p&gt;
+&lt;p&gt;而, 记 $K_\mathbb{C}(X)=\mathbb{C}\otimes_{\mathbb{Z}}K(X)$. 定义 $\lambda_a$ 为如下映射下 $\lambda_A$ 的 image:&lt;/p&gt;
+\[K^A(M^A)=R(A)\otimes K(M^A)\overset{\operatorname{ev}\otimes \operatorname{id}}{\to} \mathbb{C}\otimes K(M^A)=K_\mathbb{C}(M^A).\]&lt;p&gt;也就是说, 对于 $T_{M^A}M=\oplus_\alpha N_\alpha$. 对于任意 weight $\alpha\in\operatorname{Sp}N$, 我们有 complex $\alpha(a)$. 于是, 根据 $\lambda(\cdot)$ 的乘积性质, 有&lt;/p&gt;
+\[\lambda_a=\otimes_{\alpha\in\operatorname{Sp}N}(\sum_i(-\alpha(a))^i\wedge^iN_\alpha^\vee).\]&lt;p&gt;于是, 根据 5.11.3, $\lambda_a$ 可逆. recall $i:M^A\hookrightarrow M$, 我们定义 $\operatorname{res}_a:K^A(M)\to K_\mathbb{C}(M^A)$ by:&lt;/p&gt;
+\[\operatorname{res}_a:\mathcal{F}\mapsto (\lambda_a)^{-1}\otimes \operatorname{ev}(i^*\mathcal{F})\in K_\mathbb{C}(M^A).\]&lt;p&gt;特别地, 其 factor through $\mathbb{C}_a\otimes K^A(M)$.&lt;/p&gt;
+&lt;p&gt;Lemma 5.11.5. $a$ $M$-regular, assume that the loc.thm. holds for $M$, then $\operatorname{res}_a$ gives an isom&lt;/p&gt;
+\[\operatorname{res}_a:\mathbb{C}_a\otimes_{R(A)}K^A(M)\overset{\sim}{\to} K_\mathbb{C}(M^A).\]&lt;p&gt;Pf: 我们有 isom:&lt;/p&gt;
+\[i_*:K^A(M^A)_a\overset{\sim}{\to} K^A(M)_a.\]&lt;p&gt;tensor by $\mathbb{C}_a$ 得到&lt;/p&gt;
+\[i_*^\mathbb{C}:K_\mathbb{C}(M^A)\overset{\sim}{\to} \mathbb{C}_a\otimes_{R(A)}K^A(M).\]&lt;p&gt;于是, conbined with $i^\ast $, 有 $i^\ast i_\ast ^\mathbb{C}:K_\mathbb{C}(M^A)\to K_\mathbb{C}(M^A)$. 于是, 由于 $i^\ast i_\ast ^\mathbb{C}$ 是 mult. by $\lambda_A$, composing with $\operatorname{ev}$ 得到 mult. by $\lambda_a$.&lt;/p&gt;
+&lt;p&gt;于是, $(i_\ast )^{-1}=(\lambda_a)^{-1}\otimes\operatorname{ev}\circ i^\ast $.&lt;/p&gt;
+&lt;p&gt;现在是, (an analogue) the Lefschetz fixed point formula. fix $a\in A$ abelian red. gp.&lt;/p&gt;
+&lt;p&gt;Theorem 5.11.7. $f:X\to Y$ $A$-equiv. proper morph. of smooth $A$-var. Assume that $a$ is both $X$-reg. and $Y$-reg. and that the loc.thm. holds for $X$ and $Y$. Then the following diag. commutes:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkEoWCkiXSxbMiwwLCJLXkEoWSkiXSxbMiwyLCJLX3tcXG1hdGhiYntDfX0oWV5BKSJdLFswLDIsIktfe1xcbWF0aGJie0N9fShYXkEpIl0sWzAsMywiXFxvcGVyYXRvcm5hbWV7cmVzfV9hIl0sWzEsMiwiXFxvcGVyYXRvcm5hbWV7cmVzfV9hIl0sWzMsMiwiZl8qIl0sWzAsMSwiZl8qIl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkEoWCkiXSxbMiwwLCJLXkEoWSkiXSxbMiwyLCJLX3tcXG1hdGhiYntDfX0oWV5BKSJdLFswLDIsIktfe1xcbWF0aGJie0N9fShYXkEpIl0sWzAsMywiXFxvcGVyYXRvcm5hbWV7cmVzfV9hIl0sWzEsMiwiXFxvcGVyYXRvcm5hbWV7cmVzfV9hIl0sWzMsMiwiZl8qIl0sWzAsMSwiZl8qIl1d&amp;embed&#34; width=&#34;531&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;为此, 考虑&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwyLCJcXG1hdGhiYntDfVxcb3RpbWVzIEteQShYKSJdLFsyLDIsIlxcbWF0aGJie0N9XFxvdGltZXMgS15BKFkpIl0sWzIsNCwiS197XFxtYXRoYmJ7Q319KFleQSkiXSxbMCw0LCJLX3tcXG1hdGhiYntDfX0oWF5BKSJdLFsyLDAsIkteQShZKSJdLFswLDAsIkteQShYKSJdLFswLDMsIlxcb3BlcmF0b3JuYW1le3Jlc31fYSJdLFsxLDIsIlxcb3BlcmF0b3JuYW1le3Jlc31fYSJdLFszLDIsImZfKiJdLFswLDEsImZfKiJdLFs1LDAsIlxcbWF0aGJie0N9X2FcXG90aW1lcyJdLFs0LDEsIlxcbWF0aGJie0N9X2FcXG90aW1lcyJdLFs1LDQsImZfKiJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwyLCJcXG1hdGhiYntDfVxcb3RpbWVzIEteQShYKSJdLFsyLDIsIlxcbWF0aGJie0N9XFxvdGltZXMgS15BKFkpIl0sWzIsNCwiS197XFxtYXRoYmJ7Q319KFleQSkiXSxbMCw0LCJLX3tcXG1hdGhiYntDfX0oWF5BKSJdLFsyLDAsIkteQShZKSJdLFswLDAsIkteQShYKSJdLFswLDMsIlxcb3BlcmF0b3JuYW1le3Jlc31fYSJdLFsxLDIsIlxcb3BlcmF0b3JuYW1le3Jlc31fYSJdLFszLDIsImZfKiJdLFswLDEsImZfKiJdLFs1LDAsIlxcbWF0aGJie0N9X2FcXG90aW1lcyJdLFs0LDEsIlxcbWF0aGJie0N9X2FcXG90aW1lcyJdLFs1LDQsImZfKiJdXQ==&amp;embed&#34; width=&#34;623&#34; height=&#34;688&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;上面那个 square 显然交换. 而下面这个 square 则是由于 $\operatorname{res}_a^{-1}i_\ast $, 然后考虑 diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzIsMCwiWSJdLFsyLDIsIlleQSJdLFswLDIsIlheQSJdLFszLDAsImkiXSxbMiwxLCJpIl0sWzAsMSwiZiJdLFszLDIsImYiXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzIsMCwiWSJdLFsyLDIsIlleQSJdLFswLDIsIlheQSJdLFszLDAsImkiXSxbMiwxLCJpIl0sWzAsMSwiZiJdLFszLDIsImYiXV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;即可.&lt;/p&gt;
+&lt;p&gt;现在, 取 $X$ smooth comp., $Y$ pt. 于是, 对任意 $X$-reg $a\in A$ 以及 any equiv. v.b. $V\in K^A(X)$, 有&lt;/p&gt;
+\[\sum(-1)^i\operatorname{Tr}(a;H^i(X,V))=\sum(-1)^i\operatorname{Tr}(a;H^i(X^a,(\lambda_a)^{-1}\otimes V|_{X^a})), \]&lt;p&gt;where $\operatorname{Tr}$ 表示 $a$ 作用在 $H^i(X,V)$ 上的 trace.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $M_1\times M_2$ $A$-var. $Z\subset M_1\times M_2$ closed, $A$-stable. 在这里, 并不 assume $Z^A$ smooth.&lt;/p&gt;
+&lt;p&gt;对于 $a\in A$, both $M_1$ and $M_2$-reg. 考虑 morph. $r_a:\mathbb{C}_a\otimes_{R(A)} K^A(Z)\to K_\mathbb{C}(Z^A)$ as, 对于 $\lambda_1,\lambda_2$ images of $\lambda_A$ into $K_\mathbb{C}(M_1^A),K_\mathbb{C}(M_2^A)$. 有 $\lambda_2$ invertible. 于是, 定义 $r_a$ as the comp.&lt;/p&gt;
+\[\mathbb{C}_a\otimes_{R(A)}K^A(Z)\overset{i^*}{\to} \mathbb{C}_a\otimes_{R(A)}K^A(Z^A)\overset{\sim}{\to} K_\mathbb{C}(Z^A)\overset{1\boxtimes \lambda_2^{-1}}{\to} K_\mathbb{C}(Z^A).\]&lt;p&gt;注意, 这个定义是 asymm. 的, 如果我们在最后考虑 $\lambda_1^{-1}\boxtimes \lambda_2^{-1}$, 那这个 map 就是 $\operatorname{res}_a$.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $Z_{ij}\subset M_i\times M_j$ 以及 $p_{ij}:M_1\times M_2\times M_3\to M_i\times M_j$. 我们有&lt;/p&gt;
+&lt;p&gt;Theorem 5.11.10. $r_a$ commutes with convolution.&lt;/p&gt;
+&lt;p&gt;证明, 是 direct computation.&lt;/p&gt;
+&lt;p&gt;Fix $\mathcal{F}_{12}\in \mathbb{C}_a\otimes K^A(Z_{12}), \mathcal{F}_{23}\in \cdots$. $\lambda_i$ classes in $K_\mathbb{C}(M_i^A)$ defined above. 有&lt;/p&gt;
+\[\begin{align*}
+	(r_a\mathcal{F}_{12})*(r_a\mathcal{F}_{23})&amp;= (p_{13})_*\left((p_{12}^*r_a\mathcal{F}_{12})\otimes_{\mathcal{O}_{M_1^A\times M_2^A\times M_3^A}}(p_{23}^*r_a\mathcal{F}_{23})\right)\\
+	&amp;=(p_{13})_*\left((\mathcal{O}_{M_1}\boxtimes \lambda_2^{-1}\boxtimes \lambda_3^{-1})\otimes(i^*\mathcal{F}_{12}\otimes_{\mathcal{O}_{M_1^A\times M_2^A\times M_3^A}}i^*\mathcal{F}_{23})\right)
+\end{align*}\]&lt;p&gt;而, $\mathcal{O}_{M_1}\boxtimes \lambda_2^{-1}\boxtimes \lambda_3^{-1}=(p^\ast _{13}(\lambda_1\boxtimes \mathcal{O}_{M_3}))\otimes (\lambda_1^{-1}\boxtimes \lambda_2^{-1}\boxtimes \lambda_3^{-1})$. 于是,&lt;/p&gt;
+\[RHS= (p_{13})_*\left((p^*_{13}(\lambda_1\boxtimes \mathcal{O}_{M_3}))\otimes (\lambda_1^{-1}\boxtimes \lambda_2^{-1}\boxtimes \lambda_3^{-1})\otimes(i^*\mathcal{F}_{12}\otimes_{\mathcal{O}_{M_1^A\times M_2^A\times M_3^A}}i^*\mathcal{F}_{23})\right)\]&lt;p&gt;根据 proj. formula,&lt;/p&gt;
+\[RHS=(\lambda_1\boxtimes \mathcal{O}_{M_3})\otimes (p_{13})_*\left((\lambda_1^{-1}\boxtimes \lambda_2^{-1}\boxtimes \lambda_3^{-1})\otimes(i^*\mathcal{F}_{12}\otimes_{\mathcal{O}_{M_1^A\times M_2^A\times M_3^A}}i^*\mathcal{F}_{23})\right)\]&lt;p&gt;根据 Thm. 5.11.7,&lt;/p&gt;
+\[\begin{align*}
+	RHS&amp;= (\lambda_1\boxtimes \mathcal{O}_{M_3})\otimes (\lambda_1^{-1}\boxtimes \lambda_3^{-1})\otimes \left((p_{13})_*(i^*\mathcal{F}_{12}\otimes_{\mathcal{O}_{M_1^A\times M_2^A\times M_3^A}}i^*\mathcal{F}_{23})\right)\\
+	&amp;=(\mathcal{O}_{M_1}\boxtimes \lambda_3^{-1})(\mathcal{F}_{12}*\mathcal{F}_{23})\\
+	&amp;=r_a(\mathcal{F}_{12}*\mathcal{F}_{23}).
+\end{align*}\]&lt;p&gt;现在, 我们介绍一下 Chern char. 和 convolution 的关系. 这个实际上是 modeled by Riemann-Roch.&lt;/p&gt;
+&lt;p&gt;对于 $Z\subset M_1\times M_2$, 取 $\mathcal{F}\in K(Z)$, 有 $\operatorname{ch}_\ast \mathcal{F}\in H_\ast (Z)$. 取 $Td_M\in H^\ast (M)$ Todd class of a mfd. $M$, 我们定义 Riemann-Roch map $RR:K(Z)\to H_\ast (Z)$ by&lt;/p&gt;
+\[RR:\mathcal{F}\mapsto (1\boxtimes Td_{M_2})\cup \operatorname{ch}_*\mathcal{F},\mathcal{F}\in K(Z),1\boxtimes Td_{M_2}\in H^*(M_1\times M_2).\]&lt;p&gt;同样的, 注意这里的 asymmetry.&lt;/p&gt;
+&lt;p&gt;Theorem 5.11.11. (Bivariant Riemann-Roch Theorem) The map $RR$ comm. with convol.&lt;/p&gt;
+&lt;p&gt;这个的证明和 $r$ 的证明类似. 都是 direct compute. 跳了()&lt;/p&gt;
+&lt;p&gt;接下来, 就是在下一章经常会用到的 &amp;ldquo;extreme&amp;rdquo; case of the Bivariant Riemann-Roch Theorem. 仍旧, fix $Z_{12},Z_{23},Z_{13}:=Z_{12}\circ Z_{23}$. Recall $K$-gps 上的 $\Gamma$-filtration, 有&lt;/p&gt;
+&lt;p&gt;Prop 5.11.12. For any $p,q\geq 0$, convolution in $K$-theory takes $\Gamma_pK(Z_{12})\otimes \Gamma_qK(Z_{23})$ into $\Gamma_{p+q-m}K(Z_{13})$, where $m=\dim M_2$. Furthermore, the following diagram commutes&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXEdhbW1hX3BLKFpfezEyfSlcXG90aW1lcyBcXEdhbW1hX3FLKFpfezIzfSkiXSxbMiwwLCJcXEdhbW1hX3twK3EtbX1LKFpfezEzfSkiXSxbMiwyLCJIX3syKHArcS1tKX0oWl97MTN9KSJdLFswLDIsIkhfezJwfShaX3sxMn0pXFxvdGltZXMgSF97MnF9KFpfezIzfSkiXSxbMywyLCJILWNvbnYuIl0sWzAsMSwiSy1jb252LiJdLFswLDMsInN1cHBcXG90aW1lcyBzdXBwIl0sWzEsMiwic3VwcCJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXEdhbW1hX3BLKFpfezEyfSlcXG90aW1lcyBcXEdhbW1hX3FLKFpfezIzfSkiXSxbMiwwLCJcXEdhbW1hX3twK3EtbX1LKFpfezEzfSkiXSxbMiwyLCJIX3syKHArcS1tKX0oWl97MTN9KSJdLFswLDIsIkhfezJwfShaX3sxMn0pXFxvdGltZXMgSF97MnF9KFpfezIzfSkiXSxbMywyLCJILWNvbnYuIl0sWzAsMSwiSy1jb252LiJdLFswLDMsInN1cHBcXG90aW1lcyBzdXBwIl0sWzEsMiwic3VwcCJdXQ==&amp;embed&#34; width=&#34;805&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;有, $K$-theory conv. factor through tensor prod. with support (他这里又 typo 了)&lt;/p&gt;
+\[K(Z_{12})\otimes K(Z_{23})\to K(p_{12}^{-1}(Z_{12})\cap p_{23}^{-1}(Z_{23})),\]&lt;p&gt;and the proper image $(p_{13})_\ast $. 有 $(p_{13})_\ast $ preserves $\Gamma$-filt. 而, first claim follows from SGA.&lt;/p&gt;
+&lt;p&gt;对于 diag. 的 commutativity, 取 $\mathcal{F}_{12},\mathcal{F}_{23}$ a sheaf on $Z_{ij}$ with $p,q$-dim. supp. 那么, 根据 5.9.13 我们知道&lt;/p&gt;
+\[RR(\mathcal{F}_{ij})=[supp\mathcal{F}_{ij}]+r_{ij},r_{12}\in \oplus_{s&lt; p} H_{2s}(Z_{12}), r_{23}\in \oplus_{s&lt; q} H_{2s}(Z_{23}).\]&lt;p&gt;根据 5.11.11, 有&lt;/p&gt;
+\[RR(\mathcal{F}_{12}*\mathcal{F}_{23})=RR(\mathcal{F}_{12})*RR(\mathcal{F}_{23})\]\[=[supp \mathcal{F}_{12}]*[supp\mathcal{F}_{23}]+r_{12}*[supp\mathcal{F}_{23}]+[supp\mathcal{F}_{12}]*r_{23}+r_{12}*r_{23}\]\[=[supp \mathcal{F}_{12}]*[supp\mathcal{F}_{23}]+r_{13}.\]&lt;p&gt;得证.&lt;/p&gt;
+&lt;p&gt;至此, Chapter 5 收工.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其二十八 P292-296</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AB-p292-296/</link>
         <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AB-p292-296/</guid>
-        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AB-p292-296/nishisha.jpg" alt="Featured image of post CG饲养日记-其二十八 P292-296" /&gt;&lt;p&gt;如若无人愿意原谅我的罪行, 请让圣洁之火涤荡我罪恶的灵魂.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Localization!&lt;/p&gt;
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%8C%E5%8D%81%E5%85%AB-p292-296/nishisha.jpg" alt="Featured image of post CG饲养日记-其二十八 P292-296" /&gt;&lt;p&gt;Localization!&lt;/p&gt;
 &lt;p&gt;这个 localization 更接近于传统的, Atiyah 的 loc. 对于 $A$, 考虑 $A^\circ$ identity comp. 如果 $A$ 是 abelian reductive 的, 我们可以写出 ext. $1\to (\mathbb{C}^\ast )^n\to A\to (\text{Fin.gp.})\to 1$. Moreover, 我们总可以适当地选取使其 split. 因此 $A=(\mathbb{C}^\ast )^n\times(\text{Fin.gp.})$.&lt;/p&gt;
 &lt;p&gt;现在, 考虑 $R(A)$ representation ring. fix $a\in A$ 我们可以考虑 $S$ 所有 funct. not vanish at $a$. 于是考虑&lt;/p&gt;
 \[R_a=S^{-1}\cdot R(A).\]&lt;p&gt;以及, 对于 $R(A)$-mod. $M$, set $M_a=R_a\otimes_RM$. 于是我们有 exact 的 loc. functor $M\mapsto M_a$.&lt;/p&gt;
