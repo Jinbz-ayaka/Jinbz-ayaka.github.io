@@ -7,7 +7,75 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十 P303-312</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81-p303-312/</link>
+        <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81-p303-312/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81-p303-312/nxd2.jpg" alt="Featured image of post CG饲养日记-其三十 P303-312" /&gt;&lt;p&gt;GOGOGO, CG6!&lt;/p&gt;
+&lt;p&gt;开局是, Flag var. 上的 equiv $K$-theory.&lt;/p&gt;
+&lt;p&gt;$B\subset G$ Borel subgp. $[B,B]$ unip. radical. 于是, 对于所有 Borel subgp, $B/[B,B]$ canonically isom. to each other, 记为 $\mathbb{T}$, with Lie alg. $\mathfrak{H}$.&lt;/p&gt;
+&lt;p&gt;Thm 6.1.2. (a) $\mathbb{C}[\mathfrak{H}]$ is a free graded $\mathbb{C}[\mathfrak{H}]^{\mathbb{W}}$-mod with a $\mathbb{W}$-equiv. isom.&lt;/p&gt;
+\[\mathbb{C}[\mathfrak{H}]\simeq \mathbb{C}[\mathfrak{H}]^{\mathbb{W}}\otimes_\mathbb{C}\mathbb{C}[\mathbb{W}].\]&lt;p&gt;(b) $G$ simply conn. Then $R(\mathbb{T})$ free $R(\mathbb{T})^{\mathbb{W}}$-mod. Moreover, there is a $\mathbb{W}$-isom&lt;/p&gt;
+\[R(\mathbb{T})\simeq R(\mathbb{T})^\mathbb{W}\otimes_\mathbb{Z}\mathbb{Z}[\mathbb{W}].\]&lt;p&gt;注意 (a) 并不需要 $G$ s.c.&lt;/p&gt;
+&lt;p&gt;而, 根据 Chevalley, 我们有&lt;/p&gt;
+&lt;p&gt;Thm 6.1.4. Restriction to a max. torus gives rise to canonical alg. isom.&lt;/p&gt;
+\[R(G)\simeq R(\mathbb{T})^\mathbb{W}, \mathbb{C}[G]^G\simeq \mathbb{C}[\mathbb{T}]^\mathbb{W}.\]&lt;p&gt;Cor. 6.1.5. $G$ s.c., 有 canonical alg. isom.&lt;/p&gt;
+\[R(\mathbb{T})\simeq R(G)\otimes_\mathbb{Z}\mathbb{Z}[\mathbb{W}],\mathbb{C}[\mathbb{T}]\simeq \mathbb{C}[G]^G\otimes_\mathbb{C}\mathbb{C}[W].\]&lt;p&gt;特别地, 对于 $G$ simply conn, $R(\mathbb{T})$ 是 $R(G)$ 的 free mod.&lt;/p&gt;
+&lt;p&gt;而, 有&lt;/p&gt;
+&lt;p&gt;Lemma 6.1.6. There is a can. alg. isom. $K^G(\mathcal{B})\simeq R(\mathbb{T})$.&lt;/p&gt;
+&lt;p&gt;这个是根据&lt;/p&gt;
+\[K^G(\mathcal{B})=K^G(G/B)\simeq K^B(\operatorname{pt})\simeq R(B)\simeq R(B/[B,B])=R(\mathbb{T}).\]&lt;p&gt;因此, $K^G(B)$ 是一个 free $R(G)$-mod.&lt;/p&gt;
+&lt;p&gt;6.1.9 的 conventions, 给出了 $X^\ast (T),R^+\subset X^\ast (T),\rho\in X^\ast (T)$, 以及 $\Delta=\prod_{\alpha\in R^+}(\exp(\alpha/2)-\exp(-\alpha/2))$ Weyl denominator 的定义. 会者不难.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $\mathcal{B}$ 上的 $G$-equiv. bundle. 我们知道它同构于 $R(\mathbb{T})$. 也就是说, 对于任何一个 $\lambda\in X^\ast (\mathbb{T})$, 我们可以给出一个 $G$-equiv. line bundle $L_\lambda$.&lt;/p&gt;
+&lt;p&gt;ground to earth 的定义就是 $L_\lambda=G\times_B\mathbb{C}_{\lambda,B}$. 对于 $U\subset G/B$ open, $s\in \Gamma(U,L_\lambda)$ 是一个 regular $\mathbb{C}$-valued function $\tilde{s}$ on $p^{-1}(U)\subset G$ s.t.&lt;/p&gt;
+\[\tilde{s}(g\cdot b)=\lambda(b)^{-1}\cdot \tilde{s}(g).\]&lt;p&gt;with $p:G\to G/B$.&lt;/p&gt;
+&lt;p&gt;而, 更 conceptual 的定义是, 对任意的 $B\in \mathcal{B}$, 在 $B$ 处的 fiber 是 $1$-diml v.s. $\mathbb{C}_{\lambda,B}$.&lt;/p&gt;
+&lt;p&gt;容易看出这俩东西是同构的. In particular, ground to earth 定义下给出的 $L_\lambda$ 与 $B$ 的选取无关.&lt;/p&gt;
+&lt;p&gt;此外, 考虑 $L$ line bundle, 由于 $L|_{B}$ 一维, 显然其 factor through $B/[B,B]$. 于是, 其 given by $\lambda\in\operatorname{Hom}(\mathbb{T},\mathbb{C}^\ast )$.&lt;/p&gt;
+&lt;p&gt;Moreover, $\lambda\mapsto L_\lambda$ additively 给出了 alg. homo. $R(\mathbb{T})\to K^G(B)$.&lt;/p&gt;
+&lt;p&gt;他与 f.d. simple $G$-mod 的关系是什么呢? 对于每一个 anti-dominant 的 $\lambda$, 总存在一个 f.d. irr. repn. $V_\lambda$ with highest weight $\lambda$, with $B$ 在其作用下有一个唯一的 stable line $1_B$, with $1_B\simeq \mathbb{C}_{\lambda,B}$.&lt;/p&gt;
+&lt;p&gt;而实际上, 对于这样的 irr. f.d. mod $V_\lambda$, 由上面的选取我们给出了一个 alg. mor.&lt;/p&gt;
+\[\phi:\mathcal{B}\to \mathbb{P}(V_\lambda).\]&lt;p&gt;而, 我们现在定义 $L_\lambda=\phi^\ast \mathcal{O}(-1)$, with $\mathcal{O}(-1)$ tautological line bundle on $\mathbb{P}(V_\lambda)$, with fiber at each $1$ is $1$ itself.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $\lambda$ non-deg, 也就是说, 对每一个 coroot 的 pairing 都有 strictly negative 的 value. 我们有 $\phi:\mathcal{B}\to \mathbb{P}(V_\lambda)$ 是一个 embedding, in particular, 他就是我们在[故事开始的地方]定义的 Plucker embedding.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $\lambda$ non-deg., in particular, 他是 positive 的. 于是对于 $L_\lambda$ line bundle, 考虑 $\Gamma(\mathcal{B},L_\lambda)$ regular global sections, 其上拥有一个 f.d. rational $G$-mod 结构. 在前面那个 $\tilde{s}$ 语境下, 这个 action given by&lt;/p&gt;
+\[(x\tilde{s})(g)=\tilde{s}(x^{-1}\cdot g),\forall g\in G.\]&lt;p&gt;现在, 考察 $w_0$ (w.r.t.  chosen $B$) longest element, 他将 dominant weights 打到 anti-dominant weights. 有&lt;/p&gt;
+&lt;p&gt;Lemma 6.1.15. $\lambda$ dominant, 于是 $\Gamma(\mathcal{B},L_\lambda)$ simple $G$-mod. with highest weight $w_0(\lambda)$, with $\Gamma(\mathcal{B},L_\lambda)\simeq V_{w_0(\lambda)}$.&lt;/p&gt;
+&lt;p&gt;这个是因为 $Uw_0B$ 在 $G$ 中 Zar-open, 于是, 对于某个 global section, 我们只需要在 $Uw_0 B$ 上决定他的行为. 我们有所有 eqn. 都是满足 $\tilde{s}(uw_0b)=\lambda(b)^{-1}\tilde{s}(uw_0)$.&lt;/p&gt;
+&lt;p&gt;显然, (up to scalar) 仅存在一个 $\tilde{s}$, 他在 $U$-做作用下不变. 不难验证, 对于 $t\in T,u\in U$, 有 $(t\tilde{s})(uw_0)=(w_0\lambda)(t)^{-1}\cdot\tilde{s}(uw_0)$. 于是, 如果 $\Gamma(\mathcal{B},L_\lambda)$ 非零, 他一定同构于 $V_{w_0}$. 而这个非零是 (某种程度上) 通过 Borel-Weil-Bott 给出的.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Weyl char. formula, F老师最重要的李代数理论()&lt;/p&gt;
+&lt;p&gt;BWB 实际上给出来了, 对于 $\lambda$ dom. $H^i(\mathcal{B},L_\lambda)$ vanish for all $i&amp;gt;0$, 以及这个 implies 了 $H^0(\mathcal{B},L_\lambda)$ 的 nonvanishing. 而, 在 K-theory 的 pov, 有 $\sum(-1)^iH^i(\mathcal{B},L_\lambda)=p_\ast L_\lambda$.&lt;/p&gt;
+&lt;p&gt;Cor. 6.11.7. $p_\ast L_\lambda\in R(G)$ i.e. the virtual char. of $T$-action on $p_\ast L_\lambda$ is given by the Weyl char formula:&lt;/p&gt;
+\[\sum(-1)^iH^i(\mathcal{B},L_\lambda)=\Delta^{-1}\cdot\sum_{w\in W}(-1)^{l(w)}e^{w(\lambda+\rho)}.\]&lt;p&gt;where $l(w)$ length, RHS 视为 $R(G)=R(T)^W$ 的 element.&lt;/p&gt;
+&lt;p&gt;这个只需对 $a\in T$ regular 说明. 在这种情况下,&lt;/p&gt;
+\[\sum(-1)^i\operatorname{Tr}(a;H^i(\mathcal{B},L_\lambda))=\sum(-1)^i\operatorname{Tr}(a;H^i(\mathcal{B}^a,\lambda_a^{-1}\otimes L_\lambda|_{\mathcal{B}^a})).\]&lt;p&gt;而, 这种情况下 $\mathcal{B}^a$ 是 points! 我们只需要对 $0$ 阶 coh. 说明就行. $\sum(-1)^i\operatorname{Tr}(a;H^i(\mathcal{B}^a,\lambda_a^{-1}\otimes L_\lambda|_{\mathcal{B}^a}))=\operatorname{Tr}(a;H^0(\mathcal{B}^a,\lambda_a^{-1}\otimes L_\lambda|_{\mathcal{B}^a}))$.&lt;/p&gt;
+&lt;p&gt;现在, 我们要考虑 $a$ 在每个 $a$-pts 上的表现. 由于对已经 fix 的 $\mathfrak{b}$, 我们有 $b_w=w(b)$. 因此, 我们有 $\lambda_a=\otimes_\alpha (\sum_i(-\alpha(a))^i\Lambda^iN^{\vee}_\alpha)$. 而在 $\mathfrak{b}_w$ 中, 每一个 $N_\alpha^{\vee}$ 都是 $1$ 维 with eigenvalue $-\alpha$ 的. 那么我们有 $\lambda_a(a)=\prod_{\alpha\in wR^+}(1-e^{-\alpha})=\prod_{\alpha\in R^+}(1-e^{-w(\alpha)})$.&lt;/p&gt;
+&lt;p&gt;而, 通过一个简单的 Weyl gp.上的计算, 我们有&lt;/p&gt;
+\[\prod_{\alpha\in R^+}(1-e^{-w(\alpha)})=e^{-w(\rho)}\cdot (-1)^{l(w)}\cdot \Delta.\]&lt;p&gt;而, $a$ 在 $\mathfrak{b}_w$ 上, $L_\lambda$ 拥有 eigenvalue $w(\lambda)$. 我们得到&lt;/p&gt;
+\[\operatorname{Tr}(a;H^0(\mathcal{B}^a,\lambda_a^{-1}\otimes L_\lambda|_{\mathcal{B}^a}))=\Delta^{-1}\sum_{w}(-1)^{l(w)}e^{w(\lambda+\rho)}.\]&lt;p&gt;完成了证明.&lt;/p&gt;
+&lt;p&gt;现在, 我们可以给出如下 flag var. 的 Kunneth formula, cf. 5.6.1.&lt;/p&gt;
+&lt;p&gt;Prop 6.1.19. (a) Externel tensor. $K^G(\mathcal{B})\mathfrak{b}oxtimes K^G(\mathcal{B})\to K^G(\mathcal{B}\times \mathcal{B})$ induces 了 can. isom.&lt;/p&gt;
+\[K^G(\mathcal{B}\times \mathcal{B})\simeq K^G(\mathcal{B})\otimes_{R(G)}K^G(\mathcal{B})\simeq R(\mathbb{T})\otimes_{R(G)}R(\mathbb{T}).\]&lt;p&gt;(b) conv. in $K$-theory yields an alg. isom.&lt;/p&gt;
+\[K^G(\mathcal{B}\times \mathcal{B})\simeq \operatorname{End}_{R(G)}K^G(\mathcal{B}).\]&lt;p&gt;这个只需要证明 pairing $\langle ,\rangle:K^G(\mathcal{B})\times K^G(\mathcal{B})\to R(G)$.&lt;/p&gt;
+&lt;p&gt;这个 pairing 是 given by $(\mathcal{F}\times \mathcal{F}&amp;rsquo;)\mapsto p_\ast ([\mathcal{F}]\otimes [\mathcal{F}&amp;rsquo;])$, 也就是说,&lt;/p&gt;
+\[(X,Y)\mapsto \Delta^{-1}\sum(-1)^{l(w)}w(P\cdot Q)\cdot e^{w(\rho)},\]&lt;p&gt;with $w(e^{\lambda})=e^{w(\lambda)}$, $X,Y$ 视为 $R(\mathbb{T})$ 中的元素.&lt;/p&gt;
+&lt;p&gt;Steinberg 指出, $R(T)$ 上存在一组 $R^W(T)$ 基 ${e_y}_{y\in W}$ s.t. 对于 $A=(w(e_y))_{(w,y)\in W\times W}, \det A=\Delta^{m/2}$, $m=# W$.&lt;/p&gt;
+&lt;p&gt;我们只需说明, $\det(\langle e_y,e_{y&amp;rsquo;}\rangle)=\pm1$. 而, $\langle e_y,e_{y&amp;rsquo;}\rangle=\Delta^{-1}\sum(-1)^{l(w)}w(e_y)w(e_y&amp;rsquo;)w(e^\rho)$. 换句话说, 就是 $(\langle e_y,e_{y&amp;rsquo;}\rangle)$ 可以看做 $ADA^t$, with $D$ diagonal with elements $\Delta^{-1}(-1)^{l(w)}e^{w(\rho)}$.&lt;/p&gt;
+&lt;p&gt;于是, $\det(\langle e_y,e_{y&amp;rsquo;}\rangle)=\Delta^{m}\Delta^{-m}\prod (-1)^{l(w)}e^{w(\rho)}=\pm1$. 得证.&lt;/p&gt;
+&lt;p&gt;而, 在下一章我们会看到 $K^G(\mathcal{B})$ 是一个 $R(G)$-mod with rank $m$, 而 $K^G(\mathcal{B}\times \mathcal{B})$ 是一个 $R(G)$-mod with rank $m^2$, 于是根据 5.6.1.(d), 得证.&lt;/p&gt;
+&lt;p&gt;Thm. 6.1.22. $G$ simply conn, then the natural restriction map $K^G(X)\to K^T(X)$ gives rise to isom.&lt;/p&gt;
+&lt;p&gt;(a) $R(T)\otimes_{R(G)}K^G(X)\overset{\sim}{\to} K^T(X)$,&lt;/p&gt;
+&lt;p&gt;(b) $K^G(X)\overset{\sim}{\to }K^T(X)^W.$&lt;/p&gt;
+&lt;p&gt;这是因为, 首先由于 $B$ solvable, 我们有 $K^T\simeq K^B$. 于是, 由于 $G\times_BX\simeq G/B\times X$, 我们有 isom.&lt;/p&gt;
+\[K^T(X)\simeq K^B(X)= K^G(G\times_BX)= K^G(G/B\times X)\simeq K^G(\mathcal{B}\times X).\]&lt;p&gt;现在, 运用 Kunneth formula, 我们有 isom&lt;/p&gt;
+\[\pi:K^G(\mathcal{B})\otimes_{R(G)}K^G(X)\to K^G(\mathcal{B}\times X)\simeq K^T(X).\]&lt;p&gt;也就是 (a), 由于 $K^G(\mathcal{B})\simeq R(T)$. 而由于 $R(T)\simeq R(G)\otimes_{\mathbb{Z}}\mathbb{Z}[\mathbb{W}]$, 我们有&lt;/p&gt;
+\[K^T(X)\simeq \mathbb{Z}[\mathbb{W}]\otimes K^G(X),\]&lt;p&gt;也就是 (b).&lt;/p&gt;
+&lt;p&gt;终于更出来了kk, 最近忙于 Achar, 快把 CG 全忘了kk.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其三十九</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D/</link>
         <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
