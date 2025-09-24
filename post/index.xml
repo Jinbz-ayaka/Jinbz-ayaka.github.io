@@ -7,7 +7,56 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十一 P312-315</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80-p312-315/</link>
+        <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80-p312-315/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80-p312-315/2g.jpg" alt="Featured image of post CG饲养日记-其三十一 P312-315" /&gt;&lt;p&gt;接下来是 Steinberg Var. 上的等变 $K$-理论. 我们考虑 $G$ acts on $\mathcal{N}$, 他, together with dilation, 诱导了 $G\times \mathbb{C}^\ast $ 的作用 by $(g,z)x=z^{-1}gxg^{-1}$.&lt;/p&gt;
+&lt;p&gt;熟知 $T^\ast \mathcal{B}\simeq {(x,\mathfrak{b})}=\tilde{\mathcal{N}}$, 其上依然 admit $G\times \mathbb{C}^\ast $ 作用 by $(g,z)(x,\mathfrak{b})=(z^{-1}gxg^{-1},g\mathfrak{b}g^{-1})$. Moreover, 其和 $\mu:T^\ast \mathcal{B}\to \mathcal{N}$ moment map 是 commute 的.&lt;/p&gt;
+&lt;p&gt;现在, 取 $G\times \mathbb{C}^\ast $ acts diagonally on $T^\ast \mathcal{B}\times T^\ast \mathcal{B}$ 与 $\mathcal{B}\times \mathcal{B}$. 于是, $Z=T^\ast \mathcal{B}\times_{\mathcal{N}}T^\ast \mathcal{B}$ 是 $G\times \mathbb{C}^\ast $-stable 的.&lt;/p&gt;
+&lt;p&gt;现在, 对任意 $X$ $G\times \mathbb{C}^\ast $-var. $T$ maximal torus in $G$, $A\subset T\times \mathbb{C}^\ast $ closed subgp. Fix $a\in A$ s.t. $a$ 是 $X$-reg. 的, 也就是说, $X^A=X^a$.&lt;/p&gt;
+&lt;p&gt;现在, 考虑如下六条性质:&lt;/p&gt;
+&lt;p&gt;(1) $X$ free $R(A)$-mod.&lt;/p&gt;
+&lt;p&gt;(2) $H_\ast (X^A,\mathbb{C})$ spanned by alg. cycles, cf. Def. 5.9.6, and the homological Chern char. map gives an isom. $K_\mathbb{C}(X^A)\overset{\sim}{\to} H_\ast (X^A,\mathbb{C})$.&lt;/p&gt;
+&lt;p&gt;(3) The Localization Thm. holds for $X$ i.e. the localized push-forward map gives an isom.&lt;/p&gt;
+\[i_*:K^A(X^A)_a\overset{\sim}{\to}K^A(X)_a.\]&lt;p&gt;(4) The following natural map is an isom.&lt;/p&gt;
+\[R(A)\otimes_{R(T\times \mathbb{C}^*)}K^{T\times \mathbb{C}^*}(X)\to K^A(X).\]&lt;p&gt;(5) $K^{G\times \mathbb{C}^\ast }(X)$ free $R(G\times \mathbb{C}^\ast )$-mod.&lt;/p&gt;
+&lt;p&gt;(6) The canonical map $R(A)\otimes_{R(G\times \mathbb{C}^\ast )}K^{G\times \mathbb{C}^\ast }(X)\overset{\sim}{\to} K^A(X)$ an isom.&lt;/p&gt;
+&lt;p&gt;我们本章的目的是证明如下五个 $G\times \mathbb{C}^\ast $-var. 满足 (1)-(6). 我们首先说明&lt;/p&gt;
+&lt;p&gt;Thm 6.2.4. The varieties $12345$ satisfy (1)-(4).&lt;/p&gt;
+&lt;p&gt;对于 $\mathcal{B}$, 熟知 Bruhat 实际上给出了 $\mathcal{B}$ 的 Cellular fibration $\mathcal{B}\to pt$. 于是 (1),(4) holds by Cellular Fibration Lemma 5.5.1, (2) holds by Thm 5.9.19, (3) holds by the Localization Thm of Cellular fib.&lt;/p&gt;
+&lt;p&gt;对于 $T^\ast \mathcal{B}$, 实际上 $T^\ast \mathcal{B}=\sqcup_{w\in W}T^\ast \mathcal{B}|_{\mathcal{B}_w}$ 也给出了 cellular fib.&lt;/p&gt;
+&lt;p&gt;对于 $\mathcal{B}\times \mathcal{B}$, 我们有其 $=\sqcup Y_w$, 其中 $Y_w$ 为其上的 $G$-diag. orbit corresp. to $w\in W$. 而, $e\cdot B,w\cdot B$ 的 isotropy gp. 为 $T\cdot (U\cap U^w)$, 我们有 $Y_w\simeq G/(T\cdot (U\cap U^w))$.&lt;/p&gt;
+&lt;p&gt;而, 根据 Bruhat, $G=\sqcup_{y\in W}U\cdot y\cdot T\cdot U$. 有&lt;/p&gt;
+\[G/(T\cdot (U\cap U^w))=\sqcup_{y\in W} U\cdot y\cdot (U/(U\cap U^w)).\]&lt;p&gt;而, 注意 $U$ 和 $U\cap U^w, U/(U\cap U^w)$ 都是 v.s. 于是 $U\cdot y \cdot (U/(U\cap U^w))$ 也构成 cell.&lt;/p&gt;
+&lt;p&gt;于是, 我们同样可以利用 cellular fibration. 与此同时, $X=T^\ast (\mathcal{B}\times \mathcal{B})$ 也因此拥有了一个 cellular fib. 的结构. 得证.&lt;/p&gt;
+&lt;p&gt;而对于 $X=Z$, 我们考虑 $Z=\sqcup_{w} T^\ast _{Y_w}(\mathcal{B}\times \mathcal{B})$. 我们可以给出一个 strata $Z=Z^0\supset Z^1\supset \cdots\supset Z^m=T^\ast _{\mathcal{B}_\Delta}(\mathcal{B}\times \mathcal{B})$ with $Z^j\backslash Z^{j+1}=T^\ast _{Y_j}(\mathcal{B}\times \mathcal{B})$. 而, 考虑 $Z$ 到第二个 $\mathfrak{b}$ 的 projection, 有&lt;/p&gt;
+&lt;p&gt;Lemma 6.2.5. For any $w\in W$, the restriction $p:T^\ast _{Y_m}(\mathcal{B}\times\mathcal{B})\to \mathcal{B}$ is an affine bundle with fibre $T^\ast _{\mathcal{B}_w}\mathcal{B}$ over a pt. $\mathfrak{b}\in\mathcal{B}$.&lt;/p&gt;
+&lt;p&gt;于是, 对这个 cellular fibration 运用之前的论证, 得到 $Z$ 也满足性质 1234.&lt;/p&gt;
+&lt;p&gt;注意有 $K^{G\times \mathbb{C}^\ast }(Z)$ 是 $K^{G\times \mathbb{C}^\ast }(\mathcal{B})\simeq R(T)[q,q^{-1}]$ -mod. with basis ${\mathcal{O}_{\overline{T^\ast _{\mathcal{B}}(\mathcal{B}\times \mathcal{B})}}}$&lt;/p&gt;
+&lt;p&gt;In particular, 对于 $Z_{\Delta}\hookrightarrow Z$, 其将 $K^{G\times \mathbb{C}^\ast }(Z_\Delta)$ 打到 $R(T)[q,q^{-1}]$-submod. of $K^{G\times \mathbb{C}^\ast }(Z_\Delta)$ spanned by $[\mathcal{O}_{T^\ast _{\mathcal{B}_\Delta}(\mathcal{B}\times \mathcal{B})}]$. 也就是说,&lt;/p&gt;
+&lt;p&gt;Cor. 6.2.7. $K^G(Z_\Delta)\hookrightarrow K^G(Z)$ injective.&lt;/p&gt;
+&lt;p&gt;Thm. 6.2.8. (5) holds for $X=\mathcal{B},\mathcal{B}\times \mathcal{B},T^\ast \mathcal{B}, T^\ast (\mathcal{B}\times\mathcal{B})$ and $Z$.&lt;/p&gt;
+&lt;p&gt;$X=\mathcal{B}$: 有&lt;/p&gt;
+\[K^{G\times \mathbb{C}^*}(\mathcal{B})=K^{T\times \mathbb{C}^*}(pt)=R(T)[q,q^{-1}],\]&lt;p&gt;而 $R(T)$ 是一个 free $R(G)\simeq R(T)^W$-mod.&lt;/p&gt;
+&lt;p&gt;$X=T^\ast \mathcal{B}$: direct by Thom.&lt;/p&gt;
+&lt;p&gt;$X=\mathcal{B}\times \mathcal{B}$: 取 $\mathcal{B}\times \mathcal{B}=\sqcup Y_w$, 这是一个 cellular fibration over $\mathcal{B}$, 于是, direct from 5.5.1.&lt;/p&gt;
+&lt;p&gt;$X=T^\ast \mathcal{B}\times \mathcal{B}$: direct by Thom.&lt;/p&gt;
+&lt;p&gt;$X=Z$: 利用 6.2.4 的 fibration $Z\to \mathcal{B}$, 然后 5.5.1.&lt;/p&gt;
+&lt;p&gt;Cor. 6.2.9. The free $R(G\times \mathbb{C}^\ast )$-mod. $K^{G\times \mathbb{C}^\ast }(Z)$ has rank \((\# W)^2\).&lt;/p&gt;
+&lt;p&gt;$K^{G\times \mathbb{C}^\ast }(Z)$ free $K^{G\times\mathbb{C}^\ast }(\mathcal{B})$-mod. with rank \(\# W\). (6.2.6), then free $R({G\times\mathbb{C}^\ast })$-mod. with rank \((\# W)^2\) (6.1.2).&lt;/p&gt;
+&lt;p&gt;Thm. 6.2.10. $12345$ satisfy (6).&lt;/p&gt;
+&lt;p&gt;也就是说, 对 $A\subset G\times \mathbb{C}^\ast $ closed, $X=12345$, $R(A)\otimes_{R(G\times \mathbb{C}^\ast )}K^{G\times \mathbb{C}^\ast }(X)\to K^A(X)$.&lt;/p&gt;
+&lt;p&gt;注意由于 $R(T\times \mathbb{C}^\ast )\otimes_{R(G\times \mathbb{C}^\ast )}K^{G\times \mathbb{C}^\ast }(X)$, 这个映射 factor through $R(A)\otimes_{R(T\times \mathbb{C}^\ast )}K^{T\times \mathbb{C}^\ast }(X)$. 而根据 (4), $R(A)\otimes_{R(T\times \mathbb{C}^\ast )}K^{T\times \mathbb{C}^\ast }(X)\to K^A(X)$ isom. Apply $R(A)\otimes_{R(T\times \mathbb{C}^\ast )}-$ to 6.1.22 中的 isom. $R(T)\otimes_{R(G)}K^G(X)\overset{\sim}{\to} K^T(X)$, 得证.&lt;/p&gt;
+&lt;p&gt;从5.x最初的定义应该就能看出来了, 他就是为这个 setting 做的准备.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;怎么 $#$ 也转义不出来 kk.&lt;/p&gt;
+&lt;p&gt;我看这 KaTeX + markdown 是欠宫了啊.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其三十 P303-312</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81-p303-312/</link>
         <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
