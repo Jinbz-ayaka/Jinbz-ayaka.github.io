@@ -7,7 +7,52 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十二 P315-321</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%8C-p315-321/</link>
+        <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%8C-p315-321/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%8C-p315-321/pcn.jpg" alt="Featured image of post CG饲养日记-其三十二 P315-321" /&gt;&lt;p&gt;Harmonic Polynomial!&lt;/p&gt;
+&lt;p&gt;对于 $G\circlearrowright V$, 考虑 $\mathcal{D}=\mathcal{D}(V)$ alg. of const. coeff. diff. operators on $V$, 一个 comm. alg., 于是, $\mathcal{D}^G$ sub alg. 我们有一个以后不会用的 fundamental result:&lt;/p&gt;
+&lt;p&gt;Thm 6.3.1. For any reductive $G$, $\mathcal{D}^G$ is finitely generated.&lt;/p&gt;
+&lt;p&gt;记 $\mathcal{D}^G_+$ 为所有 const. term vanishing 构成的 ideal. 我们称 $P$ 是 $G$-harmonic 的, 如果 $DP=0,\forall D\in \mathcal{D}_+^G$.&lt;/p&gt;
+&lt;p&gt;记 $\mathcal{H}$ 全体 $G$-harmonic poly. 有如下结论&lt;/p&gt;
+&lt;p&gt;Thm 6.3.3. Assume $G$ reductive and $\mathbb{C}[V]$ free graded $\mathbb{C}[V]^G$-mod. Then the multiplication map in $\mathbb{C}[V]$ gives the $G$-equiv. isom. of graded v.s.&lt;/p&gt;
+\[\mathcal{H}\otimes \mathbb{C}[V]^G\simeq \mathbb{C}[V].\]&lt;p&gt;现在, 考虑 $SV,SV^\ast $ 对应的 symm. alg. 我们有自然的&lt;/p&gt;
+\[SV\simeq \mathcal{D},SV^*\simeq \mathbb{C}[V].\]&lt;p&gt;此外, 通过 pairing&lt;/p&gt;
+\[\langle,\rangle:\mathcal{D}\times \mathbb{C}[V]\to\mathbb{C},(D,P)\mapsto (DP)(0),\]&lt;p&gt;我们诱导了&lt;/p&gt;
+\[S(V^*)\simeq (SV)^*.\]&lt;p&gt;而这个对于 $G\subset GL(V)$, 我们诱导了 $G$ 在 $V^\ast $ 上的作用, by $\langle gv^\ast ,gv\rangle=\langle v^\ast ,v\rangle$. 于是, action on $V$ gives rise to $G$-action on $S(V),S(V^\ast ),\mathcal{D},\mathbb{C}[V]$.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $A$ 如上的 alg, 记 $A^G$ graded subalg. of $G$-inv, $A^G_+$ augmentation ideal in $A^G$. 最后, $I^A\subset A$, $I^A=A\cdot A^G_+$.&lt;/p&gt;
+&lt;p&gt;Lemma 6.3.7. A polyn. $P\in \mathbb{C}[V]$ $G$-harmonic iff $P\in (I^\mathcal{D})^\perp$ i.e. $\forall D\in I^\mathcal{D}$, $\langle D,P\rangle=0$.&lt;/p&gt;
+&lt;p&gt;Lemma 6.3.8. $SV$ 是一个 free $(SV)^G$-mod. iff $S(V^\ast )$ 是一个 free $S(V^\ast )^G$-mod.&lt;/p&gt;
+&lt;p&gt;这个是 follows from unitary trick. 是一个纯线性代数的东西. 他的核心思想就是 $\phi:v\mapsto (-,v)$ 给出了一个 skew-linear 的 isom. $V\simeq V^\ast $.&lt;/p&gt;
+&lt;p&gt;Lemma 6.3.11. There is an equality of Poincar series&lt;/p&gt;
+\[{P}(\mathcal{H})=P(\mathbb{C}[V]/T^{\mathbb{C}[V]}).\]&lt;p&gt;这是因为我们有 $\mathbb{C}[V]/I^{\mathbb{C}[V]}\simeq SV/I^{SV}$. 于是,&lt;/p&gt;
+\[P(\mathcal{H})=P((I^\mathcal{D})^\perp)=P((SV/I^{SV})^*)=P(SV/I^{SV})=P(\mathbb{C}[V]/I^{\mathbb{C}[V]}).\]&lt;p&gt;于是, 我们有&lt;/p&gt;
+&lt;p&gt;Prop. 6.3.13. There is a $G$-stable graded direct sum decomp.&lt;/p&gt;
+\[\mathbb{C}[V]\simeq\mathcal{H}\oplus I^{\mathbb{C}[V]}.\]&lt;p&gt;首先, 我们要验证 $\mathcal{H}\cap I^{\mathbb{C}[V]}=0$. 这是因为我们有 $\mathcal{H}=(I^\mathcal{D})^{\perp}$. 其化为&lt;/p&gt;
+\[(I^\mathcal{D})^\perp\cap I^{\mathbb{C}[V]}=0.\]&lt;p&gt;于是, 考虑 $SV\times SV^\ast \to \mathbb{C}$, 熟知其 admit 一个 transport s.t. $(s_1,s_2)=\langle s_1,\phi(s_2)\rangle$. 而, 在这种对应下, 我们需要证明&lt;/p&gt;
+\[(I^{SV})^\perp\cap I^{SV}=0.\]&lt;p&gt;而这个是通过如上定义的 pos. def. 的 pairing 给出的.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $\mathcal{H}\hookrightarrow \mathbb{C}[V]\twoheadrightarrow \mathbb{C}[V]/I^{\mathbb{C}[V]}$. $\mathbb{C}[V]\simeq\mathcal{H}\oplus I^{\mathbb{C}[V]}$ 保证了这个映射是 inj. 的. 于是 $\mathbb{C}[V]=\mathcal{H}\oplus I^{\mathbb{C}[V]}$.&lt;/p&gt;
+&lt;p&gt;Proof of Thm 6.3.3. that is $\mathcal{H}\otimes \mathbb{C}[V]^G\simeq \mathbb{C}[V]$.&lt;/p&gt;
+&lt;p&gt;我们对 degree $k$ 进行归纳, 对 $k=0$, 他是 triv. 的. 考虑 $mult:\mathcal{H}\otimes \mathbb{C}[V]^G\to \mathbb{C}[V]$. 对于 $p$, 根据 6.3.13 我们可以写出 $p=p_0+\sum q_i\cdot z_i,p_0\in \mathcal{H},z_i\in \mathbb{C}[V]^G_{\oplus},q_i\in\mathbb{C}[V]$.&lt;/p&gt;
+&lt;p&gt;而, 由于 $\deg z_i&amp;gt;0$, $\deg q_i&amp;lt;k$. 我们总可以把 $q_i$ 写成 $\sum_j p_{ij}z_{ji}$ 的形式. 于是 $p=p_0\cdot 1+\sum p_{ij} \cdot z_i\cdot z_{ij}$, 我们证明了 surj.&lt;/p&gt;
+&lt;p&gt;接下来证明 isom. 部分, 为此我们只需要证明 $P(\mathcal{H}\otimes \mathbb{C}[V]^G)=P(\mathbb{C}[V])$ 即可. 而&lt;/p&gt;
+\[P(\mathcal{H}\otimes \mathbb{C}[V]^G)=P(\mathcal{H})\cdot P(\mathbb{C}[V]^G)=P(\mathbb{C}[V]/I^{\mathbb{C}[V]})\cdot P(\mathbb{C}[V]^G).\]&lt;p&gt;熟知 $\mathbb{C}[V]$ free graded $\mathbb{C}[V]$-mod, 对某个 $E\subset \mathbb{C}[V]$ subspace, 有 $\mathbb{C}[V]\simeq \mathbb{C}[V]^G\otimes E$. 于是, 我们有&lt;/p&gt;
+\[\mathbb{C}[V]\simeq (\mathbb{C}[V]^G_+\otimes E)\oplus (1\otimes E).\]&lt;p&gt;而,&lt;/p&gt;
+\[\mathbb{C}[V]\supset\mathbb{C}[V]^G_+\otimes E\simeq \mathbb{C}[V]^G_+\cdot \mathbb{C}[V]^G\cdot E\simeq \mathbb{C}[V]\cdot\mathbb{C}[V]^G_+\simeq I^[\mathbb{C}[V]].\]&lt;p&gt;于是, $\mathbb{C}[V]\simeq I^{\mathbb{C}[V]}$.&lt;/p&gt;
+&lt;p&gt;也就是说, $P(E)=P(\mathbb{C}[V])-P(I^{\mathbb{C}[V]})=P(\mathbb{C}[V]/I^{\mathbb{C}[V]})=P(\mathcal{H})$. 得证.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $W\circlearrowright \mathfrak{h}$, 有&lt;/p&gt;
+&lt;p&gt;Prop. 6.3.24. $\mathcal{H}$ f.d. subspace of $\mathbb{C}[\mathfrak{h}]$. Moreover, there is a $W$-mod. isom. $\mathcal{H}\simeq \mathbb{C}[W]$.&lt;/p&gt;
+&lt;p&gt;为此, 我们可以 put $E\simeq \mathbb{C}[W]$ by 6.1.2. 于是,  $\mathcal{H}\simeq \mathbb{C}[\mathfrak{h}]/I^{\mathbb{C}[\mathfrak{h}]}\simeq E=\mathbb{C}[W]$.&lt;/p&gt;
+&lt;p&gt;以及, 如下有趣的结论 holds for all finite gp, not only Weyl gp.&lt;/p&gt;
+&lt;p&gt;Prop. A polynomial $P\in \mathbb{C}[\mathfrak{h}]$ is $W$-harmonic iff the mean value property holds, i.e.&lt;/p&gt;
+\[P(a)=\frac{1}{\# W}\sum_{w\in W}P(a+w\cdot b),\forall a,b\in \mathfrak{h}.\]&lt;p&gt;有, $S^n\mathfrak{h}$ 是由 $b^n,b\in\mathfrak{h}$ 张成的. 于是, $S^n(\mathfrak{h})$ 是由 $\sum_{w\in W}(w\cdot b)^n$ 张成的(?). 因此 $\mathcal{D}^W_n$ 则是由 $\sum_w\partial^n_{w\cdot b}$ 张成的. 而,&lt;/p&gt;
+\[\sum_{w}P(a+w\cdot b)=\sum_w(\sum_{n\geq 0}\frac{1}{n!}(\partial^n_{w\cdot b}P)(a))=\sum_{n\geq 0}\frac{1}{n!}\cdot(\sum_{w}(\partial^n_{wb}P)(a))=\sum_{n\geq 0}\frac{1}{n!}\cdot(\sum_{w}\partial^n_{wb}P)(a).\]&lt;p&gt;然后根据 scalar over $b$, 我们得到 mean value cond. holds iff $D^W_n\cdot P=0$. 得证!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其三十一 P312-315</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%80-p312-315/</link>
         <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
