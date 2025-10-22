@@ -7,7 +7,91 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十五 P335-345</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%94-p335-345/</link>
+        <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%94-p335-345/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%94-p335-345/fal.jpg" alt="Featured image of post CG饲养日记-其三十五 P335-345" /&gt;&lt;p&gt;Equivariant Hilbert polynomial.&lt;/p&gt;
+&lt;p&gt;要 introduce 一个 generalization of the Hilbert polynomial.&lt;/p&gt;
+&lt;p&gt;故事的开头是 $T,X^\ast (T)=\operatorname{Hom}_{alg}(T,\mathbb{C})$, $T\circlearrowright V$, $V=\oplus V_{\mu}$. 然后是 $\operatorname{Sp} V$ spectrum. 我们总考虑 $T$-action 是 contracting 的 s.t. $SpV$ lies in an open half-space of real v.s. $\mathbb{R}\otimes_\mathbb{Z} X^\ast (T)$. Fix $V_+\supset SpV$, 考虑 $\mathbb{C}((T))={f=\sum_{\mu\in v(f)+V_+}c_{\mu}e^{\mu},\exists v(f)\in V}$.&lt;/p&gt;
+&lt;p&gt;熟知 $\mathbb{C}((T))$ 是一个 ring contains $\mathbb{C}(T)$ as subring.&lt;/p&gt;
+&lt;p&gt;考虑 $B=T\cdot U$ 的 case, $V=\operatorname{Lie} U$, $Span(V)=R^-$ 就是一个熟知的例子.&lt;/p&gt;
+&lt;p&gt;现在, 一个 f.g. $\mathbb{C}[V]$-mod $M$ 被称作 $T$-equiv. 的, 如果存在一个 $T$-action on $M$ s.t.&lt;/p&gt;
+\[t(p\cdot m)=t^*(p)\cdot t(m).\]&lt;p&gt;由于 $T$ 在 $M$ 上的作用是 alg. 的, 于是是 s.s. 的, 我们存在 decomp. $M=\oplus M_\mu$.&lt;/p&gt;
+&lt;p&gt;现在, 我们可以定义 character&lt;/p&gt;
+&lt;p&gt;$\operatorname{ch}_TM=\sum_\mu(\dim M_\mu) e^\mu$.&lt;/p&gt;
+&lt;p&gt;首先, 对于 $T$-equiv. coh. $\mathcal{O}_V$-sheaf, $M$ 可以实现成一个 $T$-equiv. var.&lt;/p&gt;
+&lt;p&gt;Lem. 6.6.4. 我们有 equality $\operatorname{ch}_T\mathbb{C}[V]=\prod_\mu (1-e^\mu)^{-1}$.&lt;/p&gt;
+&lt;p&gt;于是&lt;/p&gt;
+&lt;p&gt;Cor 6.6.5. $M$ free $T$-equiv. rank 1 $\mathbb{C}[V]$-mod. with generator $m_\lambda$ of weight $\lambda$. Then&lt;/p&gt;
+\[\operatorname{ch}_TM=\operatorname{ch}_T(\mathbb{C}[V]\cdot m_\lambda)=\frac{e^\lambda}{\prod_{\mu\in \operatorname{Sp}V}(1-e^\mu)}.\]&lt;p&gt;Prop. 6.6.6. For any finitely gen. $T$-equiv. $\mathbb{C}[V]$-mod. $M$, there is finitely many $\lambda\in X^\ast (T)$ and $n_\lambda\in \mathbb{Z}$ s.t. we have&lt;/p&gt;
+\[\operatorname{ch}_T(M)=\frac{\sum_\lambda n_\lambda e^\lambda}{\prod_{\mu\in \operatorname{Sp}V}(1-e^\mu)}.\]&lt;p&gt;于是, 我们定义 $\chi_M=\sum_\lambda n_\lambda e^\lambda$ as an element of $R(T)$. 我们可以在 equiv. $K$ 理论中给出如下 interpretation: 考虑&lt;/p&gt;
+\[i^*:K^T(V)\to K^T(\{0\})=R(T),\]&lt;p&gt;pullback w.r.t. zero embedding $i:{0}\hookrightarrow V$.&lt;/p&gt;
+&lt;p&gt;Claim 6.6.8. 对于 $\mathcal{M}=\mathcal{O}_V\otimes _{\mathbb{C}[V]}M$, $i^\ast (\mathcal{M})=\chi_M$.&lt;/p&gt;
+&lt;p&gt;这是因为对于 free sheaf, pull back 也就是 restrict to $1$. 因此 $i^\ast \mathcal{O}_V=1\in R(T)$. 而, 由于 $i^\ast $ 是 $R(T)$-mod. homo.&lt;/p&gt;
+\[i^*(n_\lambda e^\lambda\mathcal{O}_V)=n_\lambda e^\lambda i^*\mathcal{O}_V.\]&lt;p&gt;得证.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $M$, 我们 regard $\chi_M$ as a regular function on $T$, 然后将其 pull back 到 $\mathfrak{h}=\operatorname{Lie} T$ 上, 我们得到,&lt;/p&gt;
+\[\operatorname{exp}^*\chi_M=P^0+P^1+\cdots, P^i=\frac{1}{i!}\sum_\lambda n_\lambda\cdot\lambda^i\]&lt;p&gt;homog. poly. on $\mathfrak{h}$ of degree $i$.&lt;/p&gt;
+&lt;p&gt;Defn. First nonvanishing $P^i$ is called the equiv. Hilbert polynomial of the mod. $M$, denoted by $P(M)$.&lt;/p&gt;
+&lt;p&gt;对 $T=\mathbb{C}^\ast $ 的版本, 这个 defn. 转化为 Hilbert poly. 的 std. defn.&lt;/p&gt;
+&lt;p&gt;而, 对于 $\mathcal{M}$ $T$-equiv. coh. sheaf, 我们记 $P(\mathcal{M})=P(\Gamma(V,\mathcal{M}))$. 对于 $X\subset V$ $T$-stable closed subvar, $P_X$ 记为 $\mathcal{O}_X$ 对应的 Hilbert poly.&lt;/p&gt;
+&lt;p&gt;本章的主要目标是如下定理:&lt;/p&gt;
+&lt;p&gt;Thm 6.6.12. Let $\mathcal{M}$ be a $T$-equiv. coh. sheaf on $V$ and $d=\dim(\operatorname{supp}\mathcal{M})$ cpx. dim. of. the support. of $\mathcal{M}$. Then&lt;/p&gt;
+&lt;p&gt;(i) $P(\mathcal{M})$ is a homog. poly. of degree $\deg P(\mathcal{M})=\dim V-d$.&lt;/p&gt;
+&lt;p&gt;(ii) If $S_1,S_2,\cdots,S_r$ are the $d$-dim. irr. comp. of $supp\mathcal{M}$, then&lt;/p&gt;
+\[P(\mathcal{M})=\sum_{i=1}^r\operatorname{mult}(\mathcal{M};S_i)\cdot P_{S_i}.\]&lt;p&gt;现在, 对于 $X$ smooth proj. var. $\mathcal{L}$ line bundle on $X$ s.t. the first Chern class $c=c_1(\mathcal{L})\in H^2(X,\mathbb{C})$ represented by a Kahler $2$-form on $X$ i.e. $\mathcal{L}$ pullback of $\mathcal{O}(1)$ by proj. embedding $X\hookrightarrow \mathbb{P}^N$. 于是, 对于 $Y\subset X$ of dim $k$ 我们定义 $\langle c^k,[Y]\rangle=\int_{Y^{reg}}c^k$ and $\langle c^k,[Y]\rangle=0$ for $\dim Y&amp;lt;k$. 回忆 $[supp\mathcal{F}]=\sum mult(\mathcal{F},S_i)\cdot[S_i]$, $\chi(\mathcal{F})=\sum(-1)^i \dim H^j(X,\mathcal{F})$ and $\mathcal{F}(i)=\mathcal{F}\otimes \mathcal{L}^{\otimes i}$.&lt;/p&gt;
+&lt;p&gt;Lemma 6.6.13. Assume $\mathcal{F}$ is a coh. sheaf on $X$ and $k=\dim_\mathbb{C}(supp\mathcal{F})$. Then we have a forma power series identity&lt;/p&gt;
+\[\sum_{n\geq 0}\chi(\mathcal{F}(n))\cdot z^n=\frac{\langle c^k,[supp\mathcal{F}]\rangle z^k+f_k(z)}{(1-z)^{k+1}} ,\]&lt;p&gt;where $f_k(z)$ polyn. of degree $\leq k$ s.t. $f_k(1)=0$.&lt;/p&gt;
+&lt;p&gt;这是因为, 根据 Riemann-Roch&lt;/p&gt;
+\[\chi(\mathcal{F}(n))=\int e^{n\cdot c}\cdot \operatorname{ch}_*\mathcal{F}\cdot \operatorname{Td}_X.\]&lt;p&gt;$\int$ 表示 $supp\mathcal{F}\to pt$ 的direct image, 以及 $\operatorname{ch}_\ast \mathcal{F}\in H_\ast (supp \mathcal{F})$ homological Chern char. 于是, 右侧只有 degree $0$ 的部分对 RHS 有贡献. 根据 5.9.13,&lt;/p&gt;
+\[\operatorname{ch}_*\mathcal{F}\cdot \operatorname{Td}_X=\langle c^k,[supp\mathcal{F}]\rangle\frac{n^k}{k!}+\langle c^{k-1},s_{k-1}\rangle\frac{n^{k-1}}{(k-1)!}+\cdots+\langle1,s_0\rangle,\]&lt;p&gt;于是&lt;/p&gt;
+\[\sum_{n\geq0}\chi(\mathcal{F}(n))z^n=\langle c^k,[supp\mathcal{F}]\rangle\sum_n\frac{n^kz^n}{k!}+\langle c^{k-1},s_{k-1}\rangle\sum_n\frac{n^{k-1}z^n}{(k-1)!}+\cdots\]&lt;p&gt;然后通过&lt;/p&gt;
+&lt;p&gt;Lemma 6.6.17,&lt;/p&gt;
+&lt;p&gt;有 powerseries identity&lt;/p&gt;
+\[\frac{1}{k!}\sum_{n\geq 0}n^kz^n=\frac{z^k+p_k(z)}{(1-z)^{k+1}}\]&lt;p&gt;with $p_k$ polyn. of deg. $\leq k$ s.t. $p(1)=0$.&lt;/p&gt;
+&lt;p&gt;得证.&lt;/p&gt;
+&lt;p&gt;Lemma 6.6.18. $M$ f.d. $\mathbb{C}^\ast $-equiv. $\mathbb{C}[V]$-mod. with weight space decomp. $M=\oplus_{m\in \mathbb{Z}} M_m$. Then the $\mathbb{C}^\ast $-equiv. Hilbert polyn. $P(M)$ is a polyn. on $Lie\mathbb{C}^\ast =\mathbb{C}$ of the form&lt;/p&gt;
+\[P(M):t\mapsto \dim M\cdot(\prod_{m\in \mathbb{Z}}m^{\dim M_m})\cdot t^{\dim V}.\]&lt;p&gt;有&lt;/p&gt;
+\[\operatorname{ch}_{\mathbb{C}^*}(M)=\sum_{m\in\mathbb{Z}}(\dim M_m)\cdot z^m.\]&lt;p&gt;而我们知道&lt;/p&gt;
+\[\operatorname{ch}(M)=\frac{\chi_M(z)}{\prod_{m\in \operatorname{Spec} V}(1-z^m)},\]&lt;p&gt;于是, $P(M)$ 是由考虑 $z=e^t$ 并取 first nonanishing term 给出的. 计算可得&lt;/p&gt;
+\[\chi_M(e^t)=\operatorname{ch}_{\mathbb{C}^*}(M)(e^t)\cdot \prod_{m\in \operatorname{Spec} V} (1-e^{mt})=\dim M\cdot(\prod_{m\in \mathbb{Z}}m^{\dim M_m})t^{\dim V}+\cdots.\]&lt;p&gt;得证.&lt;/p&gt;
+&lt;p&gt;现在, back to thm. 总共分三步: reduce to $T=\mathbb{C}^\ast $, 然后 reduce to a weighted projective space, 最后在 proj. space 上做.&lt;/p&gt;
+&lt;p&gt;第一步: 对于 $\gamma^\vee\in X_\ast (T)$ dominant i.e. $\langle \gamma^\vee,\mu\rangle$ greater than $0$ for each $\mu\in \operatorname{Spec} V$. 那么, 当我们 view $M$ as $\mathbb{C}^\ast $-mod by $\gamma^\vee$, 我们有&lt;/p&gt;
+\[(\operatorname{ch}_{\gamma^\vee} M)(z)=[(\gamma^\vee)^*\operatorname{ch}_TM](z)=\frac{\sum n_\lambda z^{\langle \lambda,\gamma^\vee\rangle}}{\prod_{\mu\in \operatorname{Spec} V}(1-z^{\langle \mu,\gamma^\vee\rangle})}.\]&lt;p&gt;从上述的 formula 可以看出, 欲证原定理, 只用对一个 &amp;ldquo;generic&amp;rdquo; 的 $\gamma^\vee:z\mapsto(z^{m_i})$ s.t. $m_i$ 互素证明即可. 因此我们完成了 reduction.&lt;/p&gt;
+&lt;p&gt;注意, 在这样的 generic 下, $V\backslash {0}$ 上的 $\mathbb{C}^\ast $ 作用是 free 的.&lt;/p&gt;
+&lt;p&gt;Step 2. reduction to a weighted proj. space.&lt;/p&gt;
+&lt;p&gt;考虑 $\mathbb{P}_{\mathbb{C}^\ast }:=(V\backslash{0})/\mathbb{C}^\ast $ well-def. var. $\mathbb{P}_{\mathbb{C}^\ast }$ weighted proj. space. 我们有 $\mathbb{P}_{\mathbb{C}^\ast }$ 确实是一个 proj. var, for weights are positive and action is contracting. 以及, $\mathbb{P}_{\mathbb{C}^\ast }$ 的 singularities 是 &amp;ldquo;mild&amp;rdquo; 的. 我们可以在其上运用 ordinary Riemann-Roch.&lt;/p&gt;
+&lt;p&gt;于是, $p:V\backslash{0}\to\mathbb{P}_{\mathbb{C}^\ast }$ line bundle on $\mathbb{P}_{\mathbb{C}^\ast }$. $\mathcal{O}(n)$ $n$-th tensor power of the dual bundle on $\mathbb{P}_{\mathbb{C}^\ast }$. 我们有 graded alg. isom.&lt;/p&gt;
+\[\mathbb{C}[V]=\oplus_{n\geq 0}\Gamma(\mathbb{P}_{\mathbb{C}^*},\mathcal{O}(n)).\]&lt;p&gt;现在, 对任意 $\mathcal{M}$ $\mathbb{C}^\ast $-equiv. coh. sheaf on $V$, 我们存在 $\bar{\mathcal{M}}$ s.t. $p^\ast \bar{\mathcal{M}}=\mathcal{M}|_{V\backslash{0}}$. 定义 $\overline{\mathcal{M}}(n)=\bar{\mathcal{M}}\otimes\mathcal{O}(n)$ 以及 $\mathbb{Z}$-graded v.s.&lt;/p&gt;
+\[M=\oplus_{n\in \mathbb{Z}}\Gamma(\mathbb{P}_{\mathbb{C}^*},\bar{\mathcal{M}}(n)).\]&lt;p&gt;今天先写到这.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;毕其功于一役?&lt;/p&gt;
+&lt;p&gt;$\mathcal{O}(m)\otimes\bar{\mathcal{M}}(n)\mapsto \bar{\mathcal{M}}(m+n)$ natural pairing 给出了 $M$ 上的 graded $\mathbb{C}[V]$-mod. 结构. 对任意 $n\geq 0$, $\Gamma(V,\mathcal{M})$ 的 degree n 元素给出了到 $\Gamma(\mathbb{P}_{\mathbb{C}^\ast },\bar{\mathcal{M}}(n))$ 的一个 restriction. 于是给出了&lt;/p&gt;
+\[F:\Gamma(V,\mathcal{M})\to \oplus_{n\in \mathbb{Z}}\Gamma(\mathbb{P}_{\mathbb{C}^*},\bar{\mathcal{M}}(n)).\]&lt;p&gt;于是我们有 $4$-term exact seq.&lt;/p&gt;
+\[0\to \ker{F}\to \Gamma(V,\mathcal{M})\to M\to \operatorname{coker} F\to 0.\]&lt;p&gt;这个就给出了&lt;/p&gt;
+\[[\Gamma(V,\mathcal{M})]=[M]+[\ker F]-[\operatorname{coker} F].\]&lt;p&gt;而, 将 $M$ 分解成 $n\geq 0$ 和 $n&amp;lt;0$ 的两部分, 实际上给出了 $M=M_+\oplus M_-$. 也就是说,&lt;/p&gt;
+\[[\Gamma(V,\mathcal{M})]=[M_+]+[M_-]+[\ker F]-[\operatorname{coker} F].\]&lt;p&gt;Claim 6.6.23. $\mathbb{C}[V]$-mods $M_-,\ker F,\operatorname{coker} F$ are all f.d.&lt;/p&gt;
+&lt;p&gt;证明跳过()&lt;/p&gt;
+&lt;p&gt;Step 3. 对于 $j=0,1,\cdots,\dim \mathbb{P}_{\mathbb{C}^\ast }$, 定义&lt;/p&gt;
+\[H^j=\oplus_{n\geq 0}H^j(\mathbb{P}_{\mathbb{C}^*},\bar{\mathcal{M}}(n)).\]&lt;p&gt;有 $H^0=M_+$, 而对于 $j\geq 1$, $H^j$ 拥有 $\mathbb{C}[V]$-mod structure. Moreover, 有 $H^j(\mathbb{P}_{\mathbb{C}^\ast },\bar{\mathcal{M}}(n))=0$ for all $n&amp;raquo;0$.&lt;/p&gt;
+&lt;p&gt;于是, 将 $H$ 分解成 $H^{odd}$ 和 $H^{ev}$, 有&lt;/p&gt;
+\[\sum_{j\geq 0}(-1)^j[H^j]=[M_+]-[H^{odd}]+[H^{ev}],\]&lt;p&gt;以及&lt;/p&gt;
+\[\sum_{j\geq 0}(-1)^j\operatorname{ch}_{\mathbb{C}^*}H^j=\operatorname{ch}_{\mathbb{C}^*}M_+-\operatorname{ch}_{\mathbb{C}^*}H^{odd}+\operatorname{ch}_{\mathbb{C}^*}H^{ev}.\]&lt;p&gt;现在, 由 6.6.13.&lt;/p&gt;
+\[\frac{\langle c^k,[\operatorname{supp}\bar{\mathcal{M}}]\rangle z^k+f_k(z)}{(1-z)^{k+1}}=\operatorname{ch}_{\mathbb{C}^*}M_+-\operatorname{ch}_{\mathbb{C}^*}H^{odd}+\operatorname{ch}_{\mathbb{C}^*}H^{ev}.\]&lt;p&gt;也就是说,&lt;/p&gt;
+\[\operatorname{ch}_{\mathbb{C}^*}\Gamma(V,\mathcal{M})=\frac{\langle c^k,[\operatorname{supp}\bar{\mathcal{M}}]\rangle z^k+f_k(z)}{(1-z)^{k+1}}+\operatorname{ch}_{\mathbb{C}^*}M_--\operatorname{ch}_{\mathbb{C}^*}H^{odd}+\operatorname{ch}_{\mathbb{C}^*}H^{ev}+\operatorname{ch}_{\mathbb{C}^*}\ker F+\operatorname{ch}_{\mathbb{C}^*}\operatorname{coker} F.\]&lt;p&gt;欲证 Thm 6.6.12, 先 assume $supp\mathcal{M}={0}$, 于是 $\Gamma(V,\mathcal{M})=\ker F$ f.d. 于是根据 6.6.18 我们知道 $P(\mathcal{M})$ of degree $\operatorname{dim}V$, (i) 得证. 至于 (ii), $\mathcal{M}\mapsto (\mathcal{M})$ additive on the subcat. of $\mathbb{C}^\ast $-equiv. sheaves supported at the origin.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $supp\mathcal{M}\neq{0}$ 的情况, 取 $\dim (\operatorname{supp}\mathcal{M})=d&amp;gt;0$, 有 $\mathcal{M}|_{V\backslash {0}}\neq 0\operatorname{im}plies \bar{\mathcal{M}}\neq 0$, 于是 $\dim(supp\bar{\mathcal{M}})=d-1\geq 0$, 于是, 根据上述式子与 $\chi$ 的方程, 我们有&lt;/p&gt;
+\[\chi_{\Gamma(V,\mathcal{M})}(z)=\frac{\langle c^{d-1},[\operatorname{supp}\bar{\mathcal{M}}]\rangle z^{d-1}\cdot\prod_{m\in \operatorname{Spec}V}(1-z^m)}{(1-z)^{d}}+f_{d-1}(z)\frac{\prod_{m\in \operatorname{Spec}V}(1-z^m)}{(1-z)^{d}}\]\[+\chi_{M}(z)-\chi_{H^{odd}}+\chi_{H^{ev}}+\chi_{\ker F}+\chi_{\operatorname{coker} F}.\]&lt;p&gt;现在, 计算 Hilbert polyn., 我们 put $z=e^t$. 于是, 由于 $1-z^m=(1-z)(1+\cdots)$, the first non-vanishing term of&lt;/p&gt;
+\[t\mapsto f_{d-1}(e^t)\frac{\prod_{m\in \operatorname{Spec}V}(1-e^{mt})}{(1-e^t)^d}\]&lt;p&gt;occurs in degree $&amp;gt;\dim V-d$. 但 $\frac{\langle c^{d-1},[\operatorname{supp}\bar{\mathcal{M}}]\rangle z^{d-1}\cdot\prod_{m\in \operatorname{Spec}V}(1-z^m)}{(1-z)^{d}}$ occurs in order $\dim V-d$. 于是, first non-vanishing term 出现在 degree $\dim V-d$, finishes the proof.&lt;/p&gt;
+&lt;p&gt;而 (ii) 的部分, 则是在 $\chi_{\Gamma(V,\mathcal{M})}(z)$ 的式子中, 考虑 $\mathcal{M}$ 为 $\mathcal{O}_S$. 于是, compare terms on RHS, 我们得证.&lt;/p&gt;
+&lt;p&gt;终于写完了,,,&lt;/p&gt;
+&lt;p&gt;看得出来我很不想写这个证明() 也没看明白&lt;/p&gt;
+&lt;p&gt;当做 black box 我觉得也没啥问题,,&lt;/p&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其四十二</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%BA%8C/</link>
         <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
@@ -51,7 +135,7 @@
 &lt;p&gt;首先, 他会跟朱大师聊一聊, 聊共形场论.&lt;/p&gt;
 &lt;p&gt;其次, 他会筹备溯理想的东西, 然后把入党的东西跑完.&lt;/p&gt;
 &lt;p&gt;最后, 他会在搞懂这一切之后, 再跟牢李聊一聊.&lt;/p&gt;
-&lt;p&gt;也许, 能做些什么, 那当然是最好的&lt;/p&gt;
+&lt;p&gt;也许, 能做些什么, 那当然是最好的.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;冷冷&lt;/p&gt;
 &lt;p&gt;下班!&lt;/p&gt;
