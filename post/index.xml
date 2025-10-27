@@ -7,7 +7,24 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>随便啥的</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E9%9A%8F%E4%BE%BF%E5%95%A5%E7%9A%84/</link>
+        <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E9%9A%8F%E4%BE%BF%E5%95%A5%E7%9A%84/</guid>
+        <description>&lt;p&gt;唉我真是█了，想给网站添加 giscus 评论功能，结果我的 hexo 和 next 太老了；因为我自己魔改了一些组件，更新好又调整了好久还没弄好。&lt;/p&gt;
+&lt;p&gt;最██的是，我发现之前使用的 hexo-renderer-kramed 是一个将近十年前的 hexo-renderer-marked 的分支，里面很多语法早就不支持了；在这十年间，hexo-renderer-marked 将 markdown 转为 html 的匹配逻辑（尤其是 em 和 strong）演变到了非常哈人的程度，把这个调好还需要研究好久。&lt;/p&gt;
+&lt;p&gt;最近还想搞一个新栏目，叫做&lt;strong&gt;页边空白&lt;/strong&gt;，还要把之前写到一半的 Swig 文件改成 Nunjucks，唉做个网站怎么这么麻烦。&lt;/p&gt;
+&lt;p&gt;真不是我不想更 Achar 专题好吧（&lt;/p&gt;
+&lt;p&gt;等着 这个月必能看到 brkhu.fun 的涅槃重生&lt;/p&gt;
+&lt;p&gt;————Brkhu&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Brkhu 代发的, 他的网站在更新换代, 一时间不好传东西&lt;/p&gt;
+&lt;p&gt;区.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其三十五 P335-345</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%BA%94-p335-345/</link>
         <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
