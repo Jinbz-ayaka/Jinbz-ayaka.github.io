@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="把评论区互串的 bug 修掉了.\n这个 bug 一言以蔽之, 是由于 Github 的模糊搜索导致的.\ngiscus 的工作原理, 是会使用 GitHub Discussions 搜索 API 根据选定的映射方式 (在这里是 pathname) 来查找与当前页面关联的 discussion. (Ref: giscus). 而这个搜索 API 是从 Github 的搜索功能搞出来的. 而这个搜索功能是带模糊搜索的. 也就是说, giscus 会把 discussion 搬到所有包含相似标题的地方, 这非常不好.\n">
 <title>25.8.5 更新</title>
