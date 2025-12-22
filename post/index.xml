@@ -7,7 +7,440 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>屠龙技·前传: An Intro. to 1-Category.</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E5%89%8D%E4%BC%A0-an-intro.-to-1-category./</link>
+        <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E5%89%8D%E4%BC%A0-an-intro.-to-1-category./</guid>
+        <description>&lt;h2 id=&#34;你知道范畴是一个什么东西吗&#34;&gt;你知道范畴是一个什么东西吗？
+&lt;/h2&gt;&lt;h3 id=&#34;范畴-category&#34;&gt;范畴 (category)
+&lt;/h3&gt;&lt;p&gt;一个范畴 (Category)  由以下数据构成:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;对象 (Objects)  的类 \(\text{Ob}(\mathcal{C})\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射 (Morphisms)  的类: 对任意两个对象 \(A, B \in \text{Ob}(\mathcal{C})\), 有一个集合 \(\text{Hom}_{\mathcal{C}}(A, B)\), 其元素称为从 \(A\) 到 \(B\) 的态射 (或箭头) .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复合运算 (Composition) : 对任意三个对象 \(A, B, C\), 有一个映射:
+\(\circ : \text{Hom}_{\mathcal{C}}(B, C) \times \text{Hom}_{\mathcal{C}}(A, B) \to \text{Hom}_{\mathcal{C}}(A, C)\),
+将 \(g: B \to C\) 和 \(f: A \to B\) 映到 \(g \circ f: A \to C\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单位态射 (Identity Morphisms) : 对任意对象 \(A\), 存在一个态射 \(\text{id}_A \in \text{Hom}_{\mathcal{C}}(A, A)\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这些数据必须满足以下两条公理:&lt;/p&gt;
+&lt;p&gt;结合律 (Associativity) : 对任意 \(f: A \to B,\ g: B \to C,\ h: C \to D\), 有
+\(h \circ (g \circ f) = (h \circ g) \circ f\).&lt;/p&gt;
+&lt;p&gt;单位律 (Identity Law) : 对任意 \(f: A \to B\), 有
+\(f \circ \text{id}_A = f = \text{id}_B \circ f\).&lt;/p&gt;
+&lt;p&gt;简言之: 范畴是具有复合运算和单位元的箭头的代数结构, 其中复合满足结合律.&lt;/p&gt;
+&lt;h2 id=&#34;范畴间的函子&#34;&gt;范畴间的函子
+&lt;/h2&gt;&lt;h3 id=&#34;函子-functor&#34;&gt;函子 (functor)
+&lt;/h3&gt;&lt;p&gt;设 \(\mathcal{C}\) 和 \(\mathcal{D}\) 是两个范畴.一个函子 \(F: \mathcal{C} \to \mathcal{D}\) 由两部分构成:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;对象上的映射: 对 \(\mathcal{C}\) 中每个对象 \(X\), 指定 \(\mathcal{D}\) 中一个对象 \(F(X)\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射上的映射: 对 \(\mathcal{C}\) 中每个态射 \(f: X \to Y\), 指定 \(\mathcal{D}\) 中一个态射 \(F(f): F(X) \to F(Y)\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这两个映射必须满足以下两个函子公理, 以“保持范畴结构”:&lt;/p&gt;
+&lt;p&gt;保持复合: 对于 \(\mathcal{C}\) 中任意可复合的态射 \(f: X \to Y\) 和 \(g: Y \to Z\), 有&lt;/p&gt;
+\[
+    F(g \circ_\mathcal{C} f) = F(g) \circ_\mathcal{D} F(f)
+    \]&lt;p&gt;
+(即, “先复合再映射”等于“先映射再复合”) .&lt;/p&gt;
+&lt;p&gt;保持单位元: 对于 \(\mathcal{C}\) 中任意对象 \(X\), 有&lt;/p&gt;
+\[
+    F(\text{id}_X) = \text{id}_{F(X)}
+    \]&lt;p&gt;
+(即, 单位态射映射为单位态射) .&lt;/p&gt;
+&lt;p&gt;在范畴的角度来讲, 构造一个函子总是容易的: 人们只需要 specify 他把某个 object 打到什么 object, 又把某个 morphism 打到什么 morphism 即可.&lt;/p&gt;
+&lt;h3 id=&#34;范畴等价-equivalence&#34;&gt;范畴等价 (equivalence)
+&lt;/h3&gt;&lt;p&gt;一个函子被称作 Fully Faithful 的, 如果对任意对象 \(X, Y \in \mathcal{C}\), 映射  \(F_{X,Y} : \mathrm{Hom}_{\mathcal{C}}(X, Y) \to \mathrm{Hom}_{\mathcal{D}}(F(X), F(Y))\)&lt;br&gt;
+是双射.&lt;/p&gt;
+&lt;p&gt;一个函子被称作 Essentially Surjective 的, 如果对任意对象 \(d \in \mathcal{D}\), 存在某个对象 \(c \in \mathcal{C}\), 使得 \(F(c) \cong d\) (即 \(F(c)\) 与 \(d\) 同构) .&lt;/p&gt;
+&lt;p&gt;两个范畴 \(\mathcal{C}\) 和 \(\mathcal{D}\) 称为等价的, 如果存在一个函子 \(F: \mathcal{C} \to \mathcal{D}\) 满足:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;\(F\) 是 Fully Faithful；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;\(F\) 是 Essentially Surjective.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;此时, 称 \(F\) 为一个等价函子.&lt;/p&gt;
+&lt;h3 id=&#34;切片范畴-slice&#34;&gt;切片范畴 (slice)
+&lt;/h3&gt;&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴, \(X \in \operatorname{Ob}(\mathcal{C})\) 是一个对象.定义 切片范畴 \(\mathcal{C}_{/X}\) (也称为 over category) 如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;对象:  所有形如 \((A, f)\) 的有序对, 其中 \(A \in \operatorname{Ob}(\mathcal{C})\), 且 \(f: A \to X\) 是 \(\mathcal{C}\) 中的一个态射.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射:  从 \((A, f)\) 到 \((B, g)\) 的态射是一个 \(\mathcal{C}\) 中的态射 \(h: A \to B\), 使得下图交换:&lt;/p&gt;
+\[
+  \begin{array}{ccc}
+  A &amp; \xrightarrow{\ h\ } &amp; B \\
+  &amp; \searrow &amp; \downarrow \\
+  &amp; &amp; X
+  \end{array}
+  \]&lt;p&gt;
+即满足 \(g \circ h = f\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对偶地, 我们也可以定义 under category $\mathcal{C}_{/X}$.&lt;/p&gt;
+&lt;h3 id=&#34;范畴的连接-join&#34;&gt;范畴的连接 (join)
+&lt;/h3&gt;&lt;p&gt;设 \(\mathcal{C}\) 和 \(\mathcal{D}\) 是两个范畴.定义它们的 联接 \(\mathcal{C} \star \mathcal{D}\) 如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;对象:  对象集是 \(\mathcal{C}\) 和 \(\mathcal{D}\) 对象集的不交并:&lt;/p&gt;
+\[
+  \operatorname{Ob}(\mathcal{C} \star \mathcal{D}) = \operatorname{Ob}(\mathcal{C}) \sqcup \operatorname{Ob}(\mathcal{D}).
+  \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射:  对于任意两个对象 \(x, y \in \operatorname{Ob}(\mathcal{C} \star \mathcal{D})\), 态射集定义为:&lt;/p&gt;
+\[
+  \operatorname{Hom}_{\mathcal{C} \star \mathcal{D}}(x, y) =
+  \begin{cases}
+  \operatorname{Hom}_{\mathcal{C}}(x, y), &amp; \text{若 } x, y \in \mathcal{C}, \\
+  \operatorname{Hom}_{\mathcal{D}}(x, y), &amp; \text{若 } x, y \in \mathcal{D}, \\
+  \{  \}, &amp; \text{若 } x \in \mathcal{C}, y \in \mathcal{D}, \\
+  \emptyset, &amp; \text{若 } x \in \mathcal{D}, y \in \mathcal{C}.
+  \end{cases}
+  \]&lt;p&gt;
+其中 \(\{\}\) 表示恰好含有一个态射的单点集.换言之, 对于任意 \(c \in \mathcal{C}\) 和任意 \(d \in \mathcal{D}\), 存在唯一一个态射 \(c \to d\), 记作 \(\iota_{c,d}\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这两个定义其实也许在普通范畴里用的会比较少. 但他在无穷范畴的领域里作用是很大的. 或许在普通范畴的领域里做这个而不放在无穷范畴的框架下, 就会显得有些别扭了.&lt;/p&gt;
+&lt;h3 id=&#34;范畴的局部化-localization&#34;&gt;范畴的局部化 (Localization)
+&lt;/h3&gt;&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴, \(W \subseteq \operatorname{Mor}(\mathcal{C})\) 是一类态射 (称为弱等价类) .范畴 \(\mathcal{C}\) 关于 \(W\) 的局部化是一个范畴 \(\mathcal{C}[W^{-1}]\) 加上一个函子 \(Q: \mathcal{C} \to \mathcal{C}[W^{-1}]\), 满足:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可逆性: 对任意 \(w \in W\), \(Q(w)\) 是 \(\mathcal{C}[W^{-1}]\) 中的同构.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;万有性质: 对任意范畴 \(\mathcal{D}\) 和任意函子 \(F: \mathcal{C} \to \mathcal{D}\), 若 \(F(w)\) 在 \(\mathcal{D}\) 中为同构 (对所有 \(w \in W\)) , 则存在唯一函子 \(\overline{F}: \mathcal{C}[W^{-1}] \to \mathcal{D}\) 使得 \(\overline{F} \circ Q = F\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;即下图可换:&lt;/p&gt;
+\[
+\begin{array}{ccc}
+\mathcal{C} &amp; \xrightarrow{\ Q\ } &amp; \mathcal{C}[W^{-1}] \\
+&amp; \searrow_{F} &amp; \downarrow_{\exists! \overline{F}} \\
+&amp; &amp; \mathcal{D}
+\end{array}
+\]&lt;p&gt;构造我就不写了, 大家集合论基础都很好啊, 哈哈.&lt;/p&gt;
+&lt;h2 id=&#34;范畴上不得不提的东西&#34;&gt;范畴上不得不提的东西
+&lt;/h2&gt;&lt;h3 id=&#34;fibration&#34;&gt;&amp;ldquo;Fibration&amp;rdquo;
+&lt;/h3&gt;&lt;h4 id=&#34;grothendieck-纤维化-fibration&#34;&gt;Grothendieck 纤维化 (Fibration)
+&lt;/h4&gt;&lt;p&gt;设 \( p: E \to C \) 是一个函子.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cartesian 态射: 态射 \( \phi: e&#39; \to e \) 在 \( E \) 中称为 \(p\)-Cartesian, 如果对于任意 \( e&#39;&#39; \in E \)、任意 \( \psi: e&#39;&#39; \to e \) 以及任意 \( h: p(e&#39;&#39;) \to p(e&#39;) \) 使得 \( p(\psi) = p(\phi) \circ h \), 存在唯一态射 \( \theta: e&#39;&#39; \to e&#39; \) 满足 \( p(\theta) = h \) 且 \( \psi = \phi \circ \theta \).即下图具有唯一提升:&lt;/li&gt;
+&lt;/ul&gt;
+\[
+\begin{array}{ccc}
+e&#39;&#39; &amp; \xrightarrow{\exists! \theta} &amp; e&#39; \\
+&amp; \searrow_{\psi} &amp; \downarrow_{\phi} \\
+&amp; &amp; e \\
+\end{array}
+\qquad
+\begin{array}{ccc}
+p(e&#39;&#39;) &amp; \xrightarrow{h} &amp; p(e&#39;) \\
+&amp; \searrow_{p(\psi)} &amp; \downarrow_{p(\phi)} \\
+&amp; &amp; p(e) \\
+\end{array}
+\]&lt;ul&gt;
+&lt;li&gt;Grothendieck Fibration: 函子 \( p: E \to C \) 称为一个 Grothendieck fibration (或纤维范畴) , 如果对于任意 \( e \in E \) 和任意态射 \( f: x \to p(e) \) 在 \( C \) 中, 存在一个 \(p\)-Cartesian 态射 \( \phi: e&#39; \to e \) 使得 \( p(\phi) = f \).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;直观上, 基范畴 \(C\) 中的每个箭头都可以“拉回”总范畴 \(E\) 中的对象, 且这种拉回具有最佳泛性质.&lt;/p&gt;
+&lt;h4 id=&#34;grothendieck-构造&#34;&gt;Grothendieck 构造
+&lt;/h4&gt;&lt;p&gt;设 \( \Phi: C^{\mathrm{op}} \to \mathbf{Cat} \) 是一个伪函子 (其中 \(\mathbf{Cat}\) 是小范畴的范畴) .定义其 Grothendieck 构造 为范畴 \( \int_C \Phi \) (也称为 Grothendieck 范畴) :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;对象: 有序对 \((x, a)\), 其中 \( x \in \operatorname{Ob}(C) \), \( a \in \operatorname{Ob}(\Phi(x)) \).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射: 从 \((x, a)\) 到 \((y, b)\) 的态射是一对 \((f, \alpha)\), 其中 \( f: x \to y \) 是 \(C\) 中的态射, 且 \(\alpha: a \to \Phi(f)(b)\) 是 \(\Phi(x)\) 中的态射 (注意: \(\Phi(f): \Phi(y) \to \Phi(x)\) 因为 \(\Phi\) 是反变的) .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;恒等态射: \( \mathrm{id}_{(x,a)} = (\mathrm{id}_x, \mathrm{id}_a) \).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复合: 给定 \((f, \alpha): (x,a) \to (y,b)\) 和 \((g, \beta): (y,b) \to (z,c)\), 其复合为:&lt;/p&gt;
+\[
+  (g, \beta) \circ (f, \alpha) = \big( g \circ f,\; \Phi(f)(\beta) \circ \alpha \big).
+  \]&lt;p&gt;
+(此处假设伪函子严格保持复合, 否则需使用给定的相容同构.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;存在自然的投影函子 \( p: \int_C \Phi \to C \), 定义为 \( p(x,a) = x \) 和 \( p(f,\alpha) = f \).该投影是一个 Grothendieck fibration, 且纤维 \( p^{-1}(x) \) 范畴等价于 \(\Phi(x)\).&lt;/p&gt;
+&lt;p&gt;而, 上述构造给出了 Grothendieck fibration 与 伪函子 \( C^{\mathrm{op}} \to \mathbf{Cat} \) 之间的等价: 每个伪函子通过 Grothendieck 构造产生一个纤维化, 反之每个纤维化给出一个伪函子 (将对象 \(x\) 映到纤维 \(E_x\), 态射 \(f\) 映到拉回函子 \(f^{}\)) .这一对应是范畴论中研究“依赖结构”的核心工具.&lt;/p&gt;
+&lt;p&gt;用 &lt;a class=&#34;link&#34; href=&#34;https://www.bananaspace.org/wiki/%E8%AE%B2%E4%B9%89:%E5%90%8C%E4%BC%A6%E4%BB%A3%E6%95%B0%E4%B8%8E%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/Grothendieck_%E6%9E%84%E9%80%A0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;香蕉空间&lt;/a&gt; 的话来说, 就是.&lt;/p&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/q=WzAsNSxbMCwwLCJYIl0sWzAsMiwiUyJdLFsyLDAsIlxcbWF0aGJme0NhdH0iXSxbMiwyLCJTIl0sWzEsMSwiXFxMZWZ0cmlnaHRhcnJvdyJdLFswLDEsImZpYmVycyIsMl0sWzMsMiwiZmlicmF0aW9uIiwyXV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;极限与余极限-limitcolimit&#34;&gt;极限与余极限 (limit/colimit)
+&lt;/h3&gt;&lt;p&gt;我相信上面那个可能是唯一对你来说陌生的东西. 接下来我就要介绍一些范畴论会用到的简单东西了.&lt;/p&gt;
+&lt;h4 id=&#34;始对象终对象-initialterminal-objects&#34;&gt;始对象/终对象 (initial/terminal objects)
+&lt;/h4&gt;&lt;p&gt;首先是始对象和终对象.在范畴论中, 始对象与终对象是最简单的泛性质的例子.(←这句话是AI说的, 虽然我部分认同这句话)&lt;/p&gt;
+&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;始对象 (Initial Object)&lt;br&gt;
+一个对象 \(I \in \mathcal{C}\) 称为始对象, 如果对于任意对象 \(X \in \mathcal{C}\), 存在恰好一个态射 \(I \to X\).&lt;/p&gt;
+\[
+    \forall X \in \mathcal{C}, \quad |\mathrm{Hom}_{\mathcal{C}}(I, X)| = 1.
+    \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;终对象 (Terminal Object)&lt;br&gt;
+一个对象 \(T \in \mathcal{C}\) 称为终对象, 如果对于任意对象 \(X \in \mathcal{C}\), 存在恰好一个态射 \(X \to T\).&lt;/p&gt;
+\[
+    \forall X \in \mathcal{C}, \quad |\mathrm{Hom}_{\mathcal{C}}(X, T)| = 1.
+    \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;零对象 (Zero Object)&lt;br&gt;
+如果一个对象同时是始对象和终对象, 则称为零对象.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;极限余极限-limitcolimit&#34;&gt;极限/余极限 (limit/colimit)
+&lt;/h4&gt;&lt;p&gt;接下来是极限 (和余极限) , 那这就是最不简单的泛性质的例子 (确信)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;极限 (Limit)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;设 \( \mathcal{J} \) 是一个小范畴 (small category), \( D: \mathcal{J} \to \mathcal{C} \) 是一个图表 (diagram).&lt;/p&gt;
+&lt;p&gt;一个从顶点 \( L \) 出发的锥 (cone) 是一族与图表交换的态射 \( p_j: L \to D(j) \), 即对 \( \mathcal{J} \) 中每个态射 \( u: j \to k \), 有 \( D(u) \circ p_j = p_k \).&lt;/p&gt;
+&lt;p&gt;该图表的极限是一个泛锥 (universal cone) \( (\lim D, \, p_j: \lim D \to D(j)) \).其泛性质 (universal property) 为: 对任意其他锥 \( (M, q_j) \), 存在唯一 (unique) 态射 \( f: M \to \lim D \) 使得对所有 \( j \) 有 \( p_j \circ f = q_j \).&lt;/p&gt;
+&lt;p&gt;常见特例:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;离散图表的极限: 积 (product), 记作 \( \prod_{j} D(j) \).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平行箭头图表的极限: 等化子 (equalizer).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;形如 \( \bullet \to \bullet \leftarrow \bullet \) 图表的极限: 拉回 (pullback).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;余极限 (Colimit)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;给定相同的图表 \( D: \mathcal{J} \to \mathcal{C} \).&lt;/p&gt;
+&lt;p&gt;一个到达顶点 \( L \) 的余锥 (cocone) 是一族态射 \( i_j: D(j) \to L \), 满足对 \( u: j \to k \) 有 \( i_k \circ D(u) = i_j \).&lt;/p&gt;
+&lt;p&gt;该图表的余极限是一个泛余锥 (universal cocone) \( (\operatorname{colim} D, \, i_j: D(j) \to \operatorname{colim} D) \).其泛性质为: 对任意其他余锥 \( (M, j_j) \), 存在唯一态射 \( f: \operatorname{colim} D \to M \) 使得对所有 \( j \) 有 \( f \circ i_j = j_j \).&lt;/p&gt;
+&lt;p&gt;常见特例:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;离散图表的余极限: 余积 (coproduct) 或和 (sum), 记作 \( \coprod_{j} D(j) \).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平行箭头图表的余极限: 余等化子 (coequalizer).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;形如 \( \bullet \leftarrow \bullet \to \bullet \) 图表的余极限: 推出 (pushout).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;完备余完备范畴-completecocomplete-categories&#34;&gt;完备/余完备范畴 (Complete/Cocomplete Categories)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一个范畴 \( \mathcal{C} \) 称为完备的, 如果 \( \mathcal{C} \) 中所有小图表 \( D: \mathcal{J} \to \mathcal{C} \) 的极限 \( \lim D \) 都存在.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个范畴 \( \mathcal{C} \) 称为余完备的, 如果 \( \mathcal{C} \) 中所有小图表的余极限 \( \operatorname{colim} D \) 都存在.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若范畴同时完备且余完备, 则称为双完备的 (bicomplete).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在一般范畴下, 有一个关键定理: 一个范畴是完备的当且仅当它拥有所有 (小) 积和所有等化子.它是余完备的当且仅当它拥有所有 (小) 余积和所有余等化子.&lt;/p&gt;
+&lt;p&gt;你会在这里碰到一个概念: 小范畴.这个概念总是让人很烦的: 严格叙述这些是集合论的工作, 但我相信不会有谁对这东西感兴趣.我们直接采取 Lurie(iii), 也是 Gaitsgory 的处理方式: 小范畴就是所有 object 构成集合的范畴.&lt;/p&gt;
+&lt;h4 id=&#34;共尾共首函子-cofinalcoinitial-functor&#34;&gt;共尾/共首函子 (cofinal/coinitial functor)
+&lt;/h4&gt;&lt;p&gt;处理极限和余极限的时候, 我们总是会做一些简化的: 比方说我们取 $x\in \mathbb{Z},x\to\infty$ 的时候, 我们总是可以只考虑 $x\geq 350234$ 的. 这种操作其实就是 cofinal/coinitial functor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cofinal Functor (共尾函子)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;设 \( F: \mathcal{I} \to \mathcal{J} \) 是一个函子 (通常 \(\mathcal{I}, \mathcal{J}\) 是小范畴) .&lt;/p&gt;
+&lt;p&gt;\( F \) 称为共尾的, 如果它满足极限不变性: 对任意范畴 \( \mathcal{C} \) 和任意函子 \( D: \mathcal{J} \to \mathcal{C} \), 如果余极限 \( \operatorname{colim}_{\mathcal{J}} D \) 存在, 则自然映射&lt;/p&gt;
+\[
+   \operatorname{colim}_{\mathcal{I}} (D \circ F) \longrightarrow \operatorname{colim}_{\mathcal{J}} D
+   \]&lt;p&gt;
+是一个同构.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Coinitial Functor (共首函子)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;\( F: \mathcal{I} \to \mathcal{J} \) 称为共首的, 如果它在对偶范畴中是共尾的.即 \( F^{\mathrm{op}}: \mathcal{I}^{\mathrm{op}} \to \mathcal{J}^{\mathrm{op}} \) 是共尾的.&lt;/p&gt;
+&lt;p&gt;他有一个等价定义, 涉及到 comma category (逗号范畴)与 zig-zag 图. 我们可以模掉这个定义, 因为 Lands 上面没写().&lt;/p&gt;
+&lt;h4 id=&#34;预层-presheaf&#34;&gt;预层 (presheaf)
+&lt;/h4&gt;&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴.一个\(\mathcal{C}\) 上的预层是一个函子:&lt;/p&gt;
+\[
+F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
+\]&lt;p&gt;
+其中 \(\mathcal{C}^{\mathrm{op}}\) 是 \(\mathcal{C}\) 的对偶范畴, \(\mathbf{Set}\) 是集合范畴.&lt;/p&gt;
+&lt;p&gt;换句话说, 对每个对象 \(X \in \mathcal{C}\), 指定一个集合 \(F(X)\)；对每个态射 \(f: X \to Y\) 在 \(\mathcal{C}\) 中, 指定一个映射 \(F(f): F(Y) \to F(X)\) (方向反转) , 满足函子公理:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\(F(\mathrm{id}_X) = \mathrm{id}_{F(X)}\)&lt;/li&gt;
+&lt;li&gt;\(F(g \circ f) = F(f) \circ F(g)\) (注意复合顺序反转) .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更一般地, 若 \(\mathcal{D}\) 是任意范畴, 则取值于 \(\mathcal{D}\) 的预层是函子 \(\mathcal{C}^{\mathrm{op}} \to \mathcal{D}\).&lt;/p&gt;
+&lt;h4 id=&#34;自然变换-natural-transformation&#34;&gt;自然变换 (Natural transformation)
+&lt;/h4&gt;&lt;p&gt;那么, 我们好像已经要图穷匕见了: 我们首先引入 Natural transformation:&lt;/p&gt;
+&lt;p&gt;设 \( F, G: \mathcal{C} \to \mathcal{D} \) 是两个函子 (从范畴 \(\mathcal{C}\) 到范畴 \(\mathcal{D}\)) .一个自然变换 \(\eta: F \Rightarrow G\) 由以下数据构成:&lt;/p&gt;
+&lt;p&gt;对 \(\mathcal{C}\) 中的每个对象 \( X \), 指定 \(\mathcal{D}\) 中的一个态射 \(\eta_X: F(X) \to G(X)\), 称为分量.&lt;/p&gt;
+&lt;p&gt;这些分量必须满足自然性条件: 对于 \(\mathcal{C}\) 中的任意态射 \( f: X \to Y \), 下图在 \(\mathcal{D}\) 中必须交换:&lt;/p&gt;
+\[
+\begin{array}{ccc}
+F(X) &amp; \xrightarrow{\eta_X} &amp; G(X) \\
+\downarrow{F(f)} &amp; &amp; \downarrow{G(f)} \\
+F(Y) &amp; \xrightarrow{\eta_Y} &amp; G(Y)
+\end{array}
+\]&lt;p&gt;
+即 \(\eta_Y \circ F(f) = G(f) \circ \eta_X\).&lt;/p&gt;
+&lt;h4 id=&#34;预层-presheaf-1&#34;&gt;预层 (Presheaf)
+&lt;/h4&gt;&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴。一个 \(\mathcal{C}\) 上的预层是一个函子:&lt;/p&gt;
+\[
+F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
+\]&lt;p&gt;
+其中 \(\mathcal{C}^{\mathrm{op}}\) 是 \(\mathcal{C}\) 的对偶范畴，\(\mathbf{Set}\) 是集合范畴。&lt;/p&gt;
+&lt;p&gt;换句话说，对每个对象 \(X \in \mathcal{C}\)，指定一个集合 \(F(X)\)；对每个态射 \(f: X \to Y\) 在 \(\mathcal{C}\) 中，指定一个映射 \(F(f): F(Y) \to F(X)\)（方向反转），满足函子公理:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\(F(\mathrm{id}_X) = \mathrm{id}_{F(X)}\)&lt;/li&gt;
+&lt;li&gt;\(F(g \circ f) = F(f) \circ F(g)\)（注意复合顺序反转）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更一般地，若 \(\mathcal{D}\) 是任意范畴，则取值于 \(\mathcal{D}\) 的预层是函子 \(\mathcal{C}^{\mathrm{op}} \to \mathcal{D}\)。&lt;/p&gt;
+&lt;h4 id=&#34;米田引理-yoneda-lemma&#34;&gt;米田引理 (Yoneda Lemma)
+&lt;/h4&gt;&lt;p&gt;对于任意预层 \(F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}\)，存在自然的双射:&lt;/p&gt;
+\[
+\mathrm{Nat}(h_X, F) \cong F(X)
+\]&lt;p&gt;
+其中 \(\mathrm{Nat}(h_X, F)\) 表示从 \(h_X\) 到 \(F\) 的自然变换的集合.&lt;/p&gt;
+&lt;h4 id=&#34;米田嵌入-yoneda-embedding-与可表预层-representable-presheaf&#34;&gt;米田嵌入 (Yoneda embedding) 与可表预层 (representable presheaf)
+&lt;/h4&gt;&lt;p&gt;现在, 回顾 slice 的定义, 我们可以定义 $\mathcal{C}$ 上的 presheaves 构成的范畴, 他其实就是 $\mathrm{Set}^{\mathcal{C}^{op}/}$. 那么, Yoneda lemma 实际上诱导了 Yoneda embedding&lt;/p&gt;
+\[
+よ: \mathcal{C} \hookrightarrow \mathbf{Set}^{\mathcal{C}^{\mathrm{op}}}
+\]&lt;p&gt;它定义如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将对象 \(X \in \mathcal{C}\) 映至预层 \(よ(X) := h_X = \mathrm{Hom}_{\mathcal{C}}(-, X)\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将态射 \(f: X \to Y\) 映至自然变换 \(よ(f): h_X \Rightarrow h_Y\), 其分量&lt;/p&gt;
+\[
+  (よ(f))_U: \mathrm{Hom}_{\mathcal{C}}(U, X) \to \mathrm{Hom}_{\mathcal{C}}(U, Y)
+  \]&lt;p&gt;
+由 \(g \mapsto f \circ g\) 给出.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;米田引理保证了他的忠实性. 而他的像, 则称为可表预层.&lt;/p&gt;
+&lt;p&gt;熟悉的人都知道, 可表预层的定义是想飘万里. 因此, 你当然不能期望所有预层都是可表预层. 但是, 根据 &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;关键定理&lt;/a&gt;, 实际上我们有如此强大的结论:&lt;/p&gt;
+&lt;p&gt;Every presheaf is a colimit of representable presheaves.&lt;/p&gt;
+&lt;p&gt;换言之, $\mathrm{Set}^{\mathcal{C}^{op}/}$ 是 $\mathcal{C}$ 的 &lt;strong&gt;cocompletion&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;kan-扩张-kan-extension&#34;&gt;Kan 扩张 (Kan extension)
+&lt;/h4&gt;&lt;p&gt;设有函子 \(F: \mathcal{C} \to \mathcal{E}\) 和 \(K: \mathcal{C} \to \mathcal{D}\)，则 \(F\) 沿 \(K\) 的左 Kan 扩张是一个函子 \(\operatorname{Lan}_K F: \mathcal{D} \to \mathcal{E}\)（如果存在），使得对于任意函子 \(G: \mathcal{D} \to \mathcal{E}\)，存在自然同构&lt;/p&gt;
+\[
+\operatorname{Hom}_{\operatorname{Fun}(\mathcal{D}, \mathcal{E})}(\operatorname{Lan}_K F, G) \cong \operatorname{Hom}_{\operatorname{Fun}(\mathcal{C}, \mathcal{E})}(F, G \circ K).
+\]&lt;p&gt;
+这实际上就是说 \(\operatorname{Lan}_K F\) 是函子 \(\operatorname{Fun}(\mathcal{D}, \mathcal{E}) \to \operatorname{Fun}(\mathcal{C}, \mathcal{E})\) 由复合 \(K\) 所诱导的函子的左伴随。&lt;/p&gt;
+&lt;p&gt;反之，也可以定义右 Kan 扩张 \(\operatorname{Ran}_K F: \mathcal{D} \to \mathcal{E}\) 满足相应的万有性质：
+&lt;/p&gt;
+\[
+\operatorname{Hom}_{\operatorname{Fun}(\mathcal{D}, \mathcal{E})}(G, \operatorname{Ran}_K F) \cong \operatorname{Hom}_{\operatorname{Fun}(\mathcal{C}, \mathcal{E})}(G \circ K, F).
+\]&lt;p&gt;
+即 \(\operatorname{Ran}_K F\) 是复合函子的右伴随.&lt;/p&gt;
+&lt;p&gt;如果你想理解这个映射的话, 可以将 $K:\mathcal{C}\to\mathcal{D}$ 取成一个&lt;strong&gt;嵌入&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;这种条件下我们考虑的是将 $F:\mathcal{C}\to \mathcal{E}$ &lt;strong&gt;自然地&lt;/strong&gt;扩展到 $\mathcal{E}$ 上.&lt;/p&gt;
+&lt;p&gt;实际上当目标范畴 \(\mathcal{E}\) 具有 (co)complete 性质时,，Kan 扩张有具体的表达式.&lt;/p&gt;
+&lt;p&gt;左 Kan 扩张可以表示为余极限:&lt;/p&gt;
+\[
+(\operatorname{Lan}_K F)(d) = \underset{(c \in \mathcal{C}_{/x})}{\operatorname{colim}} F(c),
+\]&lt;p&gt;右 Kan 扩张可以表示为极限:&lt;/p&gt;
+\[
+(\operatorname{Ran}_K F)(d) = \underset{(c \in \mathcal{C}_{x/})}{\lim} F(c),
+\]&lt;p&gt;没错, 不难看出前述关键结论实际上说的就是 $\mathcal{P}(\mathcal{C})$ 上在 Yoneda embedding 上的左 Kan 扩张.&lt;/p&gt;
+&lt;p&gt;一个 fancy 一点的写法, 是将复合 $K$ 的操作写为 $K^&lt;em&gt;$, 那么, $\operatorname{Lan}_K$ 是 $K^&lt;/em&gt;$ 的左伴随, $\operatorname{Lan}&lt;em&gt;K$ 是 $K^*$ 的右伴随. 也就是说, 他们对应到 $K&lt;/em&gt;!$ 和 $K_*$.&lt;/p&gt;
+&lt;h3 id=&#34;伴随-adjunction&#34;&gt;伴随 (adjunction)
+&lt;/h3&gt;&lt;p&gt;范畴论最最后的概念是 adjunction.&lt;/p&gt;
+&lt;h4 id=&#34;伴随函子-adjoint-pair&#34;&gt;伴随函子 (adjoint pair)
+&lt;/h4&gt;&lt;p&gt;设 \(F: \mathcal{C} \to \mathcal{D}\) 与 \(G: \mathcal{D} \to \mathcal{C}\) 为函子.我们说 \(F\) 是 \(G\) 的左伴随 (等价地, \(G\) 是 \(F\) 的右伴随) , 记作 \(F \dashv G\), 如果对于任意对象 \(X \in \mathcal{C}, Y \in \mathcal{D}\), 存在自然的双射:&lt;/p&gt;
+\[
+\Phi_{X,Y}: \mathrm{Hom}_{\mathcal{D}}(F(X), Y) \overset{\cong}{\longrightarrow} \mathrm{Hom}_{\mathcal{C}}(X, G(Y))
+\]&lt;p&gt;
+其自然性指: 对于任意 \(f: X&#39; \to X\) 在 \(\mathcal{C}\) 中与 \(g: Y \to Y&#39;\) 在 \(\mathcal{D}\) 中, 下图交换:&lt;/p&gt;
+\[
+\begin{array}{ccc}
+\mathrm{Hom}(F(X), Y) &amp; \xrightarrow{\Phi_{X,Y}} &amp; \mathrm{Hom}(X, G(Y)) \\
+\downarrow &amp; &amp; \downarrow \\
+\mathrm{Hom}(F(X&#39;), Y&#39;) &amp; \xrightarrow{\Phi_{X&#39;,Y&#39;}} &amp; \mathrm{Hom}(X&#39;, G(Y&#39;))
+\end{array}
+\]&lt;h4 id=&#34;单位余单位-unitcounit&#34;&gt;单位/余单位 (unit/counit)
+&lt;/h4&gt;&lt;p&gt;他有一个等价定义: unit 和 counit&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;单位 (Unit)&lt;/li&gt;
+&lt;/ol&gt;
+\[
+\eta: \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F
+\]&lt;p&gt;
+即对每个对象 \(X \in \mathcal{C}\), 有态射&lt;/p&gt;
+\[
+\eta_X: X \to G(F(X)).
+\]&lt;p&gt;
+它满足自然性: 对任意 \(f: X \to Y\), 有 \(G(F(f)) \circ \eta_X = \eta_Y \circ f\).&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;余单位 (Counit)&lt;/li&gt;
+&lt;/ol&gt;
+\[
+\varepsilon: F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}
+\]&lt;p&gt;
+即对每个对象 \(Y \in \mathcal{D}\), 有态射&lt;/p&gt;
+\[
+\varepsilon_Y: F(G(Y)) \to Y.
+\]&lt;p&gt;
+自然性: 对任意 \(g: Y \to Y&#39;\), 有 \(g \circ \varepsilon_Y = \varepsilon_{Y&#39;} \circ F(G(g))\).&lt;/p&gt;
+&lt;p&gt;它们必须满足以下三角恒等式 (Triangle Identities):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;左三角恒等式 (对任意 \(X \in \mathcal{C}\)) :&lt;/p&gt;
+\[
+   \varepsilon_{F(X)} \circ F(\eta_X) = \mathrm{id}_{F(X)}
+   \]&lt;p&gt;
+(在 \(\mathcal{D}\) 中: \(F(X) \xrightarrow{F(\eta_X)} F(G(F(X))) \xrightarrow{\varepsilon_{F(X)}} F(X)\) 复合为恒等.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;右三角恒等式 (对任意 \(Y \in \mathcal{D}\)) :&lt;/p&gt;
+\[
+   G(\varepsilon_Y) \circ \eta_{G(Y)} = \mathrm{id}_{G(Y)}
+   \]&lt;p&gt;
+(在 \(\mathcal{C}\) 中: \(G(Y) \xrightarrow{\eta_{G(Y)}} G(F(G(Y))) \xrightarrow{G(\varepsilon_Y)} G(Y)\) 复合为恒等.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;关键结论&#34;&gt;关键结论
+&lt;/h4&gt;&lt;p&gt;我们考虑伴随+(co)unit 构成的 adjunction pair, 有如下两个关键结论:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;右伴随 \(G\) 完全忠实 当且仅当 余单位 \(\varepsilon\) 是自然同构.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左伴随 \(F\) 完全忠实 当且仅当 单位 \(\eta\) 是自然同构.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以及,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;右伴随保持极限: 若 \(G\) 是右伴随, 则 \(G\) 保持所有 (小) 极限.即对任意函子 (图表) \(H: \mathcal{J} \to \mathcal{D}\), 若极限 \(\lim H\) 在 \(\mathcal{D}\) 中存在, 则 \(G(\lim H) \cong \lim (G \circ H)\) 在 \(\mathcal{C}\) 中自然成立.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左伴随保持余极限: 若 \(F\) 是左伴随, 则 \(F\) 保持所有 (小) 余极限.即若余极限 \(\operatorname{colim} K\) 在 \(\mathcal{C}\) 中存在 (对 \(K: \mathcal{J} \to \mathcal{C}\)) , 则 \(F(\operatorname{colim} K) \cong \operatorname{colim} (F \circ K)\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;后记前言&#34;&gt;后记/前言
+&lt;/h1&gt;&lt;p&gt;那么, 得道成仙的第一步: 筑基, 也就完成了.&lt;/p&gt;
+&lt;p&gt;所谓积跬步而至千里, $1$-范畴的理论, 也是通向无穷之路的第一步.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其四十六</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%85%AD/</link>
         <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
