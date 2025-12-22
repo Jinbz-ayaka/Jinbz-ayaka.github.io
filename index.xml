@@ -8,6 +8,19 @@
         <language>en-us</language>
         <copyright>Jinbz</copyright>
         <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>25.12.22 公告</title>
+        <link>https://Jinbz-ayaka.github.io/p/25.12.22-%E5%85%AC%E5%91%8A/</link>
+        <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/25.12.22-%E5%85%AC%E5%91%8A/</guid>
+        <description>&lt;p&gt;哎我真是*了 沟槽的 Hugo deploy 的时候一直出各种幺蛾子 导致我修了几个小时 bug&lt;/p&gt;
+&lt;p&gt;现在也算差不多修好了&lt;/p&gt;
+&lt;p&gt;短时间内尽量无图办公吧还是 等寒假有空了找个机会把 Hugo 宫了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;搞 ppt 去&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>屠龙技·前传: An Intro. to 1-Category</title>
         <link>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E5%89%8D%E4%BC%A0-an-intro.-to-1-category/</link>
         <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
@@ -6654,6 +6667,17 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 &lt;/ol&gt;
 &lt;p&gt;做网站真是一件令人上头的事(&lt;/p&gt;
 &lt;p&gt;过两天琢磨一下 markdown 吧(&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hello world?</title>
+        <link>https://Jinbz-ayaka.github.io/p/hello-world/</link>
+        <pubDate>Sun, 26 Jan 2025 21:40:31 +0800</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/hello-world/</guid>
+        <description>&lt;img src="https://Jinbz-ayaka.github.io/p/hello-world/111.jpg" alt="Featured image of post Hello world?" /&gt;&lt;h2 id=&#34;hello-world&#34;&gt;Hello world!
+&lt;/h2&gt;&lt;p&gt;你好，世界!&lt;/p&gt;
+&lt;p&gt;Hello, world!&lt;/p&gt;
 </description>
         </item>
         <item>
