@@ -188,8 +188,8 @@
     &gt;香蕉空间&lt;/a&gt; 的话来说, 就是.&lt;/p&gt;
 &lt;!-- https://q.uiver.app/#q=WzAsNSxbMCwwLCJYIl0sWzAsMiwiUyJdLFsyLDAsIlxcbWF0aHJte0NhdH0iXSxbMiwyLCJTIl0sWzEsMSwiXFxMZWZ0cmlnaHRhcnJvdyJdLFszLDIsImZpYmVycyIsMV0sWzAsMSwiZmlicmF0aW9uIiwxXV0= --&gt;
 &lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNSxbMCwwLCJYIl0sWzAsMiwiUyJdLFsyLDAsIlxcbWF0aHJte0NhdH0iXSxbMiwyLCJTIl0sWzEsMSwiXFxMZWZ0cmlnaHRhcnJvdyJdLFszLDIsImZpYmVycyIsMV0sWzAsMSwiZmlicmF0aW9uIiwxXV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
-### 极限与余极限 (limit/colimit)
-&lt;p&gt;我相信上面那个可能是唯一对你来说陌生的东西. 接下来我就要介绍一些范畴论会用到的简单东西了.&lt;/p&gt;
+&lt;h3 id=&#34;极限与余极限-limitcolimit&#34;&gt;极限与余极限 (limit/colimit)
+&lt;/h3&gt;&lt;p&gt;我相信上面那个可能是唯一对你来说陌生的东西. 接下来我就要介绍一些范畴论会用到的简单东西了.&lt;/p&gt;
 &lt;h4 id=&#34;始对象终对象-initialterminal-objects&#34;&gt;始对象/终对象 (initial/terminal objects)
 &lt;/h4&gt;&lt;p&gt;首先是始对象和终对象.在范畴论中, 始对象与终对象是最简单的泛性质的例子.(←这句话是AI说的, 虽然我部分认同这句话)&lt;/p&gt;
 &lt;p&gt;设 \(\mathcal{C}\) 是一个范畴.&lt;/p&gt;
