@@ -7,7 +7,65 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十七 P361-366</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p361-366/</link>
+        <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p361-366/</guid>
+        <description>&lt;p&gt;我回来了, 没想到吧&lt;/p&gt;
+&lt;p&gt;Hecke alg. 和 K-Theory&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$P=\operatorname{Hom}(T,\mathbb{C}^\ast )$, $P^\vee=\operatorname{Hom}(\mathbb{C}^\ast ,T)$. 我时至今日依然不知道哪个是 $X_\cdot$ :(&lt;/p&gt;
+&lt;p&gt;然后是, $R\subset P$ root sys, $R^\vee\subset P^\vee$ dual root sys. 有 bij. $\alpha\leftrightarrow \alpha^\vee$ 使得&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$\langle\alpha,\alpha^\vee\rangle=2$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$s_\alpha=x-\langle x,\alpha^\vee\rangle\alpha$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$c\alpha\in R\iff c=\pm1$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在这里, 我们开始忘掉第三章的 $\mathbb{W},\mathbb{T}$ 记号, 转而用 $W,T$ 表示抽象的 weyl gp. 或 torus. 现在, 我们对 $(W,S)$ 给出 Hecke alg.&lt;/p&gt;
+&lt;p&gt;Defn. The Hecke alg. $H_W$ of $(W,S)$ is given by $\mathbb{Z}[q,q^{-1}]$-alg, given by&lt;/p&gt;
+&lt;p&gt;(i) $T_{s_\alpha}\cdot T_{s_\beta}\cdot T_{s_\alpha}\cdots=T_{s_\beta}\cdot T_{s_\alpha}\cdot T_{s_\beta}\cdots$ ($m(\alpha,\beta)$ factors)&lt;/p&gt;
+&lt;p&gt;(ii) $(T_{s_\alpha}+1)(T_{s_\alpha}+q)=0$.&lt;/p&gt;
+&lt;p&gt;很诡异的定义, 不管看多少次都是这种感觉.&lt;/p&gt;
+&lt;p&gt;首先 $q=1$ 的情况, 他就是 $W$ 的群代数 (with $\mathbb{Z}[q,q^{-1}]$ 系数).&lt;/p&gt;
+&lt;p&gt;其次, 他当然有比较好的刻画:&lt;/p&gt;
+&lt;p&gt;Prop 7.1.2. $H_W$ admit 一组基 ${T_w}$, with $T_y\cdot T_w=T_{yw}$ for all $l(y)+l(w)=l(yw)$.&lt;/p&gt;
+&lt;p&gt;然后, 我们定义 so-called affine Weyl by $W_{aff}=W\ltimes P$, with $W\circlearrowright P$ naturally.&lt;/p&gt;
+&lt;p&gt;当然, 实际上从 Kac-Moody 的角度来看, affine case 的 Lie alg. 的 Weyl 确实长这样. 当然, 实际上你仔细去 check 定义的话, 他其实是 $W\ltimes Q$, where $Q=\mathbb{Z} R$. 有一些微小的差距&lt;/p&gt;
+&lt;p&gt;不过这不重要)&lt;/p&gt;
+&lt;p&gt;我们称 $(P,R)$ 是 simply-conn. 的, 如果 $R^\vee$ 张成 $P^\vee$.&lt;/p&gt;
+&lt;p&gt;Claim 7.1.5. 对于 simply conn. root sys. $\exists$ basis ${e_i}$ in $P$ s.t. $\langle e_i,\alpha_j^\vee\rangle=\delta_{ij}$.&lt;/p&gt;
+&lt;p&gt;现在, 我们只考虑 s.c. 情况的 s.s. gp.&lt;/p&gt;
+&lt;p&gt;我们已经在很早很早的时候就确立了 $\mathbb{Z}[P]\simeq R(T)$. 考虑 $P,W$ 到 $W_{aff}$ 的嵌入我们得到&lt;/p&gt;
+\[\mathbb{Z}[W_{aff}]\simeq \mathbb{Z}[W]\otimes_\mathbb{Z} R(T).\]&lt;p&gt;那么, 我们就可以定义 affine Hecke:&lt;/p&gt;
+&lt;p&gt;Defn 7.1.9. Affine Hecke $\mathbb{H}$ 是 free $\mathbb{Z}[q,q^{-1}]$-mod. with basis ${e^\lambda T_w|w\in W,\lambda\in P}$ s.t.&lt;/p&gt;
+&lt;p&gt;(1) $T_\alpha$ 之间的关系形如 $H_W$.&lt;/p&gt;
+&lt;p&gt;(2) ${e^\lambda}$ 之间的关系形如 $R(T)$.&lt;/p&gt;
+&lt;p&gt;(3) $s\in s_\alpha,\langle\lambda,\alpha_s^\vee\rangle=0\implies T_se^\lambda=e^\lambda T_s$,&lt;/p&gt;
+&lt;p&gt;(4) $s\in s_\alpha,\langle\lambda,\alpha_s^\vee\rangle=1\implies T_se^{s(\lambda)} T_s=q\cdot e^\lambda$.&lt;/p&gt;
+&lt;p&gt;这确实是一组不知道 well 不 well-def. 的运算关系. 但是, 其实 (3) 与 (4) 的定义等价于说如下的生成关系.&lt;/p&gt;
+&lt;p&gt;Lemma 7.1.10. $\alpha$ simple, then $\forall \lambda\in P$,&lt;/p&gt;
+\[T_{s_\alpha}e^{s_\alpha(\lambda)}-e^\lambda T_{s_\alpha}=(1-q)\frac{e^\lambda-e^{s_\alpha(\lambda)}}{1-e^{-\alpha}}.\]&lt;p&gt;这个定理也是比较容易看出的: 注意 $e^\lambda$ 与 $e^{\mu}$ 交换, 只用把 $\lambda$ 分拆成一堆 $\mu$ w/. $\langle\mu, \alpha^\vee_s\rangle$.&lt;/p&gt;
+&lt;p&gt;此外, 根据 $\mathbb{Z}[W_{aff}]\simeq \mathbb{Z}[W]\otimes_\mathbb{Z} R(T)$, 我们有 $\mathbb{Z}[q,q^{-1}]$-module isom.&lt;/p&gt;
+\[\mathbb{H}\simeq R(T)[q,q^{-1}]\otimes_{\mathbb{Z}[q,q^{-1}]} H_W\]&lt;p&gt;当然, 他不是 isom of alg.&lt;/p&gt;
+&lt;p&gt;然后, 在本章的最后, 我们有&lt;/p&gt;
+&lt;p&gt;Prop. 7.1.14. $Z(\mathbb{H})=R(T)^W[q,q^{-1}]$.&lt;/p&gt;
+&lt;p&gt;首先, 说明 $z(e^\lambda)=\sum e^{\lambda&amp;rsquo;}\in Z$, 这个直接对生成元验证即可. 有趣的部分在于验证 $R=\mathbb{Z}[q,q^{-1}]z(e^\lambda)=Z$. 这是通过 Lusztig 的一个操作. 首先, 考虑 $Z\twoheadrightarrow R(T)^W$ given by evaluation $q=1$, 我们得到 $\ker=(1-q)Z$. $Z_m/mZ_m=R(T)^W$. 但显然 $R_m/mR_m=R(T)^W$, 我们构造了&lt;/p&gt;
+\[R_m/mR_m\simeq Z_m/mZ_m.\]&lt;p&gt;此外, $R$ noetherian, 根据 6.1.2, $\mathbb{H}$ f.g. $R$-mod. 于是 $Z$ f.g. over $R$, $Z_m$ f.g. over $R_m$.&lt;/p&gt;
+&lt;p&gt;你可能会注意到我没有说明 $m$ 是 maximal ideal: 这是我对CG上叙述比较困惑的一个点: 不论在 $\mathbb{Z}[q,q^{-1}]$ 还是 $\mathbb{H}$ 或者 $R,Z$ 中, $m=(1-q)$ 都不太该是一个 maximal ideal. 当然不能直接运用 Nakayama. 但我们也有一个办法绕过他, 就是在上述 argument 中考虑 $\otimes \mathbb{Q}$. 那么 $(1-q)$ 就是 maximal 的了. 于是, $Z\otimes \mathbb{Q}=R\otimes \mathbb{Q}$.&lt;/p&gt;
+&lt;p&gt;但是, 显然 $\mathbb{Q} R\cap \mathbb{H}=R$, 我们最终得到 $Z=R$. 得证.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下班!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>25.12.22 公告</title>
         <link>https://Jinbz-ayaka.github.io/p/25.12.22-%E5%85%AC%E5%91%8A/</link>
         <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
