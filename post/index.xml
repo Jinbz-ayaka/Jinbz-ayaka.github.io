@@ -7,7 +7,84 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 03 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十七 P366-370</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p366-370/</link>
+        <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p366-370/</guid>
+        <description>&lt;p&gt;好的, time to Main&lt;/p&gt;
+&lt;p&gt;Set-up 是, $G$ comp. s.s. s.c. gp. $\mathfrak{g}$ Lie alg. $\mu:\tilde{\mathcal{N}}\to\mathcal{N}$, 有 $\tilde{\mathcal{N}}\simeq T^\ast \mathcal{B}$&lt;/p&gt;
+&lt;p&gt;而这个实际上, 去考虑 $Z_\Delta\subset \tilde{\mathcal{N}}\times\tilde{\mathcal{N}}$, 他在 $\tilde{\mathcal{N}}\times \tilde{\mathcal{N}}\simeq T^\ast (\mathcal{B}\times\mathcal{B})$ 下给出 isom.&lt;/p&gt;
+\[Z_\Delta=T^*_{\mathcal{B}_\Delta}(\mathcal{B}\times\mathcal{B}).\]&lt;p&gt;这便给出了&lt;/p&gt;
+\[K^G(Z_\Delta)= K^G(T^*_{\mathcal{B}_\Delta}(\mathcal{B}\times\mathcal{B}))\simeq K^G(\mathcal{B}_\Delta)\simeq R(T).\]&lt;p&gt;第一二个等号是利用 affine fibration 的 Thom 给出的. 而第三个则是利用 6.1.6 的 identification. 回忆一下: 首先将其对应到 $K^B(pt)$, 然后利用 $B$ solvable.&lt;/p&gt;
+&lt;p&gt;而这便引出了我们的第一个定理&lt;/p&gt;
+&lt;p&gt;Thm. 7.2.2. There is a natural isom. $K^G(Z)\simeq \mathbb{Z}[W_{aff}]$ s.t. the following commute&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWl9cXERlbHRhKSJdLFsyLDAsIkteRyhaKSJdLFsyLDIsIlxcWlpbV197YWZmfV0iXSxbMCwyLCJSKFQpIl0sWzAsMywiNy4yIl0sWzMsMiwiNy4xIl0sWzEsMl0sWzAsMV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWl9cXERlbHRhKSJdLFsyLDAsIkteRyhaKSJdLFsyLDIsIlxcWlpbV197YWZmfV0iXSxbMCwyLCJSKFQpIl0sWzAsMywiNy4yIl0sWzMsMiwiNy4xIl0sWzEsMl0sWzAsMV1d&amp;embed&#34; width=&#34;557&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;此外, 考虑 $A=G\times \mathbb{C}^\ast $, 我们还有 quantized 的版本, $K^A(Z_\Delta)\simeq R(T)[q,q^{-1}]$.&lt;/p&gt;
+&lt;p&gt;Thm. 7.2.5. There is a natural isom. $K^A(Z)\simeq \mathbb{H}$ s.t. the following commute&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkEoWl9cXERlbHRhKSJdLFsyLDAsIkteQShaKSJdLFsyLDIsIlxcYmJ7SH0iXSxbMCwyLCJSKFQpW3EscV57LTF9XSJdLFswLDMsIjcuMiJdLFszLDIsIjcuMSJdLFsxLDJdLFswLDFdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkEoWl9cXERlbHRhKSJdLFsyLDAsIkteQShaKSJdLFsyLDIsIlxcYmJ7SH0iXSxbMCwyLCJSKFQpW3EscV57LTF9XSJdLFswLDMsIjcuMiJdLFszLDIsIjcuMSJdLFsxLDJdLFswLDFdXQ==&amp;embed&#34; width=&#34;562&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;如何理解上一章的 $Z(\mathbb{H})=R(T)^W[q,q^{-1}]$ 呢? 对于 $p:Z\to pt$, 我们可以诱导 $p^\ast :R(A)=K^A(pt)\to K^A(Z)$. 当然, 这是一个 alg. morph. given by tensor. 在这里,&lt;/p&gt;
+\[R(A)\hookrightarrow K^A(Z_\Delta)\hookrightarrow K^A(Z),\]&lt;p&gt;就对应到&lt;/p&gt;
+\[R(T)^W[q,q^{-1}]\hookrightarrow R(T)[q,q^{-1}]\hookrightarrow \mathbb{H}.\]&lt;p&gt;Lemma 7.2.11. $\mathbb{H}$ is a free $R(T)^W[q,q^{-1}]$-mod. of rank \((\# W)^2\).&lt;/p&gt;
+&lt;p&gt;这依然是因为 6.1.2.(b) 以及 $G$ s.s. 的条件.&lt;/p&gt;
+&lt;p&gt;不同的 equiv. K-theory 之间的关系可以如此刻画: 记 $I^{R(T)}$ 为在 $1$ 处 vanishes 的 $W$-inv. function 全体, 有&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsOCxbMCwwLCJLXntHXFx0aW1lcyBcXENDXip9KFopIl0sWzEsMCwiS157R30oWikiXSxbMiwwLCJLKFopIl0sWzMsMCwiSChaKSJdLFswLDEsIlxcYmJ7SH0iXSxbMSwxLCJcXFpaW1dfe2FmZn1dIl0sWzIsMSwiXFxaWltXXVxcbHRpbWVzIFIoVCkvKElee1IoVCl9KSJdLFszLDEsIlxcWlpbV10iXSxbMCwxXSxbMSwyXSxbMiwzXSxbNCw1XSxbNSw2XSxbNiw3XSxbMCw0LCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDUsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsNiwiIiwxLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMyw3LCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsOCxbMCwwLCJLXntHXFx0aW1lcyBcXENDXip9KFopIl0sWzEsMCwiS157R30oWikiXSxbMiwwLCJLKFopIl0sWzMsMCwiSChaKSJdLFswLDEsIlxcYmJ7SH0iXSxbMSwxLCJcXFpaW1dfe2FmZn1dIl0sWzIsMSwiXFxaWltXXVxcbHRpbWVzIFIoVCkvKElee1IoVCl9KSJdLFszLDEsIlxcWlpbV10iXSxbMCwxXSxbMSwyXSxbMiwzXSxbNCw1XSxbNSw2XSxbNiw3XSxbMCw0LCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDUsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsNiwiIiwxLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMyw3LCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==&amp;embed&#34; width=&#34;1038&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;然后要 quantize 一些东西. 首先, 由于 $W\hookrightarrow W_{aff}$ 我们可以将 $\mathbb{Z}[W]$ 对应到 $K^G(Z)$ 的 subalg. 于是&lt;/p&gt;
+&lt;p&gt;Prop. 7.2.14. 由上诱导的 $K^G(T^\ast \mathcal{B})$ 的 $W$-作用, 对应到 $R(T)$ 上的 canonical $W$-作用.&lt;/p&gt;
+&lt;p&gt;Cor. 7.2.15.&lt;/p&gt;
+\[\mathbb{Z}[W]\hookrightarrow \mathbb{Z}[W_{aff}]\overset{\sim}{\to} K^G(Z)\to K(Z)\to H(Z)\overset{\sim}{\to}\mathbb{Z}[W],\]&lt;p&gt;is id.&lt;/p&gt;
+&lt;p&gt;Thm. 7.2.16. $K^A(T^\ast \mathcal{B})$ 的 $W_{aff}$-作用, given by&lt;/p&gt;
+\[\hat{T}_{s_\alpha}: e^\lambda\mapsto \frac{e^\lambda-e^{s_\alpha(\lambda)}}{e^\alpha-1}-q\frac{e^\lambda-e_{s_\alpha(\lambda)+\alpha}}{e^\alpha-1}.\]&lt;p&gt;当然这个东西也是 Lusztig 搞的.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>浮生多少记-其四十七</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%83/</link>
+        <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%83/</guid>
+        <description>&lt;p&gt;人在上海, 刚下飞机&lt;/p&gt;
+&lt;p&gt;谢邀&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这些天代数tv忙完了期末最最后的一些活, 可以开始操作一些了.&lt;/p&gt;
+&lt;p&gt;压力好大;w;&lt;/p&gt;
+&lt;p&gt;至少可以翻一翻尘封已久的那些文献了&lt;/p&gt;
+&lt;p&gt;取之如泥沙, 用之尽锱铢)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;代数tv这些天还是搞了很多, 期末的内容.&lt;/p&gt;
+&lt;p&gt;比方说Georep课程, 最后一节课搞了点组合小品.&lt;/p&gt;
+&lt;p&gt;比方说自守形式课程, 最后一节课讲了个 Weil&amp;rsquo;s interpretation.&lt;/p&gt;
+&lt;p&gt;当然还有 infcat. final 当然不算太成功.&lt;/p&gt;
+&lt;p&gt;但是还是圆满收官了.&lt;/p&gt;
+&lt;p&gt;尽吾志也而不能至者, 可以无悔矣. 汝孰能讥之乎?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这个学期确实给自己安排太多活了&lt;/p&gt;
+&lt;p&gt;从学期初到学期末的 Achar 讨论班, 中科院的 Coulomb Branch 讨论班, 中间穿插的 CG 饲养日记&lt;/p&gt;
+&lt;p&gt;以及 infcat. 当然还有入党的各种事情.&lt;/p&gt;
+&lt;p&gt;现在的代数tv躺在床上, 他保证下学期一定不给自己安排这么多活了.&lt;/p&gt;
+&lt;p&gt;这世界上没有什么比 TFT 更有趣的东西.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;感觉有时候也挺捉襟见肘的.&lt;/p&gt;
+&lt;p&gt;好像自己已经学了很多东西,&lt;/p&gt;
+&lt;p&gt;又好像有很多东西再学一些就可以更顺畅地阅读.&lt;/p&gt;
+&lt;p&gt;不管怎样, 时间不完全是代数tv的敌人.&lt;/p&gt;
+&lt;p&gt;打起精神来. ICCM 还是有些有意思的东西的.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;立个 flag 吧.&lt;/p&gt;
+&lt;p&gt;回北京之前把 CG7 和屠龙技上中下 (abc) 更完.&lt;/p&gt;
+&lt;p&gt;然后也写一点 TFT 相关的期末作业.&lt;/p&gt;
+&lt;p&gt;数学还是很有意思的.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下班! 下一篇应该是年度总结?&lt;/p&gt;
+&lt;p&gt;看什么时候闲了()&lt;/p&gt;
+&lt;p&gt;2026.1.2 23:45 于张江科学城全季&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其三十七 P361-366</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p361-366/</link>
         <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
@@ -32,7 +109,7 @@
 &lt;p&gt;在这里, 我们开始忘掉第三章的 $\mathbb{W},\mathbb{T}$ 记号, 转而用 $W,T$ 表示抽象的 weyl gp. 或 torus. 现在, 我们对 $(W,S)$ 给出 Hecke alg.&lt;/p&gt;
 &lt;p&gt;Defn. The Hecke alg. $H_W$ of $(W,S)$ is given by $\mathbb{Z}[q,q^{-1}]$-alg, given by&lt;/p&gt;
 &lt;p&gt;(i) $T_{s_\alpha}\cdot T_{s_\beta}\cdot T_{s_\alpha}\cdots=T_{s_\beta}\cdot T_{s_\alpha}\cdot T_{s_\beta}\cdots$ ($m(\alpha,\beta)$ factors)&lt;/p&gt;
-&lt;p&gt;(ii) $(T_{s_\alpha}+1)(T_{s_\alpha}+q)=0$.&lt;/p&gt;
+&lt;p&gt;(ii) $(T_{s_\alpha}+1)(T_{s_\alpha}-q)=0$.&lt;/p&gt;
 &lt;p&gt;很诡异的定义, 不管看多少次都是这种感觉.&lt;/p&gt;
 &lt;p&gt;首先 $q=1$ 的情况, 他就是 $W$ 的群代数 (with $\mathbb{Z}[q,q^{-1}]$ 系数).&lt;/p&gt;
 &lt;p&gt;其次, 他当然有比较好的刻画:&lt;/p&gt;
