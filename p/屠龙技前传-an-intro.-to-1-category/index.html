@@ -284,6 +284,7 @@
       <ol>
         <li><a href="#范畴-category">范畴 (category)</a></li>
         <li><a href="#群胚-groupoid">群胚 (groupoid)</a></li>
+        <li><a href="#幺半范畴-monoidal-category">幺半范畴 (monoidal category)</a></li>
       </ol>
     </li>
     <li><a href="#范畴间的函子">范畴间的函子</a>
@@ -293,6 +294,7 @@
         <li><a href="#切片范畴-slice">切片范畴 (slice)</a></li>
         <li><a href="#范畴的连接-join">范畴的连接 (join)</a></li>
         <li><a href="#范畴的局部化-localization">范畴的局部化 (Localization)</a></li>
+        <li><a href="#松弛反松弛-laxoplax-函子">松弛/反松弛 (Lax/Oplax) 函子</a></li>
       </ol>
     </li>
     <li><a href="#范畴上不得不提的东西">范畴上不得不提的东西</a>
@@ -432,6 +434,30 @@
     f^{-1} \circ f = \operatorname{id}_X \quad \text{和} \quad f \circ f^{-1} = \operatorname{id}_Y.
     \]</li>
 </ol>
+<h3 id="幺半范畴-monoidal-category">幺半范畴 (monoidal category)
+</h3><p>一个幺半范畴是一个六元组 \((\mathcal{C}, \otimes, I, \alpha, \lambda, \rho)\), 其中:</p>
+<ol>
+<li>
+<p>\(\mathcal{C}\) 是一个范畴.</p>
+</li>
+<li>
+<p>\(\otimes: \mathcal{C} \times \mathcal{C} \to \mathcal{C}\) 是一个双函子, 称为张量积.</p>
+</li>
+<li>
+<p>\(I \in \operatorname{Ob}(\mathcal{C})\) 是一个对象, 称为单位对象.</p>
+</li>
+<li>
+<p>\(\alpha\) 是一个自然同构（结合子）</p>
+\[
+    \alpha_{X,Y,Z}: (X \otimes Y) \otimes Z \overset{\sim}{\longrightarrow} X \otimes (Y \otimes Z), \quad \forall X,Y,Z \in \mathcal{C}.
+    \]</li>
+<li>
+<p>\(\lambda\) 和 \(\rho\) 是自然同构（左、右单位子）</p>
+\[
+    \lambda_X: I \otimes X \overset{\sim}{\longrightarrow} X, \quad \rho_X: X \otimes I \overset{\sim}{\longrightarrow} X, \quad \forall X \in \mathcal{C}.
+    \]<p>当然他们还要满足一定相容性: 五边形公理和三角形公理.</p>
+</li>
+</ol>
 <h2 id="范畴间的函子">范畴间的函子
 </h2><h3 id="函子-functor">函子 (functor)
 </h3><p>设 \(\mathcal{C}\) 和 \(\mathcal{D}\) 是两个范畴.一个函子 \(F: \mathcal{C} \to \mathcal{D}\) 由两部分构成:</p>
@@ -531,6 +557,43 @@
 \]<p>构造我就不写了, 大家集合论基础都很好啊, 哈哈.</p>
 <p>好吧, 必须承认这个构造不是 trivial 的.</p>
 <p>不过这个不是讨论的主题 ()</p>
+<h3 id="松弛反松弛-laxoplax-函子">松弛/反松弛 (Lax/Oplax) 函子
+</h3><p>Lax 幺半函子</p>
+<p>设 \((\mathcal{C}, \otimes, I, \alpha, \lambda, \rho)\) 和 \((\mathcal{D}, \boxtimes, J, \beta, \mu, \nu)\) 为两个幺半范畴. 一个从 \(\mathcal{C}\) 到 \(\mathcal{D}\) 的 lax 幺半函子 \((F, \varphi, \varphi_0)\) 包含:</p>
+<ol>
+<li>
+<p>底层函子: 一个普通函子 \(F: \mathcal{C} \to \mathcal{D}\).</p>
+</li>
+<li>
+<p>张量积结构映射: 一个自然变换</p>
+\[
+    \varphi_{X,Y}: F(X) \boxtimes F(Y) \longrightarrow F(X \otimes Y), \quad \forall X, Y \in \mathcal{C}.
+    \]</li>
+<li>
+<p>单位元结构映射: 一个态射</p>
+\[
+    \varphi_0: J \longrightarrow F(I).
+    \]</li>
+</ol>
+<p>需要满足六边形和四边形的相容条件.</p>
+<p>Oplax 幺半函子:</p>
+<p>一个 oplax 幺半函子 \((F, \psi, \psi_0)\) 的定义结构与 lax 函子完全相同, 唯一的区别是所有结构映射的方向反转:</p>
+<ol>
+<li>
+<p>自然变换方向为:</p>
+\[
+    \psi_{X,Y}: F(X \otimes Y) \longrightarrow F(X) \boxtimes F(Y), \quad \forall X, Y \in \mathcal{C}.
+    \]</li>
+<li>
+<p>单位元结构映射方向为:</p>
+\[
+    \psi_0: F(I) \longrightarrow J.
+    \]</li>
+<li>
+<p>相容性图的结构也随之“翻转”（将 $\phi$ 箭头反向, $\psi$ 箭头正向, 并相应调整图表路径）.</p>
+</li>
+</ol>
+<p>称一个 lax/oplax monoidal 函子是一个 monoidal 函子, 如果 2,3 中定义的映射是 isomorphism.</p>
 <h2 id="范畴上不得不提的东西">范畴上不得不提的东西
 </h2><h3 id="fibration">&ldquo;Fibration&rdquo;
 </h3><h4 id="grothendieck-纤维化-fibration">Grothendieck 纤维化 (Fibration)
@@ -681,20 +744,34 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIl0sWzIsMCwiRyhYKSJdLFsyLDIsIkcoWSkiXSxbMCwyLCJGKFkpIl0sWzMsMiwiXFxldGFfWSJdLFswLDEsIlxcZXRhX1giXSxbMCwzLCJGKGYpIiwxXSxbMSwyLCJHKGYpIiwxXV0= -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIl0sWzIsMCwiRyhYKSJdLFsyLDIsIkcoWSkiXSxbMCwyLCJGKFkpIl0sWzMsMiwiXFxldGFfWSJdLFswLDEsIlxcZXRhX1giXSxbMCwzLCJGKGYpIiwxXSxbMSwyLCJHKGYpIiwxXV0=&embed" width="460" height="432" style="border-radius: 8px; border: none;"></iframe>
 即 \(\eta_Y \circ F(f) = G(f) \circ \eta_X\).
+<p>Remark:</p>
+<p>一个 lax 幺半自然变换 (lax monoidal natural transformation) 是两个 lax 幺半函子之间的、且与它们各自的松弛幺半结构相容的自然变换.</p>
+<p>设 \((F, \varphi^F, \varphi^F_0)\) 和 \((G, \varphi^G, \varphi^G_0)\) 为两个幺半范畴 \(\mathcal{C}\) 到 \(\mathcal{D}\) 的 <strong>lax 幺半函子</strong>. 它们之间的一个 <strong>lax 幺半自然变换</strong> \(\theta: F \Rightarrow G\) 是一个自然变换, 并且满足以下两个额外的相容性条件:</p>
+<ol>
+<li>与张量积结构相容: 对 \(\mathcal{C}\) 中任意对象 \(X, Y\), 下图交换</li>
+</ol>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEYoWSkiXSxbMiwwLCJGKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwyLCJHKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEcoWSkiXSxbMiwyLCJHKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwxXSxbMCwyXSxbMSwzXSxbMiwzXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEYoWSkiXSxbMiwwLCJGKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwyLCJHKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEcoWSkiXSxbMiwyLCJHKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwxXSxbMCwyXSxbMSwzXSxbMiwzXV0=&embed" width="670" height="432" style="border-radius: 8px; border: none;"></iframe>
+<ol start="2">
+<li>与单位元结构相容: 下图交换</li>
+</ol>
+<!-- https://q.uiver.app/#q=WzAsMyxbMCwwLCJJX3tcXG1hdGhjYWx7RH19Il0sWzAsMiwiRihJX3tcXG1hdGhjYWx7Q319KSJdLFsyLDIsIkcoSV97XFxtYXRoY2Fse0N9fSkiXSxbMCwxXSxbMSwyXSxbMCwyXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMyxbMCwwLCJJX3tcXG1hdGhjYWx7RH19Il0sWzAsMiwiRihJX3tcXG1hdGhjYWx7Q319KSJdLFsyLDIsIkcoSV97XFxtYXRoY2Fse0N9fSkiXSxbMCwxXSxbMSwyXSxbMCwyXV0=&embed" width="459" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>这里 \(\otimes_{\mathcal{C}}, I_{\mathcal{C}}\) 和 \(\otimes_{\mathcal{D}}, I_{\mathcal{D}}\) 分别是 \(\mathcal{C}\) 和 \(\mathcal{D}\) 的张量积与单位对象.</p>
 <h4 id="预层-presheaf-1">预层 (Presheaf)
-</h4><p>设 \(\mathcal{C}\) 是一个范畴。一个 \(\mathcal{C}\) 上的预层是一个函子:</p>
+</h4><p>设 \(\mathcal{C}\) 是一个范畴. 一个 \(\mathcal{C}\) 上的预层是一个函子:</p>
 \[
 F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 \]<p>
-其中 \(\mathcal{C}^{\mathrm{op}}\) 是 \(\mathcal{C}\) 的对偶范畴，\(\mathbf{Set}\) 是集合范畴。</p>
-<p>换句话说，对每个对象 \(X \in \mathcal{C}\)，指定一个集合 \(F(X)\)；对每个态射 \(f: X \to Y\) 在 \(\mathcal{C}\) 中，指定一个映射 \(F(f): F(Y) \to F(X)\)（方向反转），满足函子公理:</p>
+其中 \(\mathcal{C}^{\mathrm{op}}\) 是 \(\mathcal{C}\) 的对偶范畴, \(\mathbf{Set}\) 是集合范畴.</p>
+<p>换句话说, 对每个对象 \(X \in \mathcal{C}\), 指定一个集合 \(F(X)\)；对每个态射 \(f: X \to Y\) 在 \(\mathcal{C}\) 中, 指定一个映射 \(F(f): F(Y) \to F(X)\)（方向反转）, 满足函子公理:</p>
 <ul>
 <li>\(F(\mathrm{id}_X) = \mathrm{id}_{F(X)}\)</li>
-<li>\(F(g \circ f) = F(f) \circ F(g)\)（注意复合顺序反转）。</li>
+<li>\(F(g \circ f) = F(f) \circ F(g)\)（注意复合顺序反转）.</li>
 </ul>
-<p>更一般地，若 \(\mathcal{D}\) 是任意范畴，则取值于 \(\mathcal{D}\) 的预层是函子 \(\mathcal{C}^{\mathrm{op}} \to \mathcal{D}\)。</p>
+<p>更一般地, 若 \(\mathcal{D}\) 是任意范畴, 则取值于 \(\mathcal{D}\) 的预层是函子 \(\mathcal{C}^{\mathrm{op}} \to \mathcal{D}\).</p>
 <h4 id="米田引理-yoneda-lemma">米田引理 (Yoneda Lemma)
-</h4><p>对于任意预层 \(F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}\)，存在自然的双射:</p>
+</h4><p>对于任意预层 \(F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}\), 存在自然的双射:</p>
 \[
 \mathrm{Nat}(h_X, F) \cong F(X)
 \]<p>
@@ -721,12 +798,12 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 <p>Every presheaf is a colimit of representable presheaves.</p>
 <p>换言之, $\mathrm{Set}^{\mathcal{C}^{op}/}$ 是 $\mathcal{C}$ 的 <strong>cocompletion</strong>.</p>
 <h4 id="kan-扩张-kan-extension">Kan 扩张 (Kan extension)
-</h4><p>设有函子 \(F: \mathcal{C} \to \mathcal{E}\) 和 \(K: \mathcal{C} \to \mathcal{D}\)，则 \(F\) 沿 \(K\) 的左 Kan 扩张是一个函子 \(\operatorname{Lan}_K F: \mathcal{D} \to \mathcal{E}\)（如果存在），使得对于任意函子 \(G: \mathcal{D} \to \mathcal{E}\)，存在自然同构</p>
+</h4><p>设有函子 \(F: \mathcal{C} \to \mathcal{E}\) 和 \(K: \mathcal{C} \to \mathcal{D}\), 则 \(F\) 沿 \(K\) 的左 Kan 扩张是一个函子 \(\operatorname{Lan}_K F: \mathcal{D} \to \mathcal{E}\)（如果存在）, 使得对于任意函子 \(G: \mathcal{D} \to \mathcal{E}\), 存在自然同构</p>
 \[
 \operatorname{Hom}_{\operatorname{Fun}(\mathcal{D}, \mathcal{E})}(\operatorname{Lan}_K F, G) \cong \operatorname{Hom}_{\operatorname{Fun}(\mathcal{C}, \mathcal{E})}(F, G \circ K).
 \]<p>
-这实际上就是说 \(\operatorname{Lan}_K F\) 是函子 \(\operatorname{Fun}(\mathcal{D}, \mathcal{E}) \to \operatorname{Fun}(\mathcal{C}, \mathcal{E})\) 由复合 \(K\) 所诱导的函子的左伴随。</p>
-<p>反之，也可以定义右 Kan 扩张 \(\operatorname{Ran}_K F: \mathcal{D} \to \mathcal{E}\) 满足相应的万有性质：
+这实际上就是说 \(\operatorname{Lan}_K F\) 是函子 \(\operatorname{Fun}(\mathcal{D}, \mathcal{E}) \to \operatorname{Fun}(\mathcal{C}, \mathcal{E})\) 由复合 \(K\) 所诱导的函子的左伴随.</p>
+<p>反之, 也可以定义右 Kan 扩张 \(\operatorname{Ran}_K F: \mathcal{D} \to \mathcal{E}\) 满足相应的万有性质:
 </p>
 \[
 \operatorname{Hom}_{\operatorname{Fun}(\mathcal{D}, \mathcal{E})}(G, \operatorname{Ran}_K F) \cong \operatorname{Hom}_{\operatorname{Fun}(\mathcal{C}, \mathcal{E})}(G \circ K, F).
@@ -734,7 +811,7 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 即 \(\operatorname{Ran}_K F\) 是复合函子的右伴随.</p>
 <p>如果你想理解这个映射的话, 可以将 $K:\mathcal{C}\to\mathcal{D}$ 取成一个<strong>嵌入</strong>.</p>
 <p>这种条件下我们考虑的是将 $F:\mathcal{C}\to \mathcal{E}$ <strong>自然地</strong>扩展到 $\mathcal{E}$ 上.</p>
-<p>实际上当目标范畴 \(\mathcal{E}\) 具有 (co)complete 性质时,，Kan 扩张有具体的表达式.</p>
+<p>实际上当目标范畴 \(\mathcal{E}\) 具有 (co)complete 性质时,, Kan 扩张有具体的表达式.</p>
 <p>左 Kan 扩张可以表示为余极限:</p>
 \[
 (\operatorname{Lan}_K F)(d) = \underset{(c \in \mathcal{C}_{/x})}{\operatorname{colim}} F(c),
@@ -870,12 +947,12 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
             
                 
 <article class="">
-    <a href="/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E5%89%8D%E4%BC%A0-landing-on-the-infty-cat.-star/">
+    <a href="/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">屠龙技·前传: Landing on the infty-cat. star </h2>
+            <h2 class="article-title">屠龙技·上: Landing on the infty-cat. star </h2>
         </div>
     </a>
 </article>

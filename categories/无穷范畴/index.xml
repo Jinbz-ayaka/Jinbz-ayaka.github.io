@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%97%A0%E7%A9%B7%E8%8C%83%E7%95%B4/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>屠龙技·前传: Landing on the infty-cat. star </title>
-        <link>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E5%89%8D%E4%BC%A0-landing-on-the-infty-cat.-star/</link>
-        <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+        <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%97%A0%E7%A9%B7%E8%8C%83%E7%95%B4/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>屠龙技·上: Landing on the infty-cat. star </title>
+        <link>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/</link>
+        <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E5%89%8D%E4%BC%A0-landing-on-the-infty-cat.-star/</guid>
+        <guid>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/</guid>
         <description>&lt;p&gt;至人无己, 神人无功, 圣人无名.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;前言&#34;&gt;前言
@@ -98,7 +98,172 @@
 &lt;p&gt;有: $N\mathscr{C}$ 几乎是一个 Kan complex: 他对 $n\geq 4$ 的 horn inclusion 有提升性质. (你可以通过 nerves 是 $2$-coskeletal 看出). 此外, 他是 Kan complex 当且仅当 $\mathscr{C}$ 是 groupoid.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;无穷范畴-infty-category-与充实范畴-enriched-category&#34;&gt;无穷范畴 ($\infty$-category) 与充实范畴 (enriched category)
-&lt;/h2&gt;</description>
+&lt;/h2&gt;&lt;h3 id=&#34;infty-范畴和他的兄弟姐妹-brothers-and-sisters&#34;&gt;$\infty$-范畴和他的兄弟姐妹 (brothers and sisters).
+&lt;/h3&gt;&lt;h4 id=&#34;复合器-composer-与复合&#34;&gt;复合器 (composer) 与复合
+&lt;/h4&gt;&lt;p&gt;称一个 sSet 是一个 composer, 如果他对于 spine inclusion $I^n\to\Delta^n$ 有提升性质.&lt;/p&gt;
+&lt;p&gt;于是我们可以定义一堆 morphisms (1-simplex) 的复合: 一个 $\Delta^n$ 提升的选取. 这当然不是唯一的, 这也就体现出了该理论中一个重要的特质: 复合不一定唯一.&lt;/p&gt;
+&lt;h4 id=&#34;1-simplex-间的等价&#34;&gt;1-simplex 间的等价
+&lt;/h4&gt;&lt;p&gt;对于 $X$ sSet, $f,g:x\to y$ 1-simplices. 我们称 $f$ 和 $g$ 等价 (equivalent), 如果存在 2-simplices $\sigma:\Delta^2\to X$, 使得&lt;/p&gt;
+&lt;p&gt;(i) $\sigma|_{\Delta^{{0,1}}}=f$,&lt;/p&gt;
+&lt;p&gt;(ii) $\sigma|_{\Delta^{{0,2}}}=g$,&lt;/p&gt;
+&lt;p&gt;(iii) $\sigma|_{\Delta^{{1,2}}}=\operatorname{id}_y$.&lt;/p&gt;
+&lt;p&gt;你当然能 check 自反性. 但传递性和对称性呢? 实际上, 你可以很快看出, 如果 composer $X$ 具有 inner $3$-horn inclusion lifting property, 那么&lt;/p&gt;
+&lt;p&gt;(1) $f,g$ 之间的 composite 存在,&lt;/p&gt;
+&lt;p&gt;(2) 上述 equivalent 确为一等价条件,&lt;/p&gt;
+&lt;p&gt;(3) 任意两个 composite 的选取互相 equivalent.&lt;/p&gt;
+&lt;p&gt;(4) 如果条件改为&lt;/p&gt;
+&lt;p&gt;(i) $\sigma|_{\Delta^{{1,2}}}=f$,&lt;/p&gt;
+&lt;p&gt;(ii) $\sigma|_{\Delta^{{0,2}}}=g$,&lt;/p&gt;
+&lt;p&gt;(iii) $\sigma|_{\Delta^{{0,1}}}=\operatorname{id}_x$.&lt;/p&gt;
+&lt;p&gt;那么仍然有 $f\sim g$.&lt;/p&gt;
+&lt;h4 id=&#34;同伦范畴-homotopy-cat&#34;&gt;同伦范畴 (homotopy cat.)
+&lt;/h4&gt;&lt;p&gt;之前我们构造了 nerve $N:Cat\to sSet$. 现在, 我们可以构造 homotopy category: $h:sSet\to Cat$, with&lt;/p&gt;
+&lt;p&gt;Objects: $X_0$&lt;/p&gt;
+&lt;p&gt;Morphisms: $X_1$, together with free comp. $f\star g$. 并模掉上述等价关系. (这里有一点 subtle: 比方说, 要处理 free comp. 上的等价关系, anyway 这个不太重要).&lt;/p&gt;
+&lt;p&gt;当然, 你可以直接看出, $hX=h(\operatorname{sk}_2(X))$.&lt;/p&gt;
+&lt;p&gt;% 这里我不确定要不要讲 $\pi$&lt;/p&gt;
+&lt;p&gt;他们之间的关系如下:&lt;/p&gt;
+&lt;p&gt;[Prop] $h(N(\mathscr{C}))\simeq \mathscr{C}$ canonically.&lt;/p&gt;
+&lt;p&gt;[Prop] $(h,N)$ adjoint pair.&lt;/p&gt;
+&lt;p&gt;这俩和前传中的某一个定理, 直接给出如下结论:&lt;/p&gt;
+&lt;p&gt;[Cor] $N$ fully faithful.&lt;/p&gt;
+&lt;p&gt;[Cor] $N(\mathscr{C})\sim \operatorname{cosk}_2(N(\mathscr{C}))$.&lt;/p&gt;
+&lt;h4 id=&#34;无穷范畴-infty-cat&#34;&gt;无穷范畴 ($\infty$-cat.)
+&lt;/h4&gt;&lt;p&gt;现在, 我们终于可以引入主角: 无穷范畴.&lt;/p&gt;
+&lt;p&gt;称一个 sSet 是一个 $\infty$-cat, 如果他对于 horn inclusion $\Lambda^n_j\to\Delta^n$, $n\geq 2,0&amp;lt;j&amp;lt;n$ 有提升性质.&lt;/p&gt;
+&lt;p&gt;接下来这是一个相当难证的命题. 我们也未必 (有 $50 \baifenhao$ 概率) 会证明之.&lt;/p&gt;
+&lt;p&gt;[Prop] Every $\infty$-cat. is a composer. But there are composers which are not $\infty$-categories.&lt;/p&gt;
+&lt;h4 id=&#34;无穷群胚-infty-gpod&#34;&gt;无穷群胚 ($\infty$-gpod.)
+&lt;/h4&gt;&lt;p&gt;好的, 我们称一个 $\infty$-cat. 中的 morph. 是 equiv., 如果他在 homotopy cat. 中的像是 isom.&lt;/p&gt;
+&lt;p&gt;我们称一个 $\infty$-cat. 是 $\infty$-groupoid, 如果所有 morphism 都是 equivalence.&lt;/p&gt;
+&lt;p&gt;对于一个 $\infty$-cat. $\mathscr{C}$ 我们可以通过考虑其 pullback of $N((h\mathscr{C})^{\simeq})$, 其中 $(h\mathscr{C})^{\simeq}$ 为取 $h\mathscr{C}$ 中所有 isom. 作为 morph. 得到的 subcat.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhzY3J7Q31ee1xcc2ltZXF9Il0sWzIsMCwiXFxtYXRoc2Nye0N9Il0sWzIsMiwiTihoXFxtYXRoc2Nye0N9KSJdLFswLDIsIk4oKGhcXG1hdGhzY3J7Q31ee1xcc2ltZXF9KV57XFxzaW1lcX0pIl0sWzAsM10sWzMsMl0sWzAsMV0sWzEsMl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhzY3J7Q31ee1xcc2ltZXF9Il0sWzIsMCwiXFxtYXRoc2Nye0N9Il0sWzIsMiwiTihoXFxtYXRoc2Nye0N9KSJdLFswLDIsIk4oKGhcXG1hdGhzY3J7Q31ee1xcc2ltZXF9KV57XFxzaW1lcX0pIl0sWzAsM10sWzMsMl0sWzAsMV0sWzEsMl1d&amp;embed&#34; width=&#34;561&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;他有如下刻画&lt;/p&gt;
+&lt;p&gt;[Prop] $x$ $n$-simplex 包含于 $\mathscr{C}^\simeq$, iff all its edges are equiv.&lt;/p&gt;
+&lt;p&gt;[Prop] $\mathscr{C}^\simeq$ 依然是 $\infty$-cat.&lt;/p&gt;
+&lt;p&gt;以及&lt;/p&gt;
+&lt;p&gt;[Prop] Kan complex 总是 $\infty$-gpod.&lt;/p&gt;
+&lt;h3 id=&#34;充实范畴-enriched-category&#34;&gt;充实范畴 (enriched category)
+&lt;/h3&gt;&lt;p&gt;首先, 需要 remark 一下, 在前传中我添加了一些幺半范畴的内容. 这部分是众所周知的前置了.&lt;/p&gt;
+&lt;p&gt;Lax monoidal 函子的自然变换给出了 $\operatorname{Fun}^{\text{lax}}(\mathscr{C},\mathscr{D})$ 上的范畴结构,&lt;/p&gt;
+&lt;p&gt;自然也可以考虑 monoidal 函子构成的 full subcat. $\operatorname{Fun}^\otimes (\mathscr{C},\mathscr{D})$.&lt;/p&gt;
+&lt;h4 id=&#34;充实范畴-enriched-category-1&#34;&gt;充实范畴 (enriched category)
+&lt;/h4&gt;&lt;p&gt;对于 $V$ monoidal category, 我们定义 $V$-充实范畴 $\mathscr{C}$ 为如下信息:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;对象类 \(\operatorname{Ob}(\mathcal{C})\)（由于格罗滕迪克宇宙的缘故, 我们始终相信 Object 是一个集合）.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对任意两个对象 \(x, y \in \operatorname{Ob}(\mathcal{C})\), 他们之间的 morph. 落在 $V$ 中:&lt;/p&gt;
+\[
+   \operatorname{Hom}_{\mathcal{C}}(x, y) \in \mathcal{V}.
+   \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对任意三个对象 \(x, y, z \in \operatorname{Ob}(\mathcal{C})\), 复合态射由 $\otimes$ 给出:&lt;/p&gt;
+\[
+   \circ_{x,y,z} : \operatorname{Hom}_{\mathcal{C}}(y, z) \otimes \operatorname{Hom}_{\mathcal{C}}(x, y) \longrightarrow \operatorname{Hom}_{\mathcal{C}}(x, z).
+   \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对任意对象 \(x \in \operatorname{Ob}(\mathcal{C})\), 有一个 恒等态射（在 \(\mathcal{V}\) 中）&lt;/p&gt;
+\[
+   \operatorname{id}_x : I \longrightarrow \operatorname{Hom}_{\mathcal{C}}(x, x).
+   \]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;并满足适当地相容性. 同样地, 我们可以自然地定义 $V$-enriched functor between $V$-enriched cat.&lt;/p&gt;
+&lt;p&gt;最后, 我们定义 $Cat_V$ 为 $V$-enriched category together with $V$-enriched functors 构成的 cat.&lt;/p&gt;
+&lt;p&gt;这些定义可能比较自然, 或者有些摸不着头脑. 这暂时不太重要.&lt;/p&gt;
+&lt;h4 id=&#34;单纯范畴-simplicial-category&#34;&gt;单纯范畴 (simplicial category)
+&lt;/h4&gt;&lt;p&gt;在之前, 我们定义了 $sSet$. 我们可以将 $sSet$ together with Cartesian prod with Sets 视为 monoidal cat. 于是, 考虑 $sSet$-enriched category, 我们定义这类为 simplicial category, 并记全体 simplicial cat. 构成的范畴为 $\operatorname{Cat}_\Delta$.&lt;/p&gt;
+&lt;p&gt;[Prop] $\operatorname{Cat}$ bicomplete.&lt;/p&gt;
+&lt;p&gt;[Cor] $\operatorname{Cat}_\Delta$ bicomplete.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $\phi:V\to V&amp;rsquo;$ lax monoidal functor between monoidal cat. 我们对每个 hom-obj. 运用 $\phi$ 得到一个自然的 functor&lt;/p&gt;
+\[\phi_*:\operatorname{Cat}_V\to\operatorname{Cat}_{V&#39;}.\]&lt;p&gt;这里的几个例子就是,&lt;/p&gt;
+&lt;p&gt;$c&amp;rsquo;:Set\to sSet$, $X\mapsto ([n]\mapsto X)$.&lt;/p&gt;
+&lt;p&gt;$h: sSet\to Set$, homotopy cat.&lt;/p&gt;
+&lt;p&gt;$ev_0:sSet\to Set$, $ev_0=\operatorname{Hom}_{sSet}(\Delta^0,-)$.&lt;/p&gt;
+&lt;p&gt;我们记 $c=c&amp;rsquo;_\ast,\pi=h_\ast ,u=(ev_0)_\ast $. 于是&lt;/p&gt;
+&lt;p&gt;[Lemma] $(\pi,c)$, $(c,ev_0)$ monoidal adjunction.&lt;/p&gt;
+&lt;h4 id=&#34;大黑箱-bigblackbox&#34;&gt;大黑箱 (BigBlackBox)
+&lt;/h4&gt;&lt;p&gt;或者, 这部分内容也是一层一层往上盖的, 黑箱结束的部分会建立在这些东西之上, 就像塔状结构一样. 因此, 你也可以称这部分为大黑塔 (The Herta).&lt;/p&gt;
+&lt;p&gt;设 \( J \) 是一个有限非空全序集, \( i, j \) 是其中的两个元素. 定义 \( P_{i,j} \) 为 \( J \) 的满足以下条件的子集构成的集合:&lt;/p&gt;
+\[
+P_{i,j} = \bigl\{ I \subseteq J : i, j \in I \text{ and } k \in I \Rightarrow i \le k \le j \bigr\}.
+\]&lt;p&gt;
+换言之, \( P_{i,j} \) 由区间 \( [i, j] \subseteq J \) 中所有同时包含 \( i \) 和 \( j \) 的子集组成.&lt;/p&gt;
+&lt;p&gt;集合 \( P_{i,j} \) 通过包含关系构成偏序集: \( I \le I&#39; \Leftrightarrow I \subseteq I&#39; \). 注意仅当 \( i \le j \) 时 \( P_{i,j} \) 才非空.&lt;/p&gt;
+&lt;p&gt;设 \( J \) 是一个非空全序集. 以下给出一个单纯充实范畴 \( \mathfrak{C}[\Delta^{J}] \in \operatorname{Cat}_{\Delta} \) 的定义.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;对象: \( \mathfrak{C}[\Delta^{J}] \) 的对象是 \( J \) 的元素.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射单纯集:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+\[
+\operatorname{Hom}_{\mathfrak{C}[\Delta^{J}]}(i,j) =
+\begin{cases}
+\varnothing &amp; \text{if } j &lt; i, \\[4pt]
+\operatorname{N}(P_{i,j}) &amp; \text{if } i \le j,
+\end{cases}
+\]&lt;p&gt;
+其中 \( \operatorname{N}(P_{i,j}) \) 表示偏序集 \( P_{i,j} \) 的神经.&lt;/p&gt;
+&lt;p&gt;复合运算由观察 1.2.55 中描述的映射诱导: 对任意满足 \( i \le j \le k \) 的三元组, 存在典范的偏序集映射&lt;/p&gt;
+\[
+P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I&#39;) \mapsto I \cup I&#39;,
+\]&lt;p&gt;
+取神经后即给出复合映射&lt;/p&gt;
+\[
+\operatorname{Hom}_{\mathfrak{C}[\Delta^{J}]}(j,k) \times \operatorname{Hom}_{\mathfrak{C}[\Delta^{J}]}(i,j) \longrightarrow \operatorname{Hom}_{\mathfrak{C}[\Delta^{J}]}(i,k).
+\]&lt;p&gt;[Lemma] 1.2.67&lt;/p&gt;
+&lt;p&gt;单纯充实范畴的范畴 \(\operatorname{Cat}_{\Delta}\) 允许所有小余极限. 因此, 上述构造扩充为保余极限函子&lt;/p&gt;
+\[
+\mathfrak{C}[-] \colon \operatorname{sSet} \longrightarrow \operatorname{Cat}_{\Delta}
+\]&lt;p&gt;
+它将 \(\Delta^n\) 送到 \(\mathfrak{C}[\Delta^n]\). 这个函子自动成为单纯神经函子的左伴随.&lt;/p&gt;
+&lt;p&gt;[Lemma] 1.2.69&lt;/p&gt;
+&lt;p&gt;设 \(0 &lt; j &lt; n\) 并考虑角 \(\Lambda_j^n\). 我们有 \(\mathfrak{C}[\Lambda_j^n]\) 是 \(\mathfrak{C}[\Delta^n]\) 的子单纯充实范畴, 具有以下性质:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;\(\mathfrak{C}[\Lambda_j^n]\) 的对象由 \(\Lambda_j^n\) 的顶点给出, 因此与 \(\mathfrak{C}[\Delta^n]\) 的所有对象相同.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;态射单纯集如下给出:&lt;/p&gt;
+\[
+   \operatorname{Hom}_{\mathfrak{C}[\Lambda_j^n]}(i,k) = \operatorname{Hom}_{\mathfrak{C}[\Delta^n]}(i,k)
+   \]&lt;p&gt;
+除非 \((i,k) = (0,n)\), 而当 \((i,k) = (0,n)\) 时,
+&lt;/p&gt;
+\[
+   \operatorname{Hom}_{\mathfrak{C}[\Lambda_j^n]}(0,n) \subseteq \operatorname{Hom}_{\mathfrak{C}[\Delta^n]}(0,n) = \operatorname{N}(P_{0,n})
+   \]&lt;p&gt;
+是由从 \((\Delta^1)^{n-1}\) 中删除其内部以及第 \(j\) 个底面所得到的子单纯集.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;相干神经-coherent-nerve&#34;&gt;相干神经 (coherent nerve)
+&lt;/h4&gt;&lt;p&gt;对于 $\mathscr{C}$ simplically enriched cat. 定义其 coherent nerve 为&lt;/p&gt;
+\[N(\mathscr{C})_n=\operatorname{Hom}_{Cat_\Delta}(\mathfrak{C}[\Delta^{n}],\mathscr{C}).\]&lt;p&gt;[Lemma] $\mathscr{C}$ 的 coherent nerve 自动是一个 composer. Furthermore, 其是一个 $\infty$-cat. iff 所有的 hom-simplicial sets 都是 Kan cpx.&lt;/p&gt;
+&lt;p&gt;我们来捋一下关系:&lt;/p&gt;
+&lt;p&gt;$1\text{-Cat}$: Set enriched cat, $2\text{-Cat}$: Cat enriched cat.&lt;/p&gt;
+\[2\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with sSet)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \text{composer}.\]\[(2,1)\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with Kan.)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \infty\text{-Cat}.\]&lt;h4 id=&#34;无穷范畴-operatornamespc&#34;&gt;无穷范畴 $\operatorname{Spc}$
+&lt;/h4&gt;&lt;p&gt;现在, 考虑如下 sCat:&lt;/p&gt;
+&lt;p&gt;Obj: CW-cpxs,&lt;/p&gt;
+&lt;p&gt;Mor sSet: $S(Maps(X,Y))$, singular set of mapping space.&lt;/p&gt;
+&lt;p&gt;对于 singular sets, 对于 spines/horns 来说, 由于强同伦收缩核性质, 他当然想怎么提升就怎么提升. 因此他其实是 Kan-enriched 的. 其 coh. nerve 记作 $\operatorname{Spc}$. 他可以刻画如下:&lt;/p&gt;
+&lt;p&gt;Obj: CWs,&lt;/p&gt;
+&lt;p&gt;Mor: pts of mapping spaces $map(X,Y)$, moreover, $h(Spc)$ 的 morphs, 恰为 homotopy classes of maps.&lt;/p&gt;
+&lt;h4 id=&#34;子无穷范畴-sub-infty-cat&#34;&gt;子无穷范畴 (sub-$\infty$-cat.)
+&lt;/h4&gt;&lt;p&gt;[Lemma] prod./coprod. of $\infty$-cats are $\infty$-cats.&lt;/p&gt;
+&lt;p&gt;对于 $\infty$-cat. $\mathscr{C}$, 定义其 sub-$\infty$-cat. 为 $0$-simplices $X\subset \mathscr{C}_0$, $1$-simplices $S\subset \mathscr{C}_1$ 连接 $X$ 中元素, 且对于 id. 和 comp., equiv. 封闭. 而 $n$-simplices 包含于 $\mathscr{C}&amp;rsquo;$ iff all edges rest. to $I^n$ contained in $S$. 其称为 full 的, iff $S$ 包含所有 $1$-simplices with bdry in $X$.&lt;/p&gt;
+&lt;p&gt;[Prop] Sub-$\infty$-cat. of $\mathscr{C}$ 1-1 corresp. to subcat. of $h\mathscr{C}$, full sub-$\infty$-cat. of $\mathscr{C}$ 1-1 corresp. to full subcat. of $h\mathscr{C}$.&lt;/p&gt;
+&lt;h4 id=&#34;infty-范畴视角下的自然变换&#34;&gt;$\infty$-范畴视角下的自然变换
+&lt;/h4&gt;&lt;p&gt;我们定义 $\infty$-cat. 间的 functors $f,g:\mathscr{C}\to\mathscr{D}$ 之间的 natural transf, 为一个 simplicial map $\mathscr{C}\times\Delta^1\to \mathscr{D}$ that restrics appropriately.&lt;/p&gt;
+&lt;p&gt;实际上, 回忆之前的 $\underline{\operatorname{Hom}}(X,Y)$ 定义, functors 和 natural transf. 对应到 $\underline{\operatorname{Hom}}(X,Y)$ 中的 0,1-simplices. 我们希望这仍旧是一个 $\infty$-cat. 这并不显然, 而这正是下一节的任务之一.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;未完待续&lt;/p&gt;
+&lt;p&gt;剩的不多了! trust&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>屠龙技·前传: An Intro. to 1-Category</title>
@@ -142,6 +307,30 @@
 \[
     f^{-1} \circ f = \operatorname{id}_X \quad \text{和} \quad f \circ f^{-1} = \operatorname{id}_Y.
     \]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;幺半范畴-monoidal-category&#34;&gt;幺半范畴 (monoidal category)
+&lt;/h3&gt;&lt;p&gt;一个幺半范畴是一个六元组 \((\mathcal{C}, \otimes, I, \alpha, \lambda, \rho)\), 其中:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;\(\mathcal{C}\) 是一个范畴.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;\(\otimes: \mathcal{C} \times \mathcal{C} \to \mathcal{C}\) 是一个双函子, 称为张量积.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;\(I \in \operatorname{Ob}(\mathcal{C})\) 是一个对象, 称为单位对象.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;\(\alpha\) 是一个自然同构（结合子）&lt;/p&gt;
+\[
+    \alpha_{X,Y,Z}: (X \otimes Y) \otimes Z \overset{\sim}{\longrightarrow} X \otimes (Y \otimes Z), \quad \forall X,Y,Z \in \mathcal{C}.
+    \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;\(\lambda\) 和 \(\rho\) 是自然同构（左、右单位子）&lt;/p&gt;
+\[
+    \lambda_X: I \otimes X \overset{\sim}{\longrightarrow} X, \quad \rho_X: X \otimes I \overset{\sim}{\longrightarrow} X, \quad \forall X \in \mathcal{C}.
+    \]&lt;p&gt;当然他们还要满足一定相容性: 五边形公理和三角形公理.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;范畴间的函子&#34;&gt;范畴间的函子
 &lt;/h2&gt;&lt;h3 id=&#34;函子-functor&#34;&gt;函子 (functor)
@@ -242,6 +431,43 @@
 \]&lt;p&gt;构造我就不写了, 大家集合论基础都很好啊, 哈哈.&lt;/p&gt;
 &lt;p&gt;好吧, 必须承认这个构造不是 trivial 的.&lt;/p&gt;
 &lt;p&gt;不过这个不是讨论的主题 ()&lt;/p&gt;
+&lt;h3 id=&#34;松弛反松弛-laxoplax-函子&#34;&gt;松弛/反松弛 (Lax/Oplax) 函子
+&lt;/h3&gt;&lt;p&gt;Lax 幺半函子&lt;/p&gt;
+&lt;p&gt;设 \((\mathcal{C}, \otimes, I, \alpha, \lambda, \rho)\) 和 \((\mathcal{D}, \boxtimes, J, \beta, \mu, \nu)\) 为两个幺半范畴. 一个从 \(\mathcal{C}\) 到 \(\mathcal{D}\) 的 lax 幺半函子 \((F, \varphi, \varphi_0)\) 包含:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;底层函子: 一个普通函子 \(F: \mathcal{C} \to \mathcal{D}\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;张量积结构映射: 一个自然变换&lt;/p&gt;
+\[
+    \varphi_{X,Y}: F(X) \boxtimes F(Y) \longrightarrow F(X \otimes Y), \quad \forall X, Y \in \mathcal{C}.
+    \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单位元结构映射: 一个态射&lt;/p&gt;
+\[
+    \varphi_0: J \longrightarrow F(I).
+    \]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;需要满足六边形和四边形的相容条件.&lt;/p&gt;
+&lt;p&gt;Oplax 幺半函子:&lt;/p&gt;
+&lt;p&gt;一个 oplax 幺半函子 \((F, \psi, \psi_0)\) 的定义结构与 lax 函子完全相同, 唯一的区别是所有结构映射的方向反转:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;自然变换方向为:&lt;/p&gt;
+\[
+    \psi_{X,Y}: F(X \otimes Y) \longrightarrow F(X) \boxtimes F(Y), \quad \forall X, Y \in \mathcal{C}.
+    \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单位元结构映射方向为:&lt;/p&gt;
+\[
+    \psi_0: F(I) \longrightarrow J.
+    \]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相容性图的结构也随之“翻转”（将 $\phi$ 箭头反向, $\psi$ 箭头正向, 并相应调整图表路径）.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;称一个 lax/oplax monoidal 函子是一个 monoidal 函子, 如果 2,3 中定义的映射是 isomorphism.&lt;/p&gt;
 &lt;h2 id=&#34;范畴上不得不提的东西&#34;&gt;范畴上不得不提的东西
 &lt;/h2&gt;&lt;h3 id=&#34;fibration&#34;&gt;&amp;ldquo;Fibration&amp;rdquo;
 &lt;/h3&gt;&lt;h4 id=&#34;grothendieck-纤维化-fibration&#34;&gt;Grothendieck 纤维化 (Fibration)
@@ -392,20 +618,34 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 &lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIl0sWzIsMCwiRyhYKSJdLFsyLDIsIkcoWSkiXSxbMCwyLCJGKFkpIl0sWzMsMiwiXFxldGFfWSJdLFswLDEsIlxcZXRhX1giXSxbMCwzLCJGKGYpIiwxXSxbMSwyLCJHKGYpIiwxXV0= --&gt;
 &lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIl0sWzIsMCwiRyhYKSJdLFsyLDIsIkcoWSkiXSxbMCwyLCJGKFkpIl0sWzMsMiwiXFxldGFfWSJdLFswLDEsIlxcZXRhX1giXSxbMCwzLCJGKGYpIiwxXSxbMSwyLCJHKGYpIiwxXV0=&amp;embed&#34; width=&#34;460&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
 即 \(\eta_Y \circ F(f) = G(f) \circ \eta_X\).
+&lt;p&gt;Remark:&lt;/p&gt;
+&lt;p&gt;一个 lax 幺半自然变换 (lax monoidal natural transformation) 是两个 lax 幺半函子之间的、且与它们各自的松弛幺半结构相容的自然变换.&lt;/p&gt;
+&lt;p&gt;设 \((F, \varphi^F, \varphi^F_0)\) 和 \((G, \varphi^G, \varphi^G_0)\) 为两个幺半范畴 \(\mathcal{C}\) 到 \(\mathcal{D}\) 的 &lt;strong&gt;lax 幺半函子&lt;/strong&gt;. 它们之间的一个 &lt;strong&gt;lax 幺半自然变换&lt;/strong&gt; \(\theta: F \Rightarrow G\) 是一个自然变换, 并且满足以下两个额外的相容性条件:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;与张量积结构相容: 对 \(\mathcal{C}\) 中任意对象 \(X, Y\), 下图交换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEYoWSkiXSxbMiwwLCJGKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwyLCJHKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEcoWSkiXSxbMiwyLCJHKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwxXSxbMCwyXSxbMSwzXSxbMiwzXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEYoWSkiXSxbMiwwLCJGKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwyLCJHKFgpIFxcb3RpbWVzX3tcXG1hdGhjYWx7RH19IEcoWSkiXSxbMiwyLCJHKFggXFxvdGltZXNfe1xcbWF0aGNhbHtDfX0gWSkiXSxbMCwxXSxbMCwyXSxbMSwzXSxbMiwzXV0=&amp;embed&#34; width=&#34;670&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;与单位元结构相容: 下图交换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsMyxbMCwwLCJJX3tcXG1hdGhjYWx7RH19Il0sWzAsMiwiRihJX3tcXG1hdGhjYWx7Q319KSJdLFsyLDIsIkcoSV97XFxtYXRoY2Fse0N9fSkiXSxbMCwxXSxbMSwyXSxbMCwyXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsMyxbMCwwLCJJX3tcXG1hdGhjYWx7RH19Il0sWzAsMiwiRihJX3tcXG1hdGhjYWx7Q319KSJdLFsyLDIsIkcoSV97XFxtYXRoY2Fse0N9fSkiXSxbMCwxXSxbMSwyXSxbMCwyXV0=&amp;embed&#34; width=&#34;459&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;这里 \(\otimes_{\mathcal{C}}, I_{\mathcal{C}}\) 和 \(\otimes_{\mathcal{D}}, I_{\mathcal{D}}\) 分别是 \(\mathcal{C}\) 和 \(\mathcal{D}\) 的张量积与单位对象.&lt;/p&gt;
 &lt;h4 id=&#34;预层-presheaf-1&#34;&gt;预层 (Presheaf)
-&lt;/h4&gt;&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴。一个 \(\mathcal{C}\) 上的预层是一个函子:&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;设 \(\mathcal{C}\) 是一个范畴. 一个 \(\mathcal{C}\) 上的预层是一个函子:&lt;/p&gt;
 \[
 F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 \]&lt;p&gt;
-其中 \(\mathcal{C}^{\mathrm{op}}\) 是 \(\mathcal{C}\) 的对偶范畴，\(\mathbf{Set}\) 是集合范畴。&lt;/p&gt;
-&lt;p&gt;换句话说，对每个对象 \(X \in \mathcal{C}\)，指定一个集合 \(F(X)\)；对每个态射 \(f: X \to Y\) 在 \(\mathcal{C}\) 中，指定一个映射 \(F(f): F(Y) \to F(X)\)（方向反转），满足函子公理:&lt;/p&gt;
+其中 \(\mathcal{C}^{\mathrm{op}}\) 是 \(\mathcal{C}\) 的对偶范畴, \(\mathbf{Set}\) 是集合范畴.&lt;/p&gt;
+&lt;p&gt;换句话说, 对每个对象 \(X \in \mathcal{C}\), 指定一个集合 \(F(X)\)；对每个态射 \(f: X \to Y\) 在 \(\mathcal{C}\) 中, 指定一个映射 \(F(f): F(Y) \to F(X)\)（方向反转）, 满足函子公理:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;\(F(\mathrm{id}_X) = \mathrm{id}_{F(X)}\)&lt;/li&gt;
-&lt;li&gt;\(F(g \circ f) = F(f) \circ F(g)\)（注意复合顺序反转）。&lt;/li&gt;
+&lt;li&gt;\(F(g \circ f) = F(f) \circ F(g)\)（注意复合顺序反转）.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;更一般地，若 \(\mathcal{D}\) 是任意范畴，则取值于 \(\mathcal{D}\) 的预层是函子 \(\mathcal{C}^{\mathrm{op}} \to \mathcal{D}\)。&lt;/p&gt;
+&lt;p&gt;更一般地, 若 \(\mathcal{D}\) 是任意范畴, 则取值于 \(\mathcal{D}\) 的预层是函子 \(\mathcal{C}^{\mathrm{op}} \to \mathcal{D}\).&lt;/p&gt;
 &lt;h4 id=&#34;米田引理-yoneda-lemma&#34;&gt;米田引理 (Yoneda Lemma)
-&lt;/h4&gt;&lt;p&gt;对于任意预层 \(F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}\)，存在自然的双射:&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;对于任意预层 \(F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}\), 存在自然的双射:&lt;/p&gt;
 \[
 \mathrm{Nat}(h_X, F) \cong F(X)
 \]&lt;p&gt;
@@ -432,12 +672,12 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 &lt;p&gt;Every presheaf is a colimit of representable presheaves.&lt;/p&gt;
 &lt;p&gt;换言之, $\mathrm{Set}^{\mathcal{C}^{op}/}$ 是 $\mathcal{C}$ 的 &lt;strong&gt;cocompletion&lt;/strong&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;kan-扩张-kan-extension&#34;&gt;Kan 扩张 (Kan extension)
-&lt;/h4&gt;&lt;p&gt;设有函子 \(F: \mathcal{C} \to \mathcal{E}\) 和 \(K: \mathcal{C} \to \mathcal{D}\)，则 \(F\) 沿 \(K\) 的左 Kan 扩张是一个函子 \(\operatorname{Lan}_K F: \mathcal{D} \to \mathcal{E}\)（如果存在），使得对于任意函子 \(G: \mathcal{D} \to \mathcal{E}\)，存在自然同构&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;设有函子 \(F: \mathcal{C} \to \mathcal{E}\) 和 \(K: \mathcal{C} \to \mathcal{D}\), 则 \(F\) 沿 \(K\) 的左 Kan 扩张是一个函子 \(\operatorname{Lan}_K F: \mathcal{D} \to \mathcal{E}\)（如果存在）, 使得对于任意函子 \(G: \mathcal{D} \to \mathcal{E}\), 存在自然同构&lt;/p&gt;
 \[
 \operatorname{Hom}_{\operatorname{Fun}(\mathcal{D}, \mathcal{E})}(\operatorname{Lan}_K F, G) \cong \operatorname{Hom}_{\operatorname{Fun}(\mathcal{C}, \mathcal{E})}(F, G \circ K).
 \]&lt;p&gt;
-这实际上就是说 \(\operatorname{Lan}_K F\) 是函子 \(\operatorname{Fun}(\mathcal{D}, \mathcal{E}) \to \operatorname{Fun}(\mathcal{C}, \mathcal{E})\) 由复合 \(K\) 所诱导的函子的左伴随。&lt;/p&gt;
-&lt;p&gt;反之，也可以定义右 Kan 扩张 \(\operatorname{Ran}_K F: \mathcal{D} \to \mathcal{E}\) 满足相应的万有性质：
+这实际上就是说 \(\operatorname{Lan}_K F\) 是函子 \(\operatorname{Fun}(\mathcal{D}, \mathcal{E}) \to \operatorname{Fun}(\mathcal{C}, \mathcal{E})\) 由复合 \(K\) 所诱导的函子的左伴随.&lt;/p&gt;
+&lt;p&gt;反之, 也可以定义右 Kan 扩张 \(\operatorname{Ran}_K F: \mathcal{D} \to \mathcal{E}\) 满足相应的万有性质:
 &lt;/p&gt;
 \[
 \operatorname{Hom}_{\operatorname{Fun}(\mathcal{D}, \mathcal{E})}(G, \operatorname{Ran}_K F) \cong \operatorname{Hom}_{\operatorname{Fun}(\mathcal{C}, \mathcal{E})}(G \circ K, F).
@@ -445,7 +685,7 @@ F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}
 即 \(\operatorname{Ran}_K F\) 是复合函子的右伴随.&lt;/p&gt;
 &lt;p&gt;如果你想理解这个映射的话, 可以将 $K:\mathcal{C}\to\mathcal{D}$ 取成一个&lt;strong&gt;嵌入&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;这种条件下我们考虑的是将 $F:\mathcal{C}\to \mathcal{E}$ &lt;strong&gt;自然地&lt;/strong&gt;扩展到 $\mathcal{E}$ 上.&lt;/p&gt;
-&lt;p&gt;实际上当目标范畴 \(\mathcal{E}\) 具有 (co)complete 性质时,，Kan 扩张有具体的表达式.&lt;/p&gt;
+&lt;p&gt;实际上当目标范畴 \(\mathcal{E}\) 具有 (co)complete 性质时,, Kan 扩张有具体的表达式.&lt;/p&gt;
 &lt;p&gt;左 Kan 扩张可以表示为余极限:&lt;/p&gt;
 \[
 (\operatorname{Lan}_K F)(d) = \underset{(c \in \mathcal{C}_{/x})}{\operatorname{colim}} F(c),
