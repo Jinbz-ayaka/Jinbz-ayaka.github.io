@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>流光记 on 代数tv</title>
+        <link>https://Jinbz-ayaka.github.io/categories/%E6%B5%81%E5%85%89%E8%AE%B0/</link>
+        <description>Recent content in 流光记 on 代数tv</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Jinbz</copyright>
+        <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%B5%81%E5%85%89%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>流光记-其一</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</link>
+        <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</guid>
+        <description>&lt;p&gt;记些杂七杂八的感想.&lt;/p&gt;
+&lt;p&gt;本系列完全不定时更新.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;From now on, we let $\Sigma$ be a surface.&lt;/p&gt;
+&lt;p&gt;Firstly, we aimed to calculate $\operatorname{Loc}(Pic\Sigma)$. Here we identify $\operatorname{Pic}\Sigma$ be the space of holomorphic line bundles on $\Sigma$. Then we have a short exact sequence:&lt;/p&gt;
+\[0\to \operatorname{Jac}\Sigma\to \operatorname{Pic}\Sigma\overset{\operatorname{deg}}{\to}\mathbb{Z}\to 0.\]&lt;p&gt;
+$\operatorname{Jac}\Sigma$ the degree $0$ line bundles. By the theory of Riemann Surface, one can topologically identify:&lt;/p&gt;
+\[\operatorname{Jac}\Sigma=\mathbb{C}^g/\mathbb{Z}^{2g}.\]&lt;p&gt;
+One can identify $\pi_1(\operatorname{Jac})=H^1(\Sigma,\mathbb{Z})$. Then we have abelian category equivalence&lt;/p&gt;
+\[\begin{align*}
+  \operatorname{Loc}(\operatorname{Pic}\Sigma)&amp;=\mathbf{Vect}^{\mathbb{Z}\text{-gr}}\otimes \operatorname{Loc}(\operatorname{Jac}\Sigma)\\
+  &amp;=\mathbf{Rep}_{\mathbb{Z}\text{-gr}}(H^1(\Sigma,\mathbb{Z}))\\
+  &amp;=\mathbf{Vect}^{\mathbb{Z}\text{-gr}}\otimes(\mathbb{C}H^1(\Sigma,\mathbb{Z}),\ast)-\mathbf{mod}.
+\end{align*}\]&lt;p&gt;Secondly, we shall consider the algebraic geometry of the character scheme $\operatorname{Loc}_{\mathbb{C}^\times}$. To begin with, we can write the character scheme by&lt;/p&gt;
+\[\begin{align*} \operatorname{Loc}_{\mathbb{C}^\times}(\Sigma)&amp;=\operatorname{Hom}(\pi_1(\Sigma,\mathbb{Z}),\mathbb{C}^\times)/\mathbb{C}^\times\\&amp;=\operatorname{Hom}(H_1(\Sigma,\mathbb{Z}),\mathbb{C}^\times)/\mathbb{C}^\times\\  &amp;=T^\vee/\mathbb{C}^\times.\end{align*}\]&lt;p&gt;Then, by the theory of algebraic geometry, there are&lt;/p&gt;
+\[\mathbf{QC}(\operatorname{Loc}_{\mathbb{C}^\times}\Sigma)=(\mathbb{C}[T^\vee],\cdot)\text{-}\mathbf{mod}\otimes \mathbf{Rep}(\mathbb{C}^\times).\]&lt;p&gt;With $(\mathbb{C}[T^\vee],\cdot)$ denote the global functions on $T^\vee$. And we can identify $\mathbf{Rep}(\mathbb{C}^\times)$ as $\mathbf{Vect}^{\mathbb{Z}\text{-gr}}$.&lt;/p&gt;
+&lt;p&gt;But by Fourier transform, we can identify&lt;/p&gt;
+\[(\mathbb{C}[T^\vee],\cdot)\simeq (\mathbb{C}H^1(\Sigma,\mathbb{Z}),\ast).\]&lt;p&gt;
+Hence we finally attains&lt;/p&gt;
+\[\operatorname{Loc}\operatorname{Pic}(\Sigma)\simeq \mathbf{QC}(\operatorname{Loc}_{\mathbb{C}^\times}(\Sigma)).\]&lt;hr&gt;
+&lt;p&gt;从 Ben-Zvi 的一篇课程笔记: Between electric-magnetic duality and the Langlands program 抄过来的.&lt;/p&gt;
+&lt;p&gt;这个实际上是最最简单的 Betti Langlands Correspondence: $G=\operatorname{GL}_1$ 的 case.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;水点轻松的先.&lt;/p&gt;
+&lt;p&gt;但是这也不轻松, 原文有一些 typo. Check 一下还有些麻烦的.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
