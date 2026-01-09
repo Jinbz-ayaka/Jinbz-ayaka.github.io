@@ -7,7 +7,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其三十九 P370-383</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D-p370-383/</link>
+        <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D-p370-383/</guid>
+        <description>&lt;p&gt;遗憾的消息是, 我们要仿照 3.4 的做派, 把 7.3 这几个 main theorem 跳过了.&lt;/p&gt;
+&lt;p&gt;一个原因是, 我不太喜欢 Specialization 这一套. 另一个原因是, 我们直接从上面提取出来所需要 thm 的就行了.&lt;/p&gt;
+&lt;p&gt;对于 $f:V_1\to V_2$ $W$-spaces, 我们称这个映射是 sign-commuting 的, 如果&lt;/p&gt;
+\[f(w\cdot v_1)=(-1)^{l(w)} \cdot w\cdot f(v_1).\]&lt;p&gt;Recall Poincare duality&lt;/p&gt;
+\[H_i(\mathcal{B})\simeq H^{2n-i}(\mathcal{B}).\]&lt;p&gt;这个映射当然不是 comm. with $W$-action 的. 比方说, $W$-action 不保定向, 因此当然不喝 intersection pairing 交换. 更确切地说, $W\circlearrowright H_{2n}(\mathcal{B})$ by $w\mapsto (-1)^{l(w)}$, 也就是说, Poincare duality 是 sign-commutes with $W$-action 的.&lt;/p&gt;
+&lt;p&gt;这段怎么写的这么别扭,,&lt;/p&gt;
+&lt;p&gt;但是, 对于 $G/T$, $W$ 在其上的 (右) 作用是 holomorphic transf. 因此保定向. 所以自然地 Poincare duality&lt;/p&gt;
+\[H_i(G/T)\simeq H^{2n-i}(G/T)\]&lt;p&gt;与 $W$-action 交换. (这里为什么不是 $4n$? top dimension)&lt;/p&gt;
+&lt;p&gt;接下来考虑 $\pi: T^\ast \mathcal{B}\to\mathcal{B}$, $i:\mathcal{B}\hookrightarrow T^\ast \mathcal{B}$.&lt;/p&gt;
+&lt;p&gt;Lemma 7.3.31. 记 $n=\dim_\mathbb{C}\mathcal{B}$, 有&lt;/p&gt;
+&lt;p&gt;(i) Thom isom. $\pi^\ast :H_i(\mathcal{B})\overset{\sim}{\to} H_{i+2n}(T^\ast \mathcal{B})$ sign-comm. with $W$-actions; and so do its inverse $i^\ast :H_{i+2n}(T^\ast \mathcal{B})\overset{\sim}{\to}H_i(\mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;(ii) Thom isom. $\pi^\ast :K^G(\mathcal{B})\overset{\sim}{\to} K^G(T^\ast \mathcal{B})$ comm. with $W$-actions; and so do its inverse $i^\ast : K^G(T^\ast \mathcal{B})\overset{\sim}{\to}K^G(\mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;(iii) Homological Chern char. $K(T^\ast \mathcal{B})\to H_\ast (T^\ast \mathcal{B})$ comm. with $W$-action; $K(T^\ast \mathcal{B})\to H_\ast (T^\ast \mathcal{B})$ sign-comm. with $W$-action.&lt;/p&gt;
+&lt;p&gt;(iv) Cohomological Chern char. $K(\mathcal{B})\to H^\ast (\mathcal{B})$ comm. with $W$-action.&lt;/p&gt;
+&lt;p&gt;证明可以几何地写出:&lt;/p&gt;
+&lt;p&gt;(i) 只需对 $i^\ast $ 说明即可. 为此, 注意 $i^\ast $ 实际上就是与 $[\mathcal{B}]$ zero-section 作交. 我们需要说明 $[\mathcal{B}]$ 与 $H(Z)$ 的 conv. 是 sign repn. 且 $[T^\ast \mathcal{B}]$ 与 $H(Z)$ 的 conv. 是 triv. repn. 对于前者, 他是通过 3.6.17. 对于后者, CG 上的做法是利用 $\tilde{\mathfrak{g}}^{t\cdot h}$ 逼近 $[T^\ast \mathcal{B}]$, 而 $\tilde{\mathfrak{g}}^{h}\simeq G/T$ 上的作用是保定向的.&lt;/p&gt;
+&lt;p&gt;(ii) 的证明关键步骤藏在了前文证明大定理之中. 考虑一个 $L_\lambda$, 他说明与 $\mathcal{O}^h_w$ structure sheaf of $\Lambda_w^h$ 将 $\pi^\ast L_\lambda$ 映到 $\pi^\ast  L_{w(\lambda)}$. 而当然 $w$ 会将 $L_\lambda$ 映到 $L_{w\lambda}$ 于是得证. (但我懒得check他的argument了;w;)&lt;/p&gt;
+&lt;p&gt;(iv) Direct by 6.4.15, (iii) 的 $\mathcal{B}$ 部分 direct by (iv) 和前文关于 sign-comm. 的论证. $T^\ast \mathcal{B}$ 的部分则直接 factor through (i)(ii) 即可.&lt;/p&gt;
+&lt;p&gt;好的, 现在我们有 $W\circlearrowright H/K(\mathcal{B})$ 了. 但我们自然有一个 $H(Z)\circlearrowright H_\ast (\mathcal{B})$ given by $Z\circ \mathcal{B}=\mathcal{B}$. 根据 3.6.17, 这两个在 $H$ 上的作用实际上是一样的. 当然在 $K$-theory 上并不显然: 有&lt;/p&gt;
+&lt;p&gt;Lemma 7.3.32. $W\circlearrowright K^G(\mathcal{B})$ arising from conv. with $K^G(Z)$ expressed in terms of the std. $W$-action $K^G(\mathcal{B})$ by&lt;/p&gt;
+\[w:R\mapsto (-1)^{l(w)}e^{-\rho}\cdot w(e^\rho R).\]&lt;p&gt;其实就是那个 dot action.&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d&amp;embed&#34; width=&#34;813&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;由 5.2.23 给出左半边, 由 7.3.31(ii) 给出右半边. 从而我们得到了&lt;/p&gt;
+\[i^*i_*(w\circ R)=w(i^*i_*R).\]&lt;p&gt;而在 5.4.9 我们证明了 $i^\ast i_\ast $ 是 given by tensor prod. with $\lambda(T^\ast \mathcal{B})$. 由于我们可以 view $T^\ast \mathcal{B}\simeq G\times_B\mathfrak{n}$,&lt;/p&gt;
+\[\lambda(T^*\mathcal{B})=e^{-\rho}\cdot \Delta.\]&lt;p&gt;有&lt;/p&gt;
+\[e^{-\rho}\cdot \Delta \cdot (w\circ R)=(-1)^{l(w)}\cdot \Delta\cdot w(e^{-\rho}\cdot R).\]&lt;p&gt;由于 $R(\mathbb{T})$ integral domain. 我们最终得到&lt;/p&gt;
+\[w\circ R=(-1)^{l(w)}\cdot e^\rho\cdot w( e^{-\rho}R).\]</description>
+        </item>
+        <item>
         <title>流光记-其一</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</link>
         <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
@@ -299,11 +335,11 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I&#39;) \mapsto I \cup
 </description>
         </item>
         <item>
-        <title>CG饲养日记-其三十七 P366-370</title>
-        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p366-370/</link>
+        <title>CG饲养日记-其三十八 P366-370</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E5%85%AB-p366-370/</link>
         <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B8%83-p366-370/</guid>
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E5%85%AB-p366-370/</guid>
         <description>&lt;p&gt;好的, time to Main&lt;/p&gt;
 &lt;p&gt;Set-up 是, $G$ comp. s.s. s.c. gp. $\mathfrak{g}$ Lie alg. $\mu:\tilde{\mathcal{N}}\to\mathcal{N}$, 有 $\tilde{\mathcal{N}}\simeq T^\ast \mathcal{B}$&lt;/p&gt;
 &lt;p&gt;而这个实际上, 去考虑 $Z_\Delta\subset \tilde{\mathcal{N}}\times\tilde{\mathcal{N}}$, 他在 $\tilde{\mathcal{N}}\times \tilde{\mathcal{N}}\simeq T^\ast (\mathcal{B}\times\mathcal{B})$ 下给出 isom.&lt;/p&gt;
