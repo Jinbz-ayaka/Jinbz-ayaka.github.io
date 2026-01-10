@@ -7,79 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>CG饲养日记-其三十九 P370-383</title>
-        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D-p370-383/</link>
-        <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D-p370-383/</guid>
-        <description>&lt;p&gt;遗憾的消息是, 我们要仿照 3.4 的做派, 把 7.3 这几个 main theorem 跳过了.&lt;/p&gt;
-&lt;p&gt;一个原因是, 我不太喜欢 Specialization 这一套. 另一个原因是, 我们直接从上面提取出来所需要 thm 的就行了.&lt;/p&gt;
-&lt;p&gt;对于 $f:V_1\to V_2$ $W$-spaces, 我们称这个映射是 sign-commuting 的, 如果&lt;/p&gt;
-\[f(w\cdot v_1)=(-1)^{l(w)} \cdot w\cdot f(v_1).\]&lt;p&gt;Recall Poincare duality&lt;/p&gt;
-\[H_i(\mathcal{B})\simeq H^{2n-i}(\mathcal{B}).\]&lt;p&gt;这个映射当然不是 comm. with $W$-action 的. 比方说, $W$-action 不保定向, 因此当然不喝 intersection pairing 交换. 更确切地说, $W\circlearrowright H_{2n}(\mathcal{B})$ by $w\mapsto (-1)^{l(w)}$, 也就是说, Poincare duality 是 sign-commutes with $W$-action 的.&lt;/p&gt;
-&lt;p&gt;这段怎么写的这么别扭,,&lt;/p&gt;
-&lt;p&gt;但是, 对于 $G/T$, $W$ 在其上的 (右) 作用是 holomorphic transf. 因此保定向. 所以自然地 Poincare duality&lt;/p&gt;
-\[H_i(G/T)\simeq H^{2n-i}(G/T)\]&lt;p&gt;与 $W$-action 交换. (这里为什么不是 $4n$? top dimension)&lt;/p&gt;
-&lt;p&gt;接下来考虑 $\pi: T^\ast \mathcal{B}\to\mathcal{B}$, $i:\mathcal{B}\hookrightarrow T^\ast \mathcal{B}$.&lt;/p&gt;
-&lt;p&gt;Lemma 7.3.31. 记 $n=\dim_\mathbb{C}\mathcal{B}$, 有&lt;/p&gt;
-&lt;p&gt;(i) Thom isom. $\pi^\ast :H_i(\mathcal{B})\overset{\sim}{\to} H_{i+2n}(T^\ast \mathcal{B})$ sign-comm. with $W$-actions; and so do its inverse $i^\ast :H_{i+2n}(T^\ast \mathcal{B})\overset{\sim}{\to}H_i(\mathcal{B})$.&lt;/p&gt;
-&lt;p&gt;(ii) Thom isom. $\pi^\ast :K^G(\mathcal{B})\overset{\sim}{\to} K^G(T^\ast \mathcal{B})$ comm. with $W$-actions; and so do its inverse $i^\ast : K^G(T^\ast \mathcal{B})\overset{\sim}{\to}K^G(\mathcal{B})$.&lt;/p&gt;
-&lt;p&gt;(iii) Homological Chern char. $K(T^\ast \mathcal{B})\to H_\ast (T^\ast \mathcal{B})$ comm. with $W$-action; $K(T^\ast \mathcal{B})\to H_\ast (T^\ast \mathcal{B})$ sign-comm. with $W$-action.&lt;/p&gt;
-&lt;p&gt;(iv) Cohomological Chern char. $K(\mathcal{B})\to H^\ast (\mathcal{B})$ comm. with $W$-action.&lt;/p&gt;
-&lt;p&gt;证明可以几何地写出:&lt;/p&gt;
-&lt;p&gt;(i) 只需对 $i^\ast $ 说明即可. 为此, 注意 $i^\ast $ 实际上就是与 $[\mathcal{B}]$ zero-section 作交. 我们需要说明 $[\mathcal{B}]$ 与 $H(Z)$ 的 conv. 是 sign repn. 且 $[T^\ast \mathcal{B}]$ 与 $H(Z)$ 的 conv. 是 triv. repn. 对于前者, 他是通过 3.6.17. 对于后者, CG 上的做法是利用 $\tilde{\mathfrak{g}}^{t\cdot h}$ 逼近 $[T^\ast \mathcal{B}]$, 而 $\tilde{\mathfrak{g}}^{h}\simeq G/T$ 上的作用是保定向的.&lt;/p&gt;
-&lt;p&gt;(ii) 的证明关键步骤藏在了前文证明大定理之中. 考虑一个 $L_\lambda$, 他说明与 $\mathcal{O}^h_w$ structure sheaf of $\Lambda_w^h$ 将 $\pi^\ast L_\lambda$ 映到 $\pi^\ast  L_{w(\lambda)}$. 而当然 $w$ 会将 $L_\lambda$ 映到 $L_{w\lambda}$ 于是得证. (但我懒得check他的argument了;w;)&lt;/p&gt;
-&lt;p&gt;(iv) Direct by 6.4.15, (iii) 的 $\mathcal{B}$ 部分 direct by (iv) 和前文关于 sign-comm. 的论证. $T^\ast \mathcal{B}$ 的部分则直接 factor through (i)(ii) 即可.&lt;/p&gt;
-&lt;p&gt;好的, 现在我们有 $W\circlearrowright H/K(\mathcal{B})$ 了. 但我们自然有一个 $H(Z)\circlearrowright H_\ast (\mathcal{B})$ given by $Z\circ \mathcal{B}=\mathcal{B}$. 根据 3.6.17, 这两个在 $H$ 上的作用实际上是一样的. 当然在 $K$-theory 上并不显然: 有&lt;/p&gt;
-&lt;p&gt;Lemma 7.3.32. $W\circlearrowright K^G(\mathcal{B})$ arising from conv. with $K^G(Z)$ expressed in terms of the std. $W$-action $K^G(\mathcal{B})$ by&lt;/p&gt;
-\[w:R\mapsto (-1)^{l(w)}e^{-\rho}\cdot w(e^\rho R).\]&lt;p&gt;其实就是那个 dot action.&lt;/p&gt;
-&lt;p&gt;Proof:&lt;/p&gt;
-&lt;!-- https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d --&gt;
-&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d&amp;embed&#34; width=&#34;813&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
-&lt;p&gt;由 5.2.23 给出左半边, 由 7.3.31(ii) 给出右半边. 从而我们得到了&lt;/p&gt;
-\[i^*i_*(w\circ R)=w(i^*i_*R).\]&lt;p&gt;而在 5.4.9 我们证明了 $i^\ast i_\ast $ 是 given by tensor prod. with $\lambda(T^\ast \mathcal{B})$. 由于我们可以 view $T^\ast \mathcal{B}\simeq G\times_B\mathfrak{n}$,&lt;/p&gt;
-\[\lambda(T^*\mathcal{B})=e^{-\rho}\cdot \Delta.\]&lt;p&gt;有&lt;/p&gt;
-\[e^{-\rho}\cdot \Delta \cdot (w\circ R)=(-1)^{l(w)}\cdot \Delta\cdot w(e^{-\rho}\cdot R).\]&lt;p&gt;由于 $R(\mathbb{T})$ integral domain. 我们最终得到&lt;/p&gt;
-\[w\circ R=(-1)^{l(w)}\cdot e^\rho\cdot w( e^{-\rho}R).\]</description>
-        </item>
-        <item>
-        <title>流光记-其一</title>
-        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</link>
-        <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</guid>
-        <description>&lt;p&gt;记些杂七杂八的感想.&lt;/p&gt;
-&lt;p&gt;本系列完全不定时更新.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;From now on, we let $\Sigma$ be a surface.&lt;/p&gt;
-&lt;p&gt;Firstly, we aimed to calculate $\operatorname{Loc}(Pic\Sigma)$. Here we identify $\operatorname{Pic}\Sigma$ be the space of holomorphic line bundles on $\Sigma$. Then we have a short exact sequence:&lt;/p&gt;
-\[0\to \operatorname{Jac}\Sigma\to \operatorname{Pic}\Sigma\overset{\operatorname{deg}}{\to}\mathbb{Z}\to 0.\]&lt;p&gt;
-$\operatorname{Jac}\Sigma$ the degree $0$ line bundles. By the theory of Riemann Surface, one can topologically identify:&lt;/p&gt;
-\[\operatorname{Jac}\Sigma=\mathbb{C}^g/\mathbb{Z}^{2g}.\]&lt;p&gt;
-One can identify $\pi_1(\operatorname{Jac})=H^1(\Sigma,\mathbb{Z})$. Then we have abelian category equivalence&lt;/p&gt;
-\[\begin{align*}
-  \operatorname{Loc}(\operatorname{Pic}\Sigma)&amp;=\mathbf{Vect}^{\mathbb{Z}\text{-gr}}\otimes \operatorname{Loc}(\operatorname{Jac}\Sigma)\\
-  &amp;=\mathbf{Rep}_{\mathbb{Z}\text{-gr}}(H^1(\Sigma,\mathbb{Z}))\\
-  &amp;=\mathbf{Vect}^{\mathbb{Z}\text{-gr}}\otimes(\mathbb{C}H^1(\Sigma,\mathbb{Z}),\ast)-\mathbf{mod}.
-\end{align*}\]&lt;p&gt;Secondly, we shall consider the algebraic geometry of the character scheme $\operatorname{Loc}_{\mathbb{C}^\times}$. To begin with, we can write the character scheme by&lt;/p&gt;
-\[\begin{align*} \operatorname{Loc}_{\mathbb{C}^\times}(\Sigma)&amp;=\operatorname{Hom}(\pi_1(\Sigma,\mathbb{Z}),\mathbb{C}^\times)/\mathbb{C}^\times\\&amp;=\operatorname{Hom}(H_1(\Sigma,\mathbb{Z}),\mathbb{C}^\times)/\mathbb{C}^\times\\  &amp;=T^\vee/\mathbb{C}^\times.\end{align*}\]&lt;p&gt;Then, by the theory of algebraic geometry, there are&lt;/p&gt;
-\[\mathbf{QC}(\operatorname{Loc}_{\mathbb{C}^\times}\Sigma)=(\mathbb{C}[T^\vee],\cdot)\text{-}\mathbf{mod}\otimes \mathbf{Rep}(\mathbb{C}^\times).\]&lt;p&gt;With $(\mathbb{C}[T^\vee],\cdot)$ denote the global functions on $T^\vee$. And we can identify $\mathbf{Rep}(\mathbb{C}^\times)$ as $\mathbf{Vect}^{\mathbb{Z}\text{-gr}}$.&lt;/p&gt;
-&lt;p&gt;But by Fourier transform, we can identify&lt;/p&gt;
-\[(\mathbb{C}[T^\vee],\cdot)\simeq (\mathbb{C}H^1(\Sigma,\mathbb{Z}),\ast).\]&lt;p&gt;
-Hence we finally attains&lt;/p&gt;
-\[\operatorname{Loc}\operatorname{Pic}(\Sigma)\simeq \mathbf{QC}(\operatorname{Loc}_{\mathbb{C}^\times}(\Sigma)).\]&lt;hr&gt;
-&lt;p&gt;从 Ben-Zvi 的一篇课程笔记: Between electric-magnetic duality and the Langlands program 抄过来的.&lt;/p&gt;
-&lt;p&gt;这个实际上是最最简单的 Betti Langlands Correspondence: $G=\operatorname{GL}_1$ 的 case.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;水点轻松的先.&lt;/p&gt;
-&lt;p&gt;但是这也不轻松, 原文有一些 typo. Check 一下还有些麻烦的.&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>屠龙技·上: Landing on the infty-cat. star </title>
         <link>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/</link>
-        <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/</guid>
         <description>&lt;p&gt;至人无己, 神人无功, 圣人无名.&lt;/p&gt;
@@ -330,8 +261,145 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I&#39;) \mapsto I \cup
 &lt;/h4&gt;&lt;p&gt;我们定义 $\infty$-cat. 间的 functors $f,g:\mathscr{C}\to\mathscr{D}$ 之间的 natural transf, 为一个 simplicial map $\mathscr{C}\times\Delta^1\to \mathscr{D}$ that restrics appropriately.&lt;/p&gt;
 &lt;p&gt;实际上, 回忆之前的 $\underline{\operatorname{Hom}}(X,Y)$ 定义, functors 和 natural transf. 对应到 $\underline{\operatorname{Hom}}(X,Y)$ 中的 0,1-simplices. 我们希望这仍旧是一个 $\infty$-cat. 这并不显然, 而这正是下一节的任务之一.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;未完待续&lt;/p&gt;
-&lt;p&gt;剩的不多了! trust&lt;/p&gt;
+&lt;h2 id=&#34;纤维化-fibration&#34;&gt;纤维化 (fibration)
+&lt;/h2&gt;&lt;p&gt;这一章我可能会后面整理一下. 我觉得只用关心那些&lt;strong&gt;重要的&lt;/strong&gt;东西就行了.&lt;/p&gt;
+&lt;h3 id=&#34;左内右-leftinnerright-纤维化-fibration-与钝态射-anodyne&#34;&gt;左/内/右 (left/inner/right) 纤维化 (fibration) 与钝态射 (anodyne)
+&lt;/h3&gt;&lt;p&gt;首先, 一个 map of sSets $X\to Y$ 被称作 inner/left/right fibration, 如果他拥有对 inner/left/right horn inclusions 的 RLP (right lifting property):&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXExhbWJkYV9qXm4iXSxbMCwxLCJcXERlbHRhXm4iXSxbMSwwLCJYIl0sWzEsMSwiWSJdLFsyLDNdLFswLDJdLFswLDFdLFsxLDNdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXExhbWJkYV9qXm4iXSxbMCwxLCJcXERlbHRhXm4iXSxbMSwwLCJYIl0sWzEsMSwiWSJdLFsyLDNdLFswLDJdLFswLDFdLFsxLDNdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==&amp;embed&#34; width=&#34;304&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;一个 map of sSets $A\to B$ 被称作 inner/left/right anodyne 的, 如果它拥有对 inner/left/right fibration 的 LLP (left lifting property):&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQiJdLFsxLDAsIlgiXSxbMSwxLCJZIl0sWzIsM10sWzAsMl0sWzAsMV0sWzEsM10sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQiJdLFsxLDAsIlgiXSxbMSwxLCJZIl0sWzIsM10sWzAsMl0sWzAsMV0sWzEsM10sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&amp;embed&#34; width=&#34;304&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;我们可以有一般的 setting: $S$ set of morphs. $\chi_R(S)$ 所有对 $S$ 有 RLP 的 morphs, $\chi_L(S)$ 所有对 $S$ 有 LLP 的 morphs. 那么, 记 $S$ i/l/r horn inclusions, ilr fibs 与 ilr anodynes 就对应 $\chi_R(S)$ 与 $\chi_L(\chi_R(S))=:\chi(S)$.&lt;/p&gt;
+&lt;h4 id=&#34;饱和集-saturated-set&#34;&gt;饱和集 (saturated set)
+&lt;/h4&gt;&lt;p&gt;回忆收缩 (retract) 的定义, 一个映射 $f:A\to B$ 被称作一个 retract of $f&amp;rsquo;:A&amp;rsquo;\to B&amp;rsquo;$, 如果有 comm diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJBIl0sWzAsMSwiQiJdLFsyLDAsIkEiXSxbMiwxLCJCIl0sWzEsMCwiQSciXSxbMSwxLCJCJyJdLFswLDEsImYiXSxbMiwzLCJmIl0sWzQsNSwiZiciXSxbMCw0XSxbNCwyXSxbMSw1XSxbNSwzXSxbMCwyLCJpZCIsMSx7ImN1cnZlIjotMn1dLFsxLDMsImlkIiwxLHsiY3VydmUiOjJ9XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwwLCJBIl0sWzAsMSwiQiJdLFsyLDAsIkEiXSxbMiwxLCJCIl0sWzEsMCwiQSciXSxbMSwxLCJCJyJdLFswLDEsImYiXSxbMiwzLCJmIl0sWzQsNSwiZiciXSxbMCw0XSxbNCwyXSxbMSw1XSxbNSwzXSxbMCwyLCJpZCIsMSx7ImN1cnZlIjotMn1dLFsxLDMsImlkIiwxLHsiY3VydmUiOjJ9XV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;现在, 我们称一个 set of morphs of sSets $T$ 是 saturated 的, 如果他在 taking pushout, arbitrary coprod., countable composition (colim along $\mathbb{N}$), retract 下封闭. 我们记 $S$ 的饱和闭包为 $\bar{S}$.&lt;/p&gt;
+&lt;p&gt;[Lemma] $\chi_L(S)$ 为一个饱和集. In particular, $\chi(S)$ 也是一个饱和集.&lt;/p&gt;
+&lt;h4 id=&#34;composer-不一定是-infty-cat&#34;&gt;composer 不一定是 $\infty$-cat.
+&lt;/h4&gt;&lt;p&gt;我们有如下定理:&lt;/p&gt;
+&lt;p&gt;[Prop] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限 nondeg. simplices. 于是任意 $f$, $f$ 可以被分解为 $g\circ h$ s.t. $h\in \bar{S},g\in \chi_R(S)$.&lt;/p&gt;
+&lt;p&gt;当然不理解这个也无所谓, 这个主要是用来给出如下结论&lt;/p&gt;
+\[\overline{\text{Spine inclusions}}\neq \text{Inner-anodynes}.(\ast)\]&lt;p&gt;于是, 存在 composer which is not an $\infty$-cat.&lt;/p&gt;
+&lt;h4 id=&#34;infty-cat-总是-composer&#34;&gt;$\infty$-cat. 总是 composer
+&lt;/h4&gt;&lt;p&gt;[Lemma] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限石块. 于是 $\bar{S}=\chi(S)$.&lt;/p&gt;
+&lt;p&gt;[Cor] $\text{l/i/r anodynes}$ 恰为 $\overline{\text{l/i/r horn inclus}}$.&lt;/p&gt;
+&lt;p&gt;Moreover, 他们都是 monos.&lt;/p&gt;
+&lt;p&gt;于是, 我们可以回答在第二部分给出的问题. 对于 $F:\mathscr{C}\to\mathscr{D}$ morph. of sCats, 如果对任意 $X,Y\in\mathscr{C}$, $\operatorname{Hom}_\mathscr{C}(X,Y)\to\operatorname{Hom}_{\mathscr{D}}(FX,FY)$ Kan fib. 于是 $NF:N\mathscr{C}\to N\mathscr{D}$ inner fib.&lt;/p&gt;
+&lt;p&gt;[Cor] $F:\mathscr{C}\to \mathscr{D}$ functor betrwwn ord. cat. 于是 $NF:N\mathscr{C}\to N\mathscr{D}$ inner fib.&lt;/p&gt;
+&lt;p&gt;而对于 $(\ast)$, 我们可以说得更多:&lt;/p&gt;
+&lt;p&gt;[Prop] $I^n\to \Delta^n$ inner-anodyne.&lt;/p&gt;
+&lt;p&gt;[Cor] $\infty$-cat. is always composer.&lt;/p&gt;
+&lt;h3 id=&#34;平凡-trivial-纤维化与-joyal-纤维化&#34;&gt;平凡 (trivial) 纤维化与 Joyal 纤维化
+&lt;/h3&gt;&lt;p&gt;现在, 我们有 l/i/j fib. 了, 我们还要引入更多的 fibs:&lt;/p&gt;
+&lt;p&gt;称 $X\to Y$ 是 trivial fib. 如果他拥有 RLP w.r.t. $\partial \Delta^n\to \Delta^n$, for $n\geq 0$.&lt;/p&gt;
+&lt;p&gt;现在, 定义 $J=N(\circ\to \circ)$,&lt;/p&gt;
+&lt;p&gt;称 $X\to Y$ 是 Joyal fib. 如果他是一个 inner fib, 且拥有 RLP w.r.t. $\Delta^0\to  J$.&lt;/p&gt;
+&lt;h4 id=&#34;两个重要构造&#34;&gt;两个重要构造
+&lt;/h4&gt;&lt;p&gt;首先, 通过 $f:X\to Y$ 与 $i:A\to B$, 我们有 comm. diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;于是 induces 了&lt;/p&gt;
+\[\langle f,i\rangle: X^B\to X^A\times_{Y^A}Y^B\]&lt;p&gt;Dually, 对于 $i:A\to B$, $g:S\to T$, 我们有&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d&amp;embed&#34; width=&#34;476&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;于是 induces 了&lt;/p&gt;
+\[i\boxtimes g:A\times T\sqcup_{A\times S} B\times S\to B\times T.\]&lt;p&gt;他们之间有如下关键关系:&lt;/p&gt;
+&lt;p&gt;[Lemma] 如下两个 lifting problems are equiv.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&amp;embed&#34; width=&#34;977&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;h4 id=&#34;infty-cat-operatornamefunmathscrcmathscrd&#34;&gt;$\infty$-cat. $\operatorname{Fun}(\mathscr{C},\mathscr{D})$.
+&lt;/h4&gt;&lt;p&gt;于是, 关于 $i\boxtimes g$, 我们有如下关键引理&lt;/p&gt;
+&lt;p&gt;[Lemma] 考虑 $i,g$ monom. 有&lt;/p&gt;
+&lt;p&gt;$i\boxtimes g$ i/l/r-anodyne if $i$ or $g$ i/l/r-anodyne.&lt;/p&gt;
+&lt;p&gt;这是通过仔细地看 anodynes 的 saturate generators 来完成的. 我们跳过这个引理. 他是为了这个大定理服务的.&lt;/p&gt;
+&lt;p&gt;[Thm] Let $f:X\to Y$ i/l/r fib. $i:A\to B$ monom. then&lt;/p&gt;
+&lt;p&gt;(1) $\langle f,i\rangle$ i/l/r fib.&lt;/p&gt;
+&lt;p&gt;(2) If $i$ i/l/r anodyne, then $\langle f,i\rangle$ trivial fibration.&lt;/p&gt;
+&lt;p&gt;[Cor] $K,X$ sSets, $X$ $\infty$-cat. then so is $X^K$. If $X$ Kan cpx. then so is $X^K$.&lt;/p&gt;
+&lt;p&gt;于是, 这允许我们从 $\mathscr{C},\mathscr{D}$ $\infty$-cat. 出发, 定义 $\operatorname{Fun}(\mathscr{C},\mathscr{D})=\underline{\operatorname{Hom}}(\mathscr{C},\mathscr{D})$ $\infty$-cat.&lt;/p&gt;
+&lt;h4 id=&#34;infty-groupoid-operatornamemapxy&#34;&gt;$\infty$-(groupoid) $\operatorname{map}(x,y)$
+&lt;/h4&gt;&lt;p&gt;现在, 考虑 $N(\operatorname{Kan})=\hat{\operatorname{Spc}}$ coherent nerve. 由 $CW\to Kan$ 我们induces 自然的 functor $\operatorname{Spc}\to \hat{\operatorname{Spc}}$.&lt;/p&gt;
+&lt;p&gt;[Cor] sSet $\mathscr{C}$ 是 $\infty$-cat. iff $\mathscr{C}^{\Delta^2}\to\mathscr{C}^{\Lambda_1^2}$ trivial fib. In particular, $\Lambda_1^2\to \mathscr{C}$ 的 fiber 总是 Kan cpx.&lt;/p&gt;
+&lt;p&gt;也就是说, $f,g$ 的 composition 构成的 sSet $\operatorname{Comp}_\mathscr{C}(f,g)\to \Delta^0$ 是一个 trivial fib.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $X\to Y$ trivial fib. 由于 $\operatorname{Hom}(A,X)\to \operatorname{Hom}(A,Y) $ 总是 trivial fib, 我们取 $A=Y$, 得到 contractible Kan cpx of fibers over $id_Y$. 这个空间被称作 $X\to Y$ 的 section.&lt;/p&gt;
+&lt;p&gt;对于 $\mathscr{C}$ $\infty$-cat, $x,y\in\mathscr{C}$, 考虑 pullback&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG9wZXJhdG9ybmFtZXttYXB9X1xcbWF0aHNjcntDfSh4LHkpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RnVufShcXERlbHRhXjEsXFxtYXRoc2Nye0N9KSJdLFswLDIsIlxcYXN0Il0sWzIsMiwiXFxtYXRoc2Nye0N9XFx0aW1lcyBcXG1hdGhzY3J7Q30iXSxbMiwzLCIoeCx5KSJdLFswLDFdLFsxLDNdLFswLDJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG9wZXJhdG9ybmFtZXttYXB9X1xcbWF0aHNjcntDfSh4LHkpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RnVufShcXERlbHRhXjEsXFxtYXRoc2Nye0N9KSJdLFswLDIsIlxcYXN0Il0sWzIsMiwiXFxtYXRoc2Nye0N9XFx0aW1lcyBcXG1hdGhzY3J7Q30iXSxbMiwzLCIoeCx5KSJdLFswLDFdLFsxLDNdLFswLDJdXQ==&amp;embed&#34; width=&#34;615&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;而我们有关键的如下结论: 这也便是 $(\infty,1)$-cat. 中 $1$ 的含义.&lt;/p&gt;
+&lt;p&gt;[Prop] $\operatorname{map}_\mathscr{C}(x,y)$ 总是 $\infty$-groupoid.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最后一节了qaq&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>CG饲养日记-其三十九 P370-383</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D-p370-383/</link>
+        <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%B8%89%E5%8D%81%E4%B9%9D-p370-383/</guid>
+        <description>&lt;p&gt;遗憾的消息是, 我们要仿照 3.4 的做派, 把 7.3 这几个 main theorem 跳过了.&lt;/p&gt;
+&lt;p&gt;一个原因是, 我不太喜欢 Specialization 这一套. 另一个原因是, 我们直接从上面提取出来所需要 thm 的就行了.&lt;/p&gt;
+&lt;p&gt;对于 $f:V_1\to V_2$ $W$-spaces, 我们称这个映射是 sign-commuting 的, 如果&lt;/p&gt;
+\[f(w\cdot v_1)=(-1)^{l(w)} \cdot w\cdot f(v_1).\]&lt;p&gt;Recall Poincare duality&lt;/p&gt;
+\[H_i(\mathcal{B})\simeq H^{2n-i}(\mathcal{B}).\]&lt;p&gt;这个映射当然不是 comm. with $W$-action 的. 比方说, $W$-action 不保定向, 因此当然不喝 intersection pairing 交换. 更确切地说, $W\circlearrowright H_{2n}(\mathcal{B})$ by $w\mapsto (-1)^{l(w)}$, 也就是说, Poincare duality 是 sign-commutes with $W$-action 的.&lt;/p&gt;
+&lt;p&gt;这段怎么写的这么别扭,,&lt;/p&gt;
+&lt;p&gt;但是, 对于 $G/T$, $W$ 在其上的 (右) 作用是 holomorphic transf. 因此保定向. 所以自然地 Poincare duality&lt;/p&gt;
+\[H_i(G/T)\simeq H^{2n-i}(G/T)\]&lt;p&gt;与 $W$-action 交换. (这里为什么不是 $4n$? top dimension)&lt;/p&gt;
+&lt;p&gt;接下来考虑 $\pi: T^\ast \mathcal{B}\to\mathcal{B}$, $i:\mathcal{B}\hookrightarrow T^\ast \mathcal{B}$.&lt;/p&gt;
+&lt;p&gt;Lemma 7.3.31. 记 $n=\dim_\mathbb{C}\mathcal{B}$, 有&lt;/p&gt;
+&lt;p&gt;(i) Thom isom. $\pi^\ast :H_i(\mathcal{B})\overset{\sim}{\to} H_{i+2n}(T^\ast \mathcal{B})$ sign-comm. with $W$-actions; and so do its inverse $i^\ast :H_{i+2n}(T^\ast \mathcal{B})\overset{\sim}{\to}H_i(\mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;(ii) Thom isom. $\pi^\ast :K^G(\mathcal{B})\overset{\sim}{\to} K^G(T^\ast \mathcal{B})$ comm. with $W$-actions; and so do its inverse $i^\ast : K^G(T^\ast \mathcal{B})\overset{\sim}{\to}K^G(\mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;(iii) Homological Chern char. $K(T^\ast \mathcal{B})\to H_\ast (T^\ast \mathcal{B})$ comm. with $W$-action; $K(T^\ast \mathcal{B})\to H_\ast (T^\ast \mathcal{B})$ sign-comm. with $W$-action.&lt;/p&gt;
+&lt;p&gt;(iv) Cohomological Chern char. $K(\mathcal{B})\to H^\ast (\mathcal{B})$ comm. with $W$-action.&lt;/p&gt;
+&lt;p&gt;证明可以几何地写出:&lt;/p&gt;
+&lt;p&gt;(i) 只需对 $i^\ast $ 说明即可. 为此, 注意 $i^\ast $ 实际上就是与 $[\mathcal{B}]$ zero-section 作交. 我们需要说明 $[\mathcal{B}]$ 与 $H(Z)$ 的 conv. 是 sign repn. 且 $[T^\ast \mathcal{B}]$ 与 $H(Z)$ 的 conv. 是 triv. repn. 对于前者, 他是通过 3.6.17. 对于后者, CG 上的做法是利用 $\tilde{\mathfrak{g}}^{t\cdot h}$ 逼近 $[T^\ast \mathcal{B}]$, 而 $\tilde{\mathfrak{g}}^{h}\simeq G/T$ 上的作用是保定向的.&lt;/p&gt;
+&lt;p&gt;(ii) 的证明关键步骤藏在了前文证明大定理之中. 考虑一个 $L_\lambda$, 他说明与 $\mathcal{O}^h_w$ structure sheaf of $\Lambda_w^h$ 将 $\pi^\ast L_\lambda$ 映到 $\pi^\ast  L_{w(\lambda)}$. 而当然 $w$ 会将 $L_\lambda$ 映到 $L_{w\lambda}$ 于是得证. (但我懒得check他的argument了;w;)&lt;/p&gt;
+&lt;p&gt;(iv) Direct by 6.4.15, (iii) 的 $\mathcal{B}$ 部分 direct by (iv) 和前文关于 sign-comm. 的论证. $T^\ast \mathcal{B}$ 的部分则直接 factor through (i)(ii) 即可.&lt;/p&gt;
+&lt;p&gt;好的, 现在我们有 $W\circlearrowright H/K(\mathcal{B})$ 了. 但我们自然有一个 $H(Z)\circlearrowright H_\ast (\mathcal{B})$ given by $Z\circ \mathcal{B}=\mathcal{B}$. 根据 3.6.17, 这两个在 $H$ 上的作用实际上是一样的. 当然在 $K$-theory 上并不显然: 有&lt;/p&gt;
+&lt;p&gt;Lemma 7.3.32. $W\circlearrowright K^G(\mathcal{B})$ arising from conv. with $K^G(Z)$ expressed in terms of the std. $W$-action $K^G(\mathcal{B})$ by&lt;/p&gt;
+\[w:R\mapsto (-1)^{l(w)}e^{-\rho}\cdot w(e^\rho R).\]&lt;p&gt;其实就是那个 dot action.&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d&amp;embed&#34; width=&#34;813&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;由 5.2.23 给出左半边, 由 7.3.31(ii) 给出右半边. 从而我们得到了&lt;/p&gt;
+\[i^*i_*(w\circ R)=w(i^*i_*R).\]&lt;p&gt;而在 5.4.9 我们证明了 $i^\ast i_\ast $ 是 given by tensor prod. with $\lambda(T^\ast \mathcal{B})$. 由于我们可以 view $T^\ast \mathcal{B}\simeq G\times_B\mathfrak{n}$,&lt;/p&gt;
+\[\lambda(T^*\mathcal{B})=e^{-\rho}\cdot \Delta.\]&lt;p&gt;有&lt;/p&gt;
+\[e^{-\rho}\cdot \Delta \cdot (w\circ R)=(-1)^{l(w)}\cdot \Delta\cdot w(e^{-\rho}\cdot R).\]&lt;p&gt;由于 $R(\mathbb{T})$ integral domain. 我们最终得到&lt;/p&gt;
+\[w\circ R=(-1)^{l(w)}\cdot e^\rho\cdot w( e^{-\rho}R).\]</description>
+        </item>
+        <item>
+        <title>流光记-其一</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</link>
+        <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%80/</guid>
+        <description>&lt;p&gt;记些杂七杂八的感想.&lt;/p&gt;
+&lt;p&gt;本系列完全不定时更新.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;From now on, we let $\Sigma$ be a surface.&lt;/p&gt;
+&lt;p&gt;Firstly, we aimed to calculate $\operatorname{Loc}(Pic\Sigma)$. Here we identify $\operatorname{Pic}\Sigma$ be the space of holomorphic line bundles on $\Sigma$. Then we have a short exact sequence:&lt;/p&gt;
+\[0\to \operatorname{Jac}\Sigma\to \operatorname{Pic}\Sigma\overset{\operatorname{deg}}{\to}\mathbb{Z}\to 0.\]&lt;p&gt;
+$\operatorname{Jac}\Sigma$ the degree $0$ line bundles. By the theory of Riemann Surface, one can topologically identify:&lt;/p&gt;
+\[\operatorname{Jac}\Sigma=\mathbb{C}^g/\mathbb{Z}^{2g}.\]&lt;p&gt;
+One can identify $\pi_1(\operatorname{Jac})=H^1(\Sigma,\mathbb{Z})$. Then we have abelian category equivalence&lt;/p&gt;
+\[\begin{align*}
+  \operatorname{Loc}(\operatorname{Pic}\Sigma)&amp;=\mathbf{Vect}^{\mathbb{Z}\text{-gr}}\otimes \operatorname{Loc}(\operatorname{Jac}\Sigma)\\
+  &amp;=\mathbf{Rep}_{\mathbb{Z}\text{-gr}}(H^1(\Sigma,\mathbb{Z}))\\
+  &amp;=\mathbf{Vect}^{\mathbb{Z}\text{-gr}}\otimes(\mathbb{C}H^1(\Sigma,\mathbb{Z}),\ast)-\mathbf{mod}.
+\end{align*}\]&lt;p&gt;Secondly, we shall consider the algebraic geometry of the character scheme $\operatorname{Loc}_{\mathbb{C}^\times}$. To begin with, we can write the character scheme by&lt;/p&gt;
+\[\begin{align*} \operatorname{Loc}_{\mathbb{C}^\times}(\Sigma)&amp;=\operatorname{Hom}(\pi_1(\Sigma,\mathbb{Z}),\mathbb{C}^\times)/\mathbb{C}^\times\\&amp;=\operatorname{Hom}(H_1(\Sigma,\mathbb{Z}),\mathbb{C}^\times)/\mathbb{C}^\times\\  &amp;=T^\vee/\mathbb{C}^\times.\end{align*}\]&lt;p&gt;Then, by the theory of algebraic geometry, there are&lt;/p&gt;
+\[\mathbf{QC}(\operatorname{Loc}_{\mathbb{C}^\times}\Sigma)=(\mathbb{C}[T^\vee],\cdot)\text{-}\mathbf{mod}\otimes \mathbf{Rep}(\mathbb{C}^\times).\]&lt;p&gt;With $(\mathbb{C}[T^\vee],\cdot)$ denote the global functions on $T^\vee$. And we can identify $\mathbf{Rep}(\mathbb{C}^\times)$ as $\mathbf{Vect}^{\mathbb{Z}\text{-gr}}$.&lt;/p&gt;
+&lt;p&gt;But by Fourier transform, we can identify&lt;/p&gt;
+\[(\mathbb{C}[T^\vee],\cdot)\simeq (\mathbb{C}H^1(\Sigma,\mathbb{Z}),\ast).\]&lt;p&gt;
+Hence we finally attains&lt;/p&gt;
+\[\operatorname{Loc}\operatorname{Pic}(\Sigma)\simeq \mathbf{QC}(\operatorname{Loc}_{\mathbb{C}^\times}(\Sigma)).\]&lt;hr&gt;
+&lt;p&gt;从 Ben-Zvi 的一篇课程笔记: Between electric-magnetic duality and the Langlands program 抄过来的.&lt;/p&gt;
+&lt;p&gt;这个实际上是最最简单的 Betti Langlands Correspondence: $G=\operatorname{GL}_1$ 的 case.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;水点轻松的先.&lt;/p&gt;
+&lt;p&gt;但是这也不轻松, 原文有一些 typo. Check 一下还有些麻烦的.&lt;/p&gt;
 </description>
         </item>
         <item>

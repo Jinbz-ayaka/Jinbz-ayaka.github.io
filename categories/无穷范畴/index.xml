@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%97%A0%E7%A9%B7%E8%8C%83%E7%95%B4/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/categories/%E6%97%A0%E7%A9%B7%E8%8C%83%E7%95%B4/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>屠龙技·上: Landing on the infty-cat. star </title>
         <link>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/</link>
-        <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://Jinbz-ayaka.github.io/p/%E5%B1%A0%E9%BE%99%E6%8A%80%E4%B8%8A-landing-on-the-infty-cat.-star/</guid>
         <description>&lt;p&gt;至人无己, 神人无功, 圣人无名.&lt;/p&gt;
@@ -261,8 +261,76 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I&#39;) \mapsto I \cup
 &lt;/h4&gt;&lt;p&gt;我们定义 $\infty$-cat. 间的 functors $f,g:\mathscr{C}\to\mathscr{D}$ 之间的 natural transf, 为一个 simplicial map $\mathscr{C}\times\Delta^1\to \mathscr{D}$ that restrics appropriately.&lt;/p&gt;
 &lt;p&gt;实际上, 回忆之前的 $\underline{\operatorname{Hom}}(X,Y)$ 定义, functors 和 natural transf. 对应到 $\underline{\operatorname{Hom}}(X,Y)$ 中的 0,1-simplices. 我们希望这仍旧是一个 $\infty$-cat. 这并不显然, 而这正是下一节的任务之一.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;未完待续&lt;/p&gt;
-&lt;p&gt;剩的不多了! trust&lt;/p&gt;
+&lt;h2 id=&#34;纤维化-fibration&#34;&gt;纤维化 (fibration)
+&lt;/h2&gt;&lt;p&gt;这一章我可能会后面整理一下. 我觉得只用关心那些&lt;strong&gt;重要的&lt;/strong&gt;东西就行了.&lt;/p&gt;
+&lt;h3 id=&#34;左内右-leftinnerright-纤维化-fibration-与钝态射-anodyne&#34;&gt;左/内/右 (left/inner/right) 纤维化 (fibration) 与钝态射 (anodyne)
+&lt;/h3&gt;&lt;p&gt;首先, 一个 map of sSets $X\to Y$ 被称作 inner/left/right fibration, 如果他拥有对 inner/left/right horn inclusions 的 RLP (right lifting property):&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXExhbWJkYV9qXm4iXSxbMCwxLCJcXERlbHRhXm4iXSxbMSwwLCJYIl0sWzEsMSwiWSJdLFsyLDNdLFswLDJdLFswLDFdLFsxLDNdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXExhbWJkYV9qXm4iXSxbMCwxLCJcXERlbHRhXm4iXSxbMSwwLCJYIl0sWzEsMSwiWSJdLFsyLDNdLFswLDJdLFswLDFdLFsxLDNdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==&amp;embed&#34; width=&#34;304&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;一个 map of sSets $A\to B$ 被称作 inner/left/right anodyne 的, 如果它拥有对 inner/left/right fibration 的 LLP (left lifting property):&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQiJdLFsxLDAsIlgiXSxbMSwxLCJZIl0sWzIsM10sWzAsMl0sWzAsMV0sWzEsM10sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQiJdLFsxLDAsIlgiXSxbMSwxLCJZIl0sWzIsM10sWzAsMl0sWzAsMV0sWzEsM10sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&amp;embed&#34; width=&#34;304&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;我们可以有一般的 setting: $S$ set of morphs. $\chi_R(S)$ 所有对 $S$ 有 RLP 的 morphs, $\chi_L(S)$ 所有对 $S$ 有 LLP 的 morphs. 那么, 记 $S$ i/l/r horn inclusions, ilr fibs 与 ilr anodynes 就对应 $\chi_R(S)$ 与 $\chi_L(\chi_R(S))=:\chi(S)$.&lt;/p&gt;
+&lt;h4 id=&#34;饱和集-saturated-set&#34;&gt;饱和集 (saturated set)
+&lt;/h4&gt;&lt;p&gt;回忆收缩 (retract) 的定义, 一个映射 $f:A\to B$ 被称作一个 retract of $f&amp;rsquo;:A&amp;rsquo;\to B&amp;rsquo;$, 如果有 comm diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJBIl0sWzAsMSwiQiJdLFsyLDAsIkEiXSxbMiwxLCJCIl0sWzEsMCwiQSciXSxbMSwxLCJCJyJdLFswLDEsImYiXSxbMiwzLCJmIl0sWzQsNSwiZiciXSxbMCw0XSxbNCwyXSxbMSw1XSxbNSwzXSxbMCwyLCJpZCIsMSx7ImN1cnZlIjotMn1dLFsxLDMsImlkIiwxLHsiY3VydmUiOjJ9XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwwLCJBIl0sWzAsMSwiQiJdLFsyLDAsIkEiXSxbMiwxLCJCIl0sWzEsMCwiQSciXSxbMSwxLCJCJyJdLFswLDEsImYiXSxbMiwzLCJmIl0sWzQsNSwiZiciXSxbMCw0XSxbNCwyXSxbMSw1XSxbNSwzXSxbMCwyLCJpZCIsMSx7ImN1cnZlIjotMn1dLFsxLDMsImlkIiwxLHsiY3VydmUiOjJ9XV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;现在, 我们称一个 set of morphs of sSets $T$ 是 saturated 的, 如果他在 taking pushout, arbitrary coprod., countable composition (colim along $\mathbb{N}$), retract 下封闭. 我们记 $S$ 的饱和闭包为 $\bar{S}$.&lt;/p&gt;
+&lt;p&gt;[Lemma] $\chi_L(S)$ 为一个饱和集. In particular, $\chi(S)$ 也是一个饱和集.&lt;/p&gt;
+&lt;h4 id=&#34;composer-不一定是-infty-cat&#34;&gt;composer 不一定是 $\infty$-cat.
+&lt;/h4&gt;&lt;p&gt;我们有如下定理:&lt;/p&gt;
+&lt;p&gt;[Prop] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限 nondeg. simplices. 于是任意 $f$, $f$ 可以被分解为 $g\circ h$ s.t. $h\in \bar{S},g\in \chi_R(S)$.&lt;/p&gt;
+&lt;p&gt;当然不理解这个也无所谓, 这个主要是用来给出如下结论&lt;/p&gt;
+\[\overline{\text{Spine inclusions}}\neq \text{Inner-anodynes}.(\ast)\]&lt;p&gt;于是, 存在 composer which is not an $\infty$-cat.&lt;/p&gt;
+&lt;h4 id=&#34;infty-cat-总是-composer&#34;&gt;$\infty$-cat. 总是 composer
+&lt;/h4&gt;&lt;p&gt;[Lemma] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限石块. 于是 $\bar{S}=\chi(S)$.&lt;/p&gt;
+&lt;p&gt;[Cor] $\text{l/i/r anodynes}$ 恰为 $\overline{\text{l/i/r horn inclus}}$.&lt;/p&gt;
+&lt;p&gt;Moreover, 他们都是 monos.&lt;/p&gt;
+&lt;p&gt;于是, 我们可以回答在第二部分给出的问题. 对于 $F:\mathscr{C}\to\mathscr{D}$ morph. of sCats, 如果对任意 $X,Y\in\mathscr{C}$, $\operatorname{Hom}_\mathscr{C}(X,Y)\to\operatorname{Hom}_{\mathscr{D}}(FX,FY)$ Kan fib. 于是 $NF:N\mathscr{C}\to N\mathscr{D}$ inner fib.&lt;/p&gt;
+&lt;p&gt;[Cor] $F:\mathscr{C}\to \mathscr{D}$ functor betrwwn ord. cat. 于是 $NF:N\mathscr{C}\to N\mathscr{D}$ inner fib.&lt;/p&gt;
+&lt;p&gt;而对于 $(\ast)$, 我们可以说得更多:&lt;/p&gt;
+&lt;p&gt;[Prop] $I^n\to \Delta^n$ inner-anodyne.&lt;/p&gt;
+&lt;p&gt;[Cor] $\infty$-cat. is always composer.&lt;/p&gt;
+&lt;h3 id=&#34;平凡-trivial-纤维化与-joyal-纤维化&#34;&gt;平凡 (trivial) 纤维化与 Joyal 纤维化
+&lt;/h3&gt;&lt;p&gt;现在, 我们有 l/i/j fib. 了, 我们还要引入更多的 fibs:&lt;/p&gt;
+&lt;p&gt;称 $X\to Y$ 是 trivial fib. 如果他拥有 RLP w.r.t. $\partial \Delta^n\to \Delta^n$, for $n\geq 0$.&lt;/p&gt;
+&lt;p&gt;现在, 定义 $J=N(\circ\to \circ)$,&lt;/p&gt;
+&lt;p&gt;称 $X\to Y$ 是 Joyal fib. 如果他是一个 inner fib, 且拥有 RLP w.r.t. $\Delta^0\to  J$.&lt;/p&gt;
+&lt;h4 id=&#34;两个重要构造&#34;&gt;两个重要构造
+&lt;/h4&gt;&lt;p&gt;首先, 通过 $f:X\to Y$ 与 $i:A\to B$, 我们有 comm. diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0=&amp;embed&#34; width=&#34;432&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;于是 induces 了&lt;/p&gt;
+\[\langle f,i\rangle: X^B\to X^A\times_{Y^A}Y^B\]&lt;p&gt;Dually, 对于 $i:A\to B$, $g:S\to T$, 我们有&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d&amp;embed&#34; width=&#34;476&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;于是 induces 了&lt;/p&gt;
+\[i\boxtimes g:A\times T\sqcup_{A\times S} B\times S\to B\times T.\]&lt;p&gt;他们之间有如下关键关系:&lt;/p&gt;
+&lt;p&gt;[Lemma] 如下两个 lifting problems are equiv.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&amp;embed&#34; width=&#34;977&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;h4 id=&#34;infty-cat-operatornamefunmathscrcmathscrd&#34;&gt;$\infty$-cat. $\operatorname{Fun}(\mathscr{C},\mathscr{D})$.
+&lt;/h4&gt;&lt;p&gt;于是, 关于 $i\boxtimes g$, 我们有如下关键引理&lt;/p&gt;
+&lt;p&gt;[Lemma] 考虑 $i,g$ monom. 有&lt;/p&gt;
+&lt;p&gt;$i\boxtimes g$ i/l/r-anodyne if $i$ or $g$ i/l/r-anodyne.&lt;/p&gt;
+&lt;p&gt;这是通过仔细地看 anodynes 的 saturate generators 来完成的. 我们跳过这个引理. 他是为了这个大定理服务的.&lt;/p&gt;
+&lt;p&gt;[Thm] Let $f:X\to Y$ i/l/r fib. $i:A\to B$ monom. then&lt;/p&gt;
+&lt;p&gt;(1) $\langle f,i\rangle$ i/l/r fib.&lt;/p&gt;
+&lt;p&gt;(2) If $i$ i/l/r anodyne, then $\langle f,i\rangle$ trivial fibration.&lt;/p&gt;
+&lt;p&gt;[Cor] $K,X$ sSets, $X$ $\infty$-cat. then so is $X^K$. If $X$ Kan cpx. then so is $X^K$.&lt;/p&gt;
+&lt;p&gt;于是, 这允许我们从 $\mathscr{C},\mathscr{D}$ $\infty$-cat. 出发, 定义 $\operatorname{Fun}(\mathscr{C},\mathscr{D})=\underline{\operatorname{Hom}}(\mathscr{C},\mathscr{D})$ $\infty$-cat.&lt;/p&gt;
+&lt;h4 id=&#34;infty-groupoid-operatornamemapxy&#34;&gt;$\infty$-(groupoid) $\operatorname{map}(x,y)$
+&lt;/h4&gt;&lt;p&gt;现在, 考虑 $N(\operatorname{Kan})=\hat{\operatorname{Spc}}$ coherent nerve. 由 $CW\to Kan$ 我们induces 自然的 functor $\operatorname{Spc}\to \hat{\operatorname{Spc}}$.&lt;/p&gt;
+&lt;p&gt;[Cor] sSet $\mathscr{C}$ 是 $\infty$-cat. iff $\mathscr{C}^{\Delta^2}\to\mathscr{C}^{\Lambda_1^2}$ trivial fib. In particular, $\Lambda_1^2\to \mathscr{C}$ 的 fiber 总是 Kan cpx.&lt;/p&gt;
+&lt;p&gt;也就是说, $f,g$ 的 composition 构成的 sSet $\operatorname{Comp}_\mathscr{C}(f,g)\to \Delta^0$ 是一个 trivial fib.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $X\to Y$ trivial fib. 由于 $\operatorname{Hom}(A,X)\to \operatorname{Hom}(A,Y) $ 总是 trivial fib, 我们取 $A=Y$, 得到 contractible Kan cpx of fibers over $id_Y$. 这个空间被称作 $X\to Y$ 的 section.&lt;/p&gt;
+&lt;p&gt;对于 $\mathscr{C}$ $\infty$-cat, $x,y\in\mathscr{C}$, 考虑 pullback&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG9wZXJhdG9ybmFtZXttYXB9X1xcbWF0aHNjcntDfSh4LHkpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RnVufShcXERlbHRhXjEsXFxtYXRoc2Nye0N9KSJdLFswLDIsIlxcYXN0Il0sWzIsMiwiXFxtYXRoc2Nye0N9XFx0aW1lcyBcXG1hdGhzY3J7Q30iXSxbMiwzLCIoeCx5KSJdLFswLDFdLFsxLDNdLFswLDJdXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG9wZXJhdG9ybmFtZXttYXB9X1xcbWF0aHNjcntDfSh4LHkpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RnVufShcXERlbHRhXjEsXFxtYXRoc2Nye0N9KSJdLFswLDIsIlxcYXN0Il0sWzIsMiwiXFxtYXRoc2Nye0N9XFx0aW1lcyBcXG1hdGhzY3J7Q30iXSxbMiwzLCIoeCx5KSJdLFswLDFdLFsxLDNdLFswLDJdXQ==&amp;embed&#34; width=&#34;615&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;而我们有关键的如下结论: 这也便是 $(\infty,1)$-cat. 中 $1$ 的含义.&lt;/p&gt;
+&lt;p&gt;[Prop] $\operatorname{map}_\mathscr{C}(x,y)$ 总是 $\infty$-groupoid.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最后一节了qaq&lt;/p&gt;
 </description>
         </item>
         <item>
