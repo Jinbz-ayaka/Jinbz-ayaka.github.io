@@ -7,7 +7,68 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十二 P395-410</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%BA%8C-p395-410/</link>
+        <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%BA%8C-p395-410/</guid>
+        <description>&lt;p&gt;其实我很想把这一章跳了orz&lt;/p&gt;
+&lt;p&gt;剩下一整章都是证明 main thm. 就是 7.2.5. 中的 alg. homo. $\Theta:\mathbb{H}\to K^A(Z)$. 在之前那一章中, 我们通过对生成元来定义 $\Theta$. 那么我们现在又要这么做了. 注意 $\mathbb{H}$ 拥有一组生成元&lt;/p&gt;
+\[S=\{e^\lambda|\lambda\in P\}\cup \{T_s|s\in S\}\subset \mathbb{H}.\]&lt;p&gt;考虑 $\pi_\Delta:Z_\Delta\simeq T^\ast _{\mathcal{B}_\Delta}(\mathcal{B}\times\mathcal{B})\to cal{B}_\Delta$. 有 line bundle $L_\lambda$ 长在 $\mathcal{B}$ 上. 考虑 $\mathcal{O}_\lambda=\pi_\Delta^\ast L_\lambda$. 于是, 我们可以 view $\mathcal{O}_\lambda$ as $G\times \mathbb{C}^\ast $-equiv. sheaf on $Z$ supported on $Z_\Delta\subset Z$.&lt;/p&gt;
+&lt;p&gt;接下来, 对于 $s\in S$, $Y_s\subset \mathcal{B}\times \mathcal{B}$ $G$-orbit. $\bar{Y}_s=Y_s\sqcup \mathcal{B}_\Delta$ smooth. 此外, 其为一个 fibration over $\mathcal{B}$: $\bar{Y}\hookrightarrow \mathcal{B}\times \mathcal{B}\to \mathcal{B}$. 记 $\Omega_{\bar{Y}_s/\mathcal{B}}^1$ relative $1$-form. 考虑 $\pi_s:T^\ast _{\bar{Y}_s}(\mathcal{B}\times\mathcal{B})\to \bar{Y}_s$ smooth irrcomp. of $Z$, set $\mathcal{Q}_s=\pi^\ast _s\Omega_{\bar{Y}/\mathcal{B}}^1$.&lt;/p&gt;
+&lt;p&gt;现在, 我们终于可以定义 $\Theta:S\to K^A(Z)$:&lt;/p&gt;
+\[e^\lambda\mapsto[\mathcal{O}_{-\lambda}], T_s\mapsto -([q\mathcal{Q}_s]+[\mathcal{O}_0]).\]&lt;p&gt;他这里大概是怎样延拓过去的呢? $\mathbb{H}$ 和 $K^A(Z)$ 都是 alg. 他考虑了一个中间 $\mathbb{C}$-v.s., 并使 $\mathbb{H},K^A(Z)\circlearrowright M$ faithfully. 且对于&lt;/p&gt;
+\[\rho_1:\mathbb{H}\to \operatorname{End}_\mathbb{C} M,\rho_2: K^A(Z)\to \operatorname{End}_\mathbb{C} M,\]&lt;p&gt;我们有 $\rho_1(u)=\rho_2(\Theta(u))$.&lt;/p&gt;
+&lt;p&gt;现在, 我们考虑一个 Casimir-like 的元素 $e=\sum_{w\in W} T_w\in H_W\subset\mathbb{H}$, 有&lt;/p&gt;
+&lt;p&gt;Lemma 7.6.2. (1) $T_w\mapsto q^{l(w)}$ extends by $\mathbb{Z}[q,q^{-1}]$-linearity to an alg. homo.&lt;/p&gt;
+\[\epsilon:H_W\to \mathbb{Z}[q,q^{-1}].\]&lt;p&gt;(2) For any $a\in H_W$ we have $a\cdot e=\epsilon(a)e=e\cdot a$.&lt;/p&gt;
+&lt;p&gt;(3) $\mathbb{H}e$ free $R(T)[q,q^{-1}]$-mod. with generator $e$.&lt;/p&gt;
+&lt;p&gt;代数tv这一块.&lt;/p&gt;
+&lt;p&gt;于是我们现在有 $\mathbb{H}\circlearrowright\mathbb{H}\cdot e$. 也就是说, $\rho_{\mathbb{H}}:\mathbb{H}\to\operatorname{End}_{\mathbb{Z}[q,q^{-1}]}(\mathbb{H}\cdot e)$.&lt;/p&gt;
+&lt;p&gt;而, 我们有&lt;/p&gt;
+\[K^A(T^*\mathcal{B})\overset{Th,\sim}{\to}K^A(\mathcal{B})\overset{\sim}{\to} R(T)[q,q^{-1}]\overset{\sim}{\to} \mathbb{H}\cdot e.\]&lt;p&gt;于是, 根据 proj. 与 conv. 我们又能够得到 alg. homo/&lt;/p&gt;
+\[\rho_{T^*\mathcal{B}}:K^A(Z)\to \operatorname{End}_{R(A)}(K^A(T^*\mathcal{B})).\]&lt;p&gt;Claim 7.6.7. $\rho_{T^\ast \mathcal{B}}$ inj.&lt;/p&gt;
+&lt;p&gt;Claim 7.6.8. 2 actions coincide on $S$.&lt;/p&gt;
+&lt;p&gt;于是 induces 了&lt;/p&gt;
+&lt;p&gt;Prop 7.6.9. $\Theta$ extends to $\mathbb{H}\to K^A(Z)$.&lt;/p&gt;
+&lt;p&gt;借助与 7.2.2. 证明 (没错, 这个被跳过了) 类似的 argument, 我们有&lt;/p&gt;
+&lt;p&gt;Thm 7.6.10. $\Theta:\mathbb{H}\to K^A(Z)$ is a bij.&lt;/p&gt;
+&lt;p&gt;Ok. 这个证明还是很有意思的. 爸爸像儿子地来说, BFN 关于 Coulomb Branch 性质的若干证明和他有非常相似的抓痕. 我们将 $W$ 上的 Bruhat order extend 为一个全序.&lt;/p&gt;
+&lt;p&gt;考虑 $Z_{\leq w}=\sqcup_{y\leq w}T^\ast _{Y_y}(\mathcal{B}\times \mathcal{B})$. 于是我们可以考虑出一个 Cellular fib. 的结构. 自然地, 有如下引理:&lt;/p&gt;
+&lt;p&gt;Lem. 7.6.11. (1) $K^A(Z_{\leq w})\to K^A(Z)$ induced by $Z_{\leq w}\hookrightarrow K^A(Z)$ induced by $Z_{\leq w}\hookrightarrow Z$ inj. and their images form a filt. on $K^A(Z)$ indexed by $W$.&lt;/p&gt;
+&lt;p&gt;(2) For any $w\in W$, rest. to $T^\ast _{Y_w}(\mathcal{B}\times \mathcal{B})\hookrightarrow Z_{\leq w}$ induces isom.&lt;/p&gt;
+\[K^A(Z_{\leq w})/K^A(Z_{&lt; w})\simeq K^A(T^*_{Y_w}(\mathcal{B}\times \mathcal{B})).\]&lt;p&gt;Moreover, RHS is a free $R(T\times \mathbb{C}^\ast )$-mod. with generator $[\mathcal{O}_{T^\ast _{Y_w}(\mathcal{B}\times \mathcal{B})}]$.&lt;/p&gt;
+&lt;p&gt;同样地, 在 $\mathbb{H}$ 上我们也有 filtration $\mathbb{H}_{\leq w}$ spanned by $e^\lambda T_y$ w. $y\leq w$. 我们有&lt;/p&gt;
+&lt;p&gt;Prop 7.6.12. (1) $\Theta:\mathbb{H}\to K^A(Z)$ filtration preserving.&lt;/p&gt;
+&lt;p&gt;(2) $\Theta: \mathbb{H}_{\leq w}/\mathbb{H}_{&amp;lt;w}\to K^A(Z_{\leq w})/K^A(Z_{&amp;lt;w})\simeq K^A(T^\ast _{Y_w}(\mathcal{B}\times\mathcal{B}))$, $T_w\mapsto c_w\cdot[\mathcal{O}_{T^\ast _{Y_w}(\mathcal{B}\times\mathcal{B})}]$ w. $c_w$ inv.&lt;/p&gt;
+&lt;p&gt;具体证明就不写了(). 大致都是 ind. on order. 证明里用到的有一个东西还挺好玩的, 提一嘴: 考虑 $w$ 的 一个 (最短的) 拆分 $w=s_1\cdots s_r$, 我们有&lt;/p&gt;
+\[\bar{Y}_{s_1}\circ \cdots \circ \bar{Y}_{s_r}=\bar{Y}_{w},\]&lt;p&gt;有 Demazure Resol.&lt;/p&gt;
+&lt;p&gt;The natural proj.&lt;/p&gt;
+\[p:\bar{Y}_{s_1}\times_{\mathcal{B}}\cdots \times_{\mathcal{B}} \bar{Y}_{s_r}\twoheadrightarrow \bar{Y}_{s_1}\circ\cdots \circ\bar{Y}_{s_r}=\bar{Y}_w.\]&lt;p&gt;gives a resol. of singularities of $\bar{Y}_{w}$ (bir. and prop.) Moreover, on Zariski open subsets&lt;/p&gt;
+\[p:Y_{s_1}\times_{\mathcal{B}} \cdots\times_{\mathcal{B}} Y_{s_r}\overset{\sim}{\to} Y_w.\]&lt;p&gt;现在, 我们回归上面两个 claim.&lt;/p&gt;
+&lt;p&gt;7.6.7 的 inj. 证明也就可以仿照 BFN 中处理: 证明在 localization 上 是 id. 更准确地说, 将它 reduced 到 map&lt;/p&gt;
+\[K^{T\times \mathbb{C}^*}(Z_{\mathfrak{b}}^a)_a\to K^{T\times \mathbb{C}^*}(Z^a_{\mathfrak{b}}\cap \mathcal{B}^a)_a\]&lt;p&gt;是一个 isom. 而我们有 $Z^a_{\mathfrak{b}}=Z^a_{\mathfrak{b}}\cap\mathcal{B}^a$.&lt;/p&gt;
+&lt;p&gt;处理 7.6.8 我们还有一些路要走. 首先是 compute action $K^G(\mathcal{B}\times \mathcal{B})\otimes K^G(\mathcal{B})\overset{\ast }{\to} K^G(\mathcal{B})$.&lt;/p&gt;
+&lt;p&gt;Lemma 7.6.28. The following diag. comm.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoXFxtYXRoY2Fse0J9XFx0aW1lcyBcXG1hdGhjYWx7Qn0pXFxvdGltZXMgS15HKFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJLXlQoXFxtYXRoY2Fse0J9KVxcb3RpbWVzIEteRyhcXG1hdGhjYWx7Qn0pIl0sWzEsMSwiUihUKSJdLFsxLDAsIkteRyhcXG1hdGhjYWx7Qn0pIl0sWzMsMiwiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwxLCJyZXNcXG90aW1lcyBpZCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMywiKiJdLFsxLDIsInRyIl1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoXFxtYXRoY2Fse0J9XFx0aW1lcyBcXG1hdGhjYWx7Qn0pXFxvdGltZXMgS15HKFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJLXlQoXFxtYXRoY2Fse0J9KVxcb3RpbWVzIEteRyhcXG1hdGhjYWx7Qn0pIl0sWzEsMSwiUihUKSJdLFsxLDAsIkteRyhcXG1hdGhjYWx7Qn0pIl0sWzMsMiwiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwxLCJyZXNcXG90aW1lcyBpZCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMywiKiJdLFsxLDIsInRyIl1d&amp;embed&#34; width=&#34;556&#34; height=&#34;304&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;利用 Kunneth, 计算即可.&lt;/p&gt;
+&lt;p&gt;现在, 我们换一种方式陈述一下 7.6.8. 我们有 comm. diag.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsOCxbMSwwLCJcXG1hdGhiYntIfSJdLFsxLDEsIkteQShaKSJdLFsxLDIsIkteQShcXG1hdGhjYWx7Qn1cXHRpbWVzIFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJTIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RW5kfShcXG1hdGhiYntIfVxcY2RvdCBlKSJdLFsyLDEsIlxcb3BlcmF0b3JuYW1le0VuZH0oS15BKFReKlxcbWF0aGNhbHtCfSkpIl0sWzIsMiwiXFxvcGVyYXRvcm5hbWV7RW5kfShLXkEoXFxtYXRoY2Fse0J9KSkiXSxbMywxLCJcXG9wZXJhdG9ybmFtZXtFbmR9KFIoVClbcSxxXnstMX1dKSJdLFszLDEsIlxcVGhldGEiXSxbMSwyLCJcXGJhcntpfV4qXFxiYXJ7an1fKiJdLFszLDIsIlxcYmFye2l9XipcXGJhcntqfV8qXFxUaGV0YSIsMl0sWzMsMCwiaW5jbCIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsNCwiXFxyaG9fe1xcbWF0aGJie0h9fSJdLFs0LDUsIlxcUGhpIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw2LCJUaCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNSwiXFxyaG9fe1ReKlxcbWF0aGNhbHtCfX0iXSxbMiw2LCJcXHJob197XFxtYXRoY2Fse0J9fSJdLFs1LDcsIlRoXFxjaXJjIFxcYWxwaGEiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs2LDcsIlxcYWxwaGEiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDcsIlxcYmV0YSIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsOCxbMSwwLCJcXG1hdGhiYntIfSJdLFsxLDEsIkteQShaKSJdLFsxLDIsIkteQShcXG1hdGhjYWx7Qn1cXHRpbWVzIFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJTIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RW5kfShcXG1hdGhiYntIfVxcY2RvdCBlKSJdLFsyLDEsIlxcb3BlcmF0b3JuYW1le0VuZH0oS15BKFReKlxcbWF0aGNhbHtCfSkpIl0sWzIsMiwiXFxvcGVyYXRvcm5hbWV7RW5kfShLXkEoXFxtYXRoY2Fse0J9KSkiXSxbMywxLCJcXG9wZXJhdG9ybmFtZXtFbmR9KFIoVClbcSxxXnstMX1dKSJdLFszLDEsIlxcVGhldGEiXSxbMSwyLCJcXGJhcntpfV4qXFxiYXJ7an1fKiJdLFszLDIsIlxcYmFye2l9XipcXGJhcntqfV8qXFxUaGV0YSIsMl0sWzMsMCwiaW5jbCIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsNCwiXFxyaG9fe1xcbWF0aGJie0h9fSJdLFs0LDUsIlxcUGhpIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw2LCJUaCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNSwiXFxyaG9fe1ReKlxcbWF0aGNhbHtCfX0iXSxbMiw2LCJcXHJob197XFxtYXRoY2Fse0J9fSJdLFs1LDcsIlRoXFxjaXJjIFxcYWxwaGEiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs2LDcsIlxcYWxwaGEiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDcsIlxcYmV0YSIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d&amp;embed&#34; width=&#34;974&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;我们从左到右, 总共是 3 条路: 上/中/下, 我们分别记其为 $\Psi_1,\Psi_2,\Psi_3$.&lt;/p&gt;
+&lt;p&gt;于是, 利用 7.6.28, 这允许我们 (通过冗长的 arguments, 包含3页), 给出&lt;/p&gt;
+&lt;p&gt;Prop 7.6.29. For any $\mu\in X^\ast (T)$, we have $\Psi_3(e^\mu):e^\lambda\mapsto e^{-\mu}$, 以及 for any $\alpha$ simple, $\Psi_3(T_{s_\alpha})$ 由 thm. 7.2.16 中式子&lt;/p&gt;
+\[\hat{T}_{s_\alpha}: e^\lambda\mapsto \frac{e^\lambda-e^{s_\alpha(\lambda)}}{e^\alpha-1}-q\frac{e^\lambda-e_{s_\alpha(\lambda)+\alpha}}{e^\alpha-1}.\]&lt;p&gt;来给出.&lt;/p&gt;
+&lt;p&gt;而, 直接在 $\mathbb{H}$ 中利用生成关系计算得,&lt;/p&gt;
+&lt;p&gt;Prop 7.6.29. For any $\mu\in X^\ast (T)$, we have $\Psi_1(e^\mu):e^\lambda\mapsto e^{-\mu}$, 以及 for any $\alpha$ simple, $\Psi_1(T_{s_\alpha})$ 由 thm. 7.2.16 中式子&lt;/p&gt;
+\[\hat{T}_{s_\alpha}: e^\lambda\mapsto \frac{e^\lambda-e^{s_\alpha(\lambda)}}{e^\alpha-1}-q\frac{e^\lambda-e_{s_\alpha(\lambda)+\alpha}}{e^\alpha-1}.\]&lt;p&gt;来给出.&lt;/p&gt;
+&lt;p&gt;这最终给出了前文 &amp;lsquo;&amp;lsquo;我们有 $\rho_1(u)=\rho_2(\Theta(u))$&amp;rsquo;&amp;rsquo; 的 argument. 于是, 我们完成了大定理的证明.&lt;/p&gt;
+&lt;p&gt;gg!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其四十一 P389-395</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%80-p389-395/</link>
         <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
