@@ -7,7 +7,39 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>流光记-其二</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%BA%8C/</link>
+        <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%BA%8C/</guid>
+        <description>&lt;p&gt;却只让我看你最后一眼&lt;/p&gt;
+&lt;p&gt;仔细地看了看, 好像上一篇的那些东西有一些更好的来源: Mitchell Rothstein 的 Sheaves with connection on abelian varieties 和它的 Correction. 此外, 这些东西应该本身也来自 Laumon-Fourier, G. Laumon 的 Transformation de Fourier g´en´eralis´ee 与 Transformation de Fourier g´eom´etrique 但我不会法语:(&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天要找的东西是从 Stacks 上面抄过来的. 14.34 Standard Resolution.&lt;/p&gt;
+&lt;p&gt;Start by $\mathcal{A},\mathcal{S}$ two categories with $V:\mathcal{A}\to\mathcal{S}$ and its left adjoint $U:\mathcal{S}\to \mathcal{A}$. Then we have two natural transformations&lt;/p&gt;
+\[d:U\circ V\to \operatorname{id}_{\mathcal{A}}(\text{counit}), \eta:\operatorname{id}_{\mathcal{S}}\to V\circ U(\text{unit}).\]&lt;p&gt;我们要考虑 $\operatorname{Fun}(\mathcal{A},\mathcal{A})$ 这个 category. 考虑如下 setting of simplicial set:&lt;/p&gt;
+\[X_n=(U\circ V)^{\circ(n+1)}=U\circ V\circ U\circ \cdots\circ U\circ V.\]&lt;p&gt;以及, set $X_{-1}=\operatorname{id}$. counit 结构便给出了 $X_\cdot$ 上的 simplicial 结构, by&lt;/p&gt;
+\[d^n_j:X_n\to X_{n-1},s^n_j:X_n\to X_{n+1},\]\[d_j^n=1_{X_{j-1}}\star d\star 1_{X_{n-j-1}}, s^n_j=1_{X_{j-1}\circ U}\star \eta \star 1_{V\circ X_{n-j-1}}.\]&lt;p&gt;以及 set $\epsilon_0=d:X_0\to X_{-1}$.&lt;/p&gt;
+&lt;p&gt;Lemma 34.2. 如上 $X=(X_n,d_j^n,s_{j}^n)$ 给出了 $\operatorname{Fun}(\mathcal{A},\mathcal{A})$ 上的 simplicial 结构, 而 $\epsilon_0$ 则给出了 $X\to X_{-1}$ 的 augmentation.&lt;/p&gt;
+&lt;p&gt;Lemma 34.3 在如上 setting 下,&lt;/p&gt;
+\[1_V\star \epsilon:V\circ X\to V, \epsilon\star 1_U:X\circ U\to U\]&lt;p&gt;are homotopy equivalences.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $\mathcal{A}$ 为 $R-\operatorname{Mod}$ 或者 $A-\operatorname{Alg}$, 我们考虑其到 $\operatorname{Set}$ 上的自由-遗忘伴随, 我们得到的是, 对于 $R[M]$ $R$-spanned module&lt;/p&gt;
+\[X(M)=\left(\cdots R[R[R[M]]]\overset{(3,2)}{\leftrightarrow}R[R[M]]\overset{(2,1)}{\leftrightarrow} R[M]\right)\]&lt;p&gt;augmentation towards $M$, and $A[E]$ the polynomial ring,&lt;/p&gt;
+\[X(B)=\left(\cdots A[A[A[B]]]\overset{(3,2)}{\leftrightarrow}A[A[B]]\overset{(2,1)}{\leftrightarrow} A[B]\right)\]&lt;p&gt;augmentation towards $B$.&lt;/p&gt;
+&lt;p&gt;于是, 如下diagram 是一个 homotopy equivalence:&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJBW0FbQVtBW0VdXV1dIl0sWzIsMCwiQVtBW0FbRV1dXSJdLFs0LDAsIkFbQVtFXV0iXSxbNCwyLCJBW0VdIl0sWzAsMiwiQVtFXSJdLFsyLDIsIkFbRV0iXSxbMSwwXSxbMiwxXSxbMiwzXSxbMSw1XSxbMCw0XSxbNSw0XSxbNSwzLCIiLDIseyJvZmZzZXQiOjJ9XSxbNSwzLCIiLDIseyJvZmZzZXQiOi0yfV0sWzMsNV0sWzQsNSwiIiwwLHsib2Zmc2V0IjoyfV0sWzQsNSwiIiwwLHsib2Zmc2V0IjotMn1dLFs1LDQsIiIsMCx7Im9mZnNldCI6LTR9XSxbNSw0LCIiLDAseyJvZmZzZXQiOjR9XSxbMSwwLCIiLDIseyJvZmZzZXQiOi00fV0sWzEsMCwiIiwyLHsib2Zmc2V0Ijo0fV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMn1dLFswLDEsIiIsMix7Im9mZnNldCI6Mn1dLFsxLDIsIiIsMix7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDIseyJvZmZzZXQiOjJ9XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwwLCJBW0FbQVtBW0VdXV1dIl0sWzIsMCwiQVtBW0FbRV1dXSJdLFs0LDAsIkFbQVtFXV0iXSxbNCwyLCJBW0VdIl0sWzAsMiwiQVtFXSJdLFsyLDIsIkFbRV0iXSxbMSwwXSxbMiwxXSxbMiwzXSxbMSw1XSxbMCw0XSxbNSw0XSxbNSwzLCIiLDIseyJvZmZzZXQiOjJ9XSxbNSwzLCIiLDIseyJvZmZzZXQiOi0yfV0sWzMsNV0sWzQsNSwiIiwwLHsib2Zmc2V0IjoyfV0sWzQsNSwiIiwwLHsib2Zmc2V0IjotMn1dLFs1LDQsIiIsMCx7Im9mZnNldCI6LTR9XSxbNSw0LCIiLDAseyJvZmZzZXQiOjR9XSxbMSwwLCIiLDIseyJvZmZzZXQiOi00fV0sWzEsMCwiIiwyLHsib2Zmc2V0Ijo0fV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMn1dLFswLDEsIiIsMix7Im9mZnNldCI6Mn1dLFsxLDIsIiIsMix7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDIseyJvZmZzZXQiOjJ9XV0=&amp;embed&#34; width=&#34;940&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJBW0FbQVtCXV1dIl0sWzIsMCwiQVtBW0JdXSJdLFs0LDAsIkFbQl0iXSxbNCwyLCJCIl0sWzAsMiwiQiJdLFsyLDIsIkIiXSxbMSwwXSxbMiwxXSxbMiwzXSxbMSw1XSxbMCw0XSxbNSw0XSxbNSwzLCIiLDIseyJvZmZzZXQiOjJ9XSxbNSwzLCIiLDIseyJvZmZzZXQiOi0yfV0sWzMsNV0sWzQsNSwiIiwwLHsib2Zmc2V0IjoyfV0sWzQsNSwiIiwwLHsib2Zmc2V0IjotMn1dLFs1LDQsIiIsMCx7Im9mZnNldCI6LTR9XSxbNSw0LCIiLDAseyJvZmZzZXQiOjR9XSxbMSwwLCIiLDIseyJvZmZzZXQiOi00fV0sWzEsMCwiIiwyLHsib2Zmc2V0Ijo0fV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMn1dLFswLDEsIiIsMix7Im9mZnNldCI6Mn1dLFsxLDIsIiIsMix7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDIseyJvZmZzZXQiOjJ9XV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNixbMCwwLCJBW0FbQVtCXV1dIl0sWzIsMCwiQVtBW0JdXSJdLFs0LDAsIkFbQl0iXSxbNCwyLCJCIl0sWzAsMiwiQiJdLFsyLDIsIkIiXSxbMSwwXSxbMiwxXSxbMiwzXSxbMSw1XSxbMCw0XSxbNSw0XSxbNSwzLCIiLDIseyJvZmZzZXQiOjJ9XSxbNSwzLCIiLDIseyJvZmZzZXQiOi0yfV0sWzMsNV0sWzQsNSwiIiwwLHsib2Zmc2V0IjoyfV0sWzQsNSwiIiwwLHsib2Zmc2V0IjotMn1dLFs1LDQsIiIsMCx7Im9mZnNldCI6LTR9XSxbNSw0LCIiLDAseyJvZmZzZXQiOjR9XSxbMSwwLCIiLDIseyJvZmZzZXQiOi00fV0sWzEsMCwiIiwyLHsib2Zmc2V0Ijo0fV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMn1dLFswLDEsIiIsMix7Im9mZnNldCI6Mn1dLFsxLDIsIiIsMix7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDIseyJvZmZzZXQiOjJ9XV0=&amp;embed&#34; width=&#34;820&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;在 additive 的范畴里考虑这些. 就给出了所谓 standard resolution.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;cg8 在路上了, 不要急&lt;/p&gt;
+&lt;p&gt;让我猜猜下一期会是什么? 也许是 extended TFT?&lt;/p&gt;
+&lt;p&gt;不知道.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其四十九</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B9%9D/</link>
         <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
