@@ -7,7 +7,47 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>流光记-其三</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%89/</link>
+        <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%89/</guid>
+        <description>&lt;p&gt;嗅得手植棠梨初发轻黄蕊&lt;/p&gt;
+&lt;p&gt;读了读 Topos of Music, 感觉我又想学数学了..&lt;/p&gt;
+&lt;p&gt;这篇文章是老李推的 Automorphic functions on moduli spaces of bundles on curves of bundles on curves over local field: A survey. 这是 Alexander Braverman 和 David Kazhdan 的文章, 具体内容是 Kazhdan 在 ICM 2022 上的 plenary talk.&lt;/p&gt;
+&lt;p&gt;我们现在要解决的问题就是: 如何在 Stack 上定义 function.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;对于 $X$ algebraic variety over a local field $F$, $X(F)$ 是一个拓扑空间 endowed with a natural topology.&lt;/p&gt;
+&lt;p&gt;Defn 2.1: A function $f:X(F)\to \mathbb{C}$ is smooth if&lt;/p&gt;
+&lt;p&gt;(a) $F$ non-archimedian and $f$ is locally constant.&lt;/p&gt;
+&lt;p&gt;(b) $F$ archimedian and (locally) there exists a closed embedding $X\hookrightarrow Y$ where $Y$ smooth var. over $F$ and a $C^\infty$-function $\bar{f}:Y(F)\to \mathbb{C}$ s.t. $f=\bar{f}|_{X(F)}$.&lt;/p&gt;
+&lt;p&gt;于是, 我们首先得到空间$C^{\infty}(X)$ space of smooth function, 以及 $\mathcal{S}(X)$ subspace of the compact-supports.&lt;/p&gt;
+&lt;p&gt;对于 $\mathcal{L}$ line bundle over $X$, 刨掉 zero section 得到 $\mathcal{L}^{0}=\mathcal{L}\backslash X$ $\mathbb{G}_m$-torsor.&lt;/p&gt;
+&lt;p&gt;现在, 我们 set&lt;/p&gt;
+\[|\mathcal{L}|^{\kappa}=\mathcal{L}^0(F)\times_{F^*}\mathbb{C}_{\kappa}.\]&lt;p&gt;这里的 $\kappa$ 表示的是 $F^\ast $ 作为群在 $\mathbb{C}$ 上的某个作用. 我们得到的 $|\mathcal{L}|^\kappa$ 就是一个 locally trivial $\mathbb{C}$-bundle. 同样地, 我们可以定义其 smooth section by $C^\infty(X,|\mathcal{L}|^\kappa)$, 以及 $\mathcal{S}(X,|\mathcal{L}^\kappa|)$ subspace of the compact-supports.&lt;/p&gt;
+&lt;p&gt;最后, 如果不想 take trivial bundle, 我们可以很自然地想到 $\mathcal{L}=\omega_X$ line bundle of top differential form. 取 $\kappa=1/2$, $\mathcal{S}_{1/2}(X):=\mathcal{S}(X,|\omega|^\kappa)$ 则是我们所熟悉的, 有一个自然 Hermitian product 结构的 subspace. 自然地, 能够考虑 $L^2(X)$ 为其 Hilbert space completion.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在, 我们希望 extend 如上 defn 到 a class of algebraic stacks 上.&lt;/p&gt;
+&lt;p&gt;Defn 2.3. An algebraic stack $\mathcal{Y}$ is admissible, if there exists a presentation of $\mathcal{Y}$ as $X/G$, where $X$ smooth variety, $G$ affine alg. gp. Denote $p:X\to \mathcal{Y}$ projection.&lt;/p&gt;
+&lt;p&gt;将 $\mathcal{Y}$ 表现为 quotient $\mathcal{Y}=X/\operatorname{GL}_n$ 被称作一个 admissible presentation.&lt;/p&gt;
+&lt;p&gt;Remark 2.4. 所有 smooth admissible stack of finite type 总可以表示为 $X/\operatorname{GL}_n$, with $X$ smooth. 所有 admissible stack 都是自动 locally of finite type的.&lt;/p&gt;
+&lt;p&gt;Defn 2.5. (1) For $F$ non-archimedian, $\mathcal{Y}$ is an admissible stack of finite type over $F$. Choose an admissible presentation $\mathcal{Y}=X/\operatorname{GL}_n$ for some variety $X$ and set&lt;/p&gt;
+\[\mathcal{S}(\mathcal{Y},|\mathcal{L}|^\kappa)=\mathcal{S}(X,|\mathcal{L}_X|^\kappa)_{\operatorname{GL(n,F)}}.\]&lt;p&gt;where the latter stands for $\operatorname{GL}(n,F)$-coinvariants.&lt;/p&gt;
+&lt;p&gt;(2) For $F$ non-archimedian, $\mathcal{Y}$ locally of finite type. Then we can write $\mathcal{Y}$ as a direct limit of open substack of finite type. $\mathcal{S}(\mathcal{Y},|\mathcal{L}|^\kappa):=\varprojlim \mathcal{S}(\mathcal{Y}_i,|\mathcal{L}|^\kappa)$.&lt;/p&gt;
+&lt;p&gt;(3) For $F$ archimedian, we make an analogous definition but take coinv. in the cat. of topological spaces where $\mathcal{S}(X,|\mathcal{L}_X|^\kappa)$ endowed with Frechet topology.&lt;/p&gt;
+&lt;p&gt;Prop. 2.6. $\mathcal{Y}$ is an admissible stack of finite type, then $\mathcal{S}$ does not depend on a choice of an admissible presentation $\mathcal{Y}=X/\operatorname{GL}_n$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这是原文中提到的一个特例: stack over $\mathcal{O}_F$ 的情况.&lt;/p&gt;
+&lt;p&gt;对于 $F$ non-archimedian. 我们来 construct 一些 elements in $\mathcal{S}(\mathcal{Y},|\mathcal{L}|^\kappa)$.&lt;/p&gt;
+&lt;p&gt;考虑 $\mathcal{Y}=X/G$, $X,G$ defined over $\mathcal{O}_F$, $X_{\mathcal{O}_F}$ regular scheme over $\mathcal{O}_F$. 此外, assume $\mathcal{L}$ defined over $\mathcal{O}_F$, 于是我们可以 define obvious map by&lt;/p&gt;
+\[\mathcal{S}(\mathcal{Y}_{\mathcal{O}_F},|\mathcal{L}|^\kappa)\to \mathcal{S}(\mathcal{Y},|\mathcal{L}|^\kappa).\]&lt;p&gt;现在, 对于 $\mathcal{L}=\omega_{\mathcal{Y}}$, 我们有 complex line bundle $|\mathcal{L}|$ 拥有 canonical trivialization on $\mathcal{Y}(\mathcal{O}_F)$. 于是, 考虑此前定义的 $\mathcal{S}(\mathcal{Y}(k))$ (我认为这里应该是记错了, 这里的 $k$ 为什么不是 $F$?) 我们得到&lt;/p&gt;
+\[\mathcal{S}(\mathcal{Y}(k))\to (\mathcal{Y}_{\mathcal{O}_F},|\mathcal{L}|^\kappa).\]&lt;p&gt;复合两个映射, 我们得到&lt;/p&gt;
+\[E_{\mathcal{Y},\kappa}:\mathcal{S}(\mathcal{Y}(k))\to \mathcal{S}_\kappa(\mathcal{Y}).\]&lt;hr&gt;
+&lt;p&gt;未完待续&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>流光记-其二</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%BA%8C/</link>
         <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
