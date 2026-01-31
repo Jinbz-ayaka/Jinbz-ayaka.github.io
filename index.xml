@@ -7,7 +7,50 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>流光记-其四</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E5%9B%9B/</link>
+        <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E5%9B%9B/</guid>
+        <description>&lt;p&gt;来邀东邻女伴撷果缓缓归&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在, 我们总 assume $\mathcal{Y}$ admissible stack 存在 substack $\mathcal{Y}_{\operatorname{vs}}\subset\mathcal{Y}$, 使得 $\mathcal{Y}_{\operatorname{vs}}=Y_{\operatorname{vs}}/Z$, 其中 $Y_{\operatorname{vs}}$ smooth scheme, $Z$ finite group acting trivially on $Y_{\operatorname{vs}}$. 这里的 vs refer to 下文的 very stable.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $\mathcal{Y}$ of finite type over $F$, 我们选定一个 $\mathcal{Y}=X/\operatorname{GL}_n$. 记 $U$ 为 $X\to \mathcal{Y}_{\operatorname{vs}}$ 之 preimage, $p:U\to \mathcal{Y}_{\operatorname{vs}}$ quotient map.&lt;/p&gt;
+&lt;p&gt;对于 $s$ smooth section with compact support of complex line bundle $p^\ast |\omega_{\mathcal{Y}_{\operatorname{vs}}}|^\kappa\otimes |\omega_{X/\mathcal{Y}}|$. $s|_U$ 为 section of $p^\ast |\omega_{\mathcal{Y}_{\operatorname{vs}}}|^\kappa\otimes |\omega_{U/\mathcal{Y}}|$. 对于这样的 section, 我们可以沿着 $p$ 的 fibers 做积分, 得到 section of $|\omega_{\mathcal{Y}_{\operatorname{vs}}}|^\kappa$ on $\mathcal{Y}_{\operatorname{vs}}$.&lt;/p&gt;
+&lt;p&gt;但是, 这么积分得到的结果不一定是 compact 的! $s$ 在 $X$ 上是 compact 的, 但在 $U\subset X$ 上就不一定了.&lt;/p&gt;
+&lt;p&gt;Definition 2.10. (1) 我们称 $\mathcal{Y}$ 是 $\kappa$-bounded 的, 如果对任意 open substack of finite type $\mathcal{Y}_0\subset \mathcal{Y}$, 自然的拉回映射 $\mathcal{S}_\kappa(\mathcal{Y}_0)\to \mathcal{S}_\kappa(\mathcal{Y})$ 是一个 isom.&lt;/p&gt;
+&lt;p&gt;(2) $(\mathcal{Y},\mathcal{Y}_{\operatorname{vs}})$ 是 $\kappa$-nice 的, 如果 $\mathcal{Y}$ $\kappa$-bounded, 且对于任意supported on the preimage of $\mathcal{Y}_{vs}$ 的 function, 推前映射 $p_\ast (s)$ well-define (i.e. absolutely convergent) and defines a smooth section of $|\omega_{\mathcal{Y}_{\operatorname{vs}}}|^\kappa$ on $\mathcal{Y}_{vs}$.&lt;/p&gt;
+&lt;p&gt;(3) 如上的 pair 是 excellent 的, 如果 it is nice for all $\kappa\geq 1/2$ and for $\kappa=1/2$, 有 $p_\ast (s)\in L^2(\mathcal{Y}_{\operatorname{vs}})$ for every smooth section $s$ with compact support.&lt;/p&gt;
+&lt;p&gt;Remark 2.11. $\kappa$-niceness 中的 convergence 对于 $\kappa\geq 1$ 总自动成立.&lt;/p&gt;
+&lt;p&gt;Example: 对于 $X=(\mathbb{P}^1)^3$, $G=\operatorname{PGL}_2$, $\mathcal{Y}=X/G$ with $G$ acting diagonally. 取 \(U=X\backslash\{\text{diagonals}\}\), 我们有 $G$ 在 $U$ 上的作用是 free 的. set $\mathcal{Y}_{\operatorname{vs}}=U/G$. 在这种条件下我们得到 $\mathcal{Y}$ 总是对于 $\kappa&amp;gt;\frac{1}{3}$ nice 的. 于是 $\mathcal{Y}$ 是 excellent 的.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;而我们所关心的 case 是 $\operatorname{Bun}_G$. Fix $G$ split connected s.s. gp., $Z$ its center. 考虑 $\mathcal{C}$ smooth complete irreducible curve over $k$.&lt;/p&gt;
+&lt;p&gt;Defn. 3.1. (1) $\operatorname{Bun}_G$ stack of the principal $G$-bundles on $\mathcal{C}$, $\operatorname{Bun}_{G,\operatorname{st}}\subset \operatorname{Bun}_G$ open substack of stable bundles.&lt;/p&gt;
+&lt;p&gt;(2) For a $G$-bundle $\mathcal{F}$ on $\mathcal{C}$, 记 $\operatorname{Ad}_{\mathcal{F}}$ 为 adjoint bundle to $\mathcal{F}$ associated with the adjoint action of $G$ on $\mathfrak{g}$.&lt;/p&gt;
+&lt;p&gt;(3) $\mathcal{F}$ is called very stable if there is no nonzero section of $\Gamma(\mathcal{C},\operatorname{Ad}_{\mathcal{F}})\otimes \omega_{\mathcal{C}}$ whose values at all points of $\mathcal{C}$ are nilpotent.&lt;/p&gt;
+&lt;p&gt;(4) $\operatorname{Bun}_{G,\operatorname{vs}}\subset \operatorname{Bun}_{G}$ substack of very stable bundles.&lt;/p&gt;
+&lt;p&gt;对于 $\mathcal{C}$ genus $\geq 2$, 我们有如下很好的性质:&lt;/p&gt;
+&lt;p&gt;(1) 所有 very stable 的 bundle 都是 stable 的.&lt;/p&gt;
+&lt;p&gt;(2) $\operatorname{Bun}_{\operatorname{st}}$ 是 $\operatorname{Bun}$ 的一个 dense open subset of the form $Y/Z$, with $Y$ smooth scheme of finite type over $F$, $Z$ acts trivially on $Y$.&lt;/p&gt;
+&lt;p&gt;(3) $\operatorname{Bun}_{\operatorname{vs}}$ 是 $\operatorname{Bun}_{\operatorname{st}}$ 的一个 dense open subset.&lt;/p&gt;
+&lt;p&gt;在不引起歧义的情况下, 我们会把 $\operatorname{Bun}_G$ 的 $G$ 丢掉, 简写为 $\operatorname{Bun}$.&lt;/p&gt;
+&lt;p&gt;Claim 3.3. $\operatorname{Bun}$ 是 $\kappa$-bounded 的, for all $\kappa$.&lt;/p&gt;
+&lt;p&gt;这个是 Drinfeld 和 Gaitsgory 的一篇文章证明的. 2015 年的结论.&lt;/p&gt;
+&lt;p&gt;Conjecture 3.5. 对于 $\mathcal{C}$ genus $\geq 2$,&lt;/p&gt;
+&lt;p&gt;(1) $\operatorname{Bun}$ 是 $\kappa$-nice 的, 对于 $\operatorname{Re}\kappa\geq \frac{1}{2}$. 特别地, 对于 $\kappa\geq \frac{1}{2}$, 我们得到 map $\iota_\kappa:\mathcal{S}_{\kappa}(\operatorname{Bun})\to C_{\kappa}^\infty(\operatorname{Bun}_{\operatorname{vs}})$.&lt;/p&gt;
+&lt;p&gt;(2) For $\kappa\geq \frac{1}{2}$, $\iota_\kappa$ 的 sections 都 extends to $|\omega_{\operatorname{Bun}}|^\kappa$ 的一个 continuous section on $\operatorname{Bun}_{\operatorname{st}}$.&lt;/p&gt;
+&lt;p&gt;(3) $\operatorname{Bun}$ 是 excellent 的.&lt;/p&gt;
+&lt;p&gt;对于 $G=\operatorname{PGL}_2$ 的情况, Braverman, Kazhdan 和 Polishchuk 给出了第一个 assertion 和一些特殊 case 下的第二, 三个 assertion 的证明. 当然, Aizenbud 和 Avni 的文章也说明了这种情况下这个东西可以直接 reduced 到 algebro-geometric statement 上.&lt;/p&gt;
+&lt;p&gt;Conjecture 3.6. 对于 $\mathcal{E}$ stable bundle on $\mathcal{C}$ of degree $2g-1$, $F_{\mathcal{E}}$ denote the scheme of pairs $(\mathcal{L},s)$ s.t. $\mathcal{L}\in \operatorname{Pic}^0(\mathcal{C})$, $s\in\mathbb{P}(H^0(\mathcal{C},\mathcal{L}\otimes\mathcal{E}))$. 于是&lt;/p&gt;
+&lt;p&gt;(1) $F_{\mathcal{E}}$ irreducible.&lt;/p&gt;
+&lt;p&gt;(2) $\dim F_{\mathcal{E}}=g$.&lt;/p&gt;
+&lt;p&gt;(3) $F_{\mathcal{E}}$ 拥有 rational singularities.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;再会.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>流光记-其三</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%B8%89/</link>
         <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
