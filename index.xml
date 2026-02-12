@@ -7,7 +7,40 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>流光记-其五</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%BA%94/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%81%E5%85%89%E8%AE%B0-%E5%85%B6%E4%BA%94/</guid>
+        <description>&lt;p&gt;冷知识: 最初的 (数学上的) TFT 的定义, 其实是 Atiyah 给的.&lt;/p&gt;
+&lt;p&gt;Defn. 1. $n$ positive integer. We define a cat. $\mathbf{Cob}(n)$ as:&lt;/p&gt;
+&lt;p&gt;(1) Objects: closed oriened $(n-1)$-mfd. $M$.&lt;/p&gt;
+&lt;p&gt;(2) 对于 $M,N\in\mathbf{Cob}(n)$, morph. between $M,N$ 为他们之间的 bordism: oriented $n$-dim&amp;rsquo;l mfd. $B$ with $\partial B\simeq \bar{M}\sqcup N$.&lt;/p&gt;
+&lt;p&gt;(3) $M\in\mathbf{Cob}(n)$, $\operatorname{id}_M$ 为 $M\times [0,1]$.&lt;/p&gt;
+&lt;p&gt;(4) morph. 的复合由 $B\sqcup_{M&amp;rsquo;}B&amp;rsquo;$ 给出.&lt;/p&gt;
+&lt;p&gt;我们可以把 $\mathbf{Cob}(n)$ 通过无交并实现成一个 symmetric monoidal category. 此外, 我们有同样地 s.m.c. $\mathbf{Vect}(k)$, cat. of $k$-vector space. 现在, 有&lt;/p&gt;
+&lt;p&gt;Defn. 2. $k$ field. A topological field theory of dim. $n$ is a symmetric monoidal functor $Z:\mathbf{Cob}(n)\to \mathbf{Vect}(k)$.&lt;/p&gt;
+&lt;p&gt;对于一个流形 $N$, 我们当然有很多种方式去理解他的边界. 因此, 他可能会出现在很多东西里. 比方说, 对于 $M\times [0,1]$, 我们可以将其考虑为 $\bar{M}\times M\to \emptyset$. 在这种条件下, 运用 $Z$ 我们给出了 canonical bilinear pairing&lt;/p&gt;
+\[Z(\bar{M})\otimes Z(M)\to Z(\emptyset)\simeq k.\]&lt;p&gt;Prop. 3. $Z$ TFT of dim $n$, then for every closed $(n-1)$-mfd $M$, v.s. $Z(M)$ finite dim&amp;rsquo;l. And the pairing $Z(\bar{M})\otimes Z(M)\to k$ is perfect, i.e. it induces isom. $\alpha:Z(\bar{M})\to (Z(M))^\ast $.&lt;/p&gt;
+&lt;p&gt;这是因为, 反过来利用 coev, 我们可以构造 $\beta:Z(M)^\ast \to Z(M)^\vee\otimes Z(M)\otimes Z(\bar{M}) \to Z(\bar{M})$. 然后利用axiom of tft, 我们得到 $\beta$ 为 $\alpha$ 的逆.&lt;/p&gt;
+&lt;p&gt;在低维条件下, 我们可以非常明确地写出 TFT: 比方说, 在 dim 为 1 的条件下, $\mathbf{Cob}(1)$:&lt;/p&gt;
+&lt;p&gt;Objects: 两种 ori. 的 pts 之无交并, 所谓 &amp;lsquo;&amp;rsquo;$+$&amp;rsquo;&amp;rsquo; 与 &amp;lsquo;&amp;rsquo;$-$&amp;rsquo;&amp;rsquo;. 于是, fix 一个 v.s. $V$, 有 $Z(+)=V,Z(-)=V^\vee$.&lt;/p&gt;
+&lt;p&gt;然后去考虑 morph. 在这种情况我们把连接 $+$ 与 $-$ 的 $[0,1]$ 考虑明白就行了. 将其视为 $(+,-)$ 或者 $(-,+)$ 的情况是容易的: $\operatorname{id}_V$ 或者 $\operatorname{id}_{V^{\vee}}$. 而将其视为 ${+,-}\sqcup\emptyset$ 或者 $\emptyset\sqcup{+,-}$ 则对应到 direct pairing $V\otimes V^\vee\to k$ 与 $k\to V\otimes V^\vee, x\mapsto x\operatorname{id}_V$.&lt;/p&gt;
+&lt;p&gt;而我们唯一的遗留问题就是 $S^1$. 如此, 我们可以看出, 他其实是将 $x$ 先打到 $x\operatorname{id}_V$, 再去做自然的 pairing. 得到的结果应当是 $x\operatorname{dim} V$. 也就是说, $S^1$ 对应到 $\dim V$ 之数乘.&lt;/p&gt;
+&lt;p&gt;我们可以嗅到一些问题所在: 首先, $Z$ 包含了巨量的 data: 对每一个 mfd, 以及每一个 mfd 的 bordism 组合. 但实际上, 他很有可能是通过一些很少的东西来决定的: 在上面那个例子中, 就是 $V$. 此外, 我们还可以看到很多有趣的不变量: 比方说上面的 $Z(S^1)$ 对应到的 $\dim V$. 他可能是 v.s. 里唯一的不变量了: 毕竟两个 dim. 相同的 v.s. 同构, 虽然不典范().&lt;/p&gt;
+&lt;p&gt;我们看一个更复杂的例子, $2$-dim&amp;rsquo;l 上的 TFT:&lt;/p&gt;
+&lt;p&gt;$\mathbf{Cob}(2)$:&lt;/p&gt;
+&lt;p&gt;Objects: 一堆圆圈 $S^1$. 这是一个玩圆的艺术. Set $Z(S^1)=A$.&lt;/p&gt;
+&lt;p&gt;考虑 Pair of pants $B$, $Z(B)$ 是说, 我们有一个 linear map
+&lt;/p&gt;
+\[A\otimes A\to Z(S^1)=A.\]&lt;p&gt;实际上, 你可以把 pair of pants 用不同的方式粘起来, 因此, 这个实际上给出了 $A$ 上的一个 commutative $k$-algebra 结构.&lt;/p&gt;
+&lt;p&gt;仅仅是 commutative $k$-alg. 结构足够吗? 实际上, 在我们粘合出流形的时候, 我们有些时候还会使用 disk $D^2$, 我们有 linear map $\operatorname{tr}:A\to k$. 在这种条件下, 考虑 $D$ 粘上 $B$, 我们得到&lt;/p&gt;
+\[A\otimes A\to A\to k\]&lt;p&gt;是 associated to $S^1\times [0,1]$ 的 cylinder. 因此, 它实际上给出了 $A$ 到自身的一个 perfect pairing. 于是, 就像一维的 TFT 是通过一个 $k$-v.s. $V$ 给出的, 一个二维的 TFT 则由一个 &lt;em&gt;commutative Frobenius algebra&lt;/em&gt; over $k$ 给出.&lt;/p&gt;
+&lt;p&gt;Defn. 4. A commutative Frobenius algebra over $k$ is a finite dimensional commutative $k$-algebra $A$, together with $\operatorname{tr}:A\to k$ s.t. $(a,b)\mapsto \operatorname{tr}(ab)$ is nondegenerate.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其五十</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
