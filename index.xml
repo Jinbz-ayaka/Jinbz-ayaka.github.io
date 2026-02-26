@@ -7,7 +7,50 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sat, 21 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十三 P411-415</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%89-p411-415/</link>
+        <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%89-p411-415/</guid>
+        <description>&lt;p&gt;cg补完计划&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在开始做一些研究了之后, 感觉也没什么特别的必要去看 CG 了. 取而代之的是有一堆诡异的东西要学. 而这些东西像一座山一样高.&lt;/p&gt;
+&lt;p&gt;但不管怎么说, 补完这个, 也算彻底完结了一个系列.&lt;/p&gt;
+&lt;p&gt;重要的.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Recall 我们的 affine Hecke algebra $\mathbb{H}$, 我们这一个 Chapter 要做的事情, 就是去 classify 他的 simple mods.&lt;/p&gt;
+&lt;p&gt;在 8.1, 我们介绍了 so-called standard $\mathbb{H}$-mods. 然后在 8.3, 8.4, 我们会介绍一下 constructible sheaves. 在 8.5 里, 我们利用 intersection cohomology 来描述其 underlying vector space. 在 8.6, 我们会给出一个 sheaf-theoritic construction, 从而说明其 irreducible, 且所有 irr. 都包含在里面. 而在 8.8, 我们会证明所有这么构造的都是 nonzero 的. 从而完成证明.&lt;/p&gt;
+&lt;p&gt;在 8.2, 我们会给出 standard modules 的 char. formula. 在 8.6, 我们会利用 ic 的技术给出 expression of multiplicity of simple module. 在 8.7, 我们给出相似的 projective $\mathbb{H}$-mods 的 multiplicity formula. 最后, 在 8.9, 我们会处理一个 special case, 从而给出第三章 Springer representation 的另一个证明.&lt;/p&gt;
+&lt;p&gt;此外, 在 8.3-8.7, 我们得到的东西是非常 general 的, 而在 8.2, 8.8, 我们要利用一些特别的 affine Hecke 的性质.&lt;/p&gt;
+&lt;p&gt;Recall $Z(\mathbb{H})=R(G)[q,q^{-1}]=R(G\times \mathbb{C}^\ast )$. 我们可以把他看做 class functions&lt;/p&gt;
+&lt;p&gt;现在, 我们考虑 $Z(\mathbb{H})\to \mathbb{C}$, 他可以写作 $z\mapsto z(a)$, with $a=(s,t)\in G\times \mathbb{C}^\ast $. 于是我们可以 view $\mathbb{C}_a$ as $Z(\mathbb{H})$-mod. by&lt;/p&gt;
+\[(z,x)\mapsto z(a)\cdot x.\]&lt;p&gt;现在, 考虑 tensor prod, $\mathbb{H}_a:=\mathbb{C}_a\otimes_{Z(\mathbb{H})}\mathbb{H}$ 为 Hecke algebra specialized at $a$. 根据简单的刻画我们可以得到 $\mathbb{H}_a\simeq \mathbb{H}_{\mathbb{C}}/(\ker Z(\mathbb{H}_\mathbb{C})\to \mathbb{C})$. 特别地, $\mathbb{H}_a$ 拥有 natural $\mathbb{C}$-alg. structure. 有一个简单的性质是, $\mathbb{H}$-mod 是 simple 的 iff 其对应的 $\mathbb{C}\otimes_{\mathbb{Z}}\mathbb{H}$-mod. 是 simple 的. 于是, 我们得到&lt;/p&gt;
+&lt;p&gt;Cor 8.1.2. $Z(\mathbb{H})$ acts by scalar multiplication on any simple $\mathbb{H}$-module.&lt;/p&gt;
+&lt;p&gt;于是&lt;/p&gt;
+&lt;p&gt;Cor 8.1.4. $\mathbb{H}$ 在 simple $\mathbb{H}$-mod. $M$ 上的作用, 总 factors through 一个 $\mathbb{H}_a$.&lt;/p&gt;
+&lt;p&gt;根据 6.2.9, 我们有 $\mathbb{H}_a$ 拥有 complex dimension \((\# W)^2\), 于是有限维. 于是 $\mathbb{H}_a$ 的 simple mod 都是有限维的. 现在, 我们 claim $\mathbb{H}$ 拥有纯粹的 geometric interpertation.&lt;/p&gt;
+&lt;p&gt;view $\tilde{\mathcal{N}},\mathcal{N},Z$ as $G\times \mathbb{C}^\ast $ with $\mathbb{C}^\ast $ acts by dilation. 对 $a=(s,t)$, 定义 $\tilde{\mathcal{N}}^a,\mathcal{N}^a,Z^a$ corresponding $a$-fixed pts. 由于 $Z^a=\tilde{\mathcal{N}}^a\times_{\mathcal{N}^a}\tilde{\mathcal{N}}^a$, 有 $Z^a\circ Z^a=Z^a$. 现在, 我们可以考虑 BM homology&lt;/p&gt;
+&lt;p&gt;Prop 8.1.5. 对于 $a=(s,t)\in G\times \mathbb{C}^\ast $ s.s. element, 有 natural alg. isom.&lt;/p&gt;
+\[\mathbb{H}_a\simeq H_*(Z^a,\mathbb{C}^a).\]&lt;p&gt;这是因为根据我们前面的那一套东西, 有&lt;/p&gt;
+\[\begin{align*}
+  \mathbb{C}_a\otimes_{Z(\mathbb{H})}\mathbb{H}&amp;\overset{7.2.5}{\simeq}\mathbb{C}_a\otimes_{R(G\times\mathbb{C}^*)}K^{G\times \mathbb{C}^*}(Z)\\
+  &amp;\overset{6.2(6)}{\simeq}\mathbb{C}_a\otimes_{R(\mathcal{A})}K^{\mathcal{A}}(Z)\\
+  &amp;\overset{r_a, \sim}{\to} \mathbb{C}_a\otimes K^{\mathcal{A}}(Z^{\mathcal{A}})\\
+  &amp;\overset{ev, \sim}{\to} K_\mathbb{C}(Z^{\mathcal{A}})\\
+  &amp;\overset{RR, \sim}{\to} H_*(Z^{\mathcal{A}},\mathbb{C})=H_*(Z^a,\mathbb{C}).
+\end{align*}\]&lt;p&gt;对于 $a=(s,t)$, $x\in \mathcal{N}^a$, 我们考虑 $\mathcal{B}_x^s$ 为 Borels simultaneously fixed by $s$ and $x$.&lt;/p&gt;
+&lt;p&gt;Remark 8.1.7. $\mathcal{B}_x^s$ is non-empty.&lt;/p&gt;
+&lt;p&gt;这是因为 $s$ 和 $\exp(z\cdot s)$ 生成一个 solvable subgp. 而其包含于某个 Borel 里.&lt;/p&gt;
+&lt;p&gt;于是, 根据 3.5.2, 3.5.3. 的证明, 我们得到&lt;/p&gt;
+&lt;p&gt;Lemma 8.1.8. $H_\cdot(Z^a)$-action commutes with the $C(s,x)$-action on $H_\cdot(\mathcal{B}_x^s)$. 此外, 对于 $x_1,x_2$ 属于相同的 $G(s)$-conjugacy class in $\mathcal{N}_a$, $H_\cdot(\mathcal{B}_{x_1}^s)$ 与 $H_\cdot(\mathcal{B}_{x_2}^s)$ 为 isomorphic $H_\cdot(Z^a)$-mods.&lt;/p&gt;
+&lt;p&gt;现在, 考虑 $C(s,x)^\wedge$ set of isom. classes of simple $C(s,x)$-mod. 对于 $\chi\in C(s,x)^\wedge$ 我们定义&lt;/p&gt;
+\[K_{a,x,\chi}=\operatorname{Hom}_{C(s,x)}(\chi,H_\cdot(\mathcal{B}_x^s)).\]&lt;p&gt;为一个 standard $H_\cdot(Z^a)$-mod.&lt;/p&gt;
+&lt;p&gt;注意 $H(Z^a)$ 拥有 vanished odd homology. 于是 $H^{ev}(\mathcal{B}_x^s)$, $H^{odd}(\mathcal{B}_x^s)$ 为两个不同的 submods. 因此 $\operatorname{Hom}_{C(s,x)}(\chi,H^{-})$ 为两个不同的 submod. 此外, 有一个 known fact 是 $\mathcal{B}_x,\mathcal{B}_x^s$ odd part vanishes. 因此, odd homology part of std. mod. vanishes.&lt;/p&gt;
+&lt;p&gt;接下来我们要引入另一个鬼畜的东西: co-standard modules. 这个明天再搞吧.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其五十一</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E4%B8%80/</link>
         <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
