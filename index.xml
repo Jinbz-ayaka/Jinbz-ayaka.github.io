@@ -7,7 +7,32 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十四 P415-418</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%9B%9B-p415-418/</link>
+        <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%9B%9B-p415-418/</guid>
+        <description>&lt;p&gt;fix $G(s)$-orbit $\mathbb{O}\subset \mathcal{N}^a$, 取 $x\in \mathbb{O}$, $S$ transverse slice 以及 $\tilde{S}$. 我们在 3.5.9. 说明了 $\tilde{S}$ 是 $\mathcal{B}^s_x$ 的一个管状邻域, 以及 $\mathcal{B}^s_x$ 是他的一个 retract. 此外, 我们在 3.5.12 证明了我们可以选取 $S$, 使得其 stable wrt $K(s,x)$ 的 adjoint action.&lt;/p&gt;
+&lt;p&gt;注意 $Z^a\circ\tilde{S}=\tilde{S}$, $H_\cdot(\tilde{S})$ 拥有 $H_\cdot(Z^a)$-module structure. 现在, 选取 $\chi\in C(s,x)^\wedge$, 我们取 $\operatorname{Hom}_{C(s,x)}(\chi,H_\cdot(\tilde{S}))$ 为 costandard $H_\cdot(Z^a)$-mod.&lt;/p&gt;
+&lt;p&gt;现在, 选取 $\psi:H_\cdot(\mathcal{B}_x^s)\to H_\cdot(\tilde{S})$ 下的 image, 记作 $L_{a,x}$. 我们可以将其分解为 $C(s,x)$-isotypical comp.&lt;/p&gt;
+\[L_{a,x}=\oplus_{\chi\in C(s,x)^\wedge}L_{a,x,\chi}\otimes \chi,L_{a,x,\chi}:=\operatorname{Hom}_{C(s,x)}(\chi,L_{a,x}).\]&lt;p&gt;现在, 所有的 $L_{a,x,\chi}$ 都拥有 $H_\cdot(Z^a)$-mod. 结构. 我们可以定义 \(\{(x,\chi)\}\) 上的 $G(s)$-conjugate 结构, by $x&amp;rsquo;=gxg^{-1}$ 与 $\chi&amp;rsquo;$ given by $\chi$ intertwines with $g$. 于是, 我们有&lt;/p&gt;
+&lt;p&gt;Thm. 8.1.13. Nonzero $L_{a,x,\chi}$ 与 $L_{a,x,\chi}$ isomorphic iff $(x,\chi),(x&amp;rsquo;,\chi&amp;rsquo;)$ $G(s)$-conjugate to each other.&lt;/p&gt;
+&lt;p&gt;注意: 我们并没有证明其 nonzero 性. 可以想象, 对于 generic 的 $\chi$, 这玩意都会是 $0$. 其非零性的证明要交给 8.8 了.&lt;/p&gt;
+&lt;p&gt;Prop. 8.1.14. $t$ not root of unity, 有 $L_{a,x,\chi}$ nonzero $\forall x\in \mathcal{N}^a$ and any irreducible repn. $\chi$ of $C(s,x)$ that occurs in the isotypic decomp. of $H_\cdot(B^s_x)$.&lt;/p&gt;
+&lt;p&gt;此外, 还有&lt;/p&gt;
+&lt;p&gt;Thm 8.1.15. Any simple $H_\cdot(Z^a)$-mod is isom. to $L_{a,x,\chi}$ for an appropriate pair $(x,\chi)$, where $x\in\mathcal{N}^a,\chi\in C(s,x)^\wedge$.&lt;/p&gt;
+&lt;p&gt;现在, set $\mathbb{M}$ 为&lt;/p&gt;
+\[\mathbb{M}=\{a=(s,t)\in G\times \mathbb{C}^*,x\in \mathcal{N}^a,\chi\in C(s,x)^\wedge,s\text{ is semisimple}\}/_{adj.}G.\]&lt;p&gt;我们可以引入本章的最主要定理: Deligne-Langlands-Lusztig conjecure for Hecke algebras:&lt;/p&gt;
+&lt;p&gt;Thm 8.1.16. $t\in \mathbb{C}$ not a root of unity, then \(\{L_{(a,x,\chi)}\}_{(a,x,\chi)\in\mathbb{M}}\) is a complete collection of simple $\mathbb{H}$-mods s.t. $q$ acts by means of multiplication by $t\in\mathbb{C}^\ast $. Thus, $\mathbb{H}$-mods are parametrized by $G$-conjugacy classes of triples $(s,x,\chi)$ where $sxs^{-1}=t\cdot x$ and $\chi\in C(s,x)^\wedge$, i.e. those with nonzero multiplicity in the repn. $H_\cdot(\mathcal{B}^s_x)$.&lt;/p&gt;
+&lt;p&gt;而, simple $\mathbb{H}$-mods with fixed central char. 的有限性, 则可以直接由如下 prop 给出.&lt;/p&gt;
+&lt;p&gt;Prop. 8.1.17. For any s.s. $a\in G\times \mathbb{C}^\ast $, the var. $\mathcal{N}^a$ is a finite union of $G(s)$-orbits.&lt;/p&gt;
+&lt;p&gt;这个证明大概是这样: 首先引入辅助簇&lt;/p&gt;
+\[\mathcal{R}=\{(h,x)\in \mathbb{S}\times \mathbb{O},hxh^{-1}=tx\},\]&lt;p&gt;其中 $\mathbb{S}$ 为 conj. class of $s$ in $G$. 然后将 $G(s)\times \mathbb{C}^\ast $-orbits on $\operatorname{pr}_1^{-1}(s,t)=\mathbb{O}^a$ 对应到 $\mathcal{R}$ 上的 $G\times \mathbb{C}^\ast $-orbits 上, 再对应到 $\operatorname{Stab}_{G\times \mathbb{C}^\ast }(n)$-orbits with $\operatorname{pr}_2^{-1}(n)$ 上. where&lt;/p&gt;
+\[\mathbb{S}\overset{\operatorname{pr_1}}{\leftarrow}\mathcal{R}\overset{\operatorname{pr}_2}{\to}\mathbb{O}.\]&lt;p&gt;然后再 $\operatorname{pr}_2^{-1}(n)$ 上, 利用 $T\cap\mathbb{S}$ finite 的性质, 得到 $G(s)\times \mathbb{C}^\ast $-orbits on $\operatorname{pr}_1^{-1}(s,t)=\mathbb{O}^a$ finite. 最后利用 3.7.6. 得到 $G(s)\times \mathbb{C}^\ast $-orbits 其实就是 $G(s)$-orbits on $\mathbb{O}^a$, 便完成了证明.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其四十三 P411-415</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%89-p411-415/</link>
         <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
