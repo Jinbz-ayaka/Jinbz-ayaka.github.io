@@ -7,7 +7,25 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十四 P418-421</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%9B%9B-p418-421/</link>
+        <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%9B%9B-p418-421/</guid>
+        <description>&lt;p&gt;然后是 8.2.&lt;/p&gt;
+&lt;p&gt;脑袋痛痛, 再不结束感觉真要把我顶4了qaq&lt;/p&gt;
+&lt;p&gt;回忆 $\mathbb{H}$ affine Hecke, 我们有 $R(T)\subset \mathbb{H}$, with $\mathbb{Z}$-basis ${e^\lambda}$.&lt;/p&gt;
+&lt;p&gt;在这里, 考虑 ${\mathcal{B}_j}$ collection of connected components of $\mathcal{B}^s_x\subset \mathcal{B}$. 由于 $C\circlearrowright{\mathcal{B}_j}$ as permutation, 对于 $g\in C(s,x)$ preserves $\mathcal{B}_j$, 我们可以考虑 $l(g,\mathcal{B}_j)=\sum_{q}(-1)^q\cdot \operatorname{Tr}(g:H^q(\mathcal{B}_j)\to H^q(\mathcal{B}_j)) $ Lefschetz number. 对于 $\mathbb{T}=B/[B,B]$, 我们可以 identify $\lambda$ 为 $\mathbb{T}$ 的 character canonically. 于是, 我们有如下 char. formula:&lt;/p&gt;
+&lt;p&gt;Theorem 8.2.1. The char. of the restriction to $R(T)$ of the std. mod. $K_{a,x,\chi}$, is given by&lt;/p&gt;
+\[\operatorname{Tr}(e^\lambda;K_{a,x,\lambda})=\frac{1}{\# C(s,x)}\cdot \sum_{\{\text{components}\}\mathcal{B_j}}\sum_{\{g\in C(s,x)|g\cdot \mathcal{B}_j=\mathcal{B}_j\}}\chi(g)\cdot l(g,\mathcal{B}_j)\cdot\langle \lambda,s\rangle_j.\]&lt;p&gt;本章的剩余部分就是证明这个工作. 但是, 当然我懒得复述这个工作了, 所以, 我希望介绍一下他在干些啥.&lt;/p&gt;
+&lt;p&gt;嘛, 首先, 由于 $H_\cdot(\mathcal{B}_x^s)=\oplus\operatorname{Ind}^C_{C_j}H_\cdot (\mathcal{B}_j)$. 根据 Frobenius, 我们可以将 $(\chi,\operatorname{Ind}^C_{C_j}H_\cdot (\mathcal{B}_j))$ 转化到 $(\chi|_{C_j},H_\cdot(\mathcal{B}_j))$. 于是,&lt;/p&gt;
+\[\operatorname{Tr}(e^\lambda;K_{a,x,\chi})=\sum_{\{C\cdot \mathcal{B}_j\}} \operatorname{Tr}(e^\lambda;\operatorname{Hom}_{C_j}(\chi|_{C_j},H_\cdot(\mathcal{B}_j))).\]&lt;p&gt;往前溯源一下 $e^\lambda$ 在 $H_\cdot(\mathcal{B}_j)$ 的作用, 通过一堆令人绝望的讨论, 我们最最最终能得到&lt;/p&gt;
+\[\operatorname{Tr}(e^\lambda;V)=\langle\lambda,s\rangle_j\cdot\dim V.\]&lt;p&gt;于是, 由于&lt;/p&gt;
+\[\dim\operatorname{Hom}_{C_j}(V_1,V_2)=\frac{1}{\# C_j}\sum_{g\in C_j}\operatorname{Tr}(g;V_1)\cdot \overline{\operatorname{Tr}(g;V_2)}=\frac{1}{\# C_j}\cdot\sum_j\left(\langle\lambda,s\rangle_j\cdot \sum_{g\in C_j}\chi(g)\cdot \operatorname{Tr}(g;H_\cdot(\mathcal{B}_j))\right).\]&lt;p&gt;而, $l(g;\mathcal{B}_j)$ 由于 odd degree vanished 的性质, 可以 identify 到 $\operatorname{Tr}(g;H_\cdot(\mathcal{B}_j))$. 完成了证明.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其五十二</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E4%BA%8C/</link>
         <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
