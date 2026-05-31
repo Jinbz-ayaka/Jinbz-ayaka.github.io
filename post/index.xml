@@ -7,12 +7,47 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>浮生多少记-其五十七</title>
-        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E4%B8%83/</link>
+        <lastBuildDate>Sun, 31 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>浮生多少记-其五十九</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E4%B9%9D/</link>
+        <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E4%B9%9D/</guid>
+        <description>&lt;p&gt;这几天晚上整太多活了, 又是mc又是欧冠的&lt;/p&gt;
+&lt;p&gt;再这么熬下去真要去见张老师了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;COYG😭😭😭&lt;/p&gt;
+&lt;p&gt;如果我是枪迷的话, 恐怕最后加布里埃尔那个踢飞的点球会记很久吧&lt;/p&gt;
+&lt;p&gt;精彩的比赛&lt;/p&gt;
+&lt;p&gt;那我要问了, 这个皇马还能不能好了&lt;/p&gt;
+&lt;p&gt;等着, 明年皇马至少三冠起步&lt;/p&gt;
+&lt;p&gt;穆里尼奥会带领皇马走向巅峰.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;好像也没有啥太能算的例子了, 到目前为止.&lt;/p&gt;
+&lt;p&gt;那就去学点别的&lt;/p&gt;
+&lt;p&gt;这个学期上了一个学期关于langlands的课程&lt;/p&gt;
+&lt;p&gt;但是没太学明白&lt;/p&gt;
+&lt;p&gt;再看看吧, 一切都还可以不着急&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;n6凹不过了😭&lt;/p&gt;
+&lt;p&gt;2kw冰狼神了, 老米神了&lt;/p&gt;
+&lt;p&gt;如果你只打个深渊或者连深渊都不打, 那你当然可以捏着鼻子说原神没有膨胀&lt;/p&gt;
+&lt;p&gt;很遗憾我并不在此列.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;党支部这群人也是真神了&lt;/p&gt;
+&lt;p&gt;我完全不知道他们在琢磨什么, 怎么什么沟槽的活都让我来干&lt;/p&gt;
+&lt;p&gt;不向晚了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下班&lt;/p&gt;
+&lt;p&gt;2026.5.31 于104&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>浮生多少记-其五十八</title>
+        <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E5%85%AB/</link>
         <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E4%B8%83/</guid>
+        <guid>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81%E5%85%AB/</guid>
         <description>&lt;p&gt;冷知识, 今天是525, 是那个什么自设节.&lt;/p&gt;
 &lt;p&gt;所以当然要更点个人网站玩了()&lt;/p&gt;
 &lt;hr&gt;
@@ -8431,61 +8466,61 @@ a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\\
 &lt;h2 id=&#34;tables&#34;&gt;Tables
 &lt;/h2&gt;&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Name&lt;/th&gt;
-          &lt;th&gt;Age&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Bob&lt;/td&gt;
-          &lt;td&gt;27&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Alice&lt;/td&gt;
-          &lt;td&gt;23&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Name&lt;/th&gt;
+					&lt;th&gt;Age&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bob&lt;/td&gt;
+					&lt;td&gt;27&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Alice&lt;/td&gt;
+					&lt;td&gt;23&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables
 &lt;/h4&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Italics&lt;/th&gt;
-          &lt;th&gt;Bold&lt;/th&gt;
-          &lt;th&gt;Code&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Italics&lt;/th&gt;
+					&lt;th&gt;Bold&lt;/th&gt;
+					&lt;th&gt;Code&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;A&lt;/th&gt;
-          &lt;th&gt;B&lt;/th&gt;
-          &lt;th&gt;C&lt;/th&gt;
-          &lt;th&gt;D&lt;/th&gt;
-          &lt;th&gt;E&lt;/th&gt;
-          &lt;th&gt;F&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
-          &lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
-          &lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
-          &lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
-          &lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
-          &lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;A&lt;/th&gt;
+					&lt;th&gt;B&lt;/th&gt;
+					&lt;th&gt;C&lt;/th&gt;
+					&lt;th&gt;D&lt;/th&gt;
+					&lt;th&gt;E&lt;/th&gt;
+					&lt;th&gt;F&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+					&lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+					&lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+					&lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+					&lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+					&lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks
 &lt;/h2&gt;&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks
