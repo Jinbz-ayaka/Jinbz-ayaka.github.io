@@ -7,7 +7,53 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十六 P421-438</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%85%AD-p421-438/</link>
+        <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%85%AD-p421-438/</guid>
+        <description>&lt;p&gt;好久不见.&lt;/p&gt;
+&lt;p&gt;上期更新 CG 的时候还是3月份, 时间过得真快啊.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我们上期刚刚好停在了8.3. 这两章是讲 Constructible, 函子理论和 Perverse sheaves 的. 那既然我懒得再重写一遍这个了, 我直接 assume 我还记得 Achar 那里的东西好了.&lt;/p&gt;
+&lt;p&gt;故事是说, 对于 $Y\subset X$ smooth locally closed subvar. of complex dimension $d$, $\mathcal{L}$ local system. 我们总能搓一个 $D^b(X)$ 中的 $IC(Y,\mathcal{L})$, supported on $\bar{Y}$, 满足一系列优美的条件. In particular, 简记其为 $I$, 他满足如下条件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$H^iI=0$, $\forall i&amp;lt;-d$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$H^{-d}I|_Y=\mathcal{L}$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$I$ 是一个 perverse sheaf.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那么最出名的 BBD 定理如下:&lt;/p&gt;
+&lt;p&gt;Thm 8.3.4.&lt;/p&gt;
+&lt;p&gt;(1) $D^b(X)$ 中的 Perverse sheaves 构成一个 heart, 他是 abelian 的.&lt;/p&gt;
+&lt;p&gt;(2) $D^b(X)$ 中的 simple objects 恰为全体 $IC(Y,\mathcal{L})$, 其中 $\mathcal{L}$ irr. LocSys.&lt;/p&gt;
+&lt;p&gt;Cor 8.4.4&lt;/p&gt;
+&lt;p&gt;(1) $\operatorname{Ext}^k(IC_\phi,IC_\psi)=0,\forall k&amp;lt;0$.&lt;/p&gt;
+&lt;p&gt;(2) $\operatorname{Ext}^0(IC_\phi,IC_\psi)=\mathbb{C}\cdot \delta_{\phi\psi}$.&lt;/p&gt;
+&lt;p&gt;我们称 $\mu:M\to N$ 是一个 projective morphism, 如果他可以分解为 $M\overset{i}{\hookrightarrow} P\times N\overset{\operatorname{pr}_2}{\to} N$, 其中 $i$ closed embedding, $P$ projective. 于是在这种条件下, Perverse sheaves 有一个深刻的结论: 对于任意 $X\subset M$ smooth locally closed subvar. 有分解&lt;/p&gt;
+\[\mu_*IC(X,\mathbb{C}_X)=\oplus_{(i,Y.\chi)}L_{Y,\chi}(i)\otimes IC (Y,\chi)[i],\]&lt;p&gt;其中 $Y$ locally closed, $\chi$ irr. LocSys. $L_{Y,\chi}(i)$ 是一个 fdvs. 这就是所谓的 Decomposition Theorem.&lt;/p&gt;
+&lt;p&gt;现在, 考虑一个简单的 object: 对于 $X$ with irred. comp $X_i$, define $\mathcal{C}_X$ by&lt;/p&gt;
+\[\mathcal{C}_X|_{X_i}=\mathbb{C}_{X_i}[\dim_\mathbb{C} X_i].\]&lt;p&gt;于是对于 $\mu:M\to N$ proj. morphism, $N=\sqcup N_\alpha$ s.t. $\mu:\mu^{-1}(N_\beta)\to N_\beta$ locally trivial topological fib. 于是,&lt;/p&gt;
+\[\mu_*\mathcal{C}_M=\oplus_{k\in\mathbb{Z},\phi=(N_\beta,\chi_\beta)}L_{\phi}(k)\otimes IC_\phi[k].\]&lt;p&gt;换言之, 如果我们取 $L_\phi:=\oplus_{k\in \mathbb{Z}}L_{\phi}(k)$, 定义 $\doteq $ by quasi-isom. that holds up to a shift, 那么我们有&lt;/p&gt;
+\[\mu_*\mathcal{C}_M\doteq \oplus_{\phi=(N_\beta,\chi_\beta)}L_\phi\otimes IC_\phi.\]&lt;p&gt;好的, 现在来到等变领域. 对于 $G\supset H$, 我们诱导了&lt;/p&gt;
+\[\pi_1(G/H)\to \pi_0(H)\to \pi_0(G)\to \pi_0(G/H)\to 1.\]&lt;p&gt;对于 $G$ conn. case, 我们诱导了 $\pi_1(G/H)\twoheadrightarrow H/H_0$ (以及非满射的 case for $G$ not conn.)&lt;/p&gt;
+&lt;p&gt;Lemma 8.4.11. $\mathcal{L}$ LocSys on $G/H$ is $G$-equiv. iff its corresponding $\pi_1(G/H,x)$ is a pullback by $\pi_1(G/H)\to H/H^\circ$ of a f.d. repn. of $H/H^\circ$.&lt;/p&gt;
+&lt;p&gt;当然, 这是因为 G-equiv. 等价于说这个 $\pi_1(G/H)$ 的表示, 在 $\pi_1(G)$ 的作用下是 trivial 的.&lt;/p&gt;
+&lt;p&gt;由于 $H/H^\circ$ 总是有限的, $H/H^\circ$-mod. 总是 s.s. 的.&lt;/p&gt;
+&lt;p&gt;于是, 对于 $\mu:M\to N$ $G$-equiv. proj. morph. between $G$ var, $M$ smooth. 假设 $N$ 拥有 finite $G$-orbits.&lt;/p&gt;
+&lt;p&gt;Thm. 8.4.12. There is a direct sum decomposition in $D^b(N)$.&lt;/p&gt;
+\[\mu_*\mathcal{C}_M=\oplus_{i\in \mathbb{Z},\phi=(\mathbb{O},\chi)}L_\phi(i)\otimes IC_\phi[i],\]&lt;p&gt;where $\phi=(\mathbb{O},\chi)$ runs over the set of couples of $G$-orbit $\mathbb{O}$, $\chi$ irr. $G$-equiv. LocSys $\chi$ on $\mathbb{O}$; $L_\phi(i)$ fdvs.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fine 先到这里&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>浮生多少记-其六十一</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%85%AD%E5%8D%81%E4%B8%80/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
@@ -434,11 +480,11 @@
 </description>
         </item>
         <item>
-        <title>CG饲养日记-其四十四 P418-421</title>
-        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%9B%9B-p418-421/</link>
+        <title>CG饲养日记-其四十五 P418-421</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%BA%94-p418-421/</link>
         <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%9B%9B-p418-421/</guid>
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%BA%94-p418-421/</guid>
         <description>&lt;p&gt;然后是 8.2.&lt;/p&gt;
 &lt;p&gt;脑袋痛痛, 再不结束感觉真要把我顶4了qaq&lt;/p&gt;
 &lt;p&gt;回忆 $\mathbb{H}$ affine Hecke, 我们有 $R(T)\subset \mathbb{H}$, with $\mathbb{Z}$-basis ${e^\lambda}$.&lt;/p&gt;
