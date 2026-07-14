@@ -7,7 +7,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十七 P438-443</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%83-p438-443/</link>
+        <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%83-p438-443/</guid>
+        <description>&lt;p&gt;接下来我们故事开始于研究 $\mathbb{H}$-mod $L_{a,x,\chi}$ 与 $IC$ sheaves 之间的关系. 考虑 $i:Z\hookrightarrow X$ embedding of locally closed subset. 对于 $A\in D^b(X)$, 我们有 natural isom.&lt;/p&gt;
+\[i^!A\to i^*A.\]&lt;p&gt;几何的来说, 就是&lt;/p&gt;
+\[\{\text{Sections supported on }Z\}\to\{\text{Sections on a nbhd of }Z\}.\]&lt;p&gt;现在, 对于 $i_x:{x}\hookrightarrow X$ embedding,&lt;/p&gt;
+&lt;p&gt;Lemma 8.5.3. $i^!_xIC(Y,\mathcal{L})\to i^\ast _xIC(Y,\mathcal{L})$ vanishes unless $Y={x}$, in which case it is an isom.&lt;/p&gt;
+&lt;p&gt;这是 IC sheaves 的性质保证的. 对于 $M$ smooth, $\mu:M\to N$ proper. $i_x:{x}\hookrightarrow N$ embedding. 考虑 $\mathcal{C}_M$ constant perverse sheaf on $M$, $\mu_\ast \mathcal{C}_M$ its direct image.&lt;/p&gt;
+&lt;p&gt;在 $M$ has pure dim $m$ 时, 我们有 natural isom&lt;/p&gt;
+\[H^\cdot(M_x)\simeq H^{\cdot-m}(i_x^*\mathcal{C}_M),H_\cdot(M_x)\simeq H^{\cdot-m}(i_x^!\mathcal{C}_M).\]&lt;p&gt;这个其实就是做个 base change 就做完了.&lt;/p&gt;
+&lt;p&gt;那么接下来, 我们关键的事情是有如下 commutative diagram&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIXlxcY2RvdChpXiFfeFxcbXVfKlxcY2Fse0N9X00pIl0sWzAsMiwiSF5cXGNkb3QoaV4qX3hcXG11XypcXGNhbHtDfV9NKSJdLFsyLDAsIkhfe20tXFxjZG90fShNX3gpIl0sWzIsMiwiSF57bStcXGNkb3R9KE1feCkiXSxbMiwzLCJcXG51Il0sWzAsMV0sWzEsMywiIiwxLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIXlxcY2RvdChpXiFfeFxcbXVfKlxcY2Fse0N9X00pIl0sWzAsMiwiSF5cXGNkb3QoaV4qX3hcXG11XypcXGNhbHtDfV9NKSJdLFsyLDAsIkhfe20tXFxjZG90fShNX3gpIl0sWzIsMiwiSF57bStcXGNkb3R9KE1feCkiXSxbMiwzLCJcXG51Il0sWzAsMV0sWzEsMywiIiwxLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==&amp;embed&#34; width=&#34;610&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;后者 induced by Poincare. 而, 选取 $U\subset N$ small enough open nbhd of $x$ s.t.$\tilde{i}:M_x\hookrightarrow \tilde{U}=\mu^{-1}U$. 我们实际上有 $H^\cdot(i^\ast _x\mu_\ast \mathcal{C}_M)=H^{m+\cdot}(\tilde{U})$. 于是, 由于 $\tilde{U}$ open smooth, $M_x$ compact, 我们有&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsOCxbMCwwLCJIX3ttLVxcY2RvdH0oTV94KSJdLFswLDIsIkhee20rXFxjZG90fShNX3gpIl0sWzIsMCwiSF57bStcXGNkb3R9KFxcdGlsZGV7VX0sXFx0aWxkZXtVfVxcYmFja3NsYXNoIE1feCkiXSxbNCwwLCJIX3ttLVxcY2RvdH0oTV94KSJdLFs2LDAsIkhee29yZH1fe20tXFxjZG90fShcXHRpbGRle1V9KSJdLFs2LDIsIkhfe20tXFxjZG90fShcXHRpbGRle1V9KSJdLFs0LDIsIkhfe20tXFxjZG90fShcXHRpbGRle1V9KSJdLFsyLDIsIkhee20rXFxjZG90fShcXHRpbGRle1V9KSJdLFswLDEsIlxcbnUiXSxbMCwyLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDMsIiIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsNCwiXFx0aWxkZXtpfV8qIiwyLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNiw1LCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs3LDYsIiIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNywiXFx0aWxkZXtpfV4qIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiw3LCJcXHBhcnRpYWwiLDFdLFszLDYsIlxcdGlsZGV7aX1fKiIsMV0sWzQsNSwiY2FuIiwxXV0= --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsOCxbMCwwLCJIX3ttLVxcY2RvdH0oTV94KSJdLFswLDIsIkhee20rXFxjZG90fShNX3gpIl0sWzIsMCwiSF57bStcXGNkb3R9KFxcdGlsZGV7VX0sXFx0aWxkZXtVfVxcYmFja3NsYXNoIE1feCkiXSxbNCwwLCJIX3ttLVxcY2RvdH0oTV94KSJdLFs2LDAsIkhee29yZH1fe20tXFxjZG90fShcXHRpbGRle1V9KSJdLFs2LDIsIkhfe20tXFxjZG90fShcXHRpbGRle1V9KSJdLFs0LDIsIkhfe20tXFxjZG90fShcXHRpbGRle1V9KSJdLFsyLDIsIkhee20rXFxjZG90fShcXHRpbGRle1V9KSJdLFswLDEsIlxcbnUiXSxbMCwyLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDMsIiIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsNCwiXFx0aWxkZXtpfV8qIiwyLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNiw1LCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs3LDYsIiIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNywiXFx0aWxkZXtpfV4qIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiw3LCJcXHBhcnRpYWwiLDFdLFszLDYsIlxcdGlsZGV7aX1fKiIsMV0sWzQsNSwiY2FuIiwxXV0=&amp;embed&#34; width=&#34;1311&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;其中 $\tilde{i}:M_x\hookrightarrow M$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;拖着拖着不知不觉就从7.2拖到7.14了. 时间怎么这么快..&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在, 对于 $M$ smooth alg. var. of pure dim $m$, $\mu:M\to N$ proj. morph. 对于 $N$ 的一个 regular stratification $\sqcup N_\alpha$ s.t. $\mu^{-1}(N_\alpha)\to N_\alpha$ 是一个 locally trivial topological fibration. 根据上面的定理我们有&lt;/p&gt;
+\[\mu_*\mathcal{C}_M\doteq \oplus_{\phi=(N_\beta,\mathcal{L}_\beta)}L_\phi\otimes IC_{\phi}.\]&lt;p&gt;也就是说, up to 一个 shift 两边取等.&lt;/p&gt;
+&lt;p&gt;于是现在考虑 $x\in N, i_x:{x}\hookrightarrow N$ 根据上面那个 base change lemma, 有&lt;/p&gt;
+\[H^{m+\cdot}(M_x)=H^\cdot(i^*_x\mu_*\mathcal{C}_M)\doteq \oplus_{\phi}L_\phi\otimes H^\cdot(i^*_xIC_\phi).\]&lt;p&gt;对于 ${x}=N_0$ &amp;ldquo;minimal&amp;rdquo; stratum, 有 $IC_x=\mathbb{C}_x$. 于是由于 $\dim H^(\mathbb{C}_x)=1$, 总有 $L_x$ has multiplicity $\leq 1$. 于是在这种情况下 $H^\cdot(M_x)$ 的 $L_x$ subspace 结构是给定的. 此外, 根据上面的大交换图标, 我们可以将 $L_x$ 看作 $H_\cdot(\tilde{U})$ 的 sub.&lt;/p&gt;
+&lt;p&gt;此外, 注意我们有 bilinear pairing&lt;/p&gt;
+\[\langle-,-\rangle^{\tilde{U}}:H_{m+\cdot}(M_x)\times H_{m+\cdot}(M_x)\overset{\cap}{\to} \mathbb{C}.\]&lt;p&gt;(写到这里的时候 CG 有很多 typo, 看得出来这俩哥们也不太想写了)&lt;/p&gt;
+&lt;p&gt;这一部分我们就先写到这个关键结果作为结尾吧:&lt;/p&gt;
+&lt;p&gt;Prop. 8.5.10. 对于 ${x}=N_0$ one point stratum. 考虑 direct image map $\tilde{i}_\ast :H_\cdot(M_x)\to H_\cdot(\tilde{U})$. Then&lt;/p&gt;
+&lt;p&gt;(i) The image of $\tilde{i}_\ast $ equals $L_x$, viewed as a subspace of $H_\cdot(\tilde{U})\doteq H^\cdot(M_x)$.&lt;/p&gt;
+&lt;p&gt;(ii) The kernel of $\tilde{i}_\ast $ equals to the radical of the bilinear form $\langle-,-\rangle^{\tilde{U}}$ on $H_\cdot(M_x)$.&lt;/p&gt;
+&lt;p&gt;Coro. 8.5.13. We have natural isom.&lt;/p&gt;
+\[H_\cdot(M_x)/Rad\langle-,-\rangle^{\tilde{U}}\doteq L_x.\]</description>
+        </item>
+        <item>
         <title>浮生多少记-其六十三</title>
         <link>https://Jinbz-ayaka.github.io/p/%E6%B5%AE%E7%94%9F%E5%A4%9A%E5%B0%91%E8%AE%B0-%E5%85%B6%E5%85%AD%E5%8D%81%E4%B8%89/</link>
         <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
