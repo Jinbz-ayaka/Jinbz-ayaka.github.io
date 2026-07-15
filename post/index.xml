@@ -7,7 +7,28 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十八 P443-445</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%85%AB-p443-445/</link>
+        <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%85%AB-p443-445/</guid>
+        <description>&lt;p&gt;剩下的这部分是上一期的一个补充. 上回我们决定了映射&lt;/p&gt;
+\[\tilde{i}_*:H_\cdot(M_x)\to H_\cdot(\tilde{U}).\]&lt;p&gt;我们现在想给出 equivariant setting 下的结果. 我们 fix $N=\sqcup \mathbb{O}$ alg. stratification given by $G$-orbits. $\mathbb{O}_x$ orbit, $G(x)$ isotroupy group, $K(x)$ maximal compact subgp. of $G(x)$.&lt;/p&gt;
+&lt;p&gt;考虑 $S$ local transverse slice to $\mathbb{O}_x$ at $x$, 根据 3.5 章, 我们可以选取 $S$ s.t. $S$ $K(x)$-stable. 考虑 $\tilde{S}=\mu^{-1}(S)\subset M$, 我们不妨设 $\tilde{i}:M_x\hookrightarrow \tilde{S}$ homotopy equiv.&lt;/p&gt;
+&lt;p&gt;现在, 对于 $S$, 我们可以构造 $S=\sqcup S_\beta$ with $S_\beta=S\cap \mathbb{O}$. 考虑 $\epsilon:S\to N$ 与 $\tilde{\epsilon}:\tilde{S}\to M$, 根据 proper base change 我们得到 $\epsilon^!(\mu_\ast \mathcal{C}_M)=\mu_\ast \tilde{\epsilon}^!\mathcal{C}_M\doteq \mu_\ast \mathcal{C}_{\tilde{S}}$.&lt;/p&gt;
+&lt;p&gt;于是根据 8.4.9. 我们有&lt;/p&gt;
+\[\mu_*\mathcal{C}_{\tilde{S}}\doteq\epsilon^*(\oplus_\phi L_\phi\otimes IC(\mathbb{O}_\phi,\mathcal{L}_{\phi}))\doteq \oplus_\phi L_\phi\otimes IC(S\cap\mathbb{O}_\phi,\mathcal{L}_{\phi}|_{S\cap\mathbb{O}_\phi}).\]&lt;p&gt;现在, 注意 $x$ 为唯一的 one-point stratum in $S$. Set $i_x:{x}\to S$, 我们可以借由上面 non-equiv. 的情况来进行讨论. 考虑 $U=S, \tilde{U}=\tilde{S}$. 在 Prop 8.5.10. 我们描述了 canonical mapping $\tilde{i}_\ast :H_\cdot(M_x)\to H_\cdot(\tilde{S})$. 由于 $\tilde{S}$ stable under $K(x)$ and $K(x)/K(x)^\circ=G(x)/G(x)^\circ$. 我们有 $G(x)/G(x)^\circ$-action on the kernel and image of $\tilde{i}_\ast $. 于是, 我们有&lt;/p&gt;
+&lt;p&gt;Prop. 8.5.16. Let $x\in N$, $\chi$ irrep. of the group $G(x)/G(x)^\circ$. Write $\phi=(\mathbb{O},\chi)$, $\mathbb{O}$ $G$-orbit throught $x$. 于是,&lt;/p&gt;
+\[L_{\phi}\simeq im(H_\cdot(M_x)_\chi\to H_\cdot(\tilde{S})_{\chi})\simeq H_\cdot(M_x)_\chi/Rad\langle-,-\rangle^{\tilde{S}}_\chi.\]&lt;p&gt;Langlands 味上来了(不捂嘴)(不皱眉)(不捏鼻)(不转头)&lt;/p&gt;
+&lt;p&gt;现在, 考虑 s.s. element $a=(s,t)\in G\times \mathbb{C}^\ast $, let $M$ and $N$ be the $a$-fixed point sets $M=\tilde{\mathcal{N}}^a,N=\mathcal{N}^a$ and $\mu:\tilde{\mathcal{N}}^a\to \mathcal{N}^a$ Springer resoln.&lt;/p&gt;
+&lt;p&gt;这显然是一个 proj. morphism. 于是, 根据 Decomposition Thm, 我们有&lt;/p&gt;
+\[\mu_*\mathcal{C}_{\tilde{\mathcal{N}}^a}=\oplus_{i\in\mathbb{Z},\phi=(\mathbb{O},\chi)}L_\phi(i)\otimes IC_\phi[i].\]&lt;p&gt;现在, fix $x\in\mathbb{O}$, 考虑 $G(s,x)$ simultaneous centralizer of $s$ and $x$ in $G$. 考虑 irrep. $\chi$ of the gp. $C(s,x)=G(s,x)/G^\circ(s,x)$. 我们有&lt;/p&gt;
+\[L_{a,x,\chi}=im(H_\cdot(\mathcal{B}^s_x)_{\chi}\to H_\cdot(\tilde{S}))\simeq L_{\phi}\simeq H_\cdot(\mathcal{B}^s_x)_\chi/Rad\langle-,-\rangle_\chi^{\tilde{S}},\]&lt;p&gt;在这里, $H_\cdot(\mathcal{B}^s_x)_{\chi}$ 和 $ H_\cdot(\tilde{S})$ 分别是 standard and costandard $\mathbb{H}_a$-mod. 取 $L_\phi:=\oplus_i L_\phi(i)$. 在下一章, 我们会给出 $L_\phi$ 上的自然 $\mathbb{H}_a$-mod 结构, 然后证明上述 $\simeq$ 实际上是 isom. of $\mathbb{H}_a$-mods.&lt;/p&gt;
+&lt;p&gt;以及我后面不确定我会不会用 $H_a$ 来表示 $\mathbb{H}_a$ 或 $\mathbf{H}_a$. 反正都差不多.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其四十七 P438-443</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B8%83-p438-443/</link>
         <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
