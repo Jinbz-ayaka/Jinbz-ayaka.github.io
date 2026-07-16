@@ -7,7 +7,48 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其四十九 P446-449</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B9%9D-p446-449/</link>
+        <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B9%9D-p446-449/</guid>
+        <description>&lt;p&gt;《偏屈层及其在表示论中的应用》登场，层论与函子都迎来全场最欢乐的环节。&lt;/p&gt;
+&lt;p&gt;就像一位学者所说，“我这次来几何表示论就是来开算的。没想到算着算着，大家都算到一起去了”。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;GLC 怎么不算算到一起去了呢&lt;/p&gt;
+&lt;p&gt;谱也够和自守也够闹麻了😓&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;回到 smooth complex var. $M$, proper map $\mu:M\to N$, 几何上我们有 $Z=M\times_NM$, 与 convolution $Z\circ Z=Z$ 给出 $H_\cdot(Z)$ 上的 associative algebra structure.&lt;/p&gt;
+&lt;p&gt;非常有趣的性质是, 这个有一个 sheaf-theoretic 的描述. 具体的来说, 就是有 algebra isomorphism&lt;/p&gt;
+\[H_\cdot(Z)\doteq Ext^\cdot_{G^b(N)}(\mu_*\mathcal{C}_M,\mu_*\mathcal{C}_M).\]&lt;p&gt;后者在 Hom 的复合下有一个自然的代数结构, 而这个同构是保这个代数结构的. 具体地写下来, 我们有如下两个定理.&lt;/p&gt;
+&lt;p&gt;Lemma 8.6.1. 对于 $M_1,M_2$ smooth manifolds of pure complex dimension $m_1,m_2$, $\mu_i:M_i\to N$. Set $Z_{12}=M_1\times_NM_2$. 有自然的 graded v.s. 同构&lt;/p&gt;
+\[H_\cdot(Z_{12})=Ext^{m_1+m_2-\cdot}_{D^b(N)}(\mu_{1*}\mathcal{C}_{M_1},\mu_{2*}\mathcal{C}_{M_2}).\]&lt;p&gt;这个是通过 base change 给出的.&lt;/p&gt;
+&lt;p&gt;Theorem 8.6.7. 上述同构是一个代数同构, 使得如下图表交换.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIX1xcY2RvdChaKVxcb3RpbWVzIEhfXFxjZG90KFopIl0sWzIsMCwiSF9cXGNkb3QoWikiXSxbMCwyLCJFeHRfe0ReYihOKX1eXFxjZG90KFxcbWF0aGJie0x9LFxcbWF0aGJie0x9KVxcb3RpbWVzIEV4dF97RF5iKE4pfV5cXGNkb3QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pIl0sWzIsMiwiRXh0X3tEXmIoTil9XlxcY2RvdChcXG1hdGhiYntMfSxcXG1hdGhiYntMfSkiXSxbMiwzLCJjb21wb3NpdGlvbiJdLFswLDEsImNvbnYuIl0sWzAsMiwiIiwxLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwzLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ== --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIX1xcY2RvdChaKVxcb3RpbWVzIEhfXFxjZG90KFopIl0sWzIsMCwiSF9cXGNkb3QoWikiXSxbMCwyLCJFeHRfe0ReYihOKX1eXFxjZG90KFxcbWF0aGJie0x9LFxcbWF0aGJie0x9KVxcb3RpbWVzIEV4dF97RF5iKE4pfV5cXGNkb3QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pIl0sWzIsMiwiRXh0X3tEXmIoTil9XlxcY2RvdChcXG1hdGhiYntMfSxcXG1hdGhiYntMfSkiXSxbMiwzLCJjb21wb3NpdGlvbiJdLFswLDEsImNvbnYuIl0sWzAsMiwiIiwxLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwzLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==&amp;embed&#34; width=&#34;945&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;这个定理的证明仍旧是 technical 的. 所以我们还是跳过之.&lt;/p&gt;
+&lt;p&gt;根据如上定理, 我们给出&lt;/p&gt;
+\[H_\cdot(Z)=\oplus_{k\in \mathbb{Z}} Ext^k_{D^b(N)}(\mu_*\mathcal{C}_M,\mu_*\mathcal{C}_M).\]&lt;p&gt;根据 decomposition thm, 有&lt;/p&gt;
+\[RHS=\oplus_{i,j,k\in\mathbb{Z},\phi,\psi}\operatorname{Hom}_{\mathbb{C}}(L_\phi(i),L_\psi(j))\otimes Ext^k_{D^b(N)}(IC_\phi[i],IC_\psi[j])\]\[=\oplus_{i,j,k\in\mathbb{Z},\phi,\psi}\operatorname{Hom}_{\mathbb{C}}(L_\phi(i),L_\psi(j))\otimes Ext^{k+j-i}_{D^b(N)}(IC_\phi,IC_\psi).\]&lt;p&gt;总之,&lt;/p&gt;
+\[H_\cdot(Z)\doteq \oplus_{k\geq 0,\phi,\psi}\operatorname{Hom}_{\mathbb{C}}(L_\phi,L_\psi)\otimes Ext^k_{D^b(N)}(IC_\phi,IC_\psi).\]&lt;p&gt;此外, $\operatorname{Hom}_{\mathbb{C}}(IC_\phi,IC_\psi)= 0$ 除非 $\phi=\psi$. 于是,&lt;/p&gt;
+\[H_\cdot(Z)=\left(\oplus_\phi \operatorname{End} L_\phi\right)\oplus \left(\oplus_{k&gt; 0,\phi,\psi}\operatorname{Hom}_{\mathbb{C}}(L_\phi,L_\psi)\otimes Ext^k_{D^b(N)}(IC_\phi,IC_\psi)\right)\]&lt;p&gt;这里, 我们可以看到第一部分是矩阵代数的直和, 所以是 s.s. 的. 第二部分集中在 degree $k&amp;gt;0$, 是一个 nilpotent ideal $H_\cdot(Z)_+$. 于是,&lt;/p&gt;
+\[H_\cdot(Z)\twoheadrightarrow H_\cdot(Z)/H_\cdot(Z)_+=\oplus\operatorname{End} L_\phi\twoheadrightarrow \operatorname{End} L_\phi.\]&lt;p&gt;给出了 $L_\psi$ 上的 $H_\cdot (Z)$-alg. 结构. 于是我们得到&lt;/p&gt;
+&lt;p&gt;Theorem 8.6.12. The non-zero menbers of ${L_\phi}$ form a complete set of isom. classes of simple $H_\cdot(Z)$-mods.&lt;/p&gt;
+&lt;p&gt;我们现在 sheaf-theoretical 地来描述这个代数作用: 简记 $D=D^b(N)$, $A\in D$ complex. 我们有 hyper-cohomology $H^\cdot(N,A)=Ext_{D}^\cdot(\mathbb{C}_N,A)$. 于是有 Yoneda product&lt;/p&gt;
+\[Ext^\cdot_{D}(\mathbb{C}_N,A)\times Ext^\cdot_{D}(A,A)\to Ext^\cdot_{D}(\mathbb{C}_N,A).\]&lt;p&gt;而, 对于 $i:Y\hookrightarrow N$ locally closed subset embedding. 对于 $u\in Ext^k_D(A,A)$, 我们实际上给出了 isom. $u:A\to A[k]$. 于是他 induces 了 $H^ji^\ast A\to H^ji^\ast A[k]=H^{j+k}i^\ast A$. 也就是说, 我们有 graded alg. isom.&lt;/p&gt;
+\[\oplus_{k}Ext^k_D(A,A)\to \oplus_k\operatorname{Hom}(H^\cdot i^*A,H^{\cdot+k} i^*A).\]&lt;p&gt;于是, globally 我们可以将 $H^\cdot i^\ast $ 替换为 $H^\cdot(Y,i^\ast (-))$. 于是我们给出来了 $H^\cdot(Y,i^\ast A)$ 上的 $Ext^\cdot_D(A,A)$-mod 结构. 同样地, 我们可以将 $H^\cdot(Y,i^!A)$ 上也赋予这样的结构. 于是, 考虑 $Y={x}$,&lt;/p&gt;
+&lt;p&gt;Prop. 8.6.15. There are natural $Ext^\cdot_D(\mu_\ast \mathcal{C},\mu_\ast \mathcal{C})$-mod structure on $H^\cdot(M_x)$ and on $H_\cdot(M_x)$.&lt;/p&gt;
+&lt;p&gt;此外, 简记 $\mathbb{L}=\mu_\ast \mathcal{C}$, 我们有&lt;/p&gt;
+&lt;p&gt;Prop. 8.6.16. 如下图表交换&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIXlxcY2RvdChaKVxcdGltZXMgSF5cXGNkb3QoTV94KSJdLFsyLDAsIkheXFxjZG90KE1feCkiXSxbMCwyLCJFeHReXFxjZG90X0QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pXFx0aW1lcyBIXlxcY2RvdChpXiFfeFxcbWF0aGJie0x9KSJdLFsyLDIsIkheXFxjZG90KGleIV94XFxtYXRoYmJ7TH0pIl0sWzAsMSwiY29udi4iXSxbMiwzLCJZb25lZGEiXSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIXlxcY2RvdChaKVxcdGltZXMgSF5cXGNkb3QoTV94KSJdLFsyLDAsIkheXFxjZG90KE1feCkiXSxbMCwyLCJFeHReXFxjZG90X0QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pXFx0aW1lcyBIXlxcY2RvdChpXiFfeFxcbWF0aGJie0x9KSJdLFsyLDIsIkheXFxjZG90KGleIV94XFxtYXRoYmJ7TH0pIl0sWzAsMSwiY29udi4iXSxbMiwzLCJZb25lZGEiXSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d&amp;embed&#34; width=&#34;712&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;那 $H^\cdot(i^\ast _x\mathbb{L})$ 呢? 我们取 $x$ 的一个 small neighbourhood $U$ in $N$ s.t. $M_x\sim \tilde{U}=\mu^{-1}(U)$. 我们有 $\kappa_1:H^\cdot(M_x)\doteq H^\cdot(i^\ast _x\mu_\ast \mathcal{C}_M)$ 与 $\kappa_2: H^\cdot(M_x)\doteq H_\cdot(\tilde{U})$. 于是由 $\kappa_2$, 我们可以将 $H_\cdot(Z)\times H_\cdot(\tilde{U})\to H_\cdot(\tilde{U})$ 转换为 $H^\cdot(M_x)$ 的 $H_\cdot(Z)$-mod 结构. 于是对应的 case 变为如下图标交换.&lt;/p&gt;
+&lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIX1xcY2RvdChaKVxcdGltZXMgSF5cXGNkb3QoTV94KSJdLFsyLDAsIkheXFxjZG90KE1feCkiXSxbMCwyLCJFeHReXFxjZG90X0QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pXFx0aW1lcyBIXlxcY2RvdChpXipfeFxcbWF0aGJie0x9KSJdLFsyLDIsIkheXFxjZG90KGleKl94XFxtYXRoYmJ7TH0pIl0sWzAsMSwiY29udi4iXSxbMiwzLCJZb25lZGEiXSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d --&gt;
+&lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIX1xcY2RvdChaKVxcdGltZXMgSF5cXGNkb3QoTV94KSJdLFsyLDAsIkheXFxjZG90KE1feCkiXSxbMCwyLCJFeHReXFxjZG90X0QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pXFx0aW1lcyBIXlxcY2RvdChpXipfeFxcbWF0aGJie0x9KSJdLFsyLDIsIkheXFxjZG90KGleKl94XFxtYXRoYmJ7TH0pIl0sWzAsMSwiY29udi4iXSxbMiwzLCJZb25lZGEiXSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d&amp;embed&#34; width=&#34;712&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其四十八 P443-445</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E5%85%AB-p443-445/</link>
         <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
