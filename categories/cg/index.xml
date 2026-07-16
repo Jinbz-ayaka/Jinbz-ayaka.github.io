@@ -46,6 +46,11 @@
 &lt;p&gt;那 $H^\cdot(i^\ast _x\mathbb{L})$ 呢? 我们取 $x$ 的一个 small neighbourhood $U$ in $N$ s.t. $M_x\sim \tilde{U}=\mu^{-1}(U)$. 我们有 $\kappa_1:H^\cdot(M_x)\doteq H^\cdot(i^\ast _x\mu_\ast \mathcal{C}_M)$ 与 $\kappa_2: H^\cdot(M_x)\doteq H_\cdot(\tilde{U})$. 于是由 $\kappa_2$, 我们可以将 $H_\cdot(Z)\times H_\cdot(\tilde{U})\to H_\cdot(\tilde{U})$ 转换为 $H^\cdot(M_x)$ 的 $H_\cdot(Z)$-mod 结构. 于是对应的 case 变为如下图标交换.&lt;/p&gt;
 &lt;!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJIX1xcY2RvdChaKVxcdGltZXMgSF5cXGNkb3QoTV94KSJdLFsyLDAsIkheXFxjZG90KE1feCkiXSxbMCwyLCJFeHReXFxjZG90X0QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pXFx0aW1lcyBIXlxcY2RvdChpXipfeFxcbWF0aGJie0x9KSJdLFsyLDIsIkheXFxjZG90KGleKl94XFxtYXRoYmJ7TH0pIl0sWzAsMSwiY29udi4iXSxbMiwzLCJZb25lZGEiXSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d --&gt;
 &lt;iframe class=&#34;quiver-embed&#34; src=&#34;https://q.uiver.app/#q=WzAsNCxbMCwwLCJIX1xcY2RvdChaKVxcdGltZXMgSF5cXGNkb3QoTV94KSJdLFsyLDAsIkheXFxjZG90KE1feCkiXSxbMCwyLCJFeHReXFxjZG90X0QoXFxtYXRoYmJ7TH0sXFxtYXRoYmJ7TH0pXFx0aW1lcyBIXlxcY2RvdChpXipfeFxcbWF0aGJie0x9KSJdLFsyLDIsIkheXFxjZG90KGleKl94XFxtYXRoYmJ7TH0pIl0sWzAsMSwiY29udi4iXSxbMiwzLCJZb25lZGEiXSxbMCwyLCIiLDEseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d&amp;embed&#34; width=&#34;712&#34; height=&#34;432&#34; style=&#34;border-radius: 8px; border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;p&gt;在书本的最前, Achar 还为大家准备了一个意料之外的彩蛋.&lt;/p&gt;
+&lt;p&gt;一个没有在范畴论上出现的串烧函子节目, 他介绍的是每一个态射界面诱导的函子.&lt;/p&gt;
+&lt;p&gt;七个层论的函子用优雅符号的形式轮番登场. 无论你是张量积还是 Hom, 是推前拉回还是 Verdier 对偶, 都免不了直接开算, 跟着写出每个层上的专属 homology.&lt;/p&gt;
+&lt;p&gt;后面忘了&lt;/p&gt;
 </description>
         </item>
         <item>
