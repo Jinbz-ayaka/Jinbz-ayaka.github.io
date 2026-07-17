@@ -7,7 +7,38 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Jinbz</copyright>
-        <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Jinbz-ayaka.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CG饲养日记-其五十 P450-459</title>
+        <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81-p450-459/</link>
+        <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E4%BA%94%E5%8D%81-p450-459/</guid>
+        <description>&lt;p&gt;上回书我们从 sheaf-theoretical 的角度构造了 $H^\bullet(Z)$ 在 $ H^\bullet(M_x)$ 与 $H_\bullet(Z)$ 在 $H^(M_x)$ 的作用. 我们 recall 我们也介绍了 $H_\bullet(\tilde{S})$ 上的 $H_\bullet(Z)$ 作用. 现在有一个关键的问题是, 我们通过嵌入诱导的&lt;/p&gt;
+\[H_\bullet(M_x)\to H_\bullet(\tilde{S}),H_\bullet(M_x)\to H_\bullet(\tilde{U})\]&lt;p&gt;并不自然是一个 $Ext$-模映射. 因此, 我们希望 sheaf-theoretically 地来描述 convolution action on homology of $\tilde{S}$, 使得他 compatible with $H_\bullet(M_x)\to H_\bullet(\tilde{S})$.&lt;/p&gt;
+&lt;p&gt;对于 $i_{\mathbb{O}}:\mathbb{O}\hookrightarrow N$ locally-closed embedding, $\mathcal{H}^\bullet(i^\ast _{\mathbb{O}}\mu_\ast \mathcal{C}_M)$ cohomology sheaf. 于是我们得到了其上的 $Ext_D^\bullet(\mathbb{L},\mathbb{L})$-action. 关键点是, 这个诱导了 $Ext_D^\bullet(\mathbb{L},\mathbb{L})$-action on stalk $\mathcal{H}_x^\bullet(i^\ast _{\mathbb{O}}\mathbb{L})$. 我们实际上有 $\mathcal{H}_x^\bullet(i^\ast _{\mathbb{O}}\mathbb{L})\doteq H_\bullet(\tilde{S})$. 于是根据 Thm 8.6.7. 的一个改版可以得到 $H_\bullet(Z)$-module structure on $H_\bullet(\tilde{S})$ compatible with $Ext$-module structure on $\mathcal{H}_x^\bullet(i^\ast _{\mathbb{O}}\mathbb{L})$.&lt;/p&gt;
+&lt;p&gt;相似地, 我们也可以得到 $i^!_{\mathbb{O}}\mathbb{L}$ 版本.&lt;/p&gt;
+&lt;p&gt;(写到这里我突然意识到前面那章好像很多 $\mathcal{H}$ 我都写的 $H$. 受着吧)&lt;/p&gt;
+&lt;p&gt;于是, $H_\bullet(M_x)\to H_\bullet(\tilde{S})$ 是一个 $Ext$-mod 映射. 对于 $\chi$ irrep. of $G(x)/G(x)^\circ$, 我们考虑 isotypical component $L_{x,\chi}:=Im[H_\bullet(M_x)_\chi\to H_\bullet(\tilde{S})_\chi]$, 其上自然继承 $Ext$-mod structure.&lt;/p&gt;
+&lt;p&gt;现在, write $\phi=(\mathbb{O},\chi)$, $\mathbb{O}$ $G$-orbit, 根据 8.5.16 我们知道他作为线性空间同构于 $L_{\phi}$. 我们有&lt;/p&gt;
+&lt;p&gt;Lemma 8.6.17. 如上定义的线性空间同构 intertwines the $Ext^\bullet_D(\mathbb{L},\mathbb{L})$-action on both.&lt;/p&gt;
+&lt;p&gt;实际上, 我们有 $L_{x,\chi}=Im[\mathcal{H}^\bullet_x(i^!_{\mathbb{O}}\mathbb{L})\to \mathcal{H}^\bullet_x(i^\ast _{\mathbb{O}}\mathbb{L})]$. 这个定理的证明还是颇为巧妙的, 首先利用 decomposition Theorem, 然后分析 degree 应该就能做出来.&lt;/p&gt;
+&lt;p&gt;Prop. 8.6.21. For $\phi=(\mathbb{O},\chi)$ above, the convolution action of $H_\bullet(Z)$ identified by $H_\bullet(Z)\doteq Ext^\bullet_D(\mathbb{L},\mathbb{L})$ by 8.6.7. and $L_\phi\simeq L_{x,\chi}$ by 8.5.16.&lt;/p&gt;
+&lt;p&gt;于是&lt;/p&gt;
+&lt;p&gt;Thm 8.6.22. Every $H_\bullet(Z)$-mod. $L_{x,\chi}$ is simple if nonzero. Furthermore, any $H_\bullet(Z)$-mod is isom. to $L_{x,\chi}$ for some $(x,\chi)$.&lt;/p&gt;
+&lt;p&gt;对于 $\psi=(\mathbb{O}_\psi,\chi_\psi)$ and $\phi=(\mathbb{O}_\phi,\chi_\phi)$, $x\in \mathbb{O}_\psi$, $i_x:{x}\hookrightarrow N$, 我们有 KL multiplicity formula.&lt;/p&gt;
+&lt;p&gt;Thm. 8.6.23. The multiplicity of $L_\phi$ in the composition series of $H_\bullet(Z)$-module $H_\bullet(M_x)_\psi$ and $H^\bullet(M_x)_\psi$ is given by&lt;/p&gt;
+\[[H_\bullet(M_x)_\psi:L_\phi]=\sum_k \dim H^k(i^!_xIC_\phi)_\psi,\]\[[H^\bullet(M_x)_\psi:L_\phi]=\sum_k \dim H^k(i^*_xIC_\phi)_\psi.\]&lt;p&gt;由 Decomposition Theorem 我们直接得到&lt;/p&gt;
+\[H_\bullet(M_x)\doteq \oplus_\phi L_\phi\otimes H^\bullet(i^!_xIC_\phi).\]&lt;p&gt;然后分析一下 filtration 即得.&lt;/p&gt;
+&lt;p&gt;最后, 我们介绍 contravariant 性质: 对于 f.d. left mod $H$ over $B$ with $b\mapsto b^t$ anti-automorphism. 我们定义 contragredient left $B$-module $H^\vee$ as $H^\ast $ given by action $b\cdot h=h\cdot(b^t)$.&lt;/p&gt;
+&lt;p&gt;对于 $H_\bullet(Z)=H_\bullet(M\times_NM)$, switching two factors $M$ 给出了其上的 anti-automorphism 结构. 那么我们有&lt;/p&gt;
+&lt;p&gt;Coro. 8.6.25. $H_\bullet(Z)$-mods. $H^\bullet(M_x)$ and $H_\bullet(M_x)$ are contragredient to each other.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;本章将所有 cdot 改为了 bullet.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;定理 8.6.7 的证明懒得写了qaq&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>CG饲养日记-其四十九 P446-449</title>
         <link>https://Jinbz-ayaka.github.io/p/cg%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0-%E5%85%B6%E5%9B%9B%E5%8D%81%E4%B9%9D-p446-449/</link>
         <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
