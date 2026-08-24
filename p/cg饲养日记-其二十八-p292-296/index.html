@@ -42,18 +42,18 @@
           <div class="article-content"><p>Localization!</p>
 <p>这个 localization 更接近于传统的, Atiyah 的 loc. 对于 $A$, 考虑 $A^\circ$ identity comp. 如果 $A$ 是 abelian reductive 的, 我们可以写出 ext. $1\to (\mathbb{C}^\ast )^n\to A\to (\text{<a href="http://Fin.gp">Fin.gp</a>.})\to 1$. Moreover, 我们总可以适当地选取使其 split. 因此 $A=(\mathbb{C}^\ast )^n\times(\text{<a href="http://Fin.gp">Fin.gp</a>.})$.</p>
 <p>现在, 考虑 $R(A)$ representation ring. fix $a\in A$ 我们可以考虑 $S$ 所有 funct. not vanish at $a$. 于是考虑</p>
-<p>[R_a=S^{-1}\cdot R(A).]</p>
+<p>\[R_a=S^{-1}\cdot R(A).\]</p>
 <p>以及, 对于 $R(A)$-mod. $M$, set $M_a=R_a\otimes_RM$. 于是我们有 exact 的 loc. functor $M\mapsto M_a$.</p>
 <p>现在, 取 $X$ complex var. $E\to X$ alg. v.b. over $X$ with linear $A$-action on $E$ along fibers. The $A$-action gives a weight space decomp. Since $E$ locally trivial s.t. $A$-action 的变化是连续的. 以及, $A$ 的 weights form a disc. set. 我们有 &quot;global&quot; v.b. direct sum decomp.</p>
-<p>[E=\oplus_\alpha E_\alpha,\alpha:A\to \mathbb{C}.]</p>
+<p>\[E=\oplus_\alpha E_\alpha,\alpha:A\to \mathbb{C}.\]</p>
 <p>$E_\alpha$ sub. bun. $\alpha\in \operatorname{Sp}E\subset \operatorname{Hom}(A,\mathbb{C}^\ast )$ formed by weights that occur in the decomp. of $E$.</p>
 <p>非常喜欢北大数学院的推送: 数学里有多少谱</p>
 <p>现在, 将 $X$ 视为一个 trivial $A$-action 的 $A$-var. 于是</p>
-<p>[K^A(X)=R(A)\otimes_\mathbb{Z} K(X).]</p>
+<p>\[K^A(X)=R(A)\otimes_\mathbb{Z} K(X).\]</p>
 <p>对于 $\lambda(E)\in K^A(X)$, 有</p>
-<p>[\lambda(E)=\sum(-1)^j\wedge^j(\sum_{\alpha\in \operatorname{Sp}E}\alpha\otimes E_\alpha)\in R(A)\otimes K(X).]</p>
+<p>\[\lambda(E)=\sum(-1)^j\wedge^j(\sum_{\alpha\in \operatorname{Sp}E}\alpha\otimes E_\alpha)\in R(A)\otimes K(X).\]</p>
 <p>Prop 5.10.3. Assume that in the above setup $\alpha(a)\neq 1,\forall \alpha\in \operatorname{Sp}E$ so that $X=E^a$. Then, for any $j\geq 0$, multiplication by $\lambda(E)$ induces autom.</p>
-<p>[K^A_j(X)_a\overset{\lambda(E)}{\to}K^A_j(X)_a]</p>
+<p>\[K^A_j(X)_a\overset{\lambda(E)}{\to}K^A_j(X)_a\]</p>
 <p>on the localized $K$-gps.</p>
 <p>我们有两个证法:</p>
 <p>其一: 第一步, 对于 trivial bundle $E$, 若 $\dim E=1,\operatorname{Sp}E={\alpha}$. 有 $\lambda(E)=1-\alpha$. 由于 $\alpha(a)\neq 1$, $1-\alpha\in S$. 于是 $1-\alpha$ 在 $R_a$ 中可逆. 当然成立. 而对于 $E=\oplus_\alpha V_\alpha$, 有 $\lambda(E)=\prod_\alpha(1-\alpha)\in S$.</p>
@@ -63,7 +63,7 @@
 <p>首先, localization 是 exact 的, 所以我们可以先做一遍 localization. 接下来相信大家都知道我们要做什么了: 5-引理.</p>
 <p>其二: 对于 $E=\oplus E_\alpha$. 考虑 $\bar{E}_\alpha$ trivial bundle of the same dim. as $E_\alpha$. Set $\bar{E}=\sum \alpha\otimes \bar{E}_\alpha$. 根据 5.9.5 我们有 $\lambda(E)-\lambda(\bar{E})$ nilp. 而, $\lambda(\bar{E})$ 可逆. 得证.</p>
 <p>Cor. 5.10.4. $E\to X$ alg. v.b. with zero section $i:X\hookrightarrow E$. $A$ abelian reductive gp. acting identically on $E$ and linearly along fibers of $E$, as above. Assume futher that $a\in A$ is an element whose fix-pt. set is the zero section, i.e. $E^a=i(X)$. Then the pushforward</p>
-<p>[i_*:K^A_j(X)_a\to K^A_j(E)_a]</p>
+<p>\[i_*:K^A_j(X)_a\to K^A_j(E)_a\]</p>
 <p>is an isom. of the localized $K$-gps.</p>
 <p>这是因为, 由于 $i^\ast $ 是 Thom, 因此 isom (5.4.21), 只需要验证 $i^\ast i_\ast $ 是 isom. 而根据 5.4.9, 其是乘以 $\lambda(E^\vee)$.</p>
 <p>现在是 Localization Theorem! 对于 $A\circlearrowright X$. 对于 $a\in A$, write $X^a\hookrightarrow X$ fixed pts. 我们称 Localization Theorem holds for $X$ if the induced map $i_\ast :K^A(X^a)_a\overset{\sim}{\to} K^A(X)_a$ 是一个 isom. 由 Thomason 的结论, Loc.Thm. 对任意 $A$-var. $X$ 成立. 在这里, 我们只证明如下的 partial result</p>
@@ -72,7 +72,7 @@
 <p>第一步: 对于 $(i_2)_\ast :K^A(\mathbb{F})_a\to K^A(F)_a$, 这是一个 isom. 对于 $F=F^n\supset F^{n-1}\supset \cdots\supset F^0$ over $X$, 他 restricts to a cellular fibration $\mathbb{F}=\mathbb{F}^n\supset \mathbb{F}^{n-1}\supset \cdots\supset \mathbb{F}^0$ over $X^a$, where $\mathbb{F}^j=F^j\cap \mathbb{F}$.</p>
 <p>Remark 一下, 后面的这个当然也是一个 cellular 的分解, 因为 $\mathbb{F}^j\backslash \mathbb{F}^{j-1}=(F^j\backslash F^{j-1})\cap \pi^{-1}(X^a)$, 在 fiber 上拥有和 $F^j\backslash F^{j-1}$ 一样的 fiber. 于是当然是 locally affine 的.</p>
 <p>我们用归纳说明</p>
-<p>[K^A(\mathbb{F}^j)_a\overset{\sim}{\to} K^A(F^j)_a.]</p>
+<p>\[K^A(\mathbb{F}^j)_a\overset{\sim}{\to} K^A(F^j)_a.\]</p>
 <p>然后就是老熟人了: Thom:</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwyLCJLXkEoRV5qKV9hIl0sWzAsMCwiS15BKFxcbWF0aGJie0V9XmopX2EiXSxbMiwwLCJLXkEoWF5hKV9hIl0sWzIsMiwiS15BKFgpX2EiXSxbMiwzLCJcXHRleHR7TG9jLlRobS59Il0sWzEsMiwiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwzLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDBdXQ== -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwyLCJLXkEoRV5qKV9hIl0sWzAsMCwiS15BKFxcbWF0aGJie0V9XmopX2EiXSxbMiwwLCJLXkEoWF5hKV9hIl0sWzIsMiwiS15BKFgpX2EiXSxbMiwzLCJcXHRleHR7TG9jLlRobS59Il0sWzEsMiwiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwzLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDBdXQ==&embed" width="553" height="432" style="border-radius: 8px; border: none;"></iframe>
@@ -82,12 +82,12 @@
 <p>第二步: 说明 $(i_1)_\ast :K^A(F^a)_a\to K^A(\mathbb{F})_a$ 是一个 isom.</p>
 <p>首先, 注意一个事情, 就是对于 $(E^j)^a\hookrightarrow \mathbb{E}^j$, 对于 $E=\operatorname{Spec} R$, 我们实际上可以考虑 $A\circlearrowright R$ 与 $(E)^a=\operatorname{Spec} R^a$. 这实际上指出了一个事情: $(E^j)^a$ 同样也是 affine 的. 于是, restrict to conn. comp. of $X^a$, 我们会 assume 这些 affine bundle 是 const. rank 的. (btw, 他这里 Restricting typo 了, 不提一嘴我浑身难受).</p>
 <p>现在, 考虑 $V^j$ v.b. with linear $A$-action associated to the affine bundle $\mathbb{E}^j$. 于是, 由于 $V^j/(V^j)^a$ 在 $a$ 的作用下, 拥有不为 $1$ 的 eigenvalue. 于是, 有</p>
-<p>[(V^j)^a\hookrightarrow V^j\twoheadrightarrow V^j/(V^j)^a]</p>
+<p>\[(V^j)^a\hookrightarrow V^j\twoheadrightarrow V^j/(V^j)^a\]</p>
 <p>splits. 于是, 我们给出了 $V^j=(V^j)^a\oplus N$, with $N^a=X^a$ 构成一个 zero-section.</p>
 <p>现在, 我们有 natural action map $\mathbb{E}^j\times_{X^a}N\overset{\sim}{\to} \mathbb{E^j}$. 而, $V^j=(V^j)^a\oplus N$ 给出了一个 canonical isom.</p>
-<p>[(E^j)^a\times_{X^a}N\overset{\sim}{\to}\mathbb{E}^j.]</p>
+<p>\[(E^j)^a\times_{X^a}N\overset{\sim}{\to}\mathbb{E}^j.\]</p>
 <p>于是, $\operatorname{pr}:{E}^j\to (E^j)^a$ 给出了一个与 $N$ 拥有相同 fiber 的 v.b. Moreover, 由于我们有 $N^a=X^a$ zero-section, 且其恰为 $a$-fixed pts. 根据 5.10.4, 我们有</p>
-<p>[\operatorname{pr}_*:K^A({E}^j)_a\to K^A((E^j)^a)]</p>
+<p>\[\operatorname{pr}_*:K^A({E}^j)_a\to K^A((E^j)^a)\]</p>
 <p>是一个 isom.</p>
 <p>那么, 最最后一步相信你已经完全猜到了: 没错, 就是 induction+5-引理.</p>
 <p>下班!</p>

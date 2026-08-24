@@ -67,26 +67,26 @@
 <p>好吧, 从证明来看, 我们应该假设 $G,\mathfrak{g}$ 是有限维的, 不过反正一般说 s.s. lie alg 都得是有限维的()</p>
 <p>这个证明大概就是说, 取 Jordan decomp. $x=s+n$, 根据 (b), $s$ reg. 推出 $n=0,x=s$. 然后考虑 $s$ 的特征多项式 $P(t)=\det(tI-\operatorname{ad} s)=\det(tI-\operatorname{ad} x)$. 由于 $ad(s)$ 是 s.s. 的, $s$ reg. 等价于说 $P(t)$ 在 $0$ 处恰有 $\operatorname{rank}\mathfrak{g}$ 阶零点, 也就是说 $P_r(x)\neq 0$.</p>
 <p>现在考虑 $\cal{B}$ 为 $\mathfrak{g}$ 的所有 Borel sub.alg. 那么</p>
-<p>[\cal{B}={x\in \operatorname{Gr}(\dim(\mathfrak{b}),\dim(\mathfrak{g}))|x\text{ solvable sub Lie. alg.}}.]</p>
+<p>\[\cal{B}={x\in \operatorname{Gr}(\dim(\mathfrak{b}),\dim(\mathfrak{g}))|x\text{ solvable sub Lie. alg.}}.\]</p>
 <p>通过一些<strong>代数的</strong>讨论你可以知道他是闭的, 所以也是 proj. 的.</p>
 <p>根据 Lemma 3.1.2 以及所有 Borel subalg. 在 $G$ 作用下可迁的性质, 我们可以给出同构</p>
-<p>[G/B\simeq \cal{B}.]</p>
+<p>\[G/B\simeq \cal{B}.\]</p>
 <p>Cor 3.1.6 就是一个很直接的结论, 懒得切英文了()</p>
 <p>(a). $\mathfrak{b}\in\cal{B}$ 在 $g\in G$ 作用下不变等价于 $g\in B$.</p>
 <p>(b). $\mathfrak{b}\in\cal{B}$ 在 $x\in\mathfrak{g}$ 向量场作用下不变等价于 $x\in\mathfrak{b}$.</p>
 <h3>3.1.7 Bruhat decomp.</h3>
 <p>从名字上看是跟 Weyl gp. 有关的结论.</p>
 <p>首先根据上面那个映射我们给出了</p>
-<p>[B\backslash G/B\simeq {B-\text{orbits on }\cal{B}}.]</p>
+<p>\[B\backslash G/B\simeq {B-\text{orbits on }\cal{B}}.\]</p>
 <p>其次, 我们要给出</p>
-<p>[{B-\text{orbits on }\cal{B}}\to {G-\text{orbits on }\cal{B}\times\cal{B}}.]</p>
-<p>[\mathfrak{b}\mapsto (\mathfrak{b}_0,\mathfrak{b}).]</p>
+<p>\[{B-\text{orbits on }\cal{B}}\to {G-\text{orbits on }\cal{B}\times\cal{B}}.\]</p>
+<p>\[\mathfrak{b}\mapsto (\mathfrak{b}_0,\mathfrak{b}).\]</p>
 <p>他这里的符号不好(), 实际上他这里的 $\mathfrak{b}_0$ 是 $B$ 的(Borel)李子代数. 然后同样通过一些<strong>代数的</strong>讨论你可以知道他是bij.
 最后, 记 $W_T=N_G(T)/T$, 考虑</p>
-<p>[W_T\to B\backslash G/B]</p>
-<p>[\bar{w}\mapsto BwB.]</p>
+<p>\[W_T\to B\backslash G/B\]</p>
+<p>\[\bar{w}\mapsto BwB.\]</p>
 <p>于是我们给出了映射</p>
-<p>[W_T\to B\backslash G/B\to {B-\text{orbits on }\cal{B}}\to{G-\text{orbits on }\cal{B}\times\cal{B}}.]</p>
+<p>\[W_T\to B\backslash G/B\to {B-\text{orbits on }\cal{B}}\to{G-\text{orbits on }\cal{B}\times\cal{B}}.\]</p>
 <p>Theorem 3.1.9: All the maps above are bij.</p>
 <p>他这里Remark了一下, 说最左边和最右边的map与$T$和$B$的选取无关. 虽然, 怎么可能无关, 集合 ${B-\text{orbits on }\cal{B}}$ 就不会与 $B$ 无关.</p>
 <p>不过, 对于 $B'=gBg^{-1}$ 以及 $T'=gT'g^{-1}$, 我们确实可以 induce 对应集合自然的映射(), 然后通过一些<strong>代数的</strong>讨论你可以知道他是交换的.</p>
@@ -102,10 +102,10 @@
 <p>这个实际上就是利用 $\mathbb{C}\mathbb{P}^1=\mathbb{C}\cup 0\cup \infty$ complete 的性质. 以及,</p>
 <p>Cor 2.4.2: The fixed pts on a proj. var. is always non-empty.</p>
 <p>对于 $W$ fixed pt set, 假设他是有限的, 对任意 $W$, 我们可以定义 attracting set</p>
-<p>[X_w={x\in W|\lim_{z\to 0}zx=w}.]</p>
+<p>\[X_w={x\in W|\lim_{z\to 0}zx=w}.\]</p>
 <p>然后! 请回忆 ODE 中关于不动点方面的内容, 从哲学上, 你可以相信这样的事, 对于 $T_wX$, 可以让 $\mathbb{C}^\times$ 作用在 $T_wX$. 我们有</p>
-<p>[T_wX=T^+_wX\oplus T_w^-X, T^+<em>w=\oplus</em>{n&gt;0,n\in \mathbb{Z}}T_wX(n),T^+<em>w=\oplus</em>{n&lt;0,n\in \mathbb{Z}}T_wX(n).]</p>
-<p>[T_wX(n)={x\in T_wX|z\cdot x=z^nx, \forall z\in\mathbb{C}}.]</p>
+<p>\[T_wX=T^+_wX\oplus T_w^-X, T^+<em>w=\oplus</em>{n&gt;0,n\in \mathbb{Z}}T_wX(n),T^+<em>w=\oplus</em>{n&lt;0,n\in \mathbb{Z}}T_wX(n).\]</p>
+<p>\[T_wX(n)={x\in T_wX|z\cdot x=z^nx, \forall z\in\mathbb{C}}.\]</p>
 <p>有</p>
 <p>Theorem 2.4.3:(B-B Decomp.)</p>
 <p>(a) The attracting sets form a decomp. $X=\sqcup X_w$ into smooth locally closed alg. var.</p>
@@ -116,9 +116,9 @@
 <p>其中 $\mathfrak{g}_\alpha$ 上的 $\mathbb{C}^\times$ action 为 $z\cdot x=z^nx$. 在此, 我们选取 $B$ 使得 $\operatorname{Lie}B=\mathfrak{h}\oplus \mathfrak{n}^+$.</p>
 <p>那么, $\mathfrak{b}\in\cal{B}$ 在 $\mathbb{C}^\times$ 作用下不变, 根据 3.1.6, 当且仅当 $h\in \mathfrak{b}$, 再根据 3.1.4, $\mathfrak{h}\subset\mathfrak{b}$. 于是, $\mathbb{C}^\times$-fixed points 的数量等于 $T$-fixed pts 的数量, 根据 3.1.10, 他们是 $w\cdot B/B$.</p>
 <p>现在, 根据 2.4.3, 有</p>
-<p>[\cal{B}\simeq \sqcup_{w\in W}B_{w}.]</p>
+<p>\[\cal{B}\simeq \sqcup_{w\in W}B_{w}.\]</p>
 <p>而现在我们应该做的是研究 $T_w^+X$. 通过一些讨论我们可以得出 $T^+_w\cal{B}=\mathfrak{n}^+\cdot w$. 于是</p>
-<p>[\dim \cal{B}_w=\dim T^+_w\cal{B}=\dim (\mathfrak{n}^+\cdot w)=\dim (U\cdot w).]</p>
+<p>\[\dim \cal{B}_w=\dim T^+_w\cal{B}=\dim (\mathfrak{n}^+\cdot w)=\dim (U\cdot w).\]</p>
 <p>而, 对于任意的 $n\in \mathfrak{n}^+$ 以及 $t\in \mathbb{C}^\times\subset T$, $t\to 0$ 时 $t\cdot n\to 0$. 这意味着对任意的 $u\in U$, $tut^{-1}\to 1$. 也就是说, $U\cdot w\subset \cal{B}_w$.</p>
 <p>然后, 根据上面那个 $\dim$ 的等式, 我们得到 $U\to B_w,u\mapsto U\cdot w$ 的微分是一个满射. 因此 $U\cdot w$ 是 $\cal{B}$ 内的一个开集, 而根据 3.1.1, 他也是闭集. 因此他是一个连通分支. 由于 $\cal{B}_w$ 是一个吸收集, 他当然要连通. 因此 $\cal{B}_w=U\cdot w$.</p>
 <p>当然, $U\cdot w=UT\cdot w=B\cdot w$. 因此我们得到 $B$-轨道恰好就是 $\cal{B}_w$, 证毕.</p>
@@ -128,22 +128,22 @@
 <p>如果你上过代数几何I, 也许你会记得 Gr 的 Plucker 嵌入. 现在我们希望给出来 $\cal{B}$ 到某个 proj. var. 的嵌入. 这段写得也太晦涩了()</p>
 <p>对于 irr. 的 $G$-表示 $V$, 对任意 Borel subalg. $\mathfrak{b}$, 有唯一的一维不变子空间 $1_\mathfrak{b}$.</p>
 <p>我们现在想要选取一个 &quot;non-deg&quot; 的 $V$, 使得保证 $1_{\mathfrak{b}}$ 不变的 $\mathfrak{g}$-子代数是 $\mathfrak{b}$. 根据 Hum, 只要最高权是 &quot;non-deg&quot; 的, $V$ 就是 nondeg 的. 于是,</p>
-<p>[i:\cal{B}\to \mathbb{P}(V),]</p>
-<p>[\mathfrak{b}\mapsto 1_{\mathfrak{b}}.]</p>
+<p>\[i:\cal{B}\to \mathbb{P}(V),\]</p>
+<p>\[\mathfrak{b}\mapsto 1_{\mathfrak{b}}.\]</p>
 <p>给出了一个嵌入. 以及,</p>
-<p>[\bar{\cal{B}}<em>w=i^{-1}(\mathbb{P}(U(\mathfrak{n})\cdot w(1</em>{\mathfrak{b}})))]</p>
+<p>\[\bar{\cal{B}}<em>w=i^{-1}(\mathbb{P}(U(\mathfrak{n})\cdot w(1</em>{\mathfrak{b}})))\]</p>
 <p>(他没证这个, 直接引用的文献, 他是人握持.)</p>
 <p>我怎么随手一打就是俳句()</p>
 <h3>3.1.14 $SL_n$ case.</h3>
 <p>熟知(lemma 3.1.15) $\cal{B}$ 对应到 complete flags in $\mathbb{C}^n$.</p>
 <p>他希望证明 $\mathbb{C}^n/S^n$ 这个 orbit space 同构于某个 $n$ 维线性空间, 然后叽里呱啦说了一大堆. 其实就是考虑 $(x_i)\mapsto (e_i)$, $e_i$ 牛顿多项式.</p>
 <p>然后考虑映射</p>
-<p>[\phi:\mathfrak{sl}_n\to {x|\sum x_i=0}/S^n\simeq \mathbb{C}^{n-1}/S^n,]</p>
-<p>[x\mapsto{\text{eigenvalues}}.]</p>
+<p>\[\phi:\mathfrak{sl}_n\to {x|\sum x_i=0}/S^n\simeq \mathbb{C}^{n-1}/S^n,\]</p>
+<p>\[x\mapsto{\text{eigenvalues}}.\]</p>
 <p>现在考虑</p>
-<p>[\tilde{\mathfrak{g}}={(x,F)\in\mathfrak{sl}_n\times\cal{B}|x(F_i)\subset F_i,\forall i}.]</p>
+<p>\[\tilde{\mathfrak{g}}={(x,F)\in\mathfrak{sl}_n\times\cal{B}|x(F_i)\subset F_i,\forall i}.\]</p>
 <p>那么 $x:F_i/F_{i-1}\to F_i/F_{i-1}$ 就是一个一维表示, 取 $x_n$ 为其特征根. 我们给出</p>
-<p>[\nu:\tilde{\mathfrak{g}}\mapsto \mathbb{C}^{n-1}.]</p>
+<p>\[\nu:\tilde{\mathfrak{g}}\mapsto \mathbb{C}^{n-1}.\]</p>
 <p>那么, 我们显然有这个交换图表:</p>
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXHRpbGRle1xcZ2d9Il0sWzIsMCwiXFxDQ157bi0xfSJdLFswLDIsIlxcZ2ciXSxbMiwyLCJcXENDXntuLTF9L1NebiJdLFswLDEsIlxcbnUiXSxbMCwyLCJwcl8xIiwyXSxbMSwzLCJcXHRleHR7bmF0dXJhbH0iXSxbMiwzLCJcXHBoaSIsMl1d&embed" width="524" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>与这个Claim 3.1.19:</p>

@@ -41,71 +41,71 @@
           </header>
           <div class="article-content"><p>Chern Character!</p>
 <p>$X$ closed subvar. of a smooth quasi-proj. var. $M$. 我们要定义 homology Chern char. map for the non-equiv. $K$-theory</p>
-<p>[\operatorname{ch}:K(X)\to H_*(X,\mathbb{C}).]</p>
+<p>\[\operatorname{ch}:K(X)\to H_*(X,\mathbb{C}).\]</p>
 <p>这个涉及到 ambient var. $M$. 给出这个定义不是一个简单的事情()</p>
 <p>第一步: $E$ $C^\infty$-vector bundle on $M$. 我们忽略 $M$ 上的 complex structure, 记 $\Omega^i(M)$ vector space of $C^\infty$-forms of deg. $i$, 记 $\Omega^i(E)$ v.s. of $E$-valued  $C^\infty$-forms, i.e. $C^\infty$-sections of $E\otimes \Omega^i$. 由于 partition of unity, 我们可以构造出 smooth connection on $E$,</p>
-<p>[\nabla:C^\infty(E)\to \Omega^1(E),]</p>
-<p>[\nabla(f\cdot s)=df\cdot s+f\cdot \nabla s.]</p>
+<p>\[\nabla:C^\infty(E)\to \Omega^1(E),\]</p>
+<p>\[\nabla(f\cdot s)=df\cdot s+f\cdot \nabla s.\]</p>
 <p>而这个 connection 可以 canonically extend to $\nabla:\Omega^i(E)\to \Omega^{i+1}(E),i\geq 0$. Furthermore, 通过一些简单的计算可以得到</p>
-<p>[\nabla^2=\nabla\circ \nabla:C^\infty(E)\to \Omega^2(E)]</p>
+<p>\[\nabla^2=\nabla\circ \nabla:C^\infty(E)\to \Omega^2(E)\]</p>
 <p>是 $C^\infty(M)$-linear 的. 也就是说, given by $s\mapsto \omega(s)$, $\omega\in \Omega^2(\operatorname{End} E)$. $\omega$ 称作 connection $\nabla$ 给出的 curvature-form.</p>
 <p>于是, cohomology Chern char. of $E$ 定义为 de Rham cohomology class</p>
-<p>[\operatorname{ch}^*(E,\nabla):=\operatorname{Tr}(e^{i\omega/2\pi})=\operatorname{Tr}(1+\frac{i}{2\pi}\omega+\frac{1}{2!}(\frac{i}{2\pi})^2\cdot \omega\wedge \omega+\cdots).]</p>
+<p>\[\operatorname{ch}^*(E,\nabla):=\operatorname{Tr}(e^{i\omega/2\pi})=\operatorname{Tr}(1+\frac{i}{2\pi}\omega+\frac{1}{2!}(\frac{i}{2\pi})^2\cdot \omega\wedge \omega+\cdots).\]</p>
 <p>定义 homoloy Chern char. by Poincare dual.</p>
-<p>[\operatorname{ch}(E)=\operatorname{ch}^<em>(E)\cap [M]\in H_</em>(M).]</p>
+<p>\[\operatorname{ch}(E)=\operatorname{ch}^<em>(E)\cap [M]\in H_</em>(M).\]</p>
 <p>第二步: 对于 $U$ open dense subse of $M$. 我们有 restriction map 给出了 de Rham complexes</p>
-<p>[\Omega^\cdot(M)\to \Omega^\cdot(U).]</p>
+<p>\[\Omega^\cdot(M)\to \Omega^\cdot(U).\]</p>
 <p>这个 morph. 是 inj. 的. 于是我们可以将 $\Omega^\cdot (M)$ 视作 $\Omega^\cdot(U)$ 的 sub. 现在, 定义</p>
-<p>[\Omega^i(M,U):=\Omega^{i-1}(U)/\Omega^{i-1}(M),]</p>
+<p>\[\Omega^i(M,U):=\Omega^{i-1}(U)/\Omega^{i-1}(M),\]</p>
 <p>有</p>
-<p>[0\to \Omega^\cdot(M)\to \Omega^\cdot(U)\to \Omega^\cdot(U)/\Omega^\cdot(M)\to 0.]</p>
+<p>\[0\to \Omega^\cdot(M)\to \Omega^\cdot(U)\to \Omega^\cdot(U)/\Omega^\cdot(M)\to 0.\]</p>
 <p>于是给出 cohom. 的 long exact seq.</p>
-<p>[\cdots\to H^i(\Omega^\cdot(M,U))\to H^i(\Omega^\cdot(M))\to H^i(\Omega^\cdot(U))\to H^{i+1}(\Omega^\cdot(M,U))\to \cdots]</p>
+<p>\[\cdots\to H^i(\Omega^\cdot(M,U))\to H^i(\Omega^\cdot(M))\to H^i(\Omega^\cdot(U))\to H^{i+1}(\Omega^\cdot(M,U))\to \cdots\]</p>
 <p>有, 根据 de Rham Thm, $H^i(\Omega^i(M))=H^i(M)$ and $H^i(\Omega^\cdot(U))$. 于是, 根据 derived cat. 中的 mapping-cone construction, 有</p>
 <p>Prop 5.8.5. There is a natural isom.</p>
-<p>[H^i(\Omega^\cdot(M,U))\simeq H^i(M,U)]</p>
+<p>\[H^i(\Omega^\cdot(M,U))\simeq H^i(M,U)\]</p>
 <p>so that the long exact seq. becomes the std. cohom. exact seq. of $(M,U)$.</p>
 <p>接下来, 如下定义 multiplication:</p>
-<p>[\cup:H^i(\Omega^\cdot(M,U))\times H^j(\Omega^\cdot(M,U))\to H^{i+j}(\Omega^\cdot(M,U)).]</p>
+<p>\[\cup:H^i(\Omega^\cdot(M,U))\times H^j(\Omega^\cdot(M,U))\to H^{i+j}(\Omega^\cdot(M,U)).\]</p>
 <p>对于 $\alpha\in \Omega^{i-1}(U)$ 为 $[\alpha]$ 的一个 representative, 以及 $\beta\in \Omega^{j-1}$ 同样的 setting. 满足 $\beta,\alpha$ 是 cocycle i.e. $d\alpha\in \Omega^i(M),d\beta\cdots$. 现在, 定义</p>
-<p>[[\alpha]\cup[\beta]=[\alpha\wedge d\beta].]</p>
+<p>\[[\alpha]\cup[\beta]=[\alpha\wedge d\beta].\]</p>
 <p>可以验证, 这个定义是良定义的, 且</p>
-<p>[[\alpha]\cup[\beta]+(-1)^{ij}[\beta]\cup [\alpha]=0]</p>
+<p>\[[\alpha]\cup[\beta]+(-1)^{ij}[\beta]\cup [\alpha]=0\]</p>
 <p>此外, 这个 multiplication 在 5.8.5 那个 mapping-cone 的定义下定义的 $\cup$ 是相同的.</p>
 <p>第三步: 明天再修()</p>
 <p>开修! Chern-Simons 楼.</p>
 <p>$U$ open dense subset of $M$, $E,E'$ two $C^\infty$-v.b. on $M$, $u:E|_{U}\overset{\sim}{\to} E'|_{U}$ v.b. isom of the restrictions to $U$.</p>
 <p>我们需要对这样的 $E,E'$, 给出一个 $\operatorname{ch}(E,E',u)$ in $H^\ast (M,U)$ s.t. $\partial \operatorname{ch}(E,E',u)=\operatorname{ch}(E)-\operatorname{ch}(E')\in H^\ast (M)$. with $\partial$ connecting homo.</p>
 <p>现在, 取 explicit representative of these class, 并选择 $\nabla,\nabla'$ 为 $E,E'$ 上的 connection. 于是, 在 $U$ 上, 有</p>
-<p>[u^*(\nabla')=\nabla-\theta,]</p>
+<p>\[u^*(\nabla')=\nabla-\theta,\]</p>
 <p>with $\theta$ $(\operatorname{End} E)$-valued $1$-form on $U$. 取 $\omega,\omega'$ 其对应的 curvature form, 有</p>
-<p>[u^*(\omega')=\omega-\nabla(\theta)+\theta\wedge \theta.]</p>
+<p>\[u^*(\omega')=\omega-\nabla(\theta)+\theta\wedge \theta.\]</p>
 <p>注意 $\nabla-\theta$ 同样构成 $E|_U$ 上的 connection, 有, 两个不同的 connections 给出了 相同的 Chern char. form.</p>
-<p>[\operatorname{ch}(E|<em>U,\nabla-\theta)-\operatorname{ch}(E|</em>{U},\nabla)=d\beta,\beta\in \Omega^\cdot(U).]</p>
+<p>\[\operatorname{ch}(E|<em>U,\nabla-\theta)-\operatorname{ch}(E|</em>{U},\nabla)=d\beta,\beta\in \Omega^\cdot(U).\]</p>
 <p>实际上, 这个 $\beta$ 是可以被计算的. 考虑 $\tilde{U}=U\times [0,1]$, $\pi:\tilde{U}\to U$ natural proj, $\tilde{E}=\pi^\ast E$. 于是, 在 $\tilde{E}$ 上, 定义</p>
-<p>[\tilde{\nabla}=\nabla-t\cdot\theta+dt\wedge \frac{d}{dt}.]</p>
+<p>\[\tilde{\nabla}=\nabla-t\cdot\theta+dt\wedge \frac{d}{dt}.\]</p>
 <p>于是, Chern-Simons form 由 $\beta=\pi_\ast \operatorname{Tr}(e^{\frac{i}{2\pi}\tilde{\nabla}^2})$ 给出. 这里的 $\pi_\ast $ 表示 intergral of Chern char. form $\operatorname{ch}(\tilde{E},\tilde{\nabla})=\operatorname{Tr}(e^{\frac{i}{2\pi}\tilde{\nabla}^2})$ along the fibers of $\pi$.</p>
 <p>对于 $A,B\in M_n(\mathbb{C})$, 定义</p>
-<p>[\Phi(A,B)=\sum_{k=1}^\infty \frac{1}{(k-1)!}(\frac{i}{2\pi})^k\operatorname{Tr}(A\cdot B^{k-1}).]</p>
+<p>\[\Phi(A,B)=\sum_{k=1}^\infty \frac{1}{(k-1)!}(\frac{i}{2\pi})^k\operatorname{Tr}(A\cdot B^{k-1}).\]</p>
 <p>有</p>
 <p>Lemma 5.8.9. There are</p>
-<p>[\beta=\int_0^1\operatorname{Tr}(\theta e^{\frac{i\cdot \nabla-it\theta^2}{2\pi}})=\int_0^1\Phi(\nabla(\theta)-t\cdot \theta\wedge \theta,\omega-t\cdot \nabla(\theta)+t^2\cdot \theta\wedge \theta).]</p>
+<p>\[\beta=\int_0^1\operatorname{Tr}(\theta e^{\frac{i\cdot \nabla-it\theta^2}{2\pi}})=\int_0^1\Phi(\nabla(\theta)-t\cdot \theta\wedge \theta,\omega-t\cdot \nabla(\theta)+t^2\cdot \theta\wedge \theta).\]</p>
 <p>现在, 由于 $\operatorname{ch}(E|_{U},\nabla-\theta)=\operatorname{ch}(E',\nabla')|_{U}$, 我们有</p>
-<p>[d\beta=[\operatorname{ch}(E',\nabla')-\operatorname{ch}(E,\nabla)]|_{U}.]</p>
+<p>\[d\beta=[\operatorname{ch}(E',\nabla')-\operatorname{ch}(E,\nabla)]|_{U}.\]</p>
 <p>现在, 由于右侧式子能扩展到整个 $M$ 上, $\beta$ 是一个 cocycle. 于是, 我们定义 $\operatorname{ch}^\ast (E',E,u)$ 为该 cocycle 对应的 cohomology class.</p>
 <p>事实上, 这个 $[\beta]$ 的选取与 $\nabla,\nabla'$ 无关. 这是一个微分几何的结论.</p>
 <p>第四步: 对于 $X$ closed alg. subvar. of a smooth quasi-proj. var. $M$ and $\mathcal{F}$ coh. sheaf of $\mathcal{O}_X$-mod. 记 $i:X\hookrightarrow M$ embedding, 有 finite locally free resol.</p>
-<p>[0\to F_n\to \cdots \to F_1\to F_0\to i_*\mathcal{F}\to 0.]</p>
+<p>\[0\to F_n\to \cdots \to F_1\to F_0\to i_*\mathcal{F}\to 0.\]</p>
 <p>set $U:=M\backslash X$, let $K_i:=\ker (F_i|_U\to F_{i-1}|_U), i=1,2,\cdots,n$. Put $K_0=F_0|_U$, 我们有, 在 $U$ 上,</p>
-<p>[0\to K_{i+1}\to F_{i+1}\to K_i\to 0,i=0,1,\cdots.]</p>
+<p>\[0\to K_{i+1}\to F_{i+1}\to K_i\to 0,i=0,1,\cdots.\]</p>
 <p>由于 $F_i$ 都是 locally free 的, 这些 exact seq. 都是 split 的. 因此, 我们有 isom. of $C^\infty$-v.b.</p>
-<p>[F_{i+1}|<em>U\simeq K_i\oplus K</em>{i+1}.]</p>
+<p>\[F_{i+1}|<em>U\simeq K_i\oplus K</em>{i+1}.\]</p>
 <p>现在, set $F^{ev}=\oplus_{i\geq 0} F_{2i}, F^{odd}=\oplus_{i\geq 0} F_{2i+1}$. 有</p>
-<p>[F^{ev}|<em>{U}\simeq \oplus</em>{i\geq 0}K_i \simeq F^{odd}|_U. ]</p>
+<p>\[F^{ev}|<em>{U}\simeq \oplus</em>{i\geq 0}K_i \simeq F^{odd}|_U. \]</p>
 <p>我们给出</p>
-<p>[u:F^{ev}|<em>{U}\simeq F^{odd}|</em>{U}.]</p>
+<p>\[u:F^{ev}|<em>{U}\simeq F^{odd}|</em>{U}.\]</p>
 <p>于是, 根据 Chern-Simons construction, 我们给出</p>
-<p>[\operatorname{ch}^<em>(F^{ev},F^{odd},u)\in H^</em>(M,M\backslash X)]</p>
+<p>\[\operatorname{ch}^<em>(F^{ev},F^{odd},u)\in H^</em>(M,M\backslash X)\]</p>
 <p>现在, 令 $\operatorname{ch}_\ast (\mathcal{F})$ 定义为 $\operatorname{ch}^\ast (F^{ev},F^{odd},u)$ 在 $H_\ast (X)\simeq H^\ast (M.M\setminus X)$ 下的像. 于是可以证明 $\operatorname{ch}_\ast (\mathcal{F})$ 与上述 construction 的选取无关.</p>
 <p>这样, 我们便完成了这纷乱复杂的构造.</p>
 <p>Remark (5.8.12) 是说, 对于 $X$ smooth, 我们可以在 $X$ 上找出 free resol. $0\to E^m\to E^{m-1}\to \cdots\to \mathcal{F}\to 0.$</p>
@@ -113,7 +113,7 @@
 <p>Prop. 5.8.13. The Chern char. map has the following properties,</p>
 <p>(i) Normalization: For any complex alg. var. $X$, we have $\operatorname{ch}_\ast (\mathcal{O}_X)=[X]+r\in H_\ast (X)$, where $r$ a sum of hom. classes of degree $&lt;2\dim_{\mathbb{C}}X$.</p>
 <p>(ii) Additivity: For s.e.s. of sheaves on $X$,</p>
-<p>[0\to \mathcal{F}'\to \mathcal{F}\to \mathcal{F}''\to 0,]</p>
+<p>\[0\to \mathcal{F}'\to \mathcal{F}\to \mathcal{F}''\to 0,\]</p>
 <p>we have $\operatorname{ch}_\ast (\mathcal{F})=\operatorname{ch}_\ast (\mathcal{F}')+\operatorname{ch}_\ast (\mathcal{F}'')$. Hence $\mathcal{F}\mapsto \operatorname{ch}_\ast (\mathcal{F})$ 给出了 homo. of abelian gps $\operatorname{ch}_\ast :K(X)\to H_\ast (X)$.</p>
 <p>(iii) Restriction to an open subset: $U$ Zar. open subset of a smooth var. $M$, $X\subset M$ closed subvar. $i:X\cap U\hookrightarrow X$ induced embedding. Then the following diag. commutes:</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLKFgpIl0sWzAsMiwiSF8qKFgpIl0sWzIsMiwiSF8qKFhcXGNhcCBVKSJdLFsyLDAsIksoWFxcY2FwIFUpIl0sWzAsMywiaV4qIl0sWzEsMiwiaV4qIl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7Y2h9XyoiLDFdLFszLDIsIlxcb3BlcmF0b3JuYW1le2NofV8qIiwxXV0= -->
@@ -122,7 +122,7 @@
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzIsMCwiWSJdLFswLDIsIk0iXSxbMiwyLCJOIl0sWzAsMSwiZiJdLFsyLDMsIlxcYmFye2Z9Il0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ== -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzIsMCwiWSJdLFswLDIsIk0iXSxbMiwyLCJOIl0sWzAsMSwiZiJdLFsyLDMsIlxcYmFye2Z9Il0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==&embed" width="432" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>where the morph $f$ is proper, and $M,N$ are smooth, one has</p>
-<p>[Td_N\cdot f_<em>(\operatorname{ch_</em>(\mathcal{F})})=f_<em>(Td_M\cdot \operatorname{ch}_</em>\mathcal{F}), \mathcal{F}\in K(X).]</p>
+<p>\[Td_N\cdot f_<em>(\operatorname{ch_</em>(\mathcal{F})})=f_<em>(Td_M\cdot \operatorname{ch}_</em>\mathcal{F}), \mathcal{F}\in K(X).\]</p>
 <p>这里的 $Td$, 指的是 Todd class. 他是原代数簇切丛的陈类.</p>
 <p>Prop. 5.8.15.</p>
 <p>(i) The homological Chern char. map 与 $K$-theory 中的 specialization 交换, 以及</p>

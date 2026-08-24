@@ -44,30 +44,30 @@
 <p>这个思想就是取 $B^+\cdot B^-\simeq U^+\times T\times U^-$. 证明需要 reduce to s.s. case 和具体的讨论.</p>
 <p>Prop 5.1.17: $L$ 是 $G$ 上的 line bundle, 于是存在 $n$ 使得 $L^{\otimes n}$ 是 trivial bundle.</p>
 <p>利用 5.1.16, 有</p>
-<p>[\mathbb{Z}^n\to Cl(G)\to Cl(U^+\cdot T\cdot U^-)=0.]</p>
+<p>\[\mathbb{Z}^n\to Cl(G)\to Cl(U^+\cdot T\cdot U^-)=0.\]</p>
 <p>于是我们需要证明, 每一个 irr. 的 $C_i\subset G\backslash (B^+\cdot B^-)$ 都给出 $Cl(G)$ 内的 finite order element.</p>
 <p>这些非零的 elements, 是 codim 1 的 irr comp. 根据 Bruhat, 他们是 $B^+s_iB^-$. 于是 $C_i$ 由 $B^-$ 中的 simple roots 给出.</p>
 <p>但, 我们有熟知的结论, 对于 $G$ s.s. 以及 simply connected, $\alpha_i$ 对应的 $C_i$, 取 $V_i$ simple rational $G$-mod with highest weight $\alpha_i$, 取 $V_i$ 中 $B^-$-steable 的 line $v_i$ (也就是 lowest weight vector), 那么 $\overline{B^+s_iB^-}$ 就是 $g\mapsto \langle v^i,g\cdot v_i\rangle$. 于是 $C_i$ principal, $Cl(G)=0$.</p>
 <p>现在考虑 finite covering $\pi: G'\to G$, 于是诱导了 natural direct image $\pi_\ast :Cl(G')\to Cl(G)$, 且, 根据 Hartshorne,</p>
-<p>[\pi_\ast \pi^\ast (D)=(\deg\pi)\cdot D.]</p>
+<p>\[\pi_\ast \pi^\ast (D)=(\deg\pi)\cdot D.\]</p>
 <p>这便说明了 finite order 的性质.</p>
 <p>现在我们要给出 Thm 5.1.9 的证明.</p>
 <p>考虑 $a:G\times X\to X$, set $E:=a^\ast L\simeq L$, 有, 存在 $F$,</p>
-<p>[a^\ast L\simeq (p_G\ast F)\otimes (p_X^\ast E).]</p>
+<p>\[a^\ast L\simeq (p_G\ast F)\otimes (p_X^\ast E).\]</p>
 <p>考虑 $F^{\otimes n}$ trivial bundle, 有 isom</p>
-<p>[a^\ast (L^{\otimes n})\simeq p^\ast _X(L^{\otimes n}).]</p>
+<p>\[a^\ast (L^{\otimes n})\simeq p^\ast _X(L^{\otimes n}).\]</p>
 <p>于是我们希望给出 $L^{\otimes n}$ 上的等变 $G$-bundle 结构. 记 $\mathbb{L}$ $L^{\otimes n}$ 的 total space with the zero-section removed. 于是上式诱导了 $\Phi:G\times\mathbb{L}\to \mathbb{L}$, the following diagram commute:</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJHXFx0aW1lcyBcXG1hdGhiYntMfSJdLFsyLDAsIlxcbWF0aGJie0x9Il0sWzAsMiwiR1xcdGltZXMgWCJdLFsyLDIsIlgiXSxbMCwxLCJcXFBoaSJdLFsyLDMsImEiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtpZH1cXHRpbWVzIFxccGkiLDFdLFsxLDMsIlxccGkiLDFdXQ== -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJHXFx0aW1lcyBcXG1hdGhiYntMfSJdLFsyLDAsIlxcbWF0aGJie0x9Il0sWzAsMiwiR1xcdGltZXMgWCJdLFsyLDIsIlgiXSxbMCwxLCJcXFBoaSJdLFsyLDMsImEiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtpZH1cXHRpbWVzIFxccGkiLDFdLFsxLDMsIlxccGkiLDFdXQ==&embed" width="460" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>Furthermore, $\Phi$ restricted to ${e}\times\mathbb{L}$ 与 $\mathbb{L}$ 同构, 作为 $X$ 上的 principal $\mathbb{C}^\ast $-bundle. 于是, 我们诱导了 $\phi:X\to \mathbb{C}^\ast $, $\Phi(e,l)=\phi(\pi(l))\cdot l$.</p>
 <p>我们用 $\frac{1}{\pi^\ast \phi}\Phi$ 代替 $\Phi$, 上述 comm. diag. 仍然成立. 在这种情况下, $\Phi(g,\cdot)$ 与 $\mathbb{C}^\ast $ 作用交换. 于是我们诱导了 $f:G\times G\times \mathbb{L}\to \mathbb{C}^\ast $ by</p>
-<p>[\Phi(gh,l)=f(-,-,-)\Phi(g,\Phi(h,l)).]</p>
+<p>\[\Phi(gh,l)=f(-,-,-)\Phi(g,\Phi(h,l)).\]</p>
 <p>而, by 5.1.15, 我们可以选出 $r,s\in \mathcal{O}(G)^\times, t\in \mathcal{O}(\mathbb{L})^\times$ s.t.</p>
-<p>[f(g,h,l)=r(g)\cdot s(h)\cdot t(l).]</p>
+<p>\[f(g,h,l)=r(g)\cdot s(h)\cdot t(l).\]</p>
 <p>再结合 $\Phi(e,l)=l$ 推出</p>
-<p>[f\equiv 1,]</p>
+<p>\[f\equiv 1,\]</p>
 <p>也就是</p>
-<p>[\Phi(gh,l)=\Phi(g,\Phi(h,l)).]</p>
+<p>\[\Phi(gh,l)=\Phi(g,\Phi(h,l)).\]</p>
 <p>于是 $\Phi$ 给出了 $\mathbb{L}$ 上的 $G$-action, 且其作为 $G$ 在 $X$ 上作用的 lifting.</p>
 </div>
           

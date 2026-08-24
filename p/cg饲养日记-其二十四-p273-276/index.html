@@ -43,19 +43,19 @@
 <p>对于 $X$, write $\Delta\in K^G(X\times X)$ 其 diagnal 的 structure sheaf. 特别地, 对于 $X$ smooth compact, 我们还有 convolution map $K^G(Y\times X)\otimes K^G(X)\to K^G(Y)$.</p>
 <p>Theorem 5.6.1. $G$ linear alg. gp., $X$ smooth proj. $G$-var. TFAE:</p>
 <p>(a) The natural map</p>
-<p>[\pi:K^G(X)\otimes_{R(G)} K^G(Y)\to K^G(X\times Y), (\mathcal{F},\mathcal{G})\mapsto \mathcal{F}\boxtimes \mathcal{G}]</p>
+<p>\[\pi:K^G(X)\otimes_{R(G)} K^G(Y)\to K^G(X\times Y), (\mathcal{F},\mathcal{G})\mapsto \mathcal{F}\boxtimes \mathcal{G}\]</p>
 <p>is isom. for an arbitrary $G$-var. $Y$.</p>
 <p>(b) The class $\Delta\in K^G(X\times X)$ belongs to the im. of $\pi$ for $Y=X$.</p>
 <p>(c) $K^G(X)$ f.g. proj. $R(G)$-mod, and for any $G$-var. $Y$, the hom. induced by conv. is an isom</p>
-<p>[K^G(Y\times X)\to \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y)).]</p>
+<p>\[K^G(Y\times X)\to \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y)).\]</p>
 <p>(d) $K^G(X)$ f.g. proj. $R(G)$-mod, $K^G(X\times X)$ f.g. proj. $R(G)$-mod. s.t. $\operatorname{rank} K^G(X\times X)=(\operatorname{rank} K^G(X))^2$ and moreover, the bilinear mapping</p>
-<p>[\langle,\rangle:K^G(X)\times K^G(X)\to R(G),]</p>
+<p>\[\langle,\rangle:K^G(X)\times K^G(X)\to R(G),\]</p>
 <p>is non-deg. in the sense explained below.</p>
 <p>给出这个定理的证明是这一章要做的全部事情.</p>
 <p>为此, 我们再引入 4 个 intermediate steps()</p>
 <p>(1) $\forall R(G)$-mod $M$, the map</p>
-<p>[K^G(X)\otimes_{R(G)}M\to \operatorname{Hom}_{R(G)}(K^G(X),M),]</p>
-<p>[a\otimes m\mapsto \langle\cdot,a\rangle m]</p>
+<p>\[K^G(X)\otimes_{R(G)}M\to \operatorname{Hom}_{R(G)}(K^G(X),M),\]</p>
+<p>\[a\otimes m\mapsto \langle\cdot,a\rangle m\]</p>
 <p>is surj. and $\pi$ in (a) is surj.</p>
 <p>(2) (i) $K^G(X)$ f.g. proj. $R(G)$-mod, and</p>
 <p>(ii) (1) holds for all $M=K^G(Y)$ and</p>
@@ -65,24 +65,24 @@
 <p>(4) (i) $K^G(X)$ proj. (ii) $K^G(X)\simeq K^G(X)^\vee$,  (iv) $\pi$ surj.</p>
 <p>(iii) $K^G(Y\times X)\overset{\rho}{\to} \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y))$ surj.</p>
 <p>我们的前进路线是</p>
-<p>[(a)\implies (b)\implies (1)\implies (2)\implies (3)\implies (4)\implies (c)\implies (a),]</p>
-<p>[(a)\iff (d).]</p>
+<p>\[(a)\implies (b)\implies (1)\implies (2)\implies (3)\implies (4)\implies (c)\implies (a),\]</p>
+<p>\[(a)\iff (d).\]</p>
 <p>第一步 $(a)\implies (b)$ 是容易的: 取 $X=Y$ 即可.</p>
 <p>$(b)\implies (1)$: 记 $\Delta=\sum \delta_i\boxtimes \delta^i$, 一方面讲, $\Delta \ast  a=a,\forall a\in K^G(X\times Y),$ 另一方面讲, 通过 5.2.28 的证明, 有</p>
-<p>[(\delta_i\boxtimes \delta^i)<em>a=\delta_i\boxtimes (p_Y)_</em>(p_X^*\delta^i\otimes a).]</p>
+<p>\[(\delta_i\boxtimes \delta^i)<em>a=\delta_i\boxtimes (p_Y)_</em>(p_X^*\delta^i\otimes a).\]</p>
 <p>于是</p>
-<p>[a=\sum_i \delta_i\boxtimes (p_Y)_<em>(p_X^</em>\delta^i\otimes a)\in K^G(X)\otimes K^G(Y).]</p>
+<p>\[a=\sum_i \delta_i\boxtimes (p_Y)_<em>(p_X^</em>\delta^i\otimes a)\in K^G(X)\otimes K^G(Y).\]</p>
 <p>因此 $(1)(ii)$ 成立. 而, 取 $Y=pt$, 回忆 $\langle \mathcal{F},\mathcal{F}'\rangle=p_\ast (\mathcal{F}\otimes\mathcal{F}')$, 对 $a\in K^G(X)$, 有 $a=\sum \langle \delta^i,a\rangle \delta_i$. 于是, 对于 $f\in \operatorname{Hom}_{R(G)}(K^G(X),M)$,</p>
-<p>[f(a)=\sum \langle \delta^i,a\rangle f(\delta_i).]</p>
+<p>\[f(a)=\sum \langle \delta^i,a\rangle f(\delta_i).\]</p>
 <p>$(1)\implies (2): $ (ii)(iii) triv. 对于 (i), 我们需要说明 $\operatorname{Hom}_{R(G)}(K^G(X),\cdot)$ exact. 显然, 这个只需要 check right exact 的部分, 也就是说, $M\twoheadrightarrow N\implies \operatorname{Hom}_{R(G)}(K^G(X),M)\twoheadrightarrow \operatorname{Hom}_{R(G)}(K^G(X),N)$. 而熟知 $K^G(X)\otimes-$ 是 right exact 的. by (1) 和如下 comm. diag. 就做完了.</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwyLCJcXEhvbV97UihHKX0oS15HKFgpLE0pIl0sWzIsMiwiXFxIb21fe1IoRyl9KEteRyhYKSxOKSJdLFswLDAsIkteRyhYKVxcb3RpbWVzIE0iXSxbMiwwLCJLXkcoWClcXG90aW1lcyBOIl0sWzMsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMywiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzAsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XV0= -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwyLCJcXEhvbV97UihHKX0oS15HKFgpLE0pIl0sWzIsMiwiXFxIb21fe1IoRyl9KEteRyhYKSxOKSJdLFswLDAsIkteRyhYKVxcb3RpbWVzIE0iXSxbMiwwLCJLXkcoWClcXG90aW1lcyBOIl0sWzMsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzIsMywiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzAsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XV0=&embed" width="913" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>$(2)\implies (3):$ 那还说啥呢, 取 $Y=pt$ 就完了呗. 这个条件也太性情了.</p>
 <p>$(3)\implies (4):$ 考虑 $K^G(X)\to K^G(X)^\vee$ surj, 如果 $a\in \ker$, 那么 $\langle a,\delta^i \rangle=0$. 于是, $a=\sum \delta_i\langle \delta^i,a\rangle=0$. (iii) 只需注意 $K^G(Y)\otimes_{R(G)}K^G(X)\to \operatorname{Hom}_{R(G)}(K^G(X),K^G(Y))$ factor through $K^G(Y\times X)$ 即可.</p>
 <p>$(4)\implies (c):$ 首先我们有, $M$ proj. $\implies M^\vee$ proj. 且,</p>
-<p>[\operatorname{Hom}<em>{R(G)}(M^\vee,-)\simeq M\otimes</em>{R(G)}(-).]</p>
+<p>\[\operatorname{Hom}<em>{R(G)}(M^\vee,-)\simeq M\otimes</em>{R(G)}(-).\]</p>
 <p>于是, 有</p>
-<p>[\operatorname{Hom}<em>{R(G)}(K^G(X)^\vee,M)= K^G(X)\otimes</em>{R(G)}M.]</p>
+<p>\[\operatorname{Hom}<em>{R(G)}(K^G(X)^\vee,M)= K^G(X)\otimes</em>{R(G)}M.\]</p>
 <p>因此, 我们有</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWClcXG90aW1lcyBLXkcoWSkiXSxbMiwwLCJLXkcoWFxcdGltZXMgWSkiXSxbNCwwLCJcXG9wZXJhdG9ybmFtZXtIb219KEteRyhYKSxLXkcoWSkpIl0sWzQsMiwiS15HKFgpXFxvdGltZXMgS15HKFkpIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyXSxbMSwzLCJcXHJobyIsMl0sWzAsMSwiXFxwaSIsMl1d -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoWClcXG90aW1lcyBLXkcoWSkiXSxbMiwwLCJLXkcoWFxcdGltZXMgWSkiXSxbNCwwLCJcXG9wZXJhdG9ybmFtZXtIb219KEteRyhYKSxLXkcoWSkpIl0sWzQsMiwiS15HKFgpXFxvdGltZXMgS15HKFkpIl0sWzIsMywiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyXSxbMSwzLCJcXHJobyIsMl0sWzAsMSwiXFxwaSIsMl1d&embed" width="1200" height="432" style="border-radius: 8px; border: none;"></iframe>

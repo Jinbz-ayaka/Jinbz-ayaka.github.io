@@ -43,21 +43,21 @@
 <hr>
 <p>今天要找的东西是从 Stacks 上面抄过来的. 14.34 Standard Resolution.</p>
 <p>Start by $\mathcal{A},\mathcal{S}$ two categories with $V:\mathcal{A}\to\mathcal{S}$ and its left adjoint $U:\mathcal{S}\to \mathcal{A}$. Then we have two natural transformations</p>
-<p>[d:U\circ V\to \operatorname{id}<em>{\mathcal{A}}(\text{counit}), \eta:\operatorname{id}</em>{\mathcal{S}}\to V\circ U(\text{unit}).]</p>
+<p>\[d:U\circ V\to \operatorname{id}<em>{\mathcal{A}}(\text{counit}), \eta:\operatorname{id}</em>{\mathcal{S}}\to V\circ U(\text{unit}).\]</p>
 <p>我们要考虑 $\operatorname{Fun}(\mathcal{A},\mathcal{A})$ 这个 category. 考虑如下 setting of simplicial set:</p>
-<p>[X_n=(U\circ V)^{\circ(n+1)}=U\circ V\circ U\circ \cdots\circ U\circ V.]</p>
+<p>\[X_n=(U\circ V)^{\circ(n+1)}=U\circ V\circ U\circ \cdots\circ U\circ V.\]</p>
 <p>以及, set $X_{-1}=\operatorname{id}$. counit 结构便给出了 $X_\cdot$ 上的 simplicial 结构, by</p>
-<p>[d^n_j:X_n\to X_{n-1},s^n_j:X_n\to X_{n+1},]</p>
-<p>[d_j^n=1_{X_{j-1}}\star d\star 1_{X_{n-j-1}}, s^n_j=1_{X_{j-1}\circ U}\star \eta \star 1_{V\circ X_{n-j-1}}.]</p>
+<p>\[d^n_j:X_n\to X_{n-1},s^n_j:X_n\to X_{n+1},\]</p>
+<p>\[d_j^n=1_{X_{j-1}}\star d\star 1_{X_{n-j-1}}, s^n_j=1_{X_{j-1}\circ U}\star \eta \star 1_{V\circ X_{n-j-1}}.\]</p>
 <p>以及 set $\epsilon_0=d:X_0\to X_{-1}$.</p>
 <p>Lemma 34.2. 如上 $X=(X_n,d_j^n,s_{j}^n)$ 给出了 $\operatorname{Fun}(\mathcal{A},\mathcal{A})$ 上的 simplicial 结构, 而 $\epsilon_0$ 则给出了 $X\to X_{-1}$ 的 augmentation.</p>
 <p>Lemma 34.3 在如上 setting 下,</p>
-<p>[1_V\star \epsilon:V\circ X\to V, \epsilon\star 1_U:X\circ U\to U]</p>
+<p>\[1_V\star \epsilon:V\circ X\to V, \epsilon\star 1_U:X\circ U\to U\]</p>
 <p>are homotopy equivalences.</p>
 <p>现在, 考虑 $\mathcal{A}$ 为 $R-\operatorname{Mod}$ 或者 $A-\operatorname{Alg}$, 我们考虑其到 $\operatorname{Set}$ 上的自由-遗忘伴随, 我们得到的是, 对于 $R[M]$ $R$-spanned module</p>
-<p>[X(M)=\left(\cdots R[R[R[M]]]\overset{(3,2)}{\leftrightarrow}R[R[M]]\overset{(2,1)}{\leftrightarrow} R[M]\right)]</p>
+<p>\[X(M)=\left(\cdots R[R[R[M]]]\overset{(3,2)}{\leftrightarrow}R[R[M]]\overset{(2,1)}{\leftrightarrow} R[M]\right)\]</p>
 <p>augmentation towards $M$, and $A[E]$ the polynomial ring,</p>
-<p>[X(B)=\left(\cdots A[A[A[B]]]\overset{(3,2)}{\leftrightarrow}A[A[B]]\overset{(2,1)}{\leftrightarrow} A[B]\right)]</p>
+<p>\[X(B)=\left(\cdots A[A[A[B]]]\overset{(3,2)}{\leftrightarrow}A[A[B]]\overset{(2,1)}{\leftrightarrow} A[B]\right)\]</p>
 <p>augmentation towards $B$.</p>
 <p>于是, 如下diagram 是一个 homotopy equivalence:</p>
 <!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJBW0FbQVtBW0VdXV1dIl0sWzIsMCwiQVtBW0FbRV1dXSJdLFs0LDAsIkFbQVtFXV0iXSxbNCwyLCJBW0VdIl0sWzAsMiwiQVtFXSJdLFsyLDIsIkFbRV0iXSxbMSwwXSxbMiwxXSxbMiwzXSxbMSw1XSxbMCw0XSxbNSw0XSxbNSwzLCIiLDIseyJvZmZzZXQiOjJ9XSxbNSwzLCIiLDIseyJvZmZzZXQiOi0yfV0sWzMsNV0sWzQsNSwiIiwwLHsib2Zmc2V0IjoyfV0sWzQsNSwiIiwwLHsib2Zmc2V0IjotMn1dLFs1LDQsIiIsMCx7Im9mZnNldCI6LTR9XSxbNSw0LCIiLDAseyJvZmZzZXQiOjR9XSxbMSwwLCIiLDIseyJvZmZzZXQiOi00fV0sWzEsMCwiIiwyLHsib2Zmc2V0Ijo0fV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMn1dLFswLDEsIiIsMix7Im9mZnNldCI6Mn1dLFsxLDIsIiIsMix7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDIseyJvZmZzZXQiOjJ9XV0= -->

@@ -50,30 +50,30 @@
 <p>此外, 在 8.3-8.7, 我们得到的东西是非常 general 的, 而在 8.2, 8.8, 我们要利用一些特别的 affine Hecke 的性质.</p>
 <p>Recall $Z(\mathbb{H})=R(G)[q,q^{-1}]=R(G\times \mathbb{C}^\ast )$. 我们可以把他看做 class functions</p>
 <p>现在, 我们考虑 $Z(\mathbb{H})\to \mathbb{C}$, 他可以写作 $z\mapsto z(a)$, with $a=(s,t)\in G\times \mathbb{C}^\ast $. 于是我们可以 view $\mathbb{C}_a$ as $Z(\mathbb{H})$-mod. by</p>
-<p>[(z,x)\mapsto z(a)\cdot x.]</p>
+<p>\[(z,x)\mapsto z(a)\cdot x.\]</p>
 <p>现在, 考虑 tensor prod, $\mathbb{H}_a:=\mathbb{C}_a\otimes_{Z(\mathbb{H})}\mathbb{H}$ 为 Hecke algebra specialized at $a$. 根据简单的刻画我们可以得到 $\mathbb{H}_a\simeq \mathbb{H}_{\mathbb{C}}/(\ker Z(\mathbb{H}_\mathbb{C})\to \mathbb{C})$. 特别地, $\mathbb{H}_a$ 拥有 natural $\mathbb{C}$-alg. structure. 有一个简单的性质是, $\mathbb{H}$-mod 是 simple 的 iff 其对应的 $\mathbb{C}\otimes_{\mathbb{Z}}\mathbb{H}$-mod. 是 simple 的. 于是, 我们得到</p>
 <p>Cor 8.1.2. $Z(\mathbb{H})$ acts by scalar multiplication on any simple $\mathbb{H}$-module.</p>
 <p>于是</p>
 <p>Cor 8.1.4. $\mathbb{H}$ 在 simple $\mathbb{H}$-mod. $M$ 上的作用, 总 factors through 一个 $\mathbb{H}_a$.</p>
-<p>根据 6.2.9, 我们有 $\mathbb{H}_a$ 拥有 complex dimension ((# W)^2), 于是有限维. 于是 $\mathbb{H}_a$ 的 simple mod 都是有限维的. 现在, 我们 claim $\mathbb{H}$ 拥有纯粹的 geometric interpertation.</p>
+<p>根据 6.2.9, 我们有 $\mathbb{H}_a$ 拥有 complex dimension \((# W)^2\), 于是有限维. 于是 $\mathbb{H}_a$ 的 simple mod 都是有限维的. 现在, 我们 claim $\mathbb{H}$ 拥有纯粹的 geometric interpertation.</p>
 <p>view $\tilde{\mathcal{N}},\mathcal{N},Z$ as $G\times \mathbb{C}^\ast $ with $\mathbb{C}^\ast $ acts by dilation. 对 $a=(s,t)$, 定义 $\tilde{\mathcal{N}}^a,\mathcal{N}^a,Z^a$ corresponding $a$-fixed pts. 由于 $Z^a=\tilde{\mathcal{N}}^a\times_{\mathcal{N}^a}\tilde{\mathcal{N}}^a$, 有 $Z^a\circ Z^a=Z^a$. 现在, 我们可以考虑 BM homology</p>
 <p>Prop 8.1.5. 对于 $a=(s,t)\in G\times \mathbb{C}^\ast $ s.s. element, 有 natural alg. isom.</p>
-<p>[\mathbb{H}<em>a\simeq H</em>*(Z^a,\mathbb{C}^a).]</p>
+<p>\[\mathbb{H}<em>a\simeq H</em>*(Z^a,\mathbb{C}^a).\]</p>
 <p>这是因为根据我们前面的那一套东西, 有</p>
-<p>[\begin{align*}
+<p>\[\begin{align*}
 \mathbb{C}<em>a\otimes</em>{Z(\mathbb{H})}\mathbb{H}&amp;\overset{7.2.5}{\simeq}\mathbb{C}<em>a\otimes</em>{R(G\times\mathbb{C}^<em>)}K^{G\times \mathbb{C}^</em>}(Z)\
 &amp;\overset{6.2(6)}{\simeq}\mathbb{C}<em>a\otimes</em>{R(\mathcal{A})}K^{\mathcal{A}}(Z)\
 &amp;\overset{r_a, \sim}{\to} \mathbb{C}<em>a\otimes K^{\mathcal{A}}(Z^{\mathcal{A}})\
 &amp;\overset{ev, \sim}{\to} K</em>\mathbb{C}(Z^{\mathcal{A}})\
 &amp;\overset{RR, \sim}{\to} H_<em>(Z^{\mathcal{A}},\mathbb{C})=H_</em>(Z^a,\mathbb{C}).
-\end{align*}]</p>
+\end{align*}\]</p>
 <p>对于 $a=(s,t)$, $x\in \mathcal{N}^a$, 我们考虑 $\mathcal{B}_x^s$ 为 Borels simultaneously fixed by $s$ and $x$.</p>
 <p>Remark 8.1.7. $\mathcal{B}_x^s$ is non-empty.</p>
 <p>这是因为 $s$ 和 $\exp(z\cdot s)$ 生成一个 solvable subgp. 而其包含于某个 Borel 里.</p>
 <p>于是, 根据 3.5.2, 3.5.3. 的证明, 我们得到</p>
 <p>Lemma 8.1.8. $H_\cdot(Z^a)$-action commutes with the $C(s,x)$-action on $H_\cdot(\mathcal{B}_x^s)$. 此外, 对于 $x_1,x_2$ 属于相同的 $G(s)$-conjugacy class in $\mathcal{N}_a$, $H_\cdot(\mathcal{B}_{x_1}^s)$ 与 $H_\cdot(\mathcal{B}_{x_2}^s)$ 为 isomorphic $H_\cdot(Z^a)$-mods.</p>
 <p>现在, 考虑 $C(s,x)^\wedge$ set of isom. classes of simple $C(s,x)$-mod. 对于 $\chi\in C(s,x)^\wedge$ 我们定义</p>
-<p>[K_{a,x,\chi}=\operatorname{Hom}<em>{C(s,x)}(\chi,H</em>\cdot(\mathcal{B}_x^s)).]</p>
+<p>\[K_{a,x,\chi}=\operatorname{Hom}<em>{C(s,x)}(\chi,H</em>\cdot(\mathcal{B}_x^s)).\]</p>
 <p>为一个 standard $H_\cdot(Z^a)$-mod.</p>
 <p>注意 $H(Z^a)$ 拥有 vanished odd homology. 于是 $H^{ev}(\mathcal{B}_x^s)$, $H^{odd}(\mathcal{B}_x^s)$ 为两个不同的 submods. 因此 $\operatorname{Hom}_{C(s,x)}(\chi,H^{-})$ 为两个不同的 submod. 此外, 有一个 known fact 是 $\mathcal{B}_x,\mathcal{B}_x^s$ odd part vanishes. 因此, odd homology part of std. mod. vanishes.</p>
 <p>接下来我们要引入另一个鬼畜的东西: co-standard modules. 这个明天再搞吧.</p>

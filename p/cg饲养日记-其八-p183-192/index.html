@@ -48,7 +48,7 @@
 <p>Prop 3.7.6: Any nilp. orbit $\mathbb{O}\subset\mathfrak{g}^\ast$ is a $\mathbb{C}^\ast$-stable subvar.</p>
 <p>Furthermore it is a symplectic cone-var. w.r.t. the canonical symplectic structure on a coadjoint orbit and the vector field $\xi=Eu$.</p>
 <p>由于 $diag(t,t^{-1})$ 在 $e$ 上的作用是 $t^2e$, 我们给出 $\mathbb{O}\subset\mathfrak{g}^\ast$ $\mathbb{C}^\ast$-stable. 我们有, $\lambda\in \mathbb{O}$ 处的 symplectic 2-form is given by $w_{\lambda}(ad_x\lambda,ad_y\lambda)=\lambda([x,y])$. 而, 乘以 $c\in\mathbb{C}^\ast$ 保持 $\mathbb{O}$ 不变, 记这个映射诱导的切空间上映射为 $c_\ast$, 不难验证</p>
-<p>[w_{c\lambda}(c_\ast ad_x\lambda,c_\ast ad_y\lambda)=cw_{\lambda}(ad_x\lambda,ad_y\lambda).]</p>
+<p>\[w_{c\lambda}(c_\ast ad_x\lambda,c_\ast ad_y\lambda)=cw_{\lambda}(ad_x\lambda,ad_y\lambda).\]</p>
 <p>对 $c=1$ 求导, 我们得到 $L_{Eu}w=w$, 即证.</p>
 <p>后面那些关于 highest weight (也许, 他有些地方用的是 lowest weight, 他诗人握持) 的论断同样可以跳过.</p>
 <p>Thm 3.7.13: Let $e_i$ set of root vectors that corres. to simple roots, then $x=\sum e_i$ is regular.</p>
@@ -59,7 +59,7 @@
 <p>这 transverse 大概就是, $\ker f\oplus \operatorname{im} e=\mathfrak{g}$. 而后面那个?</p>
 <p>在 $e+\mathfrak{s}$ 上定义 $\mathbb{C}^\ast$ 作用: $(t,e+s)\mapsto e+t^2(\operatorname{Ad}\gamma(t^{-1})s)$.</p>
 <p>不难验证这确实是一个 $\mathbb{C}^\ast$ 作用. 而, 由于 $\mathfrak{s}$ 上的元素在这个作用下都拥有 strictly positive integer, 有</p>
-<p>[\lim_{t\to 0}e+t^2(\operatorname{Ad}\gamma(t^{-1})s)=e.]</p>
+<p>\[\lim_{t\to 0}e+t^2(\operatorname{Ad}\gamma(t^{-1})s)=e.\]</p>
 <p>但, $\mathbb{O}$ 在如上定义的作用下 stable. 因此, 若 $\mathbb{O}\cap (e+\mathfrak{s})\backslash{e}$ 非空, 他在 $e$ 附近任意去心邻域内也应当非空. 但这就和 $\mathfrak{s}$ 与 $\mathbb{O}$ transverse 矛盾. 有点意思.</p>
 <hr>
 <p>这松岛辉空打的跟一投注一样, 张本美和也有福了[捂脸]</p>
@@ -72,7 +72,7 @@
 <p>在 $\tilde{S}$ 上定义vector field $v$ given by 这个 $\mathbb{C}^\ast$-action, 然后考虑 $r$ 是 $e+\mathfrak{s}$ 上的一个Euclidiean distance (其实, 为了是 $C^\infty$, 这里应该选取其平方). 然后, 把他 lift 到 $\tilde{S}$. 现在, 考虑 $-v\cdot \tilde{r}$, 其上的 flow 就给出了一个到 $\mu^{-1}(e)$ 的 retract.</p>
 <p><img src="cg8.jpg" alt=""></p>
 <p>现在要研究 $Z_G(e)$, 有 $\operatorname{Lie}Z_G(e)=Z_\mathfrak{g}(e)$. by $(e,f,h)$ 的 setting 我们可以给出 $\mathfrak{g}$ 的 grading. 有 $\mathfrak{g}=\oplus \mathfrak{g}_i$, 取 $Z_i=\mathfrak{g}_i\cap Z_\mathfrak{g}(e)$, 那么有</p>
-<p>[Z_\mathfrak{g}(e)=\oplus_{i\geq 0} Z_i, [Z_i,Z_{j}]=Z_{i+j}.]</p>
+<p>\[Z_\mathfrak{g}(e)=\oplus_{i\geq 0} Z_i, [Z_i,Z_{j}]=Z_{i+j}.\]</p>
 <p>考虑 $u=\oplus_{i&gt;0}Z_i$, $U\subset Z_G(e)$ corre. unipotent normal subgp, 有</p>
 <p>Lemma 3.7.21: (i) $\mathfrak{u}=\ker(e)\cap \operatorname{im} (e)$.</p>
 <p>(ii) $h+\mathfrak{u}$ is stable under the adjoint $U$-action. Moreover, $h+\mathfrak{u}=U\cdot h$ is a single orbit.</p>
@@ -100,7 +100,7 @@
 <p>Step 1: 对 $\dim \mathfrak{g}$ 归纳, reduce 到 $\mathfrak{g}^e$ 只包含 nilp element 的情况. 取 $x=s+n\in \mathfrak{g}^e$ abstract Jordan decopm. $s\neq 0$ s.s. 于是, $[s,e]=0$. $\tau=Z_\mathfrak{g}(s)$ proper reductive 且 $\dim \tau&lt;\dim \mathfrak{g}$, 完成 reduction.</p>
 <p>Step 2: 说明存在 $h$, $[h,e]=2e$. 实际上, 3.2.16 implies 了这个. 我们有 $(e,\mathfrak{g}^e)=0$, 有, $e\in \operatorname{im}(\operatorname{ad}e)=\ker(\operatorname{ad}e)$. 于是存在 $h$, $[2h,e]=2e$.</p>
 <p>Step 3: 说明存在 $f$. 这实际上就是说 $h\in \operatorname{im}(\operatorname{ad}e)$, 也就是说 $(h,\mathfrak{g}^e)=0$. 也就是说</p>
-<p>[\operatorname{Tr}(\operatorname{ad}_h\circ \operatorname{ad}_x)=0,\forall x\in\mathfrak{g}^e. ]</p>
+<p>\[\operatorname{Tr}(\operatorname{ad}_h\circ \operatorname{ad}_x)=0,\forall x\in\mathfrak{g}^e. \]</p>
 <p>根据 Jacobi identity, 不难说明 $[h,\mathfrak{g}^e]\subset \mathfrak{g}^e$. 于是 $\mathbb{C}\cdot h+\mathfrak{g}^e$ 是一个 Lie subalg. 根据 Step 1, 不妨设 $\mathfrak{g}^e$ nilp. $\mathbb{C}\cdot h+\mathfrak{g}^e$ solvable. 于是 by Lie's Thm, 我们可以将 $\mathfrak{g}$ 中元素同时上三角化 w.r.t. $\mathbb{C}\cdot h+\mathfrak{g}^e$. 而 $\mathfrak{g}^e$ 中元素 nilp. 主对角线元素自然全为 $0$, 得证.</p>
 <hr>
 <p>下班!</p>

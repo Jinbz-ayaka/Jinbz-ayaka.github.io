@@ -75,7 +75,7 @@
 <h3>什么是单纯集(Simplicial Set)</h3>
 <p>故事的开始我们考虑 $PoSet$ category of partial order sets. 他们之间的 morphisms 由集合之间 (不必严格的) 保序映射给出.</p>
 <h4>$\Delta$ category</h4>
-<p>现在, 我们 fix 一个贯穿始终的 category: $\Delta$, 他是全体 (\left{0,\cdots,n\right},n\geq 0) 给出的 full subcategory.</p>
+<p>现在, 我们 fix 一个贯穿始终的 category: $\Delta$, 他是全体 \(\left{0,\cdots,n\right},n\geq 0\) 给出的 full subcategory.</p>
 <p>如果仔细考虑其中结构的话, 你就会考虑出来一堆 $s_i,d_i$. 也就是说, 你会自然地有这样的东西:</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJbMF0iXSxbMSwwLCJbMV0iXSxbMiwwLCJbMl0iXSxbMywwLCJcXGNkb3RzIl0sWzAsMSwiIiwwLHsib2Zmc2V0IjoxfV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMX1dLFsxLDBdLFsxLDJdLFsxLDIsIiIsMSx7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDEseyJvZmZzZXQiOjJ9XSxbMiwxLCIiLDEseyJvZmZzZXQiOi0xfV0sWzIsMSwiIiwxLHsib2Zmc2V0IjoxfV1d -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJbMF0iXSxbMSwwLCJbMV0iXSxbMiwwLCJbMl0iXSxbMywwLCJcXGNkb3RzIl0sWzAsMSwiIiwwLHsib2Zmc2V0IjoxfV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMX1dLFsxLDBdLFsxLDJdLFsxLDIsIiIsMSx7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDEseyJvZmZzZXQiOjJ9XSxbMiwxLCIiLDEseyJvZmZzZXQiOi0xfV0sWzIsMSwiIiwxLHsib2Zmc2V0IjoxfV1d&embed" width="560" height="176" style="border-radius: 8px; border: none;"></iframe>
@@ -85,37 +85,37 @@
 <p>在这种 setting (model) 下, 你总是可以问: $X_n:=X([n])$ 作为一个 set, 到底是什么. 在这里, $\alpha:[n]\to[m],n\geq m$ 的情况就可以给出 $\alpha^\ast :X_m\to X_n$. 我们称这样的东西给出的像集是 degenerate 的.</p>
 <p>你可以很快地给出一个例子: 对于某个空间, 其单纯形构成的集合确实是一个单依纯集. 但实际上, 这个给出的单纯集性质几乎好得不能再好了. 我们会在后面看出这一点.</p>
 <p>[Prop] 现在, 我们定义单纯集 $\Delta^n$ by $(\Delta^n)_m=\operatorname{Hom}_{\Delta}([m],[n])$. 于是, 根据一般范畴上的 Yoneda,</p>
-<p>[\operatorname{Hom}_{sSet}(\Delta^n,X)\simeq X_n.]</p>
+<p>\[\operatorname{Hom}_{sSet}(\Delta^n,X)\simeq X_n.\]</p>
 <p>以及, Yoneda 提到了, 考虑所有到 cocomplete cat. 的 presheaf 全体, Yoneda embedding 的像在 colim 下稠密. (Ref:前传-米田嵌入 (Yoneda embedding) 与可表预层 (representable presheaf)). 于是, 实际上</p>
-<p>[X\simeq \operatorname{colim}<em>{[n]\in \Delta</em>{/X}}\Delta^n.]</p>
+<p>\[X\simeq \operatorname{colim}<em>{[n]\in \Delta</em>{/X}}\Delta^n.\]</p>
 <h4>乘积和形式 Hom (这俩名字是我自己取的, 好的)</h4>
 <p>对于 $X$ sSet, 我们可以诱导函子 $X\times:\text{sSet}\to\text{sSet}$. 我们有如下结论:</p>
 <p>[Prop] $X\times$ admits right adjoint $\underline{\operatorname{Hom}}(X,-)$, determined by</p>
-<p>[\operatorname{Hom}<em>{sSet}(\Delta^n,\underline{\operatorname{Hom}}(X,Z))=\operatorname{Hom}</em>{sSet}(\Delta^n\times X,Z).]</p>
+<p>\[\operatorname{Hom}<em>{sSet}(\Delta^n,\underline{\operatorname{Hom}}(X,Z))=\operatorname{Hom}</em>{sSet}(\Delta^n\times X,Z).\]</p>
 <p>我们会记 $\underline{\operatorname{Hom}}(X,Z)$ 为 $Z^X$. 这个引理是比较显然的, 我们在上面进行了直接构造. 以及, $X\times$ 保 colim 和 sSet 都是 colim of 可构造.</p>
 <h3>几何侧</h3>
 <p>好的, 现在引进熟人 $Top$ 范畴, 他的 morph. 是 continuous map. 在这里, 我们暂时使用记号 $\Delta^n_{top}$ 来表示拓扑上的 $n$-单形.</p>
 <h4>奇异单纯形 (Singular simplicial set) 与几何实现 (geometry realization)</h4>
 <p>上面我们提到了 sSet $S(X):=([n]\mapsto \operatorname{Hom}_{Top}(\Delta_{top}^n,X))$. 我们有如下引理:</p>
 <p>[Lemma] $S$ admit a right-adjoint: geometric realization</p>
-<p>[|-|:\text{sSet}\to\text{Top},]</p>
-<p>[|X|=\operatorname{colim}<em>{\Delta^n\in \Delta</em>{/X}}\Delta_{top}^n.]</p>
+<p>\[|-|:\text{sSet}\to\text{Top},\]</p>
+<p>\[|X|=\operatorname{colim}<em>{\Delta^n\in \Delta</em>{/X}}\Delta_{top}^n.\]</p>
 <h4>边界 (Boundary), 角 (Horn), 脊柱 (Spine): 空间嵌入</h4>
 <p>从几何上, 我们会引入 $\Delta^n$ 的一些 sub. 也就是一些 sSet $X\hookrightarrow \Delta^n$. 严格地说, 就是一些 $Y:\Delta\to Set$, $Y([m])\subset\Delta^n([m])=\operatorname{Hom}([m],[n])$.</p>
-<p>(1) Boundaries: $\partial\Delta^n$, (\partial\Delta^n([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f\text{ not surj.}\right}).</p>
-<p>(2) Horns: $\Lambda^n_i$, $0\leq i\leq n$, (\Lambda^n_i([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f\not\supset [n]\backslash i\right}). (这之中 $i=0$ 的 case 称为 left horn, $i=n$ 的 case 称为 right horn, 其他 case 称为 inner horn).</p>
-<p>(3) Spines: $I^n$, (I^n([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f=\left{j,j+1\right}\text{ or }\left{j\right}\right}).</p>
+<p>(1) Boundaries: $\partial\Delta^n$, \(\partial\Delta^n([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f\text{ not surj.}\right}\).</p>
+<p>(2) Horns: $\Lambda^n_i$, $0\leq i\leq n$, \(\Lambda^n_i([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f\not\supset [n]\backslash i\right}\). (这之中 $i=0$ 的 case 称为 left horn, $i=n$ 的 case 称为 right horn, 其他 case 称为 inner horn).</p>
+<p>(3) Spines: $I^n$, \(I^n([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f=\left{j,j+1\right}\text{ or }\left{j\right}\right}\).</p>
 <p>解剖学来了() 从几何的角度来说, 这几个哥们的集合实现恰好就是 bdry, horn 和 spine.</p>
 <h4>骨骼 (skeleton), 上骨骼 (coskeleton): CW-滤过</h4>
 <p>以及, skeleton 和 coskeleton, 考虑 $i:\Delta_{\leq n}\to \Delta$, 定义 skeleton $\operatorname{sk}_n(X)=i_!i^\ast (X)$, coskeleton $\operatorname{cosk}_n(X)=i_\ast i^\ast (X)$.</p>
 <p>一个简单的刻画就是,</p>
-<p>[\operatorname{sk}_n(X)\subset X\subset\operatorname{cosk}_n(X),]</p>
+<p>\[\operatorname{sk}_n(X)\subset X\subset\operatorname{cosk}_n(X),\]</p>
 <p>sk. 与 cosk. 对应所有与 $X_{\leq n}$ coincide 的极小与极大的 sSet.</p>
 <p>他们之间的关系是, $(\operatorname{sk}_n,\operatorname{cosk}_n)$ 为adjoint pair.</p>
 <p>这个实际上给出来了 sSet 集合实现上的 CW-complex 结构. 其中 degree $\leq n$ 的部分就对应到 $\operatorname{sk}_n$ 的 geom. real.</p>
 <h4>神经 (nerve): 范畴到单纯集</h4>
 <p>然后是第三个构造: 神经 (nerve). 对于一个一般 category $\mathscr{C}$, 我们定义其 nerve $N\mathscr{C}$ 是 sSet given by</p>
-<p>[[n]\mapsto \operatorname{Fun}([n],\mathscr{C}).]</p>
+<p>\[[n]\mapsto \operatorname{Fun}([n],\mathscr{C}).\]</p>
 <p>你可以直接看出, $\Delta^n=N([n])$.</p>
 <p>在这里, 我们借助上述语言给出第一个几何``玩意'':</p>
 <p>对于 $G$ group, 把他视为 groupoid, 则 classifying space $BG:=|NG|$.</p>
@@ -184,25 +184,25 @@
 <p>对于 $V$ monoidal category, 我们定义 $V$-充实范畴 $\mathscr{C}$ 为如下信息:</p>
 <ol>
 <li>
-<p>对象类 (\operatorname{Ob}(\mathcal{C}))（由于格罗滕迪克宇宙的缘故, 我们始终相信 Object 是一个集合）.</p>
+<p>对象类 \(\operatorname{Ob}(\mathcal{C})\)（由于格罗滕迪克宇宙的缘故, 我们始终相信 Object 是一个集合）.</p>
 </li>
 <li>
-<p>对任意两个对象 (x, y \in \operatorname{Ob}(\mathcal{C})), 他们之间的 morph. 落在 $V$ 中:</p>
-<p>[
+<p>对任意两个对象 \(x, y \in \operatorname{Ob}(\mathcal{C})\), 他们之间的 morph. 落在 $V$ 中:</p>
+<p>\[
 \operatorname{Hom}_{\mathcal{C}}(x, y) \in \mathcal{V}.
-]</p>
+\]</p>
 </li>
 <li>
-<p>对任意三个对象 (x, y, z \in \operatorname{Ob}(\mathcal{C})), 复合态射由 $\otimes$ 给出:</p>
-<p>[
+<p>对任意三个对象 \(x, y, z \in \operatorname{Ob}(\mathcal{C})\), 复合态射由 $\otimes$ 给出:</p>
+<p>\[
 \circ_{x,y,z} : \operatorname{Hom}<em>{\mathcal{C}}(y, z) \otimes \operatorname{Hom}</em>{\mathcal{C}}(x, y) \longrightarrow \operatorname{Hom}_{\mathcal{C}}(x, z).
-]</p>
+\]</p>
 </li>
 <li>
-<p>对任意对象 (x \in \operatorname{Ob}(\mathcal{C})), 有一个 恒等态射（在 (\mathcal{V}) 中）</p>
-<p>[
+<p>对任意对象 \(x \in \operatorname{Ob}(\mathcal{C})\), 有一个 恒等态射（在 \(\mathcal{V}\) 中）</p>
+<p>\[
 \operatorname{id}<em>x : I \longrightarrow \operatorname{Hom}</em>{\mathcal{C}}(x, x).
-]</p>
+\]</p>
 </li>
 </ol>
 <p>并满足适当地相容性. 同样地, 我们可以自然地定义 $V$-enriched functor between $V$-enriched cat.</p>
@@ -213,7 +213,7 @@
 <p>[Prop] $\operatorname{Cat}$ bicomplete.</p>
 <p>[Cor] $\operatorname{Cat}_\Delta$ bicomplete.</p>
 <p>现在, 对于 $\phi:V\to V'$ lax monoidal functor between monoidal cat. 我们对每个 hom-obj. 运用 $\phi$ 得到一个自然的 functor</p>
-<p>[\phi_*:\operatorname{Cat}<em>V\to\operatorname{Cat}</em>{V'}.]</p>
+<p>\[\phi_*:\operatorname{Cat}<em>V\to\operatorname{Cat}</em>{V'}.\]</p>
 <p>这里的几个例子就是,</p>
 <p>$c':Set\to sSet$, $X\mapsto ([n]\mapsto X)$.</p>
 <p>$h: sSet\to Set$, homotopy cat.</p>
@@ -222,69 +222,69 @@
 <p>[Lemma] $(\pi,c)$, $(c,ev_0)$ monoidal adjunction.</p>
 <h4>大黑箱 (BigBlackBox)</h4>
 <p>或者, 这部分内容也是一层一层往上盖的, 黑箱结束的部分会建立在这些东西之上, 就像塔状结构一样. 因此, 你也可以称这部分为大黑塔 (The Herta).</p>
-<p>设 ( J ) 是一个有限非空全序集, ( i, j ) 是其中的两个元素. 定义 ( P_{i,j} ) 为 ( J ) 的满足以下条件的子集构成的集合:</p>
-<p>[
+<p>设 \( J \) 是一个有限非空全序集, \( i, j \) 是其中的两个元素. 定义 \( P_{i,j} \) 为 \( J \) 的满足以下条件的子集构成的集合:</p>
+<p>\[
 P_{i,j} = \bigl{ I \subseteq J : i, j \in I \text{ and } k \in I \Rightarrow i \le k \le j \bigr}.
-]
-换言之, ( P_{i,j} ) 由区间 ( [i, j] \subseteq J ) 中所有同时包含 ( i ) 和 ( j ) 的子集组成.</p>
-<p>集合 ( P_{i,j} ) 通过包含关系构成偏序集: ( I \le I' \Leftrightarrow I \subseteq I' ). 注意仅当 ( i \le j ) 时 ( P_{i,j} ) 才非空.</p>
-<p>设 ( J ) 是一个非空全序集. 以下给出一个单纯充实范畴 ( \mathfrak{C}[\Delta^{J}] \in \operatorname{Cat}_{\Delta} ) 的定义.</p>
+\]
+换言之, \( P_{i,j} \) 由区间 \( [i, j] \subseteq J \) 中所有同时包含 \( i \) 和 \( j \) 的子集组成.</p>
+<p>集合 \( P_{i,j} \) 通过包含关系构成偏序集: \( I \le I' \Leftrightarrow I \subseteq I' \). 注意仅当 \( i \le j \) 时 \( P_{i,j} \) 才非空.</p>
+<p>设 \( J \) 是一个非空全序集. 以下给出一个单纯充实范畴 \( \mathfrak{C}[\Delta^{J}] \in \operatorname{Cat}_{\Delta} \) 的定义.</p>
 <ul>
 <li>
-<p>对象: ( \mathfrak{C}[\Delta^{J}] ) 的对象是 ( J ) 的元素.</p>
+<p>对象: \( \mathfrak{C}[\Delta^{J}] \) 的对象是 \( J \) 的元素.</p>
 </li>
 <li>
 <p>态射单纯集:</p>
 </li>
 </ul>
-<p>[
+<p>\[
 \operatorname{Hom}<em>{\mathfrak{C}[\Delta^{J}]}(i,j) =
 \begin{cases}
-\varnothing &amp; \text{if } j &lt; i, \[4pt]
+\varnothing &amp; \text{if } j &lt; i, \\[4pt]
 \operatorname{N}(P</em>{i,j}) &amp; \text{if } i \le j,
 \end{cases}
-]
-其中 ( \operatorname{N}(P_{i,j}) ) 表示偏序集 ( P_{i,j} ) 的神经.</p>
-<p>复合运算由观察 1.2.55 中描述的映射诱导: 对任意满足 ( i \le j \le k ) 的三元组, 存在典范的偏序集映射</p>
-<p>[
+\]
+其中 \( \operatorname{N}(P_{i,j}) \) 表示偏序集 \( P_{i,j} \) 的神经.</p>
+<p>复合运算由观察 1.2.55 中描述的映射诱导: 对任意满足 \( i \le j \le k \) 的三元组, 存在典范的偏序集映射</p>
+<p>\[
 P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
-]
+\]
 取神经后即给出复合映射</p>
-<p>[
+<p>\[
 \operatorname{Hom}<em>{\mathfrak{C}[\Delta^{J}]}(j,k) \times \operatorname{Hom}</em>{\mathfrak{C}[\Delta^{J}]}(i,j) \longrightarrow \operatorname{Hom}_{\mathfrak{C}[\Delta^{J}]}(i,k).
-]</p>
+\]</p>
 <p>[Lemma] 1.2.67</p>
-<p>单纯充实范畴的范畴 (\operatorname{Cat}_{\Delta}) 允许所有小余极限. 因此, 上述构造扩充为保余极限函子</p>
-<p>[
+<p>单纯充实范畴的范畴 \(\operatorname{Cat}_{\Delta}\) 允许所有小余极限. 因此, 上述构造扩充为保余极限函子</p>
+<p>\[
 \mathfrak{C}[-] \colon \operatorname{sSet} \longrightarrow \operatorname{Cat}_{\Delta}
-]
-它将 (\Delta^n) 送到 (\mathfrak{C}[\Delta^n]). 这个函子自动成为单纯神经函子的左伴随.</p>
+\]
+它将 \(\Delta^n\) 送到 \(\mathfrak{C}[\Delta^n]\). 这个函子自动成为单纯神经函子的左伴随.</p>
 <p>[Lemma] 1.2.69</p>
-<p>设 (0 &lt; j &lt; n) 并考虑角 (\Lambda_j^n). 我们有 (\mathfrak{C}[\Lambda_j^n]) 是 (\mathfrak{C}[\Delta^n]) 的子单纯充实范畴, 具有以下性质:</p>
+<p>设 \(0 &lt; j &lt; n\) 并考虑角 \(\Lambda_j^n\). 我们有 \(\mathfrak{C}[\Lambda_j^n]\) 是 \(\mathfrak{C}[\Delta^n]\) 的子单纯充实范畴, 具有以下性质:</p>
 <ol>
 <li>
-<p>(\mathfrak{C}[\Lambda_j^n]) 的对象由 (\Lambda_j^n) 的顶点给出, 因此与 (\mathfrak{C}[\Delta^n]) 的所有对象相同.</p>
+<p>\(\mathfrak{C}[\Lambda_j^n]\) 的对象由 \(\Lambda_j^n\) 的顶点给出, 因此与 \(\mathfrak{C}[\Delta^n]\) 的所有对象相同.</p>
 </li>
 <li>
 <p>态射单纯集如下给出:</p>
-<p>[
+<p>\[
 \operatorname{Hom}<em>{\mathfrak{C}[\Lambda_j^n]}(i,k) = \operatorname{Hom}</em>{\mathfrak{C}[\Delta^n]}(i,k)
-]
-除非 ((i,k) = (0,n)), 而当 ((i,k) = (0,n)) 时,
-[
+\]
+除非 \((i,k) = (0,n)\), 而当 \((i,k) = (0,n)\) 时,
+\[
 \operatorname{Hom}<em>{\mathfrak{C}[\Lambda_j^n]}(0,n) \subseteq \operatorname{Hom}</em>{\mathfrak{C}[\Delta^n]}(0,n) = \operatorname{N}(P_{0,n})
-]
-是由从 ((\Delta^1)^{n-1}) 中删除其内部以及第 (j) 个底面所得到的子单纯集.</p>
+\]
+是由从 \((\Delta^1)^{n-1}\) 中删除其内部以及第 \(j\) 个底面所得到的子单纯集.</p>
 </li>
 </ol>
 <h4>相干神经 (coherent nerve)</h4>
 <p>对于 $\mathscr{C}$ simplically enriched cat. 定义其 coherent nerve 为</p>
-<p>[N(\mathscr{C})<em>n=\operatorname{Hom}</em>{Cat_\Delta}(\mathfrak{C}[\Delta^{n}],\mathscr{C}).]</p>
+<p>\[N(\mathscr{C})<em>n=\operatorname{Hom}</em>{Cat_\Delta}(\mathfrak{C}[\Delta^{n}],\mathscr{C}).\]</p>
 <p>[Lemma] $\mathscr{C}$ 的 coherent nerve 自动是一个 composer. Furthermore, 其是一个 $\infty$-cat. iff 所有的 hom-simplicial sets 都是 Kan cpx.</p>
 <p>我们来捋一下关系:</p>
 <p>$1\text{-Cat}$: Set enriched cat, $2\text{-Cat}$: Cat enriched cat.</p>
-<p>[2\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with sSet)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \text{composer}.]</p>
-<p>[(2,1)\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with Kan.)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \infty\text{-Cat}.]</p>
+<p>\[2\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with sSet)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \text{composer}.\]</p>
+<p>\[(2,1)\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with Kan.)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \infty\text{-Cat}.\]</p>
 <h4>无穷范畴 $\operatorname{Spc}$</h4>
 <p>现在, 考虑如下 sCat:</p>
 <p>Obj: CW-cpxs,</p>
@@ -320,7 +320,7 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
 <p>我们有如下定理:</p>
 <p>[Prop] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限 nondeg. simplices. 于是任意 $f$, $f$ 可以被分解为 $g\circ h$ s.t. $h\in \bar{S},g\in \chi_R(S)$.</p>
 <p>当然不理解这个也无所谓, 这个主要是用来给出如下结论</p>
-<p>[\overline{\text{Spine inclusions}}\neq \text{Inner-anodynes}.(\ast)]</p>
+<p>\[\overline{\text{Spine inclusions}}\neq \text{Inner-anodynes}.(\ast)\]</p>
 <p>于是, 存在 composer which is not an $\infty$-cat.</p>
 <h4>$\infty$-cat. 总是 composer</h4>
 <p>[Lemma] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限石块. 于是 $\bar{S}=\chi(S)$.</p>
@@ -341,12 +341,12 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0= -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0=&embed" width="432" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>于是 induces 了</p>
-<p>[\langle f,i\rangle: X^B\to X^A\times_{Y^A}Y^B]</p>
+<p>\[\langle f,i\rangle: X^B\to X^A\times_{Y^A}Y^B\]</p>
 <p>Dually, 对于 $i:A\to B$, $g:S\to T$, 我们有</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d&embed" width="476" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>于是 induces 了</p>
-<p>[i\boxtimes g:A\times T\sqcup_{A\times S} B\times S\to B\times T.]</p>
+<p>\[i\boxtimes g:A\times T\sqcup_{A\times S} B\times S\to B\times T.\]</p>
 <p>他们之间有如下关键关系:</p>
 <p>[Lemma] 如下两个 lifting problems are equiv.</p>
 <!-- https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d -->
@@ -379,11 +379,11 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
 <p>为了处理 sSet 范畴上的 join, 首先要定义 Cut 的概念: 对于 linearly ordered set $J$, the set of cuts of $J$ 为全体 decomposition $J=J_1\sqcup J_2$ s.t. $x&lt;y$ whenever $x\in J_1$, $y\in J_2$.</p>
 <p>[Lemma] 对于 linearly ordered sets $J,J'$ with $\alpha:J\to J'$, $(J_1',J_2')\in Cut(J')$, 存在 unique cut $(J_1,J_2)\in Cut(J)$ s.t. $\alpha$ restricts to $\alpha_1:J_1\to J_1',\alpha_2:J_2\to J_2'$.</p>
 <p>于是, 对于 $X,Y$ sSet, 定义 join $X\star Y$ 为 sSet given as follow:</p>
-<p>[(X\star Y)(J)=\sqcup_{(J_1,J_2)\in Cut(J)}X(J_1)\times Y(J_2).]</p>
+<p>\[(X\star Y)(J)=\sqcup_{(J_1,J_2)\in Cut(J)}X(J_1)\times Y(J_2).\]</p>
 <p>with $X(\emptyset)=Y(\emptyset)=\ast $. 对于 $\alpha:J\to J'$ morph. of linearly ordered sets and a cut of $J'$, 我们总是存在</p>
-<p>[X(J_1')\times Y(J_2')\to X(J_1)\times Y(J_2).]</p>
+<p>\[X(J_1')\times Y(J_2')\to X(J_1)\times Y(J_2).\]</p>
 <p>which provides</p>
-<p>[(X\star Y)(J')\to (X\star Y)(J)]</p>
+<p>\[(X\star Y)(J')\to (X\star Y)(J)\]</p>
 <p>给出了 $X\star Y$ 上面的 sSet 结构.</p>
 <h4>保 $\infty$-cat. 性质</h4>
 <p>于是, 有</p>
@@ -408,9 +408,9 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
 <h4>Slice/Join adjunction 与 lifting problem</h4>
 <p>非平凡的是</p>
 <p>[Lemma] Slice construction induces functor $Tw(sSet)\to sSet$. In particular, for</p>
-<p>[A\overset{i}{\to}B\overset{\phi}{\to} X\overset{f}{\to} Y,]</p>
+<p>\[A\overset{i}{\to}B\overset{\phi}{\to} X\overset{f}{\to} Y,\]</p>
 <p>there is an induced map</p>
-<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}.]</p>
+<p>\[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}.\]</p>
 <p>[Lemma] slice/join adjunction 给出了 bij. of lifting problems between</p>
 <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJTIl0sWzEsMCwiWF97XFxwaGkvfSJdLFswLDEsIlQiXSxbMSwxLCJYX3tcXHBoaSBpL31cXHRpbWVzX3tmXFxwaGkgaS99IFlfe2ZcXHBoaS99Il0sWzAsMV0sWzEsM10sWzAsMl0sWzIsM10sWzIsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJTIl0sWzEsMCwiWF97XFxwaGkvfSJdLFswLDEsIlQiXSxbMSwxLCJYX3tcXHBoaSBpL31cXHRpbWVzX3tmXFxwaGkgaS99IFlfe2ZcXHBoaS99Il0sWzAsMV0sWzEsM10sWzAsMl0sWzIsM10sWzIsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&embed" width="441" height="304" style="border-radius: 8px; border: none;"></iframe>
@@ -419,23 +419,23 @@ P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNSxbMCwwLCJCIl0sWzIsMSwiWCJdLFsxLDEsIkFcXHN0YXIgVFxcc3FjdXBfe0FcXHN0YXIgU31CXFxzdGFyIFMiXSxbMiwyLCJZIl0sWzEsMiwiQlxcc3RhciBUIl0sWzIsNF0sWzQsM10sWzIsMV0sWzAsMl0sWzAsMSwiXFxwaGkiXSxbNCwxLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=&embed" width="599" height="432" style="border-radius: 8px; border: none;"></iframe>
 <h4>Slice/Join adjunction 与 fibration.</h4>
 <p>于是, 上一节中 $i\boxtimes g$ 相关的 lemma 转化为, 对于 $i:A\to B,g:S\to T$ mono,</p>
-<p>[i\hat{\star} g:A\star T\sqcup_{A\star S} B\star S\to B\star T]</p>
+<p>\[i\hat{\star} g:A\star T\sqcup_{A\star S} B\star S\to B\star T\]</p>
 <p>is a mono. In addition,</p>
 <p>(1) it is inner-anodyne if $i$ right-ano. or $g$ left-ano.</p>
 <p>(2) it is left-ano. if $i$ left-ano.</p>
 <p>(3) it is right-ano. if $g$ right-ano.</p>
 <p>[Thm] $A\overset{i}{\to}B\overset{\phi}{\to} X\overset{f}{\to} Y$ composable maps, $i$ mono, $f$ inner fib. Then</p>
 <p>(1) The induced map</p>
-<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}]</p>
+<p>\[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}\]</p>
 <p>is a left fib.</p>
 <p>(2) If $f:X\to Y$ left fib. then the induced map</p>
-<p>[X_{/\phi}\to X_{/\phi i}\times_{Y_{/f\phi i}}Y_{/f\phi}]</p>
+<p>\[X_{/\phi}\to X_{/\phi i}\times_{Y_{/f\phi i}}Y_{/f\phi}\]</p>
 <p>is a left fib.</p>
 <p>(3) If $i:A\to B$ right-ano. then the map</p>
-<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}]</p>
+<p>\[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}\]</p>
 <p>is a trivial fib.</p>
 <p>(4) If $f:X\to Y$ trivial fib. then the map</p>
-<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}]</p>
+<p>\[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}\]</p>
 <p>is a trivial fib.</p>
 <p>这个可以导出如下结论:</p>
 <p>[Cor] (1) $X_{\phi/}\to X$ left fib. $X_{/\phi}\to X$ right fib. In particular, $X_{/\phi}$ and $X_{\phi/}$ $\infty$-cat.</p>

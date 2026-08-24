@@ -47,28 +47,28 @@
 <p>Def 1.1. $\mathfrak{g}$-oper on $X$ is a pair $(\mathcal{F}_B,\nabla)$ w/. $B\subset G_{ad}:=G$.</p>
 <p>(1) $c(\nabla)$ lands in $\Gamma(X,(\mathfrak{g}^{-1}/\mathfrak{b})_\mathcal{F})$.</p>
 <p>(2) 对于 negative simple root $\alpha$, 考虑到 $\mathfrak{g}^\alpha$ 的 projection,</p>
-<p>[c(\nabla)^\alpha:TX\overset{c(\nabla)}{\to} (\mathfrak{g}^{-1}/\mathfrak{b})_\mathcal{F}\to (\mathfrak{g}^{-1}/\mathfrak{b})^\alpha.]</p>
+<p>\[c(\nabla)^\alpha:TX\overset{c(\nabla)}{\to} (\mathfrak{g}^{-1}/\mathfrak{b})_\mathcal{F}\to (\mathfrak{g}^{-1}/\mathfrak{b})^\alpha.\]</p>
 <p>is an isom.</p>
-<p>比方说, 考虑 $X$ curve with coord. $dx$. $G=PGL_n$ 和 trivial torsor $X\times B$ by (\nabla=d+dx\otimes\begin{pmatrix}
+<p>比方说, 考虑 $X$ curve with coord. $dx$. $G=PGL_n$ 和 trivial torsor $X\times B$ by \(\nabla=d+dx\otimes\begin{pmatrix}
 0&amp;* &amp;* \
 1&amp;0&amp;* \
 &amp;1&amp;0
-\end{pmatrix}). 这就是一个 $\mathfrak{g}$-oper.</p>
+\end{pmatrix}\). 这就是一个 $\mathfrak{g}$-oper.</p>
 <p>这里我们实际上只给出了 $\mathfrak{g}$-oper 的定义. 对于 $G_{ad}$ adjoint type, 我们采用 $\mathfrak{g}$-oper 作为 $G_{ad}$-oper 的定义.</p>
 <p>Rem. 可以将 $G_{ad}$-oper 视为一个 $G$-l.s. with a specified reduction of the structure of torsor to $B$ satisfying the conditions above.</p>
 <h2>g-oper leftrightarrow G-oper</h2>
 <p>首先, $Op_G(X)$ 构成一个 groupoid.</p>
 <p>$G\to G_{ad}$ 诱导了 $Op_G(X)\to Op_{\mathfrak{g}}(X):=Op_{G_{ad}}(X)$.</p>
 <p>当然, 我们希望将这个定义扩充到一般的 $G$ 上. 为此, 考虑 connection $\nabla$, 它实际上 induce 了 $\nabla: TX\to (\mathfrak{g}^{-1}/\mathfrak{b})^\alpha_{\mathcal{F}}$. 根据 Killing form, 它可以对应到</p>
-<p>[(\mathfrak{g}^1/\mathfrak{g}^2)\overset{H}{\times} \mathcal{F}_H\to \Omega_X^{\oplus r}.]</p>
+<p>\[(\mathfrak{g}^1/\mathfrak{g}^2)\overset{H}{\times} \mathcal{F}_H\to \Omega_X^{\oplus r}.\]</p>
 <p>考察 $H$ 在其上的作用, 右侧可以等同到</p>
-<p>[\Omega_X\overset{\check{\rho}}{\times}H\overset{H}{\times} (\mathfrak{g}^1/\mathfrak{g}^2).]</p>
+<p>\[\Omega_X\overset{\check{\rho}}{\times}H\overset{H}{\times} (\mathfrak{g}^1/\mathfrak{g}^2).\]</p>
 <p>于是, 在 adjoint type 上, 由于 $H\to GL(\mathfrak{g}^1/\mathfrak{g}^2)$ 是一个双射, 我们便唯一确定了提升</p>
-<p>[\mathcal{F}_H\to \Omega_X\overset{\check{\rho}}{\times}H.]</p>
+<p>\[\mathcal{F}_H\to \Omega_X\overset{\check{\rho}}{\times}H.\]</p>
 <p>这里的 $\check{\rho}$ 是一个 cocharacter $\operatorname{Hom}(\mathbb{G}_m,H)$. 但在非 adjoint type 上, $\check{\rho}$ 不一定是一个 cocharacter. (算一个 $SL_n$ 的例子). 但不管怎样, $2\check{\rho}$ 是一个 cocharacter. 于是, fix 一个 square root of canonical bundle $\Omega_X^{1/2}$, $\nabla$ 仍然 induce 了</p>
-<p>[(\mathfrak{g}^1/\mathfrak{g}^2)\overset{H}{\times} \mathcal{F}_H\to\Omega_X^{1/2}\overset{\check{2\rho}}{\times}H\overset{H}{\times} (\mathfrak{g}^1/\mathfrak{g}^2).]</p>
+<p>\[(\mathfrak{g}^1/\mathfrak{g}^2)\overset{H}{\times} \mathcal{F}_H\to\Omega_X^{1/2}\overset{\check{2\rho}}{\times}H\overset{H}{\times} (\mathfrak{g}^1/\mathfrak{g}^2).\]</p>
 <p>Def 1.2. Fix square root of canonical bundle $\Omega_X^{1/2}$. For $G$ not necessarily adjoint, we call a $G$-oper is a $(\mathcal{F}_B,\nabla,\phi)$, with</p>
-<p>[\mathcal{F}<em>H\overset{\phi}{\to} \Omega_X^{1/2}\times</em>{2\check{\rho}}H]</p>
+<p>\[\mathcal{F}<em>H\overset{\phi}{\to} \Omega_X^{1/2}\times</em>{2\check{\rho}}H\]</p>
 <p>compatible with $\tilde{\phi}$ as above.</p>
 <p>这里的 $\phi$ 被称作一个 marking. 当然你可以看出如上定义并不 imply $\phi$ 的存在性. 但 after all, $\phi$ 到 $\tilde{\phi}$ 是 up to $Z(G)$ 的. fix $\phi$ 杀掉了这种对称性.</p>
 <p>Ex. 对于 $G=\text{SL}_n$ case, 一个 $G$-oper 是一个 rank $n$ vector bundle $\mathcal{E}$ with data $(\mathcal{E},(\mathcal{E}_i),\nabla,\phi)$, $(E_i)^n_{i=1}$ complete flag, $\phi:\mathcal{E}_1\simeq \Omega^{\otimes (n-1)/2}$ is an isom. 以及 $\nabla:\mathcal{E}\to \mathcal{E}\otimes \Omega_X$ connection which satisfies</p>
@@ -89,17 +89,17 @@
 <p>Prop 3.1. $G$-oper $(\mathcal{F}_B,\nabla,\phi)$ over $D_X$-scheme $Y\to X$ has no nontriv. automorphisms.</p>
 <p>Proof: 局部上, 考虑 $\mathcal{F}_B=Y\times B\to X$, $X$ 拥有 local coord $dx$. 我们总可以写作 $\nabla=d+\eta\otimes dx$, 其中 $d$ flat connection, $\eta:Y\to \mathfrak{g}^{-1}$.</p>
 <p>考虑 $\mathcal{F}_B=Y\times B$ underlying torsor, 一个 autom. 可以看做 left translation by $\sigma:Y\to B$. 由于 $\sigma$ 在 $\mathcal{F}_H$ 上的作用 preserves $\phi$, 有 $\operatorname{im}\sigma\in N$. 计算其在 $\nabla$ 上的作用得到</p>
-<p>[\sigma.(d+\eta)=d+d\sigma\cdot l_{\sigma^{-1}}+Ad(\sigma)\eta\otimes dx.]</p>
+<p>\[\sigma.(d+\eta)=d+d\sigma\cdot l_{\sigma^{-1}}+Ad(\sigma)\eta\otimes dx.\]</p>
 <p>利用它等于 $d+\eta$ 的性质, 我们推出矛盾.</p>
 <p>首先, 局部上我们可以取 $\sigma=\log n$, 我们取 $\mathfrak{g}^i$ 为最小的 term 包含这个 $n$. 于是 $d\sigma\cdot l_{\sigma^{-1}}=d\log \sigma=dn\in \Gamma(X,\mathfrak{g}^i\otimes \Omega_X)$. 于是</p>
-<p>[Ad(\sigma)\eta\equiv\eta [\mathfrak{g}^i]]</p>
+<p>\[Ad(\sigma)\eta\equiv\eta [\mathfrak{g}^i]\]</p>
 <p>fix 一个 cartan $\mathfrak{h}\subset \mathfrak{b}$, $\eta=\eta^{-1}+\beta$, $\eta^{-1}:Y\to\mathfrak{g}^{-1}$, $\beta:Y\to\mathfrak{b}$.</p>
 <p>计算可得</p>
-<p>[\mathfrak{g}^i\ni Ad(\sigma)(\eta^{-1}+\beta)-(\eta^{-1}+\beta)=Ad(\exp(n))(\eta^{-1}+\beta)-(\eta^{-1}+\beta)=[n,\eta^{-1}+\beta]+1/2[n,[n,\eta^{-1}+\beta]]+\cdots\in [n,\eta^{-1}]+\mathfrak{g}^i.]</p>
+<p>\[\mathfrak{g}^i\ni Ad(\sigma)(\eta^{-1}+\beta)-(\eta^{-1}+\beta)=Ad(\exp(n))(\eta^{-1}+\beta)-(\eta^{-1}+\beta)=[n,\eta^{-1}+\beta]+1/2[n,[n,\eta^{-1}+\beta]]+\cdots\in [n,\eta^{-1}]+\mathfrak{g}^i.\]</p>
 <p>于是 $[\eta^{-1},n]\in \mathfrak{g}^i$.</p>
 <p>但, 根据 Kostant 我们可以通过一个嵌入 $\mathfrak{sl}_2\to \mathfrak{g}$, 将 $\eta^{-1}$ 表示为 $f_0$. 于是根据 $\mathfrak{sl}_2$ 表示的性质我们得到 $ad_{f_0}:\mathfrak{g}^i/\mathfrak{g}^{i+1}\hookrightarrow\mathfrak{g}^{i-1}/\mathfrak{g}^i$. $\Box$</p>
-<p>Lemma 2.3. Let (\mathfrak{F}_G) be a be torsor over a complete curve (X) of genus (g\geq 2). Let (\mathfrak{F}_B) be a reduction to the Borel such that for each simple positive root (\alpha), the (\mathbb{G}_m)-torsor (\mathfrak{F}<em>H\times</em>{\alpha}\mathbb{G}_m) has positive degree. Then (\mathfrak{F}_B) is unique.</p>
-<p>Prop 2.2. Let (X) be a complete curve of genus (g\geq 2), (G) semi-simple of adjoint type, and ((\mathfrak{F}_G,\nabla)) a (G)-local system on (X) which admits an oper structure. Then the oper structure is unique.</p>
+<p>Lemma 2.3. Let \(\mathfrak{F}_G\) be a be torsor over a complete curve \(X\) of genus \(g\geq 2\). Let \(\mathfrak{F}_B\) be a reduction to the Borel such that for each simple positive root \(\alpha\), the \(\mathbb{G}_m\)-torsor \(\mathfrak{F}<em>H\times</em>{\alpha}\mathbb{G}_m\) has positive degree. Then \(\mathfrak{F}_B\) is unique.</p>
+<p>Prop 2.2. Let \(X\) be a complete curve of genus \(g\geq 2\), \(G\) semi-simple of adjoint type, and \((\mathfrak{F}_G,\nabla)\) a \(G\)-local system on \(X\) which admits an oper structure. Then the oper structure is unique.</p>
 <p>这是因为 opers 的条件诱导了 $\mathfrak{F}_H\times_{\alpha}\mathbb{G}_m\simeq \Omega_X$, 在 $g\geq 2$ 时自然是 positive degree 的.</p>
 <p>Cor 2.4. $X$ curve, $g\geq 2$, $Op_\mathfrak{g}(X)$ f.f. sub of $LocSys_{G_{ad}}(X)$.</p>
 <p>non-adjoint type 下, $Op_G(X)\to LocSys_{G}(X)$ 是一个 &quot;$Z(G)$-torsor&quot;.</p>
@@ -113,12 +113,12 @@
 <p>首先, 由 oper 的条件, 我们可以给出 $\mathfrak{n}_{\mathcal{F}}=(\mathfrak{g}^1/\mathfrak{g}^2)_{\mathcal{F}}\simeq f^\ast \Omega_X$. 于是给出 identification $\mathfrak{n}_\mathcal{F}\otimes f^\ast \Omega_X\simeq f^\ast \Omega_X^{\otimes 2}$.</p>
 <p>这里的作用则是 direct given by $f^\ast TX\to \mathfrak{n}$. 这确实给出了 $\Omega_X^{\otimes 2}\circlearrowright Op_{\mathfrak{sl}_2}$.</p>
 <p>而此外, 对于局部上 $\nabla=d+\eta\otimes dx$, $\sigma:Y\to B$ 对 $\nabla$ 的作用则是将其变为</p>
-<p>[d+d\sigma \sigma^{-1}+Ad(\sigma)\eta.]</p>
+<p>\[d+d\sigma \sigma^{-1}+Ad(\sigma)\eta.\]</p>
 <p>而根据计算, 会存在唯一的 $\sigma$, 将其变为</p>
-<p>[d+dx\otimes \begin{pmatrix}
+<p>\[d+dx\otimes \begin{pmatrix}
 0&amp;\alpha\
 1&amp;0
-\end{pmatrix}.]</p>
+\end{pmatrix}.\]</p>
 <p>因此, $\Omega_X^{\otimes 2}$ 的作用是自由且可迁的.</p>
 <p>Cor 4.2. All $\mathfrak{sl}_2$-opers shares isomorphic underlying $B$-torsors.</p>
 <p>这是根据 3.x 确立的 reduction 的唯一性所决定的. 这些 $B$ torsor 都是 trivialized 的.</p>
@@ -133,32 +133,32 @@
 <p>对于 ${e_0,h_0,f_0}$ std. $\mathfrak{sl}_2$ basis $\mathfrak{b}_0=\mathbb{C}{e_0,h_0}$, 考虑 principal embedding $\mathfrak{sl}_2\to \mathfrak{g}$ 将 $\mathfrak{b}_0$ 映到 $\mathfrak{b}$. 于是其诱导了 $PSL_2\overset{\iota_G}{\to} G$ w/. $G$ adjoint group of $\mathfrak{g}$. (注意这个只对 principal embedding 诱导).</p>
 <p>现在, 考虑 $\mathcal{F}_{B},\mathcal{F}_G$ 为对应的 $B,G$-torsors induced via $\iota_G$.</p>
 <p>于是, $\nabla_0$ induces 了 connection on $\mathcal{F}_G$ that satisfies the oper condition for $\iota_G$ principal. In particular, 对于</p>
-<p>[\nabla_0=d+dx\otimes \begin{pmatrix}
+<p>\[\nabla_0=d+dx\otimes \begin{pmatrix}
 0&amp;\alpha\
 1&amp;0
-\end{pmatrix}.]</p>
+\end{pmatrix}.\]</p>
 <p>我们有</p>
-<p>[\nabla=d+dx\otimes(f+\alpha e).]</p>
+<p>\[\nabla=d+dx\otimes(f+\alpha e).\]</p>
 <p>In particular, global $\mathfrak{g}$-opers always exist.</p>
 <p>此外, 我们有如下结论: fix $\mathfrak{g}^{e_0}_{\mathcal{F}^0}:=\mathcal{F}^0_{H_0}\times^{H_0}\mathfrak{g}^{e_0}=\mathcal{F}^0_{B_0}\times^{B_0}\mathfrak{g}^{e_0}$. 利用 $\Omega_X^{\otimes2}=\Omega_X\otimes (\mathfrak{n}_{0})_{\mathcal{F}^0}=\Omega_X\otimes \mathfrak{g}^{e_0}_{\mathcal{F}^0}$. 我们有 $\Omega_X\otimes \mathfrak{g}^{e_0}_{\mathcal{F}^0}$-torsor.</p>
-<p>[Op_{\mathfrak{sl}<em>2}\times</em>{\Omega_X^{\otimes 2}}(\Omega_X\otimes \mathfrak{g}^{e_0}_{\mathcal{F}^0})]</p>
+<p>\[Op_{\mathfrak{sl}<em>2}\times</em>{\Omega_X^{\otimes 2}}(\Omega_X\otimes \mathfrak{g}^{e_0}_{\mathcal{F}^0})\]</p>
 <p>Prop. 任何 principal embedding 给出如下 isom.</p>
-<p>[Op_{\mathfrak{sl}<em>2}\times</em>{\Omega_X^{\otimes 2}}(\Omega_X\otimes \mathfrak{g}^{e_0}<em>{\mathcal{F}^0})\to Op</em>\mathfrak{g}.]</p>
+<p>\[Op_{\mathfrak{sl}<em>2}\times</em>{\Omega_X^{\otimes 2}}(\Omega_X\otimes \mathfrak{g}^{e_0}<em>{\mathcal{F}^0})\to Op</em>\mathfrak{g}.\]</p>
 <p>这个的做法也是比较简单的: reduce 到局部. 最终的 free transitive 的性质是由某种 Kostant 确立的.</p>
 <p>Cor. 4.a. All $\mathfrak{g}$-opers shares isomorphic underlying $B$-torsors, identified with $\mathcal{F}^0_{B}:=\mathcal{F}_{B_0}^0\times_{\iota}B$.</p>
 <p>Lemma 4.(a+1). $Op_\mathfrak{g} $ a torsor for $\Omega_X\otimes \mathfrak{g}_\mathcal{F}^{e_0}$. $Op_\mathfrak{g}(X)$ naturally a torsor for $\Gamma(X,\Omega_X\otimes \mathfrak{g}_\mathcal{F}^{e_0})$, both trivial torsor.</p>
 <p>Cor 4.(a+2). $Op_\mathfrak{g}$ representable by a $D_X$-scheme isomorphic to $Jets_X(\Omega_X\otimes \mathfrak{g}_{\mathcal{F}}^{e_0})$. When $X$ complete, $Op_\mathfrak{g}(X)$ representable by a scheme isom. to $\Gamma(X,\Omega_X\otimes \mathfrak{g}_\mathcal{F}^{e_0})$.</p>
 <h2>Hitchin space</h2>
 <p>考察 $H_0\simeq \mathbb{G}_m\circlearrowright \mathfrak{g}^{e_0}$. 这个记号记作 $Ad$, 我们有 $\mathcal{F}_{H_0}\simeq \Omega_X$, 于是</p>
-<p>[\Omega_X\otimes\mathfrak{g}<em>\mathcal{F}^{e_0}=\Omega_X\otimes(\mathcal{F}</em>{H_0}\times^{H_0}\mathfrak{g}^{e_0})=\Omega_X\times_{tAd(t)}\mathfrak{g}^{e_0}.]</p>
+<p>\[\Omega_X\otimes\mathfrak{g}<em>\mathcal{F}^{e_0}=\Omega_X\otimes(\mathcal{F}</em>{H_0}\times^{H_0}\mathfrak{g}^{e_0})=\Omega_X\times_{tAd(t)}\mathfrak{g}^{e_0}.\]</p>
 <p>由于我们确实可以 identify 一个</p>
-<p>[\mathfrak{c}_{^L\mathfrak{g}}:=\operatorname{Spec}(\operatorname{Sym}^L\mathfrak{g})^{^LG}=\operatorname{Spec}(\operatorname{Sym}^L\mathfrak{h})^{W}=\operatorname{Spec}(\operatorname{Sym}\mathfrak{h}^*)^{W}\simeq \mathfrak{g}//G,]</p>
+<p>\[\mathfrak{c}_{^L\mathfrak{g}}:=\operatorname{Spec}(\operatorname{Sym}^L\mathfrak{g})^{^LG}=\operatorname{Spec}(\operatorname{Sym}^L\mathfrak{h})^{W}=\operatorname{Spec}(\operatorname{Sym}\mathfrak{h}^*)^{W}\simeq \mathfrak{g}//G,\]</p>
 <p>以及根据 Kostant, 我们可以将 $\mathfrak{g}//G$ identify to $f_0+\mathfrak{g}^{e_0}\simeq \mathfrak{g}^{e_0}$. 如此 induces 出来的 $\mathfrak{c}\to \mathfrak{g}^{e_0}$ 上左侧的 $\mathbb{G}_m$-action identify 到右侧的 $tAd(t)$ action. 于是我们得到 identification</p>
-<p>[\mathfrak{c}<em>{^L\mathfrak{g}}^{\Omega}=\Omega_X\times</em>{\mathbb{G}<em>m}\mathfrak{c}</em>{^L\mathfrak{g}}\simeq \Omega_X\otimes\mathfrak{g}_{\mathcal{F}}^{e_0}.]</p>
+<p>\[\mathfrak{c}<em>{^L\mathfrak{g}}^{\Omega}=\Omega_X\times</em>{\mathbb{G}<em>m}\mathfrak{c}</em>{^L\mathfrak{g}}\simeq \Omega_X\otimes\mathfrak{g}_{\mathcal{F}}^{e_0}.\]</p>
 <p>那么, cor 4.(a+2) 实际上就转化为</p>
-<p>[Op_\mathfrak{g}\simeq Jets_X(\mathfrak{c}<em>{^L\mathfrak{g}}^{\Omega_X})=\operatorname{Hitch}</em>{^L\mathfrak{g}}=\operatorname{Spec}<em>X(\mathfrak{z}</em>{^L\mathfrak{g}}^{\operatorname{cl}}).]</p>
+<p>\[Op_\mathfrak{g}\simeq Jets_X(\mathfrak{c}<em>{^L\mathfrak{g}}^{\Omega_X})=\operatorname{Hitch}</em>{^L\mathfrak{g}}=\operatorname{Spec}<em>X(\mathfrak{z}</em>{^L\mathfrak{g}}^{\operatorname{cl}}).\]</p>
 <p>而, 在 section 的角度, 我们有</p>
-<p>[Op_\mathfrak{g}(X)\simeq\operatorname{Sect}<em>X(\mathfrak{c}</em>{^L\mathfrak{g}}^\Omega)\simeq \operatorname{Hitch}_{^L\mathfrak{g}}(X).]</p>
+<p>\[Op_\mathfrak{g}(X)\simeq\operatorname{Sect}<em>X(\mathfrak{c}</em>{^L\mathfrak{g}}^\Omega)\simeq \operatorname{Hitch}_{^L\mathfrak{g}}(X).\]</p>
 <p>于是, 对于 $X$ affine, $Op_\mathfrak{g}(X)$ representable by a scheme, 也就是一个 affine space for $\Gamma(X,\Omega_X\otimes\mathfrak{g}_\mathcal{F}^{e_0})$.</p>
 <p>注意这里的对应, 我们从 $Op$ 到 $Jets$ 和 $Jets$ 到 $Hitch$ 之间的映射, 都依赖于截面的选取: principal bundle 或 sections on Hitchin. 因此这个 $\simeq$ 并不是 canonical 的, heuristically, 他们之间相差一个 $\sigma:Y\to N$.</p>
 <p>$A_\mathfrak{g}$ coord. alg. of $Op_\mathfrak{g}$, $A_\mathfrak{g}(X)$ coord. alg. of $Op_\mathfrak{g}(X)$. 此外, $\mathfrak{z}^{cl}$ coord ring of Hitch. 如上我们建立了 $A_\mathfrak{g}$ 和 $\mathfrak{z}_{^L\mathfrak{g}}^{cl}$ 的 non-canonically isom.</p>
@@ -169,18 +169,18 @@
 <p>Thm. 5.1. The natural map $gr\mathfrak{z}_\mathfrak{g}\overset{\sigma_{\mathfrak{z}}}{\to}\mathfrak{z}_\mathfrak{g}^{cl}$ isom. of graded $D_X$-alg.</p>
 <p>Prop. 5.2. The natural surj. $(gr\mathfrak{z}_\mathfrak{g})(X)\overset{\sigma_{\mathfrak{z}}}{\to}gr(\mathfrak{z}_\mathfrak{g}(X))$ isom.</p>
 <p>Cor. 5.3. 我们有如下的 isom.</p>
-<p>[(gr\mathfrak{z}<em>\mathfrak{g})(X)\to gr(\mathfrak{z}</em>\mathfrak{g}(X))\to \mathfrak{z}_\mathfrak{g}^{cl}(X)]</p>
+<p>\[(gr\mathfrak{z}<em>\mathfrak{g})(X)\to gr(\mathfrak{z}</em>\mathfrak{g}(X))\to \mathfrak{z}_\mathfrak{g}^{cl}(X)\]</p>
 <p>Thm. 5.4. There exists an isom. of filtered alg.</p>
-<p>[A_\mathfrak{g}\overset{\phi}{\to}\mathfrak{z}_{^L\mathfrak{g}}]</p>
+<p>\[A_\mathfrak{g}\overset{\phi}{\to}\mathfrak{z}_{^L\mathfrak{g}}\]</p>
 <p>w/. $\sigma_{A_\mathfrak{g}}=\sigma_{\mathfrak{z}}\circ gr\phi$.</p>
 <p>Cor. 5.5. $\phi$ induces an isom. of filtered algs.</p>
-<p>[A_\mathfrak{g}(X)\overset{\phi_X}{\to} \mathfrak{z}_{^L\mathfrak{g}}(X).]</p>
+<p>\[A_\mathfrak{g}(X)\overset{\phi_X}{\to} \mathfrak{z}_{^L\mathfrak{g}}(X).\]</p>
 <p>w/. $\sigma_{A_\mathfrak{g}(X)}=\sigma_{\mathfrak{z}(X)}\circ gr\phi_X$.</p>
 <p>总而言之, 我们搓出了这样的 diag.</p>
 <!-- https://q.uiver.app/#q=WzAsOSxbMCwwLCJBX3teTFxcbWF0aGZyYWt7Z30oWCl9Il0sWzAsMiwiXFxvcGVyYXRvcm5hbWV7Z3J9QV97XkxcXG1hdGhmcmFre2d9KFgpfSJdLFswLDQsIkFee2NsfV97XkxcXG1hdGhmcmFre2d9KFgpfSJdLFsyLDAsIlxcbWF0aGZyYWt7en1fXFxtYXRoZnJha3tnfShYKSJdLFsyLDIsIlxcb3BlcmF0b3JuYW1le2dyfVxcbWF0aGZyYWt7en1fXFxtYXRoZnJha3tnfShYKSJdLFsyLDQsIlxcbWF0aGZyYWt7en1ee2NsfV9cXG1hdGhmcmFre2d9KFgpIl0sWzQsMiwiXFxvcGVyYXRvcm5hbWV7Z3J9XFxHYW1tYShcXG9wZXJhdG9ybmFtZXtCdW59X3tcXG1hdGhmcmFre2d9fV5cXGdhbW1hIFgsXFxtYXRoY2Fse0R9JykiXSxbNCw0LCJcXEdhbW1hKFReKlxcb3BlcmF0b3JuYW1le0J1bn1fe1xcbWF0aGZyYWt7Z319XlxcZ2FtbWEgWCxcXG1hdGhjYWx7T30pIl0sWzQsMCwiXFxHYW1tYShcXG9wZXJhdG9ybmFtZXtCdW59X3tcXG1hdGhmcmFre2d9fV5cXGdhbW1hIFgsXFxtYXRoY2Fse0R9JykiXSxbOCw2LCJnciIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6InNxdWlnZ2x5In19fV0sWzMsNCwiZ3IiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFswLDEsImdyIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XSxbMCwzLCJcXHNpbWVxIiwxXSxbMSwyLCJcXHNpbWVxIl0sWzIsNSwiXFxzaW1lcSJdLFs1LDcsIlxcc2ltZXEiXSxbNCw1LCJcXHNpbWVxIl0sWzYsNywiXFxzaW1lcSIsMV0sWzEsNF0sWzQsNl0sWzMsOF1d -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsOSxbMCwwLCJBX3teTFxcbWF0aGZyYWt7Z30oWCl9Il0sWzAsMiwiXFxvcGVyYXRvcm5hbWV7Z3J9QV97XkxcXG1hdGhmcmFre2d9KFgpfSJdLFswLDQsIkFee2NsfV97XkxcXG1hdGhmcmFre2d9KFgpfSJdLFsyLDAsIlxcbWF0aGZyYWt7en1fXFxtYXRoZnJha3tnfShYKSJdLFsyLDIsIlxcb3BlcmF0b3JuYW1le2dyfVxcbWF0aGZyYWt7en1fXFxtYXRoZnJha3tnfShYKSJdLFsyLDQsIlxcbWF0aGZyYWt7en1ee2NsfV9cXG1hdGhmcmFre2d9KFgpIl0sWzQsMiwiXFxvcGVyYXRvcm5hbWV7Z3J9XFxHYW1tYShcXG9wZXJhdG9ybmFtZXtCdW59X3tcXG1hdGhmcmFre2d9fV5cXGdhbW1hIFgsXFxtYXRoY2Fse0R9JykiXSxbNCw0LCJcXEdhbW1hKFReKlxcb3BlcmF0b3JuYW1le0J1bn1fe1xcbWF0aGZyYWt7Z319XlxcZ2FtbWEgWCxcXG1hdGhjYWx7T30pIl0sWzQsMCwiXFxHYW1tYShcXG9wZXJhdG9ybmFtZXtCdW59X3tcXG1hdGhmcmFre2d9fV5cXGdhbW1hIFgsXFxtYXRoY2Fse0R9JykiXSxbOCw2LCJnciIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6InNxdWlnZ2x5In19fV0sWzMsNCwiZ3IiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFswLDEsImdyIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XSxbMCwzLCJcXHNpbWVxIiwxXSxbMSwyLCJcXHNpbWVxIl0sWzIsNSwiXFxzaW1lcSJdLFs1LDcsIlxcc2ltZXEiXSxbNCw1LCJcXHNpbWVxIl0sWzYsNywiXFxzaW1lcSIsMV0sWzEsNF0sWzQsNl0sWzMsOF1d&embed" width="956" height="688" style="border-radius: 8px; border: none;"></iframe>
 <p>我们 GLC 说的是</p>
-<p>[\operatorname{IndCoh}<em>{Nilp</em>{glob}}(\operatorname{LocSys}<em>{^L\mathfrak{g}}X)\to \operatorname{D-mod}(\operatorname{Bun}</em>{G}X).]</p>
+<p>\[\operatorname{IndCoh}<em>{Nilp</em>{glob}}(\operatorname{LocSys}<em>{^L\mathfrak{g}}X)\to \operatorname{D-mod}(\operatorname{Bun}</em>{G}X).\]</p>
 <p>对于一个 admit oper 结构的 $X$, 我们会得到 $m_\sigma\subset A_{^L\mathfrak{g}}(X)$ closed point. 记 residule field, 我们会在另一边对应到 $D$-mod $\mathcal{D}_{\sigma}:=\mathcal{D}\otimes_{A_{^L\mathfrak{g}}(X)}k_\sigma$.</p>
 <p>而这些讨论就相信后人智慧了👍.</p>
 </div>

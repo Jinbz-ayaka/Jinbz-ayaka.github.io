@@ -41,13 +41,13 @@
           <div class="article-content"><p>遗憾的消息是, 我们要仿照 3.4 的做派, 把 7.3 这几个 main theorem 跳过了.</p>
 <p>一个原因是, 我不太喜欢 Specialization 这一套. 另一个原因是, 我们直接从上面提取出来所需要 thm 的就行了.</p>
 <p>对于 $f:V_1\to V_2$ $W$-spaces, 我们称这个映射是 sign-commuting 的, 如果</p>
-<p>[f(w\cdot v_1)=(-1)^{l(w)} \cdot w\cdot f(v_1).]</p>
+<p>\[f(w\cdot v_1)=(-1)^{l(w)} \cdot w\cdot f(v_1).\]</p>
 <p>Recall Poincare duality</p>
-<p>[H_i(\mathcal{B})\simeq H^{2n-i}(\mathcal{B}).]</p>
+<p>\[H_i(\mathcal{B})\simeq H^{2n-i}(\mathcal{B}).\]</p>
 <p>这个映射当然不是 comm. with $W$-action 的. 比方说, $W$-action 不保定向, 因此当然不喝 intersection pairing 交换. 更确切地说, $W\circlearrowright H_{2n}(\mathcal{B})$ by $w\mapsto (-1)^{l(w)}$, 也就是说, Poincare duality 是 sign-commutes with $W$-action 的.</p>
 <p>这段怎么写的这么别扭,,</p>
 <p>但是, 对于 $G/T$, $W$ 在其上的 (右) 作用是 holomorphic transf. 因此保定向. 所以自然地 Poincare duality</p>
-<p>[H_i(G/T)\simeq H^{2n-i}(G/T)]</p>
+<p>\[H_i(G/T)\simeq H^{2n-i}(G/T)\]</p>
 <p>与 $W$-action 交换. (这里为什么不是 $4n$? top dimension)</p>
 <p>接下来考虑 $\pi: T^\ast \mathcal{B}\to\mathcal{B}$, $i:\mathcal{B}\hookrightarrow T^\ast \mathcal{B}$.</p>
 <p>Lemma 7.3.31. 记 $n=\dim_\mathbb{C}\mathcal{B}$, 有</p>
@@ -61,19 +61,19 @@
 <p>(iv) Direct by 6.4.15, (iii) 的 $\mathcal{B}$ 部分 direct by (iv) 和前文关于 sign-comm. 的论证. $T^\ast \mathcal{B}$ 的部分则直接 factor through (i)(ii) 即可.</p>
 <p>好的, 现在我们有 $W\circlearrowright H/K(\mathcal{B})$ 了. 但我们自然有一个 $H(Z)\circlearrowright H_\ast (\mathcal{B})$ given by $Z\circ \mathcal{B}=\mathcal{B}$. 根据 3.6.17, 这两个在 $H$ 上的作用实际上是一样的. 当然在 $K$-theory 上并不显然: 有</p>
 <p>Lemma 7.3.32. $W\circlearrowright K^G(\mathcal{B})$ arising from conv. with $K^G(Z)$ expressed in terms of the std. $W$-action $K^G(\mathcal{B})$ by</p>
-<p>[w:R\mapsto (-1)^{l(w)}e^{-\rho}\cdot w(e^\rho R).]</p>
+<p>\[w:R\mapsto (-1)^{l(w)}e^{-\rho}\cdot w(e^\rho R).\]</p>
 <p>其实就是那个 dot action.</p>
 <p>Proof:</p>
 <!-- https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d -->
 <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNixbMiwwLCJLXkcoVF4qXFxjYWx7Qn0pIl0sWzIsMiwiS15HKFReKlxcY2Fse0J9KSJdLFs0LDAsIkteRyhcXGNhbHtCfSkiXSxbNCwyLCJLXkcoXFxjYWx7Qn0pIl0sWzAsMCwiS15HKFxcY2Fse0J9KSJdLFswLDIsIkteRyhcXGNhbHtCfSkiXSxbNCwwLCJpXyoiXSxbMCwyLCJpXioiXSxbNSwxLCJpXyoiXSxbMSwzLCJpXioiXSxbNCw1LCJ3XFxjaXJjIiwxXSxbMCwxLCJ3IFxcY2lyYyIsMV0sWzIsMywidyIsMV1d&embed" width="813" height="432" style="border-radius: 8px; border: none;"></iframe>
 <p>由 5.2.23 给出左半边, 由 7.3.31(ii) 给出右半边. 从而我们得到了</p>
-<p>[i^<em>i_</em>(w\circ R)=w(i^*i_*R).]</p>
+<p>\[i^<em>i_</em>(w\circ R)=w(i^*i_*R).\]</p>
 <p>而在 5.4.9 我们证明了 $i^\ast i_\ast $ 是 given by tensor prod. with $\lambda(T^\ast \mathcal{B})$. 由于我们可以 view $T^\ast \mathcal{B}\simeq G\times_B\mathfrak{n}$,</p>
-<p>[\lambda(T^*\mathcal{B})=e^{-\rho}\cdot \Delta.]</p>
+<p>\[\lambda(T^*\mathcal{B})=e^{-\rho}\cdot \Delta.\]</p>
 <p>有</p>
-<p>[e^{-\rho}\cdot \Delta \cdot (w\circ R)=(-1)^{l(w)}\cdot \Delta\cdot w(e^{-\rho}\cdot R).]</p>
+<p>\[e^{-\rho}\cdot \Delta \cdot (w\circ R)=(-1)^{l(w)}\cdot \Delta\cdot w(e^{-\rho}\cdot R).\]</p>
 <p>由于 $R(\mathbb{T})$ integral domain. 我们最终得到</p>
-<p>[w\circ R=(-1)^{l(w)}\cdot e^\rho\cdot w( e^{-\rho}R).]</p>
+<p>\[w\circ R=(-1)^{l(w)}\cdot e^\rho\cdot w( e^{-\rho}R).\]</p>
 </div>
           
           <section class="comments" aria-label="评论">
