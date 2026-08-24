@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/Explaining_Structure/">
+    <meta property="og:title" content="网站文件夹组织架构说明">
+    <meta property="og:description" content="用中文介绍代数tv独立静态网站的文件夹和构建结构">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/Explaining_Structure/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="website">
+    <title>网站文件夹组织架构说明 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <header class="article-header"><h1>网站文件夹组织架构说明</h1></header>
+          <div class="article-content"><h1>网站文件夹组织架构说明</h1>
+<p>这是 <code>algebratv.com</code> 当前独立静态站点的结构说明。网站已经不再依赖 <code>hugo.exe</code> 或 Hugo Stack，页面由 Node.js 构建脚本生成，浏览器最终读取的是 <code>public/</code> 中的 HTML、CSS、JavaScript、图片和 XML 文件。</p>
+<h2>根目录</h2>
+<pre><code class="language-text">new_algebratv/
+├── content/       原始文章和普通页面，使用 Markdown 保存
+├── assets/        项目资源，例如自定义 CSS、图片和图标
+├── static/        不需要处理、直接复制到发布目录的静态资源
+├── src/           独立网站的模板、样式和浏览器脚本
+├── build/         Node.js 构建器和自动验收脚本
+├── public/        最终生成的网站文件
+├── docs/          重建记录、兼容基线和回归检查表
+├── package.json   Node.js 项目配置和构建命令
+└── .github/       GitHub Actions 独立构建与部署配置
+</code></pre>
+<h2><code>content/</code></h2>
+<p><code>content/</code> 是网站的内容源文件，不是最终页面。文章位于 <code>content/post/</code>，每篇文章通常使用一个 page bundle 目录：</p>
+<pre><code class="language-text">content/post/某篇文章/
+├── index.md       文章正文和 front matter
+└── image.jpg      文章专用图片或其他资源
+</code></pre>
+<p>普通页面位于 <code>content/page/</code>，例如关于页面、链接页面、搜索页面和本说明页面。文章中的标题、日期、分类、标签、系列、图片、alias 和 draft 等信息来自 Markdown 文件的 front matter。</p>
+<h2><code>src/</code></h2>
+<p><code>src/</code> 是独立网站的表现层：</p>
+<ul>
+<li><code>src/templates/</code>：文章页、首页、列表页、搜索页和普通页面的 HTML 模板。</li>
+<li><code>src/styles/site.css</code>：独立网站的全部主要样式，包括响应式布局、文章卡片、正文、分页和评论区样式。</li>
+<li><code>src/scripts/search.js</code>：浏览器端搜索脚本，读取静态搜索索引并显示结果。</li>
+</ul>
+<p>这些文件不依赖 Hugo 的模板语法。构建器使用简单的占位符把数据填入 HTML 模板。</p>
+<h2><code>build/</code></h2>
+<p><code>build/build.mjs</code> 是网站构建入口。它会：</p>
+<ol>
+<li>读取文章和普通页面的 Markdown 文件。</li>
+<li>解析 TOML 或 YAML front matter。</li>
+<li>将 Markdown 转换为 HTML。</li>
+<li>转换现有 shortcode、数学公式和嵌入内容。</li>
+<li>生成文章、首页、分类、标签、系列、归档、搜索、RSS 和 sitemap 页面。</li>
+<li>复制 page bundle 中的图片和其他资源。</li>
+<li>生成 alias 跳转页面和 Giscus 评论脚本。</li>
+</ol>
+<p><code>build/check.mjs</code> 是独立验收脚本，用来确认文章数量、搜索索引、RSS、sitemap、Giscus 和 shortcode 输出没有明显缺失。</p>
+<h2><code>public/</code></h2>
+<p><code>public/</code> 是发布目录，不是手工编辑的源代码。运行下面的命令后，它会被重新生成：</p>
+<pre><code class="language-powershell">npm ci
+npm run build
+npm run check
+</code></pre>
+<p>其中包括：</p>
+<ul>
+<li><code>/index.html</code>：首页</li>
+<li><code>/p/.../index.html</code>：文章页</li>
+<li><code>/categories/</code>、<code>/tags/</code>、<code>/series/</code>：分类索引</li>
+<li><code>/archives/</code>：归档页</li>
+<li><code>/search/</code>：搜索页面和 JSON 索引</li>
+<li><code>/index.xml</code>：RSS</li>
+<li><code>/sitemap.xml</code>：站点地图</li>
+<li><code>/styles/</code>、<code>/scripts/</code>：浏览器资源</li>
+</ul>
+<h2><code>assets/</code> 和 <code>static/</code></h2>
+<p><code>assets/</code> 保存需要由项目代码引用或处理的资源；<code>static/</code> 保存需要直接发布的资源。文章 page bundle 中的图片则会由构建器复制到对应的文章 URL 目录。</p>
+<h2><code>.github/</code></h2>
+<p><code>.github/workflows/static_deploy.yaml</code> 是独立部署流程。它使用 Node.js 24，依次执行 <code>npm ci</code>、<code>npm run build</code> 和 <code>npm run check</code>，最后发布 <code>public/</code>。它不安装、不调用 Hugo，也不依赖 Stack 主题。</p>
+<h2><code>docs/</code></h2>
+<p><code>docs/</code> 保存迁移过程中的工程记录：</p>
+<ul>
+<li><code>rebuild-baseline.md</code>：旧站兼容基线。</li>
+<li><code>regression-checklist.md</code>：每次改版后的回归检查表。</li>
+<li><code>template-overrides.md</code>：旧 Hugo/Stack 模板覆盖关系记录。</li>
+<li><code>final-hugo-removal-checklist.md</code>：最终移除 Hugo 的门槛记录。</li>
+<li><code>Explaining_Structure</code>：当前独立网站结构说明。</li>
+</ul>
+<h2>旧 Hugo 文件的状态</h2>
+<p>最终独立化步骤已经删除 <code>hugo.yaml</code>、<code>layouts/</code>、<code>themes/</code>、<code>archetypes/</code>、<code>resources/</code>、<code>.hugo_build.lock</code> 和旧 Hugo 部署脚本。<code>content/</code> 中仍保留原有 Markdown 和 front matter，因为它们现在是独立 Node 构建器读取的内容数据；保留这些内容格式不等于运行时依赖 Hugo。</p>
+<h2>本文档的提出者与 AI 工具</h2>
+<p>这份 <code>Explaining_Structure</code> 文档是由本次对话中的当前用户指出并要求生成的。这里不虚构或推断用户的真实姓名或账号信息。</p>
+<p>本网站的独立重建、代码分析和文档整理使用了 <strong>GitHub Copilot</strong> 这一 AI 编程工具完成；具体实现仍由项目中的 Node.js、Markdown 解析器、HTML、CSS 和 JavaScript 代码负责运行。</p>
+</div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

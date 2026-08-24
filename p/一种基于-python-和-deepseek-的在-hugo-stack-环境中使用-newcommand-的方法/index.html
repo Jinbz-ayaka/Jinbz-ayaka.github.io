@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="自动化 CG 系列更新纲领的一项工具">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/一种基于-python-和-deepseek-的在-hugo-stack-环境中使用-newcommand-的方法/">
+    <meta property="og:title" content="一种基于 Python 和 deepseek 的在 hugo-stack 环境中使用 newcommand 的方法">
+    <meta property="og:description" content="自动化 CG 系列更新纲领的一项工具">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/一种基于-python-和-deepseek-的在-hugo-stack-环境中使用-newcommand-的方法/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/一种基于-python-和-deepseek-的在-hugo-stack-环境中使用-newcommand-的方法/bdfnn.jpg">
+    <title>一种基于 Python 和 deepseek 的在 hugo-stack 环境中使用 newcommand 的方法 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/一种基于-python-和-deepseek-的在-hugo-stack-环境中使用-newcommand-的方法/bdfnn.jpg" alt="一种基于 Python 和 deepseek 的在 hugo-stack 环境中使用 newcommand 的方法">
+          <header class="article-header">
+            <a class="category" href="/categories/%E6%8E%A2%E7%B4%A2/">探索</a>
+            <h1>一种基于 Python 和 deepseek 的在 hugo-stack 环境中使用 newcommand 的方法</h1>
+            <p class="description">自动化 CG 系列更新纲领的一项工具</p>
+            <time datetime="2025年7月5日">2025年7月5日</time>
+          </header>
+          <div class="article-content"><p>我可能并不是讨厌压抑, 只是讨厌有点缺少那种和谐与美感的纯擦边()</p>
+<p>培养良好审美习惯还是很重要的, 比方说这个图就给人一种很和谐的感觉</p>
+<hr>
+<p>好, 言归正传</p>
+<p>代数tv在先前学期更新 CG 系列以及一系列数学中, 并不会直接在 hugo server 中输入, 而是先在自己已有模板的 vscode 中, 使用 LaTeX 编译为 .pdf 后, 将 Tex 源码复制到 .md 中, 再参考本地 hugo server 进行进一步修改.</p>
+<p>除去复制模板, 修改标题等工作, 修改的过程一般分为三步:</p>
+<ol>
+<li>
+<p>寻找在哪些部分使用了先前 Latex 模板中定义的 \newcommand, 并删掉.</p>
+</li>
+<li>
+<p>将行内的部分下划线和 $*$ 修改掉, 防止被 markdown 转义为斜体.</p>
+</li>
+<li>
+<p>将使用的 tikz-q.uiver 使用 q.uiver 转化成 markdown.</p>
+</li>
+</ol>
+<p>而这个过程中, 第一步通常要耗费大量时间, 第二步通常也要花费一定时间, 第三步则相对简单.</p>
+<p>而目测来看的话, 自动化部分难度则是第一步小于第二步, 又小于第三步.</p>
+<p>因此代数tv做了这个 python 脚本, 用来处理第一步.</p>
+<hr>
+<p>脚本被放在了 <a href="https://github.com/Jinbz-ayaka/.txt-newcommand">这里</a>, 欢迎各位指点一二.</p>
+<p>如果暑假闲的话, 争取把整个流程都自动化了.</p>
+<p>感觉还是有点意思的. 虽然八月也有些额外的要学()</p>
+<hr>
+<p>这个脚本其实还没完善, 比方说他只能处理 \newcommand\gg\mathfrak{g} 这种东西, 而对 \newcommand{\ang}[2][]{\langle {#1},{#2}\rangle} 这样相对复杂的定义式束手无策.</p>
+<p>慢慢来吧, 这是v1.</p>
+<hr>
+<p>不错, 终于又开始探索了()</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

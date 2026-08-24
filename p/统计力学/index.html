@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/统计力学/">
+    <meta property="og:title" content="统计力学">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/统计力学/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/统计力学/37.jpg">
+    <title>统计力学 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/统计力学/37.jpg" alt="统计力学">
+          <header class="article-header">
+            <a class="category" href="/categories/%E5%A4%8D%E4%B9%A0/">复习</a>
+            <h1>统计力学</h1>
+            <p class="description"></p>
+            <time datetime="2025年2月1日">2025年2月1日</time>
+          </header>
+          <div class="article-content"><h2>统计力学复习提纲</h2>
+<p>不累了, 上班!</p>
+<p>顺便提一下: 统计力学的日本语是 統計力学 (とうけいりきがく, Toukei Rikigaku). 我在日语II的期中考试中用到了这一单词.</p>
+<h3>开始应该从物理量说起</h3>
+<p>我们会用到的物理量包括: 总能量 $E$, 体积 $V$, 粒子数 $N$, 温度 $T$, 熵 $S$, 压强 $P$. 有时还会用到化学能 $\mu$.</p>
+<p>对于一个理想气体, 其满足条件</p>
+<p>[PV=kNT(=nRT).]</p>
+<p>$k$ 为 Boltzmann 常数</p>
+<p>[k=1.3\times 10^{-23}J/K.]</p>
+<h4>能量</h4>
+<p>对于 $3$ 维理想气体, 我们可以通过对某个面的撞击, 来计算其压强. 不妨设其撞击为完全弹性, 以 $\vec{v}$ 速度撞上墙壁的粒子会以 $\vec{v}-2v_1e_1$ 速度返回. 运用动量定理我们得到其压强</p>
+<p>[P=\frac{m}{V}\int d^3vv^2_1f(v)=\frac{mN}{3V}\langle |\vec{v}|^2\rangle=\frac{2N\langle E\rangle}{3V}.]</p>
+<p>于是我们得到估计</p>
+<p>[E=\frac{3}{2}PV=\frac{3}{2}kNT.]</p>
+<p>Ex: $2$ 维理想气体, $U=PV$.</p>
+<h4>热力学第零、第一定律</h4>
+<p>第零定律说的是: 平衡态是一个等价关系, 如果 $A$ 与 $B,C$ 都处在平衡态, 那么 $B$ 与 $C$ 处在平衡态. 做题的话不太重要.</p>
+<p>第一定律就很有魅力时刻了. 能量守恒定律. 总结为</p>
+<p>[dU=\delta W+\delta Q.]</p>
+<p>这里由于只有 $U$ 是仅与粒子直接相关的物理量, 可以享用 $d$. 外界做功 $W$ 与外界供热 $Q$ 都只能使用 $\delta$.</p>
+<p>考虑绝热过程, $\delta Q=0$. 对于理想气体不需要考虑其化学能变化, $\delta W=-PdV$. 那么</p>
+<p>[\frac{3}{2}kN(VdP+PdV)=\frac{3}{2}kNdT=dU=\delta W=-PdV.]</p>
+<p>于是我们得到 $5PdV+3VdP=0$. 也就是说, 在绝热过程中 $PV^{5/3}$ 是一个守恒量.</p>
+<h4>热容</h4>
+<p>[C_V=\left(\frac{\partial U}{\partial T}\right)_V]</p>
+<p>[C_P=\left(\frac{\partial U}{\partial T}\right)_P]</p>
+<p>也许可以把这个忘了, 接下来会给一个更好的定义.</p>
+<h3>Carnot 热机</h3>
+<p>由 恒温膨胀-绝热膨胀-恒温收缩-绝热收缩 四个准静止过程组成. 我们可以直接计算恒温过程中供给与释放的能量, 算出这个过程中总的能量变化. 总的来说, $\eta=1-\frac{T_C}{T_H}.$</p>
+<p>Ex: 对于 恒压膨胀-绝热膨胀-恒压收缩-绝热收缩 四个准静止过程组成的热机, 其机械效率 $\eta=1-\left(\frac{P_L}{P_H}\right)^{2/5}.$</p>
+<p>Remark: 在两个恒温库 $T_C,T_H$ 给定的条件下, Carnot 热机的效率最高.</p>
+<h4>熵</h4>
+<p>在准静止过程循环中 $\oint \frac{\delta Q}{T}=0$. 因此, 如果去考虑将整个过程拆成微小的准静止循环, 可以定义熵为是一个满足</p>
+<p>[dS=\frac{\delta Q}{T}]</p>
+<p>的函数.</p>
+<p>热力学第二定律: (都不太重要, 看看就行)</p>
+<p>Kelvin 版本: 没有从物质中取出热量并将其完全转化为功的机器.</p>
+<p>Clausius 版本: 没有让热量从较冷的库中流向较热的库的过程.</p>
+<p>Clausius 定理: 对于任意整个过程都可以定义温度的过程,</p>
+<p>[\oint \frac{\delta Q}{T}\leq 0.]</p>
+<p>且取等时循环是准静止 (可逆) 的.</p>
+<h4>Gibbs-Duham 关系</h4>
+<p>[dU=TdS-PdV+\sum_i \mu_idN_i]</p>
+<p>你会发现 $TdS=\delta Q$, $-PdV+\sum_i \mu_idN_i=\delta W$. 我们会希望能量 $U$ 是关于 $S,V,N_i$ 齐次的函数. 因此</p>
+<p>[S\frac{\partial U}{\partial S}+V\frac{\partial U}{\partial V}+\sum_iN_i\frac{\partial U}{\partial N_i}=U.]</p>
+<p>因此</p>
+<p>[U=TS-PV+\sum_i \mu_iN_i.]</p>
+<p>这就是 Gibbs-Duham 方程. 对这个式子求 $d$, 得到</p>
+<p>[SdT-VdP+\sum_i N_id\mu_i=0]</p>
+<p>这就是 Gibbs-Duham 关系. 这些在后面将 $S$ 用系综表示为 $E,N,V$ 或 $E,N,P$ 之后, 可以用来反解 $T,P(V),\mu$.</p>
+<h3>杂项</h3>
+<h4>我觉得可能会给出来公式的东西</h4>
+<ol>
+<li>
+<p>‌Helmholtz 自由能 $A=U-TS=\sum \mu_iN_i-PV$.</p>
+</li>
+<li>
+<p>Gibbs 自由能 $G=A+PV=\sum \mu_iN_i$.</p>
+</li>
+<li>
+<p>焓 $H=U+PV=TS+\sum \mu_iN_i$.</p>
+</li>
+<li>
+<p>泛势能 $\Omega_G=U-TS-\sum \mu_iN_i=-PV$.</p>
+</li>
+</ol>
+<p>那些个 Maxwell's 关系不知道用不用, 我觉得不会考</p>
+<p>好, 现在将熵 $S$ 视为 $N,P,T$ 或 $N,V,T$ 的关系, 我们得到热容公式</p>
+<p>[C_V=T\left(\frac{\partial S}{\partial T}\right)_{V,N},]</p>
+<p>[C_P=T\left(\frac{\partial S}{\partial T}\right)_{P,N}.]</p>
+<p>还有恒温压缩能力(isothermal compressibility) $K_T=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{T}$,</p>
+<p>绝热压缩能力(adiabatic compressibility) $K_S=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{S}$.</p>
+<p>热扩张系数(coefficient of thermal expansion) $\alpha=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{P,N}$.</p>
+<p>我是不是给这部分太多画面了...</p>
+<p>今天白天开始写系综, 统计力学相当重要的一部分()</p>
+<h3>系综</h3>
+<p>统计力学中有一个重要的概念, 叫熵 $S$. 系综是计算熵的一个重要手段.</p>
+<p>Boltzmann 定义的熵, 是</p>
+<p>[S=k\log W,]</p>
+<p>其中 $W$ 是满足某宏观状态的总的微观状态的数量. 可以看出这个数字越大, 熵就越大</p>
+<p>我们可以考虑</p>
+<p>[S=k\log (Vol(\Gamma_{phys})),]</p>
+<p>但是你可以发现在相空间 $d^{nN}qd^{nN}p$, 某个固定的宏观状态的体积 $Vol(\Gamma_{phys})$ 通常是 $0$. 为此, 我们要小心地进行处理.</p>
+<h4>微正则系综</h4>
+<p>大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个<strong>独立系统</strong>. 于是, 存在守恒量 $H$</p>
+<p>考虑 $V\subset \mathbb{R}^3$ 中的理想气体, 微观状态相空间是 $\Gamma=V^N\times \mathbb{R}^{3N}/S_N$.</p>
+<p>由于那些只是粒子置换的不同微观状态是相同的, 我们需要除以 $S_N$.</p>
+<p>于是计算微观状态. 我们应当考虑</p>
+<p>[\Gamma_{phys}=\Gamma_{dE}(E)={\vec{x}\in\Gamma|E\leq H\leq E+dE}.]</p>
+<p>你可能会觉得这个 $dE$ 的选取会很大地影响熵的计算. 但实际上不会. 我将在下面进行解释.</p>
+<p>还有一个问题: 针对 $d^{3N}qd^{3N}p$ 的积分是有量纲的, 我们显然不能对着量纲求对数. 为了修复它, 我们采取的方式是在度量中除以若干拥有量纲 $[q][p]$ 的 $h$, 度量成为</p>
+<p>[d\Gamma=\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}.]</p>
+<p>现在我们便可以对球壳积分.
+[\Omega(E)=\frac{1}{h^{3N}N!}\int_{V^N}d^{3N}q\int_{S^{3N-1}_{2mdE}(2mE)}d^{3N}p.]</p>
+<p>运用球面积公式, 我们有</p>
+<p>[Vol(S^{3N-1}_{2mdE}(2mE))=\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.]</p>
+<p>于是</p>
+<p>[Vol(\Gamma_{phys})=\frac{V^N(2m\pi E)}{h^{3N}N!}\sqrt{\frac{m}{2E}}\frac{2\pi^{3N/2}(2mE)^{3N/2-1/2}}{\Gamma(3N/2)}.]</p>
+<p>[=\frac{V^N(2\pi mE)^{3N/2}dE}{h^{3N}N!\Gamma(3N/2)E}.]</p>
+<p>注意: $\sqrt{\frac{m}{2E}}$ 项是由 $2mE\leq \sum p^2\leq 2mE+2mdE$, 大致来说 $dE=\sqrt{1/2mE}d\hat{n}$.</p>
+<p>于是, 利用估计</p>
+<p>[N&gt;&gt;|\log\frac{dE}{E}|, \log N!\simeq N\log N-N,]</p>
+<p>我们得到</p>
+<p>[S=k\log(Vol(\Gamma_{phys}))\to kN\log\left(\frac{V(4\pi mE)^{3/2}}{3^{3/2}N^{5/2}h^3}\right)+\frac{5}{2}kN]</p>
+<p>Remark: Ronno 同志在这里至少犯了两个笔误. 一个是估计 $N&gt;&gt;|\log\frac{dE}{E}|$ 时将绝对值打在了里面, 另一个是熵的结果中 $\log$ 内部分 $N$ 的次数应当是 $5/2$ 而非 $1/2$.</p>
+<p>Remark: 如果在计算积分的时候采用度量 $\frac{d^{3N}qd^{3N}p}{h^{3N}}$ 而非 $\frac{d^{3N}qd^{3N}p}{h^{3N}|S_N|}$, 会引发 Gibbs' paradox. 具体说来, 当 $V,N,E$ 都扩展为两倍时, 熵 $S$ 不是恰好扩展为两倍.</p>
+<p>还记得 $E=\frac{3}{2}kNT$ 吗? 这要利用 $PV=kNT$, 它是一个经验公式. 而现在利用</p>
+<p>[dU=TdS-PdV+\sum_i \mu_idN_i]</p>
+<p>我们可以求出 $T$,</p>
+<p>[T=\left(\frac{\partial S}{\partial E}\right)^{-1}_{N,V}=\frac{2E}{3kN}.]</p>
+<p>同样地, 可以求出压强</p>
+<p>[P=T\left(\frac{\partial S}{\partial V}\right)_{E,N}=\frac{kNT}{V}.]</p>
+<p>化学能</p>
+<p>[\mu=-T\left(\frac{\partial S}{\partial N}\right)_{E,V}=kT\log\left(\frac{V(4\pi mE)^{3/2}}{3^{3/2}N^{5/2}h^3}\right)=kT\log\left[\frac{N\lambda^3}{V}\right].]</p>
+<p>其中 $\lambda=\sqrt{\frac{h^2}{2\pi mkT}}$ 称为热力学波长.</p>
+<h4>正则系综</h4>
+<p>大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个<strong>和外界交换热量的</strong>系统. 于是, 他们应当与外界处在一个平衡态.</p>
+<p>考虑总能量 $E_T$, 对于某系统 $1$ (也许我们要考虑的是某粒子), 其外界系统 $2$, 他处在能量 $E_1$ 的情况总共有 $\tilde{\Omega}_2(E_T-E_1)\tilde{\Omega}_1(E_1)$ 种可能性.</p>
+<p>假设 $E_1&lt; &lt;E_T$, 我们有</p>
+<p>[\tilde{\Omega}_2(E_T-E_1)dE_T=e^{\frac{1}{k}S_2(E_T-E_1)}.]</p>
+<p>而在我们的定义下, $\frac{\partial S_2}{\partial E}=\frac{1}{T}$. 于是我们得到</p>
+<p>[\tilde{\Omega}_2(E_T-E_1)dE_T\approx e^{\frac{1}{k}S_2(E_T)}e^{-\frac{1}{kT}E_1}=C\cdot e^{-\beta E_1}]</p>
+<p>$\beta=\frac{1}{kT}$.</p>
+<p>这大概说的就是, 某粒子在&quot;外势&quot;被给定的条件下, 他能量处在 $E_1$ 的某一块的概率大概拥有权重 $e^{-\beta E_1}$.</p>
+<p>那我们自然地就会考虑去算概率, 第一步就要计算权重和:</p>
+<p>[Z_C:=\int dE_1\tilde{\Omega}_1(E_1)e^{-\beta E_1}.]</p>
+<p>还请注意 $Z_C$ 是无量纲的. 这便是所谓的正则配分函数(partition function).</p>
+<p>那么, 去算能量就相对容易,</p>
+<p>[\langle\epsilon\rangle=\frac{1}{Z_C}\int E_1\tilde{\Omega}_1(E_1)e^{-\beta E_1}dE_1=\frac{1}{Z_C}\frac{\partial Z_C}{\partial \beta}=\frac{\partial \log(Z_C)}{\partial \beta}.]</p>
+<p>总能量,</p>
+<p>[\langle E\rangle=N\langle\epsilon\rangle.]</p>
+<p>熵怎么办?</p>
+<p>实际上, 通过一串复杂的计算, 我们有</p>
+<p>[A=\langle E\rangle-T\langle S\rangle=-kT\log Z_C]</p>
+<p>于是,</p>
+<p>[\langle S\rangle=k\beta\langle E\rangle+k\log Z_C.]</p>
+<p>回到理想气体, 有</p>
+<p>[Z_C=\frac{1}{N!h^{3N}}\int_{V^N}d^{3N}q\int d^{3N}pe^{-\frac{\beta\sum |\vec{p}_i|^2}{2m}}=\frac{1}{N!}(Z_1)^N.]</p>
+<p>而</p>
+<p>[Z_1=\frac{1}{h^3}\int d^3qd^3pe^{-\frac{\beta|\vec{p}|^2}{2m}}=\frac{V}{h^3}\left(\frac{2\pi m}{\beta}\right)^{3/2}.]</p>
+<p>那么</p>
+<p>[\langle E\rangle=\frac{3N}{2\beta}=\frac{3}{2}kNT.]</p>
+<p>[\begin{align*}
+\langle S\rangle&amp;=k\beta\langle E\rangle+k\log Z_C\
+&amp;=\frac{5}{2}kN+kN\log\left(\frac{V}{h^3N}\left(\frac{2\pi m}{\beta}\right)^{3/2}\right)\
+&amp;=\frac{5}{2}kN+kN\log\left(\frac{V}{h^3N}\left(\frac{4\pi m\langle E\rangle}{3N}\right)^{3/2}\right).
+\end{align*}]</p>
+<p>而这个与微正则系综的答案吻合.</p>
+<h4>巨正则系综</h4>
+<p>大致的意思就是, 把我们要处理的好多好多粒子当做一个好多好多个<strong>既可以和外界交换粒子, 又可以和外界交换热量的</strong>系统. 于是, 他们应当与外界处在一个平衡态.</p>
+<p>这一次我们要估计 $\tilde{\Omega}_2(E_T-E_1,N_T-N_1)$. 有同样的讨论, 我们得到</p>
+<p>[\tilde{\Omega}_2(E_T-E_1,N_T-N_1)\approx C\cdot e^{-\beta(E_1-\mu N_1)}.]</p>
+<p>于是, 对于系统 $1$, 他拥有粒子数 $N_1$, 能量 $E_1$ 的概率为</p>
+<p>[\frac{\tilde{\Omega}_1(E_1,N_1)e^{-\beta(E_1-\mu N_1)}}{Z_G}dE_1.]</p>
+<p>于是, 我们定义巨正则配分函数:</p>
+<p>[Z_G=\sum_{N_1=0}^{N_T}e^{\beta\mu N_1}Z_C(T,N_1),Z_C(T,N_1)=\int dE_1\tilde{\Omega}(E_1,N_1)e^{-\beta E_1}.]</p>
+<p>这个求和也可以做 $N_T=\infty$ 估计.</p>
+<p>$z=e^{\beta\mu}$ 称为逸度(fugacity), 描述的是粒子往外逃逸的程度. 顺便一提致人受伤构成犯罪的处有期徒刑3-7年, 致人死亡的7年以上.</p>
+<p>考虑巨势能 $\Omega_G=A-\mu N=-PV$, 同样经过复杂的计算, 我们有</p>
+<p>[\Omega_G=-kT\log Z_G=-(\mu\langle N\rangle-A).]</p>
+<p>于是,
+[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}]</p>
+<p>回到理想气体, 有</p>
+<p>[Z(N,T)=\frac{1}{N!}V^N\int e^{-\beta H}dp^{3N}=\frac{1}{N!}(Z(T))^N.]</p>
+<p>于是,</p>
+<p>[Z_G(N,T)=\sum_{N=0}^\infty z^NZ(N,T)=\sum_{n=0}^{\infty} \frac{z^nZ(T)^n}{n!}=\exp(zZ(T)).]</p>
+<p>[\langle N\rangle=\frac{1}{\beta}\frac{\partial \log(Z_G)}{\partial \mu}=zZ(T)=zV\left(\frac{2\pi m}{h^2}\right)^{3/2}(\beta)^{-3/2}.]</p>
+<p>因此, 我们将 $PV=\Omega_G=-kT\log Z_G=-kTzZ(T)$ 转换为了 $V,T,\mu$ 的函数. 于是, 根据 Maxwell 关系</p>
+<p>[\begin{align*}
+S&amp;=-\left(\frac{\partial \Omega_G}{\partial T}\right)_{V,\mu}\
+&amp;=若干步计算\
+&amp;=\frac{5}{2}k\langle N\rangle-\frac{\mu\langle N\rangle}{T}.
+\end{align*}]</p>
+<p>而我们可以反过来, 用 $T,V,\langle N\rangle$ 来表示 $\mu$:</p>
+<p>[\mu=kT\log \frac{\langle N\rangle h^3}{V(2\pi mkT)^{3/2}}.]</p>
+<p>于是我们最终得到</p>
+<p>[\begin{align*}
+S&amp;=\frac{5}{2}k\langle N\rangle+k\langle N\rangle\log \frac{V(2\pi mkT)^{3/2}}{\langle N\rangle h^3}\
+&amp;=\frac{5}{2}k\langle N\rangle+k\langle N\rangle\log \frac{V(4\pi mkE)^{3/2}}{3^{3/2}\langle N\rangle^{5/2} h^3}
+\end{align*}]</p>
+<p>而这个与微正则系综、正则系综的答案都吻合。</p>
+<p>现在你已经是系综高手了.</p>
+<h3>量子系统</h3>
+<p>有一个该写在系综里的, 不知道写在哪好</p>
+<p>对于一个有 $m$ 个态的系统, 态 $i$ 的概率为 $p_i$, 则其 Shannon 熵</p>
+<p>[S=-\sum_i p_i\log p_i.]</p>
+<p>而对于量子系统, 某密度矩阵正交化后拥有特征值 $\lambda_i$, 则定义其 von Neumann 熵为</p>
+<p>[S=-\sum_i \lambda_i\log \lambda_i.]</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

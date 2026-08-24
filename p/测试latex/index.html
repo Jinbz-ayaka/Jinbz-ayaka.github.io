@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Latex测试">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/测试latex/">
+    <meta property="og:title" content="测试latex">
+    <meta property="og:description" content="Latex测试">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/测试latex/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <title>测试latex | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          
+          <header class="article-header">
+            <a class="category" href="/categories/%E6%8E%A2%E7%B4%A2/">探索</a>
+            <h1>测试latex</h1>
+            <p class="description">Latex测试</p>
+            <time datetime="2025年1月29日">2025年1月29日</time>
+          </header>
+          <div class="article-content"><p>111</p>
+<p>$a+b\neq c.$</p>
+<p>这里居然可以直接套用LaTeX语法? 太方便了</p>
+<p>你说得对, 但是 Jacobi Triple identity 指的是
+[\prod_{m=1}^\infty(1-x^{2m})(1+x^{2m-1}y^2)(1+x^{2m-1}y^{-2})=\sum_{n\in\mathbb{Z}}x^{n^2}y^n,]</p>
+<p>其中 $x,y$ 是复数, 且 $|x|&lt;1,y\neq 0$. 而且</p>
+<p>[这篇文章这一部分的中文汉字数=67.]</p>
+<p>但是基于 \begin\end 的数学环境还是会出点问题, 以后再说.</p>
+<p>1.28</p>
+<hr>
+<p>在课程微分几何II中我们进行过这样的计算</p>
+<p>$$
+\begin{align*}
+R_{il}&amp;=g^{jk}R_{ijkl}\
+&amp;=\left(\delta_{jk}-\frac{x^kx^j}{K^2}\right)\left(-\frac{\delta_{jl}x^kx^i-\delta_{il}x^kx^j}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{\delta_{kj}\delta_{il}-\delta_{ki}\delta_{jl}}{K^2}+\frac{\delta_{kj}x^ix^l-\delta_{ki}x^jx^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\right)\
+&amp;=\frac{-x^ix^l+\delta_{il}\sum_{i=1}^{n}(x^t)^2}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}+\frac{(n-1)\delta_{il}}{K^2}+\frac{(n-1)x^ix^l}{K^2(K^2-\sum_{t=1}^{n}(x^t)^2)}\
+&amp;\quad,,-\frac{+\delta_{il}(\sum_{t=1}^{n}(x^t)^2)^2-2x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{x^ix^l(\sum_{t=1}^{n}(x^t)^2)}{K^4(K^2-\sum_{t=1}^{n}(x^t)^2)}-\frac{\delta_{il}\sum_{t=1}^{n}(x^t)^2-x^ix^l}{K^2}\
+&amp;=\frac{n-1}{K^2}\left(\delta_{il}+\frac{x^ix^l}{K^2-\sum_{t=1}^{n}}\right)=\frac{n-1}{K^2}g_{il}
+\end{align*}
+$$</p>
+<p>在课程理论力学中, 我们知道 Euler-Lagrange 方程</p>
+<p>[\frac{\partial \mathscr{L}}{\partial q_i}=\frac{d}{dt}\left(\frac{\partial \mathscr{L}}{\partial \dot{q}_i}\right)=\frac{d}{dt}p_i]</p>
+<p>等价于 Hamilton's 方程组</p>
+<p>[\begin{cases}
+\dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\
+\dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}]</p>
+<p>而 Toda 方程可以被写作</p>
+<p>[\frac{dL}{dt}=[A,L],]</p>
+<p>其中 $a_i=\frac{1}{2}\exp(\frac{q_i-q_{i+1}}{2}), b=-\frac{1}{2}p_i$,</p>
+<p>[L=\begin{pmatrix}
+b_1&amp;a_1&amp;0&amp;\cdots&amp;\cdots&amp;0\
+a_1&amp;b_2&amp;a_2&amp;0&amp;\cdots&amp;0\
+0&amp;a_2&amp;b_3&amp;a_3&amp;\cdots&amp;0\
+\vdots&amp;&amp;&amp;&amp;&amp;\vdots\
+0&amp;&amp;&amp;a_{n-2}&amp;b_{n-1}&amp;a_{n-1}\
+0&amp;&amp;&amp;&amp;a_{n-1}&amp;b_n
+\end{pmatrix},A=\begin{pmatrix}
+0&amp;a_1&amp;0&amp;\cdots&amp;\cdots&amp;0\
+-a_1&amp;0&amp;a_2&amp;0&amp;\cdots&amp;0\
+0&amp;-a_2&amp;0&amp;a_3&amp;\cdots&amp;0\
+0&amp;&amp;&amp;&amp;&amp;\vdots\
+0&amp;&amp;&amp;-a_{n-2}&amp;0&amp;a_{n-1}\
+0&amp;&amp;&amp;&amp;-a_{n-1}&amp;0
+\end{pmatrix}]</p>
+<p>哎, tikz</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="owo">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/cg饲养日记-其二十五-p276-280/">
+    <meta property="og:title" content="CG饲养日记-其二十五 P276-280">
+    <meta property="og:description" content="owo">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其二十五-p276-280/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其二十五-p276-280/ayakaumb.jpg">
+    <title>CG饲养日记-其二十五 P276-280 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/cg饲养日记-其二十五-p276-280/ayakaumb.jpg" alt="CG饲养日记-其二十五 P276-280">
+          <header class="article-header">
+            <a class="category" href="/categories/CG/">CG</a>
+            <h1>CG饲养日记-其二十五 P276-280</h1>
+            <p class="description">owo</p>
+            <time datetime="2025年8月22日">2025年8月22日</time>
+          </header>
+          <div class="article-content"><p>Proj. Bundle thm and Beilinson Thm.</p>
+<p>Setting 是, $V$ complex. v.s., $\mathbb{P}=\mathbb{P}(V)$, proj. space. $\epsilon:\mathbb{P}_{\Delta}\hookrightarrow \mathbb{P}\times \mathbb{P}$.</p>
+<p>Beilinson resol. 是说, $\epsilon_\ast \mathcal{O}_{\mathbb{P}_{\Delta}}$ 拥有一个 canonical resol. by locally free sheaves. 这是一个很代数几何的结论.</p>
+<p>Construction: 考虑 $\mathcal{O}_\mathbb{P}(-1)$ tautological line bundle on $\mathbb{P}$ with fibre on $\bar{v}$ is $\mathbb{C}\cdot v$. 考虑 $\mathcal{O}_\mathbb{P}(1)$ dual bundle. 对任意 $\check{v}\in V^\ast $ 我们给出了一个 global section of $\mathcal{O}_{\mathbb{P}}(1)$. 于是我们有 canonical isom.</p>
+<p>[V^*\simeq H^0(\mathbb{P},\mathcal{O}_\mathbb{P}(1)).]</p>
+<p>于是, 我们可以将 $\operatorname{id}\in V^\ast \otimes V=\operatorname{Hom}(V,V)$ 看做 $V\otimes \mathcal{O}_{\mathbb{P}}(1)$ 的一个 global section. 而, $\mathcal{O}_{\mathbb{P}}\to V\otimes \mathcal{O}_{\mathbb{P}}(1)$ given by $f\mapsto f\cdot \operatorname{id}$ 给出了一个在 $\bar{v}$ 处的 coker 是与 $v$ 正交的所有向量的一个 morph. 也就是 s.e.s.</p>
+<p>[0\to \mathcal{O}<em>{\mathbb{P}}\to V\otimes \mathcal{O}</em>{\mathbb{P}}(1)\to \mathcal{T}\to 0.]</p>
+<p>而, by tensor 一个 $\mathcal{O}_{\mathbb{P}}(-1)$ 给出了 Euler seq.</p>
+<p>[0\to \mathcal{O}<em>{\mathbb{P}}(-1)\to V\otimes \mathcal{O}</em>{\mathbb{P}}\to \mathcal{Q}\to 0.]</p>
+<p>with $\mathcal{Q}=\mathcal{T}\otimes \mathcal{O}_{\mathbb{P}}(-1)$.</p>
+<p>而上面那个则给出一个 canonical isom.</p>
+<p>[H^0(\mathbb{P},\mathcal{Q})=H^0(\mathbb{P},V\otimes \mathcal{O}_{\mathbb{P}})=V.]</p>
+<p>现在, 对于</p>
+<p>[\mathbb{P}\overset{\operatorname{pr}_1}{\leftarrow} \mathbb{P}\times \mathbb{P}\overset{\operatorname{pr}_2}{\rightarrow}\mathbb{P}.]</p>
+<p>对于 $A,B$ bundles over $\mathbb{P}$, 记 $A\boxtimes B=pr_1^\ast A\otimes pr_2^\ast B$. 根据 Kunneth formula 我们有</p>
+<p>[H^0(\mathbb{P}\times \mathbb{P},\mathcal{O}<em>{\mathbb{P}}(1)\boxtimes \mathcal{Q})\simeq H^0(\mathbb{P},\mathcal{O}</em>{\mathbb{P}}(1))\otimes H^0(\mathbb{P},\mathcal{Q})\simeq V^*\otimes V\simeq \operatorname{Hom}_\mathbb{C}(V,V).]</p>
+<p>我们希望考虑 $s$ global section of $\mathcal{O}_\mathbb{P}(1)\boxtimes \mathcal{Q}$ corresp. to identity. 我们接下来要刻画这个 $s$: 考虑</p>
+<p>[\mathcal{O}<em>\mathbb{P}(1)\boxtimes \mathcal{Q}=\mathcal{H}om(pr_1^*\mathcal{O}</em>{\mathbb{P}}(-1),pr_2^*\mathcal{Q}).]</p>
+<p>那么考虑 global section</p>
+<p>[\hat{s}:pr^<em><em>1\mathcal{O}</em>\mathbb{P}(-1)\to pr_2^</em>\mathcal{Q}.]</p>
+<p>对于 $\bar{v},\bar{w}$, 在我们的定义下</p>
+<p>[\mathcal{O}<em>{\mathbb{P}}(-1)|</em>{\bar{v}}=\mathbb{C}\cdot v,\mathcal{Q}|_{\bar{w}}=V/\mathbb{C}\cdot w.]</p>
+<p>给出这样的 $\check{s}$ 就是说</p>
+<p>[\mathbb{C}\cdot v\to V/\mathbb{C}\cdot w,]</p>
+<p>[c\cdot v\mapsto c\cdot v\pmod{\mathbb{C}\cdot w}.]</p>
+<p>于是, $\check{s}$ vanishes iff $v,w$ linearly indep., 也就是说, 其 zero locus 为 $\Delta\subset  \mathbb{P}\times \mathbb{P}$.</p>
+<p>而, 与 $s\in \mathcal{O}_{\mathbb{P}}(1)\boxtimes \mathcal{Q}$ 的 contraction 给出了 sheaf morph.</p>
+<p>[i_s:\wedge^k(\mathcal{O}<em>{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*)\to\wedge^{k-1}(\mathcal{O}</em>{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*).]</p>
+<p>于是, 我们得到了 free resol. of $\mathcal{O}_\Delta=\mathcal{O}_{\mathbb{P}\times \mathbb{P}}/\mathcal{I}_{\Delta}$:</p>
+<p>[\wedge^n(\mathcal{O}<em>{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^*)\to\wedge^{n-1}(\mathcal{O}</em>{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^<em>)\to \cdots\to \mathcal{O}_{\mathbb{P}}(-1)\boxtimes \mathcal{Q}^</em>\to \mathcal{O}<em>{\mathbb{P}\times \mathbb{P}}\twoheadrightarrow \mathcal{O}</em>{\Delta}.]</p>
+<p>而, $\mathcal{Q}^\ast \simeq T^\ast \otimes \mathcal{O}_{\mathbb{P}}(1)=\Omega_\mathbb{P}^1(1)$. 我们记 $\mathcal{F}(k)=\mathcal{F}\otimes \mathcal{O}_\mathbb{P}(k)$. 有 $\wedge^k\mathcal{Q}^\ast =\Omega_{\mathbb{P}}^k(k)$. 于是我们得到 resol.</p>
+<p>[0\to \mathcal{O}<em>{\mathbb{P}}(-n)\boxtimes \Omega</em>{\mathbb{P}}^n(n)\to \mathcal{O}<em>{\mathbb{P}}(-n+1)\boxtimes \Omega</em>{\mathbb{P}}^{n-1}(n-1)\to \cdots\to \mathcal{O}<em>{\mathbb{P}}(-1)\boxtimes \Omega</em>{\mathbb{P}}^1(1)\to \mathcal{O}<em>{\mathbb{P}\times \mathbb{P}}\to \mathcal{O}</em>{\Delta}\to 0.]</p>
+<p>这便给出了这样的 resol.</p>
+<p>特别地, 由于这样给出了 $[\mathcal{O}_\Delta]$ 的一个 $K^G(\mathbb{P})\otimes K^G(\mathbb{P})$ 的一个 interpretation, 我们有</p>
+<p>Cor 5.7.5. The Kunneth theorem holds for $X=\mathbb{P}^n$.</p>
+<p>回顾一下 proj. bundle thm, 他是说对于 $E\to X$ $G$-equiv. $n$-dim. alg. v.b. on $G$-var. $X$, let $\pi:\mathbb{P}(E)\to X$ associated proj. bundel. 有 $K^G_j(\mathbb{P}(E))$ freely gen. over $K^G_j(X)$ by $[\mathcal{O}(k)]$. 我们现在要给出他的证明. 为此, 先考虑</p>
+<!-- https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiYntQfVxcdGltZXNfWCBcXG1hdGhiYntQfSJdLFsyLDAsIlxcbWF0aGJie1B9Il0sWzEsMSwiXFxtYXRoYmJ7UH1fXFxEZWx0YSJdLFswLDIsIlxcbWF0aGJie1B9Il0sWzIsMiwiWCJdLFszLDQsIlxccGkiLDJdLFsxLDQsIlxccGkiXSxbMCwzLCJcXG9wZXJhdG9ybmFtZXtwcn1fMSIsMl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7cHJ9XzIiXSxbMSwyLCJwXzIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDIsInBfMSIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMCwiXFxlcHNpbG9uIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiw0LCJcXHBpX1xcRGVsdGEiXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiYntQfVxcdGltZXNfWCBcXG1hdGhiYntQfSJdLFsyLDAsIlxcbWF0aGJie1B9Il0sWzEsMSwiXFxtYXRoYmJ7UH1fXFxEZWx0YSJdLFswLDIsIlxcbWF0aGJie1B9Il0sWzIsMiwiWCJdLFszLDQsIlxccGkiLDJdLFsxLDQsIlxccGkiXSxbMCwzLCJcXG9wZXJhdG9ybmFtZXtwcn1fMSIsMl0sWzAsMSwiXFxvcGVyYXRvcm5hbWV7cHJ9XzIiXSxbMSwyLCJwXzIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDIsInBfMSIsMix7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMCwiXFxlcHNpbG9uIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiw0LCJcXHBpX1xcRGVsdGEiXV0=&embed" width="466" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>边界的四个映射构成 Cartesian diag. 我们有 relative ver. Euler seq.</p>
+<p>[0\to \mathcal{O}<em>{\mathbb{P}/X}(-1)\to \pi^*V\to \mathcal{Q}</em>{\mathbb{P}/X}\to 0.]</p>
+<p>于是其给出了 canonical resol. of $\epsilon_\ast \mathcal{O}_{\mathbb{P}_\Delta}$:</p>
+<p>[0\to \mathcal{O}<em>{\mathbb{P}/X}(-n)\boxtimes \Omega</em>{\mathbb{P}/X}^n(n)\to \mathcal{O}<em>{\mathbb{P}/X}(-n+1)\boxtimes \Omega</em>{\mathbb{P}/X}^{n-1}(n-1)\to \cdots \to \mathcal{O}<em>{\mathbb{P}^n\times_X\mathbb{P}^n}\to \epsilon</em>*\mathcal{O}<em>{\mathbb{P}</em>\Delta}\to 0.]</p>
+<p>现在, 考虑 $\mathbb{P}\times_X\mathbb{P}$ 上 $\mathcal{K}$ 拥有 finite locally free $G$-equiv. resol. 定义</p>
+<p>[K*:K^G(\mathbb{P})\to K^G(\mathbb{P}),\mathcal{F}\mapsto \mathcal{K}*\mathcal{F},]</p>
+<p>[\mathcal{K}<em>\mathcal{F}=\sum (-1)^i(\operatorname{pr}<em>1)</em></em>\mathcal{T}or_i(\mathcal{K},\operatorname{pr}_2^*\mathcal{F}).]</p>
+<p>现在考虑 $\mathcal{K}=\epsilon_\ast \mathcal{O}_{\mathbb{P}_\Delta}$, 有</p>
+<p>[\sum (-1)^i\mathcal{T}or_i(\epsilon_<em>\mathcal{O}<em>{\mathbb{P}</em>\Delta},\operatorname{pr}_2^</em>\mathcal{F})=\epsilon_<em>\mathcal{O}<em>{\mathbb{P}</em>\Delta}\otimes \operatorname{pr}_1^</em>\mathcal{F}=\epsilon_<em>(\mathcal{O}<em>{\mathbb{P}</em>\Delta}\otimes \epsilon^</em> \operatorname{pr}<em>1^*\mathcal{F})=\epsilon</em><em>\epsilon^</em>\operatorname{pr}<em>2^*\mathcal{F}=\epsilon</em><em>p_2^</em>\mathcal{F}.]</p>
+<p>于是,</p>
+<p>[(\epsilon_<em>\mathcal{O}<em>{\mathbb{P}</em>\Delta})</em>\mathcal{F}=(\operatorname{pr}<em>1)</em>*\epsilon_<em>p_2^</em>\mathcal{F}=(p_1)_<em>p_2^</em>\mathcal{F}=\mathcal{F}.]</p>
+<p>但,</p>
+<p>[(\epsilon_<em>\mathcal{O}<em>{\mathbb{P}</em>\Delta})</em>\mathcal{F}=(\mathcal{O}<em>{\mathbb{P}\times_X\mathbb{P}}-\mathcal{O}</em>{\mathbb{P}/X}(-1)\boxtimes \Omega^1_{\mathbb{P}/X}(1)+\cdots)<em>\mathcal{F}=\cdots=\sum(-1)^i\mathcal{O}_{\mathbb{P}/X}(-i)\otimes \pi^</em>\pi_*(\Omega^i_{\mathbb{P}/X}(i)\otimes \mathcal{F}).]</p>
+<p>于是,</p>
+<p>[\mathcal{F}=\sum(-1)^i\mathcal{O}<em>{\mathbb{P}/X}(-i)\otimes \pi^*\pi</em>*(\Omega^i_{\mathbb{P}/X}(i)\otimes \mathcal{F}).]</p>
+<p>tensor by $\mathcal{O}_{\mathbb{P}/X}(n)$, set $\mathcal{E}=\mathcal{F}(n)$, 我们得到</p>
+<p>[\mathcal{E}=\sum(-1)^i\mathcal{O}<em>{\mathbb{P}/X}(n-i)\otimes\pi^*\pi</em><em>(\Omega^i_{\mathbb{P}/X}(i)\otimes \mathcal{F})=\sum(-1)^i\mathcal{O}_{\mathbb{P}/X}(n-i)\otimes\pi^</em>\pi_*(\Omega^i_{\mathbb{P}/X}(i-n)\otimes \mathcal{E}).]</p>
+<p>于是 $K_0^G$ 的 surj. 部分得证. 而由于</p>
+<p>[(\epsilon_<em>\mathcal{O}<em>{\mathbb{P}</em>\Delta})</em>\mathcal{F}=(\operatorname{pr}<em>1)</em>*\epsilon_<em>p_2^</em>\mathcal{F}=(p_1)_<em>p_2^</em>\mathcal{F}=\mathcal{F},]</p>
+<p>每一个 sheaf on $\mathbb{P}$ 都 quasi-isom. to 一个 complex of sheaves with all terms being direct sum of copies of $\mathcal{O}_{\mathbb{P}/X}(i)$, 于是 $K^G_i,i\geq 1$ 的 proj. bundle thm 可以通过 Quillen 的 &quot;Resolution Thm&quot; 给出. (Ref: Quillen, D., Higher algebraic $K$-theory I, Higher $K$-theories.) 是个纯代数的部分().</p>
+<hr>
+<p>阿蕾奇诺生日快乐!</p>
+<p><img src="Alqnn.png" alt="Arlecchino"></p>
+<p>(快给我画成枫原万叶了kk)</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

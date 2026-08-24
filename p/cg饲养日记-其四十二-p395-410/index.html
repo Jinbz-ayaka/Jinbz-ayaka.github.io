@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="好-----------------------------------困">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/cg饲养日记-其四十二-p395-410/">
+    <meta property="og:title" content="CG饲养日记-其四十二 P395-410">
+    <meta property="og:description" content="好-----------------------------------困">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其四十二-p395-410/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <title>CG饲养日记-其四十二 P395-410 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          
+          <header class="article-header">
+            <a class="category" href="/categories/CG/">CG</a>
+            <h1>CG饲养日记-其四十二 P395-410</h1>
+            <p class="description">好-----------------------------------困</p>
+            <time datetime="2026年1月15日">2026年1月15日</time>
+          </header>
+          <div class="article-content"><p>其实我很想把这一章跳了orz</p>
+<p>剩下一整章都是证明 main thm. 就是 7.2.5. 中的 alg. homo. $\Theta:\mathbb{H}\to K^A(Z)$. 在之前那一章中, 我们通过对生成元来定义 $\Theta$. 那么我们现在又要这么做了. 注意 $\mathbb{H}$ 拥有一组生成元</p>
+<p>[S={e^\lambda|\lambda\in P}\cup {T_s|s\in S}\subset \mathbb{H}.]</p>
+<p>考虑 $\pi_\Delta:Z_\Delta\simeq T^\ast _{\mathcal{B}_\Delta}(\mathcal{B}\times\mathcal{B})\to cal{B}_\Delta$. 有 line bundle $L_\lambda$ 长在 $\mathcal{B}$ 上. 考虑 $\mathcal{O}_\lambda=\pi_\Delta^\ast L_\lambda$. 于是, 我们可以 view $\mathcal{O}_\lambda$ as $G\times \mathbb{C}^\ast $-equiv. sheaf on $Z$ supported on $Z_\Delta\subset Z$.</p>
+<p>接下来, 对于 $s\in S$, $Y_s\subset \mathcal{B}\times \mathcal{B}$ $G$-orbit. $\bar{Y}_s=Y_s\sqcup \mathcal{B}_\Delta$ smooth. 此外, 其为一个 fibration over $\mathcal{B}$: $\bar{Y}\hookrightarrow \mathcal{B}\times \mathcal{B}\to \mathcal{B}$. 记 $\Omega_{\bar{Y}_s/\mathcal{B}}^1$ relative $1$-form. 考虑 $\pi_s:T^\ast _{\bar{Y}_s}(\mathcal{B}\times\mathcal{B})\to \bar{Y}_s$ smooth irrcomp. of $Z$, set $\mathcal{Q}_s=\pi^\ast _s\Omega_{\bar{Y}/\mathcal{B}}^1$.</p>
+<p>现在, 我们终于可以定义 $\Theta:S\to K^A(Z)$:</p>
+<p>[e^\lambda\mapsto[\mathcal{O}_{-\lambda}], T_s\mapsto -([q\mathcal{Q}_s]+[\mathcal{O}_0]).]</p>
+<p>他这里大概是怎样延拓过去的呢? $\mathbb{H}$ 和 $K^A(Z)$ 都是 alg. 他考虑了一个中间 $\mathbb{C}$-v.s., 并使 $\mathbb{H},K^A(Z)\circlearrowright M$ faithfully. 且对于</p>
+<p>[\rho_1:\mathbb{H}\to \operatorname{End}<em>\mathbb{C} M,\rho_2: K^A(Z)\to \operatorname{End}</em>\mathbb{C} M,]</p>
+<p>我们有 $\rho_1(u)=\rho_2(\Theta(u))$.</p>
+<p>现在, 我们考虑一个 Casimir-like 的元素 $e=\sum_{w\in W} T_w\in H_W\subset\mathbb{H}$, 有</p>
+<p>Lemma 7.6.2. (1) $T_w\mapsto q^{l(w)}$ extends by $\mathbb{Z}[q,q^{-1}]$-linearity to an alg. homo.</p>
+<p>[\epsilon:H_W\to \mathbb{Z}[q,q^{-1}].]</p>
+<p>(2) For any $a\in H_W$ we have $a\cdot e=\epsilon(a)e=e\cdot a$.</p>
+<p>(3) $\mathbb{H}e$ free $R(T)[q,q^{-1}]$-mod. with generator $e$.</p>
+<p>代数tv这一块.</p>
+<p>于是我们现在有 $\mathbb{H}\circlearrowright\mathbb{H}\cdot e$. 也就是说, $\rho_{\mathbb{H}}:\mathbb{H}\to\operatorname{End}_{\mathbb{Z}[q,q^{-1}]}(\mathbb{H}\cdot e)$.</p>
+<p>而, 我们有</p>
+<p>[K^A(T^*\mathcal{B})\overset{Th,\sim}{\to}K^A(\mathcal{B})\overset{\sim}{\to} R(T)[q,q^{-1}]\overset{\sim}{\to} \mathbb{H}\cdot e.]</p>
+<p>于是, 根据 proj. 与 conv. 我们又能够得到 alg. homo/</p>
+<p>[\rho_{T^<em>\mathcal{B}}:K^A(Z)\to \operatorname{End}_{R(A)}(K^A(T^</em>\mathcal{B})).]</p>
+<p>Claim 7.6.7. $\rho_{T^\ast \mathcal{B}}$ inj.</p>
+<p>Claim 7.6.8. 2 actions coincide on $S$.</p>
+<p>于是 induces 了</p>
+<p>Prop 7.6.9. $\Theta$ extends to $\mathbb{H}\to K^A(Z)$.</p>
+<p>借助与 7.2.2. 证明 (没错, 这个被跳过了) 类似的 argument, 我们有</p>
+<p>Thm 7.6.10. $\Theta:\mathbb{H}\to K^A(Z)$ is a bij.</p>
+<p>Ok. 这个证明还是很有意思的. 爸爸像儿子地来说, BFN 关于 Coulomb Branch 性质的若干证明和他有非常相似的抓痕. 我们将 $W$ 上的 Bruhat order extend 为一个全序.</p>
+<p>考虑 $Z_{\leq w}=\sqcup_{y\leq w}T^\ast _{Y_y}(\mathcal{B}\times \mathcal{B})$. 于是我们可以考虑出一个 Cellular fib. 的结构. 自然地, 有如下引理:</p>
+<p>Lem. 7.6.11. (1) $K^A(Z_{\leq w})\to K^A(Z)$ induced by $Z_{\leq w}\hookrightarrow K^A(Z)$ induced by $Z_{\leq w}\hookrightarrow Z$ inj. and their images form a filt. on $K^A(Z)$ indexed by $W$.</p>
+<p>(2) For any $w\in W$, rest. to $T^\ast _{Y_w}(\mathcal{B}\times \mathcal{B})\hookrightarrow Z_{\leq w}$ induces isom.</p>
+<p>[K^A(Z_{\leq w})/K^A(Z_{&lt; w})\simeq K^A(T^*_{Y_w}(\mathcal{B}\times \mathcal{B})).]</p>
+<p>Moreover, RHS is a free $R(T\times \mathbb{C}^\ast )$-mod. with generator $[\mathcal{O}_{T^\ast _{Y_w}(\mathcal{B}\times \mathcal{B})}]$.</p>
+<p>同样地, 在 $\mathbb{H}$ 上我们也有 filtration $\mathbb{H}_{\leq w}$ spanned by $e^\lambda T_y$ w. $y\leq w$. 我们有</p>
+<p>Prop 7.6.12. (1) $\Theta:\mathbb{H}\to K^A(Z)$ filtration preserving.</p>
+<p>(2) $\Theta: \mathbb{H}_{\leq w}/\mathbb{H}_{&lt;w}\to K^A(Z_{\leq w})/K^A(Z_{&lt;w})\simeq K^A(T^\ast _{Y_w}(\mathcal{B}\times\mathcal{B}))$, $T_w\mapsto c_w\cdot[\mathcal{O}_{T^\ast _{Y_w}(\mathcal{B}\times\mathcal{B})}]$ w. $c_w$ inv.</p>
+<p>具体证明就不写了(). 大致都是 ind. on order. 证明里用到的有一个东西还挺好玩的, 提一嘴: 考虑 $w$ 的 一个 (最短的) 拆分 $w=s_1\cdots s_r$, 我们有</p>
+<p>[\bar{Y}<em>{s_1}\circ \cdots \circ \bar{Y}</em>{s_r}=\bar{Y}_{w},]</p>
+<p>有 Demazure Resol.</p>
+<p>The natural proj.</p>
+<p>[p:\bar{Y}<em>{s_1}\times</em>{\mathcal{B}}\cdots \times_{\mathcal{B}} \bar{Y}<em>{s_r}\twoheadrightarrow \bar{Y}</em>{s_1}\circ\cdots \circ\bar{Y}_{s_r}=\bar{Y}_w.]</p>
+<p>gives a resol. of singularities of $\bar{Y}_{w}$ (bir. and prop.) Moreover, on Zariski open subsets</p>
+<p>[p:Y_{s_1}\times_{\mathcal{B}} \cdots\times_{\mathcal{B}} Y_{s_r}\overset{\sim}{\to} Y_w.]</p>
+<p>现在, 我们回归上面两个 claim.</p>
+<p>7.6.7 的 inj. 证明也就可以仿照 BFN 中处理: 证明在 localization 上 是 id. 更准确地说, 将它 reduced 到 map</p>
+<p>[K^{T\times \mathbb{C}^<em>}(Z_{\mathfrak{b}}^a)_a\to K^{T\times \mathbb{C}^</em>}(Z^a_{\mathfrak{b}}\cap \mathcal{B}^a)_a]</p>
+<p>是一个 isom. 而我们有 $Z^a_{\mathfrak{b}}=Z^a_{\mathfrak{b}}\cap\mathcal{B}^a$.</p>
+<p>处理 7.6.8 我们还有一些路要走. 首先是 compute action $K^G(\mathcal{B}\times \mathcal{B})\otimes K^G(\mathcal{B})\overset{\ast }{\to} K^G(\mathcal{B})$.</p>
+<p>Lemma 7.6.28. The following diag. comm.</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoXFxtYXRoY2Fse0J9XFx0aW1lcyBcXG1hdGhjYWx7Qn0pXFxvdGltZXMgS15HKFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJLXlQoXFxtYXRoY2Fse0J9KVxcb3RpbWVzIEteRyhcXG1hdGhjYWx7Qn0pIl0sWzEsMSwiUihUKSJdLFsxLDAsIkteRyhcXG1hdGhjYWx7Qn0pIl0sWzMsMiwiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwxLCJyZXNcXG90aW1lcyBpZCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMywiKiJdLFsxLDIsInRyIl1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJLXkcoXFxtYXRoY2Fse0J9XFx0aW1lcyBcXG1hdGhjYWx7Qn0pXFxvdGltZXMgS15HKFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJLXlQoXFxtYXRoY2Fse0J9KVxcb3RpbWVzIEteRyhcXG1hdGhjYWx7Qn0pIl0sWzEsMSwiUihUKSJdLFsxLDAsIkteRyhcXG1hdGhjYWx7Qn0pIl0sWzMsMiwiIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwxLCJyZXNcXG90aW1lcyBpZCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMywiKiJdLFsxLDIsInRyIl1d&embed" width="556" height="304" style="border-radius: 8px; border: none;"></iframe>
+<p>利用 Kunneth, 计算即可.</p>
+<p>现在, 我们换一种方式陈述一下 7.6.8. 我们有 comm. diag.</p>
+<!-- https://q.uiver.app/#q=WzAsOCxbMSwwLCJcXG1hdGhiYntIfSJdLFsxLDEsIkteQShaKSJdLFsxLDIsIkteQShcXG1hdGhjYWx7Qn1cXHRpbWVzIFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJTIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RW5kfShcXG1hdGhiYntIfVxcY2RvdCBlKSJdLFsyLDEsIlxcb3BlcmF0b3JuYW1le0VuZH0oS15BKFReKlxcbWF0aGNhbHtCfSkpIl0sWzIsMiwiXFxvcGVyYXRvcm5hbWV7RW5kfShLXkEoXFxtYXRoY2Fse0J9KSkiXSxbMywxLCJcXG9wZXJhdG9ybmFtZXtFbmR9KFIoVClbcSxxXnstMX1dKSJdLFszLDEsIlxcVGhldGEiXSxbMSwyLCJcXGJhcntpfV4qXFxiYXJ7an1fKiJdLFszLDIsIlxcYmFye2l9XipcXGJhcntqfV8qXFxUaGV0YSIsMl0sWzMsMCwiaW5jbCIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsNCwiXFxyaG9fe1xcbWF0aGJie0h9fSJdLFs0LDUsIlxcUGhpIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw2LCJUaCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNSwiXFxyaG9fe1ReKlxcbWF0aGNhbHtCfX0iXSxbMiw2LCJcXHJob197XFxtYXRoY2Fse0J9fSJdLFs1LDcsIlRoXFxjaXJjIFxcYWxwaGEiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs2LDcsIlxcYWxwaGEiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDcsIlxcYmV0YSIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsOCxbMSwwLCJcXG1hdGhiYntIfSJdLFsxLDEsIkteQShaKSJdLFsxLDIsIkteQShcXG1hdGhjYWx7Qn1cXHRpbWVzIFxcbWF0aGNhbHtCfSkiXSxbMCwxLCJTIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RW5kfShcXG1hdGhiYntIfVxcY2RvdCBlKSJdLFsyLDEsIlxcb3BlcmF0b3JuYW1le0VuZH0oS15BKFReKlxcbWF0aGNhbHtCfSkpIl0sWzIsMiwiXFxvcGVyYXRvcm5hbWV7RW5kfShLXkEoXFxtYXRoY2Fse0J9KSkiXSxbMywxLCJcXG9wZXJhdG9ybmFtZXtFbmR9KFIoVClbcSxxXnstMX1dKSJdLFszLDEsIlxcVGhldGEiXSxbMSwyLCJcXGJhcntpfV4qXFxiYXJ7an1fKiJdLFszLDIsIlxcYmFye2l9XipcXGJhcntqfV8qXFxUaGV0YSIsMl0sWzMsMCwiaW5jbCIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsNCwiXFxyaG9fe1xcbWF0aGJie0h9fSJdLFs0LDUsIlxcUGhpIiwwLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw2LCJUaCIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNSwiXFxyaG9fe1ReKlxcbWF0aGNhbHtCfX0iXSxbMiw2LCJcXHJob197XFxtYXRoY2Fse0J9fSJdLFs1LDcsIlRoXFxjaXJjIFxcYWxwaGEiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs2LDcsIlxcYWxwaGEiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDcsIlxcYmV0YSIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d&embed" width="974" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>我们从左到右, 总共是 3 条路: 上/中/下, 我们分别记其为 $\Psi_1,\Psi_2,\Psi_3$.</p>
+<p>于是, 利用 7.6.28, 这允许我们 (通过冗长的 arguments, 包含3页), 给出</p>
+<p>Prop 7.6.29. For any $\mu\in X^\ast (T)$, we have $\Psi_3(e^\mu):e^\lambda\mapsto e^{-\mu}$, 以及 for any $\alpha$ simple, $\Psi_3(T_{s_\alpha})$ 由 thm. 7.2.16 中式子</p>
+<p>[\hat{T}<em>{s</em>\alpha}: e^\lambda\mapsto \frac{e^\lambda-e^{s_\alpha(\lambda)}}{e^\alpha-1}-q\frac{e^\lambda-e_{s_\alpha(\lambda)+\alpha}}{e^\alpha-1}.]</p>
+<p>来给出.</p>
+<p>而, 直接在 $\mathbb{H}$ 中利用生成关系计算得,</p>
+<p>Prop 7.6.29. For any $\mu\in X^\ast (T)$, we have $\Psi_1(e^\mu):e^\lambda\mapsto e^{-\mu}$, 以及 for any $\alpha$ simple, $\Psi_1(T_{s_\alpha})$ 由 thm. 7.2.16 中式子</p>
+<p>[\hat{T}<em>{s</em>\alpha}: e^\lambda\mapsto \frac{e^\lambda-e^{s_\alpha(\lambda)}}{e^\alpha-1}-q\frac{e^\lambda-e_{s_\alpha(\lambda)+\alpha}}{e^\alpha-1}.]</p>
+<p>来给出.</p>
+<p>这最终给出了前文 ''我们有 $\rho_1(u)=\rho_2(\Theta(u))$'' 的 argument. 于是, 我们完成了大定理的证明.</p>
+<p>gg!</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

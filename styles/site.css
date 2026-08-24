@@ -1,0 +1,348 @@
+:root {
+  color-scheme: light;
+  --paper: #f1f0ea;
+  --surface: #fffdf8;
+  --ink: #17252b;
+  --muted: #647276;
+  --teal: #0f766e;
+  --coral: #d97757;
+  --line: rgba(23, 37, 43, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Iowan Old Style", "Noto Serif SC", Georgia, serif;
+  background-image: linear-gradient(135deg, rgba(15, 118, 110, 0.035) 25%, transparent 25%, transparent 50%, rgba(217, 119, 87, 0.025) 50%, rgba(217, 119, 87, 0.025) 75%, transparent 75%);
+  background-size: 28px 28px;
+}
+
+.site-shell {
+  display: grid;
+  grid-template-columns: minmax(190px, 240px) minmax(0, 900px);
+  gap: clamp(3rem, 6vw, 8rem);
+  max-width: 1240px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 7rem 3rem;
+  width: 100%;
+}
+
+.site-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 7rem;
+  padding: 1rem 2.5rem 2rem 0;
+  border-right: 1px solid var(--line);
+}
+
+.brand {
+  color: var(--teal);
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tagline {
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+nav {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 4rem;
+}
+
+nav a {
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--coral);
+}
+
+.article-card {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 14px 34px rgba(23, 37, 43, 0.09);
+}
+
+.article-cover {
+  display: block;
+  width: 100%;
+  max-height: 48vh;
+  object-fit: cover;
+}
+
+.article-header {
+  padding: 3.5rem clamp(2.5rem, 6vw, 6rem) 0;
+  border-top: 4px solid var(--teal);
+}
+
+.category {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  color: var(--surface);
+  background: var(--coral);
+  border-radius: 4px;
+  font-family: system-ui, sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 2rem 0 1rem;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.12;
+}
+
+.description,
+time {
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.6rem;
+}
+
+.article-content {
+  max-width: 78ch;
+  margin: 3rem auto 0;
+  padding: 0 clamp(2.5rem, 6vw, 6rem) 6rem;
+  font-size: 1.8rem;
+  line-height: 1.9;
+}
+
+.article-content img,
+.article-content iframe {
+  max-width: 100%;
+}
+
+.article-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1.5rem;
+  color: #f8f8f2;
+  background: #272822;
+}
+
+@media (max-width: 760px) {
+  .site-shell {
+    display: block;
+    padding: 2rem 1.5rem;
+  }
+
+  .site-sidebar {
+    position: static;
+    margin-bottom: 2rem;
+    padding: 0 0 2rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .article-content {
+    font-size: 1.7rem;
+  }
+}
+
+.home-column {
+  min-width: 0;
+}
+
+.home-header {
+  margin: 1rem 0 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 1.5rem;
+  color: var(--coral);
+  font-family: system-ui, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+}
+
+.home-header h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(3.4rem, 6vw, 6rem);
+  overflow-wrap: anywhere;
+}
+
+.home-header > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.6rem;
+}
+
+.post-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: minmax(150px, 230px) minmax(0, 1fr);
+  gap: 2.5rem;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(23, 37, 43, 0.07);
+}
+
+.post-card > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.post-card h2 {
+  margin: 1.2rem 0 0.8rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.post-card h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.post-card h2 a:hover {
+  color: var(--teal);
+}
+
+.post-card p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.4rem;
+}
+
+.post-card time {
+  font-size: 1.3rem;
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.4rem;
+}
+
+.search-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-controls input {
+  min-width: 0;
+  flex: 1;
+  padding: 1.2rem 1.4rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 1.6rem;
+}
+
+.search-controls button {
+  padding: 0 1.8rem;
+  color: var(--surface);
+  background: var(--teal);
+  border: 0;
+  border-radius: 4px;
+  font-family: system-ui, sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.search-status {
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 760px) {
+  .post-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .post-card > img {
+    height: 190px;
+  }
+
+  .search-controls {
+    flex-direction: column;
+  }
+
+  .search-controls button {
+    min-height: 4.2rem;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 2.5rem;
+}
+
+.page-link {
+  min-width: 3.6rem;
+  padding: 0.8rem 1rem;
+  color: var(--teal);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: system-ui, sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-link.current,
+.page-link:hover {
+  color: var(--surface);
+  background: var(--teal);
+}
+
+.comments {
+  margin: 3rem clamp(2.5rem, 6vw, 6rem) 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}

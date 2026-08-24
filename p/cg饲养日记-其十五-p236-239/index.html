@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ai 赋能 CG, 引领新时代 ACG 发展浪潮">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/cg饲养日记-其十五-p236-239/">
+    <meta property="og:title" content="CG饲养日记-其十五 P236-239">
+    <meta property="og:description" content="Ai 赋能 CG, 引领新时代 ACG 发展浪潮">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其十五-p236-239/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其十五-p236-239/sbzx.jpg">
+    <title>CG饲养日记-其十五 P236-239 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/cg饲养日记-其十五-p236-239/sbzx.jpg" alt="CG饲养日记-其十五 P236-239">
+          <header class="article-header">
+            <a class="category" href="/categories/CG/">CG</a>
+            <h1>CG饲养日记-其十五 P236-239</h1>
+            <p class="description">Ai 赋能 CG, 引领新时代 ACG 发展浪潮</p>
+            <time datetime="2025年7月5日">2025年7月5日</time>
+          </header>
+          <div class="article-content"><p>有</p>
+<p>Lemma 5.1.16: Any connected linear algebraic group $G$ contains a Zar. open dense subset isom. to $\mathbb{C}^r\times \mathbb{C}^\ast $.</p>
+<p>这个思想就是取 $B^+\cdot B^-\simeq U^+\times T\times U^-$. 证明需要 reduce to s.s. case 和具体的讨论.</p>
+<p>Prop 5.1.17: $L$ 是 $G$ 上的 line bundle, 于是存在 $n$ 使得 $L^{\otimes n}$ 是 trivial bundle.</p>
+<p>利用 5.1.16, 有</p>
+<p>[\mathbb{Z}^n\to Cl(G)\to Cl(U^+\cdot T\cdot U^-)=0.]</p>
+<p>于是我们需要证明, 每一个 irr. 的 $C_i\subset G\backslash (B^+\cdot B^-)$ 都给出 $Cl(G)$ 内的 finite order element.</p>
+<p>这些非零的 elements, 是 codim 1 的 irr comp. 根据 Bruhat, 他们是 $B^+s_iB^-$. 于是 $C_i$ 由 $B^-$ 中的 simple roots 给出.</p>
+<p>但, 我们有熟知的结论, 对于 $G$ s.s. 以及 simply connected, $\alpha_i$ 对应的 $C_i$, 取 $V_i$ simple rational $G$-mod with highest weight $\alpha_i$, 取 $V_i$ 中 $B^-$-steable 的 line $v_i$ (也就是 lowest weight vector), 那么 $\overline{B^+s_iB^-}$ 就是 $g\mapsto \langle v^i,g\cdot v_i\rangle$. 于是 $C_i$ principal, $Cl(G)=0$.</p>
+<p>现在考虑 finite covering $\pi: G'\to G$, 于是诱导了 natural direct image $\pi_\ast :Cl(G')\to Cl(G)$, 且, 根据 Hartshorne,</p>
+<p>[\pi_\ast \pi^\ast (D)=(\deg\pi)\cdot D.]</p>
+<p>这便说明了 finite order 的性质.</p>
+<p>现在我们要给出 Thm 5.1.9 的证明.</p>
+<p>考虑 $a:G\times X\to X$, set $E:=a^\ast L\simeq L$, 有, 存在 $F$,</p>
+<p>[a^\ast L\simeq (p_G\ast F)\otimes (p_X^\ast E).]</p>
+<p>考虑 $F^{\otimes n}$ trivial bundle, 有 isom</p>
+<p>[a^\ast (L^{\otimes n})\simeq p^\ast _X(L^{\otimes n}).]</p>
+<p>于是我们希望给出 $L^{\otimes n}$ 上的等变 $G$-bundle 结构. 记 $\mathbb{L}$ $L^{\otimes n}$ 的 total space with the zero-section removed. 于是上式诱导了 $\Phi:G\times\mathbb{L}\to \mathbb{L}$, the following diagram commute:</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJHXFx0aW1lcyBcXG1hdGhiYntMfSJdLFsyLDAsIlxcbWF0aGJie0x9Il0sWzAsMiwiR1xcdGltZXMgWCJdLFsyLDIsIlgiXSxbMCwxLCJcXFBoaSJdLFsyLDMsImEiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtpZH1cXHRpbWVzIFxccGkiLDFdLFsxLDMsIlxccGkiLDFdXQ== -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJHXFx0aW1lcyBcXG1hdGhiYntMfSJdLFsyLDAsIlxcbWF0aGJie0x9Il0sWzAsMiwiR1xcdGltZXMgWCJdLFsyLDIsIlgiXSxbMCwxLCJcXFBoaSJdLFsyLDMsImEiXSxbMCwyLCJcXG9wZXJhdG9ybmFtZXtpZH1cXHRpbWVzIFxccGkiLDFdLFsxLDMsIlxccGkiLDFdXQ==&embed" width="460" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>Furthermore, $\Phi$ restricted to ${e}\times\mathbb{L}$ 与 $\mathbb{L}$ 同构, 作为 $X$ 上的 principal $\mathbb{C}^\ast $-bundle. 于是, 我们诱导了 $\phi:X\to \mathbb{C}^\ast $, $\Phi(e,l)=\phi(\pi(l))\cdot l$.</p>
+<p>我们用 $\frac{1}{\pi^\ast \phi}\Phi$ 代替 $\Phi$, 上述 comm. diag. 仍然成立. 在这种情况下, $\Phi(g,\cdot)$ 与 $\mathbb{C}^\ast $ 作用交换. 于是我们诱导了 $f:G\times G\times \mathbb{L}\to \mathbb{C}^\ast $ by</p>
+<p>[\Phi(gh,l)=f(-,-,-)\Phi(g,\Phi(h,l)).]</p>
+<p>而, by 5.1.15, 我们可以选出 $r,s\in \mathcal{O}(G)^\times, t\in \mathcal{O}(\mathbb{L})^\times$ s.t.</p>
+<p>[f(g,h,l)=r(g)\cdot s(h)\cdot t(l).]</p>
+<p>再结合 $\Phi(e,l)=l$ 推出</p>
+<p>[f\equiv 1,]</p>
+<p>也就是</p>
+<p>[\Phi(gh,l)=\Phi(g,\Phi(h,l)).]</p>
+<p>于是 $\Phi$ 给出了 $\mathbb{L}$ 上的 $G$-action, 且其作为 $G$ 在 $X$ 上作用的 lifting.</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

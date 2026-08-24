@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="死鱼也是能扑腾两下的">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/cg饲养日记-其三十七-p361-366/">
+    <meta property="og:title" content="CG饲养日记-其三十七 P361-366">
+    <meta property="og:description" content="死鱼也是能扑腾两下的">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其三十七-p361-366/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <title>CG饲养日记-其三十七 P361-366 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          
+          <header class="article-header">
+            <a class="category" href="/categories/CG/">CG</a>
+            <h1>CG饲养日记-其三十七 P361-366</h1>
+            <p class="description">死鱼也是能扑腾两下的</p>
+            <time datetime="2025年12月27日">2025年12月27日</time>
+          </header>
+          <div class="article-content"><p>我回来了, 没想到吧</p>
+<p>Hecke alg. 和 K-Theory</p>
+<hr>
+<p>$P=\operatorname{Hom}(T,\mathbb{C}^\ast )$, $P^\vee=\operatorname{Hom}(\mathbb{C}^\ast ,T)$. 我时至今日依然不知道哪个是 $X_\cdot$ :(</p>
+<p>然后是, $R\subset P$ root sys, $R^\vee\subset P^\vee$ dual root sys. 有 bij. $\alpha\leftrightarrow \alpha^\vee$ 使得</p>
+<ol>
+<li>
+<p>$\langle\alpha,\alpha^\vee\rangle=2$,</p>
+</li>
+<li>
+<p>$s_\alpha=x-\langle x,\alpha^\vee\rangle\alpha$,</p>
+</li>
+<li>
+<p>$c\alpha\in R\iff c=\pm1$.</p>
+</li>
+</ol>
+<p>在这里, 我们开始忘掉第三章的 $\mathbb{W},\mathbb{T}$ 记号, 转而用 $W,T$ 表示抽象的 weyl gp. 或 torus. 现在, 我们对 $(W,S)$ 给出 Hecke alg.</p>
+<p>Defn. The Hecke alg. $H_W$ of $(W,S)$ is given by $\mathbb{Z}[q,q^{-1}]$-alg, given by</p>
+<p>(i) $T_{s_\alpha}\cdot T_{s_\beta}\cdot T_{s_\alpha}\cdots=T_{s_\beta}\cdot T_{s_\alpha}\cdot T_{s_\beta}\cdots$ ($m(\alpha,\beta)$ factors)</p>
+<p>(ii) $(T_{s_\alpha}+1)(T_{s_\alpha}-q)=0$.</p>
+<p>很诡异的定义, 不管看多少次都是这种感觉.</p>
+<p>首先 $q=1$ 的情况, 他就是 $W$ 的群代数 (with $\mathbb{Z}[q,q^{-1}]$ 系数).</p>
+<p>其次, 他当然有比较好的刻画:</p>
+<p>Prop 7.1.2. $H_W$ admit 一组基 ${T_w}$, with $T_y\cdot T_w=T_{yw}$ for all $l(y)+l(w)=l(yw)$.</p>
+<p>然后, 我们定义 so-called affine Weyl by $W_{aff}=W\ltimes P$, with $W\circlearrowright P$ naturally.</p>
+<p>当然, 实际上从 Kac-Moody 的角度来看, affine case 的 Lie alg. 的 Weyl 确实长这样. 当然, 实际上你仔细去 check 定义的话, 他其实是 $W\ltimes Q$, where $Q=\mathbb{Z} R$. 有一些微小的差距</p>
+<p>不过这不重要)</p>
+<p>我们称 $(P,R)$ 是 simply-conn. 的, 如果 $R^\vee$ 张成 $P^\vee$.</p>
+<p>Claim 7.1.5. 对于 simply conn. root sys. $\exists$ basis ${e_i}$ in $P$ s.t. $\langle e_i,\alpha_j^\vee\rangle=\delta_{ij}$.</p>
+<p>现在, 我们只考虑 s.c. 情况的 s.s. gp.</p>
+<p>我们已经在很早很早的时候就确立了 $\mathbb{Z}[P]\simeq R(T)$. 考虑 $P,W$ 到 $W_{aff}$ 的嵌入我们得到</p>
+<p>[\mathbb{Z}[W_{aff}]\simeq \mathbb{Z}[W]\otimes_\mathbb{Z} R(T).]</p>
+<p>那么, 我们就可以定义 affine Hecke:</p>
+<p>Defn 7.1.9. Affine Hecke $\mathbb{H}$ 是 free $\mathbb{Z}[q,q^{-1}]$-mod. with basis ${e^\lambda T_w|w\in W,\lambda\in P}$ s.t.</p>
+<p>(1) $T_\alpha$ 之间的关系形如 $H_W$.</p>
+<p>(2) ${e^\lambda}$ 之间的关系形如 $R(T)$.</p>
+<p>(3) $s\in s_\alpha,\langle\lambda,\alpha_s^\vee\rangle=0\implies T_se^\lambda=e^\lambda T_s$,</p>
+<p>(4) $s\in s_\alpha,\langle\lambda,\alpha_s^\vee\rangle=1\implies T_se^{s(\lambda)} T_s=q\cdot e^\lambda$.</p>
+<p>这确实是一组不知道 well 不 well-def. 的运算关系. 但是, 其实 (3) 与 (4) 的定义等价于说如下的生成关系.</p>
+<p>Lemma 7.1.10. $\alpha$ simple, then $\forall \lambda\in P$,</p>
+<p>[T_{s_\alpha}e^{s_\alpha(\lambda)}-e^\lambda T_{s_\alpha}=(1-q)\frac{e^\lambda-e^{s_\alpha(\lambda)}}{1-e^{-\alpha}}.]</p>
+<p>这个定理也是比较容易看出的: 注意 $e^\lambda$ 与 $e^{\mu}$ 交换, 只用把 $\lambda$ 分拆成一堆 $\mu$ w/. $\langle\mu, \alpha^\vee_s\rangle$.</p>
+<p>此外, 根据 $\mathbb{Z}[W_{aff}]\simeq \mathbb{Z}[W]\otimes_\mathbb{Z} R(T)$, 我们有 $\mathbb{Z}[q,q^{-1}]$-module isom.</p>
+<p>[\mathbb{H}\simeq R(T)[q,q^{-1}]\otimes_{\mathbb{Z}[q,q^{-1}]} H_W]</p>
+<p>当然, 他不是 isom of alg.</p>
+<p>然后, 在本章的最后, 我们有</p>
+<p>Prop. 7.1.14. $Z(\mathbb{H})=R(T)^W[q,q^{-1}]$.</p>
+<p>首先, 说明 $z(e^\lambda)=\sum e^{\lambda'}\in Z$, 这个直接对生成元验证即可. 有趣的部分在于验证 $R=\mathbb{Z}[q,q^{-1}]z(e^\lambda)=Z$. 这是通过 Lusztig 的一个操作. 首先, 考虑 $Z\twoheadrightarrow R(T)^W$ given by evaluation $q=1$, 我们得到 $\ker=(1-q)Z$. $Z_m/mZ_m=R(T)^W$. 但显然 $R_m/mR_m=R(T)^W$, 我们构造了</p>
+<p>[R_m/mR_m\simeq Z_m/mZ_m.]</p>
+<p>此外, $R$ noetherian, 根据 6.1.2, $\mathbb{H}$ f.g. $R$-mod. 于是 $Z$ f.g. over $R$, $Z_m$ f.g. over $R_m$.</p>
+<p>你可能会注意到我没有说明 $m$ 是 maximal ideal: 这是我对CG上叙述比较困惑的一个点: 不论在 $\mathbb{Z}[q,q^{-1}]$ 还是 $\mathbb{H}$ 或者 $R,Z$ 中, $m=(1-q)$ 都不太该是一个 maximal ideal. 当然不能直接运用 Nakayama. 但我们也有一个办法绕过他, 就是在上述 argument 中考虑 $\otimes \mathbb{Q}$. 那么 $(1-q)$ 就是 maximal 的了. 于是, $Z\otimes \mathbb{Q}=R\otimes \mathbb{Q}$.</p>
+<p>但是, 显然 $\mathbb{Q} R\cap \mathbb{H}=R$, 我们最终得到 $Z=R$. 得证.</p>
+<hr>
+<p>下班!</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

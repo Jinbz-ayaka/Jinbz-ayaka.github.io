@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="我听见风和鸟的声音.">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/屠龙技-上-landing-on-the-infty-cat.-star/">
+    <meta property="og:title" content="屠龙技·上: Landing on the infty-cat. star ">
+    <meta property="og:description" content="我听见风和鸟的声音.">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/屠龙技-上-landing-on-the-infty-cat.-star/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <title>屠龙技·上: Landing on the infty-cat. star  | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          
+          <header class="article-header">
+            <a class="category" href="/categories/%E6%97%A0%E7%A9%B7%E8%8C%83%E7%95%B4/">无穷范畴</a>
+            <h1>屠龙技·上: Landing on the infty-cat. star </h1>
+            <p class="description">我听见风和鸟的声音.</p>
+            <time datetime="2026年1月16日">2026年1月16日</time>
+          </header>
+          <div class="article-content"><p>至人无己, 神人无功, 圣人无名.</p>
+<hr>
+<h3>前言</h3>
+<p>这个系列 mainly based on Markus Lands 的 Introduction to Infinity-Categories. 只要你在哪里听过无穷范畴这个东西, 你肯定知道 Lurie 这个名字. 没错: 代数tv 在学习无穷范畴的时候也在思考, 为什么不直接读 Lurie.</p>
+<p>当然, 这个原因非常简单: Markus Lands 只有 300 页, 是一本非常适合入门的教材. 与之对应的是, CG 和 Achar 各有 500 页, HTT (Higher topos theory) 有 700 页, 而耳熟能详的 HA (Higher Algebra) 则有 1500 页. 如果你在 300 或 500 多页左右的位置迷失了自我, 那你剩下 1000 页的体验就会极差.</p>
+<p>当然那不是你, 也许你可以通过 Gaitsgory 的 Vol.1 Chapter.1 或者某篇论文的一页 Intro. to $\infty$-cat. 领会要点, 但这对于代数tv来说太难了. 代数tv学了一个学期无穷范畴, 但直到现在为止他还是处于脑袋尖尖的状态. 因此, 总结一下无穷范畴的初级理论, 也并非不迫在眉睫的事情.</p>
+<p>好的, 好的. 那一个有人关心的问题就是, 为啥要学无穷范畴啊🤔</p>
+<p>按照 M.L. 的话来说, 至少有这六个优势, 虽然我并没完全体验到, 但, 在这也罗列一下吧</p>
+<ol>
+<li>
+<p>一些比较诡异的东西, 像 homotopy (co)limits, 自然地转化到 $\infty$-cat. 中自然地东西: 一些 obj. with universal property.</p>
+</li>
+<li>
+<p>如果我们说明了某些东西具有泛性质, 我们就可以自然地构造一些映射, 而不仅仅机械地通过看他 associated 的一些东西来打到什么 e.g. 拓扑 $K$-理论的一些 natural maps.</p>
+</li>
+<li>
+<p>$\infty$-cat. 允许你比较好地定义一些 object. e.g. 代数 $K$-理论, 你不用通过什么 $S^{-1}S,Q,S_\cdot$来构造他 (我不知道这个构造是什么意思qwq).</p>
+</li>
+<li>
+<p>一堆不错的 $\infty$-cats 放在一起仍旧是一个 $\infty$-cat. 这是一个很大的优势: 你把一堆 1-范畴扔在一起, 它上面的 natural transform. 就给出了 2-范畴的结构. 这时候你去考虑一些牵扯范畴到 2-范畴的东西(比如 Grothendieck fibration), 就会很鬼畜.</p>
+</li>
+<li>
+<p>$\infty$-cat. 的理论给出了自然的从拓扑空间/概型到满足 descent 性质的一些 cats. 这允许我们去现代地理解 descent theorem for $K$-theory.</p>
+</li>
+<li>
+<p>借助 $\infty$-cat. 你可以像 local system 上的 Verdier dual 一样良好地处理 generalized Poincare duality.</p>
+</li>
+</ol>
+<p>即使在上中下不会提到, 你可以看到空气中存在的 $K$-理论, 六函子, Poincare dual 之类的东西. 但在此之前, ML 还告诉了你 $\infty$-cat. 中一个巨大的弊病, 这个可以在你读完第一章并仔细想一下看出:</p>
+<p>你没有办法徒手构造<strong>任何</strong>东西.</p>
+<p>好的, 当然这是夸张过头了, 至少我还可以徒手定个机票定个酒店再炒俩菜啥的. 不过这也算暂时介绍了一下我们的图景: 无穷范畴的图景.</p>
+<p>好吧, 那就开始吧.</p>
+<hr>
+<h2>单纯集与几何</h2>
+<h3>什么是单纯集(Simplicial Set)</h3>
+<p>故事的开始我们考虑 $PoSet$ category of partial order sets. 他们之间的 morphisms 由集合之间 (不必严格的) 保序映射给出.</p>
+<h4>$\Delta$ category</h4>
+<p>现在, 我们 fix 一个贯穿始终的 category: $\Delta$, 他是全体 (\left{0,\cdots,n\right},n\geq 0) 给出的 full subcategory.</p>
+<p>如果仔细考虑其中结构的话, 你就会考虑出来一堆 $s_i,d_i$. 也就是说, 你会自然地有这样的东西:</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJbMF0iXSxbMSwwLCJbMV0iXSxbMiwwLCJbMl0iXSxbMywwLCJcXGNkb3RzIl0sWzAsMSwiIiwwLHsib2Zmc2V0IjoxfV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMX1dLFsxLDBdLFsxLDJdLFsxLDIsIiIsMSx7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDEseyJvZmZzZXQiOjJ9XSxbMiwxLCIiLDEseyJvZmZzZXQiOi0xfV0sWzIsMSwiIiwxLHsib2Zmc2V0IjoxfV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJbMF0iXSxbMSwwLCJbMV0iXSxbMiwwLCJbMl0iXSxbMywwLCJcXGNkb3RzIl0sWzAsMSwiIiwwLHsib2Zmc2V0IjoxfV0sWzAsMSwiIiwyLHsib2Zmc2V0IjotMX1dLFsxLDBdLFsxLDJdLFsxLDIsIiIsMSx7Im9mZnNldCI6LTJ9XSxbMSwyLCIiLDEseyJvZmZzZXQiOjJ9XSxbMiwxLCIiLDEseyJvZmZzZXQiOi0xfV0sWzIsMSwiIiwxLHsib2Zmc2V0IjoxfV1d&embed" width="560" height="176" style="border-radius: 8px; border: none;"></iframe>
+<p>好吧, 我当然少画了很多条线, 但这不重要. 重要的是, 很快就能引出单纯集的定义了.</p>
+<h4>单纯集 (simplicial set)</h4>
+<p>单纯集是 $\Delta$ 上的一个 presheaf. 也就是说, 一个函子 $X:\Delta^{op}\to \text{Set}$.</p>
+<p>在这种 setting (model) 下, 你总是可以问: $X_n:=X([n])$ 作为一个 set, 到底是什么. 在这里, $\alpha:[n]\to[m],n\geq m$ 的情况就可以给出 $\alpha^\ast :X_m\to X_n$. 我们称这样的东西给出的像集是 degenerate 的.</p>
+<p>你可以很快地给出一个例子: 对于某个空间, 其单纯形构成的集合确实是一个单依纯集. 但实际上, 这个给出的单纯集性质几乎好得不能再好了. 我们会在后面看出这一点.</p>
+<p>[Prop] 现在, 我们定义单纯集 $\Delta^n$ by $(\Delta^n)_m=\operatorname{Hom}_{\Delta}([m],[n])$. 于是, 根据一般范畴上的 Yoneda,</p>
+<p>[\operatorname{Hom}_{sSet}(\Delta^n,X)\simeq X_n.]</p>
+<p>以及, Yoneda 提到了, 考虑所有到 cocomplete cat. 的 presheaf 全体, Yoneda embedding 的像在 colim 下稠密. (Ref:前传-米田嵌入 (Yoneda embedding) 与可表预层 (representable presheaf)). 于是, 实际上</p>
+<p>[X\simeq \operatorname{colim}<em>{[n]\in \Delta</em>{/X}}\Delta^n.]</p>
+<h4>乘积和形式 Hom (这俩名字是我自己取的, 好的)</h4>
+<p>对于 $X$ sSet, 我们可以诱导函子 $X\times:\text{sSet}\to\text{sSet}$. 我们有如下结论:</p>
+<p>[Prop] $X\times$ admits right adjoint $\underline{\operatorname{Hom}}(X,-)$, determined by</p>
+<p>[\operatorname{Hom}<em>{sSet}(\Delta^n,\underline{\operatorname{Hom}}(X,Z))=\operatorname{Hom}</em>{sSet}(\Delta^n\times X,Z).]</p>
+<p>我们会记 $\underline{\operatorname{Hom}}(X,Z)$ 为 $Z^X$. 这个引理是比较显然的, 我们在上面进行了直接构造. 以及, $X\times$ 保 colim 和 sSet 都是 colim of 可构造.</p>
+<h3>几何侧</h3>
+<p>好的, 现在引进熟人 $Top$ 范畴, 他的 morph. 是 continuous map. 在这里, 我们暂时使用记号 $\Delta^n_{top}$ 来表示拓扑上的 $n$-单形.</p>
+<h4>奇异单纯形 (Singular simplicial set) 与几何实现 (geometry realization)</h4>
+<p>上面我们提到了 sSet $S(X):=([n]\mapsto \operatorname{Hom}_{Top}(\Delta_{top}^n,X))$. 我们有如下引理:</p>
+<p>[Lemma] $S$ admit a right-adjoint: geometric realization</p>
+<p>[|-|:\text{sSet}\to\text{Top},]</p>
+<p>[|X|=\operatorname{colim}<em>{\Delta^n\in \Delta</em>{/X}}\Delta_{top}^n.]</p>
+<h4>边界 (Boundary), 角 (Horn), 脊柱 (Spine): 空间嵌入</h4>
+<p>从几何上, 我们会引入 $\Delta^n$ 的一些 sub. 也就是一些 sSet $X\hookrightarrow \Delta^n$. 严格地说, 就是一些 $Y:\Delta\to Set$, $Y([m])\subset\Delta^n([m])=\operatorname{Hom}([m],[n])$.</p>
+<p>(1) Boundaries: $\partial\Delta^n$, (\partial\Delta^n([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f\text{ not surj.}\right}).</p>
+<p>(2) Horns: $\Lambda^n_i$, $0\leq i\leq n$, (\Lambda^n_i([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f\not\supset [n]\backslash i\right}). (这之中 $i=0$ 的 case 称为 left horn, $i=n$ 的 case 称为 right horn, 其他 case 称为 inner horn).</p>
+<p>(3) Spines: $I^n$, (I^n([m])=\left{f\in \operatorname{Hom}([m],[n]),\operatorname{im} f=\left{j,j+1\right}\text{ or }\left{j\right}\right}).</p>
+<p>解剖学来了() 从几何的角度来说, 这几个哥们的集合实现恰好就是 bdry, horn 和 spine.</p>
+<h4>骨骼 (skeleton), 上骨骼 (coskeleton): CW-滤过</h4>
+<p>以及, skeleton 和 coskeleton, 考虑 $i:\Delta_{\leq n}\to \Delta$, 定义 skeleton $\operatorname{sk}_n(X)=i_!i^\ast (X)$, coskeleton $\operatorname{cosk}_n(X)=i_\ast i^\ast (X)$.</p>
+<p>一个简单的刻画就是,</p>
+<p>[\operatorname{sk}_n(X)\subset X\subset\operatorname{cosk}_n(X),]</p>
+<p>sk. 与 cosk. 对应所有与 $X_{\leq n}$ coincide 的极小与极大的 sSet.</p>
+<p>他们之间的关系是, $(\operatorname{sk}_n,\operatorname{cosk}_n)$ 为adjoint pair.</p>
+<p>这个实际上给出来了 sSet 集合实现上的 CW-complex 结构. 其中 degree $\leq n$ 的部分就对应到 $\operatorname{sk}_n$ 的 geom. real.</p>
+<h4>神经 (nerve): 范畴到单纯集</h4>
+<p>然后是第三个构造: 神经 (nerve). 对于一个一般 category $\mathscr{C}$, 我们定义其 nerve $N\mathscr{C}$ 是 sSet given by</p>
+<p>[[n]\mapsto \operatorname{Fun}([n],\mathscr{C}).]</p>
+<p>你可以直接看出, $\Delta^n=N([n])$.</p>
+<p>在这里, 我们借助上述语言给出第一个几何``玩意'':</p>
+<p>对于 $G$ group, 把他视为 groupoid, 则 classifying space $BG:=|NG|$.</p>
+<h4>Kan 复形</h4>
+<p>我们称 $X$ 是 Kan cpx., 如果他对于 <strong>所有</strong> horn inclusion 有提升性质.</p>
+<p>几何上, 你可以看出所有拓扑空间上的 singular cpx. 是一个 Kan cpx.</p>
+<p>你可以立刻看出: $N\mathscr{C}$ Kan cpx. $\operatorname{im}plies \mathscr{C}$ groupoid. 但, 实际上我们可以更精确地刻画他</p>
+<p>定理:(刻画 nerve) $X$ simplicial set, TFAE:</p>
+<p>(1) $X$ 对于 $\Lambda^n_j\to \Delta^n$, $0&lt;j&lt;n$ 有唯一提升性质,</p>
+<p>(2) $X$ 对于 $I^n\to \Delta^n$, $n\geq 2$ 有唯一提升性质,</p>
+<p>(3) $X\simeq N\mathscr{C}$.</p>
+<p>有: $N\mathscr{C}$ 几乎是一个 Kan complex: 他对 $n\geq 4$ 的 horn inclusion 有提升性质. (你可以通过 nerves 是 $2$-coskeletal 看出). 此外, 他是 Kan complex 当且仅当 $\mathscr{C}$ 是 groupoid.</p>
+<hr>
+<h2>无穷范畴 ($\infty$-category) 与充实范畴 (enriched category)</h2>
+<h3>$\infty$-范畴和他的兄弟姐妹 (brothers and sisters).</h3>
+<h4>复合器 (composer) 与复合</h4>
+<p>称一个 sSet 是一个 composer, 如果他对于 spine inclusion $I^n\to\Delta^n$ 有提升性质.</p>
+<p>于是我们可以定义一堆 morphisms (1-simplex) 的复合: 一个 $\Delta^n$ 提升的选取. 这当然不是唯一的, 这也就体现出了该理论中一个重要的特质: 复合不一定唯一.</p>
+<h4>1-simplex 间的等价</h4>
+<p>对于 $X$ sSet, $f,g:x\to y$ 1-simplices. 我们称 $f$ 和 $g$ 等价 (equivalent), 如果存在 2-simplices $\sigma:\Delta^2\to X$, 使得</p>
+<p>(i) $\sigma|_{\Delta^{{0,1}}}=f$,</p>
+<p>(ii) $\sigma|_{\Delta^{{0,2}}}=g$,</p>
+<p>(iii) $\sigma|_{\Delta^{{1,2}}}=\operatorname{id}_y$.</p>
+<p>你当然能 check 自反性. 但传递性和对称性呢? 实际上, 你可以很快看出, 如果 composer $X$ 具有 inner $3$-horn inclusion lifting property, 那么</p>
+<p>(1) $f,g$ 之间的 composite 存在,</p>
+<p>(2) 上述 equivalent 确为一等价条件,</p>
+<p>(3) 任意两个 composite 的选取互相 equivalent.</p>
+<p>(4) 如果条件改为</p>
+<p>(i) $\sigma|_{\Delta^{{1,2}}}=f$,</p>
+<p>(ii) $\sigma|_{\Delta^{{0,2}}}=g$,</p>
+<p>(iii) $\sigma|_{\Delta^{{0,1}}}=\operatorname{id}_x$.</p>
+<p>那么仍然有 $f\sim g$.</p>
+<h4>同伦范畴 (homotopy cat.)</h4>
+<p>之前我们构造了 nerve $N:Cat\to sSet$. 现在, 我们可以构造 homotopy category: $h:sSet\to Cat$, with</p>
+<p>Objects: $X_0$</p>
+<p>Morphisms: $X_1$, together with free comp. $f\star g$. 并模掉上述等价关系. (这里有一点 subtle: 比方说, 要处理 free comp. 上的等价关系, anyway 这个不太重要).</p>
+<p>当然, 你可以直接看出, $hX=h(\operatorname{sk}_2(X))$.</p>
+<p>% 这里我不确定要不要讲 $\pi$</p>
+<p>他们之间的关系如下:</p>
+<p>[Prop] $h(N(\mathscr{C}))\simeq \mathscr{C}$ canonically.</p>
+<p>[Prop] $(h,N)$ adjoint pair.</p>
+<p>这俩和前传中的某一个定理, 直接给出如下结论:</p>
+<p>[Cor] $N$ fully faithful.</p>
+<p>[Cor] $N(\mathscr{C})\sim \operatorname{cosk}_2(N(\mathscr{C}))$.</p>
+<h4>无穷范畴 ($\infty$-cat.)</h4>
+<p>现在, 我们终于可以引入主角: 无穷范畴.</p>
+<p>称一个 sSet 是一个 $\infty$-cat, 如果他对于 horn inclusion $\Lambda^n_j\to\Delta^n$, $n\geq 2,0&lt;j&lt;n$ 有提升性质.</p>
+<p>接下来这是一个相当难证的命题. 我们也未必 (有 $50 \baifenhao$ 概率) 会证明之.</p>
+<p>[Prop] Every $\infty$-cat. is a composer. But there are composers which are not $\infty$-categories.</p>
+<h4>无穷群胚 ($\infty$-gpod.)</h4>
+<p>好的, 我们称一个 $\infty$-cat. 中的 morph. 是 equiv., 如果他在 homotopy cat. 中的像是 isom.</p>
+<p>我们称一个 $\infty$-cat. 是 $\infty$-groupoid, 如果所有 morphism 都是 equivalence.</p>
+<p>对于一个 $\infty$-cat. $\mathscr{C}$ 我们可以通过考虑其 pullback of $N((h\mathscr{C})^{\simeq})$, 其中 $(h\mathscr{C})^{\simeq}$ 为取 $h\mathscr{C}$ 中所有 isom. 作为 morph. 得到的 subcat.</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhzY3J7Q31ee1xcc2ltZXF9Il0sWzIsMCwiXFxtYXRoc2Nye0N9Il0sWzIsMiwiTihoXFxtYXRoc2Nye0N9KSJdLFswLDIsIk4oKGhcXG1hdGhzY3J7Q31ee1xcc2ltZXF9KV57XFxzaW1lcX0pIl0sWzAsM10sWzMsMl0sWzAsMV0sWzEsMl1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhzY3J7Q31ee1xcc2ltZXF9Il0sWzIsMCwiXFxtYXRoc2Nye0N9Il0sWzIsMiwiTihoXFxtYXRoc2Nye0N9KSJdLFswLDIsIk4oKGhcXG1hdGhzY3J7Q31ee1xcc2ltZXF9KV57XFxzaW1lcX0pIl0sWzAsM10sWzMsMl0sWzAsMV0sWzEsMl1d&embed" width="561" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>他有如下刻画</p>
+<p>[Prop] $x$ $n$-simplex 包含于 $\mathscr{C}^\simeq$, iff all its edges are equiv.</p>
+<p>[Prop] $\mathscr{C}^\simeq$ 依然是 $\infty$-cat.</p>
+<p>以及</p>
+<p>[Prop] Kan complex 总是 $\infty$-gpod.</p>
+<h3>充实范畴 (enriched category)</h3>
+<p>首先, 需要 remark 一下, 在前传中我添加了一些幺半范畴的内容. 这部分是众所周知的前置了.</p>
+<p>Lax monoidal 函子的自然变换给出了 $\operatorname{Fun}^{\text{lax}}(\mathscr{C},\mathscr{D})$ 上的范畴结构,</p>
+<p>自然也可以考虑 monoidal 函子构成的 full subcat. $\operatorname{Fun}^\otimes (\mathscr{C},\mathscr{D})$.</p>
+<h4>充实范畴 (enriched category)</h4>
+<p>对于 $V$ monoidal category, 我们定义 $V$-充实范畴 $\mathscr{C}$ 为如下信息:</p>
+<ol>
+<li>
+<p>对象类 (\operatorname{Ob}(\mathcal{C}))（由于格罗滕迪克宇宙的缘故, 我们始终相信 Object 是一个集合）.</p>
+</li>
+<li>
+<p>对任意两个对象 (x, y \in \operatorname{Ob}(\mathcal{C})), 他们之间的 morph. 落在 $V$ 中:</p>
+<p>[
+\operatorname{Hom}_{\mathcal{C}}(x, y) \in \mathcal{V}.
+]</p>
+</li>
+<li>
+<p>对任意三个对象 (x, y, z \in \operatorname{Ob}(\mathcal{C})), 复合态射由 $\otimes$ 给出:</p>
+<p>[
+\circ_{x,y,z} : \operatorname{Hom}<em>{\mathcal{C}}(y, z) \otimes \operatorname{Hom}</em>{\mathcal{C}}(x, y) \longrightarrow \operatorname{Hom}_{\mathcal{C}}(x, z).
+]</p>
+</li>
+<li>
+<p>对任意对象 (x \in \operatorname{Ob}(\mathcal{C})), 有一个 恒等态射（在 (\mathcal{V}) 中）</p>
+<p>[
+\operatorname{id}<em>x : I \longrightarrow \operatorname{Hom}</em>{\mathcal{C}}(x, x).
+]</p>
+</li>
+</ol>
+<p>并满足适当地相容性. 同样地, 我们可以自然地定义 $V$-enriched functor between $V$-enriched cat.</p>
+<p>最后, 我们定义 $Cat_V$ 为 $V$-enriched category together with $V$-enriched functors 构成的 cat.</p>
+<p>这些定义可能比较自然, 或者有些摸不着头脑. 这暂时不太重要.</p>
+<h4>单纯范畴 (simplicial category)</h4>
+<p>在之前, 我们定义了 $sSet$. 我们可以将 $sSet$ together with Cartesian prod with Sets 视为 monoidal cat. 于是, 考虑 $sSet$-enriched category, 我们定义这类为 simplicial category, 并记全体 simplicial cat. 构成的范畴为 $\operatorname{Cat}_\Delta$.</p>
+<p>[Prop] $\operatorname{Cat}$ bicomplete.</p>
+<p>[Cor] $\operatorname{Cat}_\Delta$ bicomplete.</p>
+<p>现在, 对于 $\phi:V\to V'$ lax monoidal functor between monoidal cat. 我们对每个 hom-obj. 运用 $\phi$ 得到一个自然的 functor</p>
+<p>[\phi_*:\operatorname{Cat}<em>V\to\operatorname{Cat}</em>{V'}.]</p>
+<p>这里的几个例子就是,</p>
+<p>$c':Set\to sSet$, $X\mapsto ([n]\mapsto X)$.</p>
+<p>$h: sSet\to Set$, homotopy cat.</p>
+<p>$ev_0:sSet\to Set$, $ev_0=\operatorname{Hom}_{sSet}(\Delta^0,-)$.</p>
+<p>我们记 $c=c'_\ast,\pi=h_\ast ,u=(ev_0)_\ast $. 于是</p>
+<p>[Lemma] $(\pi,c)$, $(c,ev_0)$ monoidal adjunction.</p>
+<h4>大黑箱 (BigBlackBox)</h4>
+<p>或者, 这部分内容也是一层一层往上盖的, 黑箱结束的部分会建立在这些东西之上, 就像塔状结构一样. 因此, 你也可以称这部分为大黑塔 (The Herta).</p>
+<p>设 ( J ) 是一个有限非空全序集, ( i, j ) 是其中的两个元素. 定义 ( P_{i,j} ) 为 ( J ) 的满足以下条件的子集构成的集合:</p>
+<p>[
+P_{i,j} = \bigl{ I \subseteq J : i, j \in I \text{ and } k \in I \Rightarrow i \le k \le j \bigr}.
+]
+换言之, ( P_{i,j} ) 由区间 ( [i, j] \subseteq J ) 中所有同时包含 ( i ) 和 ( j ) 的子集组成.</p>
+<p>集合 ( P_{i,j} ) 通过包含关系构成偏序集: ( I \le I' \Leftrightarrow I \subseteq I' ). 注意仅当 ( i \le j ) 时 ( P_{i,j} ) 才非空.</p>
+<p>设 ( J ) 是一个非空全序集. 以下给出一个单纯充实范畴 ( \mathfrak{C}[\Delta^{J}] \in \operatorname{Cat}_{\Delta} ) 的定义.</p>
+<ul>
+<li>
+<p>对象: ( \mathfrak{C}[\Delta^{J}] ) 的对象是 ( J ) 的元素.</p>
+</li>
+<li>
+<p>态射单纯集:</p>
+</li>
+</ul>
+<p>[
+\operatorname{Hom}<em>{\mathfrak{C}[\Delta^{J}]}(i,j) =
+\begin{cases}
+\varnothing &amp; \text{if } j &lt; i, \[4pt]
+\operatorname{N}(P</em>{i,j}) &amp; \text{if } i \le j,
+\end{cases}
+]
+其中 ( \operatorname{N}(P_{i,j}) ) 表示偏序集 ( P_{i,j} ) 的神经.</p>
+<p>复合运算由观察 1.2.55 中描述的映射诱导: 对任意满足 ( i \le j \le k ) 的三元组, 存在典范的偏序集映射</p>
+<p>[
+P_{i,j} \times P_{j,k} \longrightarrow P_{i,k}, \quad (I, I') \mapsto I \cup I',
+]
+取神经后即给出复合映射</p>
+<p>[
+\operatorname{Hom}<em>{\mathfrak{C}[\Delta^{J}]}(j,k) \times \operatorname{Hom}</em>{\mathfrak{C}[\Delta^{J}]}(i,j) \longrightarrow \operatorname{Hom}_{\mathfrak{C}[\Delta^{J}]}(i,k).
+]</p>
+<p>[Lemma] 1.2.67</p>
+<p>单纯充实范畴的范畴 (\operatorname{Cat}_{\Delta}) 允许所有小余极限. 因此, 上述构造扩充为保余极限函子</p>
+<p>[
+\mathfrak{C}[-] \colon \operatorname{sSet} \longrightarrow \operatorname{Cat}_{\Delta}
+]
+它将 (\Delta^n) 送到 (\mathfrak{C}[\Delta^n]). 这个函子自动成为单纯神经函子的左伴随.</p>
+<p>[Lemma] 1.2.69</p>
+<p>设 (0 &lt; j &lt; n) 并考虑角 (\Lambda_j^n). 我们有 (\mathfrak{C}[\Lambda_j^n]) 是 (\mathfrak{C}[\Delta^n]) 的子单纯充实范畴, 具有以下性质:</p>
+<ol>
+<li>
+<p>(\mathfrak{C}[\Lambda_j^n]) 的对象由 (\Lambda_j^n) 的顶点给出, 因此与 (\mathfrak{C}[\Delta^n]) 的所有对象相同.</p>
+</li>
+<li>
+<p>态射单纯集如下给出:</p>
+<p>[
+\operatorname{Hom}<em>{\mathfrak{C}[\Lambda_j^n]}(i,k) = \operatorname{Hom}</em>{\mathfrak{C}[\Delta^n]}(i,k)
+]
+除非 ((i,k) = (0,n)), 而当 ((i,k) = (0,n)) 时,
+[
+\operatorname{Hom}<em>{\mathfrak{C}[\Lambda_j^n]}(0,n) \subseteq \operatorname{Hom}</em>{\mathfrak{C}[\Delta^n]}(0,n) = \operatorname{N}(P_{0,n})
+]
+是由从 ((\Delta^1)^{n-1}) 中删除其内部以及第 (j) 个底面所得到的子单纯集.</p>
+</li>
+</ol>
+<h4>相干神经 (coherent nerve)</h4>
+<p>对于 $\mathscr{C}$ simplically enriched cat. 定义其 coherent nerve 为</p>
+<p>[N(\mathscr{C})<em>n=\operatorname{Hom}</em>{Cat_\Delta}(\mathfrak{C}[\Delta^{n}],\mathscr{C}).]</p>
+<p>[Lemma] $\mathscr{C}$ 的 coherent nerve 自动是一个 composer. Furthermore, 其是一个 $\infty$-cat. iff 所有的 hom-simplicial sets 都是 Kan cpx.</p>
+<p>我们来捋一下关系:</p>
+<p>$1\text{-Cat}$: Set enriched cat, $2\text{-Cat}$: Cat enriched cat.</p>
+<p>[2\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with sSet)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \text{composer}.]</p>
+<p>[(2,1)\text{-Cat}\overset{N\text{ (trivial ver.)}}{\rightsquigarrow} \text{sCat}\text{ (enriched with Kan.)}\overset{N\text{ (coherent ver.)}}{\rightsquigarrow} \infty\text{-Cat}.]</p>
+<h4>无穷范畴 $\operatorname{Spc}$</h4>
+<p>现在, 考虑如下 sCat:</p>
+<p>Obj: CW-cpxs,</p>
+<p>Mor sSet: $S(Maps(X,Y))$, singular set of mapping space.</p>
+<p>对于 singular sets, 对于 spines/horns 来说, 由于强同伦收缩核性质, 他当然想怎么提升就怎么提升. 因此他其实是 Kan-enriched 的. 其 coh. nerve 记作 $\operatorname{Spc}$. 他可以刻画如下:</p>
+<p>Obj: CWs,</p>
+<p>Mor: pts of mapping spaces $map(X,Y)$, moreover, $h(Spc)$ 的 morphs, 恰为 homotopy classes of maps.</p>
+<h4>子无穷范畴 (sub-$\infty$-cat.)</h4>
+<p>[Lemma] prod./coprod. of $\infty$-cats are $\infty$-cats.</p>
+<p>对于 $\infty$-cat. $\mathscr{C}$, 定义其 sub-$\infty$-cat. 为 $0$-simplices $X\subset \mathscr{C}_0$, $1$-simplices $S\subset \mathscr{C}_1$ 连接 $X$ 中元素, 且对于 id. 和 comp., equiv. 封闭. 而 $n$-simplices 包含于 $\mathscr{C}'$ iff all edges rest. to $I^n$ contained in $S$. 其称为 full 的, iff $S$ 包含所有 $1$-simplices with bdry in $X$.</p>
+<p>[Prop] Sub-$\infty$-cat. of $\mathscr{C}$ 1-1 corresp. to subcat. of $h\mathscr{C}$, full sub-$\infty$-cat. of $\mathscr{C}$ 1-1 corresp. to full subcat. of $h\mathscr{C}$.</p>
+<h4>$\infty$-范畴视角下的自然变换</h4>
+<p>我们定义 $\infty$-cat. 间的 functors $f,g:\mathscr{C}\to\mathscr{D}$ 之间的 natural transf, 为一个 simplicial map $\mathscr{C}\times\Delta^1\to \mathscr{D}$ that restrics appropriately.</p>
+<p>实际上, 回忆之前的 $\underline{\operatorname{Hom}}(X,Y)$ 定义, functors 和 natural transf. 对应到 $\underline{\operatorname{Hom}}(X,Y)$ 中的 0,1-simplices. 我们希望这仍旧是一个 $\infty$-cat. 这并不显然, 而这正是下一节的任务之一.</p>
+<hr>
+<h2>纤维化 (fibration)</h2>
+<p>这一章我可能会后面整理一下. 我觉得只用关心那些<strong>重要的</strong>东西就行了.</p>
+<h3>左/内/右 (left/inner/right) 纤维化 (fibration) 与钝态射 (anodyne)</h3>
+<p>首先, 一个 map of sSets $X\to Y$ 被称作 inner/left/right fibration, 如果他拥有对 inner/left/right horn inclusions 的 RLP (right lifting property):</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXExhbWJkYV9qXm4iXSxbMCwxLCJcXERlbHRhXm4iXSxbMSwwLCJYIl0sWzEsMSwiWSJdLFsyLDNdLFswLDJdLFswLDFdLFsxLDNdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ== -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXExhbWJkYV9qXm4iXSxbMCwxLCJcXERlbHRhXm4iXSxbMSwwLCJYIl0sWzEsMSwiWSJdLFsyLDNdLFswLDJdLFswLDFdLFsxLDNdLFsxLDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
+<p>一个 map of sSets $A\to B$ 被称作 inner/left/right anodyne 的, 如果它拥有对 inner/left/right fibration 的 LLP (left lifting property):</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQiJdLFsxLDAsIlgiXSxbMSwxLCJZIl0sWzIsM10sWzAsMl0sWzAsMV0sWzEsM10sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQiJdLFsxLDAsIlgiXSxbMSwxLCJZIl0sWzIsM10sWzAsMl0sWzAsMV0sWzEsM10sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
+<p>我们可以有一般的 setting: $S$ set of morphs. $\chi_R(S)$ 所有对 $S$ 有 RLP 的 morphs, $\chi_L(S)$ 所有对 $S$ 有 LLP 的 morphs. 那么, 记 $S$ i/l/r horn inclusions, ilr fibs 与 ilr anodynes 就对应 $\chi_R(S)$ 与 $\chi_L(\chi_R(S))=:\chi(S)$.</p>
+<h4>饱和集 (saturated set)</h4>
+<p>回忆收缩 (retract) 的定义, 一个映射 $f:A\to B$ 被称作一个 retract of $f':A'\to B'$, 如果有 comm diag.</p>
+<!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJBIl0sWzAsMSwiQiJdLFsyLDAsIkEiXSxbMiwxLCJCIl0sWzEsMCwiQSciXSxbMSwxLCJCJyJdLFswLDEsImYiXSxbMiwzLCJmIl0sWzQsNSwiZiciXSxbMCw0XSxbNCwyXSxbMSw1XSxbNSwzXSxbMCwyLCJpZCIsMSx7ImN1cnZlIjotMn1dLFsxLDMsImlkIiwxLHsiY3VydmUiOjJ9XV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNixbMCwwLCJBIl0sWzAsMSwiQiJdLFsyLDAsIkEiXSxbMiwxLCJCIl0sWzEsMCwiQSciXSxbMSwxLCJCJyJdLFswLDEsImYiXSxbMiwzLCJmIl0sWzQsNSwiZiciXSxbMCw0XSxbNCwyXSxbMSw1XSxbNSwzXSxbMCwyLCJpZCIsMSx7ImN1cnZlIjotMn1dLFsxLDMsImlkIiwxLHsiY3VydmUiOjJ9XV0=&embed" width="432" height="304" style="border-radius: 8px; border: none;"></iframe>
+<p>现在, 我们称一个 set of morphs of sSets $T$ 是 saturated 的, 如果他在 taking pushout, arbitrary coprod., countable composition (colim along $\mathbb{N}$), retract 下封闭. 我们记 $S$ 的饱和闭包为 $\bar{S}$.</p>
+<p>[Lemma] $\chi_L(S)$ 为一个饱和集. In particular, $\chi(S)$ 也是一个饱和集.</p>
+<h4>composer 不一定是 $\infty$-cat.</h4>
+<p>我们有如下定理:</p>
+<p>[Prop] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限 nondeg. simplices. 于是任意 $f$, $f$ 可以被分解为 $g\circ h$ s.t. $h\in \bar{S},g\in \chi_R(S)$.</p>
+<p>当然不理解这个也无所谓, 这个主要是用来给出如下结论</p>
+<p>[\overline{\text{Spine inclusions}}\neq \text{Inner-anodynes}.(\ast)]</p>
+<p>于是, 存在 composer which is not an $\infty$-cat.</p>
+<h4>$\infty$-cat. 总是 composer</h4>
+<p>[Lemma] $S$ set of ${A_i\to B_i}$ s.t. $A_i$ 都仅拥有有限石块. 于是 $\bar{S}=\chi(S)$.</p>
+<p>[Cor] $\text{l/i/r anodynes}$ 恰为 $\overline{\text{l/i/r horn inclus}}$.</p>
+<p>Moreover, 他们都是 monos.</p>
+<p>于是, 我们可以回答在第二部分给出的问题. 对于 $F:\mathscr{C}\to\mathscr{D}$ morph. of sCats, 如果对任意 $X,Y\in\mathscr{C}$, $\operatorname{Hom}_\mathscr{C}(X,Y)\to\operatorname{Hom}_{\mathscr{D}}(FX,FY)$ Kan fib. 于是 $NF:N\mathscr{C}\to N\mathscr{D}$ inner fib.</p>
+<p>[Cor] $F:\mathscr{C}\to \mathscr{D}$ functor betrwwn ord. cat. 于是 $NF:N\mathscr{C}\to N\mathscr{D}$ inner fib.</p>
+<p>而对于 $(\ast)$, 我们可以说得更多:</p>
+<p>[Prop] $I^n\to \Delta^n$ inner-anodyne.</p>
+<p>[Cor] $\infty$-cat. is always composer.</p>
+<h3>平凡 (trivial) 纤维化与 Joyal 纤维化</h3>
+<p>现在, 我们有 l/i/j fib. 了, 我们还要引入更多的 fibs:</p>
+<p>称 $X\to Y$ 是 trivial fib. 如果他拥有 RLP w.r.t. $\partial \Delta^n\to \Delta^n$, for $n\geq 0$.</p>
+<p>现在, 定义 $J=N(\circ\to \circ)$,</p>
+<p>称 $X\to Y$ 是 Joyal fib. 如果他是一个 inner fib, 且拥有 RLP w.r.t. $\Delta^0\to  J$.</p>
+<h4>两个重要构造</h4>
+<p>首先, 通过 $f:X\to Y$ 与 $i:A\to B$, 我们有 comm. diag.</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXkIiXSxbMiwwLCJYXkEiXSxbMCwyLCJZXkIiXSxbMiwyLCJZXkEiXSxbMCwyXSxbMiwzXSxbMCwxXSxbMSwzXV0=&embed" width="432" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>于是 induces 了</p>
+<p>[\langle f,i\rangle: X^B\to X^A\times_{Y^A}Y^B]</p>
+<p>Dually, 对于 $i:A\to B$, $g:S\to T$, 我们有</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJBXFx0aW1lcyBTIl0sWzIsMCwiQVxcdGltZXMgVCJdLFswLDIsIkJcXHRpbWVzIFMiXSxbMiwyLCJCXFx0aW1lcyBUIl0sWzAsMl0sWzIsM10sWzAsMV0sWzEsM11d&embed" width="476" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>于是 induces 了</p>
+<p>[i\boxtimes g:A\times T\sqcup_{A\times S} B\times S\to B\times T.]</p>
+<p>他们之间有如下关键关系:</p>
+<p>[Lemma] 如下两个 lifting problems are equiv.</p>
+<!-- https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsOCxbMywwLCJCXFx0aW1lcyBTXFxzcWN1cF97QVxcdGltZXMgU31BXFx0aW1lcyBUIl0sWzMsMSwiQlxcdGltZXMgVCJdLFs0LDAsIlgiXSxbNCwxLCJZIl0sWzAsMCwiUyJdLFswLDEsIlQiXSxbMSwwLCJYXkIiXSxbMSwxLCJYXkFcXHRpbWVzX3tZXkF9WV5CIl0sWzAsMV0sWzIsM10sWzEsM10sWzAsMl0sWzEsMiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNV0sWzQsNl0sWzYsN10sWzUsN10sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&embed" width="977" height="304" style="border-radius: 8px; border: none;"></iframe>
+<h4>$\infty$-cat. $\operatorname{Fun}(\mathscr{C},\mathscr{D})$.</h4>
+<p>于是, 关于 $i\boxtimes g$, 我们有如下关键引理</p>
+<p>[Lemma] 考虑 $i,g$ monom. 有</p>
+<p>$i\boxtimes g$ i/l/r-anodyne if $i$ or $g$ i/l/r-anodyne.</p>
+<p>这是通过仔细地看 anodynes 的 saturate generators 来完成的. 我们跳过这个引理. 他是为了这个大定理服务的.</p>
+<p>[Thm] Let $f:X\to Y$ i/l/r fib. $i:A\to B$ monom. then</p>
+<p>(1) $\langle f,i\rangle$ i/l/r fib.</p>
+<p>(2) If $i$ i/l/r anodyne, then $\langle f,i\rangle$ trivial fibration.</p>
+<p>[Cor] $K,X$ sSets, $X$ $\infty$-cat. then so is $X^K$. If $X$ Kan cpx. then so is $X^K$.</p>
+<p>于是, 这允许我们从 $\mathscr{C},\mathscr{D}$ $\infty$-cat. 出发, 定义 $\operatorname{Fun}(\mathscr{C},\mathscr{D})=\underline{\operatorname{Hom}}(\mathscr{C},\mathscr{D})$ $\infty$-cat.</p>
+<h4>$\infty$-(groupoid) $\operatorname{map}(x,y)$</h4>
+<p>现在, 考虑 $N(\operatorname{Kan})=\hat{\operatorname{Spc}}$ coherent nerve. 由 $CW\to Kan$ 我们induces 自然的 functor $\operatorname{Spc}\to \hat{\operatorname{Spc}}$.</p>
+<p>[Cor] sSet $\mathscr{C}$ 是 $\infty$-cat. iff $\mathscr{C}^{\Delta^2}\to\mathscr{C}^{\Lambda_1^2}$ trivial fib. In particular, $\Lambda_1^2\to \mathscr{C}$ 的 fiber 总是 Kan cpx.</p>
+<p>也就是说, $f,g$ 的 composition 构成的 sSet $\operatorname{Comp}_\mathscr{C}(f,g)\to \Delta^0$ 是一个 trivial fib.</p>
+<p>现在, 考虑 $X\to Y$ trivial fib. 由于 $\operatorname{Hom}(A,X)\to \operatorname{Hom}(A,Y) $ 总是 trivial fib, 我们取 $A=Y$, 得到 contractible Kan cpx of fibers over $id_Y$. 这个空间被称作 $X\to Y$ 的 section.</p>
+<p>对于 $\mathscr{C}$ $\infty$-cat, $x,y\in\mathscr{C}$, 考虑 pullback</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG9wZXJhdG9ybmFtZXttYXB9X1xcbWF0aHNjcntDfSh4LHkpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RnVufShcXERlbHRhXjEsXFxtYXRoc2Nye0N9KSJdLFswLDIsIlxcYXN0Il0sWzIsMiwiXFxtYXRoc2Nye0N9XFx0aW1lcyBcXG1hdGhzY3J7Q30iXSxbMiwzLCIoeCx5KSJdLFswLDFdLFsxLDNdLFswLDJdXQ== -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG9wZXJhdG9ybmFtZXttYXB9X1xcbWF0aHNjcntDfSh4LHkpIl0sWzIsMCwiXFxvcGVyYXRvcm5hbWV7RnVufShcXERlbHRhXjEsXFxtYXRoc2Nye0N9KSJdLFswLDIsIlxcYXN0Il0sWzIsMiwiXFxtYXRoc2Nye0N9XFx0aW1lcyBcXG1hdGhzY3J7Q30iXSxbMiwzLCIoeCx5KSJdLFswLDFdLFsxLDNdLFswLDJdXQ==&embed" width="615" height="432" style="border-radius: 8px; border: none;"></iframe>
+<p>而我们有关键的如下结论: 这也便是 $(\infty,1)$-cat. 中 $1$ 的含义.</p>
+<p>[Prop] $\operatorname{map}_\mathscr{C}(x,y)$ 总是 $\infty$-groupoid.</p>
+<hr>
+<h2>无穷范畴的连接 (Join) 与切片 (Slice)</h2>
+<p>对于一般的范畴, 我们在前传就介绍了他的 Join 和 Slice. 对于无穷范畴的话, 处理会复杂一些.</p>
+<h3>连接 (Join)</h3>
+<h4>定义与 sSet 结构</h4>
+<p>为了处理 sSet 范畴上的 join, 首先要定义 Cut 的概念: 对于 linearly ordered set $J$, the set of cuts of $J$ 为全体 decomposition $J=J_1\sqcup J_2$ s.t. $x&lt;y$ whenever $x\in J_1$, $y\in J_2$.</p>
+<p>[Lemma] 对于 linearly ordered sets $J,J'$ with $\alpha:J\to J'$, $(J_1',J_2')\in Cut(J')$, 存在 unique cut $(J_1,J_2)\in Cut(J)$ s.t. $\alpha$ restricts to $\alpha_1:J_1\to J_1',\alpha_2:J_2\to J_2'$.</p>
+<p>于是, 对于 $X,Y$ sSet, 定义 join $X\star Y$ 为 sSet given as follow:</p>
+<p>[(X\star Y)(J)=\sqcup_{(J_1,J_2)\in Cut(J)}X(J_1)\times Y(J_2).]</p>
+<p>with $X(\emptyset)=Y(\emptyset)=\ast $. 对于 $\alpha:J\to J'$ morph. of linearly ordered sets and a cut of $J'$, 我们总是存在</p>
+<p>[X(J_1')\times Y(J_2')\to X(J_1)\times Y(J_2).]</p>
+<p>which provides</p>
+<p>[(X\star Y)(J')\to (X\star Y)(J)]</p>
+<p>给出了 $X\star Y$ 上面的 sSet 结构.</p>
+<h4>保 $\infty$-cat. 性质</h4>
+<p>于是, 有</p>
+<p>[Lemma] $X$ sSet, join construction 给出了函子 $X\star -:sSet\to sSet_{X/}$ 与 $-\star X:sSet \to sSet_{X/}$.</p>
+<p>我们有如下关键结论:</p>
+<p>[Prop] $X,Y$ 为 $\infty$-cat. if $X\star Y$ 为 $\infty$ cat.</p>
+<h3>切片 (Slice)</h3>
+<h4>定义与 Join/Slice adjunction</h4>
+<p>现在, 对于 $p:S\to X$, $[n]\mapsto \operatorname{Hom}_{sSet_{S/}}(S\star \Delta^n,X)$ 给出了 sSet 结构, 记作 $X_{p/}$.</p>
+<p>[Lemma] $S\star -$ 与 $-\star S:sSet\to sSet_{S/}$ preserves colims.</p>
+<p>[Cor] $S\star -$ 与 $-\star S:sSet\to sSet_{S/}$ preserves pushouts.</p>
+<p>[Cor] $(p:S\to X)\mapsto X_{p/}$ right-adjoint to $S\star -:sSet\to sSet_{S/}$, $(p:S\to X)\mapsto X_{/p}$ right-adjoint to $-\star S:sSet\to sSet_{S/}$.</p>
+<h3>杂项</h3>
+<p>实际上到这里, join 和 slice 的故事就差不多了. 接下来我们要讲到的东西短时间可能有些摸不着头脑, 实际上, 也许等到后三章才会用到.</p>
+<h4>Twisted arrow cat. $Tw(\mathscr{C})$</h4>
+<p>对于 $\mathscr{C}$ ord. cat. 定义 twisted arrow cat. $Tw(\mathscr{C})$ of $\mathscr{C}$ as:</p>
+<p>Obj: morphs of $\mathscr{C}$:</p>
+<p>Morph between $f':x'\to y'$ and $f:x\to y$: comm diag.</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJ4Il0sWzEsMCwieSJdLFswLDEsIngnIl0sWzEsMSwieSciXSxbMCwyLCJcXGFscGhhIl0sWzIsMywiZiciXSxbMywxLCJcXGJldGEiXSxbMCwxLCJmIiwyXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJ4Il0sWzEsMCwieSJdLFswLDEsIngnIl0sWzEsMSwieSciXSxbMCwyLCJcXGFscGhhIl0sWzIsMywiZiciXSxbMywxLCJcXGJldGEiXSxbMCwxLCJmIiwyXV0=&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
+<p>i.e. $f=\beta f' \alpha$.</p>
+<h4>Slice/Join adjunction 与 lifting problem</h4>
+<p>非平凡的是</p>
+<p>[Lemma] Slice construction induces functor $Tw(sSet)\to sSet$. In particular, for</p>
+<p>[A\overset{i}{\to}B\overset{\phi}{\to} X\overset{f}{\to} Y,]</p>
+<p>there is an induced map</p>
+<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}.]</p>
+<p>[Lemma] slice/join adjunction 给出了 bij. of lifting problems between</p>
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJTIl0sWzEsMCwiWF97XFxwaGkvfSJdLFswLDEsIlQiXSxbMSwxLCJYX3tcXHBoaSBpL31cXHRpbWVzX3tmXFxwaGkgaS99IFlfe2ZcXHBoaS99Il0sWzAsMV0sWzEsM10sWzAsMl0sWzIsM10sWzIsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJTIl0sWzEsMCwiWF97XFxwaGkvfSJdLFswLDEsIlQiXSxbMSwxLCJYX3tcXHBoaSBpL31cXHRpbWVzX3tmXFxwaGkgaS99IFlfe2ZcXHBoaS99Il0sWzAsMV0sWzEsM10sWzAsMl0sWzIsM10sWzIsMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d&embed" width="441" height="304" style="border-radius: 8px; border: none;"></iframe>
+<p>and</p>
+<!-- https://q.uiver.app/#q=WzAsNSxbMCwwLCJCIl0sWzIsMSwiWCJdLFsxLDEsIkFcXHN0YXIgVFxcc3FjdXBfe0FcXHN0YXIgU31CXFxzdGFyIFMiXSxbMiwyLCJZIl0sWzEsMiwiQlxcc3RhciBUIl0sWzIsNF0sWzQsM10sWzIsMV0sWzAsMl0sWzAsMSwiXFxwaGkiXSxbNCwxLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNSxbMCwwLCJCIl0sWzIsMSwiWCJdLFsxLDEsIkFcXHN0YXIgVFxcc3FjdXBfe0FcXHN0YXIgU31CXFxzdGFyIFMiXSxbMiwyLCJZIl0sWzEsMiwiQlxcc3RhciBUIl0sWzIsNF0sWzQsM10sWzIsMV0sWzAsMl0sWzAsMSwiXFxwaGkiXSxbNCwxLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=&embed" width="599" height="432" style="border-radius: 8px; border: none;"></iframe>
+<h4>Slice/Join adjunction 与 fibration.</h4>
+<p>于是, 上一节中 $i\boxtimes g$ 相关的 lemma 转化为, 对于 $i:A\to B,g:S\to T$ mono,</p>
+<p>[i\hat{\star} g:A\star T\sqcup_{A\star S} B\star S\to B\star T]</p>
+<p>is a mono. In addition,</p>
+<p>(1) it is inner-anodyne if $i$ right-ano. or $g$ left-ano.</p>
+<p>(2) it is left-ano. if $i$ left-ano.</p>
+<p>(3) it is right-ano. if $g$ right-ano.</p>
+<p>[Thm] $A\overset{i}{\to}B\overset{\phi}{\to} X\overset{f}{\to} Y$ composable maps, $i$ mono, $f$ inner fib. Then</p>
+<p>(1) The induced map</p>
+<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}]</p>
+<p>is a left fib.</p>
+<p>(2) If $f:X\to Y$ left fib. then the induced map</p>
+<p>[X_{/\phi}\to X_{/\phi i}\times_{Y_{/f\phi i}}Y_{/f\phi}]</p>
+<p>is a left fib.</p>
+<p>(3) If $i:A\to B$ right-ano. then the map</p>
+<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}]</p>
+<p>is a trivial fib.</p>
+<p>(4) If $f:X\to Y$ trivial fib. then the map</p>
+<p>[X_{\phi/}\to X_{\phi i/}\times_{Y_{f\phi i/}}Y_{f\phi/}]</p>
+<p>is a trivial fib.</p>
+<p>这个可以导出如下结论:</p>
+<p>[Cor] (1) $X_{\phi/}\to X$ left fib. $X_{/\phi}\to X$ right fib. In particular, $X_{/\phi}$ and $X_{\phi/}$ $\infty$-cat.</p>
+<p>(2) $A\to B$ right-ano. $\operatorname{im}plies X_{\phi/}\to X_{\phi i/}$, $A\to B$ left-ano. $\operatorname{im}plies X_{/\phi}\to X_{/\phi i}$.</p>
+<p>如上两个定理由 $Y=\ast $ case 直接导出.</p>
+<p>(3) For $X\to Y$ trivial fib. then $X_{\phi/}\to X\times_Y Y_{f\phi/}$ triv. fib. Furthermore, $X\times_Y Y_{f\phi/}\to Y_{f\phi/}$ pullback of $X\to Y$ and therefore trivial fib.</p>
+<p>这是由 $A=\emptyset$ 情形给出的.</p>
+<hr>
+<p>Ok, 至此我们完成了第一部分: 一些基础的概念: sSet, $\infty$-cat., functor cat., fibration/anodyne map 与 Join/Slice.</p>
+<p>下一部分, 会在路上了</p>
+<p>吗?</p>
+<p>2026.1.15.</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="自动化 CG 系列更新纲领的另一项工具">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/一种基于-p.-和-d.-在-hugo-stack-环境中解决下划线导致公式失效的方法/">
+    <meta property="og:title" content="一种基于 P. 和 d. 在 hugo-stack 环境中解决下划线导致公式失效的方法">
+    <meta property="og:description" content="自动化 CG 系列更新纲领的另一项工具">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/一种基于-p.-和-d.-在-hugo-stack-环境中解决下划线导致公式失效的方法/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/一种基于-p.-和-d.-在-hugo-stack-环境中解决下划线导致公式失效的方法/genless.jpg">
+    <title>一种基于 P. 和 d. 在 hugo-stack 环境中解决下划线导致公式失效的方法 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/一种基于-p.-和-d.-在-hugo-stack-环境中解决下划线导致公式失效的方法/genless.jpg" alt="一种基于 P. 和 d. 在 hugo-stack 环境中解决下划线导致公式失效的方法">
+          <header class="article-header">
+            <a class="category" href="/categories/%E6%8E%A2%E7%B4%A2/">探索</a>
+            <h1>一种基于 P. 和 d. 在 hugo-stack 环境中解决下划线导致公式失效的方法</h1>
+            <p class="description">自动化 CG 系列更新纲领的另一项工具</p>
+            <time datetime="2025年7月18日">2025年7月18日</time>
+          </header>
+          <div class="article-content"><p>不放 o 了, 不然浓度会超标()</p>
+<hr>
+<p>总之就是, 我需要做 <a href="/p/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-python-%E5%92%8C-deepseek-%E7%9A%84%E5%9C%A8-hugo-stack-%E7%8E%AF%E5%A2%83%E4%B8%AD%E4%BD%BF%E7%94%A8-newcommand-%E7%9A%84%E6%96%B9%E6%B3%95/">纲领</a> 的part 2.</p>
+<p>我们是希望直接在 markdown 里直接把下划线和星号转义给关掉的. 但很遗憾, 根据 <a href="https://www.lbqaq.top/p/latex-in-hugo/">让Hugo优雅的显示公式</a> 的说法, hugo 他没有提供修改 markdown 转义的办法.</p>
+<p>于是, 我们要仿照之前的办法, 再写一个 python 程序.</p>
+<hr>
+<p>具体而言, 虽然使用 <code>\[ ... \]</code> 和 <code>$$ ... $$</code> 打公式会有所区别, 但在我所有的 $\LaTeX$ 编写中, 都使用中括号版本. 因此我们只需要对行内公式进行修改就行. 换句话说, 可以通过计算美元符号的奇偶性来检测是否是行内公式状态. 然后直接替换就行了.</p>
+<p>代码还是交给 Deepseek 来写. 我懒得再建库了, 所以先扔到上次那个库里.</p>
+<p>先这样.</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

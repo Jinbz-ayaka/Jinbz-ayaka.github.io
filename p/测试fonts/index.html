@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fonts测试">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/测试fonts/">
+    <meta property="og:title" content="测试fonts">
+    <meta property="og:description" content="Fonts测试">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/测试fonts/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <title>测试fonts | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          
+          <header class="article-header">
+            <a class="category" href="/categories/%E6%8E%A2%E7%B4%A2/">探索</a>
+            <h1>测试fonts</h1>
+            <p class="description">Fonts测试</p>
+            <time datetime="2025年9月7日">2025年9月7日</time>
+          </header>
+          <div class="article-content"><p>这一章是测试一下字体. 拖了一个暑假了, 也该搞一下了qwq.</p>
+<p><font face="楷体"> 我是楷体字</font>;</p>
+<p>这个的实现方式很简单:</p>
+<pre><code>&lt;font face=&quot;楷体&quot;&gt; 我是楷体字&lt;/font&gt;;
+</code></pre>
+<hr>
+<p>但我们当然不局限于这么简单的东西, 比如:</p>
+<p class="Romoish">This text will be displayed using the Romoish font.</p>
+<p class="Romoish">How is this achieved? First, there is a Romoish.ttf file located in my /static/fonts directory.</p>
+<p class="Romoish">We want to use CSS to handle this, so we add the following in the custom.css file.</p>
+<pre><code>/* 在 assets/css/custom.css 或类似文件中 */
+/* 定义 Romoish 字体 */
+@font-face {
+  font-family: 'Romoish';
+  src: url('/fonts/Romoish.ttf') format('truetype'); /* 注意路径以斜杠开头 */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* 可选，确保文本在字体加载期间可见 */
+}
+
+/* 应用 Romoish 字体 */
+.Romoish {
+  font-family: 'Romoish', serif; /* 使用定义的字体系列 */
+  /* 你可以在这里添加其他样式，例如 */
+  font-size: 3rem; 
+  line-height: 1;
+  /* color: #333; */
+}
+</code></pre>
+<p class="Romoish">Then, using</p>
+<pre><code>&lt;p class=&quot;Romoish&quot;&gt;This text will be displayed using the Romoish font.&lt;/p&gt;
+
+&lt;p class=&quot;Romoish&quot;&gt;How is this achieved? First, there is a Romoish.ttf file located in my /static/fonts directory.&lt;/p&gt;
+
+&lt;p class=&quot;Romoish&quot;&gt;We want to use CSS to handle this, so we add the following in the custom.css file.&lt;/p&gt;
+</code></pre>
+<p class="Romoish">finishes our works</p>
+<p class="Romoish">By the way, this font is designed for my sensei of Statistical Mechanics: Romo Jorquera Mauricio Andres, the Legendary Calligrapher. </p>
+<hr>
+<p>接下来我希望实现那种反人类的随机大小唐诗字体. 但是, 很遗憾 CSS 没有真正的随机数 (真正的伪随机数, 确信), deepseek 给出的解决方式是利用预设的 20 个大小进行循环.</p>
+<p>但当然, 这不能让我满意.</p>
+<p>因此, 这个计划再拖一拖().</p>
+<hr>
+<p>下班!</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

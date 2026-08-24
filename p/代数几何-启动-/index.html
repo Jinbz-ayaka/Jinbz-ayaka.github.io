@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/代数几何-启动-/">
+    <meta property="og:title" content="代数几何, 启动!">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/代数几何-启动-/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/代数几何-启动-/ag.jpg">
+    <title>代数几何, 启动! | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/代数几何-启动-/ag.jpg" alt="代数几何, 启动!">
+          <header class="article-header">
+            <a class="category" href="/categories/%E6%8E%A2%E7%B4%A2/">探索</a>
+            <h1>代数几何, 启动!</h1>
+            <p class="description"></p>
+            <time datetime="2025年3月2日">2025年3月2日</time>
+          </header>
+          <div class="article-content"><p>没错, 这张头图是用 latex 中的 tikz 画的:)</p>
+<p>放在这里让大伙再欣赏欣赏:</p>
+<p><img src="ag.jpg" alt="学吧你就"></p>
+<p>但是, 牛魔, Stack 居然没有提供缩放图片的方法, 让我们看看他是怎么说的. 他说:</p>
+<p>Inserting external images is supported, but it is not recommended.</p>
+<p>Features like image gallery and image zooming will not work with external images. Those feature needs to know the image's dimensions, which is not possible with external images.</p>
+<p>orz</p>
+<p>那以后如果想搞地理志一样的东西, 得慢慢来.</p>
+<hr>
+<p>简单介绍一下搞法吧. 第一步, 将图片导入 Photoshop, 然后用弯线钢笔照着描出来路径.</p>
+<p>第二步, 将路径文件导出. 如果可以成为 SVG 文件, 那自然是最好的. 如果不行, <a href="http://xn--siqs3bd5ap4w.ai">先保存为.ai</a>, 然后用 Adobe Illustrator 搞成.svg.</p>
+<p>第三步, 如果你不嫌麻烦, 可以直接读.svg, 然后照着慢慢搞. 库&quot;hobby&quot;给出了实现弯线钢笔的方法. 如果你嫌麻烦, 可以用脚本 svg2tikz.</p>
+<p>第四步, 在.tex 中运行, 就能得到这样的好东西了[给心心]</p>
+<hr>
+<p>不收徒</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

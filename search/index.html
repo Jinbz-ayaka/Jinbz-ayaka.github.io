@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜索 | 代数tv</title>
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/search/">
+    <meta property="og:title" content="搜索 | 代数tv">
+    <meta property="og:description" content="搜索代数tv文章">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/search/">
+    <meta property="og:site_name" content="代数tv">
+    <link rel="stylesheet" href="/styles/site.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/" aria-current="page">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="home-column search-column">
+        <header class="home-header">
+          <p class="eyebrow">FIND A NOTE</p>
+          <h1>搜索</h1>
+          <form class="search-form">
+            <label for="search-input">输入关键词</label>
+            <div class="search-controls">
+              <input id="search-input" name="keyword" type="search" autocomplete="off" placeholder="标题、正文摘要、分类或标签">
+              <button type="submit">查找</button>
+            </div>
+          </form>
+        </header>
+        <p class="search-status" aria-live="polite">正在加载索引...</p>
+        <section class="post-grid search-results" aria-label="搜索结果"></section>
+      </main>
+    </div>
+    <script src="/scripts/search.js" defer></script>
+  </body>
+</html>

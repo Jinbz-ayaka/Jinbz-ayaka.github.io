@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="向着完结, 冲锋!">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/cg饲养日记-其五十-p450-459/">
+    <meta property="og:title" content="CG饲养日记-其五十 P450-459">
+    <meta property="og:description" content="向着完结, 冲锋!">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/cg饲养日记-其五十-p450-459/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <title>CG饲养日记-其五十 P450-459 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          
+          <header class="article-header">
+            <a class="category" href="/categories/CG/">CG</a>
+            <h1>CG饲养日记-其五十 P450-459</h1>
+            <p class="description">向着完结, 冲锋!</p>
+            <time datetime="2026年7月17日">2026年7月17日</time>
+          </header>
+          <div class="article-content"><p>上回书我们从 sheaf-theoretical 的角度构造了 $H^\bullet(Z)$ 在 $ H^\bullet(M_x)$ 与 $H_\bullet(Z)$ 在 $H^(M_x)$ 的作用. 我们 recall 我们也介绍了 $H_\bullet(\tilde{S})$ 上的 $H_\bullet(Z)$ 作用. 现在有一个关键的问题是, 我们通过嵌入诱导的</p>
+<p>[H_\bullet(M_x)\to H_\bullet(\tilde{S}),H_\bullet(M_x)\to H_\bullet(\tilde{U})]</p>
+<p>并不自然是一个 $Ext$-模映射. 因此, 我们希望 sheaf-theoretically 地来描述 convolution action on homology of $\tilde{S}$, 使得他 compatible with $H_\bullet(M_x)\to H_\bullet(\tilde{S})$.</p>
+<p>对于 $i_{\mathbb{O}}:\mathbb{O}\hookrightarrow N$ locally-closed embedding, $\mathcal{H}^\bullet(i^\ast _{\mathbb{O}}\mu_\ast \mathcal{C}_M)$ cohomology sheaf. 于是我们得到了其上的 $Ext_D^\bullet(\mathbb{L},\mathbb{L})$-action. 关键点是, 这个诱导了 $Ext_D^\bullet(\mathbb{L},\mathbb{L})$-action on stalk $\mathcal{H}_x^\bullet(i^\ast _{\mathbb{O}}\mathbb{L})$. 我们实际上有 $\mathcal{H}_x^\bullet(i^\ast _{\mathbb{O}}\mathbb{L})\doteq H_\bullet(\tilde{S})$. 于是根据 Thm 8.6.7. 的一个改版可以得到 $H_\bullet(Z)$-module structure on $H_\bullet(\tilde{S})$ compatible with $Ext$-module structure on $\mathcal{H}_x^\bullet(i^\ast _{\mathbb{O}}\mathbb{L})$.</p>
+<p>相似地, 我们也可以得到 $i^!_{\mathbb{O}}\mathbb{L}$ 版本.</p>
+<p>(写到这里我突然意识到前面那章好像很多 $\mathcal{H}$ 我都写的 $H$. 受着吧)</p>
+<p>于是, $H_\bullet(M_x)\to H_\bullet(\tilde{S})$ 是一个 $Ext$-mod 映射. 对于 $\chi$ irrep. of $G(x)/G(x)^\circ$, 我们考虑 isotypical component $L_{x,\chi}:=Im[H_\bullet(M_x)_\chi\to H_\bullet(\tilde{S})_\chi]$, 其上自然继承 $Ext$-mod structure.</p>
+<p>现在, write $\phi=(\mathbb{O},\chi)$, $\mathbb{O}$ $G$-orbit, 根据 8.5.16 我们知道他作为线性空间同构于 $L_{\phi}$. 我们有</p>
+<p>Lemma 8.6.17. 如上定义的线性空间同构 intertwines the $Ext^\bullet_D(\mathbb{L},\mathbb{L})$-action on both.</p>
+<p>实际上, 我们有 $L_{x,\chi}=Im[\mathcal{H}^\bullet_x(i^!_{\mathbb{O}}\mathbb{L})\to \mathcal{H}^\bullet_x(i^\ast _{\mathbb{O}}\mathbb{L})]$. 这个定理的证明还是颇为巧妙的, 首先利用 decomposition Theorem, 然后分析 degree 应该就能做出来.</p>
+<p>Prop. 8.6.21. For $\phi=(\mathbb{O},\chi)$ above, the convolution action of $H_\bullet(Z)$ identified by $H_\bullet(Z)\doteq Ext^\bullet_D(\mathbb{L},\mathbb{L})$ by 8.6.7. and $L_\phi\simeq L_{x,\chi}$ by 8.5.16.</p>
+<p>于是</p>
+<p>Thm 8.6.22. Every $H_\bullet(Z)$-mod. $L_{x,\chi}$ is simple if nonzero. Furthermore, any $H_\bullet(Z)$-mod is isom. to $L_{x,\chi}$ for some $(x,\chi)$.</p>
+<p>对于 $\psi=(\mathbb{O}_\psi,\chi_\psi)$ and $\phi=(\mathbb{O}_\phi,\chi_\phi)$, $x\in \mathbb{O}_\psi$, $i_x:{x}\hookrightarrow N$, 我们有 KL multiplicity formula.</p>
+<p>Thm. 8.6.23. The multiplicity of $L_\phi$ in the composition series of $H_\bullet(Z)$-module $H_\bullet(M_x)_\psi$ and $H^\bullet(M_x)_\psi$ is given by</p>
+<p>[[H_\bullet(M_x)<em>\psi:L</em>\phi]=\sum_k \dim H^k(i^!<em>xIC</em>\phi)_\psi,]</p>
+<p>[[H^\bullet(M_x)<em>\psi:L</em>\phi]=\sum_k \dim H^k(i^*<em>xIC</em>\phi)_\psi.]</p>
+<p>由 Decomposition Theorem 我们直接得到</p>
+<p>[H_\bullet(M_x)\doteq \oplus_\phi L_\phi\otimes H^\bullet(i^!<em>xIC</em>\phi).]</p>
+<p>然后分析一下 filtration 即得.</p>
+<p>最后, 我们介绍 contravariant 性质: 对于 f.d. left mod $H$ over $B$ with $b\mapsto b^t$ anti-automorphism. 我们定义 contragredient left $B$-module $H^\vee$ as $H^\ast $ given by action $b\cdot h=h\cdot(b^t)$.</p>
+<p>对于 $H_\bullet(Z)=H_\bullet(M\times_NM)$, switching two factors $M$ 给出了其上的 anti-automorphism 结构. 那么我们有</p>
+<p>Coro. 8.6.25. $H_\bullet(Z)$-mods. $H^\bullet(M_x)$ and $H_\bullet(M_x)$ are contragredient to each other.</p>
+<hr>
+<p>本章将所有 cdot 改为了 bullet.</p>
+<hr>
+<p>定理 8.6.7 的证明懒得写了qaq</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <link rel="canonical" href="https://Jinbz-ayaka.github.io/p/理论力学/">
+    <meta property="og:title" content="理论力学">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://Jinbz-ayaka.github.io/p/理论力学/">
+    <meta property="og:site_name" content="代数tv">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://Jinbz-ayaka.github.io/p/理论力学/f2.jpg">
+    <title>理论力学 | 代数tv</title>
+    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand" href="/">代数tv</a>
+        <p class="tagline">做网站还是有点简单了</p>
+        <nav aria-label="主导航">
+          <a href="/">主页</a>
+          <a href="/archives/">归档</a>
+          <a href="/search/">搜索</a>
+          <a href="/Explaining_Structure/">结构说明</a>
+        </nav>
+      </aside>
+      <main class="article-column">
+        <article class="article-card">
+          <img class="article-cover" src="/p/理论力学/f2.jpg" alt="理论力学">
+          <header class="article-header">
+            <a class="category" href="/categories/%E5%A4%8D%E4%B9%A0/">复习</a>
+            <h1>理论力学</h1>
+            <p class="description"></p>
+            <time datetime="2025年1月30日">2025年1月30日</time>
+          </header>
+          <div class="article-content"><h2>理论力学复习提纲</h2>
+<p>对于拉格朗日量 $\mathscr{L}$, 我们有 Euler-Lagrange 方程</p>
+<p>[\frac{d}{dt} \left(\frac{\partial \mathscr{L}}{\partial\dot{q}}\right)=\frac{\partial \mathscr{L}}{\partial q}]</p>
+<p>对于这一部分而言, 重要的只有两个东西: Noether's 定理和 Hamiltonian 力学.</p>
+<h3>Noether's 定理</h3>
+<p>&quot;连续的对称性蕴含了守恒量&quot;.</p>
+<p>为此, 考察空间 (注意这里只涉及 $q$) 中无穷小变换</p>
+<p>[\delta_\epsilon q=\epsilon X(q,\dot{q},t)]</p>
+<p>其被称作一个对称, 如果</p>
+<p>[\delta_\epsilon \mathscr{L}=\epsilon \frac{d}{dt}l,]</p>
+<p>对于某个 $l$.</p>
+<p>我们希望考虑变分 $\epsilon(t)$. 于是</p>
+<p>[\begin{align*}
+\delta_{\epsilon(t)}\mathscr{L}&amp;=\delta_{\epsilon(t)}\mathscr{L}(q,\dot{q},t)\
+&amp;=\frac{\partial \mathscr{L}}{\partial q}\cdot \epsilon(t)X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\frac{d}{dt}(\epsilon(t)X)\
+&amp;=\epsilon(t)\left(\frac{\partial \mathscr{L}}{\partial q}X+\frac{\partial \mathscr{L}}{\partial \dot{q}}\dot{X}\right)+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X\
+&amp;=\epsilon(t)\frac{d}{dt}l+\dot{\epsilon}(t)\frac{\partial \mathscr{L}}{\partial \dot{q}}X.
+\end{align*}]</p>
+<p>于是, 我们有</p>
+<p>[\begin{align*}
+\delta_{\epsilon(t)}S&amp;=\delta_{\epsilon(t)}\int \mathscr{L}dt\
+&amp;=一步分部积分\
+&amp;=\int \epsilon(t)\frac{d}{dt}\left(l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X\right)dt.
+\end{align*}]</p>
+<p>于是我们得到守恒量</p>
+<p>[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X.]</p>
+<p>以角动量守恒为例, 比方说 $\mathscr{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2)+f(x^2+y^2)$, 对于</p>
+<p>[(x,y)\mapsto (y\sin\theta+x\cos\theta,-x\sin\theta+y\cos\theta),]</p>
+<p>有 $\delta_\epsilon x=\epsilon y$, $\delta_\epsilon y=-\epsilon x$. $\delta_\epsilon \mathscr{L}=0$. 于是我们得到守恒量</p>
+<p>[J=l-\frac{\partial \mathscr{L}}{\partial \dot{q}}X=-m\dot{x}y+mx\dot{y}.]</p>
+<p>这就是角动量守恒.</p>
+<h4>Euler's 方程</h4>
+<p>计算转动惯量利用积分</p>
+<p>[I=\int dxdydz\rho\begin{pmatrix}
+y^2+z^2&amp;-xy&amp;-xz\
+-xy&amp;x^2+z^2&amp;-yz\
+-xz&amp;-yz&amp;x^2+y^2
+\end{pmatrix}.]</p>
+<p>然后由方程</p>
+<p>[\vec{J}=I\vec{\omega}]</p>
+<p>并利用角动量守恒, 即可得到角速度的方程. 这就是 Euler's 方程.</p>
+<h3>Hamiltonian 力学</h3>
+<p>定义啥的都跳过一下人生.</p>
+<p>[\mathscr{H}=\sum p_i\dot{q_i}-\mathscr{L}.]</p>
+<p>通过简单的推导, 我们得到 Hamiltonian 方程组</p>
+<p>[\begin{cases}
+\dot{q}_i=\frac{\partial \mathscr{H}}{\partial p_i}\
+\dot{p}_i=-\frac{\partial \mathscr{H}}{\partial q_i}.
+\end{cases}]</p>
+<h4>守恒量</h4>
+<p>于是, 我们可以直接导出, 对于相空间函数 $f$, 在运动曲线上,</p>
+<p>[\frac{d f}{d t}+{f,\mathscr{H}}=0.]</p>
+<p>这也意味着不含时的 $f$ 如果满足 ${ f,\mathscr{H} }=0$, 那他是一个守恒量.</p>
+<h4>流与 Liouville 定理</h4>
+<p>根据 Hamiltonian 方程组, 我们实际上诱导了相空间的流. 而熟知的微分几何结论告诉我们, 一个流是保体积的等价于其散度为 $0$, $\sum_i\partial_i\dot{x}^i=0$. 于是直接代入方程组我们就能得到相空间上的流是保体积的, 这就是 Liouville 定理.</p>
+<p>从这里我们也能看出, 诸如 Damped Harmonic Oscillator, 所有解最终都会收敛. 他是不保相空间体积的, 因此不能从某个 Lagrangian 力学或 Hamiltonian 力学得到.</p>
+<h4>正则变换</h4>
+<p>如果, $Q_i,P_i$ 在 $q_i,p_i$ 诱导的泊松括号下&quot;表现得跟 $q_i,p_i$ 一样&quot;, 那么 $Q_i,P_i$ 诱导的泊松括号就与 $q_i,p_i$ 诱导的泊松括号相同. 这被称作正则变换. 在不会用 \newcommand 之前, 去打他的数学形式和证明实在麻烦得过分. 因此先摆了, 反正不太难, 也不会产生歧义.</p>
+<p>实际上, 所谓 &quot;正则变换&quot; 构成了一个群.</p>
+<p>这一章可以结束于解释 &quot;如何找一个正则变换&quot;. 实际上对于一个一般函数 $G(q,p)$, 考虑流</p>
+<p>[\begin{cases}
+\frac{\partial Q_i}{\partial s}={Q_i,G}\
+\frac{\partial P_i}{\partial s}={P_i,G}.
+\end{cases}]</p>
+<p>这便给出了一个正则变换. 为证明它, 我们只需去计算诸如 $\frac{\partial}{\partial s} {P_i,Q_j}$ 即可.</p>
+<p>我并不确定考试是否会涉及含时的正则变换. 这里有时间再补充吧.</p>
+<h4>Hamilton-Jacobi 方程</h4>
+<p>$W(q,t)$ 是一个极值曲线, 那么他满足 Hamilton-Jacobi 方程</p>
+<p>[\frac{\partial W}{\partial t}+\mathscr{H}(q,\frac{\partial W}{\partial q},t)=0.]</p>
+<h3>辛几何</h3>
+<p>我觉得吧, 定义啥的没什么可讲的</p>
+<h4>moment map</h4>
+<p>碎碎念: 这玩意搞箭图表示论的二重图的时候, 有一个奇怪的概念, 粮食跟我说是来自于辛几何的 moment map, 但我没有太理解kk</p>
+<p>对于李群 $G$ 作用在辛流形上, 其诱导了李代数 $\mathfrak{g}\to \text{Vect}(M)$ 的映射. 这是一个李代数同态.</p>
+<p>那么对于辛作用, $L_{V_A}\omega=0$. 根据魔术公式, $dl_{V_A}\omega=0$.</p>
+<p>于是我们会希望 $V_A$ 是 Hamiltonian 的, 也就是说</p>
+<p>[l_{V_A}\omega=df_A]</p>
+<p>这便给出了一个 Poisson 的映射</p>
+<p>[\mathscr{H}:\mathfrak{g}\to C^{\infty}(M).]</p>
+<p>使得</p>
+<p>[l_{V_A}\omega=d\mathscr{H}_A,]</p>
+<p>[{\mathscr{H}_A,\mathscr{H}<em>B}=\mathscr{H}</em>{[A,B]}.]</p>
+<p>对偶地, 给出映射</p>
+<p>[\mu: M\to \mathfrak{g}^*,]</p>
+<p>[\langle \mu(-),A\rangle=\mathscr{H}_A(-).]</p>
+<p>这个 $\mu$ 被称为 moment map.</p>
+<h4>Symplectic Reduction</h4>
+<p>等待施工.</p>
+<h4>回到 Hamilton-Jacobi 方程</h4>
+<p>一个 PDE 的结论. 大致的意思是去解一个 Hamiltonian 系统, 等价于去寻找 Hamilton-Jacobi 方程</p>
+<p>[\mathscr{H}(q,\frac{\partial F}{\partial q},t)+\frac{\partial F}{\partial t}=0.]</p>
+<p>的解.</p>
+<h3>可积系统</h3>
+<p>如果去解 $n$ 维简谐振子的 Hamiltonian 方程组,</p>
+<p>[\mathscr{H}=\sum_{i=1}^n\left(\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2\right)]</p>
+<p>我们发现他有 $n$ 个守恒量 $f_i=\frac{1}{2}p_i^2+\frac{\omega_i^2}{2}q_i^2$. 特别地, 他们是泊松交换的.</p>
+<p>这便引出了 Liouville 的定义.</p>
+<h4>Liouville 可积性</h4>
+<p>一个 Hamiltonian 系统是一个三元组 $(M,\omega,\mathscr{H})$, 其中 $(M,\omega)$ 是一个辛流形, $\mathscr{H}$ 是 $M$ 上一个 Hamiltonian 函数. 如果其上有 $n=\frac{1}{2}\dim M$ 个无关且两两泊松交换的守恒量 $f_1,\cdots,f_n$, 称其为(完全)刘维尔可积.</p>
+<p>于是有 Liouville-Arnold 定理: 若 $(M,\omega,\mathscr{H})$ 完全刘维尔可积, $\dim=2n$, 则对于 $f=(f_1,\cdots,f_n)$ 正则值 $c\in \mathbb{R}^n$, 有</p>
+<ol>
+<li>
+<p>$f^{-1}(c)$ 是在 Hamilton 流下不变的光滑流形.</p>
+</li>
+<li>
+<p>如果 $f^{-1}(c)$ 紧且联通, 那么他微分同胚于 $n$ 维环面.</p>
+</li>
+</ol>
+<p>[T^n={(\phi_1,\cdots,\phi_n)\pmod{2\pi}}.]</p>
+<p>且在这种微分同胚下, 其上的流是线性的.</p>
+<p>[\frac{d\phi_i}{dt}=\omega_i(c).]</p>
+<ol start="3">
+<li>
+<p>存在守恒量 $I_1,\cdots,I_n$, $\omega=\sum_idI_i\wedge d\phi_i$, 在 $f^{-1}(c)$ 的某个邻域内.</p>
+</li>
+<li>
+<p>运动方程可以&quot;由二次型积分&quot;.</p>
+</li>
+</ol>
+<p>这里 $\phi_i$ 称为角坐标, $I_i$ 称为运动坐标.</p>
+</div>
+          
+          <section class="comments" aria-label="评论">
+            <script src="https://giscus.app/client.js"
+              data-repo="Jinbz-ayaka/Jinbz-ayaka.github.io"
+              data-repo-id="R_kgDONu5gqQ"
+              data-category="Announcements"
+              data-category-id="DIC_kwDONu5gqc4CnCfo"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous"
+              async></script>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(".article-content"), {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "$", right: "$", display: false }
+          ],
+          ignoredClasses: ["gist"]
+        });
+      });
+    </script>
+  </body>
+</html>
