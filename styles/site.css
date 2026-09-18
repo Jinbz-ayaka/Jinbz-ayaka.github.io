@@ -7,6 +7,9 @@
   --teal: #0f766e;
   --coral: #d97757;
   --line: rgba(23, 37, 43, 0.12);
+  /* 正文文本列宽 + 窄屏最小留白, 供标题区/正文/评论共用 */
+  --text-width: 74rem;
+  --gutter: clamp(2rem, 5vw, 5rem);
 }
 
 * {
@@ -34,7 +37,10 @@ body {
 
 .site-shell {
   display: grid;
-  grid-template-columns: minmax(190px, 240px) minmax(0, 900px);
+  /* 侧栏用流体宽度: 屏幕窄时自动收窄, 把余量让给正文。
+     以前是固定 minmax(190px, 240px), 结果 240px 一直吃到 1024px 附近,
+     主列被压到 400px 上下, 标题挤成一条。 */
+  grid-template-columns: clamp(150px, 16vw, 240px) minmax(0, 900px);
   gap: clamp(3rem, 6vw, 8rem);
   max-width: 1240px;
   min-height: 100vh;
@@ -98,8 +104,20 @@ nav a:focus-visible {
   object-fit: cover;
 }
 
+/* 标题区 / 正文 / 评论共用同一个文本列定位。
+   原来标题区是"整卡宽 + padding", 正文是"max-width: 78ch + margin auto",
+   两套算法算出的左边缘差了几十像素, 标题看起来和正文错位。
+   这里统一用 padding-inline 定位: max() 的第一项是窄屏下的最小留白,
+   第二项把文本列居中。用 padding 而不是 max-width, 是为了让 .article-header
+   的顶部分隔线仍然横跨整张卡片。 */
+.article-header,
+.article-content,
+.comments {
+  padding-inline: max(var(--gutter), calc((100% - var(--text-width)) / 2));
+}
+
 .article-header {
-  padding: 3.5rem clamp(2.5rem, 6vw, 6rem) 0;
+  padding-block: 3.5rem 0;
   border-top: 4px solid var(--teal);
 }
 
@@ -118,6 +136,7 @@ h1 {
   margin: 2rem 0 1rem;
   font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1.12;
+  overflow-wrap: break-word;
 }
 
 .description,
@@ -128,9 +147,8 @@ time {
 }
 
 .article-content {
-  max-width: 78ch;
-  margin: 3rem auto 0;
-  padding: 0 clamp(2.5rem, 6vw, 6rem) 6rem;
+  margin: 3rem 0 0;
+  padding-block: 0 6rem;
   font-size: 1.8rem;
   line-height: 1.9;
 }
@@ -192,15 +210,18 @@ time {
   overflow-wrap: anywhere;
 }
 
-@media (max-width: 760px) {
+/* 单列: 侧栏改成顶部横向导航。
+   断点从 760px 提到 1024px —— 原来 761~1024px 这段还保留两栏, 240px 的
+   侧栏会把正文列压到 400px 上下, 标题只剩三十来个字宽, 反而比手机版更窄。 */
+@media (max-width: 1024px) {
   .site-shell {
     display: block;
-    padding: 2rem 1.5rem;
+    padding: 3rem 2rem;
   }
 
   .site-sidebar {
     position: static;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     padding: 0 0 2rem;
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -212,7 +233,9 @@ time {
     gap: 1.5rem;
     margin-top: 2rem;
   }
+}
 
+@media (max-width: 760px) {
   .article-content {
     font-size: 1.7rem;
   }
@@ -255,8 +278,11 @@ time {
 }
 
 .post-card {
-  display: grid;
-  grid-template-columns: minmax(150px, 230px) minmax(0, 1fr);
+  /* 用 flex 而不是 grid: 卡片没封面图时 <img> 整个不存在, grid 的自动放置
+     会把文字容器塞进第一列(230px), 右边空出一大片, 标题和摘要被折成好几行。
+     flex 下没有图, 文字容器自然占满整行。 */
+  display: flex;
+  align-items: flex-start;
   gap: 2.5rem;
   padding: 2rem;
   background: var(--surface);
@@ -266,10 +292,16 @@ time {
 }
 
 .post-card > img {
-  width: 100%;
+  flex: 0 1 230px;
+  min-width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 4px;
+}
+
+.post-card > div {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .post-card h2 {
@@ -343,11 +375,16 @@ time {
 
 @media (max-width: 760px) {
   .post-card {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    /* 纵向排列时必须拉伸: align-items 仍是 flex-start 的话,
+       文字容器会按内容收缩, 标题和摘要又被挤成一条 */
+    align-items: stretch;
     gap: 1.5rem;
   }
 
   .post-card > img {
+    flex: none;
+    width: 100%;
     height: 190px;
   }
 
@@ -386,7 +423,7 @@ time {
 }
 
 .comments {
-  margin: 3rem clamp(2.5rem, 6vw, 6rem) 5rem;
+  margin: 3rem 0 5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--line);
 }
