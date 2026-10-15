@@ -89,7 +89,8 @@ nav a:focus-visible {
   color: var(--coral);
 }
 
-.article-card {
+.article-card,
+.say-entry {
   overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -426,4 +427,148 @@ time {
   margin: 3rem 0 5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--line);
+}
+
+/* ---- 说说: 一条一行的信息流 ---- */
+.say-wall {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.say-column {
+  /* 一页排成一个格(空位留给下一条, 见 build.mjs 的 sayPageSize), 所以这里是 1 不是 2 */
+  flex: 1 1 0;
+  min-width: 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.say-card {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(23, 37, 43, 0.07);
+}
+
+.say-card-head {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.say-avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  color: var(--surface);
+  background: var(--teal);
+  border-radius: 50%;
+  font-size: 1.9rem;
+  text-decoration: none;
+}
+
+.say-card-author {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+}
+
+.say-card-author time {
+  margin-left: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.say-permalink {
+  flex: none;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.say-permalink:hover {
+  color: var(--coral);
+}
+
+.say-card-text {
+  margin: 1.6rem 0 0;
+  font-size: 1.8rem;
+  line-height: 1.9;
+}
+
+/* 空间那种九宫格: 最多 3 列, 1 张图占满一整行 */
+.say-thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  /* 图片区不跟着整行铺满, 否则单图会顶到 400px 高, 一条说说占掉整屏 */
+  max-width: 52rem;
+  margin-top: 1.6rem;
+}
+
+.say-thumbs img,
+.say-more {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.say-thumbs[data-count="1"] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.say-thumbs[data-count="1"] img {
+  aspect-ratio: 16 / 10;
+}
+
+.say-thumbs[data-count="2"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.say-more {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: rgba(23, 37, 43, 0.06);
+  font-family: system-ui, sans-serif;
+  font-size: 1.8rem;
+}
+
+.say-card-tags {
+  margin: 1.6rem 0 0;
+  color: var(--teal);
+  font-family: system-ui, sans-serif;
+  font-size: 1.4rem;
+}
+
+.say-tag + .say-tag {
+  margin-left: 0.9rem;
+}
+
+.say-empty {
+  margin: 0;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 1.6rem;
+}
+
+.say-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+.say-gallery img {
+  width: 100%;
+  max-height: 46rem;
+  object-fit: cover;
+  border-radius: 6px;
 }

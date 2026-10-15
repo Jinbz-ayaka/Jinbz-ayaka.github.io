@@ -20,11 +20,13 @@ const searchableText = (post) => [
 const render = (posts, keyword = "") => {
   const normalized = keyword.trim().toLocaleLowerCase("zh-CN");
   const matches = normalized ? posts.filter((post) => searchableText(post).includes(normalized)) : posts;
-  status.textContent = normalized ? `找到 ${matches.length} 篇文章` : `共 ${matches.length} 篇文章`;
+  status.textContent = normalized ? `找到 ${matches.length} 条结果` : `共 ${matches.length} 条结果`;
   results.innerHTML = matches.map((post) => `
     <article class="post-card search-card">
       <div>
-        ${(post.categories ?? []).slice(0, 1).map((category) => `<a class="category" href="/categories/${encodeURIComponent(category)}/">${escapeHtml(category)}</a>`).join("")}
+        ${post.type === "say"
+          ? `<a class="category" href="/say/">说说</a>`
+          : (post.categories ?? []).slice(0, 1).map((category) => `<a class="category" href="/categories/${encodeURIComponent(category)}/">${escapeHtml(category)}</a>`).join("")}
         <h2><a href="${post.permalink}">${escapeHtml(post.title)}</a></h2>
         <p>${escapeHtml(post.description)}</p>
         <time>${escapeHtml(post.date ?? "")}</time>
